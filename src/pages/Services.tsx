@@ -412,7 +412,7 @@ export const ServicesPage: FC = () => {
                 05. Crisis & Reputation Management
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Strategic Reputation Defence
+                Strategic Reputation Management
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 When stakes are highest, reputation becomes the ultimate strategic asset. We protect 
@@ -459,7 +459,7 @@ export const ServicesPage: FC = () => {
             <div class="relative">
               <img 
                 src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?w=800&q=80" 
-                alt="Strategic Reputation Defence"
+                alt="Strategic Reputation Management"
                 class="rounded-lg shadow-2xl"
               />
             </div>
@@ -474,7 +474,7 @@ export const ServicesPage: FC = () => {
             <div class="order-2 lg:order-1 relative">
               <img 
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" 
-                alt="Aligning Corporate Vision"
+                alt="Aligning Corporate Positioning"
                 class="rounded-lg shadow-2xl"
               />
             </div>
@@ -484,7 +484,7 @@ export const ServicesPage: FC = () => {
                 06. Corporate & Shareholder Engagement
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Aligning Corporate Vision
+                Aligning Corporate Positioning
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 Critical corporate moments demand precision. We architect shareholder experiences 
@@ -602,7 +602,7 @@ export const ServicesPage: FC = () => {
             <div class="order-2 lg:order-1 relative">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
-                alt="Engineering Deep Engagement"
+                alt="Creating Deep Engagement"
                 class="rounded-lg shadow-2xl"
               />
             </div>
@@ -612,7 +612,7 @@ export const ServicesPage: FC = () => {
                 08. Experience Design & Immersive Targeting
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Engineering Deep Engagement
+                Creating Deep Engagement
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 Strategic experiences are engineered, not imagined. We design every moment to guide 
@@ -668,7 +668,7 @@ export const ServicesPage: FC = () => {
                 09. Approach Modelling & ROI
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Justifying Strategic Investment
+                Measuring Strategic Value
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 Strategic investments demand rigorous justification. We develop bespoke frameworks 
@@ -715,7 +715,7 @@ export const ServicesPage: FC = () => {
             <div class="relative">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
-                alt="Justifying Strategic Investment"
+                alt="Measuring Strategic Value"
                 class="rounded-lg shadow-2xl"
               />
             </div>
