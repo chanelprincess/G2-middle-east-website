@@ -17,11 +17,11 @@ export const ServicesPage: FC = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Sovereign & Nation Branding",
+            "name": "Sovereign & Governmental Advisory",
             "description": "Strategic positioning and narrative architecture for nations, governments, and sovereign entities",
             "provider": {
               "@type": "Organization",
-              "name": "G-2 Middle East"
+              "name": "G2 Middle East"
             }
           }
         },
@@ -29,11 +29,11 @@ export const ServicesPage: FC = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Global Brand & Luxury Positioning",
+            "name": "Global Brand & Luxury Experiences",
             "description": "Strategic positioning and experience design for luxury brands and global enterprises",
             "provider": {
               "@type": "Organization",
-              "name": "G-2 Middle East"
+              "name": "G2 Middle East"
             }
           }
         },
@@ -41,11 +41,83 @@ export const ServicesPage: FC = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Strategic Communications",
+            "name": "Strategic Communications & Narrative Control",
             "description": "High-stakes communication strategy and narrative development",
             "provider": {
               "@type": "Organization",
-              "name": "G-2 Middle East"
+              "name": "G2 Middle East"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Major Event Architecture & Delivery",
+            "description": "End-to-end conceptualization and execution of events of national and international importance",
+            "provider": {
+              "@type": "Organization",
+              "name": "G2 Middle East"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Crisis & Reputation Management",
+            "description": "Strategic reputation defense and real-time crisis response",
+            "provider": {
+              "@type": "Organization",
+              "name": "G2 Middle East"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Corporate & Shareholder Engagement",
+            "description": "High-impact corporate events and stakeholder alignment strategies",
+            "provider": {
+              "@type": "Organization",
+              "name": "G2 Middle East"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cultural Diplomacy & Placemaking",
+            "description": "Building cultural capital through strategic cultural events and legacy placemaking",
+            "provider": {
+              "@type": "Organization",
+              "name": "G2 Middle East"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Experience Design & Immersive Targeting",
+            "description": "Engineering deep audience engagement through immersive experiences and sensory design",
+            "provider": {
+              "@type": "Organization",
+              "name": "G2 Middle East"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Approach Modelling & ROI",
+            "description": "Measuring intangible value and providing C-suite financial justification for strategic projects",
+            "provider": {
+              "@type": "Organization",
+              "name": "G2 Middle East"
             }
           }
         }
@@ -75,13 +147,13 @@ export const ServicesPage: FC = () => {
         </div>
       </section>
 
-      {/* Service 1: Sovereign & Nation Branding */}
+      {/* Service 1: Sovereign & Governmental Advisory */}
       <section id="sovereign" class="py-24 bg-g2-dark">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
-                01. Sovereign & Nation Branding
+                01. Sovereign & Governmental Advisory
               </div>
               <h2 class="text-4xl font-bold mb-6">
                 Strategic Positioning for Nations
@@ -97,8 +169,8 @@ export const ServicesPage: FC = () => {
                     <i class="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h3 class="text-white font-semibold mb-2">Nation Brand Strategy</h3>
-                    <p class="text-gray-400">Comprehensive strategic frameworks that define and articulate national competitive advantages</p>
+                    <h3 class="text-white font-semibold mb-2">National Strategy</h3>
+                    <p class="text-gray-400">Architecting strategic frameworks that define and articulate national competitive advantages.</p>
                   </div>
                 </div>
                 
@@ -108,7 +180,7 @@ export const ServicesPage: FC = () => {
                   </div>
                   <div>
                     <h3 class="text-white font-semibold mb-2">Global Stakeholder Engagement</h3>
-                    <p class="text-gray-400">Strategic communication programs targeting international investors, institutions, and decision-makers</p>
+                    <p class="text-gray-400">Crafting targeted narratives for international investors, institutions, and decision makers.</p>
                   </div>
                 </div>
                 
@@ -118,20 +190,20 @@ export const ServicesPage: FC = () => {
                   </div>
                   <div>
                     <h3 class="text-white font-semibold mb-2">Sovereign Experience Design</h3>
-                    <p class="text-gray-400">High-impact events and experiences that showcase national capabilities and vision</p>
+                    <p class="text-gray-400">Creating high-level events and platforms that showcase national capabilities and vision.</p>
                   </div>
                 </div>
               </div>
               
               <a href="/contact" class="btn-primary">
-                Discuss Your Vision
+                DISCUSS YOUR VISION
               </a>
             </div>
             
             <div class="relative">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
-                alt="Nation Branding"
+                alt="Strategic Positioning for Nations"
                 class="rounded-lg shadow-2xl"
               />
             </div>
@@ -139,21 +211,21 @@ export const ServicesPage: FC = () => {
         </div>
       </section>
 
-      {/* Service 2: Global Brand & Luxury Positioning */}
+      {/* Service 2: Global Brand & Luxury Experiences */}
       <section id="luxury" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="order-2 lg:order-1 relative">
               <img 
                 src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=800&q=80" 
-                alt="Luxury Positioning"
+                alt="Elevating Luxury Brands"
                 class="rounded-lg shadow-2xl"
               />
             </div>
             
             <div class="order-1 lg:order-2">
               <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
-                02. Global Brand & Luxury Positioning
+                02. Global Brand & Luxury Experiences
               </div>
               <h2 class="text-4xl font-bold mb-6">
                 Elevating Luxury Brands
@@ -169,8 +241,8 @@ export const ServicesPage: FC = () => {
                     <i class="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h3 class="text-white font-semibold mb-2">Premium Brand Architecture</h3>
-                    <p class="text-gray-400">Strategic frameworks that define and protect brand essence while enabling growth</p>
+                    <h3 class="text-white font-semibold mb-2">Prestige Brand Architecture</h3>
+                    <p class="text-gray-400">Defining and protecting brand essence while enabling strategic growth and market presence.</p>
                   </div>
                 </div>
                 
@@ -179,8 +251,8 @@ export const ServicesPage: FC = () => {
                     <i class="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h3 class="text-white font-semibold mb-2">Luxury Experience Design</h3>
-                    <p class="text-gray-400">Curated experiences that embody brand values and create lasting emotional connections</p>
+                    <h3 class="text-white font-semibold mb-2">Luxury Experiences</h3>
+                    <p class="text-gray-400">Curating exclusive, high-impact moments that embody brand values and create lasting emotional connections.</p>
                   </div>
                 </div>
                 
@@ -190,26 +262,26 @@ export const ServicesPage: FC = () => {
                   </div>
                   <div>
                     <h3 class="text-white font-semibold mb-2">Market Entry & Expansion</h3>
-                    <p class="text-gray-400">Strategic roadmaps for entering and succeeding in complex Middle Eastern markets</p>
+                    <p class="text-gray-400">Navigating and succeeding in the complex dynamics of Middle Eastern luxury markets.</p>
                   </div>
                 </div>
               </div>
               
               <a href="/contact" class="btn-primary">
-                Elevate Your Brand
+                DEFINE YOUR LEGACY
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service 3: Strategic Communications */}
+      {/* Service 3: Strategic Communications & Narrative Control */}
       <section id="strategic" class="py-24 bg-g2-dark">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
-                03. Strategic Communications
+                03. Strategic Communications & Narrative Control
               </div>
               <h2 class="text-4xl font-bold mb-6">
                 Narratives that Transform
@@ -226,7 +298,7 @@ export const ServicesPage: FC = () => {
                   </div>
                   <div>
                     <h3 class="text-white font-semibold mb-2">Crisis Communications</h3>
-                    <p class="text-gray-400">Rapid response strategies that protect reputation and maintain stakeholder confidence</p>
+                    <p class="text-gray-400">Rapid response strategies that protect reputation and maintain stakeholder confidence in high-stakes situations.</p>
                   </div>
                 </div>
                 
@@ -236,7 +308,7 @@ export const ServicesPage: FC = () => {
                   </div>
                   <div>
                     <h3 class="text-white font-semibold mb-2">Thought Leadership Programs</h3>
-                    <p class="text-gray-400">Strategic content and engagement platforms that establish market authority</p>
+                    <p class="text-gray-400">Building platforms that establish market authority and shape industry-wide conversations.</p>
                   </div>
                 </div>
                 
@@ -246,20 +318,20 @@ export const ServicesPage: FC = () => {
                   </div>
                   <div>
                     <h3 class="text-white font-semibold mb-2">Stakeholder Alignment</h3>
-                    <p class="text-gray-400">Strategic frameworks that align complex stakeholder ecosystems around shared objectives</p>
+                    <p class="text-gray-400">Developing frameworks that align complex ecosystems around a shared vision and narrative.</p>
                   </div>
                 </div>
               </div>
               
               <a href="/contact" class="btn-primary">
-                Transform Your Narrative
+                TRANSFORM YOUR NARRATIVE
               </a>
             </div>
             
             <div class="relative">
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" 
-                alt="Strategic Communications"
+                alt="Narratives that Transform"
                 class="rounded-lg shadow-2xl"
               />
             </div>
@@ -267,56 +339,392 @@ export const ServicesPage: FC = () => {
         </div>
       </section>
 
-      {/* Additional Services */}
-      <section class="py-24 bg-g2-darker">
+      {/* Service 4: Major Event Architecture & Delivery */}
+      <section id="events" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">
-              Specialized Capabilities
-            </h2>
-            <p class="text-xl text-gray-400">
-              Complementary services that amplify strategic impact
-            </p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" 
+                alt="Architecting Global Moments"
+                class="rounded-lg shadow-2xl"
+              />
+            </div>
+            
+            <div class="order-1 lg:order-2">
+              <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
+                04. Major Event Architecture & Delivery
+              </div>
+              <h2 class="text-4xl font-bold mb-6">
+                Architecting Global Moments
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                From concept to execution, we deliver events of national and international importance 
+                that become defining moments for nations, brands, and movements.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Mega-Project Blueprinting</h3>
+                    <p class="text-gray-400">End-to-end conceptualisation and strategic planning for events of national and international importance.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Financial Modelling & Feasibility</h3>
+                    <p class="text-gray-400">Providing C-suite level financial justification and ROI analysis for complex, large-scale projects.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Flawless Operational Delivery</h3>
+                    <p class="text-gray-400">Executing with precision to deliver seamless, high-impact experiences on a global scale.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="/contact" class="btn-primary">
+                BUILD YOUR LEGACY
+              </a>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-g2-dark p-6 rounded-lg border border-white/10">
-              <div class="text-g2-gold text-3xl mb-4">
-                <i class="fas fa-globe-americas"></i>
+      {/* Service 5: Crisis & Reputation Management */}
+      <section id="crisis" class="py-24 bg-g2-dark">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
+                05. Crisis & Reputation Management
               </div>
-              <h3 class="text-lg font-bold mb-2">Regional Intelligence</h3>
-              <p class="text-gray-400 text-sm">Deep understanding of Middle Eastern markets, culture, and decision-making dynamics</p>
+              <h2 class="text-4xl font-bold mb-6">
+                Strategic Reputation Defence
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                When stakes are highest, reputation becomes the ultimate strategic asset. We protect 
+                and rebuild reputational capital through proactive narrative control and rapid response.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Proactive Narrative Shielding</h3>
+                    <p class="text-gray-400">Pre-seeding strategic narratives to build resilience against potential future crises.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Real-Time Crisis Response</h3>
+                    <p class="text-gray-400">Deploying live and digital experiences as a strategic tool to manage high-stakes reputational challenges.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Stakeholder Trust Rebuilding</h3>
+                    <p class="text-gray-400">Executing targeted engagement strategies to restore confidence and control the narrative.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="/contact" class="btn-primary">
+                PROTECT YOUR ASSETS
+              </a>
             </div>
-
-            <div class="bg-g2-dark p-6 rounded-lg border border-white/10">
-              <div class="text-g2-gold text-3xl mb-4">
-                <i class="fas fa-users"></i>
-              </div>
-              <h3 class="text-lg font-bold mb-2">Executive Advisory</h3>
-              <p class="text-gray-400 text-sm">Strategic counsel for C-suite executives navigating complex regional challenges</p>
+            
+            <div class="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?w=800&q=80" 
+                alt="Strategic Reputation Defence"
+                class="rounded-lg shadow-2xl"
+              />
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="bg-g2-dark p-6 rounded-lg border border-white/10">
-              <div class="text-g2-gold text-3xl mb-4">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <h3 class="text-lg font-bold mb-2">Performance Measurement</h3>
-              <p class="text-gray-400 text-sm">Rigorous analytics frameworks that demonstrate strategic ROI</p>
+      {/* Service 6: Corporate & Shareholder Engagement */}
+      <section id="corporate" class="py-24 bg-g2-darker">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" 
+                alt="Aligning Corporate Vision"
+                class="rounded-lg shadow-2xl"
+              />
             </div>
-
-            <div class="bg-g2-dark p-6 rounded-lg border border-white/10">
-              <div class="text-g2-gold text-3xl mb-4">
-                <i class="fas fa-handshake"></i>
+            
+            <div class="order-1 lg:order-2">
+              <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
+                06. Corporate & Shareholder Engagement
               </div>
-              <h3 class="text-lg font-bold mb-2">Partnership Brokering</h3>
-              <p class="text-gray-400 text-sm">Facilitating strategic partnerships and alliances across sectors</p>
+              <h2 class="text-4xl font-bold mb-6">
+                Aligning Corporate Vision
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Critical corporate moments demand precision. We architect shareholder experiences 
+                and communications that build confidence, align stakeholders, and drive value.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">High-Impact AGMs & Investor Days</h3>
+                    <p class="text-gray-400">Designing critical corporate events to ensure precise message delivery and build investor confidence.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">IPO & M&A Communications</h3>
+                    <p class="text-gray-400">Architecting the narrative and stakeholder engagement for pivotal financial transactions.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">C-Suite Message Delivery</h3>
+                    <p class="text-gray-400">Crafting and executing communication strategies that align leadership and key financial stakeholders.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="/contact" class="btn-primary">
+                ENGAGE YOUR STAKEHOLDERS
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 7: Cultural Diplomacy & Placemaking */}
+      <section id="cultural" class="py-24 bg-g2-dark">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
+                07. Cultural Diplomacy & Placemaking
+              </div>
+              <h2 class="text-4xl font-bold mb-6">
+                Building Cultural Capital
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Culture is soft power made tangible. We create cultural experiences and landmarks 
+                that define identity, build bridges, and establish lasting legacy.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">National Identity Showcases</h3>
+                    <p class="text-gray-400">Developing large-scale cultural events that define a location's identity and global brand.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">International Soft Power Initiatives</h3>
+                    <p class="text-gray-400">Using culture as a strategic tool to build bridges and enhance international influence.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Legacy Placemaking</h3>
+                    <p class="text-gray-400">Creating permanent or semi-permanent installations and experiences that become cultural landmarks.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="/contact" class="btn-primary">
+                SHAPE YOUR NARRATIVE
+              </a>
+            </div>
+            
+            <div class="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=800&q=80" 
+                alt="Building Cultural Capital"
+                class="rounded-lg shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 8: Experience Design & Immersive Targeting */}
+      <section id="experience" class="py-24 bg-g2-darker">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
+                alt="Engineering Deep Engagement"
+                class="rounded-lg shadow-2xl"
+              />
+            </div>
+            
+            <div class="order-1 lg:order-2">
+              <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
+                08. Experience Design & Immersive Targeting
+              </div>
+              <h2 class="text-4xl font-bold mb-6">
+                Engineering Deep Engagement
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Strategic experiences are engineered, not imagined. We design every moment to guide 
+                audiences toward specific outcomes through immersive, multi-sensory engagement.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Audience Journey Mapping</h3>
+                    <p class="text-gray-400">Designing every touchpoint of an experience to guide a specific, high-value audience to a desired conclusion.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Immersive Technology Integration</h3>
+                    <p class="text-gray-400">Leveraging cutting-edge technology (AR, VR, interactive installations) to create captivating, memorable moments.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Sensory Design</h3>
+                    <p class="text-gray-400">Crafting multi-sensory environments that engage audiences on a deep, emotional level.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="/contact" class="btn-primary">
+                CAPTIVATE YOUR AUDIENCE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 9: Approach Modelling & ROI */}
+      <section id="roi" class="py-24 bg-g2-dark">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
+                09. Approach Modelling & ROI
+              </div>
+              <h2 class="text-4xl font-bold mb-6">
+                Justifying Strategic Investment
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Strategic investments demand rigorous justification. We develop bespoke frameworks 
+                that measure intangible value and prove ROI to C-suite decision makers.
+              </p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">Intangible Value Metrics</h3>
+                    <p class="text-gray-400">Developing bespoke models to measure the impact of variables like reputation, influence, and brand equity.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">C-Suite Financial Justification</h3>
+                    <p class="text-gray-400">Creating the business case for major projects, linking strategic vision directly to financial and strategic returns.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="text-g2-gold mr-4 mt-1">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-2">ROI Forecasting & Analysis</h3>
+                    <p class="text-gray-400">Providing data-driven forecasts that prove the tangible and intangible value of strategic experiences.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="/contact" class="btn-primary">
+                PROVE THE VALUE
+              </a>
+            </div>
+            
+            <div class="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
+                alt="Justifying Strategic Investment"
+                class="rounded-lg shadow-2xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section class="py-24 bg-g2-dark">
+      <section class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">
