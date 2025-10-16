@@ -85,7 +85,7 @@ export const ProjectsPage: FC = () => {
                   </div>
                   <div class="p-6">
                     <p class="text-gray-400 text-sm line-clamp-3 mb-4">
-                      {project.engagingParagraph}
+                      {project.engagingParagraph.replace(/<[^>]*>/g, '').substring(0, 200)}...
                     </p>
                     <div class="flex items-center text-g2-gold text-sm font-semibold group-hover:underline">
                       View Case Study
