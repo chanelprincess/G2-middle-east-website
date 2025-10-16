@@ -97,9 +97,7 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-white mb-6">Overview</h2>
-            <p class="text-xl text-gray-300 leading-relaxed">
-              {engagingParagraph}
-            </p>
+            <div class="text-xl text-gray-300 leading-relaxed" dangerouslySetInnerHTML={{ __html: engagingParagraph }} />
           </div>
         </div>
       </section>
