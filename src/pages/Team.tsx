@@ -9,16 +9,16 @@ export const TeamPage: FC = () => {
     "name": "Tim Jacobs",
     "alternateName": "Timothy Jacobs",
     "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
-    "image": "https://page.gensparksite.com/v1/base64_upload/f7302d0ced9dfbcf917cee0ddc93bb2dupdate",
-    "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. As Regional Chief Operating Officer for G-2 Middle East & Africa, he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, corporate governance disputes, sovereign positioning, and major event architecture.",
-    "jobTitle": "Regional COO, G-2 Middle East & Africa",
+    "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
+    "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. As Regional Chief Operating Officer for G2 Middle East & Africa, he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, corporate governance disputes, sovereign positioning, and major event architecture.",
+    "jobTitle": "Regional COO, G2 Middle East & Africa",
     "gender": "Male",
     "nationality": "Australian",
     "birthPlace": {
       "@type": "Place",
       "name": "Melbourne, Victoria, Australia"
     },
-
+    "email": "tim@g2middleeast.com",
     "sameAs": [
       "https://www.linkedin.com/in/tim-jacobs-6673091a/",
       "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
@@ -54,7 +54,7 @@ export const TeamPage: FC = () => {
     ],
     "worksFor": {
       "@type": "Organization",
-      "name": "G-2 Middle East & Africa",
+      "name": "G2 Middle East & Africa",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Casta Diva Group"
@@ -82,7 +82,7 @@ export const TeamPage: FC = () => {
     ],
     "keywords": [
       "Tim Jacobs",
-      "G-2 Middle East",
+      "G2 Middle East",
       "Corporate Governance",
       "Major Event Delivery",
       "Sovereign Positioning",
@@ -104,7 +104,7 @@ export const TeamPage: FC = () => {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "G-2 Middle East",
+    "name": "G2 Middle East",
     "description": "Strategic communications and brand architecture for sovereign entities and global brands",
     "founder": {
       "@type": "Person",
@@ -145,18 +145,22 @@ export const TeamPage: FC = () => {
               <div class="lg:col-span-1">
                 <div class="relative">
                   <img 
-                    src="https://page.gensparksite.com/v1/base64_upload/f7302d0ced9dfbcf917cee0ddc93bb2dupdate" 
+                    src="https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b" 
                     alt="Tim Jacobs"
                     class="rounded-lg shadow-2xl w-full grayscale hover:grayscale-0 transition-all duration-500"
                   />
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
                     <h2 class="text-2xl font-bold text-white">Tim Jacobs</h2>
-                    <p class="text-g2-gold font-semibold">Regional COO, G-2 Middle East & Africa</p>
+                    <p class="text-g2-gold font-semibold">Regional COO, G2 Middle East & Africa</p>
                   </div>
                 </div>
                 
                 {/* Contact Info */}
                 <div class="mt-6 space-y-3">
+                  <a href="mailto:tim@g2middleeast.com" class="flex items-center text-gray-300 hover:text-g2-gold transition-colors">
+                    <i class="fas fa-envelope mr-3"></i>
+                    <span class="text-sm">tim@g2middleeast.com</span>
+                  </a>
                   <a href="https://www.linkedin.com/in/tim-jacobs-6673091a/" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-300 hover:text-g2-gold transition-colors">
                     <i class="fab fa-linkedin mr-3"></i>
                     <span class="text-sm">LinkedIn Profile</span>
@@ -174,7 +178,7 @@ export const TeamPage: FC = () => {
                   </p>
                   
                   <p>
-                    As <strong class="text-white">Regional Chief Operating Officer for G-2 Middle East & Africa</strong>, 
+                    As <strong class="text-white">Regional Chief Operating Officer for G2 Middle East & Africa</strong>, 
                     he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, 
                     corporate governance disputes, sovereign positioning, and major event architecture.
                   </p>
