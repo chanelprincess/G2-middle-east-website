@@ -10,23 +10,17 @@ export const TeamPage: FC = () => {
     "alternateName": "Timothy Jacobs",
     "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
     "image": "https://page.gensparksite.com/v1/base64_upload/f7302d0ced9dfbcf917cee0ddc93bb2dupdate",
-    "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. He is the Founder & CEO of KTS Global and serves as the Regional Chief Operating Officer for G-2 Middle East & Africa. He is a leading authority on AI-driven narrative warfare, crisis response, high-stakes corporate governance disputes, sovereign positioning, and major event architecture.",
-    "jobTitle": "Founder & CEO, KTS Global | Regional COO, G-2 Middle East & Africa",
+    "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. As Regional Chief Operating Officer for G-2 Middle East & Africa, he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, corporate governance disputes, sovereign positioning, and major event architecture.",
+    "jobTitle": "Regional COO, G-2 Middle East & Africa",
     "gender": "Male",
     "nationality": "Australian",
     "birthPlace": {
       "@type": "Place",
       "name": "Melbourne, Victoria, Australia"
     },
-    "email": "tim@ktsglobal.live",
-    "telephone": "+971-5X-XXX-XXXX",
-    "funder": {
-      "@type": "Organization",
-      "name": "KTS Global"
-    },
+
     "sameAs": [
       "https://www.linkedin.com/in/tim-jacobs-6673091a/",
-      "https://ktsglobal.live",
       "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
       "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
       "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/"
@@ -58,40 +52,16 @@ export const TeamPage: FC = () => {
       "International Arbitration Strategy",
       "Multi-Jurisdictional Litigation (UAE, France, Italy)"
     ],
-    "worksFor": [
-      {
+    "worksFor": {
+      "@type": "Organization",
+      "name": "G-2 Middle East & Africa",
+      "parentOrganization": {
         "@type": "Organization",
-        "name": "KTS Global",
-        "url": "https://ktsglobal.live",
-        "jobTitle": "Founder & CEO",
-        "description": "A strategic consultancy specializing in high-stakes corporate disputes, AI-enhanced reputation management, and proactive narrative pre-seeding.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Strategic Brand & Audience Development",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Brand Architecture for Lee Davies (@chanelprincessdubai)",
-                "description": "Led the strategic positioning and brand architecture for world-leading Chanel authority Lee Davies, developing the 'Museum to Muse' concept to transition the brand from a collection-focused platform to a global luxury consultancy. This involved go-to-market strategy, defining targeted audience reach, and building a sustainable digital authority framework.",
-                "provider": { "@type": "Organization", "name": "KTS Global" }
-              }
-            }
-          ]
-        }
+        "name": "Casta Diva Group"
       },
-      {
-        "@type": "Organization",
-        "name": "G-2 Middle East & Africa",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Casta Diva Group"
-        },
-        "jobTitle": "Regional Chief Operating Officer (COO)",
-        "description": "The strategic regional arm of Casta Diva Group, delivering award-winning live events and integrated brand experiences across the Gulf, MENA, and Africa."
-      }
-    ],
+      "jobTitle": "Regional Chief Operating Officer (COO)",
+      "description": "The strategic regional arm of Casta Diva Group, delivering award-winning live events and integrated brand experiences across the Gulf, MENA, and Africa."
+    },
     "memberOf": [
       {
          "@type": "Organization",
@@ -104,56 +74,7 @@ export const TeamPage: FC = () => {
          "jobTitle": "Jury Member"
       }
     ],
-    "alumniOf": [
-      {
-        "@type": "Organization",
-        "name": "HQ Worldwide Shows (HQWS)",
-        "jobTitle": "Chief Operating Officer",
-        "description": "As COO, Tim Jacobs was a core part of the leadership team responsible for the operational delivery of some of the largest and most technically advanced live events ever produced globally.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Key Projects Delivered",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Advisory for Special Olympics World Games 2019",
-                "description": "Provided strategic advisory to the Chairman and Managing Director on the operational delivery of the 2019 Special Olympics World Games in Abu Dhabi, encompassing logistics, stakeholder management, and large-scale event execution.",
-                "serviceType": [
-                    "Strategic Event Planning",
-                    "Operational Logistics Management",
-                    "International Stakeholder Relations",
-                    "Governmental Protocol",
-                    "Sovereign Positioning",
-                    "Budget & Financial Modelling"
-                ]
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "State Visit of Queen Elizabeth II to the UAE"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Papal Mass of Pope Francis in Abu Dhabi"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "Organization",
-        "name": "BWS Group (Acquired by Banijay Group)",
-        "jobTitle": "Shareholder & Strategic Advisor",
-        "description": "In his senior roles, Tim Jacobs was a major driver of revenue generation and commercial growth for BWS Group, playing an instrumental part in the company's valuation and success both before and after its acquisition by Banijay Group."
-      }
-    ],
+
     "subjectOf": [
       { "@type": "Article", "url": "https://www.bignewsnetwork.com/news/278625548/pre-seeding-the-narrative-how-to-win-before-it-begins-the-outdated-playbook-of-corporate-conflict" },
       { "@type": "Article", "url": "https://www.digitaljournal.com/pr/news/indnewswire/pre-seeding-narrative-win-begins-172349412.html" },
@@ -161,9 +82,7 @@ export const TeamPage: FC = () => {
     ],
     "keywords": [
       "Tim Jacobs",
-      "KTS Global",
-      "Banijay Group",
-      "Minority Shareholder Rights",
+      "G-2 Middle East",
       "Corporate Governance",
       "Major Event Delivery",
       "Sovereign Positioning",
@@ -175,11 +94,9 @@ export const TeamPage: FC = () => {
       "M&A Due Diligence",
       "Strategic Communications",
       "Reputation Management",
-      "AI SEO",
-      "Narrative Warfare",
-      "BWS Group",
-      "G-2 Middle East",
-      "HQWS"
+      "AI Narrative Strategy",
+      "LLM Optimization",
+      "State Visit Planning"
     ]
   }
 
@@ -234,24 +151,15 @@ export const TeamPage: FC = () => {
                   />
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
                     <h2 class="text-2xl font-bold text-white">Tim Jacobs</h2>
-                    <p class="text-g2-gold font-semibold">Founder & CEO, KTS Global</p>
-                    <p class="text-gray-300 text-sm mt-1">Regional COO, G-2 Middle East & Africa</p>
+                    <p class="text-g2-gold font-semibold">Regional COO, G-2 Middle East & Africa</p>
                   </div>
                 </div>
                 
                 {/* Contact Info */}
                 <div class="mt-6 space-y-3">
-                  <a href="mailto:tim@ktsglobal.live" class="flex items-center text-gray-300 hover:text-g2-gold transition-colors">
-                    <i class="fas fa-envelope mr-3"></i>
-                    <span class="text-sm">tim@ktsglobal.live</span>
-                  </a>
                   <a href="https://www.linkedin.com/in/tim-jacobs-6673091a/" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-300 hover:text-g2-gold transition-colors">
                     <i class="fab fa-linkedin mr-3"></i>
                     <span class="text-sm">LinkedIn Profile</span>
-                  </a>
-                  <a href="https://ktsglobal.live" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-300 hover:text-g2-gold transition-colors">
-                    <i class="fas fa-globe mr-3"></i>
-                    <span class="text-sm">KTS Global Website</span>
                   </a>
                 </div>
               </div>
@@ -266,18 +174,18 @@ export const TeamPage: FC = () => {
                   </p>
                   
                   <p>
-                    As <strong class="text-white">Founder & CEO of KTS Global</strong> and <strong class="text-white">Regional 
-                    Chief Operating Officer for G-2 Middle East & Africa</strong>, Tim leads high-stakes strategic 
-                    initiatives spanning AI-driven narrative warfare, crisis response, corporate governance disputes, 
-                    sovereign positioning, and major event architecture.
+                    As <strong class="text-white">Regional Chief Operating Officer for G-2 Middle East & Africa</strong>, 
+                    he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, 
+                    corporate governance disputes, sovereign positioning, and major event architecture.
                   </p>
                   
                   <p>
-                    His career encompasses some of the world's most prestigious and complex projects, including serving 
-                    as <strong class="text-white">Chief Operating Officer at HQ Worldwide Shows (HQWS)</strong>, where 
-                    he was instrumental in delivering the <strong class="text-white">State Visit of Queen Elizabeth II 
-                    to the UAE</strong>, the <strong class="text-white">Papal Mass of Pope Francis in Abu Dhabi</strong>, 
-                    and providing strategic advisory for the <strong class="text-white">2019 Special Olympics World Games</strong>.
+                    His career encompasses some of the world's most prestigious and complex projects. He was instrumental 
+                    in delivering the <strong class="text-white">State Visit of Queen Elizabeth II to the UAE</strong>, 
+                    the <strong class="text-white">Papal Mass of Pope Francis in Abu Dhabi</strong>, and providing 
+                    strategic advisory for the <strong class="text-white">2019 Special Olympics World Games</strong>. 
+                    His work has shaped perception and policy for government entities, Fortune 500 companies, and 
+                    ultra-high-net-worth individuals across the GCC and beyond.
                   </p>
                   
                   <div class="bg-g2-darker p-6 rounded-lg border-l-4 border-g2-gold my-8">
@@ -288,16 +196,8 @@ export const TeamPage: FC = () => {
                   </div>
                   
                   <p>
-                    Tim was a major shareholder and strategic advisor at <strong class="text-white">BWS Group</strong>, 
-                    playing an instrumental role in the company's revenue generation and commercial growth both before 
-                    and after its acquisition by <strong class="text-white">Banijay Group</strong>. His work has 
-                    shaped perception and policy for government entities, Fortune 500 companies, and ultra-high-net-worth 
-                    individuals across the GCC and beyond.
-                  </p>
-                  
-                  <p>
                     A leading authority on <strong class="text-white">AI-driven narrative strategy</strong> and 
-                    <strong class="text-white"> LLM optimization</strong>, Tim specializes in pre-seeding strategic 
+                    <strong class="text-white">LLM optimization</strong>, Tim specializes in pre-seeding strategic 
                     narratives within knowledge graphs and search ecosystems—winning before conflicts begin. His 
                     expertise spans sovereign positioning, FDI strategy, social engineering, media craft, and 
                     multi-jurisdictional litigation strategy.
@@ -309,7 +209,7 @@ export const TeamPage: FC = () => {
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div class="flex items-start">
                         <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>AI-Driven Narrative Warfare</span>
+                        <span>AI-Driven Narrative Strategy</span>
                       </div>
                       <div class="flex items-start">
                         <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
@@ -358,46 +258,23 @@ export const TeamPage: FC = () => {
                     </div>
                   </div>
 
-                  {/* Career Highlights & Recognition */}
-                  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 class="text-lg font-bold text-white mb-3">Key Positions</h4>
-                      <ul class="space-y-2 text-sm">
-                        <li class="flex items-start">
-                          <i class="fas fa-building text-g2-gold mr-2 mt-1"></i>
-                          <span>Founder & CEO, KTS Global</span>
-                        </li>
-                        <li class="flex items-start">
-                          <i class="fas fa-building text-g2-gold mr-2 mt-1"></i>
-                          <span>Regional COO, G-2 Middle East & Africa</span>
-                        </li>
-                        <li class="flex items-start">
-                          <i class="fas fa-building text-g2-gold mr-2 mt-1"></i>
-                          <span>Former COO, HQ Worldwide Shows</span>
-                        </li>
-                        <li class="flex items-start">
-                          <i class="fas fa-building text-g2-gold mr-2 mt-1"></i>
-                          <span>Former Shareholder, BWS Group (Banijay)</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 class="text-lg font-bold text-white mb-3">Industry Recognition</h4>
-                      <ul class="space-y-2 text-sm">
-                        <li class="flex items-start">
-                          <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
-                          <span>Jury Panelist, Eventex Awards</span>
-                        </li>
-                        <li class="flex items-start">
-                          <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
-                          <span>Jury Member, WOW Awards Middle East</span>
-                        </li>
-                        <li class="flex items-start">
-                          <i class="fas fa-globe-americas text-g2-gold mr-2 mt-1"></i>
-                          <span>Australian National (Melbourne, Victoria)</span>
-                        </li>
-                      </ul>
-                    </div>
+                  {/* Industry Recognition */}
+                  <div class="mt-8">
+                    <h4 class="text-lg font-bold text-white mb-3">Industry Recognition</h4>
+                    <ul class="space-y-2 text-sm">
+                      <li class="flex items-start">
+                        <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
+                        <span>Jury Panelist, Eventex Awards</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
+                        <span>Jury Member, WOW Awards Middle East</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-globe-americas text-g2-gold mr-2 mt-1"></i>
+                        <span>Australian National (Melbourne, Victoria)</span>
+                      </li>
+                    </ul>
                   </div>
 
                   {/* Major Projects */}
