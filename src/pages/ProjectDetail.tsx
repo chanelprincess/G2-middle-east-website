@@ -381,8 +381,8 @@ export const projectsData = {
     subtitle: 'Architecting a New Paradigm of Fashion Authority',
     category: 'Luxury Brand Strategy',
     year: '2024 and ongoing',
-    heroImage: 'https://page.gensparksite.com/v1/base64_upload/12cc9bcc5a5294a7f99d39eb8596254e',
-    heroImagePrompt: 'Aerial view of elegant woman in red dress lying on modern dark sofa with reflection in pool below. Luxury lifestyle photography with sophisticated architectural setting, minimalist aesthetic, high-end fashion editorial style.',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/c904feb3801cd69d7fdc08388ae95e53',
+    heroImagePrompt: 'Woman in classic black Chanel tweed dress at sunset with dramatic golden hour sky, face clearly visible with warm smile, sophisticated lifestyle photography, confident and approachable pose.',
     engagingParagraph: `<p class="mb-4"><strong>Client:</strong> Lee Davies (@chanelprincessdubai)</p>
     
     <p class="mb-4"><strong>Objective:</strong> To transform a world class private fashion collection from a personal passion into a globally recognized cultural institution, repositioning the principal from a social media influencer into the world's leading independent authority on Chanel.</p>
@@ -402,13 +402,23 @@ export const projectsData = {
     <p>This project is a definitive case study in G2's core philosophy: The Architecture of Intangible Value. We did not simply manage a brand; we built an institution, proving that in the modern world, the most powerful assets are not just seen, but understood.</p>`,
     supportingImages: [
       {
+        url: 'https://page.gensparksite.com/v1/base64_upload/ce9957877be74cbc39a9aee354b106fa',
+        prompt: 'Street style portrait, woman in black Chanel jacket with logo sleeves, European city street background, face visible, confident pose.',
+        caption: 'Global authority: From digital platform to internationally recognized Chanel expert'
+      },
+      {
         url: 'https://page.gensparksite.com/v1/base64_upload/e429e754dc9979ffb7d20a4b6268a913',
-        prompt: 'Fashion model in white feathered Chanel haute couture dress with embellished bodice, carrying crystal-studded bag, luxurious garden setting.',
+        prompt: 'Fashion model in white feathered Chanel haute couture dress with embellished bodice, carrying crystal-studded bag, face looking upward, luxurious garden setting.',
         caption: 'Curatorial excellence: Museum-quality documentation of rare Chanel haute couture'
       },
       {
+        url: 'https://page.gensparksite.com/v1/base64_upload/12cc9bcc5a5294a7f99d39eb8596254e',
+        prompt: 'Aerial view of elegant woman in red dress lying on modern dark sofa with pool reflection, face visible from above, luxury lifestyle photography.',
+        caption: 'Timeless elegance: Building trust premium through authentic luxury lifestyle presentation'
+      },
+      {
         url: 'https://page.gensparksite.com/v1/base64_upload/ce1fd06dc60a786bd5603ab9f9d85627',
-        prompt: 'Black and white portrait of woman wearing Chanel pearl bracelet and necklace with CC logo, elegant pose, soft lighting.',
+        prompt: 'Black and white portrait of woman wearing Chanel pearl bracelet and necklace with CC logo, face in elegant pose, soft lighting.',
         caption: 'Heritage pieces: Documenting the provenance and craftsmanship of iconic Chanel jewelry'
       },
       {
@@ -417,19 +427,9 @@ export const projectsData = {
         caption: 'Educational framework: Detailed micro-essays on design evolution and hardware significance'
       },
       {
-        url: 'https://page.gensparksite.com/v1/base64_upload/ce9957877be74cbc39a9aee354b106fa',
-        prompt: 'Street style portrait, woman in black Chanel jacket with logo sleeves, European city street background, confident pose.',
-        caption: 'Global authority: From digital platform to internationally recognized Chanel expert'
-      },
-      {
         url: 'https://page.gensparksite.com/v1/base64_upload/db9b187ee77b489c5acfe0cf71f97f5d',
         prompt: 'Detailed shot of Chanel chain belt with script text on pink dress, pink manicured nails, luxury accessory styling.',
         caption: 'Collection depth: Over 1,300 Chanel pieces with 30% classified as rare'
-      },
-      {
-        url: 'https://page.gensparksite.com/v1/base64_upload/c904feb3801cd69d7fdc08388ae95e53',
-        prompt: 'Woman in classic black Chanel tweed dress at sunset, dramatic golden hour sky, sophisticated lifestyle photography.',
-        caption: 'Timeless elegance: Building trust premium through authentic luxury lifestyle presentation'
       }
     ]
   },
