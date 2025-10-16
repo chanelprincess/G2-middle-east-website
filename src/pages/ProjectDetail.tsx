@@ -336,29 +336,29 @@ export const projectsData = {
     <p>This project stands as a testament to a core belief: in the architecture of major events, particularly those on a sovereign scale, the strategic crafting of the media experience is as important as the physical delivery of the event itself. It required a deep partnership with the Ministry of Presidential Affairs, a relentless focus on the strategic objective, and the ability to build and direct a world-class team. We did not simply manage a visit; we architected a global conversation and, in doing so, helped craft a moment in history.</p>`,
     supportingImages: [
       {
-        url: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=800&q=80',
-        prompt: 'International Media Centre with multiple broadcast studios, CNN, BBC, Sky News setups, journalists working at editing suites, Abu Dhabi skyline backdrop.',
-        caption: 'Strategic instrument: The International Media Centre as a 24/7 broadcast hub for global narrative control'
+        url: 'https://page.gensparksite.com/v1/base64_upload/7bb6b425a781831018ba9f8ea2417df1',
+        prompt: 'Pope Francis in popemobile waving to crowds, security detail, Vatican flags, outdoor papal mass stage in background, Abu Dhabi.',
+        caption: 'Historic arrival: Pope Francis greets the faithful during the first-ever Papal Visit to the Arabian Peninsula'
       },
       {
-        url: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800&q=80',
-        prompt: 'Press briefing room with international journalists, faith leaders at podium, translation booths, professional media relations team guiding coverage.',
-        caption: 'Proactive narrative management: Guiding 2,000+ international journalists to the stories that mattered'
+        url: 'https://page.gensparksite.com/v1/base64_upload/4b6f46b5780a279cad20b91e8e3ec3ae',
+        prompt: 'Wide-angle fisheye view of Zayed Sports City stadium filled with 180,000 worshippers, massive altar structure, architectural roof design.',
+        caption: 'Operational mastery: 180,000 faithful gathered at Zayed Sports City for the historic Papal Mass'
       },
       {
-        url: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?w=800&q=80',
-        prompt: 'Aerial view of Zayed Sports City with 180,000 worshippers, massive altar structure, perfect crowd organization, security and logistics coordination.',
-        caption: 'Operational foundation: Flawless execution of 180,000-person Papal Mass enabling media focus'
+        url: 'https://page.gensparksite.com/v1/base64_upload/655e1c1b7b35494f7a7a787c8e0937a4',
+        prompt: 'Modern white altar stage with large cross, choir and clergy in white vestments, thousands of faithful seated in organized rows.',
+        caption: 'Sacred architecture: Custom-designed altar balancing reverence with regional context and ceremonial protocols'
       },
       {
-        url: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
-        prompt: 'Document on Human Fraternity signing ceremony, Pope Francis and Grand Imam of Al-Azhar, global dignitaries, historic handshake moment.',
-        caption: 'Strategic objective achieved: Platform for signing the Document on Human Fraternity for World Peace'
+        url: 'https://page.gensparksite.com/v1/base64_upload/829074eedae0ce38a57bb030437b5c19',
+        prompt: 'Panoramic view of stadium with international media in foreground, cameras and broadcast equipment, 180,000 attendees in stadium.',
+        caption: 'Media coordination: Strategic positioning of 2,000+ international journalists to capture the global narrative'
       },
       {
-        url: 'https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=800&q=80',
-        prompt: 'Global newspaper headlines and broadcast screens showing positive coverage, themes of tolerance and dialogue, UAE positioned as center of interfaith unity.',
-        caption: 'Mission accomplished: Global media narrative centered on hope, dialogue, and UAE as beacon of tolerance'
+        url: 'https://page.gensparksite.com/v1/base64_upload/29ee6df600710510d15b721a811f75bc',
+        prompt: 'Broadcast journalist in suit with branded microphone reporting live, massive crowd in stadium background, professional media setup.',
+        caption: 'Global broadcast hub: Live coverage beamed to billions worldwide through strategic media architecture'
       }
     ]
   },
