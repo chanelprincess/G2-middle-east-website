@@ -6,6 +6,7 @@ import { HomePage } from './pages/Home'
 import { ServicesPage } from './pages/Services'
 import { TeamPage } from './pages/Team'
 import { ContactPage } from './pages/Contact'
+import { ServiceDetailPage, servicesData } from './pages/ServiceDetail'
 
 type Bindings = {
   DB: D1Database
@@ -118,6 +119,24 @@ app.get('/whitepapers', (c) => {
     {
       title: 'Whitepapers | G2 Middle East',
       description: 'Strategic whitepapers and downloadable insights'
+    }
+  )
+})
+
+// Service Detail Pages - Dynamic routing for all 9 services
+app.get('/services/:slug', (c) => {
+  const slug = c.req.param('slug')
+  const serviceData = servicesData[slug as keyof typeof servicesData]
+  
+  if (!serviceData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <ServiceDetailPage {...serviceData} />,
+    {
+      title: `${serviceData.title} | G2 Middle East`,
+      description: serviceData.description.substring(0, 160)
     }
   )
 })

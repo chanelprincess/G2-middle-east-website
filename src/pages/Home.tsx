@@ -64,8 +64,137 @@ export const HomePage: FC = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Service Grid - 9 Services */}
       <section class="py-24 bg-g2-darker">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            {/* Grid of 9 Service Buttons */}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              {/* Service 1: Sovereign & Governmental Advisory */}
+              <a href="/services/sovereign-governmental-advisory" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Sovereign & Governmental Advisory
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Strategic counsel for nations and governments
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 2: Mega-Event Architecture */}
+              <a href="/services/mega-event-architecture" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Mega-Event Architecture
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  State-visit level event delivery and planning
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 3: Narrative Warfare & Pre-Seeding */}
+              <a href="/services/narrative-warfare-pre-seeding" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Narrative Warfare & Pre-Seeding
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  AI-driven narrative strategy and LLM optimization
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 4: Luxury Brand Positioning */}
+              <a href="/services/luxury-brand-positioning" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Luxury Brand Positioning
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Premium brand architecture and market positioning
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 5: Crisis Communications */}
+              <a href="/services/crisis-communications" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Crisis Communications
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Rapid response and reputation protection
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 6: Corporate Governance Disputes */}
+              <a href="/services/corporate-governance-disputes" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Corporate Governance Disputes
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Strategic communications for high-stakes disputes
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 7: FDI Strategy & Political Positioning */}
+              <a href="/services/fdi-strategy-political-positioning" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  FDI Strategy & Political Positioning
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Foreign investment strategy and political advisory
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 8: Stakeholder Alignment */}
+              <a href="/services/stakeholder-alignment" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Stakeholder Alignment
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Complex stakeholder ecosystem management
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 9: Market Entry Strategy */}
+              <a href="/services/market-entry-strategy" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Market Entry Strategy
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Strategic roadmaps for Middle East expansion
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section class="py-24 bg-g2-darker" style="display: none;">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
