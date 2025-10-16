@@ -44,12 +44,18 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
                   colors: {
                     'g2-dark': '#1A1A1A',
                     'g2-darker': '#0F0F0F',
-                    'g2-gold': '#C9A961',
-                    'g2-light': '#F5F5F5'
+                    'g2-gold': '#B89A6A',
+                    'g2-light': '#F5F5F5',
+                    'g2-white': '#FFFFFF'
                   },
                   fontFamily: {
-                    'sans': ['Inter', 'system-ui', 'sans-serif'],
-                    'serif': ['Crimson Pro', 'Georgia', 'serif']
+                    'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    'serif': ['Playfair Display', 'Georgia', 'Garamond', 'serif']
+                  },
+                  letterSpacing: {
+                    'wider': '0.05em',
+                    'widest': '0.1em',
+                    'ultra': '0.15em'
                   }
                 }
               }
@@ -57,10 +63,10 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
           `
         }} />
         
-        {/* Google Fonts */}
+        {/* Google Fonts - Playfair Display & Inter */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-g2-darker text-white antialiased">
         {children}
