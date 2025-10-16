@@ -458,7 +458,7 @@ export const ServicesPage: FC = () => {
             
             <div class="relative">
               <img 
-                src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?w=800&q=80" 
+                src="https://cdn1.genspark.ai/user-upload-image/5_generated/773d5d9b-7b8f-476c-9ae9-c48e55a4aef5.jpeg" 
                 alt="Strategic Reputation Management"
                 class="rounded-lg shadow-2xl"
               />
