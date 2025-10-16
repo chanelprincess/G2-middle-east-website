@@ -284,14 +284,14 @@ export const projectsData = {
     <p>The successful delivery of the State Visit of Queen Elizabeth II stands as a benchmark in the world of high level event production. It demonstrates a fundamental principle that now drives the G2 philosophy: the most complex challenges present the greatest opportunities to demonstrate mastery. The project's legacy is not just in the diplomatic ties it strengthened, but in its execution. It is a testament to the power of strategic foresight, meticulous planning, and an unwavering commitment to flawless delivery in the most demanding circumstances imaginable. This is the standard we bring to every engagement: architecting moments that not only succeed, but also build enduring value.</p>`,
     supportingImages: [
       {
-        url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
-        prompt: 'The British Royal Standard flag flying alongside UAE flag against clear blue sky, both pristine and perfectly positioned.',
-        caption: 'Symbolic partnership: Flags representing centuries of diplomatic heritage'
+        url: 'https://page.gensparksite.com/v1/base64_upload/9592d4428b4b807a84d16d0a958be78b',
+        prompt: 'UAE ceremonial guard in white traditional dress standing at attention along red carpet at modern architectural pavilion, formal state visit protocol, ceremonial precision.',
+        caption: 'Ceremonial precision: UAE Presidential Guard honoring Her Majesty with impeccable protocol'
       },
       {
-        url: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80',
-        prompt: 'An immaculate ceremonial motorcade formation with British and Emirati official vehicles.',
-        caption: 'Precision logistics: Protocol-perfect motorcade coordination'
+        url: 'https://page.gensparksite.com/v1/base64_upload/043ed648d525409d46e9bcc70a6840ac',
+        prompt: 'Queen Elizabeth II in floral dress walking with UAE leadership in traditional dress, children waving British flags, modern architectural backdrop, official state visit welcome ceremony.',
+        caption: 'Cultural bridge: Her Majesty greeted by UAE leadership and young citizens with British flags'
       },
       {
         url: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=800&q=80',
