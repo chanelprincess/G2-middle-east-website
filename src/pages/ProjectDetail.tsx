@@ -402,13 +402,13 @@ export const projectsData = {
     <p>This project is a definitive case study in G2's core philosophy: The Architecture of Intangible Value. We did not simply manage a brand; we built an institution, proving that in the modern world, the most powerful assets are not just seen, but understood.</p>`,
     supportingImages: [
       {
-        url: 'https://page.gensparksite.com/v1/base64_upload/df7a9647025e835ff474f73f59c57b37',
-        prompt: 'Black and white street style portrait, woman in black Chanel sequined jacket with logo sleeves, European city street background, face visible, confident pose.',
+        url: 'https://page.gensparksite.com/v1/base64_upload/12410ea02d7e18b95c92501cf2f62b00',
+        prompt: 'Black and white poolside editorial, woman in black and white striped Chanel swimwear sitting on concrete pool steps, elegant side profile with flowing blonde hair, luxury resort aesthetic.',
         caption: 'Global authority: From digital platform to internationally recognized Chanel expert'
       },
       {
-        url: 'https://page.gensparksite.com/v1/base64_upload/9eee3a82a7d0d9951904128f507abd4',
-        prompt: 'Elegant portrait in white feathered Chanel haute couture dress with embellished bodice, face looking upward with refined expression, luxurious garden setting.',
+        url: 'https://page.gensparksite.com/v1/base64_upload/9eee3a827a7d0d9951904128f507abd4',
+        prompt: 'Portrait in white Chanel haute couture dress with crystal-embellished bodice and feathered shoulders, face tilted upward in elegant pose, soft focus garden background.',
         caption: 'Curatorial excellence: Museum-quality documentation of rare Chanel haute couture'
       },
       {
