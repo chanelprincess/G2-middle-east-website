@@ -15,6 +15,7 @@ interface TeamDetailProps {
     title: string
     description: string
   }[]
+  customSchema?: any
 }
 
 export const TeamDetailPage: FC<TeamDetailProps> = ({
@@ -27,10 +28,11 @@ export const TeamDetailPage: FC<TeamDetailProps> = ({
   description,
   quote,
   expertise,
-  projects
+  projects,
+  customSchema
 }) => {
-  // Schema.org Person markup
-  const personSchema = {
+  // Schema.org Person markup - use custom schema if provided, otherwise generate default
+  const personSchema = customSchema || {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": name,
@@ -244,7 +246,7 @@ export const teamData = {
   'linda-guldemond': {
     slug: 'linda-guldemond',
     name: 'Linda Guldemond',
-    jobTitle: 'Director of Client Services',
+    jobTitle: 'Director of Client Services & Operations',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
     linkedIn: 'https://www.linkedin.com/in/linda-guldemond/',
     description: `
@@ -253,7 +255,7 @@ export const teamData = {
         on high-stakes government and global brand initiatives.
       </p>
       <p class="mb-4">
-        As <strong class="text-white">Director of Client Services</strong> at G2 Middle East, Linda oversees the 
+        As <strong class="text-white">Director of Client Services & Operations</strong> at G2 Middle East, Linda oversees the 
         operational delivery of complex, multi-layered projects—from sovereign-level events to intricate brand 
         activations. Her approach is built on precision, accountability, and an unwavering commitment to client 
         satisfaction under the most demanding conditions.
@@ -271,6 +273,59 @@ export const teamData = {
       </p>
     `,
     quote: '"Excellence is not about avoiding problems—it\'s about solving them before anyone knows they existed. That\'s where real value lives."',
+    customSchema: {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Linda Guldemond",
+      "jobTitle": "Director of Client Services & Operations",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "G2 Middle East"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "description": "Linda Guldemond is an internationally experienced Director of Client Services & Operations, affectionately known as 'the Fixer' for her tenacious and detail-oriented approach to complex event delivery. With a background that spans professional ballet to high-stakes corporate hospitality, she is a trusted leader in managing protocol and guest experiences for government entities and global brands across the Middle East and Africa. Her expertise lies in translating strategic concepts into flawless on-site operations.",
+      "knowsAbout": [
+        "Client Services & Operations",
+        "High-Profile Event Delivery",
+        "Governmental Protocol",
+        "VIP & Stakeholder Management",
+        "Luxury Hospitality",
+        "Crisis Management & Problem Solving",
+        "Team Leadership"
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Role",
+          "roleName": "Operational Lead",
+          "description": "Led high-level protocol and guest experience programs for key delegations at NEOM.",
+          "namedPosition": "NEOM Delegations"
+        },
+        {
+          "@type": "Role",
+          "roleName": "Delivery Lead",
+          "description": "Played a vital role in the successful operational delivery of the inaugural XP Music Conference on behalf of MDL Beast.",
+          "namedPosition": "XP Music Conference"
+        },
+        {
+          "@type": "Role",
+          "roleName": "Protocol & Hospitality Manager",
+          "description": "Managed group protocol and hospitality for major projects introducing global brands to the Kingdom of Saudi Arabia.",
+          "namedPosition": "Global Brand Activations (KSA)"
+        }
+      ],
+      "keywords": [
+        "Linda Guldemond",
+        "G2 Middle East",
+        "Event Operations",
+        "Client Services",
+        "NEOM",
+        "XP Music Conference",
+        "Saudi Arabia Events"
+      ]
+    },
     expertise: [
       'Client Services & Relationship Management',
       'Major Event Operations & Delivery',

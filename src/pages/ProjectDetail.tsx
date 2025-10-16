@@ -453,116 +453,131 @@ export const projectsData = {
     ]
   },
 
-  'dubai-expo-2020-pavilion': {
-    slug: 'dubai-expo-2020-pavilion',
-    title: 'Dubai Expo 2020 National Pavilion',
-    subtitle: 'Nation Branding at World Stage: 190 Countries, 25 Million Visitors',
-    category: 'Nation Branding',
-    year: '2021',
-    heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
-    heroImagePrompt: 'Futuristic UAE pavilion architecture at night, dramatic lighting, falcon wing design, crowds visible, Expo 2020 atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'As strategic advisors to Dubai Expo 2020, we helped shape the narrative architecture and visitor experience strategy for the UAE National Pavilion. Our work ensured the nation\'s story—rooted in heritage but oriented toward the future—resonated with 25 million visitors from 190 countries, projecting ambition, innovation, and global leadership on the world\'s largest cultural stage.',
+  'red-sea-film-festival': {
+    slug: 'red-sea-film-festival',
+    title: 'The Red Sea International Film Festival',
+    subtitle: 'Celebrating Cinematic Excellence in Saudi Arabia',
+    category: 'Cultural Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=1600&q=80',
+    heroImagePrompt: 'A stunning, wide-angle shot of a glamorous red carpet event at night, with the unique architecture of the Red Sea Film Festival venue in the background, lit beautifully. The focus is on the atmosphere of prestige and exclusivity. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We were entrusted to orchestrate the complete guest experience for the world\'s most influential film talent at one of the region\'s most important new cultural landmarks. Our role was to ensure that every moment—from arrival to the closing credits—was as flawless and memorable as the cinema being celebrated, reinforcing the Kingdom\'s position as a global hub for culture and creativity.',
     supportingImages: [
       {
-        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
-        prompt: 'Inside UAE pavilion: immersive digital experience showing UAE\'s journey from desert to global hub.',
-        caption: 'Narrative journey: Immersive storytelling connecting heritage with future vision'
+        url: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80',
+        prompt: 'A candid-style, black and white photo of well-dressed international guests mingling and networking in a sophisticated lounge area.',
+        caption: 'Global cinema community: International film talent connecting in elegant surroundings'
       },
       {
-        url: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
-        prompt: 'Diverse international visitors experiencing interactive exhibits, faces showing wonder and engagement.',
-        caption: 'Global engagement: 25 million visitors experiencing UAE\'s story'
+        url: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80',
+        prompt: 'A close-up shot focusing on a detail of the event design, like a custom G2-branded lectern on stage or an elegant table setting.',
+        caption: 'Design excellence: Every detail reflecting the prestige of the celebration'
       },
       {
-        url: 'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=800&q=80',
-        prompt: 'VIP tour with heads of state and dignitaries being guided through pavilion by UAE officials.',
-        caption: 'Diplomatic showcase: World leaders experiencing UAE\'s strategic narrative'
+        url: 'https://images.unsplash.com/photo-1574267432644-f610a6733291?w=800&q=80',
+        prompt: 'An over-the-shoulder shot from behind the audience looking towards a brightly lit stage during an awards presentation.',
+        caption: 'Awards ceremony: Celebrating cinematic achievement on the global stage'
       },
       {
-        url: 'https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?w=800&q=80',
-        prompt: 'Architectural detail shot of pavilion\'s falcon wing structure, representing UAE\'s symbol and ambition.',
-        caption: 'Architectural symbolism: Design as narrative device for national identity'
+        url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+        prompt: 'A shot of the sun setting over the Red Sea, as seen from the event\'s waterfront terrace.',
+        caption: 'Coastal elegance: The Red Sea providing a stunning natural backdrop'
       },
       {
-        url: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
-        prompt: 'Evening shot of pavilion with long queues of visitors, demonstrating popularity and global interest.',
-        caption: 'Strategic success: Sustained visitor interest throughout six-month expo'
+        url: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80',
+        prompt: 'An architectural shot of the festival venue, emphasizing its modern design against the coastal landscape.',
+        caption: 'Architectural landmark: Contemporary venue reflecting Saudi Arabia\'s cultural ambition'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&q=80',
+        prompt: 'A dynamic photo of a media scrum, with photographers and journalists capturing the arrival of a VIP.',
+        caption: 'Global attention: International media capturing the festival\'s prestigious moments'
       }
     ]
   },
 
-  'aldar-properties-launch': {
-    slug: 'aldar-properties-launch',
-    title: 'Aldar Properties Luxury Development Launch',
-    subtitle: 'Architectural Vision Meets Market Reality: $500M Sellout',
-    category: 'Real Estate Marketing',
-    year: '2023',
-    heroImage: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&q=80',
-    heroImagePrompt: 'Luxury waterfront development render with modern architecture, Abu Dhabi skyline, golden hour, sophisticated architectural visualization. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'For Aldar Properties, we architected the launch strategy for a $500 million ultra-luxury waterfront development. Our approach went beyond traditional real estate marketing—we positioned the project as a lifestyle statement and investment thesis, curating an exclusive launch event and strategic media campaign that resulted in 80% pre-sales within 72 hours and complete sellout within 90 days.',
+  'neom-guest-experience': {
+    slug: 'neom-guest-experience',
+    title: 'NEOM',
+    subtitle: 'A Vision of the Future: Innovation, Technology, and Sustainable Living',
+    category: 'Strategic Advisory',
+    year: '2024',
+    heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
+    heroImagePrompt: 'A breathtaking, futuristic architectural rendering of a key NEOM landmark like \'The Line\' or \'Oxagon\', shown at dusk with dramatic, integrated lighting. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'For a project that is redefining the future, the guest experience for its most important delegations must be nothing short of visionary. We were tasked with designing and executing high-level protocol and hospitality programs that mirrored NEOM\'s ambition, demonstrating the scale and promise of this giga-project to the world\'s leaders and investors.',
     supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1560264418-c4445382edbc?w=800&q=80',
+        prompt: 'A shot of a small group of VIPs in suits looking at a sophisticated holographic model of NEOM inside a dark, high-tech presentation room.',
+        caption: 'Visionary briefings: World leaders experiencing NEOM\'s futuristic master plan'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
+        prompt: 'A close-up on the hands of an executive gesturing towards a digital masterplan on a massive interactive screen.',
+        caption: 'Interactive presentations: Demonstrating the scale and ambition through technology'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80',
+        prompt: 'A luxury electric vehicle gliding silently through a pristine, futuristic landscape, hinting at the sustainable transport within NEOM.',
+        caption: 'Sustainable mobility: Showcasing NEOM\'s commitment to green transportation'
+      },
       {
         url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
-        prompt: 'Exclusive VIP launch event with UHNW buyers, champagne, architectural models, Abu Dhabi elite gathering.',
-        caption: 'Strategic exclusivity: Curated launch event for ultra-high-net-worth buyers'
+        prompt: 'A minimalist, high-end hospitality setting, perhaps a private dining room with a stunning desert view through floor-to-ceiling windows.',
+        caption: 'Elevated hospitality: Guest experiences reflecting NEOM\'s premium positioning'
       },
       {
-        url: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-        prompt: 'Luxury penthouse interior render showing floor-to-ceiling windows, contemporary design, waterfront views.',
-        caption: 'Aspirational lifestyle: Visual storytelling elevating product positioning'
+        url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+        prompt: 'A drone shot looking down on a section of NEOM under construction, showing the immense scale and ambition.',
+        caption: 'Giga-project scale: Aerial perspective demonstrating unprecedented development'
       },
       {
-        url: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
-        prompt: 'Sales center with real-time digital board showing units being reserved, creating urgency and demand.',
-        caption: 'Market momentum: Real-time visualization driving purchase decisions'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=800&q=80',
-        prompt: 'International property media coverage montage: publications, online features, investment reports.',
-        caption: 'Global reach: Strategic media positioning attracting international capital'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80',
-        prompt: 'Handshake between Aldar executive and investor, contracts visible, celebrating successful transaction.',
-        caption: 'Strategic outcome: $500 million sellout driven by positioning and execution'
+        url: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+        prompt: 'An abstract image representing data and technology, such as light trails or network grids, overlaid on a desert landscape.',
+        caption: 'Digital infrastructure: Technology powering the city of the future'
       }
     ]
   },
 
-  'abu-dhabi-finance-week': {
-    slug: 'abu-dhabi-finance-week',
-    title: 'Abu Dhabi Finance Week',
-    subtitle: 'Positioning Capital as Strategic Asset: 5,000+ Global Leaders',
-    category: 'Financial Services',
-    year: '2024',
-    heroImage: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80',
-    heroImagePrompt: 'Modern financial district conference center, global finance leaders networking, Abu Dhabi skyline visible, sophisticated business atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We orchestrated Abu Dhabi Finance Week, a strategic convening of 5,000+ global financial leaders designed to position the emirate as a capital hub bridging East and West. Beyond event logistics, we curated programming that drove substantive dialogue on sovereign wealth, Islamic finance, and emerging market capital flows—establishing Abu Dhabi as a critical node in global finance infrastructure.',
+  'mdl-beast-xp-music-conference': {
+    slug: 'mdl-beast-xp-music-conference',
+    title: 'MDL Beast - XP Music Conference',
+    subtitle: 'The Epicenter of the Middle East\'s Music Industry',
+    category: 'Music & Entertainment',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1600&q=80',
+    heroImagePrompt: 'A dynamic, wide shot from the back of a packed conference auditorium, showing a panel of speakers on a stylishly lit stage, with the iconic XP branding visible. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'At the heart of the region\'s music revolution, we were the operational engine for its most important strategic gathering. We managed the end-to-end delivery of the inaugural XP Music Conference, creating a seamless environment for artists, executives, and innovators to connect and define the future of the industry.',
     supportingImages: [
       {
-        url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-        prompt: 'Main stage keynote with central bank governors and finance ministers, international flags visible.',
-        caption: 'Policy dialogue: Central bankers shaping global monetary policy discourse'
+        url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+        prompt: 'A creative, slightly blurred shot of a DJ performing at an exclusive networking event, with vibrant, colourful lighting.',
+        caption: 'Cultural innovation: Live performances creating energy and connection'
       },
       {
-        url: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80',
-        prompt: 'Islamic finance roundtable with Sharia scholars and sukuk experts in traditional and modern attire.',
-        caption: 'Financial innovation: Islamic finance leaders discussing Sharia-compliant instruments'
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+        prompt: 'A candid photo of two industry professionals in deep conversation in a thoughtfully designed breakout area.',
+        caption: 'Strategic networking: Music industry leaders forging partnerships'
       },
       {
-        url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
-        prompt: 'Trading floor simulation showing live market data, fintech demos, blockchain presentations.',
-        caption: 'Future of finance: Technology showcasing Abu Dhabi\'s fintech ecosystem'
+        url: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80',
+        prompt: 'A close-up of a high-tech music production workshop in session, focusing on the equipment and hands-on interaction.',
+        caption: 'Innovation workshops: Hands-on sessions exploring music technology'
       },
       {
-        url: 'https://images.unsplash.com/photo-1523875194681-bedd468c58bf?w=800&q=80',
-        prompt: 'Bilateral meeting room with sovereign wealth fund CEOs, serious strategic discussions visible.',
-        caption: 'Capital allocation: Sovereign wealth leaders discussing multi-billion dollar mandates'
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'An overhead shot of the bustling conference floor, showing the flow of attendees between sessions and exhibition stands.',
+        caption: 'Dynamic environment: Conference floor connecting artists, executives, and innovators'
       },
       {
-        url: 'https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?w=800&q=80',
-        prompt: 'Evening gala at iconic Abu Dhabi venue, finance leaders networking, celebrating successful week.',
-        caption: 'Strategic relationships: Building connections that drive capital flows'
+        url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
+        prompt: 'A minimalist shot of the event\'s branding and wayfinding signage, demonstrating the sleek design aesthetic.',
+        caption: 'Brand excellence: Sleek design language reflecting music industry edge'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80',
+        prompt: 'A powerful, low-angle shot of a keynote speaker commanding the stage.',
+        caption: 'Thought leadership: Industry visionaries defining the future of music'
       }
     ]
   },
