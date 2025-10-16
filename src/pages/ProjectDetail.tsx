@@ -380,7 +380,7 @@ export const projectsData = {
     title: 'Brand Architecture for @chanelprincessdubai',
     subtitle: 'Architecting a New Paradigm of Fashion Authority',
     category: 'Luxury Brand Strategy',
-    year: '2024 and ongoing',
+    year: 'Ongoing',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/12cc9bcc5a5294a7f99d39eb8596254e',
     heroImagePrompt: 'Aerial view of elegant woman in red dress lying on modern dark sofa with reflection in pool below. Luxury lifestyle photography with sophisticated architectural setting, minimalist aesthetic, high-end fashion editorial style.',
     engagingParagraph: `<p class="mb-4"><strong>Client:</strong> Lee Davies (@chanelprincessdubai)</p>
