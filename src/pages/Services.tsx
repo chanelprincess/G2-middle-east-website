@@ -345,7 +345,7 @@ export const ServicesPage: FC = () => {
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="order-2 lg:order-1 relative">
               <img 
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" 
+                src="https://page.gensparksite.com/v1/base64_upload/59e3cf3797a31275a47d384aa5c53c5c" 
                 alt="Creating Global Moments"
                 class="rounded-lg shadow-2xl"
               />
