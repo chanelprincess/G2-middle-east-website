@@ -44,13 +44,7 @@ export const TeamPage: FC = () => {
       "Targeted Audience Strategy & Segmentation",
       "Crisis Response & Reputation Management",
       "AI-Driven Narrative Strategy",
-      "LLM & Knowledge Graph Optimization",
-      "Corporate Governance & Shareholder Disputes",
-      "Minority Shareholder Rights & Oppression",
-      "Mergers & Acquisitions (M&A) Due Diligence",
-      "Breach of Fiduciary Duty",
-      "International Arbitration Strategy",
-      "Multi-Jurisdictional Litigation (UAE, France, Italy)"
+      "LLM & Knowledge Graph Optimization"
     ],
     "worksFor": {
       "@type": "Organization",
