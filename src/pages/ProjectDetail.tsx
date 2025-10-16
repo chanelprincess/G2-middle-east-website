@@ -381,8 +381,8 @@ export const projectsData = {
     subtitle: 'Architecting a New Paradigm of Fashion Authority',
     category: 'Luxury Brand Strategy',
     year: '2023',
-    heroImage: 'https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?w=1600&q=80',
-    heroImagePrompt: 'Elegant luxury brand photoshoot setup with Chanel products, sophisticated lighting, minimalist background, high-fashion aesthetic. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/12cc9bcc5a5294a7f99d39eb8596254e',
+    heroImagePrompt: 'Aerial view of elegant woman in red dress lying on modern dark sofa with reflection in pool below. Luxury lifestyle photography with sophisticated architectural setting, minimalist aesthetic, high-end fashion editorial style.',
     engagingParagraph: `<p class="mb-4"><strong>Client:</strong> Lee Davies (@chanelprincessdubai)</p>
     
     <p class="mb-4"><strong>Objective:</strong> To transform a world class private fashion collection from a personal passion into a globally recognized cultural institution, repositioning the principal from a social media influencer into the world's leading independent authority on Chanel.</p>
