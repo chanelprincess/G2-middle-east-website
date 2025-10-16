@@ -267,8 +267,8 @@ export const projectsData = {
     subtitle: 'Royal Protocol Meets Gulf Hospitality',
     category: 'State-Level Events',
     year: '2010',
-    heroImage: 'https://images.unsplash.com/photo-1478860409698-8707f313ee8b?w=1600&q=80',
-    heroImagePrompt: 'A grand ceremonial hall with British and UAE flags symmetrically positioned, bathed in dramatic architectural lighting. Red carpet leading to official greeting area. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/3fc5acf626f27cf4b2f1e5e8ed4a9341',
+    heroImagePrompt: 'Her Majesty Queen Elizabeth II walking on red carpet with UAE dignitaries in traditional dress, waterfront ceremony with Dubai skyline background, official state visit moment, diplomatic greeting, formal protocol, bright daylight photography.',
     engagingParagraph: `<p class="mb-4"><strong>Project Director:</strong> Tim Jacobs</p>
     
     <p class="mb-4">A state visit by a reigning monarch is not an event; it is a complex, multi-faceted diplomatic instrument. Every detail, from the precise angle of a handshake to the timing of a motorcade, carries immense symbolic weight. When the visiting head of state is Her Majesty Queen Elizabeth II, one of the most recognised and respected figures in modern history, the stakes are amplified to a global scale. The margin for error is zero. As the project director responsible for the operational delivery and management of this historic visit to the UAE, my mandate was simple in its objective but monumental in its complexity: to execute with a level of precision that was not just flawless, but invisible.</p>
