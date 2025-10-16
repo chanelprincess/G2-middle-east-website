@@ -56,12 +56,6 @@ export const HomePage: FC = () => {
               <p>
                 We're built for your biggest problems. The harder the brief, the more focused we become.
               </p>
-              <p>
-                We define and clarify what matters, aligning stakeholders, and turning complexity into momentum.
-              </p>
-              <p>
-                We combine our regional insights with disciplined execution to move from strategy to action fast.
-              </p>
               <p class="text-xl text-white font-medium pt-4">
                 Expect direct answers, measurable outcomes, and a team that thrives under pressure.
               </p>
