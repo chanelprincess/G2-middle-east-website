@@ -8,6 +8,8 @@ import { TeamPage } from './pages/Team'
 import { ContactPage } from './pages/Contact'
 import { ServiceDetailPage, servicesData } from './pages/ServiceDetail'
 import { TeamDetailPage, teamData } from './pages/TeamDetail'
+import { ProjectsPage } from './pages/Projects'
+import { ProjectDetailPage, projectsData } from './pages/ProjectDetail'
 
 type Bindings = {
   DB: D1Database
@@ -91,19 +93,31 @@ app.get('/contact', (c) => {
   )
 })
 
-// Projects Page (placeholder)
+// Projects Page
 app.get('/projects', (c) => {
   return c.render(
-    <div class="min-h-screen bg-g2-darker text-white flex items-center justify-center">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Projects</h1>
-        <p class="text-gray-400 mb-6">Case studies coming soon</p>
-        <a href="/" class="btn-primary">Back to Home</a>
-      </div>
-    </div>,
+    <ProjectsPage />,
     {
       title: 'Projects | G2 Middle East',
-      description: 'Strategic case studies and project portfolio'
+      description: 'Case studies in strategic impact and flawless execution. From sovereign positioning to luxury experiences, showcasing the architecture of intangible value.'
+    }
+  )
+})
+
+// Project Detail Pages - Dynamic routing for all 12 projects
+app.get('/projects/:slug', (c) => {
+  const slug = c.req.param('slug')
+  const projectData = projectsData[slug as keyof typeof projectsData]
+  
+  if (!projectData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <ProjectDetailPage {...projectData} />,
+    {
+      title: `${projectData.title} | G2 Middle East`,
+      description: projectData.engagingParagraph.substring(0, 160)
     }
   )
 })
