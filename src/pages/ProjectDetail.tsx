@@ -313,38 +313,52 @@ export const projectsData = {
 
   'papal-mass-abu-dhabi': {
     slug: 'papal-mass-abu-dhabi',
-    title: 'Papal Mass of Pope Francis in Abu Dhabi',
-    subtitle: 'Historic Interfaith Moment: 180,000 Faithful Gathered',
-    category: 'Major Event Delivery',
+    title: 'Crafting History: The First Papal Visit to the Arabian Peninsula',
+    subtitle: 'Project Director: Tim Jacobs',
+    category: 'Sovereign Event Architecture',
     year: '2019',
-    heroImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80',
-    heroImagePrompt: 'Aerial drone shot of massive outdoor papal mass with 180,000 attendees, dramatic altar stage in center, white papal vestments visible, golden hour lighting. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'Delivering the largest gathering in UAE history required more than logistics—it demanded strategic vision and operational mastery. We orchestrated the planning and execution of the historic Papal Mass, managing security, crowd flow, ceremonial protocols, and media coordination for 180,000 faithful. The result was a seamless experience that projected tolerance, unity, and the UAE\'s commitment to interfaith dialogue on the global stage.',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/59e3cf3797a31275a47d384aa5c53c5c',
+    heroImagePrompt: 'Pope Francis in white vestments reaching out to touch child in crowd, surrounded by diverse faithful waving Vatican flags, powerful moment of human connection during historic papal visit.',
+    engagingParagraph: `<p class="mb-4">There are moments in history that serve as inflection points, where the trajectory of global perception can be reshaped by a single, focused event. The first-ever Papal Visit to the Arabian Peninsula was conceived as one such moment. When His Holiness Pope Francis accepted the invitation to visit Abu Dhabi, the mandate handed down was monumental. This was to be far more than a historic visit; it was a carefully architected statement to the world, a definitive expression of the UAE's deep commitment to tolerance and interfaith dialogue. As Project Director, and the direct interface with the UAE's Ministry of Presidential Affairs, my role was to translate this profound sovereign vision into a flawless operational reality, with a specific, critical focus on sculpting the global media experience. In an operation of this scale, the event itself is the catalyst, but the media narrative is the legacy.</p>
+
+    <p class="mb-4">The strategic objective was clear and absolute. We were not merely hosting a global figure; we were building the platform for the signing of the historic "Document on Human Fraternity for World Peace and Living Together." Every element of the project had to serve this primary goal. My direct engagement with the Ministry of Presidential Affairs was the critical nexus where strategic intent met operational design. This relationship demanded more than project updates; it required a deep, nuanced understanding of the nation's highest aspirations, translating sensitive diplomatic, cultural, and security imperatives into a tangible, executable plan. It was a position of immense trust, ensuring that the actions of thousands of personnel and the experience of over 2,000 accredited international journalists would perfectly align with the vision of the UAE's leadership.</p>
+
+    <p class="mb-4">The cornerstone of our strategy was the design and execution of the International Media Centre (IMC). In the modern world, a state-level event is a broadcast operation. We understood that the global audience, numbering in the billions, would not experience the visit in person; they would experience it through the lens of the world's media. Therefore, controlling the media's experience was paramount to shaping the narrative. The IMC was not conceived as a facility, but as a strategic instrument. We architected a self-contained, 24/7 broadcast hub, a nerve centre from which the story of the visit would be written, filmed, and transmitted. It was a fully-fledged media city, built for a 72-hour lifespan.</p>
+
+    <p class="mb-4">Inside, we provided the world's leading media outlets with every conceivable tool. Multiple, fully-equipped television studios with live backdrops of the Abu Dhabi skyline were constructed, allowing broadcasters like CNN, BBC, and Sky News to anchor their global coverage directly from the heart of the event. Dozens of live stand-up positions, vast arrays of editing suites, and a high-density network capable of handling petabytes of data were deployed. But providing facilities is merely logistics. Our true work was in the craft of the media experience itself. We understood that in a high-pressure, 24-hour news cycle, context is king. We therefore curated a constant stream of content for the journalists. This included providing expertly produced B-roll footage, high-resolution photography, and detailed press kits translated into multiple languages, all focusing on the core themes of tolerance and human fraternity. We proactively filled the information vacuum, ensuring that the narrative framework we provided was more compelling and accessible than any alternative.</p>
+
+    <p class="mb-4">This was an exercise in proactive narrative management. Rather than simply reacting to media requests, we anticipated their needs. Our dedicated media relations team, comprised of specialists from around the world, worked as concierges, guiding journalists to the stories that mattered. We organised press briefings with key officials and faith leaders, providing the soundbites and expert analysis that would frame the global conversation. We ensured that when the Pope spoke of dialogue, the journalists had the context and the content to explain why this was happening in the UAE, at this specific moment in history. We were not just facilitating coverage; we were actively shaping it.</p>
+
+    <p class="mb-4">This level of narrative architecture was only possible because it was built upon a foundation of immense logistical and operational strength. The delivery of the Papal Mass at Zayed Sports City for 180,000 worshippers was one of the most complex public events ever staged in the region. The security, transportation, accreditation, and crowd management for this single element was a monumental undertaking in itself. Yet, its flawless execution was the critical enabler of the wider mission. By ensuring the core events were delivered with invisible precision, we created an environment of calm and control, allowing the world's media to focus entirely on the power of the message, not the distractions of the production.</p>
+
+    <p class="mb-4">The outcome of this approach was a definitive success. The global media coverage was overwhelmingly positive, echoing the intended themes with remarkable consistency. The headlines were not about logistics or security; they were about hope, dialogue, and a new chapter in interfaith relations, authored in Abu Dhabi. The "Document on Human Fraternity" became the lead story. For the UAE, the return on this strategic investment was immeasurable. The project fundamentally shifted global perception, cementing the nation's status as a global centre for tolerance and peaceful coexistence.</p>
+
+    <p>This project stands as a testament to a core belief: in the architecture of major events, particularly those on a sovereign scale, the strategic crafting of the media experience is as important as the physical delivery of the event itself. It required a deep partnership with the Ministry of Presidential Affairs, a relentless focus on the strategic objective, and the ability to build and direct a world-class team. We did not simply manage a visit; we architected a global conversation and, in doing so, helped craft a moment in history.</p>`,
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=800&q=80',
-        prompt: 'Wide shot of the massive outdoor altar structure, architecturally designed, with papal throne and religious symbols.',
-        caption: 'Sacred architecture: Altar design balancing reverence and regional context'
+        prompt: 'International Media Centre with multiple broadcast studios, CNN, BBC, Sky News setups, journalists working at editing suites, Abu Dhabi skyline backdrop.',
+        caption: 'Strategic instrument: The International Media Centre as a 24/7 broadcast hub for global narrative control'
       },
       {
         url: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800&q=80',
-        prompt: 'Close-up of diverse crowd: families, elderly, youth of different nationalities praying together.',
-        caption: 'Unity in faith: 180,000 faithful from over 100 nationalities gathered'
+        prompt: 'Press briefing room with international journalists, faith leaders at podium, translation booths, professional media relations team guiding coverage.',
+        caption: 'Proactive narrative management: Guiding 2,000+ international journalists to the stories that mattered'
       },
       {
         url: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?w=800&q=80',
-        prompt: 'Security and logistics coordination center with multiple screens showing crowd management and live feeds.',
-        caption: 'Operational excellence: Real-time crowd management ensuring safety and dignity'
+        prompt: 'Aerial view of Zayed Sports City with 180,000 worshippers, massive altar structure, perfect crowd organization, security and logistics coordination.',
+        caption: 'Operational foundation: Flawless execution of 180,000-person Papal Mass enabling media focus'
       },
       {
         url: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
-        prompt: 'International media area with dozens of cameras and broadcast equipment capturing the historic moment.',
-        caption: 'Global reach: Strategic media coordination amplifying the message worldwide'
+        prompt: 'Document on Human Fraternity signing ceremony, Pope Francis and Grand Imam of Al-Azhar, global dignitaries, historic handshake moment.',
+        caption: 'Strategic objective achieved: Platform for signing the Document on Human Fraternity for World Peace'
       },
       {
         url: 'https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=800&q=80',
-        prompt: 'Emotional moment of worshippers with hands raised, backlit by golden sunset, faces showing devotion.',
-        caption: 'Transcendent experience: A historic moment of interfaith unity and tolerance'
+        prompt: 'Global newspaper headlines and broadcast screens showing positive coverage, themes of tolerance and dialogue, UAE positioned as center of interfaith unity.',
+        caption: 'Mission accomplished: Global media narrative centered on hope, dialogue, and UAE as beacon of tolerance'
       }
     ]
   },
