@@ -45,8 +45,164 @@ export const HomePage: FC = () => {
         </div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* Service Grid - 9 Services - Placed directly below hero */}
       <section class="py-24 bg-g2-dark">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            {/* Grid of 9 Service Buttons */}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              {/* Service 1: Sovereign & Governmental Advisory */}
+              <a href="/services/sovereign-governmental-advisory" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Sovereign & Governmental Advisory
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  We provide the strategic counsel that transforms national moments into global milestones
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 2: Major Event Architecture & Delivery */}
+              <a href="/services/major-event-architecture" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Major Event Architecture & Delivery
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  We are the architects behind the world's most complex and significant events
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 3: Global Brand & Luxury Experiences */}
+              <a href="/services/global-brand-luxury-experiences" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Global Brand & Luxury Experiences
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  We craft the rare and resonant moments that elevate the world's most iconic brands
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 4: Strategic Communications & Narrative Control */}
+              <a href="/services/strategic-communications-narrative-control" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-chess-knight"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Strategic Communications & Narrative Control
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  In the modern landscape, the narrative is the asset
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 5: Crisis & Reputation Management */}
+              <a href="/services/crisis-reputation-management" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Crisis & Reputation Management
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  When reputation is on the line, a strategic experience is the most powerful response
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 6: Corporate & Shareholder Engagement */}
+              <a href="/services/corporate-shareholder-engagement" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Corporate & Shareholder Engagement
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  We design the critical corporate moments that drive alignment and build investor confidence
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 7: Cultural Diplomacy & Placemaking */}
+              <a href="/services/cultural-diplomacy-placemaking" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-dove"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Cultural Diplomacy & Placemaking
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  We believe culture is the ultimate currency of influence
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 8: Experience Design & Immersive Targeting */}
+              <a href="/services/experience-design-immersive-targeting" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Experience Design & Immersive Targeting
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  This is the intersection of art and engineering where engagement is forged
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+              {/* Service 9: Approach Modelling & ROI */}
+              <a href="/services/approach-modelling-roi" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
+                <div class="text-g2-gold text-3xl mb-4 opacity-90">
+                  <i class="fas fa-balance-scale"></i>
+                </div>
+                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
+                  Approach Modelling & ROI
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  We provide the C-suite level justification that connects vision to value
+                </p>
+                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-8">
@@ -59,135 +215,6 @@ export const HomePage: FC = () => {
               <p class="text-xl text-white font-medium pt-4">
                 Expect direct answers, measurable outcomes, and a team that thrives under pressure.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Grid - 9 Services */}
-      <section class="py-24 bg-g2-darker">
-        <div class="container mx-auto px-6">
-          <div class="max-w-6xl mx-auto">
-            {/* Grid of 9 Service Buttons */}
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              
-              {/* Service 1: Sovereign & Governmental Advisory */}
-              <a href="/services/sovereign-governmental-advisory" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Sovereign & Governmental Advisory
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Strategic counsel for nations and governments
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 2: Mega-Event Architecture */}
-              <a href="/services/mega-event-architecture" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Mega-Event Architecture
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  State-visit level event delivery and planning
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 3: Narrative Warfare & Pre-Seeding */}
-              <a href="/services/narrative-warfare-pre-seeding" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Narrative Warfare & Pre-Seeding
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  AI-driven narrative strategy and LLM optimization
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 4: Luxury Brand Positioning */}
-              <a href="/services/luxury-brand-positioning" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Luxury Brand Positioning
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Premium brand architecture and market positioning
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 5: Crisis Communications */}
-              <a href="/services/crisis-communications" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Crisis Communications
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Rapid response and reputation protection
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 6: Corporate Governance Disputes */}
-              <a href="/services/corporate-governance-disputes" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Corporate Governance Disputes
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Strategic communications for high-stakes disputes
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 7: FDI Strategy & Political Positioning */}
-              <a href="/services/fdi-strategy-political-positioning" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  FDI Strategy & Political Positioning
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Foreign investment strategy and political advisory
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 8: Stakeholder Alignment */}
-              <a href="/services/stakeholder-alignment" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Stakeholder Alignment
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Complex stakeholder ecosystem management
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
-              {/* Service 9: Market Entry Strategy */}
-              <a href="/services/market-entry-strategy" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Market Entry Strategy
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  Strategic roadmaps for Middle East expansion
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
-                </div>
-              </a>
-
             </div>
           </div>
         </div>
