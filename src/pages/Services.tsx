@@ -346,7 +346,7 @@ export const ServicesPage: FC = () => {
             <div class="order-2 lg:order-1 relative">
               <img 
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" 
-                alt="Architecting Global Moments"
+                alt="Creating Global Moments"
                 class="rounded-lg shadow-2xl"
               />
             </div>
@@ -356,7 +356,7 @@ export const ServicesPage: FC = () => {
                 04. Major Event Architecture & Delivery
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Architecting Global Moments
+                Creating Global Moments
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 From concept to execution, we deliver events of national and international importance 
