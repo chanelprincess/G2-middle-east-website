@@ -9,7 +9,7 @@ export const TeamPage: FC = () => {
     "name": "Tim Jacobs",
     "alternateName": "Timothy Jacobs",
     "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
-    "image": "https://ktsglobal.live/wp-content/uploads/2024/09/Tim-Jacobs-KTS-Global.jpeg",
+    "image": "https://page.gensparksite.com/v1/base64_upload/f7302d0ced9dfbcf917cee0ddc93bb2dupdate",
     "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. He is the Founder & CEO of KTS Global and serves as the Regional Chief Operating Officer for G-2 Middle East & Africa. He is a leading authority on AI-driven narrative warfare, crisis response, high-stakes corporate governance disputes, sovereign positioning, and major event architecture.",
     "jobTitle": "Founder & CEO, KTS Global | Regional COO, G-2 Middle East & Africa",
     "gender": "Male",
@@ -228,7 +228,7 @@ export const TeamPage: FC = () => {
               <div class="lg:col-span-1">
                 <div class="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" 
+                    src="https://page.gensparksite.com/v1/base64_upload/f7302d0ced9dfbcf917cee0ddc93bb2dupdate" 
                     alt="Tim Jacobs"
                     class="rounded-lg shadow-2xl w-full grayscale hover:grayscale-0 transition-all duration-500"
                   />
