@@ -336,70 +336,70 @@ export const TeamPage: FC = () => {
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Team Member 2 */}
+            {/* Paolo Donadio - Managing Director */}
+            <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
+              <div class="relative h-80">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" 
+                  alt="Paolo Donadio"
+                  class="w-full h-full object-cover grayscale"
+                />
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
+                  <h3 class="text-xl font-bold text-white">Paolo Donadio</h3>
+                  <p class="text-g2-gold text-sm">Managing Director</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-400 text-sm mb-4">
+                  Globally oriented business strategist bridging visionary storytelling with disciplined execution across international markets.
+                </p>
+                <a href="/team/paolo-donadio" class="text-g2-gold hover:underline text-sm">
+                  View Profile <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Linda Guldemond - Director of Client Services */}
             <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
               <div class="relative h-80">
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" 
-                  alt="Sarah Al-Mansouri"
+                  alt="Linda Guldemond"
                   class="w-full h-full object-cover grayscale"
                 />
                 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
-                  <h3 class="text-xl font-bold text-white">Sarah Al-Mansouri</h3>
-                  <p class="text-g2-gold text-sm">Regional Director, GCC</p>
+                  <h3 class="text-xl font-bold text-white">Linda Guldemond</h3>
+                  <p class="text-g2-gold text-sm">Director of Client Services</p>
                 </div>
               </div>
               <div class="p-6">
                 <p class="text-gray-400 text-sm mb-4">
-                  Leading sovereign communications and nation branding initiatives across the Gulf region.
+                  Solutions-driven operations leader delivering flawless execution for high-stakes government and global brand initiatives.
                 </p>
-                <a href="#" class="text-g2-gold hover:underline text-sm">
+                <a href="/team/linda-guldemond" class="text-g2-gold hover:underline text-sm">
                   View Profile <i class="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
             </div>
 
-            {/* Team Member 3 */}
+            {/* David Jakic - Business Strategy and Development Director */}
             <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
               <div class="relative h-80">
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" 
-                  alt="James Mitchell"
+                  alt="David Jakic"
                   class="w-full h-full object-cover grayscale"
                 />
                 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
-                  <h3 class="text-xl font-bold text-white">James Mitchell</h3>
-                  <p class="text-g2-gold text-sm">Director, Luxury Brands</p>
+                  <h3 class="text-xl font-bold text-white">David Jakic</h3>
+                  <p class="text-g2-gold text-sm">Business Strategy and Development Director</p>
                 </div>
               </div>
               <div class="p-6">
                 <p class="text-gray-400 text-sm mb-4">
-                  Specialist in luxury brand positioning and high-net-worth stakeholder engagement.
+                  Multi-disciplinary entrepreneur architecting growth strategies and scaling enterprises from startup to multinational operations.
                 </p>
-                <a href="#" class="text-g2-gold hover:underline text-sm">
-                  View Profile <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* Team Member 4 */}
-            <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
-              <div class="relative h-80">
-                <img 
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80" 
-                  alt="Layla Hassan"
-                  class="w-full h-full object-cover grayscale"
-                />
-                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
-                  <h3 class="text-xl font-bold text-white">Layla Hassan</h3>
-                  <p class="text-g2-gold text-sm">Strategy Director</p>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-400 text-sm mb-4">
-                  Expert in strategic narrative development and stakeholder alignment frameworks.
-                </p>
-                <a href="#" class="text-g2-gold hover:underline text-sm">
+                <a href="/team/david-jakic" class="text-g2-gold hover:underline text-sm">
                   View Profile <i class="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>

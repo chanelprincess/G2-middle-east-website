@@ -7,6 +7,7 @@ import { ServicesPage } from './pages/Services'
 import { TeamPage } from './pages/Team'
 import { ContactPage } from './pages/Contact'
 import { ServiceDetailPage, servicesData } from './pages/ServiceDetail'
+import { TeamDetailPage, teamData } from './pages/TeamDetail'
 
 type Bindings = {
   DB: D1Database
@@ -57,6 +58,24 @@ app.get('/team', (c) => {
     {
       title: 'Our Team | G2 Middle East',
       description: 'Meet the strategic minds behind G2 Middle East. Senior advisors who thrive under pressure and turn complexity into competitive advantage.'
+    }
+  )
+})
+
+// Team Detail Pages - Dynamic routing for all executives
+app.get('/team/:slug', (c) => {
+  const slug = c.req.param('slug')
+  const executiveData = teamData[slug as keyof typeof teamData]
+  
+  if (!executiveData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <TeamDetailPage {...executiveData} />,
+    {
+      title: `${executiveData.name} - ${executiveData.jobTitle} | G2 Middle East`,
+      description: executiveData.description.substring(0, 160).replace(/<[^>]*>/g, '')
     }
   )
 })
