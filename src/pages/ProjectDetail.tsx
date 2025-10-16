@@ -379,7 +379,7 @@ export const projectsData = {
 
   'chanel-princess-dubai-brand-architecture': {
     slug: 'chanel-princess-dubai-brand-architecture',
-    title: 'Brand Architecture for @chanelprincessdubai',
+    title: 'Building Fashion Authority Through Strategic Brand Architecture',
     subtitle: 'Architecting a New Paradigm of Fashion Authority',
     category: 'Luxury Brand Strategy',
     year: '2023',
