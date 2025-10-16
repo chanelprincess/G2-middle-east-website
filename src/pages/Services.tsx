@@ -6,7 +6,7 @@ export const ServicesPage: FC = () => {
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "G-2 Middle East",
+    "name": "G2 Middle East",
     "description": "Strategic communications and brand architecture for sovereign entities and global brands",
     "url": "https://g2-middleeast.com",
     "hasOfferCatalog": {
@@ -65,7 +65,7 @@ export const ServicesPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in">
-              Strategic <span class="text-g2-gold">Solutions</span>
+              Strategic Solutions
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
               We architect intangible value through sophisticated communication and experience design. 
@@ -84,7 +84,7 @@ export const ServicesPage: FC = () => {
                 01. Sovereign & Nation Branding
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Strategic Positioning for <span class="text-g2-gold">Nations</span>
+                Strategic Positioning for Nations
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 We work with governments, sovereign entities, and national institutions to architect 
@@ -156,7 +156,7 @@ export const ServicesPage: FC = () => {
                 02. Global Brand & Luxury Positioning
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Elevating <span class="text-g2-gold">Luxury Brands</span>
+                Elevating Luxury Brands
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 We partner with luxury brands and global enterprises to craft sophisticated narratives 
@@ -212,7 +212,7 @@ export const ServicesPage: FC = () => {
                 03. Strategic Communications
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Narratives that <span class="text-g2-gold">Transform</span>
+                Narratives that Transform
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
                 High-stakes situations demand sophisticated communication strategies. We craft narratives 
@@ -272,7 +272,7 @@ export const ServicesPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">
-              Specialized <span class="text-g2-gold">Capabilities</span>
+              Specialized Capabilities
             </h2>
             <p class="text-xl text-gray-400">
               Complementary services that amplify strategic impact
@@ -320,10 +320,10 @@ export const ServicesPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">
-              Ready to architect your <span class="text-g2-gold">strategic advantage</span>?
+              Ready to architect your strategic advantage?
             </h2>
             <p class="text-xl text-gray-300 mb-8">
-              Let's discuss how G-2 Middle East can help you navigate complexity and create lasting value.
+              Let's discuss how G2 Middle East can help you navigate complexity and create lasting value.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" class="btn-primary text-lg">

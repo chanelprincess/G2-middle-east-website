@@ -20,8 +20,8 @@ export const HomePage: FC = () => {
         
         <div class="absolute inset-0 flex items-center justify-center z-10">
           <div class="text-center px-6 max-w-5xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow fade-in">
-              Built for <span class="text-g2-gold">Complexity</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow fade-in text-white">
+              Built for Complexity
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 fade-in-delay-1 font-light">
               Where strategy meets execution
@@ -50,7 +50,7 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-8">
-              The Architecture of <span class="text-g2-gold">Intangible Value</span>
+              The Architecture of Intangible Value
             </h2>
             <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
@@ -75,7 +75,7 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Strategic <span class="text-g2-gold">Solutions</span>
+              Strategic Solutions
             </h2>
             <p class="text-xl text-gray-400">
               High-stakes challenges require sophisticated approaches
@@ -139,7 +139,7 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Selected <span class="text-g2-gold">Work</span>
+              Selected Work
             </h2>
             <p class="text-xl text-gray-400">
               Case studies in strategic value creation
@@ -198,7 +198,7 @@ export const HomePage: FC = () => {
           <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
               <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                The G-2 <span class="text-g2-gold">Briefing</span>
+                Perspectives
               </h2>
               <p class="text-xl text-gray-400">
                 Strategic insights and market intelligence
@@ -244,7 +244,7 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">
-              Bring us your high-stakes <span class="text-g2-gold">challenges</span>
+              Bring us your high-stakes challenges
             </h2>
             <p class="text-xl text-gray-300 mb-8 leading-relaxed">
               We'll de-risk decisions, craft targeted narratives, and deliver experiences that shift perception, 

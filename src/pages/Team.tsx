@@ -210,7 +210,7 @@ export const TeamPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in">
-              The <span class="text-g2-gold">Architects</span>
+              The Architects
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
               Senior advisors who thrive under pressure. Strategic minds who turn complexity into competitive advantage.
@@ -453,7 +453,7 @@ export const TeamPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">
-              Leadership <span class="text-g2-gold">Team</span>
+              Leadership Team
             </h2>
             <p class="text-xl text-gray-400">
               Strategic advisors with deep regional expertise
@@ -538,7 +538,7 @@ export const TeamPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
-              Strategic <span class="text-g2-gold">Advisory Board</span>
+              Strategic Advisory Board
             </h2>
             <p class="text-xl text-gray-300 mb-8">
               Our advisory board comprises former government officials, C-suite executives, 
@@ -556,7 +556,7 @@ export const TeamPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6">
-              Work with strategic minds who <span class="text-g2-gold">thrive under pressure</span>
+              Work with strategic minds who thrive under pressure
             </h2>
             <p class="text-xl text-gray-300 mb-8">
               Let's discuss how our team can help you navigate complexity and create lasting value.

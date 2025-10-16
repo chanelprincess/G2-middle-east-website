@@ -9,7 +9,7 @@ export const ContactPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in">
-              Start a <span class="text-g2-gold">Conversation</span>
+              Start a Conversation
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
               Bring us your high-stakes challenges. We'll respond within 24 hours.
@@ -41,8 +41,8 @@ export const ContactPage: FC = () => {
                     </div>
                     <div>
                       <h3 class="text-white font-semibold mb-1">Email</h3>
-                      <a href="mailto:contact@g2-middleeast.com" class="text-gray-300 hover:text-g2-gold transition-colors">
-                        contact@g2-middleeast.com
+                      <a href="mailto:contact@g2middleast.com" class="text-gray-300 hover:text-g2-gold transition-colors">
+                        contact@g2middleast.com
                       </a>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export const ContactPage: FC = () => {
                       class="mt-1 mr-3"
                     />
                     <label for="consent" class="text-gray-400 text-sm">
-                      I agree to G-2 Middle East's privacy policy and consent to being contacted regarding my inquiry. <span class="text-red-500">*</span>
+                      I agree to G2 Middle East's privacy policy and consent to being contacted regarding my inquiry. <span class="text-red-500">*</span>
                     </label>
                   </div>
 
@@ -238,7 +238,7 @@ export const ContactPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center">
-              Other Ways to <span class="text-g2-gold">Connect</span>
+              Other Ways to Connect
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -259,7 +259,7 @@ export const ContactPage: FC = () => {
                 <div class="text-g2-gold text-4xl mb-4">
                   <i class="fas fa-newspaper"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Subscribe to The G-2 Briefing</h3>
+                <h3 class="text-xl font-bold mb-3">Subscribe to Perspectives</h3>
                 <p class="text-gray-400 mb-6">
                   Strategic insights and market intelligence delivered to your inbox monthly.
                 </p>

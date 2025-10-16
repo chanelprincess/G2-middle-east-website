@@ -1,7 +1,7 @@
 import { jsxRenderer } from 'hono/jsx-renderer'
 
 export const renderer = jsxRenderer(({ children, title, description }) => {
-  const pageTitle = title || 'G-2 Middle East | Architecture of Intangible Value'
+  const pageTitle = title || 'G2 Middle East | Architecture of Intangible Value'
   const pageDescription = description || 'Strategic partners for sovereign entities and global brands. We architect intangible value through sophisticated communication and experience design.'
   
   return (
@@ -19,7 +19,7 @@ export const renderer = jsxRenderer(({ children, title, description }) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:site_name" content="G-2 Middle East" />
+        <meta property="og:site_name" content="G2 Middle East" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

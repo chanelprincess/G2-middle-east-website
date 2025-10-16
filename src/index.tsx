@@ -32,7 +32,7 @@ app.get('/', (c) => {
   return c.render(
     <HomePage />,
     {
-      title: 'G-2 Middle East | Architecture of Intangible Value',
+      title: 'G2 Middle East | Architecture of Intangible Value',
       description: 'Strategic partners for sovereign entities and global brands. We architect intangible value through sophisticated communication and experience design.'
     }
   )
@@ -43,7 +43,7 @@ app.get('/services', (c) => {
   return c.render(
     <ServicesPage />,
     {
-      title: 'Strategic Services | G-2 Middle East',
+      title: 'Strategic Services | G2 Middle East',
       description: 'Sovereign branding, luxury positioning, and strategic communications for high-stakes challenges in the Middle East.'
     }
   )
@@ -54,8 +54,8 @@ app.get('/team', (c) => {
   return c.render(
     <TeamPage />,
     {
-      title: 'Our Team | G-2 Middle East',
-      description: 'Meet the strategic minds behind G-2 Middle East. Senior advisors who thrive under pressure and turn complexity into competitive advantage.'
+      title: 'Our Team | G2 Middle East',
+      description: 'Meet the strategic minds behind G2 Middle East. Senior advisors who thrive under pressure and turn complexity into competitive advantage.'
     }
   )
 })
@@ -65,7 +65,7 @@ app.get('/contact', (c) => {
   return c.render(
     <ContactPage />,
     {
-      title: 'Contact Us | G-2 Middle East',
+      title: 'Contact Us | G2 Middle East',
       description: 'Bring us your high-stakes challenges. We respond within 24 hours.'
     }
   )
@@ -82,24 +82,24 @@ app.get('/projects', (c) => {
       </div>
     </div>,
     {
-      title: 'Projects | G-2 Middle East',
+      title: 'Projects | G2 Middle East',
       description: 'Strategic case studies and project portfolio'
     }
   )
 })
 
-// The G-2 Briefing (Blog) Page (placeholder)
+// Perspectives (Blog) Page (placeholder)
 app.get('/briefing', (c) => {
   return c.render(
     <div class="min-h-screen bg-g2-darker text-white flex items-center justify-center">
       <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">The G-2 Briefing</h1>
+        <h1 class="text-4xl font-bold mb-4">Perspectives</h1>
         <p class="text-gray-400 mb-6">Strategic insights coming soon</p>
         <a href="/" class="btn-primary">Back to Home</a>
       </div>
     </div>,
     {
-      title: 'The G-2 Briefing | G-2 Middle East',
+      title: 'Perspectives | G2 Middle East',
       description: 'Strategic insights and market intelligence'
     }
   )
@@ -116,7 +116,7 @@ app.get('/whitepapers', (c) => {
       </div>
     </div>,
     {
-      title: 'Whitepapers | G-2 Middle East',
+      title: 'Whitepapers | G2 Middle East',
       description: 'Strategic whitepapers and downloadable insights'
     }
   )
@@ -130,7 +130,7 @@ app.get('/whitepapers', (c) => {
 app.get('/api/health', (c) => {
   return c.json({ 
     status: 'ok', 
-    message: 'G-2 Middle East API is running',
+    message: 'G2 Middle East API is running',
     timestamp: new Date().toISOString()
   })
 })

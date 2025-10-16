@@ -7,8 +7,7 @@ export const Navigation: FC = () => {
         <div class="flex items-center justify-between">
           {/* Logo */}
           <a href="/" class="text-2xl font-bold tracking-tight">
-            <span class="text-white">G-2</span>
-            <span class="text-g2-gold ml-2">MIDDLE EAST</span>
+            <span class="text-white">G2 MIDDLE EAST</span>
           </a>
           
           {/* Desktop Navigation */}
@@ -16,7 +15,7 @@ export const Navigation: FC = () => {
             <a href="/services" class="text-gray-300 hover:text-white transition-colors">Services</a>
             <a href="/projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
             <a href="/team" class="text-gray-300 hover:text-white transition-colors">Team</a>
-            <a href="/briefing" class="text-gray-300 hover:text-white transition-colors">The G-2 Briefing</a>
+            <a href="/briefing" class="text-gray-300 hover:text-white transition-colors">Perspectives</a>
             <a href="/whitepapers" class="text-gray-300 hover:text-white transition-colors">Insights</a>
             <a href="/contact" class="bg-g2-gold text-g2-darker px-6 py-2 rounded hover:bg-opacity-90 transition-all font-medium">
               Contact
@@ -34,7 +33,7 @@ export const Navigation: FC = () => {
           <a href="/services" class="block text-gray-300 hover:text-white transition-colors py-2">Services</a>
           <a href="/projects" class="block text-gray-300 hover:text-white transition-colors py-2">Projects</a>
           <a href="/team" class="block text-gray-300 hover:text-white transition-colors py-2">Team</a>
-          <a href="/briefing" class="block text-gray-300 hover:text-white transition-colors py-2">The G-2 Briefing</a>
+          <a href="/briefing" class="block text-gray-300 hover:text-white transition-colors py-2">Perspectives</a>
           <a href="/whitepapers" class="block text-gray-300 hover:text-white transition-colors py-2">Insights</a>
           <a href="/contact" class="block bg-g2-gold text-g2-darker px-6 py-2 rounded hover:bg-opacity-90 transition-all font-medium text-center">
             Contact
@@ -53,8 +52,7 @@ export const Footer: FC = () => {
           {/* Brand */}
           <div class="col-span-1">
             <h3 class="text-xl font-bold mb-4">
-              <span class="text-white">G-2</span>
-              <span class="text-g2-gold ml-2">MIDDLE EAST</span>
+              <span class="text-white">G2 MIDDLE EAST</span>
             </h3>
             <p class="text-gray-400 text-sm leading-relaxed">
               Architecture of Intangible Value
@@ -77,7 +75,7 @@ export const Footer: FC = () => {
             <ul class="space-y-2 text-sm">
               <li><a href="/team" class="text-gray-400 hover:text-white transition-colors">Team</a></li>
               <li><a href="/projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
-              <li><a href="/briefing" class="text-gray-400 hover:text-white transition-colors">The G-2 Briefing</a></li>
+              <li><a href="/briefing" class="text-gray-400 hover:text-white transition-colors">Perspectives</a></li>
               <li><a href="/whitepapers" class="text-gray-400 hover:text-white transition-colors">Whitepapers</a></li>
             </ul>
           </div>
@@ -87,7 +85,7 @@ export const Footer: FC = () => {
             <h4 class="text-white font-semibold mb-4">Connect</h4>
             <ul class="space-y-2 text-sm">
               <li><a href="/contact" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="mailto:contact@g2-middleeast.com" class="text-gray-400 hover:text-white transition-colors">contact@g2-middleeast.com</a></li>
+              <li><a href="mailto:contact@g2middleast.com" class="text-gray-400 hover:text-white transition-colors">contact@g2middleast.com</a></li>
             </ul>
             <div class="mt-4 flex space-x-4">
               <a href="#" class="text-gray-400 hover:text-g2-gold transition-colors">
@@ -103,7 +101,7 @@ export const Footer: FC = () => {
         {/* Copyright */}
         <div class="border-t border-white/10 pt-8 text-center">
           <p class="text-gray-500 text-sm">
-            © {new Date().getFullYear()} G-2 Middle East. All rights reserved.
+            © {new Date().getFullYear()} G2 Middle East. All rights reserved.
           </p>
         </div>
       </div>
