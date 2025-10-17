@@ -217,15 +217,119 @@ export const HomePage: FC = () => {
               </p>
             </div>
 
-            {/* Interactive Global Map */}
+            {/* Digital Command Centre Map */}
             <div class="relative mb-12">
-              <div class="rounded-lg overflow-hidden relative border border-white/10 bg-black">
-                {/* Map Image with Markers */}
-                <img 
-                  src="https://page.gensparksite.com/v1/base64_upload/3ad62cdb074e54160d8ae897f7d78857" 
-                  alt="Casta Diva Group Global Network" 
-                  class="w-full h-auto"
-                />
+              <div class="relative h-[600px] rounded-lg overflow-hidden bg-black border border-white/10">
+                {/* SVG World Map - Gold Wireframe */}
+                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 2000 1000" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    {/* Glow effect for lines */}
+                    <filter id="glow">
+                      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                    
+                    {/* Pulse animation for pins */}
+                    <radialGradient id="pinGradient">
+                      <stop offset="0%" style="stop-color:#DC143C;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:0.6" />
+                    </radialGradient>
+                  </defs>
+                  
+                  {/* Continents - Gold Wireframe */}
+                  <g stroke="#B89A6A" stroke-width="1.5" fill="none" filter="url(#glow)" opacity="0.8">
+                    {/* North America */}
+                    <path d="M 150,200 L 200,180 L 250,190 L 300,170 L 350,180 L 400,160 L 420,200 L 380,240 L 340,260 L 300,250 L 260,270 L 220,260 L 180,240 Z"/>
+                    <path d="M 300,250 L 320,280 L 300,320 L 260,340 L 240,320 L 220,290 L 240,270"/>
+                    
+                    {/* South America */}
+                    <path d="M 380,400 L 420,380 L 460,400 L 480,440 L 500,480 L 480,540 L 440,580 L 400,600 L 380,580 L 360,540 L 340,500 L 340,460 L 360,420 Z"/>
+                    
+                    {/* Europe */}
+                    <path d="M 900,200 L 950,180 L 1000,190 L 1040,200 L 1060,220 L 1040,240 L 1000,250 L 960,260 L 920,250 L 900,230 Z"/>
+                    <path d="M 960,260 L 980,280 L 960,300 L 920,290"/>
+                    
+                    {/* Africa */}
+                    <path d="M 920,320 L 960,310 L 1000,320 L 1040,340 L 1060,380 L 1080,440 L 1060,500 L 1020,560 L 980,580 L 940,560 L 900,520 L 880,480 L 880,440 L 900,400 L 920,360 Z"/>
+                    
+                    {/* Middle East */}
+                    <path d="M 1060,280 L 1100,270 L 1140,280 L 1160,300 L 1180,320 L 1160,340 L 1120,350 L 1080,340 L 1060,320 Z"/>
+                    
+                    {/* Asia */}
+                    <path d="M 1200,180 L 1280,160 L 1360,180 L 1440,200 L 1500,220 L 1540,260 L 1560,300 L 1540,340 L 1500,360 L 1440,350 L 1380,340 L 1320,320 L 1260,300 L 1220,280 L 1200,240 Z"/>
+                    <path d="M 1500,360 L 1540,380 L 1560,420 L 1540,460 L 1500,480 L 1460,460 L 1440,420 L 1460,380"/>
+                    
+                    {/* Australia */}
+                    <path d="M 1600,560 L 1660,550 L 1720,560 L 1760,580 L 1780,620 L 1760,660 L 1720,680 L 1660,670 L 1620,650 L 1600,620 Z"/>
+                  </g>
+                </svg>
+                
+                {/* Office Location Pins - Red Strategic Points */}
+                <div class="absolute inset-0">
+                  {/* Middle East Offices */}
+                  <div class="office-pin" style="left: 57.5%; top: 32%;" data-office="Abu Dhabi, UAE" data-type="regional-hq">
+                    <div class="pin-marker regional-hq"></div>
+                  </div>
+                  <div class="office-pin" style="left: 57%; top: 30%;" data-office="Riyadh, KSA">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 58%; top: 33%;" data-office="Manama, Bahrain">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 55.5%; top: 29%;" data-office="Beirut, Lebanon">
+                    <div class="pin-marker"></div>
+                  </div>
+                  
+                  {/* Europe Offices */}
+                  <div class="office-pin" style="left: 48.5%; top: 24%;" data-office="Milan, Italy" data-type="global-hq">
+                    <div class="pin-marker global-hq"></div>
+                  </div>
+                  <div class="office-pin" style="left: 47.5%; top: 22%;" data-office="London, UK">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 49%; top: 27%;" data-office="Rome, Italy">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 51%; top: 23%;" data-office="Prague, Czech Republic">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 54%; top: 27%;" data-office="Istanbul, Turkey">
+                    <div class="pin-marker"></div>
+                  </div>
+                  
+                  {/* Americas Offices */}
+                  <div class="office-pin" style="left: 22%; top: 26%;" data-office="New York, USA">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 15%; top: 28%;" data-office="Los Angeles, USA">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 28%; top: 56%;" data-office="Buenos Aires, Argentina">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 30%; top: 58%;" data-office="Montevideo, Uruguay">
+                    <div class="pin-marker"></div>
+                  </div>
+                  
+                  {/* Asia & Africa Offices */}
+                  <div class="office-pin" style="left: 72%; top: 30%;" data-office="Shanghai, China">
+                    <div class="pin-marker"></div>
+                  </div>
+                  <div class="office-pin" style="left: 52%; top: 65%;" data-office="Cape Town, South Africa">
+                    <div class="pin-marker"></div>
+                  </div>
+                </div>
+                
+                {/* Hover Tooltip */}
+                <div id="map-tooltip" class="absolute hidden bg-g2-darker/95 border border-g2-gold/50 px-5 py-3 rounded backdrop-blur-sm pointer-events-none z-50 shadow-xl">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-red-600 rounded-full pulse-dot"></div>
+                    <span id="office-name" class="text-white font-medium text-sm tracking-wide"></span>
+                  </div>
+                </div>
               </div>
 
               {/* City Legend */}

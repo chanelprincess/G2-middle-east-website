@@ -5,7 +5,51 @@
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Handle city marker hover tooltips
+  // Handle Digital Command Centre office pin tooltips
+  const officePins = document.querySelectorAll('.office-pin');
+  const mapTooltip = document.getElementById('map-tooltip');
+  
+  officePins.forEach(pin => {
+    pin.addEventListener('mouseenter', function(e) {
+      const officeName = this.getAttribute('data-office');
+      const officeType = this.getAttribute('data-type');
+      
+      if (mapTooltip) {
+        const tooltipText = mapTooltip.querySelector('#office-name');
+        if (tooltipText) {
+          // Set office name
+          tooltipText.textContent = officeName;
+          
+          // Add HQ indicator if applicable
+          if (officeType === 'global-hq') {
+            tooltipText.textContent += ' (Global HQ)';
+          } else if (officeType === 'regional-hq') {
+            tooltipText.textContent += ' (Regional HQ)';
+          }
+        }
+        
+        // Position tooltip above the pin
+        const rect = this.getBoundingClientRect();
+        const mapContainer = this.closest('.relative');
+        if (mapContainer) {
+          const containerRect = mapContainer.getBoundingClientRect();
+          
+          mapTooltip.style.left = (rect.left - containerRect.left + rect.width / 2) + 'px';
+          mapTooltip.style.top = (rect.top - containerRect.top - 10) + 'px';
+          mapTooltip.style.transform = 'translate(-50%, -100%)';
+          mapTooltip.classList.remove('hidden');
+        }
+      }
+    });
+    
+    pin.addEventListener('mouseleave', function() {
+      if (mapTooltip) {
+        mapTooltip.classList.add('hidden');
+      }
+    });
+  });
+  
+  // Legacy support for old city marker system (if exists on other pages)
   const cityMarkers = document.querySelectorAll('.city-marker');
   const tooltip = document.getElementById('city-tooltip');
   const tooltipGroup = document.getElementById('city-tooltip-group');
