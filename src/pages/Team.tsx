@@ -386,7 +386,7 @@ export const TeamPage: FC = () => {
             <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
               <div class="relative h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" 
+                  src="https://page.gensparksite.com/v1/base64_upload/2350e03ac994278e773d1901e6fe320d" 
                   alt="David Jakic"
                   class="w-full h-full object-cover grayscale"
                 />

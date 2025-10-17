@@ -366,7 +366,7 @@ export const teamData = {
     slug: 'david-jakic',
     name: 'David Jakic',
     jobTitle: 'Business Strategy and Development Director',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80',
+    image: 'https://page.gensparksite.com/v1/base64_upload/2350e03ac994278e773d1901e6fe320d',
     linkedIn: 'https://www.linkedin.com/in/david-jakic/',
     description: `
       <p class="text-xl text-white font-light mb-4">
