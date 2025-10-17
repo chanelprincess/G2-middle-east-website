@@ -11,6 +11,8 @@ import { ServiceDetailPage, servicesData } from './pages/ServiceDetail'
 import { TeamDetailPage, teamData } from './pages/TeamDetail'
 import { ProjectsPage } from './pages/Projects'
 import { ProjectDetailPage, projectsData } from './pages/ProjectDetail'
+import { PerspectivesPage } from './pages/Perspectives'
+import { PerspectiveDetailPage, perspectivesData } from './pages/PerspectiveDetail'
 
 type Bindings = {
   DB: D1Database
@@ -134,19 +136,31 @@ app.get('/projects/:slug', (c) => {
   )
 })
 
-// Perspectives (Blog) Page (placeholder)
+// Perspectives (Blog) Page
 app.get('/briefing', (c) => {
   return c.render(
-    <div class="min-h-screen bg-g2-darker text-white flex items-center justify-center">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Perspectives</h1>
-        <p class="text-gray-400 mb-6">Strategic insights coming soon</p>
-        <a href="/" class="btn-primary">Back to Home</a>
-      </div>
-    </div>,
+    <PerspectivesPage />,
     {
       title: 'Perspectives | G2 Middle East',
-      description: 'Strategic insights and market intelligence'
+      description: 'Strategic insights on brand architecture, market positioning, and the future of communications in an AI-driven world.'
+    }
+  )
+})
+
+// Perspective Detail Pages - Dynamic routing
+app.get('/perspectives/:slug', (c) => {
+  const slug = c.req.param('slug')
+  const perspectiveData = perspectivesData[slug as keyof typeof perspectivesData]
+  
+  if (!perspectiveData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <PerspectiveDetailPage {...perspectiveData} />,
+    {
+      title: `${perspectiveData.title} | G2 Middle East`,
+      description: perspectiveData.excerpt || perspectiveData.title
     }
   )
 })
