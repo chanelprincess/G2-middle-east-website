@@ -135,82 +135,15 @@ export const GroupPage: FC = () => {
               Our Global Network
             </h2>
 
-            {/* Interactive Global Map - Same as landing page */}
+            {/* Interactive Global Map */}
             <div class="relative mb-12">
-              <div class="aspect-[2/1] bg-[#1a1a1a] rounded-lg overflow-hidden relative border border-white/10">
-                {/* World Map SVG Background */}
-                <div class="absolute inset-0 flex items-center justify-center opacity-20">
-                  <svg viewBox="0 0 1000 500" class="w-full h-full" style="filter: brightness(0.6);">
-                    <path d="M 100,150 L 200,120 L 250,140 L 280,130 L 300,150 L 280,170 L 250,160 L 200,180 L 100,150 Z" fill="#B89A6A" opacity="0.3"/>
-                    <path d="M 350,180 L 450,160 L 500,180 L 480,200 L 450,190 L 400,210 L 350,180 Z" fill="#B89A6A" opacity="0.3"/>
-                    <path d="M 550,200 L 650,180 L 700,200 L 680,230 L 630,240 L 580,220 L 550,200 Z" fill="#B89A6A" opacity="0.3"/>
-                    <path d="M 150,300 L 200,280 L 250,290 L 240,320 L 200,330 L 150,310 L 150,300 Z" fill="#B89A6A" opacity="0.3"/>
-                    <path d="M 600,150 L 700,140 L 750,160 L 730,180 L 680,170 L 630,160 L 600,150 Z" fill="#B89A6A" opacity="0.3"/>
-                  </svg>
-                </div>
-
-                {/* Global Network Cities - Positioned on Map */}
-                <div class="absolute inset-0">
-                  {/* Europe */}
-                  <div class="city-marker" style="left: 48%; top: 35%;" data-city="Milan (Global HQ)">
-                    <div class="w-4 h-4 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 47%; top: 32%;" data-city="London">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 49%; top: 38%;" data-city="Rome">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 51%; top: 34%;" data-city="Prague">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 54%; top: 38%;" data-city="Istanbul">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-
-                  {/* Middle East */}
-                  <div class="city-marker" style="left: 58%; top: 48%;" data-city="Abu Dhabi (Regional HQ)">
-                    <div class="w-4 h-4 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 57%; top: 46%;" data-city="Riyadh">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 58%; top: 50%;" data-city="Bahrain">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 55%; top: 43%;" data-city="Beirut">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-
-                  {/* Americas */}
-                  <div class="city-marker" style="left: 22%; top: 38%;" data-city="New York">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 15%; top: 40%;" data-city="Los Angeles">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 28%; top: 68%;" data-city="Buenos Aires">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                  <div class="city-marker" style="left: 30%; top: 70%;" data-city="Montevideo">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-
-                  {/* Asia */}
-                  <div class="city-marker" style="left: 72%; top: 42%;" data-city="Shanghai">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-
-                  {/* Africa */}
-                  <div class="city-marker" style="left: 52%; top: 75%;" data-city="Cape Town">
-                    <div class="w-3 h-3 bg-g2-gold rounded-full pulse-marker"></div>
-                  </div>
-                </div>
-
-                {/* Hover Tooltip */}
-                <div id="city-tooltip-group" class="absolute hidden bg-g2-dark border border-g2-gold px-4 py-2 rounded text-white text-sm pointer-events-none z-50">
-                  <span id="city-name-group"></span>
-                </div>
+              <div class="rounded-lg overflow-hidden relative border border-white/10 bg-black">
+                {/* Map Image with Markers */}
+                <img 
+                  src="https://page.gensparksite.com/v1/base64_upload/3ad62cdb074e54160d8ae897f7d78857" 
+                  alt="Casta Diva Group Global Network" 
+                  class="w-full h-auto"
+                />
               </div>
 
               {/* City Listing */}
