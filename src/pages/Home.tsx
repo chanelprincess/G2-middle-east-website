@@ -347,8 +347,8 @@ export const HomePage: FC = () => {
       <section class="relative bg-g2-darker border-t border-white/5">
         {/* Full Width Video with Overlay */}
         <div class="relative w-full overflow-hidden">
-          {/* Video Background - 70% opacity */}
-          <div class="relative w-full" style="opacity: 0.7;">
+          {/* Video Background - 55% opacity */}
+          <div class="relative w-full" style="opacity: 0.55;">
             <video 
               autoplay
               loop
