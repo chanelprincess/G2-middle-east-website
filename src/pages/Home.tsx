@@ -363,7 +363,7 @@ export const HomePage: FC = () => {
             <div class="relative mb-12">
               <div class="relative rounded-lg overflow-hidden">
                 <img 
-                  src="https://page.gensparksite.com/v1/base64_upload/dab1a94ed51e99527b944fbef5c1a53e" 
+                  src="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421" 
                   alt="Global Network - Casta Diva Group Worldwide Presence"
                   class="w-full h-auto object-cover rounded-lg"
                 />
