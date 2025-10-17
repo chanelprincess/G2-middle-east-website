@@ -61,79 +61,52 @@ export function PerspectivesPage() {
           <div class="max-w-6xl mx-auto">
             <h3 class="text-2xl font-bold mb-12 text-white">Recent Articles</h3>
 
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid md:grid-cols-2 gap-8">
               {/* Article 2 */}
-              <a href="/perspectives/cost-losing-10-percent" class="block group">
+              <a href="/perspectives/cost-losing-10-percent" class="block group border border-white/10 rounded-2xl p-8 bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 <div class="mb-6">
-                  <span class="text-gray-500 text-sm">October 2025</span>
+                  <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">STRATEGY</span>
                 </div>
                 <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                   The Cost of Losing 10%
                 </h4>
-                <div class="flex items-center gap-3 mb-4">
-                  <div class="w-10 h-10 rounded-full bg-g2-gold/20 flex items-center justify-center">
-                    <i class="fas fa-user text-g2-gold text-sm"></i>
-                  </div>
-                  <div>
-                    <div class="text-white font-semibold text-sm">Tim Jacobs</div>
-                    <div class="text-gray-500 text-xs">Regional COO</div>
-                  </div>
-                </div>
-                <p class="text-gray-400 leading-relaxed mb-4">
+                <p class="text-gray-400 leading-relaxed mb-6">
                   A small percentage drop can have massive downstream effects on your organization's performance and reputation.
                 </p>
-                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm">
-                  Read article <i class="fas fa-arrow-right ml-2"></i>
+                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                  Read More <i class="fas fa-arrow-right ml-2"></i>
                 </div>
               </a>
 
               {/* Article 3 */}
-              <a href="/perspectives/artistry-discovery" class="block group">
+              <a href="/perspectives/artistry-discovery" class="block group border border-white/10 rounded-2xl p-8 bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 <div class="mb-6">
-                  <span class="text-gray-500 text-sm">December 2024</span>
+                  <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CREATIVITY</span>
                 </div>
                 <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                   The Artistry Isn't in the Tell, It's in the Discovery
                 </h4>
-                <div class="flex items-center gap-3 mb-4">
-                  <div class="w-10 h-10 rounded-full bg-g2-gold/20 flex items-center justify-center">
-                    <i class="fas fa-user text-g2-gold text-sm"></i>
-                  </div>
-                  <div>
-                    <div class="text-white font-semibold text-sm">Tim Jacobs</div>
-                    <div class="text-gray-500 text-xs">Regional COO</div>
-                  </div>
-                </div>
-                <p class="text-gray-400 leading-relaxed mb-4">
+                <p class="text-gray-400 leading-relaxed mb-6">
                   The true artistry lies in how the narrative invites discovery, how its placement intrigues, and how its design captivates and subverts expectations.
                 </p>
-                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm">
-                  Read article <i class="fas fa-arrow-right ml-2"></i>
+                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                  Read More <i class="fas fa-arrow-right ml-2"></i>
                 </div>
               </a>
 
               {/* Article 4 */}
-              <a href="/perspectives/cultural-intelligence" class="block group">
+              <a href="/perspectives/cultural-intelligence" class="block group border border-white/10 rounded-2xl p-8 bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 <div class="mb-6">
-                  <span class="text-gray-500 text-sm">January 2025</span>
+                  <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CULTURE</span>
                 </div>
                 <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                   Cultural Intelligence Outperforms Capital Alone: The Real Alpha
                 </h4>
-                <div class="flex items-center gap-3 mb-4">
-                  <div class="w-10 h-10 rounded-full bg-g2-gold/20 flex items-center justify-center">
-                    <i class="fas fa-user text-g2-gold text-sm"></i>
-                  </div>
-                  <div>
-                    <div class="text-white font-semibold text-sm">Tim Jacobs</div>
-                    <div class="text-gray-500 text-xs">Regional COO</div>
-                  </div>
-                </div>
-                <p class="text-gray-400 leading-relaxed mb-4">
+                <p class="text-gray-400 leading-relaxed mb-6">
                   In the dynamic GCC, sustained value creation requires more than capital—it demands cultural intelligence embedded in local relationships and communities.
                 </p>
-                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm">
-                  Read article <i class="fas fa-arrow-right ml-2"></i>
+                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                  Read More <i class="fas fa-arrow-right ml-2"></i>
                 </div>
               </a>
             </div>
