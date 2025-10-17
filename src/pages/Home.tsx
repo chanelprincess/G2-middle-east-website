@@ -344,83 +344,91 @@ export const HomePage: FC = () => {
       </section>
 
       {/* Global Reach Section - Casta Diva Group */}
-      <section class="py-24 bg-g2-darker border-t border-white/5">
-        <div class="container mx-auto px-6">
-          <div class="max-w-6xl mx-auto">
-            {/* Section Header */}
-            <div class="text-center mb-16">
-              <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Global Reach. Unrivalled Capability.
-              </h2>
-              <p class="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
-                G2 Middle East is a division of <span class="text-g2-gold">Casta Diva Group</span>, 
-                a global leader in communication with a presence in 15 cities across four continents. We bring the full force of 
-                this international network to every client engagement.
-              </p>
-            </div>
-
-            {/* Global Network Video */}
-            <div class="relative mb-12">
-              <div class="relative rounded-lg overflow-hidden bg-black">
-                <video 
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  preload="metadata"
-                  class="w-full h-auto object-cover rounded-lg"
-                  poster="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421"
-                >
-                  <source 
-                    src="https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/9a6683ab-c0df-441f-a05c-9f4e5f4c6829" 
-                    type="video/mp4"
-                  />
-                  {/* Fallback image for browsers that don't support video */}
-                  <img 
-                    src="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421" 
-                    alt="Global Network - Casta Diva Group Worldwide Presence"
-                    class="w-full h-auto object-cover rounded-lg"
-                  />
-                </video>
+      <section class="relative bg-g2-darker border-t border-white/5">
+        {/* Full Width Video with Overlay */}
+        <div class="relative w-full overflow-hidden">
+          {/* Video Background - 70% opacity */}
+          <div class="relative w-full" style="opacity: 0.7;">
+            <video 
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              class="w-full h-auto object-cover"
+              style="min-height: 600px;"
+              poster="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421"
+            >
+              <source 
+                src="https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/9a6683ab-c0df-441f-a05c-9f4e5f4c6829" 
+                type="video/mp4"
+              />
+              {/* Fallback image for browsers that don't support video */}
+              <img 
+                src="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421" 
+                alt="Global Network - Casta Diva Group Worldwide Presence"
+                class="w-full h-auto object-cover"
+              />
+            </video>
+          </div>
+          
+          {/* Overlaid Text Content - Top Third Center */}
+          <div class="absolute inset-0 flex items-start justify-center pt-16 md:pt-24">
+            <div class="container mx-auto px-6">
+              <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+                  Global Reach. Unrivalled Capability.
+                </h2>
+                <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto">
+                  G2 Middle East is a division of <span class="text-g2-gold font-semibold">Casta Diva Group</span>, 
+                  a global leader in communication with a presence in 15 cities across four continents. We bring the full force of 
+                  this international network to every client engagement.
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
 
-              {/* City Legend */}
-              <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-                <div>
-                  <h4 class="text-g2-gold font-semibold mb-3">Europe</h4>
-                  <ul class="text-gray-400 space-y-1">
-                    <li>Milan (Global HQ)</li>
-                    <li>London</li>
-                    <li>Rome</li>
-                    <li>Prague</li>
-                    <li>Istanbul</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 class="text-g2-gold font-semibold mb-3">Middle East & Africa</h4>
-                  <ul class="text-gray-400 space-y-1">
-                    <li>Abu Dhabi (Regional HQ)</li>
-                    <li>Riyadh</li>
-                    <li>Bahrain</li>
-                    <li>Beirut</li>
-                    <li>Cape Town</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 class="text-g2-gold font-semibold mb-3">The Americas & Asia</h4>
-                  <ul class="text-gray-400 space-y-1">
-                    <li>New York</li>
-                    <li>Los Angeles</li>
-                    <li>Buenos Aires</li>
-                    <li>Montevideo</li>
-                    <li>Shanghai</li>
-                  </ul>
-                </div>
+        {/* City Legend - Below Video */}
+        <div class="container mx-auto px-6 py-16">
+          <div class="max-w-6xl mx-auto">
+
+            {/* City Legend */}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+              <div>
+                <h4 class="text-g2-gold font-semibold mb-3">Europe</h4>
+                <ul class="text-gray-400 space-y-1">
+                  <li>Milan (Global HQ)</li>
+                  <li>London</li>
+                  <li>Rome</li>
+                  <li>Prague</li>
+                  <li>Istanbul</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-g2-gold font-semibold mb-3">Middle East & Africa</h4>
+                <ul class="text-gray-400 space-y-1">
+                  <li>Abu Dhabi (Regional HQ)</li>
+                  <li>Riyadh</li>
+                  <li>Bahrain</li>
+                  <li>Beirut</li>
+                  <li>Cape Town</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-g2-gold font-semibold mb-3">The Americas & Asia</h4>
+                <ul class="text-gray-400 space-y-1">
+                  <li>New York</li>
+                  <li>Los Angeles</li>
+                  <li>Buenos Aires</li>
+                  <li>Montevideo</li>
+                  <li>Shanghai</li>
+                </ul>
               </div>
             </div>
 
             {/* CTA Button */}
-            <div class="text-center">
+            <div class="text-center mt-12">
               <a href="/group" class="inline-flex items-center px-8 py-4 bg-g2-gold text-g2-darker font-semibold rounded hover:bg-white transition-colors duration-300">
                 Discover The Group
                 <i class="fas fa-arrow-right ml-3"></i>
@@ -429,6 +437,7 @@ export const HomePage: FC = () => {
           </div>
         </div>
       </section>
+      
       {/* The G-2 Briefing Teaser */}
       <section class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
