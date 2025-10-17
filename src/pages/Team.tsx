@@ -215,15 +215,23 @@ export const TeamPage: FC = () => {
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Go-to-Market & Client Acquisition Strategy</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Brand Engagement & Strategic Positioning</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
                           <span>Sovereign Positioning & Nation Branding</span>
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                          <span>Crisis Defence & Reputation Architecture</span>
+                          <span>Crisis & Reputation Architecture</span>
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                          <span>Foreign Direct Investment (FDI) & Economic Diplomacy</span>
+                          <span>Cultural & Economic Diplomacy</span>
                         </div>
                       </div>
                     </div>
@@ -238,7 +246,7 @@ export const TeamPage: FC = () => {
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                          <span>Mega-Project & Giga-Event Command</span>
+                          <span>Major Project & Events Critical Delivery Approaches</span>
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
@@ -246,7 +254,7 @@ export const TeamPage: FC = () => {
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                          <span>Multi-Agency & Diplomatic Corps Coordination</span>
+                          <span>Complex Multi-stakeholder Management</span>
                         </div>
                       </div>
                     </div>
@@ -257,15 +265,23 @@ export const TeamPage: FC = () => {
                       <div class="grid grid-cols-1 gap-3">
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Media Craft & Narrative Positioning</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
                           <span>LLM & AI Knowledge Graph Optimisation</span>
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                          <span>Targeted Experience & Immersive Design</span>
+                          <span>Influencer & KOL Engagement Strategy</span>
                         </div>
                         <div class="flex items-start">
                           <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                          <span>Strategic Social Engineering & Influence Operations</span>
+                          <span>Strategic Social & Influence Approaches</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Targeted Experience & Immersive Design</span>
                         </div>
                       </div>
                     </div>
