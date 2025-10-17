@@ -19,14 +19,14 @@ export function PerspectivesPage() {
       <section class="py-16 md:py-24 border-b border-white/5">
         <div class="container mx-auto px-6">
           <div class="max-w-6xl mx-auto">
-            <div class="flex items-center gap-4 mb-6">
-              <span class="px-4 py-1 bg-g2-gold/10 text-g2-gold text-sm font-semibold rounded-full border border-g2-gold/20">
-                Featured
-              </span>
-              <span class="text-gray-500 text-sm">October 2025</span>
-            </div>
+            <a href="/perspectives/competing-ai-arena" class="block group border border-white/10 rounded-2xl p-8 md:p-12 bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <div class="flex items-center gap-4 mb-6">
+                <span class="px-4 py-1 bg-g2-gold/10 text-g2-gold text-sm font-semibold rounded-full border border-g2-gold/20">
+                  Featured
+                </span>
+                <span class="text-gray-500 text-sm">October 2025</span>
+              </div>
 
-            <a href="/perspectives/competing-ai-arena" class="block group">
               <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white group-hover:text-g2-gold transition-colors">
                 Competing in the AI Arena: The New Frontier of Brand Strategy
               </h2>
@@ -47,7 +47,7 @@ export function PerspectivesPage() {
                 In an era where AI is reshaping every aspect of business, brands face a critical question: how do you compete when the rules of engagement are being rewritten in real-time?
               </p>
 
-              <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors">
+              <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors font-semibold">
                 Read article <i class="fas fa-arrow-right ml-2"></i>
               </div>
             </a>
