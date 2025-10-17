@@ -359,14 +359,29 @@ export const HomePage: FC = () => {
               </p>
             </div>
 
-            {/* Global Network Image */}
+            {/* Global Network Video */}
             <div class="relative mb-12">
-              <div class="relative rounded-lg overflow-hidden">
-                <img 
-                  src="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421" 
-                  alt="Global Network - Casta Diva Group Worldwide Presence"
+              <div class="relative rounded-lg overflow-hidden bg-black">
+                <video 
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="metadata"
                   class="w-full h-auto object-cover rounded-lg"
-                />
+                  poster="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421"
+                >
+                  <source 
+                    src="https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/9a6683ab-c0df-441f-a05c-9f4e5f4c6829" 
+                    type="video/mp4"
+                  />
+                  {/* Fallback image for browsers that don't support video */}
+                  <img 
+                    src="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421" 
+                    alt="Global Network - Casta Diva Group Worldwide Presence"
+                    class="w-full h-auto object-cover rounded-lg"
+                  />
+                </video>
               </div>
 
               {/* City Legend */}
