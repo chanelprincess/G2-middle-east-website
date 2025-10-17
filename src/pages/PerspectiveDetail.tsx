@@ -72,7 +72,7 @@ export function PerspectiveDetailPage(props: PerspectiveData) {
             prose-strong:text-white prose-strong:font-semibold
             prose-a:text-g2-gold prose-a:no-underline hover:prose-a:text-white 
             prose-ul:my-3 prose-li:mb-1
-            prose-img:my-6 prose-img:rounded-lg">
+            prose-img:my-10 prose-img:rounded-lg">
             {props.content}
           </article>
         </div>
