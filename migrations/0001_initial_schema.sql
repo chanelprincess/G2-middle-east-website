@@ -1,84 +1,46 @@
--- Lead Capture Table (for Contact Form and Gated Content)
-CREATE TABLE IF NOT EXISTS leads (
+-- Users table for authentication and approval workflow
+CREATE TABLE IF NOT EXISTS users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT NOT NULL,
-  email TEXT NOT NULL,
-  company TEXT,
-  phone TEXT,
-  message TEXT,
-  source TEXT NOT NULL, -- 'contact_form', 'whitepaper_download', 'newsletter'
-  gated_content_id TEXT, -- Which whitepaper/content they accessed
+  username TEXT UNIQUE NOT NULL,
+  email TEXT UNIQUE NOT NULL,
+  password_hash TEXT NOT NULL,
+  full_name TEXT NOT NULL,
+  company TEXT NOT NULL,
+  job_title TEXT NOT NULL,
+  is_approved INTEGER DEFAULT 0,
+  is_admin INTEGER DEFAULT 0,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  ip_address TEXT,
-  user_agent TEXT
+  approved_at DATETIME,
+  last_login DATETIME
 );
 
--- Projects Table (for case studies)
-CREATE TABLE IF NOT EXISTS projects (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  slug TEXT UNIQUE NOT NULL,
-  title TEXT NOT NULL,
-  subtitle TEXT,
-  category TEXT NOT NULL, -- 'sovereign', 'luxury', 'global_brand', etc.
-  hero_image TEXT,
-  description TEXT NOT NULL,
-  challenge TEXT,
-  solution TEXT,
-  results TEXT,
-  featured BOOLEAN DEFAULT 0,
-  published BOOLEAN DEFAULT 1,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-
--- Blog Posts Table (The G-2 Briefing)
-CREATE TABLE IF NOT EXISTS blog_posts (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  slug TEXT UNIQUE NOT NULL,
-  title TEXT NOT NULL,
-  excerpt TEXT NOT NULL,
-  content TEXT NOT NULL,
-  author TEXT DEFAULT 'G-2 Middle East',
-  featured_image TEXT,
-  category TEXT, -- 'strategy', 'thought_leadership', 'market_insight', etc.
-  tags TEXT, -- JSON array stored as string
-  published BOOLEAN DEFAULT 0,
-  featured BOOLEAN DEFAULT 0,
-  views INTEGER DEFAULT 0,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-
--- Whitepapers Table (Gated Content)
+-- Whitepapers table for content management
 CREATE TABLE IF NOT EXISTS whitepapers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  slug TEXT UNIQUE NOT NULL,
   title TEXT NOT NULL,
   description TEXT NOT NULL,
-  file_key TEXT NOT NULL, -- R2 bucket key
+  file_path TEXT NOT NULL,
   file_size INTEGER,
-  thumbnail_key TEXT, -- R2 bucket key for thumbnail
-  downloads INTEGER DEFAULT 0,
-  published BOOLEAN DEFAULT 1,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-
--- Newsletter Subscriptions
-CREATE TABLE IF NOT EXISTS newsletter_subscribers (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  email TEXT UNIQUE NOT NULL,
-  name TEXT,
-  subscribed BOOLEAN DEFAULT 1,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-  unsubscribed_at DATETIME
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  download_count INTEGER DEFAULT 0,
+  is_active INTEGER DEFAULT 1
 );
 
--- Create indexes for performance
-CREATE INDEX IF NOT EXISTS idx_leads_email ON leads(email);
-CREATE INDEX IF NOT EXISTS idx_leads_source ON leads(source);
-CREATE INDEX IF NOT EXISTS idx_projects_slug ON projects(slug);
-CREATE INDEX IF NOT EXISTS idx_projects_category ON projects(category);
-CREATE INDEX IF NOT EXISTS idx_projects_featured ON projects(featured);
-CREATE INDEX IF NOT EXISTS idx_blog_posts_slug ON blog_posts(slug);
-CREATE INDEX IF NOT EXISTS idx_blog_posts_published ON blog_posts(published);
-CREATE INDEX IF NOT EXISTS idx_whitepapers_slug ON whitepapers(slug);
+-- Download tracking table
+CREATE TABLE IF NOT EXISTS downloads (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  whitepaper_id INTEGER NOT NULL,
+  downloaded_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (whitepaper_id) REFERENCES whitepapers(id)
+);
+
+-- Create indexes for better performance
+CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);
+CREATE INDEX IF NOT EXISTS idx_users_username ON users(username);
+CREATE INDEX IF NOT EXISTS idx_users_approved ON users(is_approved);
+CREATE INDEX IF NOT EXISTS idx_downloads_user_id ON downloads(user_id);
+CREATE INDEX IF NOT EXISTS idx_downloads_whitepaper_id ON downloads(whitepaper_id);
+CREATE INDEX IF NOT EXISTS idx_whitepapers_active ON whitepapers(is_active);

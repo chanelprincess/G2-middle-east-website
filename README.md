@@ -52,14 +52,34 @@
 
 ### D1 Database Tables
 
-#### 1. **leads** - Contact Form & Gated Content
-Stores all inquiries from contact forms and whitepaper downloads.
+#### 1. **users** - White Paper Access Management
+User authentication and approval for gated content access.
+```sql
+Fields: id, username, email, password_hash, full_name, company, 
+        job_title, is_approved, is_admin, created_at, approved_at, last_login
+```
+
+#### 2. **whitepapers** - Gated Content Library
+Downloadable strategic resources and corporate credentials.
+```sql
+Fields: id, title, description, file_path, file_size, 
+        created_at, updated_at, download_count, is_active
+```
+
+#### 3. **downloads** - Download Tracking
+Tracks all whitepaper downloads for analytics and user engagement.
+```sql
+Fields: id, user_id, whitepaper_id, downloaded_at
+```
+
+#### 4. **leads** - Contact Form & Inquiries
+Stores all inquiries from contact forms and general inquiries.
 ```sql
 Fields: id, name, email, company, phone, message, source, 
         gated_content_id, ip_address, user_agent, created_at
 ```
 
-#### 2. **projects** - Case Studies
+#### 5. **projects** - Case Studies (Planned)
 Portfolio of strategic projects and case studies.
 ```sql
 Fields: id, slug, title, subtitle, category, hero_image, 
@@ -67,7 +87,7 @@ Fields: id, slug, title, subtitle, category, hero_image,
         published, created_at, updated_at
 ```
 
-#### 3. **blog_posts** - The G-2 Briefing
+#### 6. **blog_posts** - The G-2 Briefing (Planned)
 Strategic insights and thought leadership content.
 ```sql
 Fields: id, slug, title, excerpt, content, author, 
@@ -75,15 +95,7 @@ Fields: id, slug, title, excerpt, content, author,
         featured, views, created_at, updated_at
 ```
 
-#### 4. **whitepapers** - Gated Content
-Downloadable strategic resources and corporate credentials.
-```sql
-Fields: id, slug, title, description, file_key, 
-        file_size, thumbnail_key, downloads, 
-        published, created_at
-```
-
-#### 5. **newsletter_subscribers**
+#### 7. **newsletter_subscribers** (Planned)
 Email list for The G-2 Briefing newsletter.
 
 ### R2 Storage Structure
@@ -139,15 +151,22 @@ webapp/
 6. **SEO Foundation** - Meta tags, Open Graph, Twitter Cards, Schema.org markup
 7. **Navigation & Footer** - Responsive header and footer with mobile menu
 8. **API Endpoints** - Health check, database test, contact form submission, leads retrieval
+9. **White Papers Gated Section** - Complete authentication system with admin approval workflow
+   - User registration with comprehensive form (name, company, job title, email, credentials)
+   - Session-based authentication with secure HTTP-only cookies
+   - Admin approval workflow with pending/approved states
+   - Protected whitepaper listing page with download tracking
+   - Admin CMS for user management and whitepaper content management
+   - Email notification system (Resend/SendGrid/Mailgun integration ready)
+   - Download tracking and analytics
 
 ### 🚧 Pending Implementation
 1. **Projects Page** - Filterable case study grid with detailed project pages
 2. **The G-2 Briefing** - Blog listing and article pages
-3. **Whitepapers Section** - Gated content downloads with lead capture
-4. **R2 Integration** - Upload and serve G2 presentation PDF (30MB)
+3. **R2 Integration** - Upload and serve whitepaper PDFs from R2 storage
+4. **Email Service Configuration** - Add API key for production email notifications
 5. **Newsletter Subscription** - Email capture for The G-2 Briefing
 6. **Search Functionality** - Site-wide content search
-7. **Admin Dashboard** - Content management interface (future phase)
 
 ## Installation & Setup
 
@@ -194,6 +213,49 @@ npm run db:console:local
 npm run db:migrate:prod
 ```
 
+## White Paper Gated Section
+
+### Overview
+The white paper section is a secure, gated area requiring user registration and admin approval. It provides controlled access to premium content while capturing qualified leads.
+
+### User Flow
+1. **Registration**: Users complete comprehensive form with business details
+2. **Pending Approval**: System shows pending status and sends confirmation email
+3. **Admin Notification**: Tim receives email with one-click approval link
+4. **Admin Review**: Admin reviews user details in dashboard and approves/denies
+5. **User Notification**: Approved users receive email with login credentials
+6. **Access Granted**: Users can login and download all available whitepapers
+7. **Download Tracking**: System logs all downloads for analytics
+
+### Key Features
+- **Session-based authentication** with secure HTTP-only cookies
+- **Password hashing** using Web Crypto API SHA-256
+- **Multi-state approval workflow** (pending → approved)
+- **Email notifications** at each stage (registration, approval)
+- **Admin CMS** for user and content management
+- **Download analytics** tracking user engagement
+- **Protected routes** with middleware authentication checks
+
+### Pages
+- `/whitepapers/login` - User login page
+- `/whitepapers/register` - Registration form with all required fields
+- `/whitepapers/pending` - Success page after registration
+- `/whitepapers` - Protected whitepaper listing (requires login)
+- `/admin/users` - Admin user management dashboard
+- `/admin/whitepapers` - Admin content management CMS
+
+### Email Integration
+The system supports three email service providers:
+- **Resend** (recommended) - Modern API, best for Cloudflare Workers
+- **SendGrid** - Established service, high volume support
+- **Mailgun** - Flexible transactional email service
+
+For setup instructions, see [EMAIL_SETUP.md](EMAIL_SETUP.md)
+
+### Test Credentials (Development)
+- **Admin**: `username: admin`, `password: admin123`
+- **Approved User**: `username: jsmith`, `password: test123`
+
 ## API Endpoints
 
 ### Public APIs
@@ -225,7 +287,44 @@ Response: {
 }
 ```
 
-### Admin APIs (Require Authentication in Production)
+### White Paper APIs
+
+#### User Registration
+```bash
+POST /api/auth/register
+Content-Type: application/x-www-form-urlencoded
+
+full_name=John Smith
+company=Acme Corp
+job_title=Marketing Director
+email=john@acme.com
+username=jsmith
+password=secure123
+confirm_password=secure123
+
+Response: 302 Redirect to /whitepapers/pending
+```
+
+#### User Login
+```bash
+POST /api/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=jsmith
+password=secure123
+
+Response: 302 Redirect to /whitepapers (with session cookie)
+```
+
+#### Download Whitepaper (Authenticated)
+```bash
+GET /api/whitepapers/download/:id
+Cookie: auth_session=...
+
+Response: PDF file download (tracked in database)
+```
+
+### Admin APIs (Require Admin Authentication)
 
 #### Get Recent Leads
 ```bash
@@ -235,6 +334,24 @@ Response: {
   leads: [...], 
   count: 50 
 }
+```
+
+#### Approve User
+```bash
+POST /api/admin/users/approve/:id
+Response: 302 Redirect to /admin/users
+```
+
+#### Quick Approval (Email Link)
+```bash
+GET /admin/approve/:id
+Response: HTML success page with confirmation
+```
+
+#### Toggle Whitepaper Status
+```bash
+POST /api/admin/whitepapers/toggle/:id
+Response: 302 Redirect to /admin/whitepapers
 ```
 
 ## Deployment
@@ -277,10 +394,21 @@ npm run db:migrate:prod
 ### Environment Variables (Production)
 
 Set these via Cloudflare dashboard or CLI:
+
 ```bash
-npx wrangler pages secret put ANTHROPIC_API_KEY --project-name g2-middle-east
+# Email service configuration (required for notifications)
+npx wrangler pages secret put EMAIL_SERVICE --project-name webapp
+# Enter: resend (or sendgrid, mailgun)
+
+npx wrangler pages secret put EMAIL_API_KEY --project-name webapp
+# Enter your API key from email service provider
+
+# Optional: Other integrations
+npx wrangler pages secret put ANTHROPIC_API_KEY --project-name webapp
 # (If using Claude API for content generation)
 ```
+
+For detailed email setup, see [EMAIL_SETUP.md](EMAIL_SETUP.md)
 
 ## Design System
 
@@ -418,10 +546,11 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 
 ---
 
-**Last Updated**: October 16, 2025
-**Status**: ✅ Development Phase Complete - Ready for Production Deployment
+**Last Updated**: October 17, 2025
+**Status**: ✅ Core Features Complete - White Paper System Operational
 **Next Steps**: 
-1. Obtain Cloudflare API key for production deployment
-2. Upload G2 presentation PDF to R2
-3. Complete Projects and Whitepapers sections
-4. Deploy to production and configure custom domain
+1. Configure email service (Resend/SendGrid/Mailgun) for production notifications
+2. Set up R2 bucket for PDF file storage and uploads
+3. Deploy to Cloudflare Pages production environment
+4. Complete Projects and Blog sections
+5. Configure custom domain

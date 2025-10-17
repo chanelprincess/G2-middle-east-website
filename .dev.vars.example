@@ -1,0 +1,13 @@
+# Email Service Configuration
+# Copy this file to .dev.vars for local development
+# For production, use: wrangler pages secret put EMAIL_API_KEY --project-name webapp
+
+# Email Service Provider (resend, sendgrid, or mailgun)
+EMAIL_SERVICE=resend
+
+# Email API Key
+# Get your API key from:
+# - Resend: https://resend.com/api-keys
+# - SendGrid: https://app.sendgrid.com/settings/api_keys
+# - Mailgun: https://app.mailgun.com/settings/api_security
+EMAIL_API_KEY=your_api_key_here

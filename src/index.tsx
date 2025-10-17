@@ -13,10 +13,20 @@ import { ProjectsPage } from './pages/Projects'
 import { ProjectDetailPage, projectsData } from './pages/ProjectDetail'
 import { PerspectivesPage } from './pages/Perspectives'
 import { PerspectiveDetailPage, perspectivesData } from './pages/PerspectiveDetail'
+import { WhitepapersLoginPage } from './pages/WhitepapersLogin'
+import { WhitepapersRegisterPage } from './pages/WhitepapersRegister'
+import { WhitepapersPendingPage } from './pages/WhitepapersPending'
+import { WhitepapersPage } from './pages/Whitepapers'
+import { AdminUsersPage } from './pages/AdminUsers'
+import { AdminWhitepapersPage } from './pages/AdminWhitepapers'
+import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
+import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail } from './utils/email'
 
 type Bindings = {
   DB: D1Database
   R2: R2Bucket
+  EMAIL_API_KEY?: string
+  EMAIL_SERVICE?: string
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
@@ -165,19 +175,105 @@ app.get('/perspectives/:slug', (c) => {
   )
 })
 
-// Whitepapers Page (placeholder)
-app.get('/whitepapers', (c) => {
+// ============================================
+// WHITEPAPERS ROUTES (Protected)
+// ============================================
+
+// Whitepapers Login Page
+app.get('/whitepapers/login', (c) => {
   return c.render(
-    <div class="min-h-screen bg-g2-darker text-white flex items-center justify-center">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Whitepapers & Insights</h1>
-        <p class="text-gray-400 mb-6">Downloadable resources coming soon</p>
-        <a href="/" class="btn-primary">Back to Home</a>
-      </div>
-    </div>,
+    <WhitepapersLoginPage />,
     {
-      title: 'Whitepapers | G2 Middle East',
-      description: 'Strategic whitepapers and downloadable insights'
+      title: 'Login | White Papers | G2 Middle East',
+      description: 'Access exclusive strategic insights and research'
+    }
+  )
+})
+
+// Whitepapers Registration Page
+app.get('/whitepapers/register', (c) => {
+  return c.render(
+    <WhitepapersRegisterPage />,
+    {
+      title: 'Register | White Papers | G2 Middle East',
+      description: 'Request access to exclusive strategic insights'
+    }
+  )
+})
+
+// Registration Pending Page
+app.get('/whitepapers/pending', (c) => {
+  return c.render(
+    <WhitepapersPendingPage />,
+    {
+      title: 'Registration Pending | G2 Middle East',
+      description: 'Your registration is pending approval'
+    }
+  )
+})
+
+// Protected Whitepapers Page
+app.get('/whitepapers', async (c) => {
+  const user = await requireAuth(c)
+  if (user instanceof Response) return user
+  
+  // Fetch active whitepapers
+  const whitepapers = await c.env.DB.prepare(
+    'SELECT id, title, description, file_size, download_count FROM whitepapers WHERE is_active = 1 ORDER BY created_at DESC'
+  ).all()
+  
+  return c.render(
+    <WhitepapersPage user={user} whitepapers={whitepapers.results || []} />,
+    {
+      title: 'White Papers | G2 Middle East',
+      description: 'Exclusive strategic insights and research'
+    }
+  )
+})
+
+// ============================================
+// ADMIN ROUTES (Protected)
+// ============================================
+
+// Admin User Management
+app.get('/admin/users', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  // Fetch pending users
+  const pendingUsers = await c.env.DB.prepare(
+    'SELECT id, username, email, full_name, company, job_title, is_approved, created_at FROM users WHERE is_approved = 0 ORDER BY created_at DESC'
+  ).all()
+  
+  // Fetch approved users
+  const approvedUsers = await c.env.DB.prepare(
+    'SELECT id, username, email, full_name, company, job_title, is_approved, created_at FROM users WHERE is_approved = 1 ORDER BY created_at DESC'
+  ).all()
+  
+  return c.render(
+    <AdminUsersPage pendingUsers={pendingUsers.results || []} approvedUsers={approvedUsers.results || []} />,
+    {
+      title: 'User Management | Admin | G2 Middle East',
+      description: 'Manage white paper access requests'
+    }
+  )
+})
+
+// Admin Whitepaper Management
+app.get('/admin/whitepapers', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  // Fetch all whitepapers
+  const whitepapers = await c.env.DB.prepare(
+    'SELECT id, title, description, file_path, download_count, is_active, created_at FROM whitepapers ORDER BY created_at DESC'
+  ).all()
+  
+  return c.render(
+    <AdminWhitepapersPage whitepapers={whitepapers.results || []} />,
+    {
+      title: 'Whitepaper Management | Admin | G2 Middle East',
+      description: 'Manage white paper library'
     }
   )
 })
@@ -300,6 +396,310 @@ app.get('/api/leads', async (c) => {
       status: 'error',
       message: error instanceof Error ? error.message : 'Failed to fetch leads'
     }, 500)
+  }
+})
+
+// ============================================
+// WHITEPAPERS AUTH API ROUTES
+// ============================================
+
+// User Registration
+app.post('/api/auth/register', async (c) => {
+  try {
+    const formData = await c.req.parseBody()
+    const { username, email, password, confirm_password, full_name, company, job_title } = formData
+    
+    // Validation
+    if (!username || !email || !password || !full_name || !company || !job_title) {
+      return c.html('<html><body><h1>Error</h1><p>All fields are required</p><a href="/whitepapers/register">Go back</a></body></html>')
+    }
+    
+    if (password !== confirm_password) {
+      return c.html('<html><body><h1>Error</h1><p>Passwords do not match</p><a href="/whitepapers/register">Go back</a></body></html>')
+    }
+    
+    // Check if user already exists
+    const existingUser = await c.env.DB.prepare(
+      'SELECT id FROM users WHERE username = ? OR email = ?'
+    ).bind(username, email).first()
+    
+    if (existingUser) {
+      return c.html('<html><body><h1>Error</h1><p>Username or email already exists</p><a href="/whitepapers/register">Go back</a></body></html>')
+    }
+    
+    // Hash password
+    const passwordHash = await hashPassword(password as string)
+    
+    // Insert user
+    await c.env.DB.prepare(
+      'INSERT INTO users (username, email, password_hash, full_name, company, job_title, is_approved) VALUES (?, ?, ?, ?, ?, ?, 0)'
+    ).bind(username, email, passwordHash, full_name, company, job_title).run()
+    
+    // Get the created user
+    const newUser = await c.env.DB.prepare(
+      'SELECT id, username, email, full_name, company, job_title FROM users WHERE email = ?'
+    ).bind(email).first()
+    
+    // Send email to admin
+    const approvalLink = `https://g2middleeast.com/admin/approve/${newUser.id}`
+    await sendEmail({
+      to: 'tim@ktsglobal.live',
+      subject: 'New White Paper Access Request',
+      html: getAdminApprovalEmail(newUser, approvalLink)
+    }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+    
+    // Send confirmation to user
+    await sendEmail({
+      to: email as string,
+      subject: 'Registration Received - G2 Middle East',
+      html: getRegistrationPendingEmail(full_name as string)
+    }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+    
+    return c.redirect('/whitepapers/pending')
+  } catch (error) {
+    console.error('Registration error:', error)
+    return c.html('<html><body><h1>Error</h1><p>Registration failed. Please try again.</p><a href="/whitepapers/register">Go back</a></body></html>')
+  }
+})
+
+// User Login
+app.post('/api/auth/login', async (c) => {
+  try {
+    const formData = await c.req.parseBody()
+    const { username, password } = formData
+    
+    if (!username || !password) {
+      return c.html('<html><body><h1>Error</h1><p>Username and password are required</p><a href="/whitepapers/login">Go back</a></body></html>')
+    }
+    
+    // Find user
+    const user = await c.env.DB.prepare(
+      'SELECT id, username, email, password_hash, full_name, is_approved FROM users WHERE username = ? OR email = ?'
+    ).bind(username, username).first()
+    
+    if (!user) {
+      return c.html('<html><body><h1>Error</h1><p>Invalid credentials</p><a href="/whitepapers/login">Go back</a></body></html>')
+    }
+    
+    // Verify password
+    const isValid = await verifyPassword(password as string, user.password_hash as string)
+    if (!isValid) {
+      return c.html('<html><body><h1>Error</h1><p>Invalid credentials</p><a href="/whitepapers/login">Go back</a></body></html>')
+    }
+    
+    // Check if approved
+    if (!user.is_approved) {
+      return c.html('<html><body><h1>Access Pending</h1><p>Your account is pending approval. You will receive an email once approved.</p><a href="/">Return to homepage</a></body></html>')
+    }
+    
+    // Set auth cookie
+    setAuthCookie(c, user.id as number, user.username as string)
+    
+    // Update last login
+    await c.env.DB.prepare(
+      'UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?'
+    ).bind(user.id).run()
+    
+    return c.redirect('/whitepapers')
+  } catch (error) {
+    console.error('Login error:', error)
+    return c.html('<html><body><h1>Error</h1><p>Login failed. Please try again.</p><a href="/whitepapers/login">Go back</a></body></html>')
+  }
+})
+
+// User Logout
+app.get('/api/auth/logout', (c) => {
+  clearAuthCookie(c)
+  return c.redirect('/whitepapers/login')
+})
+
+// ============================================
+// ADMIN API ROUTES
+// ============================================
+
+// Approve User
+app.post('/api/admin/users/approve/:id', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  const userId = c.req.param('id')
+  
+  try {
+    // Get user details
+    const user = await c.env.DB.prepare(
+      'SELECT id, email, full_name FROM users WHERE id = ?'
+    ).bind(userId).first()
+    
+    if (!user) {
+      return c.text('User not found', 404)
+    }
+    
+    // Approve user
+    await c.env.DB.prepare(
+      'UPDATE users SET is_approved = 1, approved_at = CURRENT_TIMESTAMP WHERE id = ?'
+    ).bind(userId).run()
+    
+    // Send approval email to user
+    await sendEmail({
+      to: user.email as string,
+      subject: 'Access Approved - G2 Middle East White Papers',
+      html: getUserApprovedEmail(user.full_name as string)
+    }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+    
+    return c.redirect('/admin/users')
+  } catch (error) {
+    console.error('Approval error:', error)
+    return c.text('Approval failed', 500)
+  }
+})
+
+// Deny User
+app.post('/api/admin/users/deny/:id', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  const userId = c.req.param('id')
+  
+  try {
+    await c.env.DB.prepare('DELETE FROM users WHERE id = ?').bind(userId).run()
+    return c.redirect('/admin/users')
+  } catch (error) {
+    console.error('Deny error:', error)
+    return c.text('Operation failed', 500)
+  }
+})
+
+// Quick approval link (from email)
+app.get('/admin/approve/:id', async (c) => {
+  const userId = c.req.param('id')
+  
+  try {
+    const user = await c.env.DB.prepare(
+      'SELECT id, email, full_name FROM users WHERE id = ?'
+    ).bind(userId).first()
+    
+    if (!user) {
+      return c.html('<html><body><h1>Error</h1><p>User not found</p></body></html>')
+    }
+    
+    await c.env.DB.prepare(
+      'UPDATE users SET is_approved = 1, approved_at = CURRENT_TIMESTAMP WHERE id = ?'
+    ).bind(userId).run()
+    
+    await sendEmail({
+      to: user.email as string,
+      subject: 'Access Approved - G2 Middle East White Papers',
+      html: getUserApprovedEmail(user.full_name as string)
+    }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+    
+    return c.html('<html><body><h1>User Approved!</h1><p>The user has been notified via email.</p><a href="/admin/users">View all users</a></body></html>')
+  } catch (error) {
+    console.error('Quick approval error:', error)
+    return c.html('<html><body><h1>Error</h1><p>Approval failed</p></body></html>')
+  }
+})
+
+// Download Whitepaper (Protected)
+app.get('/api/whitepapers/download/:id', async (c) => {
+  const user = await requireAuth(c)
+  if (user instanceof Response) return user
+  
+  const whitepaperId = c.req.param('id')
+  
+  try {
+    // Get whitepaper details
+    const whitepaper = await c.env.DB.prepare(
+      'SELECT id, title, file_path FROM whitepapers WHERE id = ? AND is_active = 1'
+    ).bind(whitepaperId).first()
+    
+    if (!whitepaper) {
+      return c.text('Whitepaper not found', 404)
+    }
+    
+    // Log download
+    await c.env.DB.prepare(
+      'INSERT INTO downloads (user_id, whitepaper_id) VALUES (?, ?)'
+    ).bind(user.id, whitepaperId).run()
+    
+    // Increment download count
+    await c.env.DB.prepare(
+      'UPDATE whitepapers SET download_count = download_count + 1 WHERE id = ?'
+    ).bind(whitepaperId).run()
+    
+    // For now, return a placeholder response
+    // TODO: Implement actual file serving from R2 bucket
+    return c.html(`
+      <html>
+        <body>
+          <h1>Download: ${whitepaper.title}</h1>
+          <p>File path: ${whitepaper.file_path}</p>
+          <p>In production, this would serve the actual PDF file from R2 storage.</p>
+          <a href="/whitepapers">Back to White Papers</a>
+        </body>
+      </html>
+    `)
+  } catch (error) {
+    console.error('Download error:', error)
+    return c.text('Download failed', 500)
+  }
+})
+
+// Add Whitepaper (Admin)
+app.post('/api/admin/whitepapers/add', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  try {
+    const formData = await c.req.parseBody()
+    const { title, description } = formData
+    
+    // TODO: Handle file upload to R2 bucket
+    // For now, just store metadata
+    const filePath = `whitepapers/${Date.now()}-${title}.pdf`
+    
+    await c.env.DB.prepare(
+      'INSERT INTO whitepapers (title, description, file_path, is_active) VALUES (?, ?, ?, 1)'
+    ).bind(title, description, filePath).run()
+    
+    return c.redirect('/admin/whitepapers')
+  } catch (error) {
+    console.error('Add whitepaper error:', error)
+    return c.text('Failed to add whitepaper', 500)
+  }
+})
+
+// Toggle Whitepaper Active Status
+app.post('/api/admin/whitepapers/toggle/:id', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  const whitepaperId = c.req.param('id')
+  
+  try {
+    await c.env.DB.prepare(
+      'UPDATE whitepapers SET is_active = CASE WHEN is_active = 1 THEN 0 ELSE 1 END WHERE id = ?'
+    ).bind(whitepaperId).run()
+    
+    return c.redirect('/admin/whitepapers')
+  } catch (error) {
+    console.error('Toggle error:', error)
+    return c.text('Toggle failed', 500)
+  }
+})
+
+// Delete Whitepaper
+app.post('/api/admin/whitepapers/delete/:id', async (c) => {
+  const admin = await requireAdmin(c)
+  if (admin instanceof Response) return admin
+  
+  const whitepaperId = c.req.param('id')
+  
+  try {
+    await c.env.DB.prepare('DELETE FROM whitepapers WHERE id = ?').bind(whitepaperId).run()
+    return c.redirect('/admin/whitepapers')
+  } catch (error) {
+    console.error('Delete error:', error)
+    return c.text('Delete failed', 500)
   }
 })
 
