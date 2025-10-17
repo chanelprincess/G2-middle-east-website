@@ -6,6 +6,7 @@ import { HomePage } from './pages/Home'
 import { ServicesPage } from './pages/Services'
 import { TeamPage } from './pages/Team'
 import { ContactPage } from './pages/Contact'
+import { GroupPage } from './pages/Group'
 import { ServiceDetailPage, servicesData } from './pages/ServiceDetail'
 import { TeamDetailPage, teamData } from './pages/TeamDetail'
 import { ProjectsPage } from './pages/Projects'
@@ -78,6 +79,17 @@ app.get('/team/:slug', (c) => {
     {
       title: `${executiveData.name} - ${executiveData.jobTitle} | G2 Middle East`,
       description: executiveData.description.substring(0, 160).replace(/<[^>]*>/g, '')
+    }
+  )
+})
+
+// The Group Page
+app.get('/group', (c) => {
+  return c.render(
+    <GroupPage />,
+    {
+      title: 'The Group | G2 Middle East',
+      description: 'G2 Middle East is part of Casta Diva Group, a global communications powerhouse with presence in 15 cities across four continents.'
     }
   )
 })

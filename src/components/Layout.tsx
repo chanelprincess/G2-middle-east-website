@@ -15,6 +15,7 @@ export const Navigation: FC = () => {
             <a href="/services" class="text-gray-300 hover:text-white transition-colors">Services</a>
             <a href="/projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
             <a href="/team" class="text-gray-300 hover:text-white transition-colors">Team</a>
+            <a href="/group" class="text-gray-300 hover:text-white transition-colors">The Group</a>
             <a href="/briefing" class="text-gray-300 hover:text-white transition-colors">Perspectives</a>
             <a href="/whitepapers" class="text-gray-300 hover:text-white transition-colors">Insights</a>
             <a href="/contact" class="bg-g2-gold text-g2-darker px-6 py-2 rounded hover:bg-opacity-90 transition-all font-medium">
@@ -33,6 +34,7 @@ export const Navigation: FC = () => {
           <a href="/services" class="block text-gray-300 hover:text-white transition-colors py-2">Services</a>
           <a href="/projects" class="block text-gray-300 hover:text-white transition-colors py-2">Projects</a>
           <a href="/team" class="block text-gray-300 hover:text-white transition-colors py-2">Team</a>
+          <a href="/group" class="block text-gray-300 hover:text-white transition-colors py-2">The Group</a>
           <a href="/briefing" class="block text-gray-300 hover:text-white transition-colors py-2">Perspectives</a>
           <a href="/whitepapers" class="block text-gray-300 hover:text-white transition-colors py-2">Insights</a>
           <a href="/contact" class="block bg-g2-gold text-g2-darker px-6 py-2 rounded hover:bg-opacity-90 transition-all font-medium text-center">
