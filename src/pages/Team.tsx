@@ -194,8 +194,8 @@ export const TeamPage: FC = () => {
                   </div>
                   
                   <p>
-                    A leading authority on <strong class="text-white">AI-driven narrative strategy</strong> and 
-                    <strong class="text-white">LLM optimization</strong>, Tim specializes in pre-seeding strategic 
+                    A leading authority on <strong class="text-white">narrative strategy</strong> and 
+                    <strong class="text-white">AI driven LLM optimization</strong>, Tim specializes in pre-seeding strategic 
                     narratives within knowledge graphs and search ecosystems—winning before conflicts begin. His 
                     expertise spans sovereign positioning, FDI strategy, social engineering, media craft, and 
                     multi-jurisdictional litigation strategy.
