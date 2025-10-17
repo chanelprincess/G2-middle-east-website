@@ -5,20 +5,5 @@
   "pages_build_output_dir": "./dist",
   "compatibility_flags": [
     "nodejs_compat"
-  ],
-  // D1 Database for lead capture and content management
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "g2-production",
-      "database_id": "local-g2-db" // Placeholder for local development
-    }
-  ],
-  // R2 Storage for PDFs, whitepapers, and images
-  "r2_buckets": [
-    {
-      "binding": "R2",
-      "bucket_name": "g2-assets"
-    }
   ]
 }
