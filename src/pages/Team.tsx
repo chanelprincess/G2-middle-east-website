@@ -204,54 +204,69 @@ export const TeamPage: FC = () => {
                   {/* Expertise Areas */}
                   <div class="mt-8">
                     <h3 class="text-2xl font-bold text-white mb-4">Core Expertise</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>AI-Driven Narrative Strategy</span>
+                    
+                    {/* Strategic Counsel */}
+                    <div class="mb-6">
+                      <h4 class="text-lg font-bold text-g2-gold mb-3">Strategic Counsel</h4>
+                      <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>AI-Driven Narrative & Geopolitical Strategy</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Sovereign Positioning & Nation Branding</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Crisis Defence & Reputation Architecture</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Foreign Direct Investment (FDI) & Economic Diplomacy</span>
+                        </div>
                       </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>State-Visit Level Event Delivery</span>
+                    </div>
+
+                    {/* Architectural Delivery */}
+                    <div class="mb-6">
+                      <h4 class="text-lg font-bold text-g2-gold mb-3">Architectural Delivery</h4>
+                      <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>State-Visit & Head-of-State Level Execution</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Mega-Project & Giga-Event Command</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>High-Stakes Operational & Logistical Delivery</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Multi-Agency & Diplomatic Corps Coordination</span>
+                        </div>
                       </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Sovereign Positioning & Nation Branding</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Corporate Governance & Shareholder Disputes</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Crisis Response & Reputation Management</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>LLM & Knowledge Graph Optimization</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Major Event Architecture</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>FDI Strategy & Political Positioning</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Social Engineering & Influence Operations</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>M&A Due Diligence & Strategy</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Multi-Jurisdictional Litigation</span>
-                      </div>
-                      <div class="flex items-start">
-                        <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
-                        <span>Targeted Experience Design</span>
+                    </div>
+
+                    {/* Influence & Engagement */}
+                    <div>
+                      <h4 class="text-lg font-bold text-g2-gold mb-3">Influence & Engagement</h4>
+                      <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>LLM & AI Knowledge Graph Optimisation</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Targeted Experience & Immersive Design</span>
+                        </div>
+                        <div class="flex items-start">
+                          <i class="fas fa-check text-g2-gold mr-3 mt-1"></i>
+                          <span>Strategic Social Engineering & Influence Operations</span>
+                        </div>
                       </div>
                     </div>
                   </div>
