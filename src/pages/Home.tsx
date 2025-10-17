@@ -385,11 +385,11 @@ export const HomePage: FC = () => {
               </div>
 
               {/* City Legend */}
-              <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+              <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
                 <div>
-                  <h4 class="text-g2-gold font-semibold mb-2">Europe</h4>
+                  <h4 class="text-g2-gold font-semibold mb-3">Europe</h4>
                   <ul class="text-gray-400 space-y-1">
-                    <li>Milan (HQ)</li>
+                    <li>Milan (Global HQ)</li>
                     <li>London</li>
                     <li>Rome</li>
                     <li>Prague</li>
@@ -397,28 +397,23 @@ export const HomePage: FC = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 class="text-g2-gold font-semibold mb-2">Middle East</h4>
+                  <h4 class="text-g2-gold font-semibold mb-3">Middle East & Africa</h4>
                   <ul class="text-gray-400 space-y-1">
-                    <li>Abu Dhabi</li>
+                    <li>Abu Dhabi (Regional HQ)</li>
                     <li>Riyadh</li>
                     <li>Bahrain</li>
                     <li>Beirut</li>
+                    <li>Cape Town</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 class="text-g2-gold font-semibold mb-2">Americas</h4>
+                  <h4 class="text-g2-gold font-semibold mb-3">The Americas & Asia</h4>
                   <ul class="text-gray-400 space-y-1">
                     <li>New York</li>
                     <li>Los Angeles</li>
                     <li>Buenos Aires</li>
                     <li>Montevideo</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 class="text-g2-gold font-semibold mb-2">Asia & Africa</h4>
-                  <ul class="text-gray-400 space-y-1">
                     <li>Shanghai</li>
-                    <li>Cape Town</li>
                   </ul>
                 </div>
               </div>
