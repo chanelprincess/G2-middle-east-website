@@ -247,7 +247,7 @@ export const teamData = {
     slug: 'linda-guldemond',
     name: 'Linda Guldemond',
     jobTitle: 'Director of Client Services & Operations',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+    image: 'https://page.gensparksite.com/v1/base64_upload/eaa1e09e7a1bae6d0c1bc3d8a9a19db8',
     linkedIn: 'https://www.linkedin.com/in/linda-guldemond/',
     description: `
       <p class="text-xl text-white font-light mb-4">

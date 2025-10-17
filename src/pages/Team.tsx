@@ -363,7 +363,7 @@ export const TeamPage: FC = () => {
             <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
               <div class="relative h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" 
+                  src="https://page.gensparksite.com/v1/base64_upload/eaa1e09e7a1bae6d0c1bc3d8a9a19db8" 
                   alt="Linda Guldemond"
                   class="w-full h-full object-cover grayscale"
                 />
