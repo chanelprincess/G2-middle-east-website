@@ -169,6 +169,10 @@ export function getAdminApprovalEmail(user: any, approvalLink: string): string {
           <p style="margin-top: 20px; font-size: 12px; color: #666;">
             Or copy this link: ${approvalLink}
           </p>
+          
+          <p style="margin-top: 30px; font-size: 11px; color: #999;">
+            This is a transactional email from G2 Middle East White Paper Management System.
+          </p>
         </div>
       </div>
     </body>
