@@ -292,16 +292,20 @@ export const TeamPage: FC = () => {
                     <h4 class="text-lg font-bold text-white mb-3">Industry Recognition</h4>
                     <ul class="space-y-2 text-sm">
                       <li class="flex items-start">
+                        <i class="fas fa-award text-g2-gold mr-2 mt-1"></i>
+                        <span>Chairperson, Live Events & Video Awards - Stevie Awards</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
+                        <span>Judge, Australian Event Awards</span>
+                      </li>
+                      <li class="flex items-start">
                         <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
                         <span>Jury Panelist, Eventex Awards</span>
                       </li>
                       <li class="flex items-start">
                         <i class="fas fa-gavel text-g2-gold mr-2 mt-1"></i>
                         <span>Jury Member, WOW Awards Middle East</span>
-                      </li>
-                      <li class="flex items-start">
-                        <i class="fas fa-globe-americas text-g2-gold mr-2 mt-1"></i>
-                        <span>Australian National (Melbourne, Victoria)</span>
                       </li>
                     </ul>
                   </div>
