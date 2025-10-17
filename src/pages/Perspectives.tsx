@@ -111,6 +111,31 @@ export function PerspectivesPage() {
                   Read article <i class="fas fa-arrow-right ml-2"></i>
                 </div>
               </a>
+
+              {/* Article 4 */}
+              <a href="/perspectives/cultural-intelligence" class="block group">
+                <div class="mb-6">
+                  <span class="text-gray-500 text-sm">January 2025</span>
+                </div>
+                <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                  Cultural Intelligence Outperforms Capital Alone: The Real Alpha
+                </h4>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-10 h-10 rounded-full bg-g2-gold/20 flex items-center justify-center">
+                    <i class="fas fa-user text-g2-gold text-sm"></i>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold text-sm">Tim Jacobs</div>
+                    <div class="text-gray-500 text-xs">Regional COO</div>
+                  </div>
+                </div>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                  In the dynamic GCC, sustained value creation requires more than capital—it demands cultural intelligence embedded in local relationships and communities.
+                </p>
+                <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm">
+                  Read article <i class="fas fa-arrow-right ml-2"></i>
+                </div>
+              </a>
             </div>
           </div>
         </div>
