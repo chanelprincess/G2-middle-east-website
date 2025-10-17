@@ -394,7 +394,7 @@ export const HomePage: FC = () => {
           <div class="max-w-6xl mx-auto">
 
             {/* City Legend */}
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-center">
               <div>
                 <h4 class="text-g2-gold font-semibold mb-3">Europe</h4>
                 <ul class="text-gray-400 space-y-1">
@@ -408,7 +408,7 @@ export const HomePage: FC = () => {
               <div>
                 <h4 class="text-g2-gold font-semibold mb-3">Middle East & Africa</h4>
                 <ul class="text-gray-400 space-y-1">
-                  <li>Abu Dhabi (Regional HQ)</li>
+                  <li>Abu Dhabi</li>
                   <li>Riyadh</li>
                   <li>Bahrain</li>
                   <li>Beirut</li>
