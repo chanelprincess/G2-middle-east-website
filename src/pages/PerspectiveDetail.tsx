@@ -234,8 +234,10 @@ export const perspectivesData = {
     content: (
       <>
         <p>In an era where content saturation has become the norm and audiences are inundated with a barrage of information, the art of storytelling has evolved. No longer is it sufficient to simply "tell" a tale; the true artistry lies in how the narrative invites discovery, how its placement intrigues, and how its design captivates and subverts expectations. This intricate dance of elements calls for a deeper understanding of narrative subversion, strategic placement, and innovative design to engage and mesmerize audiences in ways that are both profound and lasting.</p>
+        <p></p>
+        <p></p>
 
-        <h2>The Art of Unfolding Stories</h2>
+        <h2><strong>The Art of Unfolding Stories</strong></h2>
         <p>Traditional storytelling often follows a linear path, guiding the audience from a beginning, through a middle, to an end. However, the contemporary narrative approach thrives on subversion—a technique that plays with expectations, twists conventions, and challenges audience perspectives. It's about crafting stories that aren't just ingested but are discovered and uncovered like hidden treasures.</p>
 
         <img src="https://media.licdn.com/dms/image/v2/D4D12AQHW2mP1gdcUFA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1734836994645?e=1762387200&v=beta&t=m-2n5EDcHvtMfDmz1WFXfFdGKnqj8AcvD6p5W7zn-Ik" alt="Art of unfolding stories" />
