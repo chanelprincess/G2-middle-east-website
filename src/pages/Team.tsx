@@ -340,7 +340,7 @@ export const TeamPage: FC = () => {
             <div class="bg-g2-dark rounded-lg overflow-hidden card-hover">
               <div class="relative h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" 
+                  src="https://page.gensparksite.com/v1/base64_upload/c2f08f66a0fd35b3e19fa65e5130a714" 
                   alt="Paolo Donadio"
                   class="w-full h-full object-cover grayscale"
                 />

@@ -181,7 +181,7 @@ export const teamData = {
     slug: 'paolo-donadio',
     name: 'Paolo Donadio',
     jobTitle: 'Managing Director',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+    image: 'https://page.gensparksite.com/v1/base64_upload/c2f08f66a0fd35b3e19fa65e5130a714',
     linkedIn: 'https://www.linkedin.com/in/paolo-donadio/',
     description: `
       <p class="text-xl text-white font-light mb-4">
