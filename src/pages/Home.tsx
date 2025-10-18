@@ -169,18 +169,31 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 5: Personal Brand & Reputation Positioning */}
-              <a href="/services/crisis-reputation-management" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <div class="text-g2-gold text-3xl mb-4 opacity-90">
-                  <i class="fas fa-shield-alt"></i>
+              <a href="/services/crisis-reputation-management" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://page.gensparksite.com/v1/base64_upload/0a3c53c763f4960f984f127689e2ba1c" 
+                    alt="Personal Brand & Reputation Positioning"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Personal Brand & Reputation Positioning
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  In an era of total transparency, an executive's personal brand is their most critical professional asset
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
+
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">EXECUTIVE POSITIONING</span>
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    Personal Brand & Reputation Positioning
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    In an era of total transparency, an executive's personal brand is their most critical professional asset
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
+                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
                 </div>
               </a>
 

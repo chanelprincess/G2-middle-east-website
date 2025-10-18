@@ -307,7 +307,7 @@ export const servicesData = {
     title: 'Personal Brand & Reputation Positioning',
     icon: 'fas fa-shield-alt',
     description: 'In an era of total transparency, an executive\'s personal brand is their most critical professional asset. We move beyond reactive crisis management to proactively position and manage the digital legacy of leaders, building an unshakeable foundation of authority and influence.',
-    heroImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/0a3c53c763f4960f984f127689e2ba1c',
     sections: [
       {
         heading: 'Strategic Brand Foundation',
