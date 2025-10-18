@@ -176,7 +176,7 @@ export const servicesData = {
     title: 'Sovereign & Governmental Services',
     icon: 'fas fa-crown',
     description: 'We provide the strategic counsel that transforms national moments into global milestones. Our work architects perception, strengthens diplomatic ties, and builds enduring sovereign legacies.',
-    heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/490310dce8db54b79c75d271f7e2da9d',
     sections: [
       {
         heading: 'Nation Brand Strategy',
