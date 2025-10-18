@@ -82,18 +82,31 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 2: Major Event Architecture & Delivery */}
-              <a href="/services/major-event-architecture" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <div class="text-g2-gold text-3xl mb-4 opacity-90">
-                  <i class="fas fa-drafting-compass"></i>
+              <a href="/services/major-event-architecture" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://page.gensparksite.com/v1/base64_upload/45bd688e2376e6b687a6eae6ea039275" 
+                    alt="Major Event Architecture & Delivery"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
                 </div>
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Major Event Architecture & Delivery
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  We are the architects behind the world's most complex and significant events
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
+
+                <div class="p-8">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">EVENT EXCELLENCE</span>
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    Major Event Architecture & Delivery
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    We are the architects behind the world's most complex and significant events
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
                 </div>
               </a>
 
