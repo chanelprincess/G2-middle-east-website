@@ -60,7 +60,7 @@ export const HomePage: FC = () => {
                     src="https://page.gensparksite.com/v1/base64_upload/490310dce8db54b79c75d271f7e2da9d" 
                     alt="Sovereign & Governmental Services"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
@@ -89,7 +89,7 @@ export const HomePage: FC = () => {
                     src="https://page.gensparksite.com/v1/base64_upload/45bd688e2376e6b687a6eae6ea039275" 
                     alt="Major Event Architecture & Delivery"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
@@ -118,7 +118,7 @@ export const HomePage: FC = () => {
                     src="https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824" 
                     alt="Global Brand & Luxury Targeted Experiences"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
@@ -147,7 +147,7 @@ export const HomePage: FC = () => {
                     src="https://page.gensparksite.com/v1/base64_upload/311cecf05ec57ba82d304a0a2467b54e" 
                     alt="Strategic Communications & Narrative Control"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
@@ -176,7 +176,7 @@ export const HomePage: FC = () => {
                     src="https://page.gensparksite.com/v1/base64_upload/0a3c53c763f4960f984f127689e2ba1c" 
                     alt="Personal Brand & Reputation Positioning"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>

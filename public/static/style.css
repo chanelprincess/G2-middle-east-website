@@ -148,6 +148,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Service Card Image Hover Effects - Elegant & Subtle */
+.group img {
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
 .group:hover img {
   filter: brightness(100%) grayscale(0%) !important;
   opacity: 1 !important;
