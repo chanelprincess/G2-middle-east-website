@@ -298,6 +298,7 @@ export const servicesData = {
     icon: 'fas fa-chess-knight',
     description: 'In the modern landscape, the narrative is the ultimate asset. We weave your story, seeding it across digital and physical landscapes to ensure you control the conversation before it even begins.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/311cecf05ec57ba82d304a0a2467b54e',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/ce516916-aa0a-45e0-a9df-3c072367f9b0',
     sections: [
       {
         heading: 'Narrative Architecture & Media Craft',
