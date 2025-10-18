@@ -1,10 +1,9 @@
-import { Navigation, Footer } from '../components/Layout'
+import { PageLayout } from '../components/Layout'
 
 export function PerspectivesPage() {
   return (
-    <>
-      <Navigation />
-      <div class="min-h-screen bg-black text-white pt-20">
+    <PageLayout>
+      <div class="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <section class="py-16 md:py-24 border-b border-white/5">
         <div class="container mx-auto px-6">
@@ -188,7 +187,6 @@ export function PerspectivesPage() {
         </div>
       </section>
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   )
 }
