@@ -82,11 +82,15 @@ export function PerspectivesPage() {
             <div class="grid md:grid-cols-2 gap-8">
               {/* Article 2 - Cost of Losing 10% */}
               <a href="/perspectives/cost-losing-10-percent" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
-                {/* Note: This article doesn't have a hero image, so we'll use a solid colored overlay */}
-                <div class="relative h-48 w-full overflow-hidden bg-gradient-to-br from-g2-gold/20 to-g2-darker">
-                  <div class="absolute inset-0 flex items-center justify-center">
-                    <i class="fas fa-chart-line text-6xl text-g2-gold/30"></i>
-                  </div>
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQErwd482i8tPQ/article-cover_image-shrink_720_1280/B4DZl_6vtoHsAM-/0/1758787731318?e=1762387200&v=beta&t=9GKklDK7GK8W8dWaszy5vDPWBViBqn11HhudkTsZlFI" 
+                    alt="The Cost of Losing 10%"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
                 </div>
 
                 <div class="p-8">
