@@ -131,7 +131,7 @@ export const HomePage: FC = () => {
                     Global Brand & Luxury Targeted Experiences
                   </h3>
                   <p class="text-gray-400 leading-relaxed">
-                    We craft the rare and resonant moments that elevate the world's most iconic brands
+                    We craft targeted moments and approaches that elevate the world's most iconic brands
                   </p>
                   <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
                     Learn More <i class="fas fa-arrow-right ml-2"></i>

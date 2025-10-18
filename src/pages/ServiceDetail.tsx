@@ -239,7 +239,7 @@ export const servicesData = {
     slug: 'global-brand-luxury-experiences',
     title: 'Global Brand & Luxury Targeted Experiences',
     icon: 'fas fa-gem',
-    description: 'We craft the rare and resonant moments that elevate the world\'s most iconic brands. Our experiences build cultural capital and engage the most discerning audiences.',
+    description: 'We craft targeted moments and approaches that elevate the world\'s most iconic brands. Our experiences build cultural capital and engage the most discerning audiences.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824',
     sections: [
       {
@@ -247,14 +247,14 @@ export const servicesData = {
         content: 'Strategic frameworks that protect brand essence while enabling growth in competitive luxury markets.',
         list: [
           'Brand positioning and competitive differentiation',
-          'Cultural adaptation for Middle Eastern markets',
+          'Cultural adaptation for Target markets',
           'Heritage storytelling and brand narrative',
           'Sub-brand strategy and portfolio management'
         ]
       },
       {
         heading: 'High-Net-Worth Engagement',
-        content: 'Reaching ultra-high-net-worth individuals requires sophisticated, discreet approaches that respect privacy while building desire.',
+        content: 'Reaching UHNW individuals requires sophisticated, discreet approaches that respect privacy while building desire and want.',
         list: [
           'Invitation-only experience design',
           'VIP relationship program development',
