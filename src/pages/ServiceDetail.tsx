@@ -275,7 +275,7 @@ export const servicesData = {
     title: 'Strategic Communications & Narrative Control',
     icon: 'fas fa-chess-knight',
     description: 'In the modern landscape, the narrative is the ultimate asset. We architect your story, seeding it across digital and physical landscapes to ensure you control the conversation before it even begins.',
-    heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/311cecf05ec57ba82d304a0a2467b54e',
     sections: [
       {
         heading: 'Narrative Architecture & Media Craft',
