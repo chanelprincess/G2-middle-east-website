@@ -232,6 +232,7 @@ export const servicesData = {
     icon: 'fas fa-drafting-compass',
     description: 'We are the architects behind the world\'s most complex and significant events. From financial modelling to flawless execution, we deliver experiences on a global scale.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/45bd688e2376e6b687a6eae6ea039275',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/28eb924c-41ad-48f6-9e00-1d52f5b92c11',
     sections: [
       {
         heading: 'Strategic Event Design',
