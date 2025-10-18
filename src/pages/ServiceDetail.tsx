@@ -12,6 +12,7 @@ interface ServiceDetailProps {
     content: string
     list?: string[]
   }[]
+  ctaHeading?: string
   ctaText?: string
   ctaLink?: string
 }
@@ -23,6 +24,7 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
   description,
   heroImage,
   sections = [],
+  ctaHeading = 'Ready to Begin?',
   ctaText = 'Discuss Your Project',
   ctaLink = '/contact'
 }) => {
@@ -129,7 +131,7 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
         <div class="container mx-auto px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 text-white">
-              Ready to Begin?
+              {ctaHeading}
             </h2>
             <p class="text-xl text-gray-300 mb-10 leading-relaxed">
               Let's discuss how G2 Middle East can help you achieve your strategic objectives.
@@ -263,6 +265,7 @@ export const servicesData = {
         ]
       }
     ],
+    ctaHeading: 'Want to Engage',
     ctaText: 'Elevate Your Brand',
     ctaLink: '/contact'
   },
