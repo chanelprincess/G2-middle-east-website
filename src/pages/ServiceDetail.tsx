@@ -64,7 +64,7 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
         </div>
         
         {/* Overlay */}
-        <div class="absolute inset-0 bg-gradient-to-b from-g2-darker/60 via-g2-darker/80 to-g2-darker"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-g2-darker/40 via-g2-darker/60 to-g2-darker/80"></div>
         
         {/* Content */}
         <div class="absolute inset-0 flex items-center justify-center">
