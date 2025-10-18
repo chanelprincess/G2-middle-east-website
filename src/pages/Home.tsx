@@ -65,14 +65,14 @@ export const HomePage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
                 </div>
 
-                <div class="p-8">
+                <div class="p-8 flex flex-col" style="min-height: 280px;">
                   <div class="mb-6">
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">STRATEGIC SERVICES</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     Sovereign & Governmental Services
                   </h3>
-                  <p class="text-gray-400 leading-relaxed mb-6">
+                  <p class="text-gray-400 leading-relaxed mb-6 flex-grow">
                     We provide the strategic services that transforms national moments into global milestones
                   </p>
                   <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
@@ -94,14 +94,14 @@ export const HomePage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
                 </div>
 
-                <div class="p-8">
+                <div class="p-8 flex flex-col" style="min-height: 280px;">
                   <div class="mb-6">
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">EVENT EXCELLENCE</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     Major Event Architecture & Delivery
                   </h3>
-                  <p class="text-gray-400 leading-relaxed mb-6">
+                  <p class="text-gray-400 leading-relaxed mb-6 flex-grow">
                     We are the architects behind the world's most complex and significant events
                   </p>
                   <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
@@ -123,14 +123,14 @@ export const HomePage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
                 </div>
 
-                <div class="p-8">
+                <div class="p-8 flex flex-col" style="min-height: 280px;">
                   <div class="mb-6">
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">LUXURY POSITIONING</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     Global Brand & Luxury Experiences
                   </h3>
-                  <p class="text-gray-400 leading-relaxed mb-6">
+                  <p class="text-gray-400 leading-relaxed mb-6 flex-grow">
                     We craft the rare and resonant moments that elevate the world's most iconic brands
                   </p>
                   <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
