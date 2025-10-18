@@ -72,10 +72,10 @@ export const HomePage: FC = () => {
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     Sovereign & Governmental Services
                   </h3>
-                  <p class="text-gray-400 leading-relaxed mb-6">
+                  <p class="text-gray-400 leading-relaxed">
                     We provide the strategic services that transforms national moments into global milestones
                   </p>
-                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto;">
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
                     Learn More <i class="fas fa-arrow-right ml-2"></i>
                   </div>
                 </div>
@@ -101,10 +101,10 @@ export const HomePage: FC = () => {
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     Major Event Architecture & Delivery
                   </h3>
-                  <p class="text-gray-400 leading-relaxed mb-6">
+                  <p class="text-gray-400 leading-relaxed">
                     We are the architects behind the world's most complex and significant events
                   </p>
-                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto;">
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
                     Learn More <i class="fas fa-arrow-right ml-2"></i>
                   </div>
                 </div>
@@ -130,10 +130,10 @@ export const HomePage: FC = () => {
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     Global Brand & Luxury Experiences
                   </h3>
-                  <p class="text-gray-400 leading-relaxed mb-6">
+                  <p class="text-gray-400 leading-relaxed">
                     We craft the rare and resonant moments that elevate the world's most iconic brands
                   </p>
-                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto;">
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
                     Learn More <i class="fas fa-arrow-right ml-2"></i>
                   </div>
                 </div>
