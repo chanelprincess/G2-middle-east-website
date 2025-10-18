@@ -438,10 +438,10 @@ export const HomePage: FC = () => {
         </div>
       </section>
       
-      {/* The G-2 Briefing Teaser */}
+      {/* Perspectives Teaser */}
       <section class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
-          <div class="max-w-4xl mx-auto">
+          <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
               <h2 class="text-4xl md:text-5xl font-bold mb-4">
                 Perspectives
@@ -452,33 +452,68 @@ export const HomePage: FC = () => {
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Article Placeholder */}
-              <div class="bg-g2-dark p-6 rounded-lg border border-white/10 card-hover">
-                <span class="text-g2-gold text-sm font-semibold uppercase tracking-wider">Strategy</span>
-                <h3 class="text-xl font-bold mt-3 mb-3">The Future of Strategic Communications</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                  How sophisticated organizations are navigating complexity in an era of unprecedented change...
-                </p>
-                <a href="/briefing" class="text-white hover:text-g2-gold transition-colors text-sm">
-                  Read More <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
+              {/* Article 1 - Cost of Losing 10% */}
+              <a href="/perspectives/cost-losing-10-percent" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQErwd482i8tPQ/article-cover_image-shrink_720_1280/B4DZl_6vtoHsAM-/0/1758787731318?e=1762387200&v=beta&t=9GKklDK7GK8W8dWaszy5vDPWBViBqn11HhudkTsZlFI" 
+                    alt="The Cost of Losing 10%"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                </div>
 
-              <div class="bg-g2-dark p-6 rounded-lg border border-white/10 card-hover">
-                <span class="text-g2-gold text-sm font-semibold uppercase tracking-wider">Market Insight</span>
-                <h3 class="text-xl font-bold mt-3 mb-3">Middle East: The New Strategic Hub</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                  Regional dynamics are reshaping global business strategies. Here's what matters now...
-                </p>
-                <a href="/briefing" class="text-white hover:text-g2-gold transition-colors text-sm">
-                  Read More <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
+                <div class="p-8">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">STRATEGY</span>
+                  </div>
+                  <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    The Cost of Losing 10%
+                  </h4>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    A small percentage drop can have massive downstream effects on your organization's performance and reputation.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Article 2 - Artistry Discovery */}
+              <a href="/perspectives/artistry-discovery" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQE6cT5y6baIGw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1734836724368?e=1762387200&v=beta&t=tcBZlIDIn5DMH6TxA18bQXQ-iJWa1zRKUHV3Am0Mrws" 
+                    alt="The Artistry Isn't in the Tell, It's in the Discovery"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                </div>
+
+                <div class="p-8">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CREATIVITY</span>
+                  </div>
+                  <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    The Artistry Isn't in the Tell, It's in the Discovery
+                  </h4>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    The true artistry lies in how the narrative invites discovery, how its placement intrigues, and how its design captivates and subverts expectations.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
             </div>
 
             <div class="text-center mt-12">
               <a href="/briefing" class="btn-primary">
-                Explore The Briefing
+                Explore
               </a>
             </div>
           </div>
