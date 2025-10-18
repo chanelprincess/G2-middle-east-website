@@ -240,7 +240,7 @@ export const servicesData = {
     title: 'Global Brand & Luxury Targeted Experiences',
     icon: 'fas fa-gem',
     description: 'We craft the rare and resonant moments that elevate the world\'s most iconic brands. Our experiences build cultural capital and engage the most discerning audiences.',
-    heroImage: 'https://page.gensparksite.com/v1/base64_upload/9f16750360ced295cc78401ad18ebe50',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824',
     sections: [
       {
         heading: 'Brand Architecture',

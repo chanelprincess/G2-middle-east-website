@@ -115,7 +115,7 @@ export const HomePage: FC = () => {
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
-                    src="https://page.gensparksite.com/v1/base64_upload/9f16750360ced295cc78401ad18ebe50" 
+                    src="https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824" 
                     alt="Global Brand & Luxury Targeted Experiences"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
