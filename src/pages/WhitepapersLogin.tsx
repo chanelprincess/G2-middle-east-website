@@ -1,10 +1,9 @@
-import { Navigation, Footer } from '../components/Layout'
+import { PageLayout } from '../components/Layout'
 
 export function WhitepapersLoginPage() {
   return (
-    <>
-      <Navigation />
-      <div class="min-h-screen bg-black text-white pt-20">
+    <PageLayout>
+      <div class="min-h-screen bg-black text-white">
         <section class="py-16 md:py-24">
           <div class="container mx-auto px-6">
             <div class="max-w-md mx-auto">
@@ -78,7 +77,6 @@ export function WhitepapersLoginPage() {
           </div>
         </section>
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   )
 }

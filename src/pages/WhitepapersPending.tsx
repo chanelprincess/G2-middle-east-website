@@ -1,10 +1,9 @@
-import { Navigation, Footer } from '../components/Layout'
+import { PageLayout } from '../components/Layout'
 
 export function WhitepapersPendingPage() {
   return (
-    <>
-      <Navigation />
-      <div class="min-h-screen bg-black text-white pt-20">
+    <PageLayout>
+      <div class="min-h-screen bg-black text-white">
         <section class="py-16 md:py-24">
           <div class="container mx-auto px-6">
             <div class="max-w-2xl mx-auto text-center">
@@ -79,7 +78,6 @@ export function WhitepapersPendingPage() {
           </div>
         </section>
       </div>
-      <Footer />
-    </>
+    </PageLayout>
   )
 }

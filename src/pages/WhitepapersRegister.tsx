@@ -1,10 +1,9 @@
-import { Navigation, Footer } from '../components/Layout'
+import { PageLayout } from '../components/Layout'
 
 export function WhitepapersRegisterPage() {
   return (
-    <>
-      <Navigation />
-      <div class="min-h-screen bg-black text-white pt-20">
+    <PageLayout>
+      <div class="min-h-screen bg-black text-white">
         <section class="py-16 md:py-24">
           <div class="container mx-auto px-6">
             <div class="max-w-2xl mx-auto">
@@ -171,7 +170,6 @@ export function WhitepapersRegisterPage() {
           </div>
         </section>
       </div>
-      <Footer />
       
       {/* Password Match Validation Script */}
       <script dangerouslySetInnerHTML={{
@@ -191,6 +189,6 @@ export function WhitepapersRegisterPage() {
           });
         `
       }} />
-    </>
+    </PageLayout>
   )
 }
