@@ -237,7 +237,7 @@ export const servicesData = {
   
   'global-brand-luxury-experiences': {
     slug: 'global-brand-luxury-experiences',
-    title: 'Global Brand & Luxury Experiences',
+    title: 'Global Brand & Luxury Targeted Experiences',
     icon: 'fas fa-gem',
     description: 'We craft the rare and resonant moments that elevate the world\'s most iconic brands. Our experiences build cultural capital and engage the most discerning audiences.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/bd73b0a009a8027acfa3c0a47a9ebeed',

@@ -29,7 +29,7 @@ export const ServicesPage: FC = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Global Brand & Luxury Experiences",
+            "name": "Global Brand & Luxury Targeted Experiences",
             "description": "Strategic positioning and experience design for luxury brands and global enterprises",
             "provider": {
               "@type": "Organization",
@@ -211,7 +211,7 @@ export const ServicesPage: FC = () => {
         </div>
       </section>
 
-      {/* Service 2: Global Brand & Luxury Experiences */}
+      {/* Service 2: Global Brand & Luxury Targeted Experiences */}
       <section id="luxury" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -225,7 +225,7 @@ export const ServicesPage: FC = () => {
             
             <div class="order-1 lg:order-2">
               <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
-                02. Global Brand & Luxury Experiences
+                02. Global Brand & Luxury Targeted Experiences
               </div>
               <h2 class="text-4xl font-bold mb-6">
                 Elevating Luxury Brands

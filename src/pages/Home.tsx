@@ -110,13 +110,13 @@ export const HomePage: FC = () => {
                 </div>
               </a>
 
-              {/* Service 3: Global Brand & Luxury Experiences */}
+              {/* Service 3: Global Brand & Luxury Targeted Experiences */}
               <a href="/services/global-brand-luxury-experiences" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/bd73b0a009a8027acfa3c0a47a9ebeed" 
-                    alt="Global Brand & Luxury Experiences"
+                    alt="Global Brand & Luxury Targeted Experiences"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
                   />
@@ -128,7 +128,7 @@ export const HomePage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">LUXURY POSITIONING</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    Global Brand & Luxury Experiences
+                    Global Brand & Luxury Targeted Experiences
                   </h3>
                   <p class="text-gray-400 leading-relaxed">
                     We craft the rare and resonant moments that elevate the world's most iconic brands
