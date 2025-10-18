@@ -274,27 +274,27 @@ export const servicesData = {
     slug: 'strategic-communications-narrative-control',
     title: 'Strategic Communications & Narrative Control',
     icon: 'fas fa-chess-knight',
-    description: 'In the modern landscape, the narrative is the asset. We integrate sophisticated messaging into every experience, ensuring you control the story before it\'s told.',
+    description: 'In the modern landscape, the narrative is the ultimate asset. We architect your story, seeding it across digital and physical landscapes to ensure you control the conversation before it even begins.',
     heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
     sections: [
       {
-        heading: 'Strategic Narrative Pre-Seeding',
-        content: 'Control the information landscape before challenges emerge by establishing authoritative narratives in AI training data and search results.',
+        heading: 'Narrative Architecture & Media Craft',
+        content: 'We design and deploy foundational narratives that shape perception and build lasting authority.',
         list: [
-          'LLM and knowledge graph optimization',
-          'Strategic content architecture for AI consumption',
-          'Schema markup and entity recognition',
-          'Authoritative source establishment'
+          'Pre-seeding narratives in AI knowledge graphs & search ecosystems',
+          'Precision media craft for targeted positioning & influence',
+          'Development of core messaging & strategic story arcs',
+          'Multi-platform consistency & sovereign voice establishment'
         ]
       },
       {
-        heading: 'Proactive Reputation Management',
-        content: 'Shape how AI models and search engines present your organization, leadership, and key initiatives.',
+        heading: 'Narrative Realization & Experiential Amplification',
+        content: 'We bring your narrative to life, transforming it from a concept into a tangible reality through powerful, reinforcing experiences.',
         list: [
-          'Search engine results page (SERP) optimization',
-          'Question-answer format content development',
-          'Multi-platform narrative consistency',
-          'Competitor narrative monitoring'
+          'Using major events as platforms for narrative reinforcement',
+          'Designing signature moments & experiential touchpoints',
+          'Targeted stakeholder & influencer engagement',
+          'Real-time landscape analysis for narrative amplification'
         ]
       }
     ],
