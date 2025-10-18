@@ -274,7 +274,7 @@ export const servicesData = {
     slug: 'strategic-communications-narrative-control',
     title: 'Strategic Communications & Narrative Control',
     icon: 'fas fa-chess-knight',
-    description: 'In the modern landscape, the narrative is the ultimate asset. We architect your story, seeding it across digital and physical landscapes to ensure you control the conversation before it even begins.',
+    description: 'In the modern landscape, the narrative is the ultimate asset. We weave your story, seeding it across digital and physical landscapes to ensure you control the conversation before it even begins.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/311cecf05ec57ba82d304a0a2467b54e',
     sections: [
       {
@@ -288,7 +288,7 @@ export const servicesData = {
         ]
       },
       {
-        heading: 'Narrative Realization & Experiential Amplification',
+        heading: 'Narrative & Experiential Amplification',
         content: 'We bring your narrative to life, transforming it from a concept into a tangible reality through powerful, reinforcing experiences.',
         list: [
           'Using major events as platforms for narrative reinforcement',
