@@ -147,6 +147,12 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(184, 154, 106, 0.2);
 }
 
+/* Service Card Image Hover Effects - Elegant & Subtle */
+.group:hover img {
+  filter: brightness(100%) grayscale(0%) !important;
+  opacity: 1 !important;
+}
+
 /* Refined Text Effects */
 .text-gradient {
   background: linear-gradient(135deg, #FFFFFF 0%, #B89A6A 100%);

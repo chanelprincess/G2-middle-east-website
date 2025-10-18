@@ -59,10 +59,10 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/490310dce8db54b79c75d271f7e2da9d" 
                     alt="Sovereign & Governmental Services"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    style="opacity: 0.7;"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
                   />
-                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
 
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
@@ -88,10 +88,10 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/45bd688e2376e6b687a6eae6ea039275" 
                     alt="Major Event Architecture & Delivery"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    style="opacity: 0.7;"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
                   />
-                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
 
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
@@ -117,10 +117,10 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/bd73b0a009a8027acfa3c0a47a9ebeed" 
                     alt="Global Brand & Luxury Experiences"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    style="opacity: 0.7;"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(80%) grayscale(20%);"
                   />
-                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
 
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
