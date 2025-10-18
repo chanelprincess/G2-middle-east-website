@@ -200,6 +200,7 @@ export const perspectivesData = {
     date: 'October 2025',
     readTime: '8 min',
     excerpt: 'A small percentage drop can have massive downstream effects on your organization\'s performance and reputation.',
+    heroImage: 'https://media.licdn.com/dms/image/v2/D4D12AQErwd482i8tPQ/article-cover_image-shrink_720_1280/B4DZl_6vtoHsAM-/0/1758787731318?e=1762387200&v=beta&t=9GKklDK7GK8W8dWaszy5vDPWBViBqn11HhudkTsZlFI',
     content: (
       <>
         <p>In business, we often discuss growth in percentages. A 10% increase sounds modest. A 10% decrease seems manageable. But here's what most leaders miss: a 10% loss is never just 10%. It's a multiplier effect that cascades through every aspect of your organization, often resulting in exponentially greater damage than the initial number suggests.</p>
@@ -219,17 +220,29 @@ export const perspectivesData = {
         </ul>
         <p>Each of these losses compounds the others, creating a downward spiral that's far more severe than the initial 10% suggests.</p>
 
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQEZiKqY68gQcA/article-inline_image-shrink_1000_1488/B4DZl_7kJjG8AQ-/0/1758787948750?e=1762387200&v=beta&t=o8q01i0D0ou84rLI2ZS6dodJZoH_rBBLpTfG6XJXZow" alt="The Compound Effect of Decline" class="rounded-lg w-full" />
+        </div>
+
         <div class="mt-12">
           <h2><strong>The Perception Penalty</strong></h2>
         </div>
         <p>Markets are psychological. A 10% decline signals weakness, triggering disproportionate responses from competitors, investors, and customers. Your competitors smell blood and increase their attack. Investors question your strategy. Customers wonder if they should switch. Employees start updating their LinkedIn profiles.</p>
         <p>The perception of decline often causes more damage than the decline itself. Once the narrative shifts from "growing" to "struggling," reversing that perception requires far more than recovering the lost 10%.</p>
 
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQGjQaS_ytiYyQ/article-inline_image-shrink_1000_1488/B4DZl_8UNJIEAU-/0/1758788145832?e=1762387200&v=beta&t=1ISBmwWM1gri5dl4bHi5mGuVongxeWZzWhCfKI7bH3M" alt="The Perception Penalty" class="rounded-lg w-full" />
+        </div>
+
         <div class="mt-12">
           <h2><strong>The Real Math of Recovery</strong></h2>
         </div>
         <p>Here's a mathematical reality that surprises many executives: if you lose 10%, you need to grow by 11.1% just to get back to where you started. Lose 20%, and you need 25% growth to recover. Lose 50%, and you need 100% growth.</p>
         <p>But it's even worse than that because of the compounding factors mentioned earlier. By the time you've lost 10%, you've also lost momentum, talent, market position, and investor confidence. Now you need to recover all of that while simultaneously growing. It's not a 11.1% challenge—it's often a 30-40% challenge to truly return to your previous competitive position.</p>
+
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQHIsB9qlRXsIQ/article-inline_image-shrink_1000_1488/B4DZl_9HHhJEAQ-/0/1758788355929?e=1762387200&v=beta&t=CWWCYdGdD92briNw5mLkkBPqdnmPDvAZaIEfuQi4WDs" alt="The Real Math of Recovery" class="rounded-lg w-full" />
+        </div>
 
         <div class="mt-12">
           <h2><strong>The Cost Across Dimensions</strong></h2>
@@ -238,6 +251,10 @@ export const perspectivesData = {
         <p><strong>Strategic Cost:</strong> You lose the ability to invest in innovation and future positioning. Resources shift from offense to defense. Long-term strategic projects get shelved for short-term fixes.</p>
         <p><strong>Cultural Cost:</strong> Nothing damages organizational culture faster than the stress of decline. Top performers leave. Risk aversion increases. Innovation stalls. The organization becomes reactive rather than proactive.</p>
         <p><strong>Competitive Cost:</strong> Your 10% is often your competitor's gain, which they'll invest in taking more share. You're not just fighting to regain your 10%—you're fighting against competitors who are now 10% stronger.</p>
+
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQHbvVFwXxNe7A/article-inline_image-shrink_1000_1488/B4DZl_.O6DJAAU-/0/1758788650141?e=1762387200&v=beta&t=pdP-p8la2k8zmw3hOzCyGwfM09CB3Hb94B0pZ9WOodg" alt="The Cost Across Dimensions" class="rounded-lg w-full" />
+        </div>
 
         <div class="mt-12">
           <h2><strong>The Strategic Imperative</strong></h2>
