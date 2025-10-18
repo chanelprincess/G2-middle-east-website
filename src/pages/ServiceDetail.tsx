@@ -200,6 +200,7 @@ export const servicesData = {
     icon: 'fas fa-crown',
     description: 'We provide the strategic services that transforms national moments into global milestones. Our work builds perception, strengthens diplomatic ties, and creates enduring sovereign legacies.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/490310dce8db54b79c75d271f7e2da9d',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/dc11d49e-1e61-497d-8d35-b8f5a051ab42',
     sections: [
       {
         heading: 'Nation Brand Strategy',
