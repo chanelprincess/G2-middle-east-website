@@ -330,6 +330,7 @@ export const servicesData = {
     icon: 'fas fa-shield-alt',
     description: 'In an era of total transparency, an executive\'s personal brand is their most critical professional asset. We move beyond reactive crisis management to proactively position and manage the digital legacy of leaders, building an unshakeable foundation of authority and influence.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/0a3c53c763f4960f984f127689e2ba1c',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/b338fb0f-f593-446f-ba04-084e1adf6d84',
     sections: [
       {
         heading: 'Strategic Brand Foundation',
