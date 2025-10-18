@@ -65,8 +65,8 @@ export const ServicesPage: FC = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Crisis & Reputation Management",
-            "description": "Strategic reputation defense and real-time crisis response",
+            "name": "Personal Brand & Reputation Positioning",
+            "description": "Proactive executive brand positioning and digital legacy management",
             "provider": {
               "@type": "Organization",
               "name": "G2 Middle East"
@@ -403,20 +403,20 @@ export const ServicesPage: FC = () => {
         </div>
       </section>
 
-      {/* Service 5: Crisis & Reputation Management */}
+      {/* Service 5: Personal Brand & Reputation Positioning */}
       <section id="crisis" class="py-24 bg-g2-dark">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
-                05. Crisis & Reputation Management
+                05. Personal Brand & Reputation Positioning
               </div>
               <h2 class="text-4xl font-bold mb-6">
-                Strategic Reputation Management
+                Executive Brand Architecture
               </h2>
               <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                When stakes are highest, reputation becomes the ultimate strategic asset. We protect 
-                and rebuild reputational capital through proactive narrative control and rapid response.
+                In an era of total transparency, an executive's personal brand is their most critical professional asset. 
+                We proactively position and manage the digital legacy of leaders, building an unshakeable foundation of authority and influence.
               </p>
               
               <div class="space-y-4 mb-8">
@@ -425,8 +425,8 @@ export const ServicesPage: FC = () => {
                     <i class="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h3 class="text-white font-semibold mb-2">Proactive Narrative Shielding</h3>
-                    <p class="text-gray-400">Pre-seeding strategic narratives to build resilience against potential future crises.</p>
+                    <h3 class="text-white font-semibold mb-2">Strategic Brand Foundation</h3>
+                    <p class="text-gray-400">Core narrative development, thought leadership pillars, and digital footprint optimization.</p>
                   </div>
                 </div>
                 
@@ -435,8 +435,8 @@ export const ServicesPage: FC = () => {
                     <i class="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h3 class="text-white font-semibold mb-2">Real-Time Crisis Response</h3>
-                    <p class="text-gray-400">Deploying live and digital experiences as a strategic tool to manage high-stakes reputational challenges.</p>
+                    <h3 class="text-white font-semibold mb-2">Authority Amplification</h3>
+                    <p class="text-gray-400">Securing strategic media opportunities, targeted content placement, and reputation monitoring.</p>
                   </div>
                 </div>
                 
@@ -445,14 +445,14 @@ export const ServicesPage: FC = () => {
                     <i class="fas fa-check-circle"></i>
                   </div>
                   <div>
-                    <h3 class="text-white font-semibold mb-2">Stakeholder Trust Rebuilding</h3>
-                    <p class="text-gray-400">Executing targeted engagement strategies to restore confidence and control the narrative.</p>
+                    <h3 class="text-white font-semibold mb-2">Digital Legacy Management</h3>
+                    <p class="text-gray-400">Proactive reputation positioning and stakeholder network curation for lasting influence.</p>
                   </div>
                 </div>
               </div>
               
               <a href="/contact" class="btn-primary">
-                PROTECT YOUR ASSETS
+                POSITION YOUR BRAND
               </a>
             </div>
             

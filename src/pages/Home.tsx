@@ -168,16 +168,16 @@ export const HomePage: FC = () => {
                 </div>
               </a>
 
-              {/* Service 5: Crisis & Reputation Management */}
+              {/* Service 5: Personal Brand & Reputation Positioning */}
               <a href="/services/crisis-reputation-management" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
                 <div class="text-g2-gold text-3xl mb-4 opacity-90">
                   <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Crisis & Reputation Management
+                  Personal Brand & Reputation Positioning
                 </h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                  When reputation is on the line, a strategic experience is the most powerful response
+                  In an era of total transparency, an executive's personal brand is their most critical professional asset
                 </p>
                 <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
                   <i class="fas fa-arrow-right text-sm"></i>

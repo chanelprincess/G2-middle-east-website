@@ -304,33 +304,33 @@ export const servicesData = {
   
   'crisis-reputation-management': {
     slug: 'crisis-reputation-management',
-    title: 'Crisis & Reputation Management',
+    title: 'Personal Brand & Reputation Positioning',
     icon: 'fas fa-shield-alt',
-    description: 'When reputation is on the line, a strategic experience is the most powerful response. We deploy live and digital events to rebuild trust and reclaim the narrative.',
+    description: 'In an era of total transparency, an executive\'s personal brand is their most critical professional asset. We move beyond reactive crisis management to proactively position and manage the digital legacy of leaders, building an unshakeable foundation of authority and influence.',
     heroImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80',
     sections: [
       {
-        heading: 'Rapid Response',
-        content: 'Crisis situations demand immediate action with clear strategic direction.',
+        heading: 'Strategic Brand Foundation',
+        content: 'We design the core identity and narrative that will define a leader\'s public perception and professional impact.',
         list: [
-          '24/7 crisis response team activation',
-          'Rapid situation assessment and strategy development',
-          'Spokesperson preparation and media training',
-          'Multi-channel message deployment'
+          'Core Narrative & Value Proposition Development',
+          'Defining Thought Leadership Pillars & Expertise',
+          'Digital Footprint & SEO Optimisation',
+          'Audience Mapping & Ecosystem Analysis'
         ]
       },
       {
-        heading: 'Stakeholder Management',
-        content: 'Different stakeholder groups require tailored approaches during crisis situations.',
+        heading: 'Authority Amplification & Management',
+        content: 'We execute targeted strategies to elevate a leader\'s profile and manage their reputation across all platforms.',
         list: [
-          'Employee communication and internal alignment',
-          'Customer and client relationship protection',
-          'Regulatory and government relations',
-          'Media engagement and narrative control'
+          'Securing Strategic Media & Speaking Opportunities',
+          'Targeted Content Placement & Ghostwriting',
+          'Proactive Reputation Monitoring & Sentiment Analysis',
+          'Stakeholder Engagement & Network Curation'
         ]
       }
     ],
-    ctaText: 'Prepare Your Response',
+    ctaText: 'Position Your Brand',
     ctaLink: '/contact'
   },
   
