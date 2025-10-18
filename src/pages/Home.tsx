@@ -52,13 +52,13 @@ export const HomePage: FC = () => {
             {/* Grid of 9 Service Buttons */}
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               
-              {/* Service 1: Sovereign & Governmental Advisory */}
+              {/* Service 1: Sovereign & Governmental Services */}
               <a href="/services/sovereign-governmental-advisory" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
                 <div class="text-g2-gold text-3xl mb-4 opacity-90">
                   <i class="fas fa-crown"></i>
                 </div>
                 <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Sovereign & Governmental Advisory
+                  Sovereign & Governmental Services
                 </h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
                   We provide the strategic counsel that transforms national moments into global milestones

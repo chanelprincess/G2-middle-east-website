@@ -17,7 +17,7 @@ export const ServicesPage: FC = () => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Sovereign & Governmental Advisory",
+            "name": "Sovereign & Governmental Services",
             "description": "Strategic positioning and narrative architecture for nations, governments, and sovereign entities",
             "provider": {
               "@type": "Organization",
@@ -147,13 +147,13 @@ export const ServicesPage: FC = () => {
         </div>
       </section>
 
-      {/* Service 1: Sovereign & Governmental Advisory */}
+      {/* Service 1: Sovereign & Governmental Services */}
       <section id="sovereign" class="py-24 bg-g2-dark">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div class="inline-block px-4 py-2 bg-g2-gold/10 text-g2-gold rounded-full text-sm font-semibold mb-6">
-                01. Sovereign & Governmental Advisory
+                01. Sovereign & Governmental Services
               </div>
               <h2 class="text-4xl font-bold mb-6">
                 Strategic Positioning for Nations

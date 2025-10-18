@@ -173,7 +173,7 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
 export const servicesData = {
   'sovereign-governmental-advisory': {
     slug: 'sovereign-governmental-advisory',
-    title: 'Sovereign & Governmental Advisory',
+    title: 'Sovereign & Governmental Services',
     icon: 'fas fa-crown',
     description: 'We provide the strategic counsel that transforms national moments into global milestones. Our work architects perception, strengthens diplomatic ties, and builds enduring sovereign legacies.',
     heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
