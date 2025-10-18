@@ -7,6 +7,7 @@ interface ServiceDetailProps {
   icon: string
   description: string
   heroImage: string
+  heroVideo?: string
   sections?: {
     heading: string
     content: string
@@ -23,6 +24,7 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
   icon,
   description,
   heroImage,
+  heroVideo,
   sections = [],
   ctaHeading = 'Ready to Begin?',
   ctaText = 'Discuss Your Project',
@@ -56,13 +58,32 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
 
       {/* Hero Section */}
       <section class="relative h-[70vh] min-h-[500px] overflow-hidden">
-        {/* Background Image */}
+        {/* Background Video or Image */}
         <div class="absolute inset-0">
-          <img 
-            src={heroImage} 
-            alt={title}
-            class="w-full h-full object-cover cinematic-img"
-          />
+          {heroVideo ? (
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="w-full h-full object-cover"
+              style="pointer-events: none;"
+            >
+              <source src={heroVideo} type="video/mp4" />
+              {/* Fallback to image if video fails to load */}
+              <img 
+                src={heroImage} 
+                alt={title}
+                class="w-full h-full object-cover cinematic-img"
+              />
+            </video>
+          ) : (
+            <img 
+              src={heroImage} 
+              alt={title}
+              class="w-full h-full object-cover cinematic-img"
+            />
+          )}
         </div>
         
         {/* Overlay */}
@@ -243,6 +264,7 @@ export const servicesData = {
     icon: 'fas fa-gem',
     description: 'We craft targeted moments and approaches that elevate the world\'s most iconic brands. Our experiences build cultural capital and engage the most discerning audiences.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/908e3697-880d-4418-bdbb-06e40ad540a5',
     sections: [
       {
         heading: 'Brand Architecture',
