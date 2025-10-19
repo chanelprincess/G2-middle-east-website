@@ -108,7 +108,36 @@ export function PerspectivesPage() {
                 </div>
               </a>
 
-              {/* Article 3 - Cost of Losing 10% */}
+              {/* Article 3 - Converging Virile and Viral Approaches */}
+              <a href="/perspectives/converging-virile-viral-approaches" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQHfgzdG0mA15Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1737944899059?e=1762387200&v=beta&t=R57UBH1z6tcF2DXXMow2yrhceG2P87PnmjGoOpf6D5I" 
+                    alt="Converging Virile and Viral Approaches"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                </div>
+
+                <div class="p-8">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">INFLUENCE STRATEGY</span>
+                  </div>
+                  <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    Converging Virile and Viral Approaches: Targeting Emotional Responses for Predictable Outcomes
+                  </h4>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Understanding how viral and virile approaches converge to create predictable outcomes reveals the mechanics of modern influence and emotional manipulation.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Article 4 - Cost of Losing 10% */}
               <a href="/perspectives/cost-losing-10-percent" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
