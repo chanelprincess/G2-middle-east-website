@@ -365,7 +365,7 @@ export const servicesData = {
     title: 'Corporate & Shareholder Engagement',
     icon: 'fas fa-chart-line',
     description: 'We design the critical corporate moments that drive alignment and build investor confidence. From AGMs to IPOs, we ensure your message is delivered with precision and impact.',
-    heroImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17',
     sections: [
       {
         heading: 'Corporate Event Strategy',

@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    CSR QUICK REFERENCE FOR DOMAIN.COM                        ║
+║                         www.g2middleeast.com                                 ║
+║                        Order #408458756                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ STEP 1: SELECT WEB SERVER SOFTWARE                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+   
+   Dropdown Selection: Nginx
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ STEP 2: COPY AND PASTE THIS CSR                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+-----BEGIN CERTIFICATE REQUEST-----
+MIICqjCCAZICAQAwZTELMAkGA1UEBhMCQUUxDjAMBgNVBAgMBUR1YmFpMQ4wDAYD
+VQQHDAVEdWJhaTEXMBUGA1UECgwORzIgTWlkZGxlIEVhc3QxHTAbBgNVBAMMFHd3
+dy5nMm1pZGRsZWVhc3QuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEA3v68mI+CJckYcpY83jddb71iLM+SNM4FtcDQEGJJD3wg8r6J+W2fyEg98AF3
+1Z6uNVj286qvxSndyV+ARNmyIasMcZgZVW+1nQwN3QNsdSzXz+EccbQXVz3LNK0H
+QdK9+q6tKaRq7oWlFKwXIpJK65f1fL8zpfGmFVwXhiskCop7hFBNpXQUTmq5qQJU
+it8WMtcm8+KrGOdaq+Up8pksrqyovaEjRPNIQI9+hwHYHfpqa7zU4KnQKhdTrqMW
+uRz6GUftqHW1SNEm/PGCt12h152p98/wwzjEtYkASHv9RpZp9yawqgoRY5XKUH3W
+/tU3tj/wXWjYsGBcZ25shU2DjwIDAQABoAAwDQYJKoZIhvcNAQELBQADggEBAAgn
+NH3yeDDxtuWmD2FtI0Vpk6VcDlYSN2cy3yPmOy89rMifJka9sZ9CH9gzT/V71YX9
+NojjeE1O1Ai+k20rwY+lPLMVfJzt2w2nqfGJnJrYhllKj4jBphL7ib9K+c59VI14
+Oxncbvrl26afYMYfSkSCHsRlU41+SkiWbRG9WzWcj3q0pVLplANR+YPVij98JWe6
+DReHDE3UbkOFNDBxr7wPvU3fy7xyYy8dmHR4Va081tIkIdWH5NauYH7mnB6nLWdW
+hvSi+z5ucM4uZzGLmgNFDya15TraGq21+gwsdi93z3IlArzBXnws8PVVyW+Z7A9d
+Xjb9bm3DzUoQEKWl5D0=
+-----END CERTIFICATE REQUEST-----
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ FILES LOCATION                                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+📄 CSR File:         /home/user/webapp/cloudflare-configs/g2middleeast.com.csr
+🔑 Private Key:      /home/user/webapp/cloudflare-configs/g2middleeast.com.key
+📖 Full Guide:       /home/user/webapp/cloudflare-configs/CSR-INSTALLATION-GUIDE.md
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ ⚠️  SECURITY WARNING                                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+✅ SAFE TO SHARE:    CSR file (g2middleeast.com.csr)
+❌ NEVER SHARE:      Private Key (g2middleeast.com.key)
+
+Domain.com ONLY needs the CSR. Keep the private key secure!
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ CSR DETAILS                                                                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Common Name (CN):    www.g2middleeast.com
+Organization:        G2 Middle East
+Country:             AE (United Arab Emirates)
+State:               Dubai
+City:                Dubai
+Key Size:            2048-bit RSA
+Signature:           SHA256withRSA
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ NEXT STEPS                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. Select "Nginx" in the dropdown
+2. Copy the CSR above (include BEGIN and END lines)
+3. Paste into Domain.com form
+4. Click Submit/Next
+5. Complete Domain.com validation process
+6. Download certificate files when ready
+7. Install certificate via cPanel or SSH
+
+For detailed instructions, see: CSR-INSTALLATION-GUIDE.md
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           Generated: 2025-10-18                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝

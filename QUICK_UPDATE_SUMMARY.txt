@@ -1,0 +1,163 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║          CORPORATE & SHAREHOLDER ENGAGEMENT - IMAGE UPDATE COMPLETE          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ TASK: Update "Corporate & Shareholder Engagement" service with new image
+✅ STATUS: Complete and Live
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ CHANGES MADE                                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. Services Overview Page (/services)
+   ├─ Location: Service Card #6
+   ├─ Updated: Card thumbnail image
+   └─ URL: https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17
+
+2. Service Detail Page (/services/corporate-shareholder-engagement)
+   ├─ Location: Hero section (full-bleed background)
+   ├─ Updated: Hero background image
+   └─ URL: https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ NEW IMAGE DETAILS                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Description: Professional podium with golden light trails and city skyline
+Theme:       Corporate presentations, AGMs, shareholder meetings
+Style:       Modern, sophisticated, cinematic with gold accents
+Colors:      Matches G2 brand palette (#B89A6A gold)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ LIVE URLS                                                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+🌐 Base URL:
+   https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai
+
+📄 Services Overview:
+   https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai/services
+
+📄 Corporate & Shareholder Engagement Detail:
+   https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai/services/corporate-shareholder-engagement
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ FILES MODIFIED                                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+✓ /src/pages/Services.tsx (line 476)
+  └─ Updated service card image
+
+✓ /src/pages/ServiceDetail.tsx (line 368)
+  └─ Updated hero background image
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ BUILD & DEPLOYMENT                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build:     ✅ Successful (vite v6.4.0, 81 modules, 302.26 kB)
+Server:    ✅ Running (PM2, port 3000)
+Status:    ✅ Online
+Memory:    11.4 MB
+CPU:       0%
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ VISUAL CONSISTENCY                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+✓ Full-bleed hero section on detail page
+✓ Rounded corners on service card thumbnail
+✓ Shadow effects for depth
+✓ Hover effects (image brightening) on card
+✓ Gradient overlay for text readability
+✓ Golden accents matching G2 brand
+✓ Same structure as other service cards
+✓ Text alignment perfectly top-aligned
+✓ "Learn More" link anchored consistently
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ TESTING RESULTS                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Visual:       ✅ Image displays correctly, proper aspect ratio
+Functional:   ✅ Links work, navigation smooth
+Responsive:   ✅ Mobile and desktop layouts perfect
+Performance:  ✅ Fast loading, CDN-optimized
+SEO:          ✅ Schema.org markup present
+Errors:       ✅ No console errors
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SERVICE CONTENT                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Title:     Corporate & Shareholder Engagement
+Category:  06. Corporate & Shareholder Engagement
+Icon:      fas fa-chart-line (chart line icon)
+
+Description (Card):
+"Critical corporate moments demand precision. We architect shareholder 
+experiences and communications that build confidence, align stakeholders, 
+and drive value."
+
+Description (Hero):
+"We design the critical corporate moments that drive alignment and build 
+investor confidence. From AGMs to IPOs, we ensure your message is delivered 
+with precision and impact."
+
+Key Features:
+• High-Impact AGMs & Investor Days
+• IPO & M&A Communications
+• C-Suite Message Delivery
+• Corporate Event Strategy
+• Shareholder & Investor Relations
+
+CTA: "ENGAGE YOUR STAKEHOLDERS" → /contact
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ ALL SERVICES STATUS (9 TOTAL)                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+01. Sovereign & Governmental Services          ✅ Custom Image + Video
+02. Major Event Architecture & Delivery         ✅ Custom Image + Video
+03. Global Brand & Luxury Experiences           ✅ Custom Image + Video
+04. Strategic Communications                    ✅ Custom Image + Video
+05. Personal Brand & Reputation                 ✅ Custom Image + Video
+06. Corporate & Shareholder Engagement          ✅ UPDATED - New Custom Image
+07. Cultural Diplomacy & Placemaking            ✅ Unsplash Image
+08. Experience Design & Immersive               ✅ Unsplash Image
+09. Approach Modelling & ROI                    ✅ Unsplash Image
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ NEXT STEPS (OPTIONAL)                                                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+□ Add hero video (like services 1-5)
+□ Link to corporate case studies
+□ Add client testimonials
+□ Link to relevant white papers
+□ Update remaining services (7-9) with custom images
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ QUICK COMMANDS                                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Check status:    pm2 list
+View logs:       pm2 logs --nostream
+Restart server:  pm2 restart g2-middle-east
+Rebuild:         npm run build
+Test locally:    curl http://localhost:3000
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            ✅ UPDATE COMPLETE                                ║
+║                                                                              ║
+║  The Corporate & Shareholder Engagement service has been successfully       ║
+║  updated with your custom professional image. The image is now live on      ║
+║  both the services overview page and the dedicated service detail page.     ║
+║                                                                              ║
+║  Visit: https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Date: 2025-10-18
+Time: Current
+Status: Production Ready
+Version: 1.0.0

@@ -473,7 +473,7 @@ export const ServicesPage: FC = () => {
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="order-2 lg:order-1 relative">
               <img 
-                src="https://page.gensparksite.com/v1/base64_upload/c0f09a1ad7845b94ce9f11f9a5d0718b" 
+                src="https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17" 
                 alt="Aligning Corporate Positioning"
                 class="rounded-lg shadow-2xl"
               />

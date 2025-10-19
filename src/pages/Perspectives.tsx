@@ -79,7 +79,36 @@ export function PerspectivesPage() {
             <h3 class="text-2xl font-bold mb-12 text-white">Recent Articles</h3>
 
             <div class="grid md:grid-cols-2 gap-8">
-              {/* Article 2 - Cost of Losing 10% */}
+              {/* Article 2 - Brand Destruction */}
+              <a href="/perspectives/perilous-path-brand-destruction" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQHQfEBwU0WSzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1738667419256?e=1762387200&v=beta&t=Qx4eoj2mh8k-nIfOGPB7ky90qc2SLG-e87JDez8AEXQ" 
+                    alt="The Perilous Path of Brand Destruction"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                </div>
+
+                <div class="p-8">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">BRAND STRATEGY</span>
+                  </div>
+                  <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    The Perilous Path of Brand Destruction When Unguided Narratives Erode Positioning
+                  </h4>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Brands inadvertently destroying their own positioning due to unguided narratives—a phenomenon with far-reaching consequences for businesses across industries.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Article 3 - Cost of Losing 10% */}
               <a href="/perspectives/cost-losing-10-percent" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
@@ -108,7 +137,7 @@ export function PerspectivesPage() {
                 </div>
               </a>
 
-              {/* Article 3 - Artistry Discovery */}
+              {/* Article 4 - Artistry Discovery */}
               <a href="/perspectives/artistry-discovery" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image */}
                 <div class="relative h-48 w-full overflow-hidden">
@@ -137,7 +166,7 @@ export function PerspectivesPage() {
                 </div>
               </a>
 
-              {/* Article 4 - Cultural Intelligence */}
+              {/* Article 5 - Cultural Intelligence */}
               <a href="/perspectives/cultural-intelligence" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image */}
                 <div class="relative h-48 w-full overflow-hidden">
