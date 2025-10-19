@@ -66,6 +66,9 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
               loop
               muted
               playsinline
+              preload="metadata"
+              width="1920"
+              height="1080"
               class="w-full h-full object-cover"
               style="pointer-events: none;"
             >
@@ -74,6 +77,9 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
               <img 
                 src={heroImage} 
                 alt={title}
+                width="1920"
+                height="1080"
+                loading="eager"
                 class="w-full h-full object-cover cinematic-img"
               />
             </video>
@@ -81,6 +87,9 @@ export const ServiceDetailPage: FC<ServiceDetailProps> = ({
             <img 
               src={heroImage} 
               alt={title}
+              width="1920"
+              height="1080"
+              loading="eager"
               class="w-full h-full object-cover cinematic-img"
             />
           )}
@@ -266,7 +275,7 @@ export const servicesData = {
     icon: 'fas fa-gem',
     description: 'We craft targeted moments and approaches that elevate the world\'s most iconic brands. Our experiences build cultural capital and engage the most discerning audiences.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824',
-    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/908e3697-880d-4418-bdbb-06e40ad540a5',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/463e2d68-866a-4b96-ba14-8dca97f62c5f',
     sections: [
       {
         heading: 'Brand Architecture',
@@ -459,10 +468,11 @@ export const servicesData = {
   
   'approach-modelling-roi': {
     slug: 'approach-modelling-roi',
-    title: 'Approach Modelling & ROI',
+    title: 'Value Modelling',
     icon: 'fas fa-balance-scale',
     description: 'We provide the C-suite level justification that connects vision to value. Our models forecast the tangible and intangible returns that prove the power of strategic experience.',
-    heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/45da0332fbbc501dbae0708b32ccd30b',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/cdb5cd62-b8ac-40b8-ba89-046716915ce6',
     sections: [
       {
         heading: 'Financial Modelling',

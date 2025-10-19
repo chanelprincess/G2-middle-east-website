@@ -65,6 +65,7 @@ export const ProjectsPage: FC = () => {
                     <img 
                       src={project.heroImage}
                       alt={project.title}
+                      width="800" height="600" loading="lazy"
                       class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                     />
                     <div class="absolute inset-0 bg-gradient-to-t from-g2-darker via-g2-darker/60 to-transparent"></div>

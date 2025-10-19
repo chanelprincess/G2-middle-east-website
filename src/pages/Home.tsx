@@ -7,13 +7,13 @@ export const HomePage: FC = () => {
       {/* Hero Gallery Section */}
       <section class="hero-gallery">
         <div class="hero-slide active">
-          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80" alt="Strategic Architecture" />
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80" alt="Strategic Architecture" width="1920" height="1080" loading="eager" />
         </div>
         <div class="hero-slide">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="Luxury Experience" />
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="Luxury Experience" width="1920" height="1080" loading="eager" />
         </div>
         <div class="hero-slide">
-          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80" alt="Global Presence" />
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80" alt="Global Presence" width="1920" height="1080" loading="eager" />
         </div>
         
         <div class="hero-overlay"></div>
@@ -59,6 +59,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/490310dce8db54b79c75d271f7e2da9d" 
                     alt="Sovereign & Governmental Services"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -88,6 +91,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/45bd688e2376e6b687a6eae6ea039275" 
                     alt="Major Event Architecture & Delivery"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -117,6 +123,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/e5add6c2d96ac75ffa35a489dcfe9824" 
                     alt="Global Brand & Luxury Targeted Experiences"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -146,6 +155,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/311cecf05ec57ba82d304a0a2467b54e" 
                     alt="Strategic Communications & Narrative Control"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -175,6 +187,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/0a3c53c763f4960f984f127689e2ba1c" 
                     alt="Personal Brand & Reputation Positioning"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -202,8 +217,11 @@ export const HomePage: FC = () => {
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
-                    src="https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17" 
+                    src="https://page.gensparksite.com/v1/base64_upload/101eb7d6ddd084aa224eb6c6e8c737ba" 
                     alt="Corporate & Shareholder Engagement"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -233,6 +251,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/562f2d46e870319cbf81a3ec74afe5aa" 
                     alt="Cultural Diplomacy and Placemaking"
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
                   />
@@ -271,19 +292,35 @@ export const HomePage: FC = () => {
                 </div>
               </a>
 
-              {/* Service 9: Approach Modelling & ROI */}
-              <a href="/services/approach-modelling-roi" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <div class="text-g2-gold text-3xl mb-4 opacity-90">
-                  <i class="fas fa-balance-scale"></i>
+              {/* Service 9: Value Modelling */}
+              <a href="/services/approach-modelling-roi" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://page.gensparksite.com/v1/base64_upload/45da0332fbbc501dbae0708b32ccd30b" 
+                    alt="Value Modelling"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Approach Modelling & ROI
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  We provide the C-suite level justification that connects vision to value
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
+
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">PERFORMANCE & MEASUREMENT</span>
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    Value Modelling
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    We provide the C-suite level justification that connects vision to value through sophisticated financial modelling and measurement frameworks
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
+                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
                 </div>
               </a>
 
@@ -446,6 +483,8 @@ export const HomePage: FC = () => {
               muted
               playsinline
               preload="metadata"
+              width="1920"
+              height="1080"
               class="w-full h-auto object-cover"
               style="min-height: 600px;"
               poster="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421"
@@ -458,6 +497,9 @@ export const HomePage: FC = () => {
               <img 
                 src="https://page.gensparksite.com/v1/base64_upload/23a8b8797816de84ec276d009dad4421" 
                 alt="Global Network - Casta Diva Group Worldwide Presence"
+                width="1920"
+                height="1080"
+                loading="lazy"
                 class="w-full h-auto object-cover"
               />
             </video>
@@ -550,6 +592,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQErwd482i8tPQ/article-cover_image-shrink_720_1280/B4DZl_6vtoHsAM-/0/1758787731318?e=1762387200&v=beta&t=9GKklDK7GK8W8dWaszy5vDPWBViBqn11HhudkTsZlFI" 
                     alt="The Cost of Losing 10%"
+                    width="720"
+                    height="1280"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />
@@ -579,6 +624,9 @@ export const HomePage: FC = () => {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQE6cT5y6baIGw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1734836724368?e=1762387200&v=beta&t=tcBZlIDIn5DMH6TxA18bQXQ-iJWa1zRKUHV3Am0Mrws" 
                     alt="The Artistry Isn't in the Tell, It's in the Discovery"
+                    width="720"
+                    height="1280"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />

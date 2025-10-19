@@ -28,6 +28,7 @@ export function PerspectivesPage() {
                 <img 
                   src="https://media.licdn.com/dms/image/v2/D4D12AQFOUiu2WFnsiw/article-cover_image-shrink_720_1280/B4DZm9ndj8H4AI-/0/1759822863573?e=1762387200&v=beta&t=B_S2_f9LVt54fVySQl8jtjdwssdA0Hn-LGXeHSqStik" 
                   alt="Competing in the AI Arena"
+                  width="720" height="1280" loading="eager"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   style="opacity: 0.7;"
                 />
@@ -86,6 +87,7 @@ export function PerspectivesPage() {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQHQfEBwU0WSzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1738667419256?e=1762387200&v=beta&t=Qx4eoj2mh8k-nIfOGPB7ky90qc2SLG-e87JDez8AEXQ" 
                     alt="The Perilous Path of Brand Destruction"
+                    width="720" height="1280" loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />
@@ -115,6 +117,7 @@ export function PerspectivesPage() {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQHfgzdG0mA15Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1737944899059?e=1762387200&v=beta&t=R57UBH1z6tcF2DXXMow2yrhceG2P87PnmjGoOpf6D5I" 
                     alt="Converging Virile and Viral Approaches"
+                    width="720" height="1280" loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />
@@ -144,6 +147,7 @@ export function PerspectivesPage() {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQErwd482i8tPQ/article-cover_image-shrink_720_1280/B4DZl_6vtoHsAM-/0/1758787731318?e=1762387200&v=beta&t=9GKklDK7GK8W8dWaszy5vDPWBViBqn11HhudkTsZlFI" 
                     alt="The Cost of Losing 10%"
+                    width="720" height="1280" loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />
@@ -173,6 +177,7 @@ export function PerspectivesPage() {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQE6cT5y6baIGw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1734836724368?e=1762387200&v=beta&t=tcBZlIDIn5DMH6TxA18bQXQ-iJWa1zRKUHV3Am0Mrws" 
                     alt="The Artistry Isn't in the Tell, It's in the Discovery"
+                    width="720" height="1280" loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />
@@ -202,6 +207,7 @@ export function PerspectivesPage() {
                   <img 
                     src="https://media.licdn.com/dms/image/v2/D4D12AQFKISDWYhSczg/article-cover_image-shrink_720_1280/B4DZk3m36VJUAI-/0/1757574562748?e=1762387200&v=beta&t=eNLp1eblettJvlV1XiS7h5pmYIMCKy1ATL9NcCIr9S4" 
                     alt="Cultural Intelligence Outperforms Capital Alone"
+                    width="720" height="1280" loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style="opacity: 0.7;"
                   />
