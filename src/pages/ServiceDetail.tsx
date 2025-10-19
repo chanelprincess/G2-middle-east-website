@@ -449,7 +449,7 @@ export const servicesData = {
         list: [
           'Interactive installation design and development',
           'Multi-sensory experience architecture',
-          'Spatial computing and AR/VR integration',
+          'Brand and Narrative Insertion Mapping',
           'Real-time personalization and adaptation'
         ]
       },
