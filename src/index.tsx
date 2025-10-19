@@ -61,7 +61,7 @@ app.get('/services', (c) => {
     <ServicesPage />,
     {
       title: 'Strategic Services | G2 Middle East',
-      description: 'Sovereign branding, luxury positioning, and strategic communications for high-stakes challenges in the Middle East.'
+      description: 'Sovereign branding, luxury positioning, and strategic communications for highstakes challenges in the Middle East.'
     }
   )
 })
@@ -112,7 +112,7 @@ app.get('/contact', (c) => {
     <ContactPage />,
     {
       title: 'Contact Us | G2 Middle East',
-      description: 'Bring us your high-stakes challenges. We respond within 24 hours.'
+      description: 'Bring us your highstakes challenges. We respond within 24 hours.'
     }
   )
 })

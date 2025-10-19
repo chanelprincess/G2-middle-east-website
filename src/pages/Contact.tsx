@@ -12,7 +12,7 @@ export const ContactPage: FC = () => {
               Start a Conversation
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
-              Bring us your high-stakes challenges. We'll respond within 24 hours.
+              Bring us your highstakes challenges. We'll respond within 24 hours.
             </p>
           </div>
         </div>

@@ -316,7 +316,7 @@ export const HomePage: FC = () => {
                     Value Modelling
                   </h3>
                   <p class="text-gray-400 leading-relaxed">
-                    We provide the C-suite level justification that connects vision to value through sophisticated financial modelling and measurement frameworks
+                    We provide the value based justification that connects vision to the outcomes through sophisticated financial modelling and measurement frameworks
                   </p>
                   <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
                     Learn More <i class="fas fa-arrow-right ml-2"></i>
@@ -664,7 +664,7 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">
-              Bring us your high-stakes challenges
+              Bring us your highstakes challenges
             </h2>
             <p class="text-xl text-gray-300 mb-8 leading-relaxed">
               We'll de-risk decisions, craft targeted narratives, and deliver experiences that shift perception, 

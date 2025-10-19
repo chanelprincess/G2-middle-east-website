@@ -470,7 +470,7 @@ export const servicesData = {
     slug: 'approach-modelling-roi',
     title: 'Value Modelling',
     icon: 'fas fa-balance-scale',
-    description: 'We provide the C-suite level justification that connects vision to value. Our models forecast the tangible and intangible returns that prove the power of strategic experience.',
+    description: 'We provide the value based justification that connects vision to the outcomes. Our models forecast the tangible and intangible returns that prove the power of strategic experience.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/45da0332fbbc501dbae0708b32ccd30b',
     heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/cdb5cd62-b8ac-40b8-ba89-046716915ce6',
     sections: [

@@ -200,12 +200,12 @@ export const ServicesPage: FC = () => {
               </a>
             </div>
             
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-lg">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
                 alt="Strategic Positioning for Nations"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -216,12 +216,12 @@ export const ServicesPage: FC = () => {
       <section id="luxury" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="order-2 lg:order-1 relative">
+            <div class="order-2 lg:order-1 relative overflow-hidden rounded-lg">
               <img 
                 src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=800&q=80" 
                 alt="Elevating Luxury Brands"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
             
@@ -330,12 +330,12 @@ export const ServicesPage: FC = () => {
               </a>
             </div>
             
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-lg">
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" 
                 alt="Narratives that Transform"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -346,12 +346,12 @@ export const ServicesPage: FC = () => {
       <section id="events" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="order-2 lg:order-1 relative">
+            <div class="order-2 lg:order-1 relative overflow-hidden rounded-lg">
               <img 
                 src="https://page.gensparksite.com/v1/base64_upload/59e3cf3797a31275a47d384aa5c53c5c" 
                 alt="Creating Global Moments"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
             
@@ -460,12 +460,12 @@ export const ServicesPage: FC = () => {
               </a>
             </div>
             
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-lg">
               <img 
                 src="https://cdn1.genspark.ai/user-upload-image/5_generated/773d5d9b-7b8f-476c-9ae9-c48e55a4aef5.jpeg" 
                 alt="Strategic Reputation Management"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -476,12 +476,12 @@ export const ServicesPage: FC = () => {
       <section id="corporate" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="order-2 lg:order-1 relative">
+            <div class="order-2 lg:order-1 relative overflow-hidden rounded-lg">
               <img 
                 src="https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17" 
                 alt="Aligning Corporate Positioning"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
             
@@ -590,12 +590,12 @@ export const ServicesPage: FC = () => {
               </a>
             </div>
             
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-lg">
               <img 
-                src="https://page.gensparksite.com/v1/base64_upload/562f2d46e870319cbf81a3ec74afe5aa" 
+                src="https://page.gensparksite.com/v1/base64_upload/03d158de23b25a03c25a4d32bf0e4524" 
                 alt="Building Cultural Capital"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -606,12 +606,12 @@ export const ServicesPage: FC = () => {
       <section id="experience" class="py-24 bg-g2-darker">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="order-2 lg:order-1 relative">
+            <div class="order-2 lg:order-1 relative overflow-hidden rounded-lg">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
                 alt="Creating Deep Engagement"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
             
@@ -720,12 +720,12 @@ export const ServicesPage: FC = () => {
               </a>
             </div>
             
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-lg">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
                 alt="Measuring Strategic Value"
                 width="800" height="600" loading="lazy"
-                class="rounded-lg shadow-2xl"
+                class="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
