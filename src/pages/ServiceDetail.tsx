@@ -375,7 +375,7 @@ export const servicesData = {
     icon: 'fas fa-chart-line',
     description: 'We design the critical corporate moments that drive alignment and build investor confidence. From AGMs to IPOs, we ensure your message is delivered with precision and impact.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/1aa05e202d206907659122ca7fe7ee17',
-    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/449fa655-d14c-4691-bae3-c85713506a9a',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/a5b0f537-9667-4905-a668-152758bb42ef',
     sections: [
       {
         heading: 'Corporate Event Strategy',
