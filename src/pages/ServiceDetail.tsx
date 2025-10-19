@@ -441,6 +441,7 @@ export const servicesData = {
     icon: 'fas fa-eye',
     description: 'This is the intersection of art and engineering where engagement is forged. We use cutting-edge design and immersive experiences to captivate and influence specific, high-value audiences.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/3b6a32c6ae0511a0ed973ab0e7ea01a9',
+    heroVideo: 'https://page.gensparksite.com/get_upload_url/32e5853f0a0351c1ec3118cafaad9d4591fbce0f6f4c1f2dc986350a0bcfefd3/default/f9261fdb-149f-49cc-b8fc-28656fd80453',
     sections: [
       {
         heading: 'Immersive Experience Design',
