@@ -398,6 +398,7 @@ export const servicesData = {
     icon: 'fas fa-dove',
     description: 'We believe culture is the ultimate currency of influence. Our events build international soft power, define a location\'s identity, and create a lasting sense of place.',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/562f2d46e870319cbf81a3ec74afe5aa',
+    heroVideo: '/static/cultural-diplomacy-hero-optimized.mp4',
     sections: [
       {
         heading: 'Cultural Strategy',
