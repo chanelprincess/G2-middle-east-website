@@ -397,7 +397,7 @@ export const servicesData = {
     title: 'Cultural Diplomacy & Placemaking',
     icon: 'fas fa-dove',
     description: 'We believe culture is the ultimate currency of influence. Our events build international soft power, define a location\'s identity, and create a lasting sense of place.',
-    heroImage: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/562f2d46e870319cbf81a3ec74afe5aa',
     sections: [
       {
         heading: 'Cultural Strategy',

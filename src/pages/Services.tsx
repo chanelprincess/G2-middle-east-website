@@ -586,7 +586,7 @@ export const ServicesPage: FC = () => {
             
             <div class="relative">
               <img 
-                src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=800&q=80" 
+                src="https://page.gensparksite.com/v1/base64_upload/562f2d46e870319cbf81a3ec74afe5aa" 
                 alt="Building Cultural Capital"
                 class="rounded-lg shadow-2xl"
               />
