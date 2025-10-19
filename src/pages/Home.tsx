@@ -299,6 +299,9 @@ export const HomePage: FC = () => {
                   <p class="text-gray-400 leading-relaxed">
                     This is the intersection of art and engineering where engagement is forged through cutting-edge immersive experiences
                   </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold" style="margin-top: auto; padding-top: 24px;">
+                    Learn More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
                 </div>
               </a>
 
