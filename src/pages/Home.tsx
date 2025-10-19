@@ -276,19 +276,29 @@ export const HomePage: FC = () => {
                 </div>
               </a>
 
-              {/* Service 8: Experience Design & Immersive Targeting */}
-              <a href="/services/experience-design-immersive-targeting" class="group relative bg-[#2A2A2A] border border-white/10 p-8 transition-all duration-300 hover:border-white/30 hover:bg-[#303030]">
-                <div class="text-g2-gold text-3xl mb-4 opacity-90">
-                  <i class="fas fa-eye"></i>
+              {/* Service 8: Immersive Targeting & Design */}
+              <a href="/services/experience-design-immersive-targeting" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://page.gensparksite.com/v1/base64_upload/3b6a32c6ae0511a0ed973ab0e7ea01a9" 
+                    alt="Immersive Targeting & Design"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
                 </div>
-                <h3 class="text-white font-sans font-medium text-lg mb-2 group-hover:text-g2-gold transition-colors">
-                  Experience Design & Immersive Targeting
-                </h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                  This is the intersection of art and engineering where engagement is forged
-                </p>
-                <div class="absolute bottom-4 right-4 text-g2-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <i class="fas fa-arrow-right text-sm"></i>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">EXPERIENCE DESIGN</span>
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    Immersive Targeting & Design
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    This is the intersection of art and engineering where engagement is forged through cutting-edge immersive experiences
+                  </p>
                 </div>
               </a>
 
