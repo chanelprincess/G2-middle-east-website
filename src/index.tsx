@@ -147,7 +147,7 @@ app.get('/projects/:slug', (c) => {
 })
 
 // Perspectives (Blog) Page
-app.get('/briefing', (c) => {
+app.get('/perspectives', (c) => {
   return c.render(
     <PerspectivesPage />,
     {
@@ -155,6 +155,11 @@ app.get('/briefing', (c) => {
       description: 'Strategic insights on brand architecture, market positioning, and the future of communications in an AI-driven world.'
     }
   )
+})
+
+// Legacy route redirect
+app.get('/briefing', (c) => {
+  return c.redirect('/perspectives', 301)
 })
 
 // Perspective Detail Pages - Dynamic routing
