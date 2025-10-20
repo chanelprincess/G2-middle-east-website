@@ -8,8 +8,8 @@ export const GroupPage: FC = () => {
       <section class="relative h-[70vh] min-h-[600px] overflow-hidden">
         <div class="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" 
-            alt="Global Communications Network"
+            src="https://page.gensparksite.com/v1/base64_upload/fa12b2ddb7735e8ec1f79c67c91f0f02" 
+            alt="Historic Castle at Twilight"
             class="w-full h-full object-cover grayscale"
           />
           <div class="absolute inset-0 bg-gradient-to-b from-g2-darker/70 via-g2-darker/80 to-g2-darker"></div>
