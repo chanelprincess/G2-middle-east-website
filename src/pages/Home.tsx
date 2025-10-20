@@ -597,9 +597,9 @@ export const HomePage: FC = () => {
               </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div id="perspectives-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8" style="opacity: 0; transition: opacity 0.3s ease-in;">
               {/* Article 1 - Cost of Losing 10% */}
-              <a href="/perspectives/cost-losing-10-percent" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/perspectives/cost-losing-10-percent" class="perspective-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -631,7 +631,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Article 2 - Artistry Discovery */}
-              <a href="/perspectives/artistry-discovery" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/perspectives/artistry-discovery" class="perspective-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -694,6 +694,7 @@ export const HomePage: FC = () => {
       <script dangerouslySetInnerHTML={{
         __html: `
           document.addEventListener('DOMContentLoaded', function() {
+            // Hero Gallery
             const slides = document.querySelectorAll('.hero-slide');
             const dots = document.querySelectorAll('.gallery-dot');
             let currentSlide = 0;
@@ -723,6 +724,25 @@ export const HomePage: FC = () => {
                 showSlide(currentSlide);
               });
             });
+
+            // Perspectives Card Randomization (Fisher-Yates Shuffle)
+            const perspectivesGrid = document.getElementById('perspectives-grid');
+            if (perspectivesGrid) {
+              const cards = Array.from(perspectivesGrid.querySelectorAll('.perspective-card'));
+              
+              // Fisher-Yates shuffle algorithm
+              for (let i = cards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [cards[i], cards[j]] = [cards[j], cards[i]];
+              }
+              
+              // Clear and re-append in shuffled order
+              perspectivesGrid.innerHTML = '';
+              cards.forEach(card => perspectivesGrid.appendChild(card));
+              
+              // Make visible after shuffle
+              perspectivesGrid.style.opacity = '1';
+            }
           });
         `
       }} />
