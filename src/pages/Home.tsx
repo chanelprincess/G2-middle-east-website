@@ -684,7 +684,7 @@ export const HomePage: FC = () => {
               mobilize support, and create durable value.
             </p>
             <a href="/contact" class="btn-primary text-lg">
-              Address Your Challenge
+              Address Your Challenges
             </a>
           </div>
         </div>
