@@ -577,7 +577,6 @@ export const HomePage: FC = () => {
             <div class="text-center mt-12">
               <a href="/group" class="inline-flex items-center px-8 py-4 bg-g2-gold text-g2-darker font-semibold rounded hover:bg-white transition-colors duration-300">
                 Discover The Group
-                <i class="fas fa-arrow-right ml-3"></i>
               </a>
             </div>
           </div>
