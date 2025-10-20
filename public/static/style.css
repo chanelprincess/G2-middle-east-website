@@ -147,6 +147,36 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(184, 154, 106, 0.2);
 }
 
+/* Frosted Glass Effect for Service & Perspective Cards */
+.service-card,
+.perspective-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.service-card::before,
+.perspective-card::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.service-card:hover::before,
+.perspective-card:hover::before {
+  opacity: 1;
+}
+
 /* Service Card Image Hover Effects - Elegant & Subtle */
 .group img {
   transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out;

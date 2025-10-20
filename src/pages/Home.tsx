@@ -53,7 +53,7 @@ export const HomePage: FC = () => {
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* Service 1: Sovereign & Governmental Services */}
-              <a href="/services/sovereign-governmental-advisory" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/sovereign-governmental-advisory" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -85,7 +85,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 2: Major Event Architecture & Delivery */}
-              <a href="/services/major-event-architecture" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/major-event-architecture" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -117,7 +117,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 3: Global Brand & Luxury Targeted Experiences */}
-              <a href="/services/global-brand-luxury-experiences" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/global-brand-luxury-experiences" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -149,7 +149,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 4: Strategic Communications & Narrative Control */}
-              <a href="/services/strategic-communications-narrative-control" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/strategic-communications-narrative-control" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -181,7 +181,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 5: Personal Brand & Reputation Positioning */}
-              <a href="/services/crisis-reputation-management" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/crisis-reputation-management" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -213,7 +213,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 6: Corporate & Shareholder Engagement */}
-              <a href="/services/corporate-shareholder-engagement" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/corporate-shareholder-engagement" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -245,7 +245,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 7: Cultural Diplomacy & Placemaking */}
-              <a href="/services/cultural-diplomacy-placemaking" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/cultural-diplomacy-placemaking" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
@@ -277,7 +277,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 8: Immersive Targeting & Design */}
-              <a href="/services/experience-design-immersive-targeting" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/experience-design-immersive-targeting" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://page.gensparksite.com/v1/base64_upload/3b6a32c6ae0511a0ed973ab0e7ea01a9" 
@@ -306,7 +306,7 @@ export const HomePage: FC = () => {
               </a>
 
               {/* Service 9: Value Modelling */}
-              <a href="/services/approach-modelling-roi" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="/services/approach-modelling-roi" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
