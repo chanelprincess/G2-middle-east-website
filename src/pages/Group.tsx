@@ -138,7 +138,7 @@ export const GroupPage: FC = () => {
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* Company 1: G2 EVENTI */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.g2eventi.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="G2 EVENTI">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" 
@@ -165,7 +165,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 2: GENIUS PROGETTI */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.geniusprogetti.com/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="GENIUS PROGETTI">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" 
@@ -192,7 +192,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 3: BLUENOTEMILANO */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.bluenotemilano.com/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="BLUENOTEMILANO">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&q=80" 
@@ -219,7 +219,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 4: CASTADIVA ART&SHOW */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.castadivagroup.com/art-and-show/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="CASTADIVA ART&SHOW">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80" 
@@ -246,7 +246,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 5: FIRSTCLASS */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.firstclass.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="FIRSTCLASS">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" 
@@ -273,7 +273,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 6: agenZy */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.agenzy.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="agenZy">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" 
@@ -300,7 +300,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 7: CASTADIVA PICTURES */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.castadivapictures.com/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="CASTADIVA PICTURES">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" 
@@ -327,7 +327,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 8: AKITAFILM */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.akitafilm.com/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="AKITAFILM">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?w=800&q=80" 
@@ -354,7 +354,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 9: E-MOTION */}
-              <a href="https://www.e-motion.tv/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.e-motion.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="E-MOTION">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80" 
