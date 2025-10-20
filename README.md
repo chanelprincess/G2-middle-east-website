@@ -147,11 +147,11 @@ webapp/
 2. **Services Page** - Three core services with detailed descriptions and Schema.org markup
 3. **Team Page** - Tim Jacobs featured profile with Person schema, leadership team grid
 4. **Contact Page** - Functional form with D1 database integration and lead capture
-5. **Projects Page** - Complete case study showcase with 19 projects
-   - Filterable grid with 11 category filters
+5. **Projects Page** - Complete case study showcase with 43 projects
+   - Filterable grid with 20+ category filters
    - Detailed project pages with hero images, supporting gallery (4 images each)
-   - Categories: Sovereign Positioning, Strategic Advisory, State-Level Events, Sovereign Event Architecture, Major Event Advisory, Luxury Brand Strategy, Corporate Events, Cultural Events, Music & Entertainment, Luxury Experiences
-   - Featured projects: Xi Jinping visit, Putin visit, Queen Elizabeth II visit, Papal Mass, NEOM showcase, Red Sea Film Festival, Special Olympics, F1 VIP experiences, G20 media operations, and more
+   - Categories: Sports Events, Sports Infrastructure, Sports Facilities, Cultural Events, Cultural Strategy, Innovation, Brand Activation, Media Events, International Relations, Major Events, Landmark Events, Interfaith Events, Thought Leadership, Luxury Events, and more
+   - Featured projects: Qatar Olympic House London 2012, Xi Jinping visit, Putin visit, Queen Elizabeth II visit, Papal Mass, NEOM showcase, SeaWorld Yas Island opening, Qasr Al Watan opening, Red Sea Film Festival, Special Olympics, Paris Media Oasis Expo 2030, G20 India Media Oasis, and many more
 6. **Database Schema** - Complete D1 migrations for all data models
 7. **SEO Foundation** - Meta tags, Open Graph, Twitter Cards, Schema.org markup, AI-permissive robots.txt
 8. **Group Page** - 9 subsidiary companies with Schema.org Brand markup and official URLs
@@ -500,7 +500,14 @@ For detailed email setup, see [EMAIL_SETUP.md](EMAIL_SETUP.md)
 ## Roadmap
 
 ### Phase 2: Content & Features
-- [✅] Complete Projects showcase (19 case studies)
+- [✅] Complete Projects showcase (43 case studies)
+  - Sports Events: Qatar Olympic House, Samsung Diamond League, FIBA 3x3, Special Olympics MENA
+  - Cultural Events: Al Burda Festival, Bashayer, Qasr Al Hosn, Tuwaiq Oasis, Misk Art Week
+  - Major Openings: SeaWorld Yas Island, Qasr Al Watan, Red Sea Film Festival concerts
+  - NEOM Activations: The Line Experience, McLaren at The Line, Sports Hub, Milken Institute, UN Display
+  - Media Events: Paris Media Oasis (Expo 2030), G20 India Media Oasis
+  - Interfaith: Human Fraternity Anniversary
+  - Infrastructure: Hazza Bin Zayed Stadium FIFA Upgrade
 - [ ] Build The G-2 Briefing blog
 - [✅] Implement whitepapers section
 - [ ] Add newsletter subscription
@@ -552,7 +559,8 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 ---
 
 **Last Updated**: October 20, 2025
-**Status**: ✅ Core Features Complete - Projects Page Live with 19 Case Studies
+**Status**: ✅ Comprehensive Portfolio Complete - 43 Project Case Studies Live
+**Project Scope**: Sports events, cultural programming, major venue openings, NEOM activations, media operations, interfaith events, luxury experiences
 **Next Steps**: 
 1. Configure email service (Resend/SendGrid/Mailgun) for production notifications
 2. Set up R2 bucket for PDF file storage and uploads
