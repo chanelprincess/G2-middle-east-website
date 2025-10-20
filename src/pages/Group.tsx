@@ -138,7 +138,7 @@ export const GroupPage: FC = () => {
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* Company 1: G2 EVENTI */}
-              <a href="https://www.g2eventi.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="G2 EVENTI">
+              <a href="https://www.g2eventi.com/en/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="G2 EVENTI">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" 
