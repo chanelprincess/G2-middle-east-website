@@ -7,7 +7,7 @@ export const HomePage: FC = () => {
       {/* Hero Gallery Section */}
       <section class="hero-gallery">
         <div class="hero-slide active">
-          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80" alt="Strategic Architecture" width="1920" height="1080" loading="eager" />
+          <img src="https://page.gensparksite.com/v1/base64_upload/4c50bd8ff7f51d450f500d9fab27ce39" alt="Strategic Planning" width="1920" height="1080" loading="eager" />
         </div>
         <div class="hero-slide">
           <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="Luxury Experience" width="1920" height="1080" loading="eager" />
