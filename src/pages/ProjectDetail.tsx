@@ -661,5 +661,203 @@ export const projectsData = {
         caption: 'Flawless execution: Real-time coordination ensuring premium experience delivery'
       }
     ]
+  },
+
+  'vladimir-putin-state-visit': {
+    slug: 'vladimir-putin-state-visit',
+    title: 'Vladimir Putin Presidential Visit, Abu Dhabi',
+    subtitle: 'Sovereign Hospitality at Emirates Palace',
+    category: 'State-Level Events',
+    year: '2019',
+    heroImage: 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=1600&q=80',
+    heroImagePrompt: 'Majestic Emirates Palace exterior at night with dramatic lighting, presidential motorcade visible, UAE and Russian flags displayed prominently. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'When President Vladimir Putin visited Abu Dhabi in 2019, the stakes were nothing short of historic. We were entrusted with managing the cultural programming at Emirates Palace, delivering orchestral arrangements, precision choreography, and architectural lighting that showcased Abu Dhabi\'s sovereign hospitality. Every element was designed to elevate the UAE–Russia relationship on the global stage, demonstrating the power of cultural diplomacy in strengthening bilateral ties.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
+        prompt: 'Presidential protocol: High-level bilateral meeting in ornate palace chamber with translators and advisors.',
+        caption: 'Diplomatic precision: State-level protocol executed flawlessly'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+        prompt: 'Orchestra performing in grand palace ballroom, presidential guests in attendance, UAE cultural elements.',
+        caption: 'Cultural excellence: Orchestral performance showcasing sovereign hospitality'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
+        prompt: 'Emirates Palace architectural lighting at night, dramatic color scheme, UAE and Russian flags illuminated.',
+        caption: 'Architectural statement: Lighting design elevating bilateral symbolism'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+        prompt: 'State dinner preparation with meticulous table settings, international protocol standards, luxury ambiance.',
+        caption: 'Sovereign detail: Every element reflecting diplomatic excellence'
+      }
+    ]
+  },
+
+  'saudi-arabia-media-oasis-g20': {
+    slug: 'saudi-arabia-media-oasis-g20',
+    title: 'Saudi Arabia Media Oasis, G20 India',
+    subtitle: 'Strategic Media Operations at Global Summit',
+    category: 'Strategic Advisory',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1600&q=80',
+    heroImagePrompt: 'Modern media center with Kingdom of Saudi Arabia branding, journalists working at stations, G20 summit backdrop, professional broadcast setup. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'With less than three weeks to deliver, we executed the KSA Media Oasis for G20 India—a complete media operations hub that amplified the Kingdom\'s narrative at one of the world\'s most watched summits. From venue sourcing to stakeholder management, we delivered end-to-end media operations with precision, pace, and measurable impact, demonstrating our capacity to operate under extreme time constraints while maintaining strategic excellence.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'Media briefing with Saudi officials and international journalists, G20 backdrop, professional setting.',
+        caption: 'Strategic messaging: Kingdom narrative amplified at global summit'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&q=80',
+        prompt: 'Broadcast interview setup with Saudi representative, G20 India branding, professional lighting and cameras.',
+        caption: 'Media engagement: High-level interviews driving international coverage'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+        prompt: 'Operations team coordinating media logistics, multiple screens showing real-time G20 coverage.',
+        caption: 'Rapid deployment: Three-week delivery timeline executed flawlessly'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        prompt: 'Media oasis lounge with Saudi hospitality elements, journalists networking, cultural touchpoints.',
+        caption: 'Cultural diplomacy: Saudi hospitality enhancing media relationships'
+      }
+    ]
+  },
+
+  'qasr-al-hosn-festival': {
+    slug: 'qasr-al-hosn-festival',
+    title: 'Qasr Al Hosn Festival, Abu Dhabi',
+    subtitle: 'Heritage Programming at Abu Dhabi\'s Oldest Landmark',
+    category: 'Cultural Events',
+    year: '2012–2013',
+    heroImage: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80',
+    heroImagePrompt: 'Qasr Al Hosn historic white fort illuminated at dusk, traditional Emirati cultural performances in courtyard, families attending festival. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'Embedded within the Executive Committee, G2 managed and delivered the Qasr Al Hosn Festival, bringing Abu Dhabi\'s oldest and most significant cultural landmark to life. We curated performances, artisan showcases, and learning spaces that bridged heritage and contemporary experience, creating public programming that celebrated Emirati culture while demonstrating world-class event coordination and stakeholder management.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80',
+        prompt: 'Traditional Emirati cultural performance at Qasr Al Hosn, families watching, authentic heritage celebration.',
+        caption: 'Heritage celebration: Emirati traditions brought to life through performance'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1515041219749-89347f83291a?w=800&q=80',
+        prompt: 'Artisan craftspeople demonstrating traditional skills, visitors engaged with cultural learning.',
+        caption: 'Living culture: Artisan showcases preserving Emirati craftsmanship'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
+        prompt: 'Families exploring festival grounds at Qasr Al Hosn, children participating in cultural activities.',
+        caption: 'Community engagement: Public programming connecting generations with heritage'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+        prompt: 'Qasr Al Hosn fort architecture detail shot, traditional design elements, historical significance.',
+        caption: 'Architectural heritage: Abu Dhabi\'s cultural foundation showcased'
+      }
+    ]
+  },
+
+  'esports-world-cup-2025': {
+    slug: 'esports-world-cup-2025',
+    title: 'Esports World Cup 2025, Saudi Arabia',
+    subtitle: 'Master Planning for Global Gaming Championship',
+    category: 'Strategic Advisory',
+    year: '2024',
+    heroImage: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600&q=80',
+    heroImagePrompt: 'Massive esports arena with dramatic LED screens, thousands of fans, stage with gaming stations, futuristic lighting design. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'In just two weeks, we developed a comprehensive 325-page master planning pitch for the Esports World Cup—the world\'s largest gaming championship. Our submission included narrative architecture, venue concepts, fan journey mapping, and broadcast-first stage designs, demonstrating our capacity for rapid, multidisciplinary event strategy that operates at the intersection of sports, entertainment, and digital culture.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80',
+        prompt: 'Esports competitors focused on screens during tournament, dramatic arena lighting, professional gaming setup.',
+        caption: 'Championship intensity: Elite gaming competition at global scale'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?w=800&q=80',
+        prompt: 'Stadium filled with esports fans, massive LED screens showing gameplay, energetic atmosphere.',
+        caption: 'Fan experience: Arena design creating electric engagement'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?w=800&q=80',
+        prompt: 'Broadcast control room with multiple feeds, directors coordinating live esports coverage.',
+        caption: 'Broadcast excellence: Multi-platform content distribution strategy'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&q=80',
+        prompt: 'Venue concept renderings showing futuristic esports arena, integrated technology, fan zones.',
+        caption: 'Master planning: 325-page submission delivered in two weeks'
+      }
+    ]
+  },
+
+  'global-citizen-f1-vip-gala': {
+    slug: 'global-citizen-f1-vip-gala',
+    title: 'Global Citizen F1 VIP Gala, Abu Dhabi',
+    subtitle: 'Purpose-Driven Luxury During Grand Prix Week',
+    category: 'Luxury Experiences',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
+    heroImagePrompt: 'Elegant gala event at luxurious Abu Dhabi venue, VIP guests in evening wear, Global Citizen branding, F1 circuit visible through windows. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'During Abu Dhabi Grand Prix week, we curated and delivered the Global Citizen F1 VIP Gala—a high-touch event that blended elite networking with purpose-driven programming on education, climate, and health. Managing guest strategy, diplomatic protocol, partner alignment, and luxury hospitality, we created an evening that demonstrated how strategic events can drive both relationship building and meaningful impact.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
+        prompt: 'VIP guests in evening wear networking at luxury gala, Abu Dhabi skyline backdrop, elegant ambiance.',
+        caption: 'Elite convening: Global leaders connecting around shared purpose'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'Panel discussion on global issues with thought leaders, Global Citizen branding, engaged audience.',
+        caption: 'Impact programming: Education, climate, and health dialogue'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1519167758481-83f29da8c8b0?w=800&q=80',
+        prompt: 'Luxury gala dinner with meticulous table settings, premium catering, F1 Grand Prix atmosphere.',
+        caption: 'Hospitality excellence: Premium touchpoints throughout the experience'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'F1 circuit visible from exclusive venue, Grand Prix week energy, strategic timing for maximum impact.',
+        caption: 'Strategic timing: Leveraging Grand Prix week for amplified engagement'
+      }
+    ]
+  },
+
+  'discover-neom-series': {
+    slug: 'discover-neom-series',
+    title: 'Discover NEOM Series',
+    subtitle: '11-Day Multi-City Stakeholder Engagement',
+    category: 'Corporate Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80',
+    heroImagePrompt: 'Modern presentation showing NEOM masterplan on massive screens, VIP stakeholders viewing futuristic development renderings, sophisticated event space. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'Over 11 days across multiple Saudi cities, we delivered the Discover NEOM series—an immersive event program designed to showcase NEOM\'s transformative vision to key stakeholders and decision-makers. Managing elite guest experiences, strategic messaging, and production execution, we built excitement and engagement around one of the world\'s most ambitious development projects, demonstrating our capacity for sustained, multi-location event delivery at the highest level.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
+        prompt: 'Futuristic NEOM development renderings displayed on screens, stakeholders viewing masterplan presentation.',
+        caption: 'Visionary showcase: NEOM\'s transformative development brought to life'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1560264418-c4445382edbc?w=800&q=80',
+        prompt: 'VIP stakeholders experiencing interactive NEOM technology demonstrations, immersive presentations.',
+        caption: 'Immersive experience: Technology and innovation on display'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+        prompt: 'Multi-city event series with consistent branding, professional venue setup across locations.',
+        caption: 'Multi-location execution: 11-day series across Saudi cities'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        prompt: 'Elite guests networking at NEOM event, strategic conversations, decision-makers engaged.',
+        caption: 'Stakeholder engagement: Building excitement among key decision-makers'
+      }
+    ]
   }
 }
