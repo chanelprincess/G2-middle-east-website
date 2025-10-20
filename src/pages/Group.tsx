@@ -127,58 +127,259 @@ export const GroupPage: FC = () => {
         </div>
       </section>
 
-      {/* Global Presence Section */}
+      {/* Group Companies Grid */}
       <section class="py-24 bg-g2-dark">
         <div class="container mx-auto px-6">
           <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-16 text-center">
-              Our Global Network
+              Group Companies
             </h2>
 
-            {/* Interactive Global Map */}
-            <div class="relative mb-12">
-              <div class="rounded-lg overflow-hidden relative border border-white/10 bg-black">
-                {/* Map Image with Markers */}
-                <img 
-                  src="https://page.gensparksite.com/v1/base64_upload/3ad62cdb074e54160d8ae897f7d78857" 
-                  alt="Casta Diva Group Global Network" 
-                  class="w-full h-auto"
-                />
-              </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              {/* Company 1: G2 EVENTI */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" 
+                    alt="G2 EVENTI"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    G2 EVENTI
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    G2 event designs unforgettable events, characterised by a propensity for teamwork and excellence. We create emotional experiences built on creativity, technology, reliability, and cost effectiveness.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
 
-              {/* City Listing */}
-              <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                  <h4 class="text-g2-gold font-semibold text-lg mb-4">Europe</h4>
-                  <ul class="text-gray-300 space-y-2">
-                    <li>Milan (Global HQ)</li>
-                    <li>London</li>
-                    <li>Rome</li>
-                    <li>Prague</li>
-                    <li>Istanbul</li>
-                  </ul>
+              {/* Company 2: GENIUS PROGETTI */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" 
+                    alt="GENIUS PROGETTI"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
-                <div>
-                  <h4 class="text-g2-gold font-semibold text-lg mb-4">Middle East & Africa</h4>
-                  <ul class="text-gray-300 space-y-2">
-                    <li>Abu Dhabi (Regional HQ)</li>
-                    <li>Riyadh</li>
-                    <li>Bahrain</li>
-                    <li>Beirut</li>
-                    <li>Cape Town</li>
-                  </ul>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    GENIUS PROGETTI
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    We engineer the unforgettable to showcase the uniqueness of prestigious brands through bespoke experiences. We combine Italian style with an international work ethic to handle all aspects of your project.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
                 </div>
-                <div>
-                  <h4 class="text-g2-gold font-semibold text-lg mb-4">The Americas & Asia</h4>
-                  <ul class="text-gray-300 space-y-2">
-                    <li>New York</li>
-                    <li>Los Angeles</li>
-                    <li>Buenos Aires</li>
-                    <li>Montevideo</li>
-                    <li>Shanghai</li>
-                  </ul>
+              </a>
+
+              {/* Company 3: BLUENOTEMILANO */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&q=80" 
+                    alt="BLUENOTEMILANO"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
-              </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    BLUENOTEMILANO
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Blue Note Milano is a legendary jazz club and restaurant in Milan. As one of Europe's most influential jazz venues, it hosts over 300 shows per year for a community of over 100,000 customers.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Company 4: CASTADIVA ART&SHOW */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80" 
+                    alt="CASTADIVA ART&SHOW"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    CASTADIVA ART&SHOW
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    The division dedicated to creating and producing major art events in Italy and worldwide. We transform creative ideas into memorable experiences, blending tradition and modernity.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Company 5: FIRSTCLASS */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" 
+                    alt="FIRSTCLASS"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    FIRSTCLASS
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Designs and organizes congresses, meetings, and training events, with particular expertise in the medical-scientific field. A complete partner with strong planning and communication skills.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Company 6: agenZy */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" 
+                    alt="agenZy"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    agenZy
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Created to solve the challenge of communicating with Generation Z. We design strategies and campaigns that leverage the cultural codes and languages of younger generations for the 18-35 target audience.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Company 7: CASTADIVA PICTURES */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" 
+                    alt="CASTADIVA PICTURES"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    CASTADIVA PICTURES
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Operates in branded content, ad productions, films, and TV programming. With fourteen branches, it is the most extensive advertising production network worldwide, working with over 100 top brands.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Company 8: AKITAFILM */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?w=800&q=80" 
+                    alt="AKITAFILM"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    AKITAFILM
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Produces and organizes commercials and corporate videos for major brands worldwide. Akita Film stands out for its expertise in scouting top talent, including directors, photographers, and videomakers.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Company 9: E-MOTION */}
+              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80" 
+                    alt="E-MOTION"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style="opacity: 0.7; filter: brightness(92%) grayscale(20%);"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    E-MOTION
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    A production company specializing in corporate, product, and event videos. Among the first to adopt Red Digital Cinema technology, delivering integrated solutions without compromising on quality.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold mt-auto">
+                    Visit the website <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
             </div>
           </div>
         </div>
