@@ -37,6 +37,120 @@ app.use('/api/*', cors())
 // Serve static files
 app.use('/static/*', serveStatic({ root: './public' }))
 
+// Serve robots.txt
+app.get('/robots.txt', (c) => {
+  const robotsTxt = `# ==============================================================================
+# G2 MIDDLE EAST - AI-PERMISSIVE ROBOTS.TXT
+#
+# This file provides instructions for web crawlers. Our policy is to permit
+# the use of our public content for training large language models (LLMs)
+# to establish our expertise and narrative as a foundational source.
+# ==============================================================================
+
+
+# ------------------------------------------------------------------------------
+# SECTION 1: DIRECTIVES FOR AI & LLM DATA SCRAPERS
+# We are explicitly granting these bots full access to index our content for
+# the purpose of training artificial intelligence models.
+# ------------------------------------------------------------------------------
+
+# Allow Google's AI models (Vertex AI, Gemini, etc.) to use site content for training.
+User-agent: Google-Extended
+Allow: /
+
+# Allow OpenAI's primary data scraper to use site content for training.
+User-agent: GPTBot
+Allow: /
+
+# Allow Common Crawl to include our content in its public datasets, which
+# are used to train a wide range of open-source and commercial LLMs.
+User-agent: CCBot
+Allow: /
+
+# Allow Anthropic's crawler (maker of Claude).
+User-agent: Anthropic-AI
+Allow: /
+
+# Allow Perplexity.ai's crawler for use in its AI-native search engine.
+User-agent: PerplexityBot
+Allow: /
+
+# Allow Cohere's crawler.
+User-agent: cohere-ai
+Allow: /
+
+# Allow Meta's AI crawler (Llama models).
+User-agent: FacebookBot
+Allow: /
+
+# Allow Applebot for Apple Intelligence and Siri.
+User-agent: Applebot
+Allow: /
+
+# Allow Bytedance's crawler (TikTok, Doubao AI).
+User-agent: Bytespider
+Allow: /
+
+
+# ------------------------------------------------------------------------------
+# SECTION 2: DIRECTIVES FOR STANDARD SEARCH ENGINES
+# Standard best practices for traditional search crawlers remain.
+# ------------------------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+
+# ------------------------------------------------------------------------------
+# SECTION 3: CATCH-ALL DIRECTIVES FOR OTHER CRAWLERS
+# All other crawlers are permitted to access the site, reflecting our
+# commitment to maximum visibility and content distribution.
+# ------------------------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+
+# ------------------------------------------------------------------------------
+# SECTION 4: SITEMAP LOCATION
+# Provide a clear map of all high-value content for all crawlers.
+# Note: Sitemap will be generated once the site is deployed to the production
+# domain at g2middleeast.com
+# ------------------------------------------------------------------------------
+
+Sitemap: https://www.g2middleeast.com/sitemap.xml
+
+
+# ------------------------------------------------------------------------------
+# SECTION 5: CRAWL-DELAY (OPTIONAL)
+# Uncomment if you experience server load issues from aggressive crawlers.
+# ------------------------------------------------------------------------------
+
+# Crawl-delay: 1
+
+
+# ==============================================================================
+# END OF ROBOTS.TXT
+#
+# Last Updated: 2025-10-20
+# Policy: AI-Permissive - We welcome LLM training on our public content
+# Contact: tim@g2middleeast.com
+# ==============================================================================
+`
+  return c.text(robotsTxt, 200, {
+    'Content-Type': 'text/plain; charset=utf-8'
+  })
+})
+
 // Use renderer for all pages
 app.use('*', renderer)
 
