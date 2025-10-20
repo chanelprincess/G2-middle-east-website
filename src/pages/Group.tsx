@@ -4,6 +4,59 @@ import { PageLayout } from '../components/Layout'
 export const GroupPage: FC = () => {
   return (
     <PageLayout>
+      {/* Schema.org Structured Data */}
+      <script type="application/ld+json">
+        {`{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.g2middleeast.com/#organization",
+      "name": "G2 Middle East",
+      "url": "https://www.g2middleeast.com/",
+      "logo": "https://www.g2middleeast.com/assets/logo-g2me.svg",
+       "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "New Business & Strategic Enquiries",
+        "email": "tim@g2middleeast.com"
+      },
+      "brand": [
+        {"@type": "Brand", "name": "G2 Eventi", "url": "https://www.g2eventi.com/en/"},
+        {"@type": "Brand", "name": "Genius Progetti", "url": "https://www.geniusprogetti.com/"},
+        {"@type": "Brand", "name": "Blue Note Milano", "url": "https://www.bluenotemilano.com/"},
+        {"@type": "Brand", "name": "CastaDiva Art & Show", "url": "https://www.castadivaartandshow.com/en/"},
+        {"@type": "Brand", "name": "FirstClass", "url": "https://www.firstclass.it/"},
+        {"@type": "Brand", "name": "agenZy", "url": "https://www.agenzy.it/"},
+        {"@type": "Brand", "name": "CastaDiva Pictures", "url": "https://www.castadivapictures.com/"},
+        {"@type": "Brand", "name": "Akita Film", "url": "https://www.akitafilm.com/"},
+        {"@type": "Brand", "name": "E-Motion", "url": "https://www.e-motion.it/"}
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.g2middleeast.com/group#webpage",
+      "url": "https://www.g2middleeast.com/group",
+      "name": "Group Companies of G2 Middle East",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.g2middleeast.com/#website"
+      },
+      "mainEntity": {
+         "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "description": "Explore the portfolio of specialist companies and strategic partners within the G2 Middle East group, spanning live communication, creative production, brand experiences, and strategic event services.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.g2middleeast.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Group", "item": "https://www.g2middleeast.com/group"}
+        ]
+      }
+    }
+  ]
+}`}
+      </script>
+
       {/* Hero Section */}
       <section class="relative h-[70vh] min-h-[600px] overflow-hidden">
         <div class="absolute inset-0">
