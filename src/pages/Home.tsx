@@ -13,7 +13,7 @@ export const HomePage: FC = () => {
           <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="Luxury Experience" width="1920" height="1080" loading="eager" />
         </div>
         <div class="hero-slide">
-          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80" alt="Global Presence" width="1920" height="1080" loading="eager" />
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/016d6992-f02d-4795-a517-6856aa84e2f2.jpeg" alt="Monumental Architecture" width="1920" height="1080" loading="eager" />
         </div>
         
         <div class="hero-overlay"></div>
