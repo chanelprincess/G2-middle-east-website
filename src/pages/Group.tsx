@@ -354,7 +354,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 9: E-MOTION */}
-              <a href="#" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+              <a href="https://www.e-motion.tv/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80" 
