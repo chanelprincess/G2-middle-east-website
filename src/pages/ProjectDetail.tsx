@@ -859,5 +859,797 @@ export const projectsData = {
         caption: 'Stakeholder engagement: Building excitement among key decision-makers'
       }
     ]
+  },
+
+  'qatar-olympic-house': {
+    slug: 'qatar-olympic-house',
+    title: 'Qatar Olympic House, London 2012',
+    subtitle: 'Landmark Olympic Hospitality at the Games',
+    category: 'Sports Events',
+    year: '2012',
+    heroImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&q=80',
+    heroImagePrompt: 'Olympic rings and flags at prestigious venue during London 2012 Games, VIP guests arriving at elegant hospitality house, Qatar branding prominently displayed. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We managed Qatar\'s first Olympic House at London 2012—a landmark presence that showcased the nation during the world\'s premier sporting event. Overseeing budget management, supplier coordination, logistics, PR, catering, and diplomatic protocol, we delivered a seamless hospitality experience that strengthened bilateral relationships and positioned Qatar as a key player in international sport. This project laid the groundwork for Qatar\'s subsequent Olympic bids and sporting infrastructure development.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&q=80',
+        prompt: 'Elegant Olympic House interior with Qatar branding, VIP guests networking during Games.',
+        caption: 'Diplomatic excellence: Qatar\'s presence at the world stage'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80',
+        prompt: 'Olympic athletes and dignitaries at Qatar hospitality venue, premium catering service.',
+        caption: 'Hospitality mastery: Catering and protocol for global guests'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80',
+        prompt: 'London 2012 Olympic venues visible from Qatar House, strategic positioning.',
+        caption: 'Strategic location: Prime positioning at the heart of the Games'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=800&q=80',
+        prompt: 'Project management documentation, budget oversight, supplier coordination materials.',
+        caption: 'Operational excellence: Comprehensive budget and supplier management'
+      }
+    ]
+  },
+
+  'hazza-bin-zayed-stadium': {
+    slug: 'hazza-bin-zayed-stadium',
+    title: 'Hazza Bin Zayed Stadium FIFA Upgrade',
+    subtitle: 'Delivering International Football Standards in Al Ain',
+    category: 'Sports Infrastructure',
+    year: '2018',
+    heroImage: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1600&q=80',
+    heroImagePrompt: 'Modern football stadium exterior at night with dramatic lighting, FIFA-compliant facilities, Al Ain UAE location. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We delivered the comprehensive upgrade of Hazza Bin Zayed Stadium in Al Ain to FIFA and AFC international standards, managing project planning, compliance verification, and operational readiness for world-class football. This project ensured the venue met all technical requirements for hosting international fixtures while maintaining operational continuity—a critical milestone in Abu Dhabi\'s sporting infrastructure development.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80',
+        prompt: 'Stadium pitch meeting FIFA standards, professional lighting systems, modern seating.',
+        caption: 'FIFA compliance: International standards achieved'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&q=80',
+        prompt: 'Project planning documents, stadium blueprints, technical specifications for upgrade.',
+        caption: 'Project management: Comprehensive planning and compliance'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80',
+        prompt: 'Stadium operational readiness inspection, AFC officials reviewing facilities.',
+        caption: 'Operational readiness: Prepared for international football'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=800&q=80',
+        prompt: 'Night match at upgraded HBZ Stadium, full capacity crowd, international fixture.',
+        caption: 'Mission accomplished: Hosting world-class football in Al Ain'
+      }
+    ]
+  },
+
+  'samsung-diamond-league': {
+    slug: 'samsung-diamond-league',
+    title: 'Samsung Diamond League Athletics',
+    subtitle: 'Brand Activation at Elite Track & Field',
+    category: 'Sports Events',
+    year: '2019',
+    heroImage: 'https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?w=1600&q=80',
+    heroImagePrompt: 'Olympic athletics track during Diamond League event, Samsung branding prominently displayed, elite athletes competing. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced and managed Samsung\'s activation at the Diamond League—the premier international athletics series. Delivering seamless event operations, experiential brand zones, and high-impact fan engagement, we amplified Samsung\'s presence among athletics enthusiasts while supporting the technical delivery of world-class sport. This project demonstrated our ability to integrate brand objectives with elite sporting experiences.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=800&q=80',
+        prompt: 'Samsung activation zone at athletics event, interactive displays, engaged fans.',
+        caption: 'Brand experience: Samsung innovation meets athletics excellence'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&q=80',
+        prompt: 'Elite athletes competing on Diamond League track, Samsung branding visible.',
+        caption: 'Elite sport: Supporting world-class athletics competition'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+        prompt: 'Fans engaging with Samsung technology at Diamond League event, brand ambassadors.',
+        caption: 'Fan engagement: Creating memorable brand experiences'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1586519971460-eb43c7b7f0bb?w=800&q=80',
+        prompt: 'Event operations command center, seamless technical delivery of athletics event.',
+        caption: 'Operational excellence: Flawless event production'
+      }
+    ]
+  },
+
+  'neom-sports-hub': {
+    slug: 'neom-sports-hub',
+    title: 'NEOM Sports Hub Accommodation',
+    subtitle: 'World-Class Athlete Village for Beach Games',
+    category: 'Sports Facilities',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80',
+    heroImagePrompt: 'Modern beachfront accommodation complex for athletes, NEOM Beach Games branding, luxury facilities with Saudi coastline backdrop. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We developed and managed the accommodation hub for the NEOM Beach Games, delivering world-class facilities and guest experience for international athletes and officials. Coordinating hospitality operations, athlete services, transportation, and venue logistics, we ensured participants experienced NEOM\'s vision of future living firsthand. This project showcased our capability to deliver mega-event infrastructure with precision and hospitality excellence.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80',
+        prompt: 'Luxury accommodation units for athletes, modern design, NEOM aesthetic.',
+        caption: 'Athlete village: World-class facilities for international competitors'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80',
+        prompt: 'Beach sports facilities at NEOM, athletes training with Red Sea backdrop.',
+        caption: 'Perfect setting: Beach Games infrastructure on Saudi coast'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80',
+        prompt: 'Hospitality operations for athletes, dining facilities, support services.',
+        caption: 'Hospitality excellence: Comprehensive athlete care'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
+        prompt: 'Transportation logistics, venue coordination, seamless athlete movement.',
+        caption: 'Operational mastery: Flawless logistics for international event'
+      }
+    ]
+  },
+
+  'tuwaiq-oasis': {
+    slug: 'tuwaiq-oasis',
+    title: 'Tuwaiq Oasis Cultural Programming',
+    subtitle: 'Celebrating Saudi Heritage and Innovation',
+    category: 'Cultural Events',
+    year: '2022',
+    heroImage: 'https://images.unsplash.com/photo-1569074187119-c87815b476da?w=1600&q=80',
+    heroImagePrompt: 'Modern Saudi cultural venue with traditional and contemporary art installations, immersive lighting, visitors experiencing interactive exhibits. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We curated and delivered immersive cultural programming at Tuwaiq Oasis, celebrating Saudi heritage and innovation through art, music, and interactive installations. Blending traditional craftsmanship with cutting-edge experiential design, we created an environment that honored the Kingdom\'s past while showcasing its Vision 2030 ambitions. This project demonstrated our ability to translate cultural narratives into powerful public experiences.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&q=80',
+        prompt: 'Traditional Saudi art installation merged with contemporary design, visitors engaged.',
+        caption: 'Cultural fusion: Heritage meets innovation'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
+        prompt: 'Live music performance at Tuwaiq Oasis, Saudi artists, engaged audience.',
+        caption: 'Musical celebration: Saudi artists showcasing talent'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Interactive cultural installations, visitors experiencing Saudi heritage through technology.',
+        caption: 'Experiential storytelling: Interactive heritage experiences'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
+        prompt: 'Immersive lighting design at cultural venue, Vision 2030 narrative woven throughout.',
+        caption: 'Vision 2030: Future-forward cultural programming'
+      }
+    ]
+  },
+
+  'fiba-3x3-abu-dhabi': {
+    slug: 'fiba-3x3-abu-dhabi',
+    title: 'FIBA 3x3 Basketball, Abu Dhabi',
+    subtitle: 'Elevating Abu Dhabi as Global Sports Destination',
+    category: 'Sports Events',
+    year: '2021',
+    heroImage: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1600&q=80',
+    heroImagePrompt: 'Urban 3x3 basketball court in Abu Dhabi, FIBA branding, international players competing, energetic crowd. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We delivered operational management and fan engagement for the FIBA 3x3 basketball tournament in Abu Dhabi, elevating the city\'s profile as a global sports destination. Managing venue operations, spectator experience, media coordination, and community activation, we created an electric atmosphere that showcased basketball\'s urban energy while reinforcing Abu Dhabi\'s sporting credentials. This project highlighted our expertise in fast-paced, fan-centric sporting events.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?w=800&q=80',
+        prompt: 'International 3x3 basketball players competing at Abu Dhabi venue, intense action.',
+        caption: 'Elite competition: World-class 3x3 basketball in UAE capital'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1519861531473-9200262188bf?w=800&q=80',
+        prompt: 'Engaged fans watching 3x3 basketball, urban venue atmosphere, Abu Dhabi backdrop.',
+        caption: 'Fan experience: Creating electric tournament atmosphere'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=800&q=80',
+        prompt: 'Media covering FIBA tournament, broadcast equipment, international press engagement.',
+        caption: 'Global reach: Amplifying Abu Dhabi\'s sports narrative'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
+        prompt: 'Community activation around basketball event, youth engagement, inclusive programming.',
+        caption: 'Community impact: Inspiring next generation of athletes'
+      }
+    ]
+  },
+
+  'the-line-experience': {
+    slug: 'the-line-experience',
+    title: 'The Line Experience',
+    subtitle: 'Immersive Showcase of NEOM\'s Revolutionary Urban Vision',
+    category: 'Innovation',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
+    heroImagePrompt: 'Futuristic interactive exhibition showcasing The Line urban development, immersive digital displays, visitors experiencing NEOM\'s revolutionary city concept. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We designed and produced "The Line Experience"—an interactive showcase for NEOM\'s revolutionary linear city concept. Blending immersive storytelling, digital engagement, and architectural visualization, we brought this unprecedented urban vision to life for global stakeholders, investors, and media. The experience translated complex sustainable development concepts into compelling narrative, demonstrating our ability to communicate transformative ideas at scale.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Interactive displays showing The Line architecture, visitors exploring urban design concepts.',
+        caption: 'Revolutionary design: The Line\'s zero-gravity urbanism brought to life'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80',
+        prompt: 'Immersive digital storytelling about sustainable city, visitors engaged with vision.',
+        caption: 'Sustainability narrative: Communicating carbon-neutral urban living'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1560264418-c4445382edbc?w=800&q=80',
+        prompt: 'VIP stakeholders experiencing The Line showcase, architectural models, technology demos.',
+        caption: 'Stakeholder engagement: Bringing global investors into the vision'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        prompt: 'Media covering The Line Experience, press engagement, global narrative amplification.',
+        caption: 'Global impact: Amplifying NEOM\'s transformative urban vision'
+      }
+    ]
+  },
+
+  'neom-milken-institute': {
+    slug: 'neom-milken-institute',
+    title: 'NEOM at Milken Institute, Los Angeles',
+    subtitle: 'Strategic Positioning at Premier Global Forum',
+    category: 'Corporate Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
+    heroImagePrompt: 'High-level conference setting at Milken Institute with NEOM branding, VIP networking, global thought leaders. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We managed NEOM\'s presence at the Milken Institute Global Conference in Los Angeles, delivering strategic messaging, stakeholder engagement, and high-profile networking with global capital allocators and policymakers. Coordinating panel participation, bilateral meetings, and brand positioning, we ensured NEOM\'s narrative resonated with the world\'s most influential investors and thought leaders at this premier forum.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80',
+        prompt: 'NEOM executives presenting at Milken Institute, engaged audience of investors.',
+        caption: 'Thought leadership: NEOM presenting to global capital'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        prompt: 'High-level bilateral meetings at Milken, strategic conversations, decision-makers engaged.',
+        caption: 'Strategic engagement: Cultivating relationships with key stakeholders'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+        prompt: 'NEOM exhibition space at Milken Institute, interactive displays, investor interest.',
+        caption: 'Brand presence: Showcasing NEOM vision to global audience'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'Networking at Milken conference, NEOM representatives connecting with thought leaders.',
+        caption: 'Global networking: Building bridges with policy and finance leaders'
+      }
+    ]
+  },
+
+  'neom-un-display': {
+    slug: 'neom-un-display',
+    title: 'NEOM Showcase at United Nations',
+    subtitle: 'Sustainable Development on the Global Stage',
+    category: 'International Relations',
+    year: '2022',
+    heroImage: 'https://images.unsplash.com/photo-1569074187119-c87815b476da?w=1600&q=80',
+    heroImagePrompt: 'United Nations venue with NEOM sustainable development showcase, diplomats viewing exhibition, international flags. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced NEOM\'s showcase at the United Nations, highlighting sustainable development and innovation to a global diplomatic audience. Managing exhibition design, stakeholder engagement, and narrative positioning, we demonstrated how NEOM\'s vision aligns with UN Sustainable Development Goals while advancing Saudi Arabia\'s global leadership on climate and innovation. This project showcased our ability to navigate complex international forums.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1568584711271-f9261a21ae6f?w=800&q=80',
+        prompt: 'NEOM exhibition at UN headquarters, diplomats engaging with sustainable development displays.',
+        caption: 'UN platform: NEOM\'s sustainability narrative on global stage'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
+        prompt: 'Interactive displays showing NEOM\'s renewable energy and sustainability initiatives.',
+        caption: 'Climate leadership: Showcasing carbon-neutral urban development'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1573167243872-43c6433b9d40?w=800&q=80',
+        prompt: 'International diplomats at NEOM UN showcase, strategic conversations, global engagement.',
+        caption: 'Diplomatic engagement: Building international partnerships'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
+        prompt: 'UN officials reviewing NEOM development plans, bilateral discussions, diplomatic protocol.',
+        caption: 'Strategic positioning: Aligning NEOM with UN SDGs'
+      }
+    ]
+  },
+
+  'paris-media-oasis': {
+    slug: 'paris-media-oasis',
+    title: 'Paris Media Oasis for Expo 2030',
+    subtitle: 'Media Hub for Saudi Arabia\'s Winning Bid Campaign',
+    category: 'Media Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80',
+    heroImagePrompt: 'Modern media center in Paris with Saudi Expo 2030 branding, journalists working at broadcast stations, live feed operations. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We orchestrated the Media Oasis in Paris for Saudi Arabia\'s Expo 2030 bid, managing live broadcasts, stakeholder engagement, and operational support for the Kingdom\'s winning campaign. Coordinating international media, providing broadcast infrastructure, and amplifying Saudi Arabia\'s narrative, we created a strategic media hub that contributed directly to securing Expo 2030 for Riyadh—a historic achievement for the Kingdom.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1598662779094-52f48cc13781?w=800&q=80',
+        prompt: 'Broadcast center with international journalists, live feeds from BIE vote in Paris.',
+        caption: 'Media operations: Real-time broadcast support for historic bid'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80',
+        prompt: 'Saudi delegation at Paris Media Oasis, stakeholder engagement, press interviews.',
+        caption: 'Strategic engagement: Supporting Kingdom\'s narrative amplification'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80',
+        prompt: 'Celebration moment at Media Oasis as Riyadh wins Expo 2030 bid, media capturing historic moment.',
+        caption: 'Historic victory: Media hub celebrates Riyadh Expo 2030 win'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        prompt: 'International press conference at Paris venue, Saudi officials, global media coverage.',
+        caption: 'Global reach: Amplifying Saudi Arabia\'s Expo vision worldwide'
+      }
+    ]
+  },
+
+  'g20-india-media-oasis': {
+    slug: 'g20-india-media-oasis',
+    title: 'G20 India Media Oasis',
+    subtitle: 'KSA Media Hub for Global Summit',
+    category: 'Media Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1600&q=80',
+    heroImagePrompt: 'Modern media operations center at G20 summit, Saudi Arabia branding, international journalists, live broadcast equipment. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We delivered the KSA Media Oasis at G20 India, providing end-to-end venue management, media operations, and narrative amplification for the Kingdom\'s delegation. Managing broadcast infrastructure, press coordination, and stakeholder communications, we ensured Saudi Arabia\'s priorities and achievements were effectively communicated throughout the summit—demonstrating our expertise in high-stakes international media operations.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1598662779094-52f48cc13781?w=800&q=80',
+        prompt: 'Media operations center with Saudi branding, journalists covering G20 summit.',
+        caption: 'Media infrastructure: Supporting Kingdom\'s G20 narrative'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80',
+        prompt: 'Saudi delegation briefing international press at Media Oasis, G20 India backdrop.',
+        caption: 'Press operations: Facilitating Saudi Arabia\'s media engagement'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80',
+        prompt: 'Broadcast coordination for G20 summit coverage, technical operations, live feeds.',
+        caption: 'Technical excellence: Flawless broadcast infrastructure delivery'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80',
+        prompt: 'Stakeholder meetings at Media Oasis, strategic communications, bilateral engagement.',
+        caption: 'Strategic communications: Amplifying Kingdom\'s G20 priorities'
+      }
+    ]
+  },
+
+  'mclaren-the-line': {
+    slug: 'mclaren-the-line',
+    title: 'McLaren at The Line',
+    subtitle: 'Luxury Automotive Meets Futuristic Urbanism',
+    category: 'Brand Activation',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=80',
+    heroImagePrompt: 'McLaren supercar displayed at futuristic NEOM The Line venue, luxury automotive brand activation, high-impact showcase. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced McLaren\'s experiential activation at The Line, fusing luxury automotive excellence with NEOM\'s futuristic vision in a high-impact showcase. Designing immersive brand experiences, managing VIP guest engagement, and coordinating technical production, we created a seamless integration of McLaren\'s performance heritage with The Line\'s revolutionary urban concept—demonstrating our ability to blend brand objectives with transformative narratives.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80',
+        prompt: 'McLaren vehicles showcased at The Line Experience venue, dramatic lighting, luxury presentation.',
+        caption: 'Automotive excellence: McLaren performance meets urban innovation'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80',
+        prompt: 'VIP guests experiencing McLaren activation, test drive experiences, brand engagement.',
+        caption: 'Experiential luxury: Immersive McLaren brand experiences'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
+        prompt: 'The Line architectural displays with McLaren branding integration, futuristic venue.',
+        caption: 'Vision alignment: McLaren and NEOM\'s shared future-forward narrative'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
+        prompt: 'High-profile launch event for McLaren at The Line, media coverage, stakeholder engagement.',
+        caption: 'High-impact activation: Creating memorable luxury brand moments'
+      }
+    ]
+  },
+
+  'bashayer': {
+    slug: 'bashayer',
+    title: 'Bashayer Community Event Series',
+    subtitle: 'Celebrating Local Culture and Creativity',
+    category: 'Cultural Events',
+    year: '2021',
+    heroImage: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1600&q=80',
+    heroImagePrompt: 'Community cultural event in Saudi Arabia with families engaged in traditional activities, local artists performing, vibrant atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We curated and managed the Bashayer event series, celebrating local culture, creativity, and community spirit through diverse programming. Blending traditional performances, contemporary art, family activities, and youth engagement, we created inclusive experiences that honored Saudi heritage while fostering community connection. This project demonstrated our ability to deliver culturally-resonant programming that strengthens social fabric.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=800&q=80',
+        prompt: 'Traditional Saudi performance at Bashayer event, cultural celebration, engaged community.',
+        caption: 'Cultural heritage: Traditional performances celebrating Saudi identity'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&q=80',
+        prompt: 'Contemporary art installations at community event, local artists showcasing work.',
+        caption: 'Creative expression: Platform for Saudi artists and creators'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+        prompt: 'Families engaging in activities at Bashayer, inclusive programming, community spirit.',
+        caption: 'Community engagement: Bringing families together through culture'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80',
+        prompt: 'Youth participation at cultural event, creative workshops, next generation engagement.',
+        caption: 'Youth focus: Inspiring next generation through cultural programming'
+      }
+    ]
+  },
+
+  'red-sea-film-festival-concerts': {
+    slug: 'red-sea-film-festival-concerts',
+    title: 'Red Sea International Film Festival Concerts',
+    subtitle: 'Major Concert Production for Cinema Celebration',
+    category: 'Cultural Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&q=80',
+    heroImagePrompt: 'Major concert stage at Red Sea Film Festival in Jeddah, international artists performing, cinematic lighting, VIP audience. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We led operational delivery and major concert production for the Red Sea International Film Festival, including galas, awards ceremonies, and headline performances in Jeddah. Managing artist coordination, technical production, VIP hospitality, and venue operations, we created unforgettable moments that elevated Saudi Arabia\'s position as a cultural destination and demonstrated our expertise in large-scale entertainment production.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
+        prompt: 'International artist performing at Red Sea Film Festival, spectacular stage design.',
+        caption: 'World-class entertainment: Major concerts celebrating cinema'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
+        prompt: 'Film festival gala with celebrities and VIP guests, Red Sea backdrop, elegant setting.',
+        caption: 'Gala excellence: Celebrating global cinema in Jeddah'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'Awards ceremony at film festival, trophy presentations, cinematic atmosphere.',
+        caption: 'Awards production: Honoring cinematic excellence'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
+        prompt: 'Technical production for major concert, lighting design, stage management.',
+        caption: 'Production mastery: Flawless technical delivery at scale'
+      }
+    ]
+  },
+
+  'gq-gala-jeddah': {
+    slug: 'gq-gala-jeddah',
+    title: 'GQ Gala, Jeddah',
+    subtitle: 'Fashion, Culture, and Celebrity Engagement',
+    category: 'Luxury Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600&q=80',
+    heroImagePrompt: 'Elegant GQ Gala venue in Jeddah with fashion industry VIPs, red carpet, luxury brand activations. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced the GQ Gala in Jeddah, delivering a high-profile evening of fashion, culture, and celebrity engagement. Managing venue design, VIP hospitality, media coordination, and brand partnerships, we created a glamorous showcase that positioned Jeddah within the global fashion conversation while celebrating regional style and creativity—demonstrating our expertise in luxury lifestyle event production.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80',
+        prompt: 'Fashion presentation at GQ Gala, models showcasing designs, VIP audience.',
+        caption: 'Fashion showcase: Elevating regional style on global platform'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=800&q=80',
+        prompt: 'Celebrity arrivals at GQ Gala red carpet, photographers, media coverage.',
+        caption: 'Celebrity engagement: Attracting global fashion and entertainment figures'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1519167758481-83f29da8c8b0?w=800&q=80',
+        prompt: 'Luxury venue design for GQ Gala, elegant table settings, brand activations.',
+        caption: 'Luxury production: Creating sophisticated GQ brand experience'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'VIP networking at GQ Gala, fashion industry leaders, cultural conversations.',
+        caption: 'Industry connection: Building bridges in fashion and culture'
+      }
+    ]
+  },
+
+  'hia-magazine-gala': {
+    slug: 'hia-magazine-gala',
+    title: 'HIA Magazine Gala Dinner',
+    subtitle: 'Premium Hospitality for Regional Publication',
+    category: 'Corporate Events',
+    year: '2022',
+    heroImage: 'https://images.unsplash.com/photo-1519167758481-83f29da8c8b0?w=1600&q=80',
+    heroImagePrompt: 'Elegant corporate gala dinner with premium table settings, HIA Magazine branding, VIP guests networking. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We managed the HIA Magazine Gala Dinner, providing seamless event production and VIP hospitality for a leading regional publication. Coordinating venue design, catering excellence, entertainment, and guest experience, we created an elegant evening that reinforced HIA\'s brand prestige while facilitating meaningful connections among regional business and cultural leaders—showcasing our corporate hospitality expertise.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80',
+        prompt: 'Premium gala dinner table settings, elegant centerpieces, HIA Magazine branding.',
+        caption: 'Hospitality excellence: Premium event design and execution'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
+        prompt: 'VIP guests networking at HIA gala, regional business leaders, cultural figures.',
+        caption: 'Elite networking: Connecting regional influencers and decision-makers'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=800&q=80',
+        prompt: 'Entertainment at gala dinner, live performance, sophisticated atmosphere.',
+        caption: 'Entertainment curation: Creating memorable gala moments'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
+        prompt: 'Event production coordination, seamless service delivery, VIP experience management.',
+        caption: 'Production mastery: Flawless corporate event execution'
+      }
+    ]
+  },
+
+  'museum-commission-strategy': {
+    slug: 'museum-commission-strategy',
+    title: 'Museum Commission Strategy Launch',
+    subtitle: 'Engaging Stakeholders with Cultural Vision',
+    category: 'Cultural Strategy',
+    year: '2022',
+    heroImage: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=1600&q=80',
+    heroImagePrompt: 'Modern museum venue with strategy launch event, curated content displays, cultural leaders and media engaged. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced the launch event for the Museum Commission\'s new strategy, engaging stakeholders and media with curated content and presentations. Managing venue design, stakeholder communications, media coordination, and experiential storytelling, we translated complex cultural policy into compelling narrative while building support for the Commission\'s vision—demonstrating our ability to communicate strategic initiatives effectively.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1569074187119-c87815b476da?w=1600&q=80',
+        prompt: 'Strategy presentation at museum venue, cultural leaders engaged, vision displays.',
+        caption: 'Strategic launch: Unveiling Museum Commission\'s cultural roadmap'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80',
+        prompt: 'Media briefing at strategy launch, press engagement, narrative amplification.',
+        caption: 'Media engagement: Communicating cultural vision to public'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        prompt: 'Stakeholder networking at launch event, cultural sector leaders, strategic conversations.',
+        caption: 'Stakeholder alignment: Building support for cultural strategy'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Interactive exhibits showcasing museum strategy, experiential storytelling, engaged visitors.',
+        caption: 'Experiential communication: Strategy brought to life through immersive design'
+      }
+    ]
+  },
+
+  'misk-art-week': {
+    slug: 'misk-art-week',
+    title: 'Misk Art Week',
+    subtitle: 'Supporting Emerging Artists and Creative Dialogue',
+    category: 'Cultural Events',
+    year: '2021',
+    heroImage: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1600&q=80',
+    heroImagePrompt: 'Contemporary art exhibition at Misk Art Week, young Saudi artists showcasing work, interactive installations. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We delivered programming and production for Misk Art Week, supporting emerging artists and creative dialogue across Saudi Arabia. Curating exhibitions, managing artist facilities, coordinating workshops, and facilitating public engagement, we created a platform that nurtured the Kingdom\'s next generation of creative talent while fostering cultural conversation—demonstrating our commitment to arts development and youth empowerment.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=800&q=80',
+        prompt: 'Emerging Saudi artists displaying work at Misk Art Week, contemporary art installations.',
+        caption: 'Artist platform: Showcasing Saudi Arabia\'s creative talent'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80',
+        prompt: 'Art workshops at Misk Art Week, creative learning, skill development.',
+        caption: 'Creative development: Workshops nurturing artistic skills'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Public engaging with art installations, interactive exhibits, cultural dialogue.',
+        caption: 'Community engagement: Making art accessible to all'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=800&q=80',
+        prompt: 'Panel discussions on art and culture, emerging artists, creative industry leaders.',
+        caption: 'Creative dialogue: Building Saudi Arabia\'s artistic ecosystem'
+      }
+    ]
+  },
+
+  'seaworld-yas-opening': {
+    slug: 'seaworld-yas-opening',
+    title: 'SeaWorld Yas Island Grand Opening',
+    subtitle: 'Theme Park Launch with VVIP Experiences',
+    category: 'Major Events',
+    year: '2023',
+    heroImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80',
+    heroImagePrompt: 'SeaWorld Yas Island grand opening with custom stage, VVIP guests, marine-themed spectacular production. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We designed and executed the grand opening of SeaWorld Yas Island, including custom stage design, VVIP experiences, and extensive project management. Coordinating ceremonial programming, VIP hospitality, media engagement, and operational delivery, we created a launch event befitting the region\'s newest world-class attraction while managing complex stakeholder expectations—demonstrating our capacity for major venue openings.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&q=80',
+        prompt: 'Custom stage for SeaWorld opening ceremony, marine-themed design, spectacular production.',
+        caption: 'Spectacular production: Custom stage for landmark opening'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80',
+        prompt: 'VVIP guests experiencing SeaWorld opening, exclusive tours, premium hospitality.',
+        caption: 'VVIP experiences: Curating unforgettable opening moments'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Media covering SeaWorld Yas Island opening, press engagement, regional excitement.',
+        caption: 'Media amplification: Generating excitement for new attraction'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
+        prompt: 'Project management coordination for major venue opening, operational delivery.',
+        caption: 'Project mastery: Managing complex opening operations'
+      }
+    ]
+  },
+
+  'qasr-al-watan-opening': {
+    slug: 'qasr-al-watan-opening',
+    title: 'Qasr Al Watan Grand Opening',
+    subtitle: 'Presidential Palace Launch with Cultural Ceremony',
+    category: 'Landmark Events',
+    year: '2019',
+    heroImage: 'https://images.unsplash.com/photo-1586613241595-ab66ff648030?w=1600&q=80',
+    heroImagePrompt: 'Majestic Qasr Al Watan palace illuminated at night for grand opening, ceremonial guests, UAE flag displayed prominently. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced the grand opening of Qasr Al Watan, Abu Dhabi\'s presidential palace, with immersive ceremonies and cultural programming. Managing protocol, guest experience, cultural performances, and venue transformation, we created a historic moment that showcased Emirati heritage and governance to the world while opening this architectural masterpiece to the public—a project requiring the highest level of ceremonial expertise.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=1600&q=80',
+        prompt: 'Ceremonial opening of Qasr Al Watan, dignitaries attending, UAE cultural traditions.',
+        caption: 'Historic ceremony: Opening Abu Dhabi\'s presidential palace'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&q=80',
+        prompt: 'Traditional Emirati cultural performance at palace opening, authentic programming.',
+        caption: 'Cultural showcase: Celebrating Emirati heritage and identity'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
+        prompt: 'Immersive lighting transforming Qasr Al Watan for opening night, architectural splendor.',
+        caption: 'Architectural celebration: Lighting design honoring palace grandeur'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
+        prompt: 'Protocol management for presidential palace opening, diplomatic guests, ceremonial precision.',
+        caption: 'Protocol excellence: Managing highest-level ceremonial event'
+      }
+    ]
+  },
+
+  'human-fraternity-anniversary': {
+    slug: 'human-fraternity-anniversary',
+    title: 'Anniversary of Human Fraternity Document',
+    subtitle: 'Interfaith Dialogue and Cultural Unity',
+    category: 'Interfaith Events',
+    year: '2020',
+    heroImage: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80',
+    heroImagePrompt: 'Interfaith gathering at Human Fraternity anniversary, diverse religious leaders, unity programming, UAE venue. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We managed the anniversary celebration of the Document on Human Fraternity, delivering a program of unity, dialogue, and cultural exchange. Coordinating interfaith programming, managing diverse stakeholder sensitivities, and creating inclusive experiences, we honored the historic agreement between Pope Francis and Grand Imam Ahmed Al-Tayeb while advancing Abu Dhabi\'s role as a global center for tolerance—demonstrating our expertise in sensitive, values-driven events.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
+        prompt: 'Interfaith leaders participating in Human Fraternity anniversary, unity message.',
+        caption: 'Interfaith unity: Celebrating dialogue between faiths'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+        prompt: 'Cultural exchange programming at anniversary event, diverse communities engaged.',
+        caption: 'Cultural exchange: Building bridges across communities'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'Panel discussion on tolerance and coexistence, religious leaders, academic speakers.',
+        caption: 'Dialogue programming: Advancing Human Fraternity principles'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Community engagement at tolerance event, inclusive programming, unity celebration.',
+        caption: 'Community impact: Abu Dhabi as global center for tolerance'
+      }
+    ]
+  },
+
+  'special-olympics-mena-ceremony': {
+    slug: 'special-olympics-mena-ceremony',
+    title: 'Special Olympics MENA Opening Ceremony',
+    subtitle: 'Championing Inclusion and Athletic Achievement',
+    category: 'Sports Events',
+    year: '2018',
+    heroImage: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1600&q=80',
+    heroImagePrompt: 'Special Olympics MENA opening ceremony with athletes marching, inclusive celebration, powerful moment of unity. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced the opening ceremony for the Special Olympics MENA, championing inclusion and athletic achievement across the region. Managing ceremonial programming, athlete experiences, cultural performances, and stadium operations, we created a powerful celebration of human potential that inspired audiences while positioning the UAE as a leader in inclusive sport—demonstrating our ability to deliver emotionally-resonant sporting events.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1600&q=80',
+        prompt: 'Athletes marching in Special Olympics opening ceremony, pride and determination.',
+        caption: 'Athlete celebration: Honoring courage and achievement'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&q=80',
+        prompt: 'Inclusive programming at ceremony, diverse athletes, celebration of abilities.',
+        caption: 'Inclusion showcase: Special Olympics values brought to life'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&q=80',
+        prompt: 'Cultural performance at opening ceremony, regional traditions, unifying moment.',
+        caption: 'Cultural unity: MENA region celebrating together through sport'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
+        prompt: 'Stadium production for opening ceremony, lighting design, inspiring atmosphere.',
+        caption: 'Production excellence: Creating unforgettable ceremony experience'
+      }
+    ]
+  },
+
+  'al-burda-festival': {
+    slug: 'al-burda-festival',
+    title: 'Al Burda Festival 2021',
+    subtitle: 'Celebrating Islamic Arts and Culture',
+    category: 'Cultural Events',
+    year: '2021',
+    heroImage: 'https://images.unsplash.com/photo-1580641961851-476e96b5d648?w=1600&q=80',
+    heroImagePrompt: 'Islamic arts festival with calligraphy exhibitions, traditional performances, cultural celebrations in elegant venue. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We curated and delivered the Al Burda Festival, celebrating Islamic arts and culture through exhibitions, performances, and workshops. Managing artistic programming, venue design, community engagement, and educational initiatives, we created an immersive cultural experience that honored Islamic artistic heritage while inspiring contemporary creative practice—demonstrating our expertise in culturally-significant programming with deep respect for tradition.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1580130732478-2e2d3c2f7dcb?w=800&q=80',
+        prompt: 'Islamic calligraphy exhibition at Al Burda Festival, masterworks on display.',
+        caption: 'Artistic heritage: Showcasing Islamic calligraphy excellence'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
+        prompt: 'Traditional Islamic music performance at festival, authentic cultural experience.',
+        caption: 'Musical tradition: Celebrating Islamic performing arts'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80',
+        prompt: 'Workshops teaching traditional Islamic arts, community participation, skill sharing.',
+        caption: 'Educational programming: Passing artistic traditions to next generation'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Community engagement at Al Burda Festival, families experiencing Islamic culture.',
+        caption: 'Cultural celebration: Making Islamic arts accessible and inspiring'
+      }
+    ]
+  },
+
+  'parenthood-unconference': {
+    slug: 'parenthood-unconference',
+    title: 'Parenthood: The Unconference',
+    subtitle: 'Pioneering Family and Community Dialogue',
+    category: 'Thought Leadership',
+    year: '2020',
+    heroImage: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1600&q=80',
+    heroImagePrompt: 'Interactive unconference session with parents engaged in dialogue, workshop setting, collaborative atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: 'We produced "Parenthood: The Unconference," a pioneering event focused on family, parenting, and community dialogue through interactive sessions. Breaking from traditional conference formats, we created participant-driven programming that fostered authentic conversations about parenting challenges, family values, and community support—demonstrating our ability to innovate event formats while addressing meaningful social topics with sensitivity and impact.',
+    supportingImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&q=80',
+        prompt: 'Interactive workshop session at unconference, parents engaged in dialogue.',
+        caption: 'Collaborative format: Parent-driven programming and authentic dialogue'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80',
+        prompt: 'Diverse families participating in unconference sessions, inclusive programming.',
+        caption: 'Inclusive dialogue: All families represented and valued'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+        prompt: 'Expert facilitators guiding parenting discussions, thought leadership on family topics.',
+        caption: 'Expert facilitation: Guiding meaningful conversations'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
+        prompt: 'Community building at unconference, networking among parents, support networks forming.',
+        caption: 'Community building: Creating lasting support networks'
+      }
+    ]
   }
 }
