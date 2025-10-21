@@ -470,7 +470,7 @@ export const GroupPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
-              Ready to Engage Our Global Team?
+              Want to Engage, Our Global Team
             </h2>
             <p class="text-xl text-gray-300 mb-12">
               From strategic counsel to full-scale execution, we bring the resources of a global network 
