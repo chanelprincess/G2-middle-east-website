@@ -20,7 +20,7 @@ export const HomePage: FC = () => {
         
         <div class="absolute inset-0 flex items-center justify-center z-10">
           <div class="text-center px-6 max-w-5xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow fade-in text-white font-sans">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow fade-in text-white">
               Built for Complexity
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 fade-in-delay-1 font-light">
