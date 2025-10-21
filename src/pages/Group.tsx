@@ -209,7 +209,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">LIVE COMMUNICATION</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    G2 EVENTI
+                    G2 Eventi
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     G2 event designs unforgettable events, characterised by a propensity for teamwork and excellence. We create emotional experiences built on creativity, technology, reliability, and cost effectiveness.
@@ -239,7 +239,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">LUXURY EXPERIENCES</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    GENIUS PROGETTI
+                    Genius Progetti
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     We engineer the unforgettable to showcase the uniqueness of prestigious brands through bespoke experiences. We combine Italian style with an international work ethic to handle all aspects of your project.
@@ -269,7 +269,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">MUSIC & ENTERTAINMENT</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    BLUENOTEMILANO
+                    Blue Note Milano
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     Blue Note Milano is a legendary jazz club and restaurant in Milan. As one of Europe's most influential jazz venues, it hosts over 300 shows per year for a community of over 100,000 customers.
@@ -299,7 +299,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CULTURAL EVENTS</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    CASTADIVA ART&SHOW
+                    Castadiva Art & Show
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     The division dedicated to creating and producing major art events in Italy and worldwide. We transform creative ideas into memorable experiences, blending tradition and modernity.
@@ -329,7 +329,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">SCIENTIFIC EVENTS</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    FIRSTCLASS
+                    FirstClass
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     Designs and organizes congresses, meetings, and training events, with particular expertise in the medical-scientific field. A complete partner with strong planning and communication skills.
@@ -359,7 +359,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">DIGITAL STRATEGY</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    agenZy
+                    AgenZy
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     Created to solve the challenge of communicating with Generation Z. We design strategies and campaigns that leverage the cultural codes and languages of younger generations for the 18-35 target audience.
@@ -389,7 +389,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CONTENT PRODUCTION</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    CASTADIVA PICTURES
+                    Castadiva Pictures
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     Operates in branded content, ad productions, films, and TV programming. With fourteen branches, it is the most extensive advertising production network worldwide, working with over 100 top brands.
@@ -419,7 +419,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">FILM PRODUCTION</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    AKITAFILM
+                    Akita Film
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     Produces and organizes commercials and corporate videos for major brands worldwide. Akita Film stands out for its expertise in scouting top talent, including directors, photographers, and videomakers.
@@ -449,7 +449,7 @@ export const GroupPage: FC = () => {
                     <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">VIDEO PRODUCTION</span>
                   </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
-                    E-MOTION
+                    E-Motion
                   </h3>
                   <p class="text-gray-400 leading-relaxed mb-6">
                     A production company specializing in corporate, product, and event videos. Among the first to adopt Red Digital Cinema technology, delivering integrated solutions without compromising on quality.
