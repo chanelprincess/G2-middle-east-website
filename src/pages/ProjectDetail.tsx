@@ -863,33 +863,67 @@ export const projectsData = {
 
   'qatar-olympic-house': {
     slug: 'qatar-olympic-house',
-    title: 'Qatar Olympic House, London 2012',
-    subtitle: 'Landmark Olympic Hospitality at the Games',
+    title: 'Qatar Olympic House – London 2012',
+    subtitle: 'Delivering Qatar\'s First Olympic House in 12 Weeks',
     category: 'Sports Events',
     year: '2012',
     heroImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&q=80',
     heroImagePrompt: 'Olympic rings and flags at prestigious venue during London 2012 Games, VIP guests arriving at elegant hospitality house, Qatar branding prominently displayed. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We managed Qatar\'s first Olympic House at London 2012—a landmark presence that showcased the nation during the world\'s premier sporting event. Overseeing budget management, supplier coordination, logistics, PR, catering, and diplomatic protocol, we delivered a seamless hospitality experience that strengthened bilateral relationships and positioned Qatar as a key player in international sport. This project laid the groundwork for Qatar\'s subsequent Olympic bids and sporting infrastructure development.',
+    engagingParagraph: `<p class="mb-4"><strong>Project Lead:</strong> Tim Jacobs (Appointed by Doha 2020 Bid Committee)</p>
+    
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Overview</h3>
+    <p class="mb-4">In the lead-up to the London 2012 Olympic Games, the Doha 2020 Bid Committee appointed Tim Jacobs as Project Lead to deliver a landmark initiative: Qatar's first-ever Olympic House. Tasked with realising the client's vision within an exceptionally tight 12-week lead time, Jacobs was responsible for the complete operational planning, delivery, and management of this high-profile hospitality and diplomatic hub.</p>
+    
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Challenge</h3>
+    <p class="mb-4">With only three months from appointment to opening, the project required rapid mobilisation, cross-continental coordination, and meticulous attention to detail. The Olympic House needed to serve as a showcase for Qatar's culture, hospitality, and Olympic ambitions, while providing a secure, welcoming environment for VIPs, athletes, dignitaries, and international media.</p>
+    
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Tim Jacobs' Role & Responsibilities</h3>
+    <p class="mb-4">As Project Lead, Tim Jacobs was entrusted with end-to-end responsibility for the Qatar Olympic House, including:</p>
+    
+    <ul class="list-disc list-inside mb-4 space-y-2 text-gray-300">
+      <li><strong>Permitting & Compliance:</strong> Navigating UK regulatory frameworks to secure all necessary permits and approvals in record time.</li>
+      <li><strong>Security Planning:</strong> Designing and implementing robust security protocols to protect guests and assets, in coordination with local authorities and private security providers.</li>
+      <li><strong>Catering & Hospitality:</strong> Curating a world-class catering program that reflected Qatari culture and met the diverse needs of international guests.</li>
+      <li><strong>Programming:</strong> Developing and managing a dynamic schedule of events, cultural showcases, and networking opportunities throughout the Games.</li>
+      <li><strong>Budget Management:</strong> Overseeing all financial aspects, ensuring cost control and value delivery across suppliers and services.</li>
+      <li><strong>Stakeholder Management:</strong> Acting as the primary liaison between the Doha 2020 Bid Committee, Qatari officials, UK partners, suppliers, and VIP guests.</li>
+    </ul>
+    
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Execution & Impact</h3>
+    <p class="mb-4">Under Jacobs' leadership, the Qatar Olympic House was delivered on time and to the highest standards, despite the compressed schedule and complex stakeholder environment. The project became a focal point for Qatari engagement during the Games, hosting high-level meetings, cultural events, and media activations that elevated Qatar's international profile and Olympic credentials.</p>
+    
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Legacy & Value to G2 Middle East</h3>
+    <p class="mb-4">This project exemplifies Tim Jacobs' ability to deliver under pressure, manage multifaceted international operations, and exceed client expectations. The experience and expertise gained from leading Qatar Olympic House now inform G2 Middle East's approach to high-stakes event delivery, stakeholder engagement, and cross-border project management—reinforcing the consultancy's reputation for operational excellence and strategic vision.</p>`,
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&q=80',
         prompt: 'Elegant Olympic House interior with Qatar branding, VIP guests networking during Games.',
-        caption: 'Diplomatic excellence: Qatar\'s presence at the world stage'
+        caption: 'Diplomatic hub: Qatar\'s first Olympic House hosting VIPs, athletes, and dignitaries'
       },
       {
         url: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80',
         prompt: 'Olympic athletes and dignitaries at Qatar hospitality venue, premium catering service.',
-        caption: 'Hospitality mastery: Catering and protocol for global guests'
+        caption: 'World-class hospitality: Qatari culture showcased through premium catering and service'
       },
       {
         url: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80',
         prompt: 'London 2012 Olympic venues visible from Qatar House, strategic positioning.',
-        caption: 'Strategic location: Prime positioning at the heart of the Games'
+        caption: 'Strategic positioning: Prime location at the heart of London 2012 Olympic Games'
       },
       {
         url: 'https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=800&q=80',
         prompt: 'Project management documentation, budget oversight, supplier coordination materials.',
-        caption: 'Operational excellence: Comprehensive budget and supplier management'
+        caption: '12-week delivery: Comprehensive project management under extreme time pressure'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1600&q=80',
+        prompt: 'High-level bilateral meetings at Qatar Olympic House, diplomatic protocol.',
+        caption: 'Stakeholder excellence: Facilitating high-level meetings strengthening international relations'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        prompt: 'Cultural programming and events at Qatar House during Olympics.',
+        caption: 'Cultural showcase: Dynamic programming celebrating Qatari heritage throughout the Games'
       }
     ]
   },
