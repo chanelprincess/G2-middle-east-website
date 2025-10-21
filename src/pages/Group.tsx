@@ -205,6 +205,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">LIVE COMMUNICATION</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     G2 EVENTI
                   </h3>
@@ -232,6 +235,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">LUXURY EXPERIENCES</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     GENIUS PROGETTI
                   </h3>
@@ -259,6 +265,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">MUSIC & ENTERTAINMENT</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     BLUENOTEMILANO
                   </h3>
@@ -286,6 +295,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CULTURAL EVENTS</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     CASTADIVA ART&SHOW
                   </h3>
@@ -313,6 +325,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">SCIENTIFIC EVENTS</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     FIRSTCLASS
                   </h3>
@@ -340,6 +355,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">DIGITAL STRATEGY</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     agenZy
                   </h3>
@@ -367,6 +385,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">CONTENT PRODUCTION</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     CASTADIVA PICTURES
                   </h3>
@@ -394,6 +415,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">FILM PRODUCTION</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     AKITAFILM
                   </h3>
@@ -421,6 +445,9 @@ export const GroupPage: FC = () => {
                   <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker transition-opacity duration-500 group-hover:opacity-70"></div>
                 </div>
                 <div class="p-8 flex flex-col" style="min-height: 320px;">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">VIDEO PRODUCTION</span>
+                  </div>
                   <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
                     E-MOTION
                   </h3>
