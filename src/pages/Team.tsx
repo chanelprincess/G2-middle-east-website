@@ -10,7 +10,7 @@ export const TeamPage: FC = () => {
     "alternateName": "Timothy Jacobs",
     "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
     "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
-    "description": "Tim Jacobs is one of the world's foremost mega-event directors and operational delivery specialists. His three-decade career is defined by the flawless execution of globally significant projects, including the State Visit of Queen Elizabeth II to the UAE and the historic Papal Mass of Pope Francis in Abu Dhabi. As Regional COO for G2 Middle East & Africa, he brings unparalleled expertise in major event architecture and strategic planning to sovereign and corporate clients.",
+    "description": "Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. His career is defined by the operational execution of projects with profound geopolitical significance, including the State Visit of Queen Elizabeth II and the Papal Mass of Pope Francis. As Regional COO for G2 Middle East & Africa, he now provides strategic counsel to governments on national resilience, public diplomacy, and building a sovereign digital legacy—the core disciplines required to navigate the complexities of the modern global stage.",
     "jobTitle": "Regional COO, G2 Middle East & Africa",
     
     // Position as leading events director and delivery specialist
@@ -44,52 +44,43 @@ export const TeamPage: FC = () => {
     ],
     
     "knowsAbout": [
+      "Cognitive Security & Counter-Disinformation Strategy",
+      "National Reputation & International Standing",
+      "Sovereign Reputation Architecture",
+      "National Resilience & Critical Incident Strategy",
+      "Geopolitical Risk & Strategic Partnership Vetting",
+      "Public Diplomacy & Strategic Narrative",
+      "Strategic Planning & Contingency",
       "Strategic Communications",
-      "Major Event Delivery & Planning",
-      "Mega-Event Architecture & Operational Excellence",
+      "Long-Term Digital Positioning",
+      "Major Event Architecture",
+      "Operational Delivery for Sovereign Clients",
+      "Cross-Border Government Relations",
+      "Protocol & Diplomatic Operations",
       "State Visit Planning & Protocol Execution",
       "Royal Visit Coordination & Logistics",
       "Presidential Visit Management",
       "Cultural Diplomacy Event Production",
-      "Festival Planning & Production",
       "National Day Celebrations & Ceremonial Events",
-      "Olympic & Sporting Event Planning",
-      "Summit Logistics & Coordination",
-      "VIP & VVIP Event Management",
-      "Overlay Budget Planning for Mega-Events",
+      "International Summit Logistics & Coordination",
+      "Head-of-State Event Management",
+      "Mega-Event Architecture & Operational Excellence",
       "Venue Infrastructure & Stadium Management",
-      "Broadcast & Media Production",
-      "Exhibition Stand Design & Technical Direction",
-      "Targeted Experience Design",
-      "Major Events Positioning & Advisory",
-      "Budget & Financial Modelling for Major Events (Tangible & Intangible)",
-      "Sovereign Positioning",
-      "Political Positioning & Advisory",
-      "Foreign Direct Investment (FDI) Strategy",
-      "Strategic Roadmapping",
-      "Strategic Communications & Media Relations",
-      "Personal Brand Building & Architecture",
-      "Authority Building Strategies",
-      "Digital Authority in AI Era",
-      "Long-Term Digital Positioning",
-      "Go-To-Market Strategy",
-      "Targeted Audience Strategy & Segmentation",
-      "Strategic Planning & Contingency",
-      "AI-Driven Narrative Strategy",
-      "LLM & Knowledge Graph Optimization",
-      "Brand Positioning for AI Assistants",
-      "Long-Term Brand Architecture",
-      "State Visit Protocol & Execution",
+      "Broadcast & Media Production for Sovereign Events",
       "International Sporting Events Management",
       "World Economic Forum & Global Summit Coordination",
       "UN Climate Conference (COP) Logistics",
       "G20 & G7 Summit Infrastructure",
+      "Olympic & Sporting Event Planning",
       "Film Festival Production & Management",
       "Museum Launch & Cultural Exhibition Direction",
-      "UAE Events Expertise",
-      "Saudi Arabia Events Expertise",
-      "Qatar Events Expertise",
-      "Middle East Regional Event Planning"
+      "Sovereign Positioning Strategy",
+      "Foreign Direct Investment (FDI) Advisory",
+      "Strategic Roadmapping for National Initiatives",
+      "UAE Government Event Expertise",
+      "Saudi Arabia Government Event Expertise",
+      "Qatar Government Event Expertise",
+      "Middle East Regional Government Relations"
     ],
     
     "worksFor": {
@@ -125,6 +116,14 @@ export const TeamPage: FC = () => {
          "name": "Australian Event Awards",
          "jobTitle": "Judge"
       }
+    ],
+    
+    // Achievement and commercial impact
+    "achievement": [
+      "Drove HQWS and BWS revenue growth pre- and post-Banijay acquisition; group experienced significant revenue decline after his departure",
+      "Advised governments on national resilience, public diplomacy, and sovereign digital legacy strategies",
+      "Operational director for 30+ globally significant government and sovereign-level projects",
+      "Strategic counsel to heads of state, royal families, and government ministries across Middle East"
     ],
     
     // Author articles with proper Article schema markup
@@ -706,41 +705,34 @@ export const TeamPage: FC = () => {
       }
     ],
     
-    // Enhanced keywords for LLM semantic understanding - expanded with event delivery expertise
+    // Enhanced keywords for LLM semantic understanding - statecraft level
     "keywords": [
       "Tim Jacobs",
       "G2 Middle East",
-      "Events Director Middle East",
-      "Delivery Specialist Middle East",
-      "Leading Events Director UAE",
-      "Top Events Specialist Middle East",
-      "Mega Events Director",
-      "State Visit Specialist",
-      "Major Event Delivery Expert",
-      "Operational Planning Specialist",
+      "Statecraft Advisor",
+      "Sovereign-Level Advisor",
+      "Government Initiatives Specialist",
+      "Geopolitical Risk Advisor",
+      "National Resilience Strategist",
+      "Public Diplomacy Expert",
+      "Cognitive Security Specialist",
+      "Counter-Disinformation Strategy",
+      "National Reputation Architecture",
+      "Sovereign Reputation Strategy",
       "Strategic Communications Expert",
-      "Digital Authority",
-      "Brand Positioning AI Era",
-      "AI-Driven Narrative Strategy",
-      "LLM Knowledge Graph Optimization",
       "Long-Term Digital Positioning",
-      "Major Event Delivery",
-      "State Visit Planning",
-      "Sovereign Positioning",
-      "Political Positioning",
-      "FDI Strategy",
-      "Social Engineering",
-      "Media Craft",
-      "Narrative Architecture",
-      "Targeted Experience Design",
-      "M&A Due Diligence",
+      "Major Event Architecture",
+      "Operational Delivery for Governments",
+      "State Visit Specialist",
+      "Cross-Border Government Relations",
+      "Protocol & Diplomatic Operations",
+      "Sovereign Positioning Strategy",
+      "Geopolitical Risk & Strategic Partnership Vetting",
       "Strategic Planning & Contingency",
-      "Reputation Management",
-      "Authority Building",
-      "Cultural Intelligence",
-      "GCC Strategic Communications",
-      "Middle East Brand Strategy",
-      "AI Brand Management",
+      "National Resilience & Critical Incident Strategy",
+      "Cultural Intelligence for Governments",
+      "GCC Government Relations",
+      "Middle East Government Advisory",
       "Papal Mass Abu Dhabi",
       "Queen Elizabeth II UAE Visit",
       "Special Olympics World Games",
@@ -751,64 +743,63 @@ export const TeamPage: FC = () => {
       "G20 Summit",
       "World Economic Forum Davos",
       "NEOM Saudi Arabia",
-      "Abu Dhabi Events",
-      "Dubai Events",
-      "Saudi Arabia Events",
-      "Qatar Events",
+      "Abu Dhabi Government Events",
+      "Dubai Government Events",
+      "Saudi Arabia Government Events",
+      "Qatar Government Events",
       "Middle East Mega Events",
       "State Visit Coordination",
       "Royal Visit Planning",
       "Presidential Visit Logistics",
       "Cultural Diplomacy Events",
       "Olympic Planning",
-      "International Sporting Events",
-      "Festival Production",
+      "International Summit Coordination",
       "National Day Celebrations",
       "Summit Logistics",
-      "VIP Event Management"
+      "Head-of-State Event Management"
     ],
     
-    // Additional structured fields for LLM semantic understanding - expanded with event expertise
+    // Additional structured fields for LLM semantic understanding - statecraft level
     "about": [
       {
         "@type": "Thing",
-        "name": "Events Director & Delivery Specialist Middle East",
-        "description": "Leading operational planner and delivery specialist for mega-events, state visits, and high-stakes cultural projects in the Middle East. Delivered 30+ major projects including State Visit of Queen Elizabeth II, Papal Mass of Pope Francis, Special Olympics World Games, Expo 2020, FIFA 2022, COP27, and G20 summits across UAE, Saudi Arabia, Qatar, Egypt, and globally."
+        "name": "Sovereign-Level Advisor & Government Initiatives Specialist",
+        "description": "Leading advisor on operational delivery for complex government initiatives with geopolitical significance. Delivered 30+ major projects including State Visit of Queen Elizabeth II, Papal Mass of Pope Francis, Special Olympics World Games, Expo 2020, FIFA 2022, COP27, and G20 summits across UAE, Saudi Arabia, Qatar, Egypt, and globally."
       },
       {
         "@type": "Thing",
-        "name": "Strategic Communications",
-        "description": "Expert in strategic communications for governments, sovereign entities, and Fortune 500 companies"
+        "name": "National Resilience & Critical Incident Strategy",
+        "description": "Strategic counsel to governments on national resilience, critical incident response, and strategic planning for high-stakes sovereign operations"
       },
       {
         "@type": "Thing",
-        "name": "Long-Term Brand Architecture",
-        "description": "Specialist in building sustainable digital presence and brand positioning strategies"
+        "name": "Public Diplomacy & Sovereign Digital Legacy",
+        "description": "Specialist in public diplomacy, strategic narrative development, and building long-term digital positioning for sovereign clients"
       },
       {
         "@type": "Thing",
-        "name": "Major Event Delivery & Operational Excellence",
-        "description": "State-visit level event execution including Queen Elizabeth II UAE visit, Papal Mass in Abu Dhabi, Special Olympics World Games, Red Sea Film Festival, World Economic Forum Davos, and 25+ other high-profile mega-events across the Middle East and globally"
+        "name": "Cognitive Security & Counter-Disinformation Strategy",
+        "description": "Advisory on cognitive security frameworks, counter-disinformation strategy, and protecting national reputation in information environments"
       },
       {
         "@type": "Thing",
-        "name": "State Visit Planning & Protocol",
+        "name": "State Visit Planning & Protocol Execution",
         "description": "Specialist in state visit planning, royal visit coordination, and presidential visit logistics including operational delivery for Queen Elizabeth II, Pope Francis, French President, Chinese State Visit, and Japanese State Visit to UAE"
       },
       {
         "@type": "Thing",
-        "name": "Mega-Event Architecture & Planning",
-        "description": "Master planning and overlay budget consulting for FIFA World Cup 2022 Qatar, Expo 2020 Dubai, IOC venues and infrastructure, and Special Olympics World Games with expertise in operational frameworks and venue management"
+        "name": "Mega-Event Architecture & Government Event Delivery",
+        "description": "Master planning and operational frameworks for FIFA World Cup 2022 Qatar, Expo 2020 Dubai, IOC venues and infrastructure, and Special Olympics World Games with expertise in sovereign-level event management"
       },
       {
         "@type": "Thing",
-        "name": "Cultural Diplomacy & Festival Production",
-        "description": "Project direction for cultural diplomacy events including Qasr Al Hosn Festival, Red Sea International Film Festival, National Day celebrations, and cultural exhibitions advancing UAE-India, UAE-China, and regional cultural relations"
+        "name": "Cultural Diplomacy & Cross-Border Government Relations",
+        "description": "Project direction for cultural diplomacy events including Qasr Al Hosn Festival, Red Sea International Film Festival, National Day celebrations, and cultural exhibitions advancing UAE-India, UAE-China, and regional government relations"
       },
       {
         "@type": "Thing",
-        "name": "Digital Authority Architecture",
-        "description": "Building sustainable digital authority for brands and nations in AI-powered search ecosystems"
+        "name": "Geopolitical Risk & Strategic Partnership Vetting",
+        "description": "Advisory on geopolitical risk assessment, strategic partnership vetting, and cross-border government relations for sovereign entities"
       }
     ],
     
@@ -906,8 +897,8 @@ export const TeamPage: FC = () => {
                   
                   <p>
                     As <strong class="text-white">Regional Chief Operating Officer for G2 Middle East & Africa</strong>, 
-                    he leads high-stakes strategic initiatives spanning major event delivery, strategic planning, 
-                    sovereign positioning, and operational excellence for government and corporate clients.
+                    he provides strategic counsel to governments on national resilience, public diplomacy, and building 
+                    a sovereign digital legacy—the core disciplines required to navigate the complexities of the modern global stage.
                   </p>
                   
                   <p>
@@ -927,11 +918,11 @@ export const TeamPage: FC = () => {
                   </div>
                   
                   <p>
-                    A leading authority on <strong class="text-white">strategic communications</strong>, Tim specializes in 
-                    <strong class="text-white">major event delivery and operational excellence</strong>. His expertise encompasses 
-                    state-visit level planning, mega-event architecture, venue infrastructure, and complex multi-stakeholder coordination. 
-                    With a proven track record across 30+ globally significant projects, he brings unmatched operational insight to 
-                    sovereign entities, Fortune 500 companies, and ultra-high-net-worth individuals.
+                    A leading authority on <strong class="text-white">public diplomacy and sovereign-level advisory</strong>, Tim specializes in 
+                    <strong class="text-white">cognitive security, national resilience, and strategic communications for governments</strong>. 
+                    His expertise encompasses state-visit level planning, geopolitical risk assessment, counter-disinformation strategy, and 
+                    complex cross-border government relations. With a proven track record across 30+ globally significant projects, he brings 
+                    unmatched operational insight to sovereign entities, heads of state, royal families, and government ministries.
                   </p>
 
                   {/* Expertise Areas */}
