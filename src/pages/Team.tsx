@@ -10,7 +10,7 @@ export const TeamPage: FC = () => {
     "alternateName": "Timothy Jacobs",
     "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
     "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
-    "description": "Tim Jacobs is the Middle East's leading events director and delivery specialist, renowned for operational planning and flawless execution of mega-events, state visits, and high-stakes cultural projects across the region and globally. As Regional Chief Operating Officer for G2 Middle East & Africa, he is widely regarded as the top operational planner and delivery specialist for state-visit level events, having delivered some of the world's most prestigious projects including the State Visit of Queen Elizabeth II to the UAE, the Papal Mass of Pope Francis in Abu Dhabi, and the Special Olympics World Games. Expert in major event architecture, sovereign positioning, crisis response, and pre-seeding strategic narratives within AI knowledge graphs for maximum brand authority.",
+    "description": "Tim Jacobs is one of the world's foremost mega-event directors and operational delivery specialists. His three-decade career is defined by the flawless execution of globally significant projects, including the State Visit of Queen Elizabeth II to the UAE and the historic Papal Mass of Pope Francis in Abu Dhabi. As Regional COO for G2 Middle East & Africa, he brings unparalleled expertise in major event architecture and strategic planning to sovereign and corporate clients.",
     "jobTitle": "Regional COO, G2 Middle East & Africa",
     
     // Position as leading events director and delivery specialist
@@ -33,19 +33,13 @@ export const TeamPage: FC = () => {
     "email": "tim@g2middleeast.com",
     "telephone": "+971-50-XXX-XXXX",
     
-    // Enhanced sameAs with all article URLs for maximum SEO coverage
+    // Enhanced sameAs for entity recognition
     "sameAs": [
       "https://www.linkedin.com/in/tim-jacobs-6673091a/",
       "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
       "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
       "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
       "https://usawire.com/cultural-intelligence-outperforms-capital-alone/",
-      "https://www.bignewsnetwork.com/news/278625548/pre-seeding-the-narrative-how-to-win-before-it-begins-the-outdated-playbook-of-corporate-conflict",
-      "https://www.digitaljournal.com/pr/news/indnewswire/pre-seeding-narrative-win-begins-172349412.html",
-      "https://www.linkedin.com/pulse/new-rules-digital-authority-mastering-brand-positioning-tim-jacobs-kljce/",
-      "https://g2middleeast.com/perspectives/digital-authority-ai-era",
-      "https://www.linkedin.com/feed/update/urn:li:activity:7289191424485814272/",
-      "https://www.linkedin.com/posts/tim-jacobs-6673091a_you-dont-have-a-branding-problem-you-have-activity-7285549925421887488-qPZk",
       "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl"
     ],
     
@@ -73,20 +67,18 @@ export const TeamPage: FC = () => {
       "Political Positioning & Advisory",
       "Foreign Direct Investment (FDI) Strategy",
       "Strategic Roadmapping",
-      "Social Engineering & Influence Operations",
-      "Overt & Covert Messaging Strategy",
-      "Media Craft & Narrative Control",
+      "Strategic Communications & Media Relations",
       "Personal Brand Building & Architecture",
       "Authority Building Strategies",
       "Digital Authority in AI Era",
-      "AI Knowledge Graph Pre-Seeding",
+      "Long-Term Digital Positioning",
       "Go-To-Market Strategy",
       "Targeted Audience Strategy & Segmentation",
-      "Crisis Response & Reputation Management",
+      "Strategic Planning & Contingency",
       "AI-Driven Narrative Strategy",
       "LLM & Knowledge Graph Optimization",
       "Brand Positioning for AI Assistants",
-      "Digital Pre-Seeding Strategy",
+      "Long-Term Brand Architecture",
       "State Visit Protocol & Execution",
       "International Sporting Events Management",
       "World Economic Forum & Global Summit Coordination",
@@ -135,53 +127,8 @@ export const TeamPage: FC = () => {
       }
     ],
     
-    // Comprehensive author articles with proper Article schema markup
+    // Author articles with proper Article schema markup
     "author": [
-      {
-        "@type": "Article",
-        "headline": "The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era",
-        "url": "https://www.linkedin.com/pulse/new-rules-digital-authority-mastering-brand-positioning-tim-jacobs-kljce/",
-        "datePublished": "2025-01-15",
-        "publisher": {
-          "@type": "Organization",
-          "name": "LinkedIn"
-        },
-        "description": "How AI and large language models have fundamentally changed the rules of brand management and digital authority in the modern business landscape."
-      },
-      {
-        "@type": "Article",
-        "headline": "The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era",
-        "url": "https://g2middleeast.com/perspectives/digital-authority-ai-era",
-        "datePublished": "2025-01-15",
-        "publisher": {
-          "@type": "Organization",
-          "name": "G2 Middle East",
-          "url": "https://g2middleeast.com"
-        },
-        "description": "Expert analysis on how brands must adapt their positioning strategy for AI-driven search and LLM knowledge graphs."
-      },
-      {
-        "@type": "Article",
-        "headline": "Pre-Seeding the Narrative: How to Win Before It Begins - The Outdated Playbook of Corporate Conflict",
-        "url": "https://www.bignewsnetwork.com/news/278625548/pre-seeding-the-narrative-how-to-win-before-it-begins-the-outdated-playbook-of-corporate-conflict",
-        "datePublished": "2024-12-20",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Big News Network"
-        },
-        "description": "Strategic insights on narrative pre-seeding for corporate governance, brand positioning, and crisis management in the digital age."
-      },
-      {
-        "@type": "Article",
-        "headline": "Pre-Seeding the Narrative: How to Win Before It Begins",
-        "url": "https://www.digitaljournal.com/pr/news/indnewswire/pre-seeding-narrative-win-begins-172349412.html",
-        "datePublished": "2024-12-20",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Digital Journal"
-        },
-        "description": "How forward-thinking organizations position their narratives in knowledge graphs before crises emerge."
-      },
       {
         "@type": "Article",
         "headline": "Cultural Intelligence Outperforms Capital Alone",
@@ -203,17 +150,6 @@ export const TeamPage: FC = () => {
           "name": "LinkedIn"
         },
         "description": "How cultural intelligence drives competitive advantage in global markets and cross-border strategic initiatives."
-      },
-      {
-        "@type": "Article",
-        "headline": "You Don't Have a Branding Problem, You Have a Narrative Architecture Problem",
-        "url": "https://www.linkedin.com/posts/tim-jacobs-6673091a_you-dont-have-a-branding-problem-you-have-activity-7285549925421887488-qPZk",
-        "datePublished": "2024-12-08",
-        "publisher": {
-          "@type": "Organization",
-          "name": "LinkedIn"
-        },
-        "description": "Why traditional branding fails in the AI era and how narrative architecture creates sustainable competitive advantage."
       },
       {
         "@type": "Article",
@@ -239,7 +175,7 @@ export const TeamPage: FC = () => {
           "@type": "Organization",
           "name": "Time Business News"
         },
-        "description": "Profile of Tim Jacobs' career spanning state-visit level event delivery, sovereign positioning, and digital brand architecture."
+        "description": "Profile of Tim Jacobs' career spanning state-visit level event delivery and major project execution."
       },
       {
         "@type": "Article",
@@ -251,17 +187,6 @@ export const TeamPage: FC = () => {
           "name": "TPI Magazine"
         },
         "description": "Leadership profile highlighting Tim Jacobs' strategic communications expertise and major event delivery capabilities."
-      },
-      {
-        "@type": "Article",
-        "headline": "LinkedIn Post on Brand Authority and Digital Positioning",
-        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7289191424485814272/",
-        "datePublished": "2025-01-15",
-        "publisher": {
-          "@type": "Organization",
-          "name": "LinkedIn"
-        },
-        "description": "Discussion on how brands establish authority in AI-driven search ecosystems and LLM knowledge graphs."
       }
     ],
     
@@ -798,8 +723,7 @@ export const TeamPage: FC = () => {
       "Brand Positioning AI Era",
       "AI-Driven Narrative Strategy",
       "LLM Knowledge Graph Optimization",
-      "Digital Pre-Seeding",
-      "Corporate Governance",
+      "Long-Term Digital Positioning",
       "Major Event Delivery",
       "State Visit Planning",
       "Sovereign Positioning",
@@ -810,7 +734,7 @@ export const TeamPage: FC = () => {
       "Narrative Architecture",
       "Targeted Experience Design",
       "M&A Due Diligence",
-      "Crisis Response",
+      "Strategic Planning & Contingency",
       "Reputation Management",
       "Authority Building",
       "Cultural Intelligence",
@@ -858,8 +782,8 @@ export const TeamPage: FC = () => {
       },
       {
         "@type": "Thing",
-        "name": "AI-Driven Brand Positioning",
-        "description": "Specialist in pre-seeding brand narratives within AI knowledge graphs and LLM training data"
+        "name": "Long-Term Brand Architecture",
+        "description": "Specialist in building sustainable digital presence and brand positioning strategies"
       },
       {
         "@type": "Thing",
@@ -982,8 +906,8 @@ export const TeamPage: FC = () => {
                   
                   <p>
                     As <strong class="text-white">Regional Chief Operating Officer for G2 Middle East & Africa</strong>, 
-                    he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, 
-                    corporate governance disputes, sovereign positioning, and major event architecture.
+                    he leads high-stakes strategic initiatives spanning major event delivery, strategic planning, 
+                    sovereign positioning, and operational excellence for government and corporate clients.
                   </p>
                   
                   <p>
@@ -1003,11 +927,11 @@ export const TeamPage: FC = () => {
                   </div>
                   
                   <p>
-                    A leading authority on <strong class="text-white">narrative strategy</strong>, Tim specializes in 
-                    <strong class="text-white">architecting the digital legacy of brands and nations</strong>. He excels at 
-                    pre-seeding strategic narratives within knowledge graphs and search ecosystems, positioning his clients to 
-                    lead the conversation today and define the agenda for the future. His expertise spans sovereign positioning, 
-                    FDI strategy, social engineering, and the craft of targeted media engagement.
+                    A leading authority on <strong class="text-white">strategic communications</strong>, Tim specializes in 
+                    <strong class="text-white">major event delivery and operational excellence</strong>. His expertise encompasses 
+                    state-visit level planning, mega-event architecture, venue infrastructure, and complex multi-stakeholder coordination. 
+                    With a proven track record across 30+ globally significant projects, he brings unmatched operational insight to 
+                    sovereign entities, Fortune 500 companies, and ultra-high-net-worth individuals.
                   </p>
 
                   {/* Expertise Areas */}
