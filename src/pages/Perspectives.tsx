@@ -80,7 +80,37 @@ export function PerspectivesPage() {
             <h3 class="text-2xl font-bold mb-12 text-white">Recent Articles</h3>
 
             <div class="grid md:grid-cols-2 gap-8">
-              {/* Article 2 - Brand Destruction */}
+              {/* Article 2 - Digital Authority AI Era */}
+              <a href="/perspectives/digital-authority-ai-era" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
+                {/* Hero Image Section */}
+                <div class="relative h-48 w-full overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80" 
+                    alt="The New Rules of Digital Authority"
+                    width="1600" height="900" loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style="opacity: 0.7;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-g2-darker"></div>
+                </div>
+
+                <div class="p-8">
+                  <div class="mb-6">
+                    <span class="text-g2-gold text-xs font-semibold uppercase tracking-wider">AI & BRAND STRATEGY</span>
+                  </div>
+                  <h4 class="text-2xl md:text-3xl font-bold mb-4 text-white group-hover:text-g2-gold transition-colors">
+                    The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era
+                  </h4>
+                  <p class="text-gray-400 leading-relaxed mb-6">
+                    Explore how AI and large language models have fundamentally changed the rules of brand management, and why digital pre-seeding is now essential for narrative control and corporate reputation.
+                  </p>
+                  <div class="inline-flex items-center text-g2-gold group-hover:text-white transition-colors text-sm font-semibold">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                  </div>
+                </div>
+              </a>
+
+              {/* Article 3 - Brand Destruction */}
               <a href="/perspectives/perilous-path-brand-destruction" class="block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300">
                 {/* Hero Image Section */}
                 <div class="relative h-48 w-full overflow-hidden">
