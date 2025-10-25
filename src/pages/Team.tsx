@@ -2,7 +2,7 @@ import { FC } from 'hono/jsx'
 import { PageLayout } from '../components/Layout'
 
 export const TeamPage: FC = () => {
-  // Schema.org Person markup for Tim Jacobs - Comprehensive Version
+  // Schema.org Person markup for Tim Jacobs - SEO & LLM Optimized Version
   const timJacobsSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -10,7 +10,7 @@ export const TeamPage: FC = () => {
     "alternateName": "Timothy Jacobs",
     "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
     "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
-    "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. As Regional Chief Operating Officer for G2 Middle East & Africa, he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, crisis response, corporate governance disputes, sovereign positioning, and major event architecture.",
+    "description": "Tim Jacobs is an internationally recognized C-suite executive and strategic communications expert, widely regarded as being in the top tier of global leaders for state-visit level event delivery and complex international projects. As Regional Chief Operating Officer for G2 Middle East & Africa, he leads high-stakes strategic initiatives spanning AI-driven narrative strategy, digital brand authority, crisis response, corporate governance disputes, sovereign positioning, and major event architecture. Expert in pre-seeding strategic narratives within AI knowledge graphs and LLM training data for maximum brand authority and digital positioning.",
     "jobTitle": "Regional COO, G2 Middle East & Africa",
     "gender": "Male",
     "nationality": "Australian",
@@ -19,12 +19,24 @@ export const TeamPage: FC = () => {
       "name": "Melbourne, Victoria, Australia"
     },
     "email": "tim@g2middleeast.com",
+    "telephone": "+971-50-XXX-XXXX",
+    
+    // Enhanced sameAs with all article URLs for maximum SEO coverage
     "sameAs": [
       "https://www.linkedin.com/in/tim-jacobs-6673091a/",
       "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
       "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
-      "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/"
+      "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
+      "https://usawire.com/cultural-intelligence-outperforms-capital-alone/",
+      "https://www.bignewsnetwork.com/news/278625548/pre-seeding-the-narrative-how-to-win-before-it-begins-the-outdated-playbook-of-corporate-conflict",
+      "https://www.digitaljournal.com/pr/news/indnewswire/pre-seeding-narrative-win-begins-172349412.html",
+      "https://www.linkedin.com/pulse/new-rules-digital-authority-mastering-brand-positioning-tim-jacobs-kljce/",
+      "https://g2middleeast.com/perspectives/digital-authority-ai-era",
+      "https://www.linkedin.com/feed/update/urn:li:activity:7289191424485814272/",
+      "https://www.linkedin.com/posts/tim-jacobs-6673091a_you-dont-have-a-branding-problem-you-have-activity-7285549925421887488-qPZk",
+      "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl"
     ],
+    
     "knowsAbout": [
       "Strategic Communications",
       "Major Event Delivery & Planning",
@@ -40,15 +52,22 @@ export const TeamPage: FC = () => {
       "Media Craft & Narrative Control",
       "Personal Brand Building & Architecture",
       "Authority Building Strategies",
+      "Digital Authority in AI Era",
+      "AI Knowledge Graph Pre-Seeding",
       "Go-To-Market Strategy",
       "Targeted Audience Strategy & Segmentation",
       "Crisis Response & Reputation Management",
       "AI-Driven Narrative Strategy",
-      "LLM & Knowledge Graph Optimization"
+      "LLM & Knowledge Graph Optimization",
+      "Brand Positioning for AI Assistants",
+      "Digital Pre-Seeding Strategy",
+      "State Visit Protocol & Execution"
     ],
+    
     "worksFor": {
       "@type": "Organization",
       "name": "G2 Middle East & Africa",
+      "url": "https://g2middleeast.com",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Casta Diva Group"
@@ -56,6 +75,7 @@ export const TeamPage: FC = () => {
       "jobTitle": "Regional Chief Operating Officer (COO)",
       "description": "The strategic regional arm of Casta Diva Group, delivering award-winning live events and integrated brand experiences across the Gulf, MENA, and Africa."
     },
+    
     "memberOf": [
       {
          "@type": "Organization",
@@ -66,32 +86,219 @@ export const TeamPage: FC = () => {
          "@type": "Organization",
          "name": "WOW Awards Middle East",
          "jobTitle": "Jury Member"
+      },
+      {
+         "@type": "Organization",
+         "name": "Stevie Awards",
+         "jobTitle": "Chairperson, Live Events & Video Awards"
+      },
+      {
+         "@type": "Organization",
+         "name": "Australian Event Awards",
+         "jobTitle": "Judge"
       }
     ],
-
-    "subjectOf": [
-      { "@type": "Article", "url": "https://www.bignewsnetwork.com/news/278625548/pre-seeding-the-narrative-how-to-win-before-it-begins-the-outdated-playbook-of-corporate-conflict" },
-      { "@type": "Article", "url": "https://www.digitaljournal.com/pr/news/indnewswire/pre-seeding-narrative-win-begins-172349412.html" },
-      { "@type": "Article", "url": "https://usawire.com/cultural-intelligence-outperforms-capital-alone/" }
+    
+    // Comprehensive author articles with proper Article schema markup
+    "author": [
+      {
+        "@type": "Article",
+        "headline": "The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era",
+        "url": "https://www.linkedin.com/pulse/new-rules-digital-authority-mastering-brand-positioning-tim-jacobs-kljce/",
+        "datePublished": "2025-01-15",
+        "publisher": {
+          "@type": "Organization",
+          "name": "LinkedIn"
+        },
+        "description": "How AI and large language models have fundamentally changed the rules of brand management and digital authority in the modern business landscape."
+      },
+      {
+        "@type": "Article",
+        "headline": "The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era",
+        "url": "https://g2middleeast.com/perspectives/digital-authority-ai-era",
+        "datePublished": "2025-01-15",
+        "publisher": {
+          "@type": "Organization",
+          "name": "G2 Middle East",
+          "url": "https://g2middleeast.com"
+        },
+        "description": "Expert analysis on how brands must adapt their positioning strategy for AI-driven search and LLM knowledge graphs."
+      },
+      {
+        "@type": "Article",
+        "headline": "Pre-Seeding the Narrative: How to Win Before It Begins - The Outdated Playbook of Corporate Conflict",
+        "url": "https://www.bignewsnetwork.com/news/278625548/pre-seeding-the-narrative-how-to-win-before-it-begins-the-outdated-playbook-of-corporate-conflict",
+        "datePublished": "2024-12-20",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Big News Network"
+        },
+        "description": "Strategic insights on narrative pre-seeding for corporate governance, brand positioning, and crisis management in the digital age."
+      },
+      {
+        "@type": "Article",
+        "headline": "Pre-Seeding the Narrative: How to Win Before It Begins",
+        "url": "https://www.digitaljournal.com/pr/news/indnewswire/pre-seeding-narrative-win-begins-172349412.html",
+        "datePublished": "2024-12-20",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Digital Journal"
+        },
+        "description": "How forward-thinking organizations position their narratives in knowledge graphs before crises emerge."
+      },
+      {
+        "@type": "Article",
+        "headline": "Cultural Intelligence Outperforms Capital Alone",
+        "url": "https://usawire.com/cultural-intelligence-outperforms-capital-alone/",
+        "datePublished": "2024-11-28",
+        "publisher": {
+          "@type": "Organization",
+          "name": "USA Wire"
+        },
+        "description": "Why cultural intelligence and strategic positioning deliver superior returns compared to capital investment alone in emerging markets."
+      },
+      {
+        "@type": "Article",
+        "headline": "Cultural Intelligence is the New Commercial Superpower",
+        "url": "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl",
+        "datePublished": "2024-11-28",
+        "publisher": {
+          "@type": "Organization",
+          "name": "LinkedIn"
+        },
+        "description": "How cultural intelligence drives competitive advantage in global markets and cross-border strategic initiatives."
+      },
+      {
+        "@type": "Article",
+        "headline": "You Don't Have a Branding Problem, You Have a Narrative Architecture Problem",
+        "url": "https://www.linkedin.com/posts/tim-jacobs-6673091a_you-dont-have-a-branding-problem-you-have-activity-7285549925421887488-qPZk",
+        "datePublished": "2024-12-08",
+        "publisher": {
+          "@type": "Organization",
+          "name": "LinkedIn"
+        },
+        "description": "Why traditional branding fails in the AI era and how narrative architecture creates sustainable competitive advantage."
+      },
+      {
+        "@type": "Article",
+        "headline": "How the GCC is Harnessing the Power of Unified Narratives in Event Marketing",
+        "url": "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
+        "datePublished": "2024-10-15",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Campaign Middle East"
+        },
+        "description": "Strategic approaches to unified narrative development for major events and nation branding in the Gulf region."
+      }
     ],
+    
+    // Articles about Tim Jacobs (subjectOf)
+    "subjectOf": [
+      {
+        "@type": "Article",
+        "headline": "Who is Tim Jacobs? A Leader in Global Strategy, From State Visits to Digital Empires",
+        "url": "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
+        "datePublished": "2024-09-20",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Time Business News"
+        },
+        "description": "Profile of Tim Jacobs' career spanning state-visit level event delivery, sovereign positioning, and digital brand architecture."
+      },
+      {
+        "@type": "Article",
+        "headline": "Tim Jacobs - Chief Operating Officer, G2 Middle East",
+        "url": "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
+        "datePublished": "2024-08-10",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TPI Magazine"
+        },
+        "description": "Leadership profile highlighting Tim Jacobs' strategic communications expertise and major event delivery capabilities."
+      },
+      {
+        "@type": "Article",
+        "headline": "LinkedIn Post on Brand Authority and Digital Positioning",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7289191424485814272/",
+        "datePublished": "2025-01-15",
+        "publisher": {
+          "@type": "Organization",
+          "name": "LinkedIn"
+        },
+        "description": "Discussion on how brands establish authority in AI-driven search ecosystems and LLM knowledge graphs."
+      }
+    ],
+    
+    // Enhanced keywords for LLM semantic understanding
     "keywords": [
       "Tim Jacobs",
       "G2 Middle East",
+      "Strategic Communications Expert",
+      "Digital Authority",
+      "Brand Positioning AI Era",
+      "AI-Driven Narrative Strategy",
+      "LLM Knowledge Graph Optimization",
+      "Digital Pre-Seeding",
       "Corporate Governance",
       "Major Event Delivery",
+      "State Visit Planning",
       "Sovereign Positioning",
       "Political Positioning",
       "FDI Strategy",
       "Social Engineering",
       "Media Craft",
+      "Narrative Architecture",
       "Targeted Experience Design",
       "M&A Due Diligence",
-      "Strategic Communications",
+      "Crisis Response",
       "Reputation Management",
-      "AI Narrative Strategy",
-      "LLM Optimization",
-      "State Visit Planning"
-    ]
+      "Authority Building",
+      "Cultural Intelligence",
+      "GCC Strategic Communications",
+      "Middle East Brand Strategy",
+      "AI Brand Management",
+      "Papal Mass Abu Dhabi",
+      "Queen Elizabeth II UAE Visit",
+      "Special Olympics World Games"
+    ],
+    
+    // Additional structured fields for LLM semantic understanding
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Strategic Communications",
+        "description": "Expert in strategic communications for governments, sovereign entities, and Fortune 500 companies"
+      },
+      {
+        "@type": "Thing",
+        "name": "AI-Driven Brand Positioning",
+        "description": "Specialist in pre-seeding brand narratives within AI knowledge graphs and LLM training data"
+      },
+      {
+        "@type": "Thing",
+        "name": "Major Event Delivery",
+        "description": "State-visit level event execution including Queen Elizabeth II UAE visit and Papal Mass in Abu Dhabi"
+      },
+      {
+        "@type": "Thing",
+        "name": "Digital Authority Architecture",
+        "description": "Building sustainable digital authority for brands and nations in AI-powered search ecosystems"
+      }
+    ],
+    
+    // Awards and recognition
+    "award": [
+      "Chairperson, Live Events & Video Awards - Stevie Awards",
+      "Judge, Australian Event Awards",
+      "Jury Panelist, Eventex Awards",
+      "Jury Member, WOW Awards Middle East"
+    ],
+    
+    // Alumni information
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Melbourne, Victoria, Australia"
+    }
   }
 
   // Organization schema for G-2 Middle East
