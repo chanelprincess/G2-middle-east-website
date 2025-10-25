@@ -24,7 +24,7 @@ export const HomePage: FC = () => {
               Built for Complexity
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 fade-in-delay-1 font-light">
-              Where strategy meets execution
+              Bring us your high stakes challenges
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-delay-2">
               <a href="/services" class="btn-primary">
