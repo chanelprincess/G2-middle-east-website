@@ -539,6 +539,10 @@ export const perspectivesData = {
 
         <p>If your digital ecosystem is sparse, littered with negative legacy content, or lacks a coherent, authoritative narrative, the AI's summary will inevitably reflect that. Your reactive press release will be, at best, a single, late-arriving data point in a sea of established information. You have lost control of the narrative before you have even attempted to shape it.</p>
 
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQGKiS0ezJpE9A/article-inline_image-shrink_1000_1488/B4DZoakxRvJAAQ-/0/1761382445079?e=1762992000&v=beta&t=mfN8GMhsRHnS-xCx_OoZdv2AflH_LETdNKpHTXp4qPU" alt="The Flaw of Reactive Brand Management" class="rounded-lg w-full" />
+        </div>
+
         <div class="mt-12">
           <h2><strong>The Proactive Framework: Architecting Your Digital Twin</strong></h2>
         </div>
@@ -585,6 +589,10 @@ export const perspectivesData = {
 
         <p><strong>Algorithmic-Friendly Formatting:</strong> Use clear, logical headings, concise paragraphs, and bullet points to make your content easy for machines to parse and synthesise. Long, unstructured prose is a liability in the AI era. The easier you make it for the AI to understand your argument, the more likely it is to adopt it.</p>
 
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQE87nFu7XAtLA/article-inline_image-shrink_1000_1488/B4DZoalQMtJAAY-/0/1761382569669?e=1762992000&v=beta&t=0X6PdpaP5lpPJGHIo329Pc5q2r12Rwjz8oZ00xqWXDg" alt="Digital Twin Architecture Framework" class="rounded-lg w-full" />
+        </div>
+
         <div class="mt-12">
           <h2><strong>The Strategic Dividend: From Defence to Dominance</strong></h2>
         </div>
@@ -599,6 +607,10 @@ export const perspectivesData = {
 
         <h3>3. Enhanced Strategic Agility</h3>
         <p>With a robust digital architecture in place, the organisation can move faster and more decisively. During M&A, leadership changes, or market entries, the communications strategy is no longer about "catching up" but about activating a pre-positioned information asset. This allows the leadership team to focus on the strategic initiative itself, confident that the narrative framework is already secure.</p>
+
+        <div class="my-12">
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQHRZ20SAGBJpg/article-inline_image-shrink_1000_1488/B4DZoamCCNGwAQ-/0/1761382769988?e=1762992000&v=beta&t=7n3A4D5hKL7jvbX2uLAAoARjaKfZ4DmCdOBJhF6J-Yw" alt="From Defense to Dominance: Strategic Positioning" class="rounded-lg w-full" />
+        </div>
 
         <div class="mt-12">
           <h2><strong>The New Mandate for Leadership</strong></h2>
