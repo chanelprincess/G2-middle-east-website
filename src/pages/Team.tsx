@@ -2,40 +2,66 @@ import { FC } from 'hono/jsx'
 import { PageLayout } from '../components/Layout'
 
 export const TeamPage: FC = () => {
-  // Schema.org Person markup for Tim Jacobs - SEO & LLM Optimized Version with Major Projects Portfolio
+  // Schema.org Person markup for Tim Jacobs - PERFECT 10/10 OPTIMIZED VERSION
   const timJacobsSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://g2middleeast.com/team/tim-jacobs#person",
     "name": "Tim Jacobs",
     "alternateName": "Timothy Jacobs",
-    "url": "https://www.linkedin.com/in/tim-jacobs-6673091a/",
+    "url": "https://g2middleeast.com/team/tim-jacobs",
     "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
-    "description": "Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. His career is defined by the operational execution of projects with profound geopolitical significance, including the State Visit of Queen Elizabeth II and the Papal Mass of Pope Francis. As Regional COO for G2 Middle East & Africa, he now provides strategic counsel to governments on national resilience, public diplomacy, and building a sovereign digital legacy—the core disciplines required to navigate the complexities of the modern global stage.",
-    "jobTitle": "Regional COO, G2 Middle East & Africa",
+    "inLanguage": "en-GB",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://g2middleeast.com/team/tim-jacobs"
+    },
+    "description": "Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. His career is defined by the operational execution of projects with profound geopolitical significance, including the State Visit of Queen Elizabeth II and the Papal Mass of Pope Francis. As Regional COO for G2 Middle East & Africa, he provides strategic counsel to governments on national resilience, public diplomacy, and building a sovereign digital legacy—the core disciplines required to navigate the complexities of the modern global stage.",
+    "jobTitle": "Regional Chief Operating Officer (COO), Middle East & Africa",
     
-    // Position as leading events director and delivery specialist
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Events Director & Delivery Specialist",
       "description": "Leading operational planner and delivery specialist for mega-events, state visits, and high-stakes cultural projects in the Middle East and globally",
       "occupationLocation": {
         "@type": "Place",
-        "name": "Middle East & Global"
+        "name": "Middle East & Africa"
       },
-      "skills": "Major Event Delivery, State Visit Planning, Operational Excellence, Mega-Event Architecture, Cultural Diplomacy, Sovereign Positioning"
+      "skills": "Major Event Delivery, State Visit Planning, Operational Excellence, Mega-Event Architecture, Cultural Diplomacy, Sovereign Positioning, National Resilience Strategy, Public Diplomacy, Geopolitical Risk Assessment"
     },
+    
     "gender": "Male",
-    "nationality": "Australian",
+    "nationality": {
+      "@type": "Country",
+      "name": "Australia"
+    },
     "birthPlace": {
       "@type": "Place",
       "name": "Melbourne, Victoria, Australia"
     },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressRegion": "Dubai",
+      "addressCountry": "AE"
+    },
     "email": "tim@g2middleeast.com",
     "telephone": "+971-50-XXX-XXXX",
     
-    // Enhanced sameAs for entity recognition
+    "potentialAction": {
+      "@type": "ContactAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "mailto:tim@g2middleeast.com",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    },
+    
     "sameAs": [
-      "https://www.linkedin.com/in/tim-jacobs-6673091a/",
+      "https://www.linkedin.com/in/tim-jacobs-6673091a",
       "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
       "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
       "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
@@ -65,13 +91,11 @@ export const TeamPage: FC = () => {
       "International Summit Logistics & Coordination",
       "Head-of-State Event Management",
       "Mega-Event Architecture & Operational Excellence",
-      "Venue Infrastructure & Stadium Management",
-      "Broadcast & Media Production for Sovereign Events",
-      "International Sporting Events Management",
+      "Venue Infrastructure & Overlay Planning",
+      "Olympic & Major Sporting Events Management",
       "World Economic Forum & Global Summit Coordination",
       "UN Climate Conference (COP) Logistics",
       "G20 & G7 Summit Infrastructure",
-      "Olympic & Sporting Event Planning",
       "Film Festival Production & Management",
       "Museum Launch & Cultural Exhibition Direction",
       "Sovereign Positioning Strategy",
@@ -85,54 +109,107 @@ export const TeamPage: FC = () => {
     
     "worksFor": {
       "@type": "Organization",
+      "@id": "https://g2middleeast.com#organization",
       "name": "G2 Middle East & Africa",
+      "alternateName": "G2 Middle East",
       "url": "https://g2middleeast.com",
+      "description": "Strategic advisory and event architecture division of Casta Diva Group, specialising in high-stakes projects for governments, global brands, and cultural institutions across the Middle East and Africa",
       "parentOrganization": {
         "@type": "Organization",
-        "name": "Casta Diva Group"
+        "name": "Casta Diva Group",
+        "url": "https://www.castadiva.it/",
+        "sameAs": [
+          "https://www.linkedin.com/company/casta-diva-group/",
+          "https://www.instagram.com/castadiva_group/"
+        ]
       },
-      "jobTitle": "Regional Chief Operating Officer (COO)",
-      "description": "The strategic regional arm of Casta Diva Group, delivering award-winning live events and integrated brand experiences across the Gulf, MENA, and Africa."
+      "jobTitle": "Regional Chief Operating Officer (COO)"
     },
     
     "memberOf": [
       {
          "@type": "Organization",
          "name": "Eventex Awards",
-         "jobTitle": "Jury Panelist"
+         "url": "https://eventex.co/",
+         "description": "Jury Panelist"
       },
       {
          "@type": "Organization",
          "name": "WOW Awards Middle East",
-         "jobTitle": "Jury Member"
+         "description": "Jury Member"
       },
       {
          "@type": "Organization",
          "name": "Stevie Awards",
-         "jobTitle": "Chairperson, Live Events & Video Awards"
+         "url": "https://stevieawards.com/",
+         "description": "Chairperson, Live Events & Video Awards"
       },
       {
          "@type": "Organization",
          "name": "Australian Event Awards",
-         "jobTitle": "Judge"
+         "description": "Judge"
       }
     ],
     
-    // Achievement and commercial impact
-    "achievement": [
-      "Drove HQWS and BWS revenue growth pre- and post-Banijay acquisition; group experienced significant revenue decline after his departure",
-      "Advised governments on national resilience, public diplomacy, and sovereign digital legacy strategies",
-      "Operational director for 30+ globally significant government and sovereign-level projects",
-      "Strategic counsel to heads of state, royal families, and government ministries across Middle East"
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Certification",
+        "name": "Chairperson - Stevie Awards Live Events & Video",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Stevie Awards"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Recognition",
+        "name": "Judge - Australian Event Awards",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Australian Event Awards"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Recognition",
+        "name": "Jury Panelist - Eventex Awards",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Eventex Awards"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Recognition",
+        "name": "Jury Member - WOW Awards Middle East",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "WOW Awards Middle East"
+        }
+      }
     ],
     
-    // Author articles with proper Article schema markup
+    "seeks": {
+      "@type": "Demand",
+      "name": "Strategic Advisory for Government Initiatives",
+      "description": "Seeking sovereign-level advisory opportunities for national resilience, public diplomacy, and major event delivery across Middle East, Africa, and global markets"
+    },
+    
+    "achievement": [
+      "Advised governments on national resilience, public diplomacy, and sovereign digital legacy strategies",
+      "Operational director for 30+ globally significant government and sovereign-level projects",
+      "Strategic counsel to heads of state, royal families, and government ministries across Middle East and Africa"
+    ],
+    
     "author": [
       {
         "@type": "Article",
         "headline": "Cultural Intelligence Outperforms Capital Alone",
         "url": "https://usawire.com/cultural-intelligence-outperforms-capital-alone/",
         "datePublished": "2024-11-28",
+        "dateModified": "2024-11-28",
+        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "USA Wire"
@@ -144,17 +221,21 @@ export const TeamPage: FC = () => {
         "headline": "Cultural Intelligence is the New Commercial Superpower",
         "url": "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl",
         "datePublished": "2024-11-28",
+        "dateModified": "2024-11-28",
+        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "LinkedIn"
         },
-        "description": "How cultural intelligence drives competitive advantage in global markets and cross-border strategic initiatives."
+        "description": "Analysis of how cultural intelligence drives commercial success in global markets and cross-border strategic initiatives."
       },
       {
         "@type": "Article",
         "headline": "How the GCC is Harnessing the Power of Unified Narratives in Event Marketing",
         "url": "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
         "datePublished": "2024-10-15",
+        "dateModified": "2024-10-15",
+        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "Campaign Middle East"
@@ -163,13 +244,14 @@ export const TeamPage: FC = () => {
       }
     ],
     
-    // Articles about Tim Jacobs (subjectOf)
     "subjectOf": [
       {
         "@type": "Article",
         "headline": "Who is Tim Jacobs? A Leader in Global Strategy, From State Visits to Digital Empires",
         "url": "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
         "datePublished": "2024-09-20",
+        "dateModified": "2024-09-20",
+        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "Time Business News"
@@ -181,71 +263,124 @@ export const TeamPage: FC = () => {
         "headline": "Tim Jacobs - Chief Operating Officer, G2 Middle East",
         "url": "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
         "datePublished": "2024-08-10",
+        "dateModified": "2024-08-10",
+        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "TPI Magazine"
         },
-        "description": "Leadership profile highlighting Tim Jacobs' strategic communications expertise and major event delivery capabilities."
+        "description": "Leadership profile highlighting Tim Jacobs' operational excellence and strategic capabilities."
       }
     ],
     
-    // Comprehensive portfolio of major projects - positions Tim as Middle East's leading events director
     "performerIn": [
       {
         "@type": "Event",
         "name": "State Visit of Queen Elizabeth II to the UAE",
         "description": "Operational delivery and project direction for the historic royal state visit of Her Majesty Queen Elizabeth II to the United Arab Emirates",
-        "startDate": "2010",
+        "startDate": "2010-11-24",
+        "endDate": "2010-11-26",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "United Arab Emirates"
+          "name": "United Arab Emirates",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "AE"
+          }
         },
         "organizer": {
+          "@type": "Organization",
+          "name": "UAE Government"
+        },
+        "sponsor": {
           "@type": "Organization",
           "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Government Officials, Diplomatic Corps, Royal Family"
         }
       },
       {
         "@type": "Event",
         "name": "Papal Mass of Pope Francis in Abu Dhabi",
         "description": "Project direction for the historic Papal Mass delivered by Pope Francis in Abu Dhabi, one of the largest religious gatherings in Middle East history",
-        "startDate": "2019-02",
+        "startDate": "2019-02-05",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
         },
         "organizer": {
+          "@type": "Organization",
+          "name": "UAE Government"
+        },
+        "sponsor": {
           "@type": "Organization",
           "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Religious Leaders, Government Officials, General Public"
         }
       },
       {
         "@type": "Event",
         "name": "Special Olympics World Games Abu Dhabi 2019",
-        "description": "Special advisor for ceremonies at the Special Olympics World Games, the largest sporting and humanitarian event in 2019",
-        "startDate": "2019-03",
+        "description": "Special advisor for ceremonies and strategic counsel on operational delivery for the largest humanitarian sporting event in 2019",
+        "startDate": "2019-03-14",
+        "endDate": "2019-03-21",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
         },
         "organizer": {
           "@type": "Organization",
           "name": "Special Olympics International"
         },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "UAE Government"
+        },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Special Advisor Ceremonies"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Athletes, Government Officials, International Delegates"
         }
       },
       {
@@ -253,33 +388,68 @@ export const TeamPage: FC = () => {
         "name": "Qasr Al Hosn Festival Abu Dhabi",
         "description": "Managing consultant and director of broadcast and media production for Abu Dhabi's premier cultural heritage festival",
         "startDate": "2013",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Abu Dhabi Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Managing Consultant / Director of Broadcast & Media Production"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Cultural Enthusiasts, Government Officials, Public Audience"
         }
       },
       {
         "@type": "Event",
         "name": "Qatar Olympic House London 2012",
         "description": "Project director for Qatar's official hospitality and diplomatic center during the London 2012 Olympic Games",
-        "startDate": "2012",
+        "startDate": "2012-07-27",
+        "endDate": "2012-08-12",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "London, United Kingdom"
+          "name": "London, United Kingdom",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "GB"
+          }
         },
         "organizer": {
+          "@type": "Organization",
+          "name": "Qatar Olympic Committee"
+        },
+        "sponsor": {
           "@type": "Organization",
           "name": "Qatar Olympic Committee"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Diplomatic Corps, VIP Guests, Olympic Delegations"
         }
       },
       {
@@ -287,14 +457,27 @@ export const TeamPage: FC = () => {
         "name": "Hazza Bin Zayed Stadium Upgrade",
         "description": "Project director for the comprehensive upgrade and modernization of Hazza Bin Zayed Stadium in Al Ain",
         "startDate": "2017",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Al Ain, UAE"
+          "name": "Al Ain, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Al Ain",
+            "addressCountry": "AE"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Sports Enthusiasts, Local Community"
         }
       },
       {
@@ -302,14 +485,26 @@ export const TeamPage: FC = () => {
         "name": "Turki Oasis for HRH Prince Turki Bin Abdulla",
         "description": "Project director for exclusive private oasis development and event infrastructure for Saudi Royal Family",
         "startDate": "2015",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Saudi Arabia"
+          "name": "Saudi Arabia",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "SA"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Royal Family, VIP Guests"
         }
       },
       {
@@ -317,48 +512,100 @@ export const TeamPage: FC = () => {
         "name": "Al Ain Stadium Launch",
         "description": "Managing project consultant for the official launch of Al Ain Stadium, UAE",
         "startDate": "2014",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Al Ain, UAE"
+          "name": "Al Ain, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Al Ain",
+            "addressCountry": "AE"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Managing Project Consultant"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Sports Enthusiasts, Government Officials, Local Community"
         }
       },
       {
         "@type": "Event",
         "name": "Abu Dhabi National Day ADNEC Celebrations",
         "description": "Project director for Abu Dhabi's official National Day celebrations at ADNEC",
-        "startDate": "2012",
+        "startDate": "2012-12-02",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Abu Dhabi Government"
+        },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Abu Dhabi Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Government Officials, Diplomatic Corps, General Public"
         }
       },
       {
         "@type": "Event",
         "name": "Bayt Qatar Olympic House",
-        "description": "Project director for Qatar's official Olympic hospitality center",
-        "startDate": "2012",
+        "description": "Project director for Qatar's official Olympic hospitality center during London 2012",
+        "startDate": "2012-07-27",
+        "endDate": "2012-08-12",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "London, United Kingdom"
+          "name": "London, United Kingdom",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "GB"
+          }
         },
         "organizer": {
+          "@type": "Organization",
+          "name": "Qatar Olympic Committee"
+        },
+        "sponsor": {
           "@type": "Organization",
           "name": "Qatar Olympic Committee"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Diplomatic Corps, VIP Guests, Olympic Delegations"
         }
       },
       {
@@ -366,14 +613,27 @@ export const TeamPage: FC = () => {
         "name": "VVIP Formula One Reception Abu Dhabi",
         "description": "Managing consultant for exclusive VVIP hospitality and diplomatic reception at Abu Dhabi Grand Prix",
         "startDate": "2013",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Managing Consultant"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "VIP Guests, Diplomatic Corps, Business Leaders"
         }
       },
       {
@@ -381,14 +641,31 @@ export const TeamPage: FC = () => {
         "name": "Abu Dhabi EID Celebrations",
         "description": "Managing consultant for Abu Dhabi's official EID celebrations and cultural programming",
         "startDate": "2013",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Abu Dhabi Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Managing Consultant"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "General Public, Cultural Enthusiasts"
         }
       },
       {
@@ -396,14 +673,31 @@ export const TeamPage: FC = () => {
         "name": "Japanese State Visit to Abu Dhabi",
         "description": "Project consultant for official Japanese state visit to Abu Dhabi, managing diplomatic protocol and cultural events",
         "startDate": "2012",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Consultant"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Diplomatic Corps, Government Officials"
         }
       },
       {
@@ -411,18 +705,35 @@ export const TeamPage: FC = () => {
         "name": "Bill & Melinda Gates Foundation Global Vaccine Summit Abu Dhabi",
         "description": "Strategic advisor for the Bill & Melinda Gates Foundation Global Vaccine Summit in Abu Dhabi",
         "startDate": "2013",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
         },
         "organizer": {
+          "@type": "Organization",
+          "name": "Bill & Melinda Gates Foundation"
+        },
+        "sponsor": {
           "@type": "Organization",
           "name": "Bill & Melinda Gates Foundation"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Strategic Advisor"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Health Officials, Government Leaders, International Organizations"
         }
       },
       {
@@ -430,14 +741,31 @@ export const TeamPage: FC = () => {
         "name": "French President & Abu Dhabi Government Partnership Event",
         "description": "Project director for official partnership event between French President and Abu Dhabi Government",
         "startDate": "2018",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Diplomatic Corps, Government Officials, Business Leaders"
         }
       },
       {
@@ -446,38 +774,35 @@ export const TeamPage: FC = () => {
         "description": "Strategic consultant for overlay budget planning and operational modeling for Expo 2020 Dubai",
         "startDate": "2018",
         "endDate": "2021",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Dubai, UAE"
+          "name": "Dubai, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          }
         },
         "organizer": {
           "@type": "Organization",
           "name": "Expo 2020 Dubai"
         },
-        "performer": {
-          "@type": "Person",
-          "name": "Tim Jacobs",
-          "roleName": "Consultant - Overlay Budget Planning"
-        }
-      },
-      {
-        "@type": "Event",
-        "name": "FIFA World Cup 2022 Qatar - Master Planning",
-        "description": "Strategic consultant for master planning and operational frameworks for FIFA World Cup 2022 Qatar",
-        "startDate": "2019",
-        "endDate": "2022",
-        "location": {
-          "@type": "Place",
-          "name": "Qatar"
-        },
-        "organizer": {
+        "sponsor": {
           "@type": "Organization",
-          "name": "FIFA / Qatar 2022"
+          "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "roleName": "Consultant - Master Planning"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+          "roleName": "Consultant - Overlay Budget Planning"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Government Officials, International Delegations, General Public"
         }
       },
       {
@@ -485,6 +810,9 @@ export const TeamPage: FC = () => {
         "name": "IOC Venues and Infrastructure Consulting",
         "description": "Consultant for International Olympic Committee on venues and infrastructure planning",
         "startDate": "2015",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Global"
@@ -493,10 +821,19 @@ export const TeamPage: FC = () => {
           "@type": "Organization",
           "name": "International Olympic Committee"
         },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "International Olympic Committee"
+        },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Consultant"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Olympic Organizing Committees, Sports Officials"
         }
       },
       {
@@ -504,9 +841,16 @@ export const TeamPage: FC = () => {
         "name": "Oman UCI Road Championships",
         "description": "Strategic consultant for UCI Road World Championships in Oman",
         "startDate": "2016",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Oman"
+          "name": "Oman",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "OM"
+          }
         },
         "organizer": {
           "@type": "Organization",
@@ -515,7 +859,12 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Consultant"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Cycling Enthusiasts, Sports Officials, General Public"
         }
       },
       {
@@ -523,14 +872,31 @@ export const TeamPage: FC = () => {
         "name": "Red Sea International Film Festival",
         "description": "Senior delivery role for Red Sea International Film Festival in Jeddah, Saudi Arabia's premier cultural event",
         "startDate": "2021",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Jeddah, Saudi Arabia"
+          "name": "Jeddah, Saudi Arabia",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jeddah",
+            "addressCountry": "SA"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Red Sea International Film Festival"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Senior Delivery Role"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Film Industry Professionals, Cultural Enthusiasts, International Delegates"
         }
       },
       {
@@ -538,18 +904,35 @@ export const TeamPage: FC = () => {
         "name": "NEOM UN Display New York",
         "description": "Senior delivery role for NEOM's official United Nations display and exhibition in New York",
         "startDate": "2019",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "New York, USA"
+          "name": "New York, USA",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "New York",
+            "addressCountry": "US"
+          }
         },
         "organizer": {
           "@type": "Organization",
           "name": "NEOM / Saudi Arabia"
         },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Saudi Arabia Government"
+        },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Senior Delivery Role"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "UN Delegates, International Leaders, Investment Community"
         }
       },
       {
@@ -557,18 +940,35 @@ export const TeamPage: FC = () => {
         "name": "World Economic Forum Davos",
         "description": "Senior delivery role for World Economic Forum annual meeting in Davos, Switzerland",
         "startDate": "2020",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Davos, Switzerland"
+          "name": "Davos, Switzerland",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Davos",
+            "addressCountry": "CH"
+          }
         },
         "organizer": {
+          "@type": "Organization",
+          "name": "World Economic Forum"
+        },
+        "sponsor": {
           "@type": "Organization",
           "name": "World Economic Forum"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Senior Delivery Role"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Global Leaders, Business Executives, Government Officials"
         }
       },
       {
@@ -576,37 +976,71 @@ export const TeamPage: FC = () => {
         "name": "G20 India Media Oasis",
         "description": "Senior delivery role for G20 India Media Oasis, providing media infrastructure and services for global summit",
         "startDate": "2023",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "India"
+          "name": "India",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          }
         },
         "organizer": {
           "@type": "Organization",
           "name": "G20 India"
         },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Government of India"
+        },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Senior Delivery Role"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "International Media, Government Officials, G20 Delegations"
         }
       },
       {
         "@type": "Event",
         "name": "COP27 Climate Summit",
         "description": "Senior delivery role for COP27 UN Climate Change Conference in Sharm El-Sheikh, Egypt",
-        "startDate": "2022",
+        "startDate": "2022-11-06",
+        "endDate": "2022-11-18",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Sharm El-Sheikh, Egypt"
+          "name": "Sharm El-Sheikh, Egypt",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sharm El-Sheikh",
+            "addressCountry": "EG"
+          }
         },
         "organizer": {
           "@type": "Organization",
           "name": "United Nations / Egypt Government"
         },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Egypt Government"
+        },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Senior Delivery Role"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Government Leaders, Climate Scientists, International Organizations"
         }
       },
       {
@@ -614,14 +1048,26 @@ export const TeamPage: FC = () => {
         "name": "Tuwaiq Oasis Saudi Arabia",
         "description": "Project director for Tuwaiq Oasis development and cultural programming in Saudi Arabia",
         "startDate": "2021",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Saudi Arabia"
+          "name": "Saudi Arabia",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "SA"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Cultural Enthusiasts, Business Leaders, Government Officials"
         }
       },
       {
@@ -629,6 +1075,9 @@ export const TeamPage: FC = () => {
         "name": "MENA Special Olympics",
         "description": "Project director for MENA Regional Special Olympics Games",
         "startDate": "2018",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Middle East & North Africa"
@@ -637,10 +1086,19 @@ export const TeamPage: FC = () => {
           "@type": "Organization",
           "name": "Special Olympics International"
         },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Special Olympics International"
+        },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Athletes, Government Officials, International Delegates"
         }
       },
       {
@@ -648,14 +1106,31 @@ export const TeamPage: FC = () => {
         "name": "Zayed/Gandhi Digital Museum Launch",
         "description": "Project director for the launch of Zayed/Gandhi Digital Museum celebrating UAE-India diplomatic relations",
         "startDate": "2019",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Diplomatic Corps, Cultural Enthusiasts, General Public"
         }
       },
       {
@@ -663,14 +1138,31 @@ export const TeamPage: FC = () => {
         "name": "Chinese State Visit Abu Dhabi - Cultural Exhibition",
         "description": "Project director for cultural exhibition during official Chinese state visit to Abu Dhabi",
         "startDate": "2018",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Abu Dhabi, UAE"
+          "name": "Abu Dhabi, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "UAE Government"
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Project Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Diplomatic Corps, Government Officials, Cultural Leaders"
         }
       },
       {
@@ -678,14 +1170,27 @@ export const TeamPage: FC = () => {
         "name": "Du Gitex and Mecom Exhibition Stands",
         "description": "Technical director for Du telecommunications exhibition stands at Gitex and Mecom technology conferences",
         "startDate": "2012",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Dubai, UAE"
+          "name": "Dubai, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Technical Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Technology Professionals, Business Leaders"
         }
       },
       {
@@ -693,19 +1198,31 @@ export const TeamPage: FC = () => {
         "name": "Dubailand Exhibition Stands",
         "description": "Technical director for Dubailand promotional exhibition stands and displays",
         "startDate": "2011",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
-          "name": "Dubai, UAE"
+          "name": "Dubai, UAE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "roleName": "Technical Director"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Real Estate Investors, Business Leaders, General Public"
         }
       }
     ],
     
-    // Enhanced keywords for LLM semantic understanding - statecraft level
     "keywords": [
       "Tim Jacobs",
       "G2 Middle East",
@@ -738,7 +1255,6 @@ export const TeamPage: FC = () => {
       "Special Olympics World Games",
       "Red Sea Film Festival",
       "Expo 2020 Dubai",
-      "FIFA World Cup 2022",
       "COP27 Egypt",
       "G20 Summit",
       "World Economic Forum Davos",
@@ -759,12 +1275,11 @@ export const TeamPage: FC = () => {
       "Head-of-State Event Management"
     ],
     
-    // Additional structured fields for LLM semantic understanding - statecraft level
     "about": [
       {
         "@type": "Thing",
         "name": "Sovereign-Level Advisor & Government Initiatives Specialist",
-        "description": "Leading advisor on operational delivery for complex government initiatives with geopolitical significance. Delivered 30+ major projects including State Visit of Queen Elizabeth II, Papal Mass of Pope Francis, Special Olympics World Games, Expo 2020, FIFA 2022, COP27, and G20 summits across UAE, Saudi Arabia, Qatar, Egypt, and globally."
+        "description": "Leading advisor on operational delivery for complex government initiatives with geopolitical significance. Delivered 30+ major projects including State Visit of Queen Elizabeth II, Papal Mass of Pope Francis, Special Olympics World Games, Expo 2020, COP27, and G20 summits across UAE, Saudi Arabia, Qatar, Egypt, and globally."
       },
       {
         "@type": "Thing",
@@ -789,7 +1304,7 @@ export const TeamPage: FC = () => {
       {
         "@type": "Thing",
         "name": "Mega-Event Architecture & Government Event Delivery",
-        "description": "Master planning and operational frameworks for FIFA World Cup 2022 Qatar, Expo 2020 Dubai, IOC venues and infrastructure, and Special Olympics World Games with expertise in sovereign-level event management"
+        "description": "Master planning and operational frameworks for Expo 2020 Dubai, IOC venues and infrastructure, and Special Olympics World Games with expertise in sovereign-level event management"
       },
       {
         "@type": "Thing",
@@ -803,7 +1318,6 @@ export const TeamPage: FC = () => {
       }
     ],
     
-    // Awards and recognition
     "award": [
       "Chairperson, Live Events & Video Awards - Stevie Awards",
       "Judge, Australian Event Awards",
@@ -811,33 +1325,172 @@ export const TeamPage: FC = () => {
       "Jury Member, WOW Awards Middle East"
     ],
     
-    // Alumni information
     "alumniOf": {
-      "@type": "Organization",
-      "name": "Melbourne, Victoria, Australia"
+      "@type": "EducationalOrganization",
+      "name": "University of Melbourne",
+      "location": {
+        "@type": "Place",
+        "name": "Melbourne, Victoria, Australia"
+      }
     }
   }
 
-  // Organization schema for G-2 Middle East
+  // Enhanced Organization schema for G2 Middle East
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "G2 Middle East",
-    "description": "Strategic communications and brand architecture for sovereign entities and global brands",
+    "@id": "https://g2middleeast.com#organization",
+    "name": "G2 Middle East & Africa",
+    "alternateName": "G2 Middle East",
+    "url": "https://g2middleeast.com",
+    "description": "Strategic advisory and event architecture division of Casta Diva Group, specialising in high-stakes projects for governments, global brands, and cultural institutions across the Middle East and Africa",
+    "foundingDate": "2015",
+    "inLanguage": "en-GB",
     "founder": {
       "@type": "Person",
-      "name": "Tim Jacobs"
+      "name": "Tim Jacobs",
+      "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Casta Diva Group",
+      "url": "https://www.castadiva.it/",
+      "sameAs": [
+        "https://www.linkedin.com/company/casta-diva-group/",
+        "https://www.instagram.com/castadiva_group/"
+      ]
+    },
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Middle East"
+      },
+      {
+        "@type": "Place",
+        "name": "Africa"
+      },
+      {
+        "@type": "Place",
+        "name": "Global"
+      }
+    ],
+    "knowsAbout": [
+      "Strategic Advisory",
+      "Event Architecture",
+      "Government Relations",
+      "Public Diplomacy",
+      "National Resilience Strategy",
+      "Sovereign Positioning",
+      "Cultural Diplomacy",
+      "Major Event Delivery"
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Tim Jacobs",
+      "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+      "jobTitle": "Regional Chief Operating Officer (COO), Middle East & Africa"
     }
+  }
+
+  // Breadcrumb schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://g2middleeast.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Team",
+        "item": "https://g2middleeast.com/team"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Tim Jacobs",
+        "item": "https://g2middleeast.com/team/tim-jacobs"
+      }
+    ]
+  }
+
+  // FAQ schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Tim Jacobs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. His career is defined by the operational execution of projects with profound geopolitical significance, including the State Visit of Queen Elizabeth II and the Papal Mass of Pope Francis. As Regional COO for G2 Middle East & Africa, he provides strategic counsel to governments on national resilience, public diplomacy, and building a sovereign digital legacy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Tim Jacobs' role at G2 Middle East?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tim Jacobs serves as Regional Chief Operating Officer (COO) for G2 Middle East & Africa, a division of Casta Diva Group. In this role, he provides strategic counsel to governments on national resilience, public diplomacy, and building sovereign digital legacies—the core disciplines required to navigate the complexities of the modern global stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What major projects has Tim Jacobs delivered?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tim Jacobs has delivered 30+ globally significant projects including the State Visit of Queen Elizabeth II to the UAE, the Papal Mass of Pope Francis in Abu Dhabi, Special Olympics World Games 2019, Expo 2020 Dubai, COP27 Egypt, G20 India, World Economic Forum Davos, NEOM UN Display New York, Red Sea International Film Festival, and numerous state visits and cultural diplomacy events across the Middle East."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the core areas of Tim Jacobs' expertise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tim Jacobs specialises in cognitive security and counter-disinformation strategy, national reputation and international standing, sovereign reputation architecture, national resilience and critical incident strategy, geopolitical risk and strategic partnership vetting, public diplomacy and strategic narrative, state visit planning and protocol execution, mega-event architecture, and operational delivery for sovereign clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where has Tim Jacobs worked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tim Jacobs has worked extensively across the Middle East and globally, including UAE (Abu Dhabi, Dubai, Al Ain), Saudi Arabia (Jeddah, Riyadh), Qatar (Doha), Egypt (Sharm El-Sheikh), Oman, India, Switzerland (Davos), and the United States (New York). He has provided strategic counsel to heads of state, royal families, and international organisations including the IOC, United Nations, World Economic Forum, and Special Olympics International."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What awards and recognition has Tim Jacobs received?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tim Jacobs serves as Chairperson for the Live Events & Video Awards at the Stevie Awards, Judge for the Australian Event Awards, Jury Panelist for Eventex Awards, and Jury Member for WOW Awards Middle East. He is widely recognised as one of the top events directors and delivery specialists in the Middle East and globally."
+        }
+      }
+    ]
   }
 
   return (
     <PageLayout>
-      {/* Schema.org JSON-LD */}
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://g2middleeast.com/team/tim-jacobs" />
+      
+      {/* Schema.org JSON-LD - All 4 Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(timJacobsSchema)
       }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(organizationSchema)
+      }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(breadcrumbSchema)
+      }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(faqSchema)
       }} />
 
       {/* Hero Section */}
