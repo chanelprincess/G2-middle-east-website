@@ -19,14 +19,26 @@ import { WhitepapersPendingPage } from './pages/WhitepapersPending'
 import { WhitepapersPage } from './pages/Whitepapers'
 import { AdminUsersPage } from './pages/AdminUsers'
 import { AdminWhitepapersPage } from './pages/AdminWhitepapers'
+import { ProjectsLoginPage } from './pages/ProjectsLogin'
+import { ProjectsRegisterPage } from './pages/ProjectsRegister'
+import { ProjectsDashboardPage } from './pages/ProjectsDashboard'
+import { ProjectsAccountPage } from './pages/ProjectsAccount'
+import { ProjectsForgotPasswordPage } from './pages/ProjectsForgotPassword'
+import { ProjectsResetPasswordPage } from './pages/ProjectsResetPassword'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
 import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail } from './utils/email'
+import * as ProjectsAuth from './lib/projects-auth'
+import { requireProjectsAuth, logActivity, setProjectsAuthCookie, getProjectsAuthSession, clearProjectsAuthCookie } from './lib/projects-auth'
 
 type Bindings = {
   DB: D1Database
+  PROJECTS_DB: D1Database
   R2: R2Bucket
+  SESSIONS_KV?: KVNamespace
   EMAIL_API_KEY?: string
   EMAIL_SERVICE?: string
+  JWT_SECRET?: string
+  SITE_URL?: string
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
@@ -242,7 +254,139 @@ app.get('/projects', (c) => {
   )
 })
 
-// Project Detail Pages - Dynamic routing for all 12 projects
+// ============================================
+// PROJECTS SECURE PORTAL ROUTES (Must be before /projects/:slug)
+// ============================================
+
+// Projects Login Page
+app.get('/projects/login', (c) => {
+  return c.render(
+    <ProjectsLoginPage />,
+    {
+      title: 'Client Login | Projects | G2 Middle East',
+      description: 'Access confidential project case studies'
+    }
+  )
+})
+
+// Projects Registration Page
+app.get('/projects/register', (c) => {
+  return c.render(
+    <ProjectsRegisterPage />,
+    {
+      title: 'Client Registration | Projects | G2 Middle East',
+      description: 'Register for access to confidential project case studies'
+    }
+  )
+})
+
+// Projects Forgot Password Page
+app.get('/projects/forgot-password', (c) => {
+  return c.render(
+    <ProjectsForgotPasswordPage />,
+    {
+      title: 'Forgot Password | Projects | G2 Middle East',
+      description: 'Reset your password'
+    }
+  )
+})
+
+// Projects Reset Password Page
+app.get('/projects/reset-password', (c) => {
+  const token = c.req.query('token') || ''
+  return c.render(
+    <ProjectsResetPasswordPage token={token} />,
+    {
+      title: 'Reset Password | Projects | G2 Middle East',
+      description: 'Set your new password'
+    }
+  )
+})
+
+// Projects Dashboard (Protected)
+app.get('/projects/dashboard', requireProjectsAuth, async (c) => {
+  const user = c.get('projectsUser') as ProjectsAuth.UserSession
+  
+  // Fetch standard access projects
+  const standardProjects = await c.env.PROJECTS_DB.prepare(`
+    SELECT id, slug, title, subtitle, description, client_name, project_type, 
+           location, start_date, end_date, featured_image_url, access_level, 
+           is_confidential, view_count
+    FROM projects
+    WHERE access_level = 'standard' AND is_published = 1
+    ORDER BY created_at DESC
+  `).all()
+  
+  // Fetch premium projects if user has premium access
+  let premiumProjects = { results: [] }
+  if (user.accessLevel === 'premium') {
+    premiumProjects = await c.env.PROJECTS_DB.prepare(`
+      SELECT id, slug, title, subtitle, description, client_name, project_type, 
+             location, start_date, end_date, featured_image_url, access_level, 
+             is_confidential, view_count
+      FROM projects
+      WHERE access_level = 'premium' AND is_published = 1
+      ORDER BY created_at DESC
+    `).all()
+  }
+  
+  return c.render(
+    <ProjectsDashboardPage 
+      user={user} 
+      standardProjects={standardProjects.results as any[]}
+      premiumProjects={premiumProjects.results as any[]}
+    />,
+    {
+      title: 'Dashboard | Projects | G2 Middle East',
+      description: 'Browse confidential project case studies'
+    }
+  )
+})
+
+// Projects Account Settings (Protected)
+app.get('/projects/account', requireProjectsAuth, async (c) => {
+  const userSession = c.get('projectsUser') as ProjectsAuth.UserSession
+  
+  // Fetch full user details
+  const user = await c.env.PROJECTS_DB.prepare(`
+    SELECT id, email, full_name, company_name, phone_number, country, 
+           industry_sector, access_level, email_verified, nda_accepted, 
+           nda_accepted_date, two_factor_enabled, created_at, last_login
+    FROM projects_users
+    WHERE id = ?
+  `).bind(userSession.userId).first()
+  
+  if (!user) {
+    return c.redirect('/projects/login')
+  }
+  
+  const userProps = {
+    userId: user.id as string,
+    email: user.email as string,
+    fullName: user.full_name as string,
+    companyName: user.company_name as string | null,
+    phoneNumber: user.phone_number as string | null,
+    country: user.country as string | null,
+    industrySector: user.industry_sector as string | null,
+    accessLevel: user.access_level as string,
+    emailVerified: user.email_verified === 1,
+    ndaAccepted: user.nda_accepted === 1,
+    ndaAcceptedDate: user.nda_accepted_date as string | null,
+    twoFactorEnabled: user.two_factor_enabled === 1,
+    createdAt: user.created_at as string,
+    lastLogin: user.last_login as string | null
+  }
+  
+  return c.render(
+    <ProjectsAccountPage user={userProps} />,
+    {
+      title: 'Account Settings | Projects | G2 Middle East',
+      description: 'Manage your account settings'
+    }
+  )
+})
+
+// Project Detail Pages - Dynamic routing for all 12 projects (MUST be after specific routes)
 app.get('/projects/:slug', (c) => {
   const slug = c.req.param('slug')
   const projectData = projectsData[slug as keyof typeof projectsData]
@@ -515,6 +659,644 @@ app.get('/api/leads', async (c) => {
       status: 'error',
       message: error instanceof Error ? error.message : 'Failed to fetch leads'
     }, 500)
+  }
+})
+
+// ============================================
+// PROJECTS AUTH API ROUTES
+// ============================================
+
+// Projects User Registration
+app.post('/api/projects/auth/register', async (c) => {
+  try {
+    const formData = await c.req.parseBody()
+    const { 
+      full_name, email, company_name, phone_number, country, 
+      industry_sector, password, confirm_password, terms_accepted, nda_accepted 
+    } = formData
+    
+    // Validation
+    if (!full_name || !email || !company_name || !country || !industry_sector || !password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>All required fields must be filled</p>
+        <a href="/projects/register">Go back</a></body></html>
+      `)
+    }
+    
+    if (password !== confirm_password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Passwords do not match</p>
+        <a href="/projects/register">Go back</a></body></html>
+      `)
+    }
+    
+    // Validate email format
+    if (!ProjectsAuth.validateEmail(email as string)) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Invalid email format</p>
+        <a href="/projects/register">Go back</a></body></html>
+      `)
+    }
+    
+    // Validate password complexity
+    const passwordValidation = ProjectsAuth.validatePasswordComplexity(password as string)
+    if (!passwordValidation.valid) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Password requirements not met:</p>
+        <ul>${passwordValidation.errors.map(e => `<li>${e}</li>`).join('')}</ul>
+        <a href="/projects/register">Go back</a></body></html>
+      `)
+    }
+    
+    // Check for existing user
+    const existingUser = await c.env.PROJECTS_DB.prepare(`
+      SELECT id FROM projects_users WHERE email = ?
+    `).bind(email).first()
+    
+    if (existingUser) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>An account with this email already exists</p>
+        <a href="/projects/login">Login instead</a></body></html>
+      `)
+    }
+    
+    // Hash password
+    const passwordHash = await ProjectsAuth.hashPassword(password as string)
+    
+    // Generate user ID
+    const userId = ProjectsAuth.generateUserId()
+    
+    // Sanitize inputs
+    const sanitizedName = ProjectsAuth.sanitizeInput(full_name as string)
+    const sanitizedCompany = ProjectsAuth.sanitizeInput(company_name as string)
+    
+    // Insert user
+    await c.env.PROJECTS_DB.prepare(`
+      INSERT INTO projects_users (
+        id, email, password_hash, full_name, company_name, 
+        phone_number, country, industry_sector, access_level,
+        is_active, email_verified, nda_accepted, nda_accepted_date
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'standard', 1, 0, ?, datetime('now'))
+    `).bind(
+      userId,
+      email,
+      passwordHash,
+      sanitizedName,
+      sanitizedCompany,
+      phone_number || null,
+      country,
+      industry_sector,
+      nda_accepted ? 1 : 0
+    ).run()
+    
+    // Generate email verification token
+    const verificationToken = ProjectsAuth.generateToken()
+    const tokenExpiry = new Date()
+    tokenExpiry.setHours(tokenExpiry.getHours() + 24) // 24 hour expiry
+    
+    await c.env.PROJECTS_DB.prepare(`
+      INSERT INTO projects_email_verification_tokens (user_id, token, expires_at)
+      VALUES (?, ?, ?)
+    `).bind(userId, verificationToken, tokenExpiry.toISOString()).run()
+    
+    // TODO: Send verification email
+    // For now, redirect to login with success message
+    
+    return c.html(`
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-6">
+          <div class="max-w-md w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-8 text-center">
+            <div class="mb-6">
+              <svg class="w-16 h-16 text-green-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h1 class="text-2xl font-light text-white mb-4">Registration Successful!</h1>
+            <p class="text-slate-300 mb-6">
+              Your account has been created. A verification email has been sent to ${email}.
+            </p>
+            <p class="text-slate-400 text-sm mb-8">
+              Please verify your email before logging in to access confidential projects.
+            </p>
+            <a href="/projects/login" class="inline-block px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors">
+              Continue to Login
+            </a>
+          </div>
+        </body>
+      </html>
+    `)
+  } catch (error) {
+    console.error('Projects registration error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Registration failed. Please try again.</p>
+      <a href="/projects/register">Go back</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects User Login
+app.post('/api/projects/auth/login', async (c) => {
+  try {
+    const formData = await c.req.parseBody()
+    const { email, password, remember_me } = formData
+    
+    if (!email || !password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Email and password are required</p>
+        <a href="/projects/login">Go back</a></body></html>
+      `)
+    }
+    
+    // Find user
+    const user = await c.env.PROJECTS_DB.prepare(`
+      SELECT id, email, password_hash, full_name, access_level, 
+             is_active, email_verified, failed_login_attempts, account_locked_until
+      FROM projects_users
+      WHERE email = ?
+    `).bind(email).first()
+    
+    if (!user) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Invalid email or password</p>
+        <a href="/projects/login">Go back</a></body></html>
+      `)
+    }
+    
+    // Check if account is active
+    if (!user.is_active) {
+      return c.html(`
+        <html><body><h1>Account Disabled</h1><p>Your account has been disabled. Please contact support.</p>
+        <a href="/projects">Go back</a></body></html>
+      `)
+    }
+    
+    // Check if account is locked
+    if (ProjectsAuth.isAccountLocked(user.account_locked_until as string | null)) {
+      return c.html(`
+        <html><body><h1>Account Locked</h1>
+        <p>Your account has been temporarily locked due to multiple failed login attempts.</p>
+        <p>Please try again in 30 minutes or use the password reset function.</p>
+        <a href="/projects/forgot-password">Reset Password</a></body></html>
+      `)
+    }
+    
+    // Verify password
+    const isValid = await ProjectsAuth.verifyPassword(password as string, user.password_hash as string)
+    
+    if (!isValid) {
+      // Increment failed attempts
+      const failedAttempts = (user.failed_login_attempts as number) + 1
+      
+      if (failedAttempts >= ProjectsAuth.MAX_FAILED_ATTEMPTS) {
+        // Lock account
+        const lockExpiry = ProjectsAuth.calculateLockExpiry()
+        await c.env.PROJECTS_DB.prepare(`
+          UPDATE projects_users 
+          SET failed_login_attempts = ?, account_locked_until = ?
+          WHERE id = ?
+        `).bind(failedAttempts, lockExpiry, user.id).run()
+        
+        return c.html(`
+          <html><body><h1>Account Locked</h1>
+          <p>Too many failed login attempts. Your account has been locked for 30 minutes.</p>
+          <a href="/projects/forgot-password">Reset Password</a></body></html>
+        `)
+      } else {
+        // Just increment counter
+        await c.env.PROJECTS_DB.prepare(`
+          UPDATE projects_users SET failed_login_attempts = ? WHERE id = ?
+        `).bind(failedAttempts, user.id).run()
+        
+        return c.html(`
+          <html><body><h1>Error</h1>
+          <p>Invalid email or password</p>
+          <p>Attempts remaining: ${ProjectsAuth.MAX_FAILED_ATTEMPTS - failedAttempts}</p>
+          <a href="/projects/login">Go back</a></body></html>
+        `)
+      }
+    }
+    
+    // Reset failed attempts and clear lock
+    await c.env.PROJECTS_DB.prepare(`
+      UPDATE projects_users 
+      SET failed_login_attempts = 0, 
+          account_locked_until = NULL,
+          last_login = datetime('now')
+      WHERE id = ?
+    `).bind(user.id).run()
+    
+    // Set authentication cookie
+    setProjectsAuthCookie(
+      c,
+      user.id as string,
+      user.email as string,
+      user.full_name as string,
+      user.access_level as string,
+      (user.nda_accepted as number) === 1
+    )
+    
+    // Log activity
+    await logActivity(c, user.id as string, 'login', 'User logged in successfully')
+    
+    return c.redirect('/projects/dashboard')
+  } catch (error) {
+    console.error('Projects login error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Login failed. Please try again.</p>
+      <a href="/projects/login">Go back</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects User Logout
+app.get('/api/projects/auth/logout', (c) => {
+  clearProjectsAuthCookie(c)
+  return c.redirect('/projects/login')
+})
+
+// Projects Forgot Password
+app.post('/api/projects/auth/forgot-password', async (c) => {
+  try {
+    const formData = await c.req.parseBody()
+    const { email } = formData
+    
+    if (!email) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Email is required</p>
+        <a href="/projects/forgot-password">Go back</a></body></html>
+      `)
+    }
+    
+    // Check if user exists
+    const user = await c.env.PROJECTS_DB.prepare(`
+      SELECT id, email, full_name FROM projects_users WHERE email = ? AND is_active = 1
+    `).bind(email).first()
+    
+    // Always show success message for security (don't reveal if email exists)
+    if (user) {
+      // Generate reset token
+      const resetToken = ProjectsAuth.generateToken()
+      const tokenExpiry = new Date()
+      tokenExpiry.setHours(tokenExpiry.getHours() + 24) // 24 hour expiry
+      
+      // Store token
+      await c.env.PROJECTS_DB.prepare(`
+        INSERT INTO projects_password_reset_tokens (user_id, token, expires_at)
+        VALUES (?, ?, ?)
+      `).bind(user.id, resetToken, tokenExpiry.toISOString()).run()
+      
+      // TODO: Send email with reset link
+      // For now, just log the token (in production, send via email)
+      console.log(`Password reset token for ${email}: ${resetToken}`)
+      
+      // Log activity
+      await logActivity(c, user.id as string, 'password_reset_requested', 'User requested password reset')
+    }
+    
+    return c.html(`
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-6">
+          <div class="max-w-md w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-8 text-center">
+            <div class="mb-6">
+              <svg class="w-16 h-16 text-green-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h1 class="text-2xl font-light text-white mb-4">Check Your Email</h1>
+            <p class="text-slate-300 mb-6">
+              If an account exists with this email, you will receive a password reset link within a few minutes.
+            </p>
+            <a href="/projects/login" class="inline-block px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors">
+              Back to Login
+            </a>
+          </div>
+        </body>
+      </html>
+    `)
+  } catch (error) {
+    console.error('Forgot password error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Request failed. Please try again.</p>
+      <a href="/projects/forgot-password">Go back</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects Reset Password
+app.post('/api/projects/auth/reset-password', async (c) => {
+  try {
+    const formData = await c.req.parseBody()
+    const { token, password, confirm_password } = formData
+    
+    if (!token || !password || !confirm_password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>All fields are required</p>
+        <a href="/projects/forgot-password">Try again</a></body></html>
+      `)
+    }
+    
+    if (password !== confirm_password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Passwords do not match</p>
+        <a href="/projects/reset-password?token=${token}">Go back</a></body></html>
+      `)
+    }
+    
+    // Validate password complexity
+    const passwordValidation = ProjectsAuth.validatePasswordComplexity(password as string)
+    if (!passwordValidation.valid) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Password requirements not met:</p>
+        <ul>${passwordValidation.errors.map(e => `<li>${e}</li>`).join('')}</ul>
+        <a href="/projects/reset-password?token=${token}">Go back</a></body></html>
+      `)
+    }
+    
+    // Verify token
+    const resetRecord = await c.env.PROJECTS_DB.prepare(`
+      SELECT user_id, expires_at FROM projects_password_reset_tokens 
+      WHERE token = ? AND used_at IS NULL
+      ORDER BY created_at DESC LIMIT 1
+    `).bind(token).first()
+    
+    if (!resetRecord) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Invalid or expired reset token</p>
+        <a href="/projects/forgot-password">Request new link</a></body></html>
+      `)
+    }
+    
+    // Check expiry
+    if (new Date(resetRecord.expires_at as string) < new Date()) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Reset token has expired</p>
+        <a href="/projects/forgot-password">Request new link</a></body></html>
+      `)
+    }
+    
+    // Hash new password
+    const passwordHash = await ProjectsAuth.hashPassword(password as string)
+    
+    // Update password
+    await c.env.PROJECTS_DB.prepare(`
+      UPDATE projects_users SET password_hash = ? WHERE id = ?
+    `).bind(passwordHash, resetRecord.user_id).run()
+    
+    // Mark token as used
+    await c.env.PROJECTS_DB.prepare(`
+      UPDATE projects_password_reset_tokens SET used_at = datetime('now') WHERE token = ?
+    `).bind(token).run()
+    
+    // Log activity
+    await logActivity(c, resetRecord.user_id as string, 'password_reset', 'User reset password')
+    
+    return c.html(`
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-6">
+          <div class="max-w-md w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-8 text-center">
+            <div class="mb-6">
+              <svg class="w-16 h-16 text-green-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h1 class="text-2xl font-light text-white mb-4">Password Reset Successful!</h1>
+            <p class="text-slate-300 mb-6">
+              Your password has been updated. You can now login with your new password.
+            </p>
+            <a href="/projects/login" class="inline-block px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors">
+              Continue to Login
+            </a>
+          </div>
+        </body>
+      </html>
+    `)
+  } catch (error) {
+    console.error('Reset password error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Reset failed. Please try again.</p>
+      <a href="/projects/forgot-password">Request new link</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects Update Profile
+app.post('/api/projects/account/update-profile', requireProjectsAuth, async (c) => {
+  try {
+    const user = c.get('projectsUser') as ProjectsAuth.UserSession
+    const formData = await c.req.parseBody()
+    const { full_name, company_name, phone_number, country, industry_sector } = formData
+    
+    // Sanitize inputs
+    const sanitizedName = ProjectsAuth.sanitizeInput(full_name as string)
+    const sanitizedCompany = company_name ? ProjectsAuth.sanitizeInput(company_name as string) : null
+    
+    // Update profile
+    await c.env.PROJECTS_DB.prepare(`
+      UPDATE projects_users 
+      SET full_name = ?, company_name = ?, phone_number = ?, 
+          country = ?, industry_sector = ?, updated_at = datetime('now')
+      WHERE id = ?
+    `).bind(
+      sanitizedName,
+      sanitizedCompany,
+      phone_number || null,
+      country,
+      industry_sector,
+      user.userId
+    ).run()
+    
+    // Log activity
+    await logActivity(c, user.userId, 'profile_updated', 'User updated profile information')
+    
+    return c.redirect('/projects/account')
+  } catch (error) {
+    console.error('Update profile error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Update failed. Please try again.</p>
+      <a href="/projects/account">Go back</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects Change Password
+app.post('/api/projects/account/change-password', requireProjectsAuth, async (c) => {
+  try {
+    const user = c.get('projectsUser') as ProjectsAuth.UserSession
+    const formData = await c.req.parseBody()
+    const { current_password, new_password, confirm_password } = formData
+    
+    if (!current_password || !new_password || !confirm_password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>All fields are required</p>
+        <a href="/projects/account">Go back</a></body></html>
+      `)
+    }
+    
+    if (new_password !== confirm_password) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>New passwords do not match</p>
+        <a href="/projects/account">Go back</a></body></html>
+      `)
+    }
+    
+    // Validate new password complexity
+    const passwordValidation = ProjectsAuth.validatePasswordComplexity(new_password as string)
+    if (!passwordValidation.valid) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Password requirements not met:</p>
+        <ul>${passwordValidation.errors.map(e => `<li>${e}</li>`).join('')}</ul>
+        <a href="/projects/account">Go back</a></body></html>
+      `)
+    }
+    
+    // Verify current password
+    const userRecord = await c.env.PROJECTS_DB.prepare(`
+      SELECT password_hash FROM projects_users WHERE id = ?
+    `).bind(user.userId).first()
+    
+    if (!userRecord) {
+      return c.redirect('/projects/login')
+    }
+    
+    const isValid = await ProjectsAuth.verifyPassword(
+      current_password as string, 
+      userRecord.password_hash as string
+    )
+    
+    if (!isValid) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>Current password is incorrect</p>
+        <a href="/projects/account">Go back</a></body></html>
+      `)
+    }
+    
+    // Hash new password
+    const passwordHash = await ProjectsAuth.hashPassword(new_password as string)
+    
+    // Update password
+    await c.env.PROJECTS_DB.prepare(`
+      UPDATE projects_users SET password_hash = ?, updated_at = datetime('now') WHERE id = ?
+    `).bind(passwordHash, user.userId).run()
+    
+    // Log activity
+    await logActivity(c, user.userId, 'password_changed', 'User changed password')
+    
+    return c.html(`
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-6">
+          <div class="max-w-md w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-8 text-center">
+            <div class="mb-6">
+              <svg class="w-16 h-16 text-green-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h1 class="text-2xl font-light text-white mb-4">Password Changed!</h1>
+            <p class="text-slate-300 mb-6">
+              Your password has been successfully updated.
+            </p>
+            <a href="/projects/account" class="inline-block px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors">
+              Back to Account Settings
+            </a>
+          </div>
+        </body>
+      </html>
+    `)
+  } catch (error) {
+    console.error('Change password error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Password change failed. Please try again.</p>
+      <a href="/projects/account">Go back</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects Accept NDA
+app.post('/api/projects/account/accept-nda', requireProjectsAuth, async (c) => {
+  try {
+    const user = c.get('projectsUser') as ProjectsAuth.UserSession
+    const formData = await c.req.parseBody()
+    
+    if (!formData.nda_accepted) {
+      return c.html(`
+        <html><body><h1>Error</h1><p>You must accept the NDA checkbox</p>
+        <a href="/projects/account">Go back</a></body></html>
+      `)
+    }
+    
+    // Update NDA acceptance
+    await c.env.PROJECTS_DB.prepare(`
+      UPDATE projects_users 
+      SET nda_accepted = 1, nda_accepted_date = datetime('now'), updated_at = datetime('now')
+      WHERE id = ?
+    `).bind(user.userId).run()
+    
+    // Log activity
+    await logActivity(c, user.userId, 'nda_accepted', 'User accepted NDA')
+    
+    return c.redirect('/projects/dashboard')
+  } catch (error) {
+    console.error('Accept NDA error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>NDA acceptance failed. Please try again.</p>
+      <a href="/projects/account">Go back</a></body></html>
+    `, 500)
+  }
+})
+
+// Projects Delete Account
+app.get('/api/projects/account/delete', requireProjectsAuth, async (c) => {
+  try {
+    const user = c.get('projectsUser') as ProjectsAuth.UserSession
+    
+    // Delete user (cascading deletes will handle related records)
+    await c.env.PROJECTS_DB.prepare(`
+      DELETE FROM projects_users WHERE id = ?
+    `).bind(user.userId).run()
+    
+    // Clear cookie
+    clearProjectsAuthCookie(c)
+    
+    return c.html(`
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-6">
+          <div class="max-w-md w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-8 text-center">
+            <h1 class="text-2xl font-light text-white mb-4">Account Deleted</h1>
+            <p class="text-slate-300 mb-6">
+              Your account has been permanently deleted.
+            </p>
+            <a href="/" class="inline-block px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors">
+              Return to Homepage
+            </a>
+          </div>
+        </body>
+      </html>
+    `)
+  } catch (error) {
+    console.error('Delete account error:', error)
+    return c.html(`
+      <html><body><h1>Error</h1><p>Account deletion failed. Please try again.</p>
+      <a href="/projects/account">Go back</a></body></html>
+    `, 500)
   }
 })
 
