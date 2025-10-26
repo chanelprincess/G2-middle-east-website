@@ -777,10 +777,10 @@ app.post('/api/projects/auth/register', async (c) => {
             </div>
             <h1 class="text-2xl font-light text-white mb-4">Registration Successful!</h1>
             <p class="text-slate-300 mb-6">
-              Your account has been created. A verification email has been sent to ${email}.
+              Your account has been created and is pending approval.
             </p>
             <p class="text-slate-400 text-sm mb-8">
-              Please verify your email before logging in to access confidential projects.
+              You will receive an email notification once your account has been approved by our team. This usually takes 24-48 hours.
             </p>
             <a href="/projects/login" class="inline-block px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors">
               Continue to Login
@@ -826,25 +826,7 @@ app.post('/api/projects/auth/login', async (c) => {
       `)
     }
     
-    // Check if account is active
-    if (!user.is_active) {
-      return c.html(`
-        <html><body><h1>Account Disabled</h1><p>Your account has been disabled. Please contact support.</p>
-        <a href="/projects">Go back</a></body></html>
-      `)
-    }
-    
-    // Check if account is locked
-    if (ProjectsAuth.isAccountLocked(user.account_locked_until as string | null)) {
-      return c.html(`
-        <html><body><h1>Account Locked</h1>
-        <p>Your account has been temporarily locked due to multiple failed login attempts.</p>
-        <p>Please try again in 30 minutes or use the password reset function.</p>
-        <a href="/projects/forgot-password">Reset Password</a></body></html>
-      `)
-    }
-    
-    // Verify password
+    // Verify password first (before checking approval status)
     const isValid = await ProjectsAuth.verifyPassword(password as string, user.password_hash as string)
     
     if (!isValid) {
@@ -878,6 +860,25 @@ app.post('/api/projects/auth/login', async (c) => {
           <a href="/projects/login">Go back</a></body></html>
         `)
       }
+    }
+    
+    // Check if account is approved (like Whitepapers)
+    if (!user.is_active) {
+      return c.html(`
+        <html><body><h1>Access Pending</h1>
+        <p>Your account is pending approval. You will be notified once approved.</p>
+        <a href="/">Return to homepage</a></body></html>
+      `)
+    }
+    
+    // Check if account is locked
+    if (ProjectsAuth.isAccountLocked(user.account_locked_until as string | null)) {
+      return c.html(`
+        <html><body><h1>Account Locked</h1>
+        <p>Your account has been temporarily locked due to multiple failed login attempts.</p>
+        <p>Please try again in 30 minutes or use the password reset function.</p>
+        <a href="/projects/forgot-password">Reset Password</a></body></html>
+      `)
     }
     
     // Reset failed attempts and clear lock
