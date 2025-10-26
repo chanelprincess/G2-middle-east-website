@@ -11,6 +11,22 @@
       "binding": "DB",
       "database_name": "webapp-production",
       "database_id": "14fee0cd-bce9-407d-ba8c-ed3a0d01181a"
+    },
+    {
+      "binding": "PROJECTS_DB",
+      "database_name": "g2-projects-db",
+      "database_id": "956fedce-94ef-4edf-a17c-15f7987a42cd"
     }
-  ]
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "SESSIONS_KV",
+      "id": "placeholder",
+      "preview_id": "placeholder"
+    }
+  ],
+  "vars": {
+    "JWT_SECRET": "replace-with-real-secret-in-production",
+    "SITE_URL": "https://g2middleeast.com"
+  }
 }
