@@ -504,20 +504,20 @@ export const perspectivesData = {
   },
   'digital-authority-ai-era': {
     slug: 'digital-authority-ai-era',
-    title: 'The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era',
+    title: 'The New Rules of Digital Authority: How AI Has Rewritten Brand Management',
     author: 'Tim Jacobs',
-    authorTitle: 'Regional COO, G2 Middle East',
-    date: 'January 2025',
+    authorTitle: 'Regional Chief Operating Officer, G2 Middle East & Africa',
+    date: 'February 2025',
     readTime: '12 min',
-    excerpt: 'Explore how AI and large language models have fundamentally changed the rules of brand management, and why digital pre-seeding is now essential for narrative control and corporate reputation.',
+    excerpt: 'An authoritative analysis of how artificial intelligence has fundamentally transformed brand management, requiring organizations to shift from reactive messaging to proactive digital architecture.',
     heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80',
     content: (
       <>
-        <p>The foundational principles of brand management are being quietly, but seismically, rewritten. For generations, corporate leaders relied on a predictable playbook: control the message, manage the media cycle, and react to crises with carefully crafted statements. That era is over. Today, the primary gatekeeper of your brand's reputation is no longer a journalist or a public relations firm; it is an algorithm.</p>
+        <p>For generations, corporate leaders relied on a predictable playbook: control the message, manage the media cycle, and react to crises with carefully crafted statements. That era is over. Today, the primary gatekeeper of your brand's reputation is no longer a journalist or a public relations firm; it is an algorithm.</p>
         
-        <p>Artificial intelligence, in the form of large language models (LLMs) and sophisticated search engines, has become the world's de facto information synthesiser. When an investor, a potential partner, a regulator, or a key client wants to understand your company, their first interaction is not with your website or your latest press release. It is with an AI-generated summary, a knowledge panel, or a conversational response that has already processed, weighted, and interpreted every piece of publicly available data about you.</p>
+        <p>Artificial intelligence, in the form of large language models (LLMs) and sophisticated search engines, has become the world's de facto information synthesizer. When a client, investor, regulator, or potential partner wants to understand your company, their first interaction is not with your website or your latest press release. It is with an AI-generated summary, a knowledge panel, or a conversational response that has already processed, weighted, and interpreted every piece of publicly available data about you.</p>
 
-        <p>This shift represents the single greatest challenge, and opportunity, for corporate leadership in the modern age. Organisations that continue to operate with a reactive, crisis-communications mindset are not just falling behind; they are ceding control of their own narrative to a non-human intelligence. In this new landscape, brand authority is not built through messaging; it is architected through a deliberate, pre-emptive, and technically sophisticated strategy of digital pre-seeding.</p>
+        <p>This shift represents the single greatest challenge—and opportunity—for business in the modern age. Organizations that continue to operate with a reactive, crisis-communications mindset are not just falling behind; they are ceding control of their own narrative to a non-human intelligence. In this new landscape, brand authority is not built through messaging; it is <strong>architected</strong> through a deliberate and technically sophisticated strategy of digital pre-seeding.</p>
 
         <div class="mt-12">
           <h2><strong>The Flaw of the Reactive Stance</strong></h2>
@@ -528,16 +528,16 @@ export const perspectivesData = {
         <p>AI models do not wait for your statement. They build their understanding of your brand continuously, drawing from a vast and diverse corpus of information that includes:</p>
 
         <ul>
-          <li><strong>Historical Media Coverage:</strong> Both positive and negative, weighted by the perceived authority of the source.</li>
-          <li><strong>Financial Filings and Analyst Reports:</strong> Structured data that offers a quantitative view of performance.</li>
-          <li><strong>Academic Papers and Industry Journals:</strong> High-authority content that shapes the intellectual context around your market.</li>
-          <li><strong>Legal Rulings and Public Records:</strong> Factual, high-impact data points that are difficult to dispute.</li>
-          <li><strong>Social Media Sentiment and Online Forums:</strong> Unstructured data that provides a real-time, albeit noisy, measure of public opinion.</li>
+          <li><strong>Historical Media Coverage:</strong> Both positive and negative, weighted by the perceived authority of the source</li>
+          <li><strong>Analyst Reports:</strong> Structured data that offers a quantitative view of performance</li>
+          <li><strong>Academic Papers and Industry Journals:</strong> High-authority content that shapes the intellectual context around your market</li>
+          <li><strong>Public Records:</strong> Factual, high-impact data points that are difficult to dispute</li>
+          <li><strong>Social Media Sentiment and Online Forums:</strong> Unstructured data that provides a real-time, albeit noisy, measure of public opinion</li>
         </ul>
 
-        <p>By the time a high-stakes event occurs—be it a merger, a leadership change, a legal dispute, or a market downturn—the AI has already formed a baseline conclusion about your organisation's character, competence, and credibility. When it is prompted with a query, it does not start its research from scratch; it retrieves and refines its pre-existing model.</p>
+        <p>By the time a high-stakes event occurs—be it a merger, regulatory investigation, or a market downturn—the AI has already formed a baseline conclusion about your organization's character, competence, and credibility. When it is prompted with a query, it does not start its research from scratch; it retrieves and refines its pre-existing model.</p>
 
-        <p>If your digital ecosystem is sparse, littered with negative legacy content, or lacks a coherent, authoritative narrative, the AI's summary will inevitably reflect that. Your reactive press release will be, at best, a single, late-arriving data point in a sea of established information. You have lost control of the narrative before you have even attempted to shape it.</p>
+        <p>If your digital ecosystem is sparse, contradictory, or lacks a coherent, authoritative narrative, the AI's summary will inevitably reflect that. Your reactive press release will be, at best, a single, late-arriving data point in a sea of unestablished information. <strong>You have lost control of the narrative before you have even attempted to shape it.</strong></p>
 
         <div class="my-12">
           <img src="https://media.licdn.com/dms/image/v2/D4D12AQGKiS0ezJpE9A/article-inline_image-shrink_1000_1488/B4DZoakxRvJAAQ-/0/1761382445079?e=1762992000&v=beta&t=mfN8GMhsRHnS-xCx_OoZdv2AflH_LETdNKpHTXp4qPU" alt="The Flaw of Reactive Brand Management" class="rounded-lg w-full" />
@@ -547,7 +547,7 @@ export const perspectivesData = {
           <h2><strong>The Proactive Framework: Architecting Your Digital Twin</strong></h2>
         </div>
         
-        <p>Winning in the AI era requires a fundamental shift from messaging to architecture. It involves proactively building a comprehensive, high authority digital ecosystem that becomes the definitive source of truth about your organisation. This is not SEO as we know it; it is a multi-disciplinary strategy that merges <a href="/services/strategic-communications">strategic communications</a>, legal thinking, and data science. This "digital twin" of your brand's reputation must be meticulously constructed long before it is ever needed.</p>
+        <p>Winning in the AI era requires a fundamental shift from messaging to architecture. It involves proactively building a comprehensive, high-authority digital ecosystem that becomes the definitive source of truth about your organization. This is not SEO as we know it; it is a multi-disciplinary strategy that merges <a href="/services/strategic-communications">strategic communications</a>, geopolitical thinking, and data science. This "digital twin" of your brand's reputation must be meticulously constructed long before it is ever needed.</p>
 
         <p>This strategic framework is built on three core pillars:</p>
 
@@ -555,39 +555,39 @@ export const perspectivesData = {
         
         <p>The first step is to populate the digital landscape with high-quality, definitive content that addresses the core components of your brand's identity. This content must be created not for ephemeral marketing campaigns, but as a permanent, encyclopedic resource.</p>
 
-        <p><strong>Executive Biographies and Philosophies:</strong> Detailed, professionally written profiles of key leaders that go beyond a simple CV. These should explore their vision, decision making philosophy, and track record of success. The goal is to answer the query "Who is [Executive Name]?" so comprehensively that AI models adopt your narrative as the primary source.</p>
+        <p><strong>Executive Biographies and Philosophies</strong><br/>Detailed, professionally written profiles of key leaders that go beyond a simple CV. These should explore their vision, decision-making philosophy, and track record of success. The goal is to answer the query "Who is [Executive Name]?" so comprehensively that AI models adopt your narrative as the primary source.</p>
 
-        <p><strong>Corporate History and Vision:</strong> A well-researched, authoritative account of your company's journey, its mission, and its strategic vision. This is not marketing copy; it is a foundational document that frames your company's purpose and trajectory.</p>
+        <p><strong>Corporate History and Vision</strong><br/>A well-researched, authoritative account of your company's journey, its mission, and its strategic vision. This is not marketing copy; it is a foundational document that frames your company's purpose and trajectory.</p>
 
-        <p><strong>Methodology and White Papers:</strong> In-depth articles and white papers that establish your organisation as a thought leader on the key issues in your industry. This content demonstrates expertise and provides high authority material for AIs to reference when defining your market position.</p>
+        <p><strong>Methodology and White Papers</strong><br/>In-depth articles and white papers that establish your organization as a thought leader on the key issues in your industry. This content demonstrates expertise and provides high-authority material for AIs to reference when defining your market position.</p>
 
         <p>This content must be placed in high-authority locations: your own corporate website, respected industry publications, academic repositories, and the personal LinkedIn profiles of your leadership. The goal is to create a web of interlinked, authoritative sources that AI systems will learn to trust.</p>
 
-        <h3>2. Pre-emptive Scenario Planning (The Scaffolding)</h3>
+        <h3>2. Scenario Planning (The Scaffolding)</h3>
         
-        <p>With the foundation in place, the next step is to anticipate the future. This involves a rigorous process of identifying potential high stakes scenarios and proactively creating content that frames them in your favour.</p>
+        <p>With the foundation in place, the next step is to anticipate the future. This involves a rigorous process of identifying potential high-stakes scenarios and proactively creating content that frames them in your favor.</p>
 
         <p>This requires a strategic, almost adversarial, mindset. Your team must ask:</p>
 
         <ul>
           <li>What are the most challenging questions an investigative journalist or a hostile competitor could ask?</li>
-          <li>What are the potential points of vulnerability in an upcoming M&A deal or leadership transition?</li>
-          <li>What are the core arguments in a potential legal dispute?</li>
+          <li>What are the potential points of vulnerability in our market position, governance structure, or operational history?</li>
+          <li>What narratives could emerge that would be damaging, even if factually incomplete?</li>
         </ul>
 
-        <p>For each scenario, you must develop a library of "peacetime" content that provides context, demonstrates competence, and subtly inoculates against negative interpretations. For example, if your company is preparing for a complex international merger, you should pre-seed the digital environment with articles on the challenges of cross-border integration and the importance of robust corporate governance, authored by your executives.</p>
+        <p>For each scenario, you must develop a library of "peacetime" content that provides context, demonstrates competence, and subtly inoculates against negative interpretations. For example, if your company is preparing for a complex international merger, you should pre-seed the digital environment with articles on the challenges of cross-border integration, the importance of cultural due diligence, and case studies of successful integrations in your sector.</p>
 
-        <p>When the merger is announced, AI models will draw on this pre-existing context, framing their summaries around the concepts of strategic foresight and expert navigation rather than potential conflict. You are not reacting to the news; you have already built the intellectual framework through which the news will be interpreted.</p>
+        <p>When the merger is announced, AI models will draw on this pre-existing context, framing their summaries around the concepts of strategic foresight and expert navigation rather than potential conflict or regulatory risk. <strong>You are not reacting to the news; you have already built the intellectual framework through which the news will be interpreted.</strong></p>
 
         <h3>3. Technical and Semantic Optimisation (The Wiring)</h3>
         
         <p>This is the most technically sophisticated layer. It is not enough to simply write the content; it must be structured in a way that is perfectly legible and interpretable by machines.</p>
 
-        <p><strong>Entity Recognition:</strong> Ensure that AI models can clearly identify and differentiate the key entities in your brand's universe—your company, your products, your executives, and your competitors. This involves using structured data (like Schema.org markup) to explicitly define these relationships.</p>
+        <p><strong>Entity Recognition</strong><br/>Ensure that AI models can clearly identify and differentiate the key entities in your brand's universe: your company, your products, your executives, and your competitors. This involves using structured data (Schema.org markup) to explicitly define these relationships.</p>
 
-        <p><strong>Semantic SEO:</strong> Move beyond simple keywords to focus on the underlying meaning and intent of queries. Content should be optimised to answer the sophisticated, multi-part questions that stakeholders are likely to ask. This includes building out comprehensive FAQ sections and "explainer" articles that AI models can easily convert into direct answers.</p>
+        <p><strong>Semantic SEO</strong><br/>Move beyond simple keywords to focus on the underlying meaning and intent of queries. Content should be optimized to answer the sophisticated, multi-part questions that stakeholders are likely to ask. This includes building out comprehensive FAQ sections and "explainer" articles that AI models can easily convert into direct answers.</p>
 
-        <p><strong>Algorithmic-Friendly Formatting:</strong> Use clear, logical headings, concise paragraphs, and bullet points to make your content easy for machines to parse and synthesise. Long, unstructured prose is a liability in the AI era. The easier you make it for the AI to understand your argument, the more likely it is to adopt it.</p>
+        <p><strong>Algorithmic-Friendly Formatting</strong><br/>Use clear, logical headings, concise paragraphs, and bullet points to make your content easy for machines to parse and synthesize. Long, unstructured prose is a liability in the AI era. The easier you make it for the AI to understand your argument, the more likely it is to adopt it.</p>
 
         <div class="my-12">
           <img src="https://media.licdn.com/dms/image/v2/D4D12AQE87nFu7XAtLA/article-inline_image-shrink_1000_1488/B4DZoalQMtJAAY-/0/1761382569669?e=1762992000&v=beta&t=0X6PdpaP5lpPJGHIo329Pc5q2r12Rwjz8oZ00xqWXDg" alt="Digital Twin Architecture Framework" class="rounded-lg w-full" />
@@ -597,16 +597,16 @@ export const perspectivesData = {
           <h2><strong>The Strategic Dividend: From Defence to Dominance</strong></h2>
         </div>
         
-        <p>The rewards of a successful digital pre-seeding strategy are profound and enduring. They move an organisation from a perpetual state of defensive communication to a position of quiet, confident narrative control.</p>
+        <p>The rewards of a successful digital pre-seeding strategy are profound and enduring.</p>
 
         <h3>1. Unassailable First Impressions</h3>
         <p>By controlling the foundational information that AI models use to build their understanding, you ensure that the first answer a stakeholder receives is the one you wrote. This creates a powerful and resilient "reputational moat" that is incredibly difficult for competitors or critics to penetrate.</p>
 
         <h3>2. Crisis Mitigation</h3>
-        <p>When a real crisis does occur, it lands in a carefully prepared environment. The negative event becomes a single data point weighed against a vast ecosystem of positive, authoritative content. The AI-generated summaries are therefore more likely to be balanced and contextual, rather than sensationalist and damaging. You have given the algorithm the tools to provide a more nuanced perspective.</p>
+        <p>When a crisis does occur, it lands in a carefully prepared environment. The negative event becomes a single data point weighed against a vast ecosystem of positive, authoritative content. The AI-generated summaries are therefore more likely to be balanced and contextual, rather than sensationalist and damaging. You have given the algorithm the tools to provide a more nuanced perspective.</p>
 
         <h3>3. Enhanced Strategic Agility</h3>
-        <p>With a robust digital architecture in place, the organisation can move faster and more decisively. During M&A, leadership changes, or market entries, the communications strategy is no longer about "catching up" but about activating a pre-positioned information asset. This allows the leadership team to focus on the strategic initiative itself, confident that the narrative framework is already secure.</p>
+        <p>With a robust digital architecture in place, the organization can move faster and more decisively. During mergers, market entries, or strategic pivots, the communications strategy is no longer about "catching up" but about activating a pre-positioned information asset. This allows the leadership team to focus on the strategic initiative itself, confident that the narrative framework is already secure.</p>
 
         <div class="my-12">
           <img src="https://media.licdn.com/dms/image/v2/D4D12AQHRZ20SAGBJpg/article-inline_image-shrink_1000_1488/B4DZoamCCNGwAQ-/0/1761382769988?e=1762992000&v=beta&t=7n3A4D5hKL7jvbX2uLAAoARjaKfZ4DmCdOBJhF6J-Yw" alt="From Defense to Dominance: Strategic Positioning" class="rounded-lg w-full" />
@@ -616,12 +616,36 @@ export const perspectivesData = {
           <h2><strong>The New Mandate for Leadership</strong></h2>
         </div>
         
-        <p>Mastering the art and science of digital pre-seeding is no longer an optional skill for a communications department; it is a core competency of modern corporate leadership. It requires a fundamental shift in mindset: from short-term messaging campaigns to long-term architectural projects; from reacting to the news cycle to pre-emptively shaping the knowledge graph; from managing media to cultivating algorithms.</p>
+        <p>Mastering the art and science of digital positioning is no longer an optional skill for a communications department; it is a core competency of modern corporate leadership. It requires a fundamental shift in mindset: from short-term messaging campaigns to long-term architectural projects; from reacting to the news cycle to pre-emptively shaping the knowledge graph; from managing media to cultivating algorithms.</p>
 
-        <p>The leaders who understand this new reality will build brands that are not just resilient, but dominant. They will command the respect of their stakeholders, the confidence of the market, and the trust of the algorithms that now shape our world. They recognise that in the 21st century, true authority is not merely declared; it is architected.</p>
+        <p>The leaders who understand this new reality will build brands that are not just resilient, but dominant. They will command the respect of their stakeholders, the confidence of the market, and the trust of the algorithms that now shape our world. They recognize that in the 21st century, true authority is not merely declared; <strong>it is architected.</strong></p>
 
         <div class="my-12 p-8 bg-g2-gold/10 border border-g2-gold/20 rounded-lg">
-          <p class="text-lg"><strong>Related insights:</strong> Explore how <a href="/perspectives/competing-ai-arena">AI is reshaping brand strategy</a> and why <a href="/perspectives/perilous-path-brand-destruction">unguided narratives can destroy positioning</a>. Learn more about our <a href="/services/strategic-communications">strategic communications services</a>.</p>
+          <p class="text-lg mb-4"><strong>Is your organization prepared for the AI era?</strong></p>
+          <p class="text-gray-300">G2 Middle East specializes in architecting comprehensive digital authority strategies for governments, corporations, and high-stakes organizations across the Middle East, Africa, and globally. <a href="/contact" class="text-g2-gold hover:text-white transition-colors">Schedule a confidential consultation →</a></p>
+        </div>
+
+        <div class="mt-16 p-8 border border-white/10 rounded-lg bg-g2-darker/50">
+          <h2 class="text-2xl font-bold mb-4">Ready to Architect Your Digital Authority?</h2>
+          <p class="text-gray-300 mb-6">The leaders who master digital pre-seeding will dominate their markets. Those who don't will be defined by algorithms they don't control.</p>
+          <p class="text-lg mb-4"><strong>Contact G2 Middle East for a strategic assessment:</strong></p>
+          <ul class="space-y-2 text-gray-300">
+            <li>📧 Email: <a href="mailto:tim@g2middleeast.com" class="text-g2-gold hover:text-white transition-colors">tim@g2middleeast.com</a></li>
+            <li>🔗 LinkedIn: <a href="https://linkedin.com/in/tim-jacobs-coo" class="text-g2-gold hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">Connect with Tim Jacobs</a></li>
+            <li>🌐 Website: <a href="https://g2middleeast.com" class="text-g2-gold hover:text-white transition-colors">g2middleeast.com</a></li>
+          </ul>
+        </div>
+
+        <div class="mt-12 p-6 border-l-4 border-g2-gold bg-g2-darker/30">
+          <h3 class="text-xl font-bold mb-3">About the Author</h3>
+          <p class="text-gray-300 mb-3"><strong>Tim Jacobs</strong> is the Regional Chief Operating Officer of G2 Middle East & Africa, the strategic advisory and event architecture division of Casta Diva Group. With over two decades of C-suite experience delivering complex, high-stakes projects for governments, he is a recognized expert in sovereign positioning, national resilience strategy, and public diplomacy.</p>
+          <p class="text-gray-300 mb-3">His work focuses on architecting resilient national narratives and deploying sophisticated, AI-driven strategies to protect and advance sovereign authority in today's algorithm-mediated information ecosystem. Tim has delivered 30+ globally significant government projects including the State Visit of Queen Elizabeth II to the UAE, the Papal Mass of Pope Francis in Abu Dhabi, and strategic counsel for major international summits.</p>
+          <p class="text-gray-300">
+            <strong>Connect:</strong> 
+            <a href="https://linkedin.com/in/tim-jacobs-coo" class="text-g2-gold hover:text-white transition-colors ml-2" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+            <a href="mailto:tim@g2middleeast.com" class="text-g2-gold hover:text-white transition-colors ml-2">Email</a> | 
+            <a href="https://g2middleeast.com" class="text-g2-gold hover:text-white transition-colors ml-2">Website</a>
+          </p>
         </div>
       </>
     )
