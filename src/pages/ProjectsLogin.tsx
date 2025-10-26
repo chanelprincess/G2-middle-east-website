@@ -7,20 +7,20 @@
 
 export function ProjectsLoginPage() {
   return (
-    <div class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <div class="min-h-screen bg-g2-darker">
       {/* Navigation */}
-      <nav class="border-b border-slate-700/50 bg-slate-900/50 backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4">
+      <nav class="border-b border-white/10 bg-g2-dark/95 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 py-5">
           <div class="flex items-center justify-between">
-            <a href="/" class="text-xl font-light text-white hover:text-slate-300 transition-colors">
+            <a href="/" class="text-2xl font-bold tracking-tight text-white hover:text-g2-gold transition-colors">
               G2 MIDDLE EAST
             </a>
             <div class="flex items-center gap-6">
-              <a href="/projects" class="text-sm text-slate-300 hover:text-white transition-colors">
-                ← Back to Projects
+              <a href="/projects" class="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i> Back to Projects
               </a>
-              <a href="/projects/register" class="text-sm text-slate-300 hover:text-white transition-colors">
-                Need an account? Register
+              <a href="/projects/register" class="text-sm text-g2-gold hover:text-white transition-colors font-medium">
+                Register
               </a>
             </div>
           </div>
@@ -28,14 +28,17 @@ export function ProjectsLoginPage() {
       </nav>
 
       {/* Login Form */}
-      <div class="max-w-md mx-auto px-6 py-16">
-        <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-8">
+      <div class="max-w-md mx-auto px-6 py-20">
+        <div class="bg-g2-dark/80 backdrop-blur-sm border border-white/10 rounded-2xl p-10 shadow-2xl">
           {/* Header */}
-          <div class="mb-8">
-            <h1 class="text-3xl font-light text-white mb-3">
-              Client Portal Login
+          <div class="mb-10">
+            <div class="mb-4">
+              <span class="text-g2-gold text-xs font-semibold uppercase tracking-widest">Authorized Access</span>
+            </div>
+            <h1 class="text-4xl font-serif font-bold text-white mb-4 tracking-wide">
+              Client Portal
             </h1>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-gray-400 leading-relaxed">
               Access confidential project case studies and strategic insights.
             </p>
           </div>
@@ -44,7 +47,7 @@ export function ProjectsLoginPage() {
           <form method="POST" action="/api/projects/auth/login" class="space-y-6">
             {/* Email */}
             <div>
-              <label for="email" class="block text-sm font-medium text-slate-300 mb-2">
+              <label for="email" class="block text-sm font-medium text-gray-300 mb-3">
                 Email Address
               </label>
               <input
@@ -53,18 +56,18 @@ export function ProjectsLoginPage() {
                 name="email"
                 required
                 autofocus
-                class="w-full px-4 py-3 bg-slate-900/50 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition-colors"
+                class="w-full px-4 py-3.5 bg-g2-darker/80 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-g2-gold transition-all"
                 placeholder="your.email@company.com"
               />
             </div>
 
             {/* Password */}
             <div>
-              <div class="flex items-center justify-between mb-2">
-                <label for="password" class="block text-sm font-medium text-slate-300">
+              <div class="flex items-center justify-between mb-3">
+                <label for="password" class="block text-sm font-medium text-gray-300">
                   Password
                 </label>
-                <a href="/projects/forgot-password" class="text-xs text-slate-400 hover:text-white transition-colors">
+                <a href="/projects/forgot-password" class="text-xs text-g2-gold hover:text-white transition-colors font-medium">
                   Forgot password?
                 </a>
               </div>
@@ -73,20 +76,20 @@ export function ProjectsLoginPage() {
                 id="password"
                 name="password"
                 required
-                class="w-full px-4 py-3 bg-slate-900/50 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition-colors"
+                class="w-full px-4 py-3.5 bg-g2-darker/80 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-g2-gold transition-all"
                 placeholder="Enter your password"
               />
             </div>
 
             {/* Remember Me */}
-            <div>
-              <label class="flex items-center gap-3">
+            <div class="pt-2">
+              <label class="flex items-center gap-3 cursor-pointer">
                 <input
                   type="checkbox"
                   name="remember_me"
-                  class="w-4 h-4 bg-slate-900 border-slate-600 rounded focus:ring-offset-slate-900"
+                  class="w-4 h-4 bg-g2-darker border-white/20 rounded focus:ring-g2-gold"
                 />
-                <span class="text-sm text-slate-300">
+                <span class="text-sm text-gray-400">
                   Remember me for 30 days
                 </span>
               </label>
@@ -95,24 +98,29 @@ export function ProjectsLoginPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              class="w-full px-6 py-4 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors"
+              class="w-full px-6 py-4 bg-g2-gold text-g2-darker font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl"
             >
-              Login
+              Sign In
             </button>
           </form>
 
           {/* Registration Link */}
-          <div class="mt-6 text-center">
-            <p class="text-sm text-slate-400">
-              Don't have an account? <a href="/projects/register" class="text-white hover:underline">Register here</a>
+          <div class="mt-8 text-center">
+            <p class="text-sm text-gray-400">
+              Don't have an account? <a href="/projects/register" class="text-g2-gold hover:text-white transition-colors font-medium">Register here</a>
             </p>
           </div>
 
           {/* Security Notice */}
-          <div class="mt-8 p-4 bg-slate-900/50 border border-slate-700/50 rounded-lg">
-            <p class="text-xs text-slate-400 leading-relaxed">
-              <strong class="text-slate-300">Security Notice:</strong> After 5 failed login attempts, your account will be temporarily locked for 30 minutes. All access is logged and monitored.
-            </p>
+          <div class="mt-10 p-5 bg-g2-darker/50 border border-white/10 rounded-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-shield-alt text-g2-gold mt-0.5"></i>
+              <div>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                  <strong class="text-gray-300 font-semibold">Security Notice:</strong> After 5 failed login attempts, your account will be temporarily locked for 30 minutes. All access is logged and monitored.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

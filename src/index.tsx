@@ -244,7 +244,10 @@ app.get('/contact', (c) => {
 })
 
 // Projects Page
-app.get('/projects', (c) => {
+// Protected Projects Page - requires authentication
+app.get('/projects', requireProjectsAuth, async (c) => {
+  const user = c.get('projectsUser') as ProjectsAuth.UserSession
+  
   return c.render(
     <ProjectsPage />,
     {
@@ -387,7 +390,9 @@ app.get('/projects/account', requireProjectsAuth, async (c) => {
 })
 
 // Project Detail Pages - Dynamic routing for all 12 projects (MUST be after specific routes)
-app.get('/projects/:slug', (c) => {
+// Protected Project Detail Pages - requires authentication
+app.get('/projects/:slug', requireProjectsAuth, async (c) => {
+  const user = c.get('projectsUser') as ProjectsAuth.UserSession
   const slug = c.req.param('slug')
   const projectData = projectsData[slug as keyof typeof projectsData]
   
