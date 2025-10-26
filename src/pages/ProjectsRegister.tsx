@@ -113,19 +113,19 @@ export function ProjectsRegisterPage() {
                 id="country"
                 name="country"
                 required
-                class="w-full px-4 py-3 bg-slate-900/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-slate-400 transition-colors"
+                class="w-full px-4 py-3 bg-g2-darker/80 border border-white/20 rounded-lg text-white focus:outline-none focus:border-g2-gold transition-all"
               >
-                <option value="">Select a country</option>
-                <option value="UAE">United Arab Emirates</option>
-                <option value="Saudi Arabia">Saudi Arabia</option>
-                <option value="Qatar">Qatar</option>
-                <option value="Kuwait">Kuwait</option>
-                <option value="Bahrain">Bahrain</option>
-                <option value="Oman">Oman</option>
-                <option value="Egypt">Egypt</option>
-                <option value="Jordan">Jordan</option>
-                <option value="Lebanon">Lebanon</option>
-                <option value="Other">Other</option>
+                <option value="" style="color: #1A1A1A;">Select a country</option>
+                <option value="UAE" style="color: #1A1A1A;">United Arab Emirates</option>
+                <option value="Saudi Arabia" style="color: #1A1A1A;">Saudi Arabia</option>
+                <option value="Qatar" style="color: #1A1A1A;">Qatar</option>
+                <option value="Kuwait" style="color: #1A1A1A;">Kuwait</option>
+                <option value="Bahrain" style="color: #1A1A1A;">Bahrain</option>
+                <option value="Oman" style="color: #1A1A1A;">Oman</option>
+                <option value="Egypt" style="color: #1A1A1A;">Egypt</option>
+                <option value="Jordan" style="color: #1A1A1A;">Jordan</option>
+                <option value="Lebanon" style="color: #1A1A1A;">Lebanon</option>
+                <option value="Other" style="color: #1A1A1A;">Other</option>
               </select>
             </div>
 
@@ -138,19 +138,19 @@ export function ProjectsRegisterPage() {
                 id="industry_sector"
                 name="industry_sector"
                 required
-                class="w-full px-4 py-3 bg-slate-900/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:border-slate-400 transition-colors"
+                class="w-full px-4 py-3 bg-g2-darker/80 border border-white/20 rounded-lg text-white focus:outline-none focus:border-g2-gold transition-all"
               >
-                <option value="">Select industry</option>
-                <option value="Government">Government / Public Sector</option>
-                <option value="Royal Family">Royal Family / Sovereign Entity</option>
-                <option value="Finance">Finance & Banking</option>
-                <option value="Real Estate">Real Estate & Development</option>
-                <option value="Hospitality">Hospitality & Tourism</option>
-                <option value="Technology">Technology</option>
-                <option value="Healthcare">Healthcare</option>
-                <option value="Energy">Energy</option>
-                <option value="Consulting">Consulting</option>
-                <option value="Other">Other</option>
+                <option value="" style="color: #1A1A1A;">Select industry</option>
+                <option value="Government" style="color: #1A1A1A;">Government / Public Sector</option>
+                <option value="Royal Family" style="color: #1A1A1A;">Royal Family / Sovereign Entity</option>
+                <option value="Finance" style="color: #1A1A1A;">Finance & Banking</option>
+                <option value="Real Estate" style="color: #1A1A1A;">Real Estate & Development</option>
+                <option value="Hospitality" style="color: #1A1A1A;">Hospitality & Tourism</option>
+                <option value="Technology" style="color: #1A1A1A;">Technology</option>
+                <option value="Healthcare" style="color: #1A1A1A;">Healthcare</option>
+                <option value="Energy" style="color: #1A1A1A;">Energy</option>
+                <option value="Consulting" style="color: #1A1A1A;">Consulting</option>
+                <option value="Other" style="color: #1A1A1A;">Other</option>
               </select>
             </div>
 
