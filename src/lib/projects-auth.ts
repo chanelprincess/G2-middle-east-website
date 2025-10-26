@@ -215,14 +215,15 @@ export async function logActivity(
     const userAgent = c.req.header('User-Agent') || 'unknown'
 
     await db.prepare(`
-      INSERT INTO projects_activity_log (user_id, action, details, ip_address, user_agent)
-      VALUES (?, ?, ?, ?, ?)
+      INSERT INTO projects_activity_log (id, user_id, activity_type, ip_address, user_agent, metadata)
+      VALUES (?, ?, ?, ?, ?, ?)
     `).bind(
+      generateUserId(), // Generate unique ID for log entry
       userId,
-      action,
-      details || '',
+      action, // Maps to activity_type column
       ipAddress,
-      userAgent
+      userAgent,
+      details || '' // Store details in metadata column
     ).run()
   } catch (error) {
     console.error('Failed to log activity:', error)

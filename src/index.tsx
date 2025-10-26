@@ -730,13 +730,13 @@ app.post('/api/projects/auth/register', async (c) => {
     const sanitizedName = ProjectsAuth.sanitizeInput(full_name as string)
     const sanitizedCompany = ProjectsAuth.sanitizeInput(company_name as string)
     
-    // Insert user
+    // Insert user with is_active=0 (pending approval, like Whitepapers)
     await c.env.PROJECTS_DB.prepare(`
       INSERT INTO projects_users (
         id, email, password_hash, full_name, company_name, 
         phone_number, country, industry_sector, access_level,
         is_active, email_verified, nda_accepted, nda_accepted_date
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'standard', 1, 0, ?, datetime('now'))
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'standard', 0, 0, ?, datetime('now'))
     `).bind(
       userId,
       email,
