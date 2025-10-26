@@ -44,3 +44,7 @@ pids/
 
 # misc
 .DS_Store
+
+# Admin credentials (sensitive)
+ADMIN_CREDENTIALS.md
+create-admin.js
