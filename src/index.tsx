@@ -25,6 +25,8 @@ import { ProjectsDashboardPage } from './pages/ProjectsDashboard'
 import { ProjectsAccountPage } from './pages/ProjectsAccount'
 import { ProjectsForgotPasswordPage } from './pages/ProjectsForgotPassword'
 import { ProjectsResetPasswordPage } from './pages/ProjectsResetPassword'
+import { TermsOfServicePage } from './pages/TermsOfService'
+import { PrivacyPolicyPage } from './pages/PrivacyPolicy'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
 import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail } from './utils/email'
 import * as ProjectsAuth from './lib/projects-auth'
@@ -241,6 +243,38 @@ app.get('/contact', (c) => {
       description: 'Bring us your highstakes challenges. We respond within 24 hours.'
     }
   )
+})
+
+// Terms of Service Page
+app.get('/terms-of-service', (c) => {
+  return c.render(
+    <TermsOfServicePage />,
+    {
+      title: 'Terms of Service | G2 Middle East',
+      description: 'GCC-compliant Terms of Service for G2 Middle East Projects Portal access.'
+    }
+  )
+})
+
+// Alternative route (backward compatibility)
+app.get('/terms', (c) => {
+  return c.redirect('/terms-of-service', 301)
+})
+
+// Privacy Policy Page
+app.get('/privacy-policy', (c) => {
+  return c.render(
+    <PrivacyPolicyPage />,
+    {
+      title: 'Privacy Policy | G2 Middle East',
+      description: 'Our commitment to protecting your data. GCC-compliant privacy policy for G2 Middle East services.'
+    }
+  )
+})
+
+// Alternative route (backward compatibility)
+app.get('/privacy', (c) => {
+  return c.redirect('/privacy-policy', 301)
 })
 
 // Projects Page

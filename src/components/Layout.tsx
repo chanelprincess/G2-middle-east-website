@@ -101,10 +101,16 @@ export const Footer: FC = () => {
         </div>
         
         {/* Copyright */}
-        <div class="border-t border-white/10 pt-8 text-center">
-          <p class="text-gray-500 text-sm">
-            © {new Date().getFullYear()} G2 Middle East. All rights reserved.
-          </p>
+        <div class="border-t border-white/10 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">
+              © {new Date().getFullYear()} G2 Middle East. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-sm">
+              <a href="/privacy-policy" class="text-gray-400 hover:text-g2-gold transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" class="text-gray-400 hover:text-g2-gold transition-colors">Terms of Service</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
