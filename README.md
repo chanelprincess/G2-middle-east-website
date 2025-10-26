@@ -153,9 +153,9 @@ webapp/
    - Categories: Sports Events, Sports Infrastructure, Sports Facilities, Cultural Events, Cultural Strategy, Innovation, Brand Activation, Media Events, International Relations, Major Events, Landmark Events, Interfaith Events, Thought Leadership, Luxury Events, and more
    - Featured projects: Qatar Olympic House London 2012, Xi Jinping visit, Putin visit, Queen Elizabeth II visit, Papal Mass, NEOM showcase, SeaWorld Yas Island opening, Qasr Al Watan opening, Red Sea Film Festival, Special Olympics, Paris Media Oasis Expo 2030, G20 India Media Oasis, and many more
 6. **Database Schema** - Complete D1 migrations for all data models
-7. **SEO Foundation** - Meta tags, Open Graph, Twitter Cards, Schema.org markup, AI-permissive robots.txt
+7. **SEO Foundation** - Meta tags, Open Graph, Twitter Cards, Schema.org markup, comprehensive robots.txt with AI crawler support
 8. **Group Page** - 9 subsidiary companies with Schema.org Brand markup and official URLs
-9. **Navigation & Footer** - Responsive header and footer with mobile menu
+9. **Navigation & Footer** - Responsive header and footer with mobile menu, legal page links (Terms of Service, Privacy Policy)
 10. **API Endpoints** - Health check, database test, contact form submission, leads retrieval
 11. **White Papers Gated Section** - Complete authentication system with admin approval workflow
     - User registration with comprehensive form (name, company, job title, email, credentials)
@@ -165,6 +165,28 @@ webapp/
     - Admin CMS for user management and whitepaper content management
     - Email notification system (Resend/SendGrid/Mailgun integration ready)
     - Download tracking and analytics
+12. **Projects Portal Authentication** - Complete authentication system mirroring Whitepapers
+    - Cloudflare Workers-compatible authentication (Web Crypto API, no Node.js dependencies)
+    - User registration with admin approval (is_active=0 by default)
+    - Session-based authentication with HttpOnly cookies
+    - Protected routes requiring authentication (`/projects`, `/projects/:slug`)
+    - Activity logging and failed login attempt tracking
+    - Admin user created (g2admin@g2middleeast.com)
+    - Two separate D1 databases: `webapp-production` (Whitepapers) and `g2-projects-db` (Projects)
+13. **Legal Pages** - GCC-compliant legal documentation
+    - Terms of Service (13 sections, 23,775 characters) covering eligibility, confidentiality, intellectual property, Dubai UAE governing law with DIAC arbitration
+    - Privacy Policy (15 sections, 29,152 characters) with GDPR-aligned data protection, covering all 6 GCC countries, user rights, breach notifications, cookie policy
+    - Footer links to both legal pages with clean URL structure (`/terms-of-service`, `/privacy-policy`)
+14. **Comprehensive robots.txt** - AI crawler and search engine configuration (423 lines)
+    - Allow all major AI crawlers (GPTBot, Claude-Web, Google-Extended, PerplexityBot, CCBot, cohere-ai, anthropic-ai)
+    - Allow all search engines (Googlebot, Bingbot, DuckDuckBot, YandexBot, Baiduspider)
+    - Allow full access to `/projects/` area (including authenticated pages)
+    - Allow `/team/tim-jacobs` profile
+    - Allow `/briefing/` content (Perspectives)
+    - BLOCK `/whitepaper/` and `/whitepapers/` completely
+    - Block admin areas (`/api/admin/`, `/admin/*`)
+    - Block malicious scrapers (AhrefsBot, SemrushBot, MJ12bot, DotBot, BLEXBot, PetalBot, serpstatbot, ZoominfoBot)
+    - Set appropriate crawl delays (0.5-5 seconds depending on crawler type)
 
 ### 🚧 Pending Implementation
 1. **The G-2 Briefing** - Blog listing and article pages
@@ -558,9 +580,17 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 
 ---
 
-**Last Updated**: October 20, 2025
-**Status**: ✅ Comprehensive Portfolio Complete - 43 Project Case Studies Live
+**Last Updated**: January 15, 2025
+**Status**: ✅ Comprehensive Platform Complete - Authentication, Legal, SEO, and 43 Project Case Studies Live
 **Project Scope**: Sports events, cultural programming, major venue openings, NEOM activations, media operations, interfaith events, luxury experiences
+
+**Recent Completions (January 15, 2025)**:
+- ✅ Projects Portal authentication working exactly like Whitepapers (admin approval workflow)
+- ✅ Registration form dropdown text colors fixed (dark text on white background)
+- ✅ GCC-compliant legal pages (Terms of Service & Privacy Policy)
+- ✅ Admin user created (g2admin@g2middleeast.com / G2G2G2)
+- ✅ Comprehensive robots.txt with AI crawler support (423 lines)
+
 **Next Steps**: 
 1. Configure email service (Resend/SendGrid/Mailgun) for production notifications
 2. Set up R2 bucket for PDF file storage and uploads
