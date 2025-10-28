@@ -19,15 +19,13 @@
     }
   ],
   // R2 Storage for whitepapers
-  // Note: R2 bucket must be created via Cloudflare Dashboard first
-  // COMMENTED OUT FOR INITIAL DEPLOYMENT - Will be enabled after R2 is activated
-  // Uncomment after: 1) Enable R2 in dashboard, 2) Run: npx wrangler r2 bucket create g2-whitepapers
-  // "r2_buckets": [
-  //   {
-  //     "binding": "R2",
-  //     "bucket_name": "g2-whitepapers"
-  //   }
-  // ],
+  // ✅ R2 bucket created and ready: g2-whitepapers
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "g2-whitepapers"
+    }
+  ],
   // "kv_namespaces": [
   //   {
   //     "binding": "SESSIONS_KV",
