@@ -595,9 +595,12 @@ app.get('/privacy', (c) => {
 })
 
 // Projects Page
+// TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
 // Protected Projects Page - requires authentication
-app.get('/projects', requireProjectsAuth, async (c) => {
-  const user = c.get('projectsUser') as ProjectsAuth.UserSession
+// PRODUCTION VERSION: app.get('/projects', requireProjectsAuth, async (c) => {
+app.get('/projects', async (c) => {
+  // TODO: REMOVE BEFORE PRODUCTION - Restore this line:
+  // const user = c.get('projectsUser') as ProjectsAuth.UserSession
   
   return c.render(
     <ProjectsPage />,
@@ -832,9 +835,15 @@ app.get('/whitepapers/pending', (c) => {
 })
 
 // Protected Whitepapers Page
+// TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
+// PRODUCTION VERSION: app.get('/whitepapers', async (c) => {
 app.get('/whitepapers', async (c) => {
-  const user = await requireAuth(c)
-  if (user instanceof Response) return user
+  // TODO: REMOVE BEFORE PRODUCTION - Restore these lines:
+  // const user = await requireAuth(c)
+  // if (user instanceof Response) return user
+  
+  // Temporary mock user for development
+  const user = { email: 'dev@g2middleeast.com', name: 'Development User' }
   
   // Fetch active whitepapers
   const whitepapers = await c.env.DB.prepare(
