@@ -10,7 +10,7 @@ export const TeamPage: FC = () => {
     "name": "Tim Jacobs",
     "alternateName": "Timothy Jacobs",
     "url": "https://g2middleeast.com/team/tim-jacobs",
-    "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
+    "image": "https://g2middleeast.com/assets/team/tim-jacobs.jpg",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://g2middleeast.com/team/tim-jacobs"
@@ -48,7 +48,10 @@ export const TeamPage: FC = () => {
       "@type": "PostalAddress",
       "addressLocality": "Dubai",
       "addressRegion": "Dubai",
-      "addressCountry": "AE"
+      "addressCountry": {
+        "@type": "Country",
+        "name": "AE"
+      }
     },
     "email": "tim@g2middleeast.com",
     "telephone": "+971-50-XXX-XXXX",
@@ -103,11 +106,22 @@ export const TeamPage: FC = () => {
     
     "worksFor": {
       "@type": "Organization",
-      "@id": "https://g2middleeast.com#organization",
+      "@id": "https://g2middleeast.com/#organization",
       "name": "G2 Middle East & Africa",
       "alternateName": "G2 Middle East",
-      "url": "https://g2middleeast.com",
+      "url": "https://g2middleeast.com/",
       "description": "Strategic advisory and event architecture division of Casta Diva Group, specialising in high-stakes projects for governments, global brands, and cultural institutions across the Middle East and Africa",
+      "foundingDate": "2015",
+      "knowsAbout": [
+        "Strategic Advisory",
+        "Event Architecture",
+        "Government Relations",
+        "Public Diplomacy",
+        "National Resilience Strategy",
+        "Sovereign Positioning",
+        "Cultural Diplomacy",
+        "Major Event Delivery"
+      ],
       "parentOrganization": {
         "@type": "Organization",
         "name": "Casta Diva Group",
@@ -116,6 +130,28 @@ export const TeamPage: FC = () => {
           "https://www.linkedin.com/company/casta-diva-group/",
           "https://www.instagram.com/castadiva_group/"
         ]
+      },
+      "founder": {
+        "@type": "Person",
+        "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Middle East"
+        },
+        {
+          "@type": "Place",
+          "name": "Africa"
+        },
+        {
+          "@type": "Place",
+          "name": "Global"
+        }
+      ],
+      "employee": {
+        "@type": "Person",
+        "@id": "https://g2middleeast.com/team/tim-jacobs#person"
       }
     },
     
@@ -191,7 +227,11 @@ export const TeamPage: FC = () => {
     
     "award": [
       "Operational director for 30+ globally significant government and sovereign-level projects",
-      "Strategic counsel to heads of state, royal families, and government ministries across Middle East and Africa"
+      "Strategic counsel to heads of state, royal families, and government ministries across Middle East and Africa",
+      "Chairperson, Live Events & Video Awards - Stevie Awards",
+      "Judge, Australian Event Awards",
+      "Jury Panelist, Eventex Awards",
+      "Jury Member, WOW Awards Middle East"
     ],
     
     "subjectOf": [
@@ -273,14 +313,17 @@ export const TeamPage: FC = () => {
         "description": "Operational delivery and project direction for the historic royal state visit of Her Majesty Queen Elizabeth II to the United Arab Emirates",
         "startDate": "2010-11-24",
         "endDate": "2010-11-26",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "United Arab Emirates",
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -306,15 +349,18 @@ export const TeamPage: FC = () => {
         "name": "Papal Mass of Pope Francis in Abu Dhabi",
         "description": "Project direction for the historic Papal Mass delivered by Pope Francis in Abu Dhabi, one of the largest religious gatherings in Middle East history",
         "startDate": "2019-02-05",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -341,15 +387,18 @@ export const TeamPage: FC = () => {
         "description": "Special advisor for ceremonies and strategic counsel on operational delivery for the largest humanitarian sporting event in 2019",
         "startDate": "2019-03-14",
         "endDate": "2019-03-21",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -375,15 +424,18 @@ export const TeamPage: FC = () => {
         "name": "Qasr Al Hosn Festival Abu Dhabi",
         "description": "Managing consultant and director of broadcast and media production for Abu Dhabi's premier cultural heritage festival",
         "startDate": "2013",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -406,15 +458,18 @@ export const TeamPage: FC = () => {
         "description": "Project director for Qatar's official hospitality and diplomatic center during the London 2012 Olympic Games",
         "startDate": "2012-07-27",
         "endDate": "2012-08-12",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "London, United Kingdom",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "London",
-            "addressCountry": "GB"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "GB"
+            }
           }
         },
         "organizer": {
@@ -440,15 +495,18 @@ export const TeamPage: FC = () => {
         "name": "Hazza Bin Zayed Stadium Upgrade",
         "description": "Project director for the comprehensive upgrade and modernization of Hazza Bin Zayed Stadium in Al Ain",
         "startDate": "2017",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Al Ain, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Al Ain",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "performer": {
@@ -466,14 +524,17 @@ export const TeamPage: FC = () => {
         "name": "Turki Oasis for HRH Prince Turki Bin Abdulla",
         "description": "Project director for exclusive private oasis development and event infrastructure for Saudi Royal Family",
         "startDate": "2015",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Saudi Arabia",
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "SA"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "SA"
+            }
           }
         },
         "performer": {
@@ -491,15 +552,18 @@ export const TeamPage: FC = () => {
         "name": "Al Ain Stadium Launch",
         "description": "Managing project consultant for the official launch of Al Ain Stadium, UAE",
         "startDate": "2014",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Al Ain, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Al Ain",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "performer": {
@@ -517,15 +581,18 @@ export const TeamPage: FC = () => {
         "name": "Abu Dhabi National Day ADNEC Celebrations",
         "description": "Project director for Abu Dhabi's official National Day celebrations at ADNEC",
         "startDate": "2012-12-02",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -552,15 +619,18 @@ export const TeamPage: FC = () => {
         "description": "Project director for Qatar's official Olympic hospitality center during London 2012",
         "startDate": "2012-07-27",
         "endDate": "2012-08-12",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "London, United Kingdom",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "London",
-            "addressCountry": "GB"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "GB"
+            }
           }
         },
         "organizer": {
@@ -586,15 +656,18 @@ export const TeamPage: FC = () => {
         "name": "VVIP Formula One Reception Abu Dhabi",
         "description": "Managing consultant for exclusive VVIP hospitality and diplomatic reception at Abu Dhabi Grand Prix",
         "startDate": "2013",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "performer": {
@@ -612,15 +685,18 @@ export const TeamPage: FC = () => {
         "name": "Abu Dhabi EID Celebrations",
         "description": "Managing consultant for Abu Dhabi's official EID celebrations and cultural programming",
         "startDate": "2013",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -642,15 +718,18 @@ export const TeamPage: FC = () => {
         "name": "Japanese State Visit to Abu Dhabi",
         "description": "Project consultant for official Japanese state visit to Abu Dhabi, managing diplomatic protocol and cultural events",
         "startDate": "2012",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -672,8 +751,8 @@ export const TeamPage: FC = () => {
         "name": "Bill & Melinda Gates Foundation Global Vaccine Summit Abu Dhabi",
         "description": "Strategic advisor for the Bill & Melinda Gates Foundation Global Vaccine Summit in Abu Dhabi",
         "startDate": "2013",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -681,7 +760,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -708,8 +790,8 @@ export const TeamPage: FC = () => {
         "name": "French President & Abu Dhabi Government Partnership Event",
         "description": "Project director for official partnership event between French President and Abu Dhabi Government",
         "startDate": "2018",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -717,7 +799,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -741,8 +826,8 @@ export const TeamPage: FC = () => {
         "description": "Strategic consultant for overlay budget planning and operational modeling for Expo 2020 Dubai",
         "startDate": "2018",
         "endDate": "2021",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -750,7 +835,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Dubai",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -777,8 +865,8 @@ export const TeamPage: FC = () => {
         "name": "IOC Venues and Infrastructure Consulting",
         "description": "Consultant for International Olympic Committee on venues and infrastructure planning",
         "startDate": "2015",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -808,8 +896,8 @@ export const TeamPage: FC = () => {
         "name": "Oman UCI Road Championships",
         "description": "Strategic consultant for UCI Road World Championships in Oman",
         "startDate": "2016",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -839,8 +927,8 @@ export const TeamPage: FC = () => {
         "name": "Red Sea International Film Festival",
         "description": "Senior delivery role for Red Sea International Film Festival in Jeddah, Saudi Arabia's premier cultural event",
         "startDate": "2021",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -848,7 +936,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Jeddah",
-            "addressCountry": "SA"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "SA"
+            }
           }
         },
         "organizer": {
@@ -871,8 +962,8 @@ export const TeamPage: FC = () => {
         "name": "NEOM UN Display New York",
         "description": "Senior delivery role for NEOM's official United Nations display and exhibition in New York",
         "startDate": "2019",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -907,8 +998,8 @@ export const TeamPage: FC = () => {
         "name": "World Economic Forum Davos",
         "description": "Senior delivery role for World Economic Forum annual meeting in Davos, Switzerland",
         "startDate": "2020",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -943,8 +1034,8 @@ export const TeamPage: FC = () => {
         "name": "G20 India Media Oasis",
         "description": "Senior delivery role for G20 India Media Oasis, providing media infrastructure and services for global summit",
         "startDate": "2023",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -979,8 +1070,8 @@ export const TeamPage: FC = () => {
         "description": "Senior delivery role for COP27 UN Climate Change Conference in Sharm El-Sheikh, Egypt",
         "startDate": "2022-11-06",
         "endDate": "2022-11-18",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -1015,15 +1106,18 @@ export const TeamPage: FC = () => {
         "name": "Tuwaiq Oasis Saudi Arabia",
         "description": "Project director for Tuwaiq Oasis development and cultural programming in Saudi Arabia",
         "startDate": "2021",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Saudi Arabia",
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "SA"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "SA"
+            }
           }
         },
         "performer": {
@@ -1042,8 +1136,8 @@ export const TeamPage: FC = () => {
         "name": "MENA Special Olympics",
         "description": "Project director for MENA Regional Special Olympics Games",
         "startDate": "2018",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -1073,8 +1167,8 @@ export const TeamPage: FC = () => {
         "name": "Zayed/Gandhi Digital Museum Launch",
         "description": "Project director for the launch of Zayed/Gandhi Digital Museum celebrating UAE-India diplomatic relations",
         "startDate": "2019",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -1082,7 +1176,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -1105,8 +1202,8 @@ export const TeamPage: FC = () => {
         "name": "Chinese State Visit Abu Dhabi - Cultural Exhibition",
         "description": "Project director for cultural exhibition during official Chinese state visit to Abu Dhabi",
         "startDate": "2018",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -1114,7 +1211,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Abu Dhabi",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "organizer": {
@@ -1137,8 +1237,8 @@ export const TeamPage: FC = () => {
         "name": "Du Gitex and Mecom Exhibition Stands",
         "description": "Technical director for Du telecommunications exhibition stands at Gitex and Mecom technology conferences",
         "startDate": "2012",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -1146,7 +1246,10 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Dubai",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "performer": {
@@ -1165,8 +1268,8 @@ export const TeamPage: FC = () => {
         "name": "Dubailand Exhibition Stands",
         "description": "Technical director for Dubailand promotional exhibition stands and displays",
         "startDate": "2011",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "http://schema.org/EventScheduled",
+        "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
         "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
@@ -1174,114 +1277,21 @@ export const TeamPage: FC = () => {
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Dubai",
-            "addressCountry": "AE"
+            "addressCountry": {
+              "@type": "Country",
+              "name": "AE"
+            }
           }
         },
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Technical Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
           "audienceType": "Real Estate Investors, Business Leaders, General Public"
         }
-      }
-    ],
-    
-    "keywords": [
-      "Tim Jacobs",
-      "G2 Middle East",
-      "Statecraft Advisor",
-      "Sovereign-Level Advisor",
-      "Government Initiatives Specialist",
-      "Geopolitical Risk Advisor",
-      "National Resilience Strategist",
-      "Public Diplomacy Expert",
-      "Cognitive Security Specialist",
-      "Counter-Disinformation Strategy",
-      "National Reputation Architecture",
-      "Sovereign Reputation Strategy",
-      "Strategic Communications Expert",
-      "Long-Term Digital Positioning",
-      "Major Event Architecture",
-      "Operational Delivery for Governments",
-      "State Visit Specialist",
-      "Cross-Border Government Relations",
-      "Protocol & Diplomatic Operations",
-      "Sovereign Positioning Strategy",
-      "Geopolitical Risk & Strategic Partnership Vetting",
-      "Strategic Planning & Contingency",
-      "National Resilience & Critical Incident Strategy",
-      "Cultural Intelligence for Governments",
-      "GCC Government Relations",
-      "Middle East Government Advisory",
-      "Papal Mass Abu Dhabi",
-      "Queen Elizabeth II UAE Visit",
-      "Special Olympics World Games",
-      "Red Sea Film Festival",
-      "Expo 2020 Dubai",
-      "COP27 Egypt",
-      "G20 Summit",
-      "World Economic Forum Davos",
-      "NEOM Saudi Arabia",
-      "Abu Dhabi Government Events",
-      "Dubai Government Events",
-      "Saudi Arabia Government Events",
-      "Qatar Government Events",
-      "Middle East Mega Events",
-      "State Visit Coordination",
-      "Royal Visit Planning",
-      "Presidential Visit Logistics",
-      "Cultural Diplomacy Events",
-      "Olympic Planning",
-      "International Summit Coordination",
-      "National Day Celebrations",
-      "Summit Logistics",
-      "Head-of-State Event Management"
-    ],
-    
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "Sovereign-Level Advisor & Government Initiatives Specialist",
-        "description": "Leading advisor on operational delivery for complex government initiatives with geopolitical significance. Delivered 30+ major projects including State Visit of Queen Elizabeth II, Papal Mass of Pope Francis, Special Olympics World Games, Expo 2020, COP27, and G20 summits across UAE, Saudi Arabia, Qatar, Egypt, and globally."
-      },
-      {
-        "@type": "Thing",
-        "name": "National Resilience & Critical Incident Strategy",
-        "description": "Strategic counsel to governments on national resilience, critical incident response, and strategic planning for high-stakes sovereign operations"
-      },
-      {
-        "@type": "Thing",
-        "name": "Public Diplomacy & Sovereign Digital Legacy",
-        "description": "Specialist in public diplomacy, strategic narrative development, and building long-term digital positioning for sovereign clients"
-      },
-      {
-        "@type": "Thing",
-        "name": "Cognitive Security & Counter-Disinformation Strategy",
-        "description": "Advisory on cognitive security frameworks, counter-disinformation strategy, and protecting national reputation in information environments"
-      },
-      {
-        "@type": "Thing",
-        "name": "State Visit Planning & Protocol Execution",
-        "description": "Specialist in state visit planning, royal visit coordination, and presidential visit logistics including operational delivery for Queen Elizabeth II, Pope Francis, French President, Chinese State Visit, and Japanese State Visit to UAE"
-      },
-      {
-        "@type": "Thing",
-        "name": "Mega-Event Architecture & Government Event Delivery",
-        "description": "Master planning and operational frameworks for Expo 2020 Dubai, IOC venues and infrastructure, and Special Olympics World Games with expertise in sovereign-level event management"
-      },
-      {
-        "@type": "Thing",
-        "name": "Cultural Diplomacy & Cross-Border Government Relations",
-        "description": "Project direction for cultural diplomacy events including Qasr Al Hosn Festival, Red Sea International Film Festival, National Day celebrations, and cultural exhibitions advancing UAE-India, UAE-China, and regional government relations"
-      },
-      {
-        "@type": "Thing",
-        "name": "Geopolitical Risk & Strategic Partnership Vetting",
-        "description": "Advisory on geopolitical risk assessment, strategic partnership vetting, and cross-border government relations for sovereign entities"
       }
     ],
     
