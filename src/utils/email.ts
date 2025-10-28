@@ -29,7 +29,10 @@ export async function sendEmail(params: EmailParams, apiKey?: string, service: s
     return true
   }
 
-  const fromEmail = params.from || 'noreply@g2middleeast.com'
+  // TEMPORARY: Using Resend onboarding domain until g2middleeast.com is verified
+  // TODO: Change back to 'noreply@g2middleeast.com' after domain verification in Resend
+  // See RESEND_TROUBLESHOOTING.md for domain verification steps
+  const fromEmail = params.from || 'onboarding@resend.dev'
   const fromName = 'G2 Middle East'
 
   try {
