@@ -54,8 +54,8 @@ app.use('/static/*', serveStatic({ root: './public' }))
 // Serve robots.txt with inline content
 app.get('/robots.txt', (c) => {
   const robotsTxt = `# robots.txt for G2 Middle East
-# Updated: 2025-01-15
-# Purpose: Allow AI crawlers and search engines full access except whitepaper section
+# Updated: 2025-10-28
+# Purpose: Maximise SEO, AI/LLM visibility, and protect sensitive content
 
 # ============================================
 # UNIVERSAL RULES - Apply to All Bots
@@ -76,30 +76,32 @@ Disallow: /*?reset=
 Disallow: /projects/verify-email
 Disallow: /projects/reset-password
 
-# Allow projects area (authenticated content is fine to crawl)
+# Allow public content and key areas
 Allow: /projects/
 Allow: /projects/dashboard
 Allow: /projects/case-studies/
 Allow: /projects/login
 Allow: /projects/register
-
-# Allow team pages and Tim Jacobs profile
 Allow: /team/
 Allow: /team/tim-jacobs
-
-# Allow insights and public content
 Allow: /briefing/
 Allow: /perspectives/
 Allow: /contact/
 Allow: /services/
 
-# Sitemap location
+# Sitemap locations
 Sitemap: https://g2middleeast.com/sitemap.xml
 Sitemap: https://g2middleeast.com/sitemap-projects.xml
 
+# LLMs/AI: See https://g2middleeast.com/llms.txt for structured company data
+
+# Privacy: https://g2middleeast.com/privacy-policy
+# Terms: https://g2middleeast.com/terms-of-service
+# Brand logo: https://g2middleeast.com/assets/logo-g2me.svg
+# Preferred citation: "G2 Middle East & Africa, a specialised division of Casta Diva Group focused on strategic advisory and governmental affairs in the Middle East and Africa."
 
 # ============================================
-# OPENAI GPT CRAWLER (ChatGPT)
+# AI/LLM CRAWLERS (Explicit Permissions)
 # ============================================
 
 User-agent: GPTBot
@@ -112,11 +114,6 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
 
-
-# ============================================
-# ANTHROPIC CLAUDE CRAWLER
-# ============================================
-
 User-agent: Claude-Web
 Allow: /
 Disallow: /whitepaper/
@@ -127,10 +124,15 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
 
-
-# ============================================
-# GOOGLE AI (BARD/GEMINI)
-# ============================================
+User-agent: anthropic-ai
+Allow: /
+Disallow: /whitepaper/
+Disallow: /whitepapers/
+Disallow: /api/admin/
+Allow: /projects/
+Allow: /team/tim-jacobs
+Allow: /briefing/
+Crawl-delay: 1
 
 User-agent: Google-Extended
 Allow: /
@@ -142,11 +144,6 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
 
-
-# ============================================
-# PERPLEXITY AI CRAWLER
-# ============================================
-
 User-agent: PerplexityBot
 Allow: /
 Disallow: /whitepaper/
@@ -156,11 +153,6 @@ Allow: /projects/
 Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
-
-
-# ============================================
-# COMMON CRAWL (Used by many AI models)
-# ============================================
 
 User-agent: CCBot
 Allow: /
@@ -172,27 +164,7 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 2
 
-
-# ============================================
-# COHERE AI CRAWLER
-# ============================================
-
 User-agent: cohere-ai
-Allow: /
-Disallow: /whitepaper/
-Disallow: /whitepapers/
-Disallow: /api/admin/
-Allow: /projects/
-Allow: /team/tim-jacobs
-Allow: /briefing/
-Crawl-delay: 1
-
-
-# ============================================
-# META AI (Facebook/Instagram AI)
-# ============================================
-
-User-agent: FacebookBot
 Allow: /
 Disallow: /whitepaper/
 Disallow: /whitepapers/
@@ -211,26 +183,6 @@ Allow: /projects/
 Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
-
-
-# ============================================
-# AMAZON ALEXA
-# ============================================
-
-User-agent: ia_archiver
-Allow: /
-Disallow: /whitepaper/
-Disallow: /whitepapers/
-Disallow: /api/admin/
-Allow: /projects/
-Allow: /team/tim-jacobs
-Allow: /briefing/
-Crawl-delay: 2
-
-
-# ============================================
-# APPLE APPLEBOT (Siri, Spotlight)
-# ============================================
 
 User-agent: Applebot
 Allow: /
@@ -252,9 +204,8 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
 
-
 # ============================================
-# GOOGLE SEARCH CRAWLER
+# SEARCH ENGINE CRAWLERS (Google, Bing, Yandex, Baidu, DuckDuckGo)
 # ============================================
 
 User-agent: Googlebot
@@ -278,11 +229,6 @@ Disallow: /whitepaper/
 Disallow: /api/admin/
 Allow: /briefing/
 
-
-# ============================================
-# BING SEARCH CRAWLER
-# ============================================
-
 User-agent: Bingbot
 Allow: /
 Disallow: /whitepaper/
@@ -292,11 +238,6 @@ Allow: /projects/
 Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
-
-
-# ============================================
-# YANDEX SEARCH CRAWLER
-# ============================================
 
 User-agent: YandexBot
 Allow: /
@@ -308,11 +249,6 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 2
 
-
-# ============================================
-# BAIDU SEARCH CRAWLER (China)
-# ============================================
-
 User-agent: Baiduspider
 Allow: /
 Disallow: /whitepaper/
@@ -322,11 +258,6 @@ Allow: /projects/
 Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 2
-
-
-# ============================================
-# DUCKDUCKGO SEARCH CRAWLER
-# ============================================
 
 User-agent: DuckDuckBot
 Allow: /
@@ -338,15 +269,11 @@ Allow: /team/tim-jacobs
 Allow: /briefing/
 Crawl-delay: 1
 
-
 # ============================================
-# ACADEMIC & RESEARCH CRAWLERS
+# SOCIAL MEDIA CRAWLERS
 # ============================================
 
-User-agent: Scrapy
-Disallow: /
-
-User-agent: archive.org_bot
+User-agent: FacebookBot
 Allow: /
 Disallow: /whitepaper/
 Disallow: /whitepapers/
@@ -354,19 +281,7 @@ Disallow: /api/admin/
 Allow: /projects/
 Allow: /team/tim-jacobs
 Allow: /briefing/
-Crawl-delay: 5
-
-User-agent: Wayback Machine
-Allow: /
-Disallow: /whitepaper/
-Disallow: /whitepapers/
-Disallow: /api/admin/
-Crawl-delay: 5
-
-
-# ============================================
-# SOCIAL MEDIA CRAWLERS
-# ============================================
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -392,6 +307,60 @@ Allow: /projects/
 Allow: /team/tim-jacobs
 Allow: /briefing/
 
+# ============================================
+# ACADEMIC & RESEARCH CRAWLERS
+# ============================================
+
+User-agent: ia_archiver
+Allow: /
+Disallow: /whitepaper/
+Disallow: /whitepapers/
+Disallow: /api/admin/
+Allow: /projects/
+Allow: /team/tim-jacobs
+Allow: /briefing/
+Crawl-delay: 2
+
+User-agent: archive.org_bot
+Allow: /
+Disallow: /whitepaper/
+Disallow: /whitepapers/
+Disallow: /api/admin/
+Allow: /projects/
+Allow: /team/tim-jacobs
+Allow: /briefing/
+Crawl-delay: 5
+
+User-agent: Wayback Machine
+Allow: /
+Disallow: /whitepaper/
+Disallow: /whitepapers/
+Disallow: /api/admin/
+Crawl-delay: 5
+
+# ============================================
+# EMERGING AI CRAWLERS
+# ============================================
+
+User-agent: Omgilibot
+Allow: /
+Disallow: /whitepaper/
+Disallow: /whitepapers/
+Disallow: /api/admin/
+Allow: /projects/
+Allow: /team/tim-jacobs
+Allow: /briefing/
+Crawl-delay: 2
+
+User-agent: YouBot
+Allow: /
+Disallow: /whitepaper/
+Disallow: /whitepapers/
+Disallow: /api/admin/
+Allow: /projects/
+Allow: /team/tim-jacobs
+Allow: /briefing/
+Crawl-delay: 1
 
 # ============================================
 # BLOCK MALICIOUS/SCRAPER BOTS
@@ -424,41 +393,8 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-
-# ============================================
-# EMERGING AI CRAWLERS
-# ============================================
-
-User-agent: anthropic-ai
-Allow: /
-Disallow: /whitepaper/
-Disallow: /whitepapers/
-Disallow: /api/admin/
-Allow: /projects/
-Allow: /team/tim-jacobs
-Allow: /briefing/
-Crawl-delay: 1
-
-User-agent: Omgilibot
-Allow: /
-Disallow: /whitepaper/
-Disallow: /whitepapers/
-Disallow: /api/admin/
-Allow: /projects/
-Allow: /team/tim-jacobs
-Allow: /briefing/
-Crawl-delay: 2
-
-User-agent: YouBot
-Allow: /
-Disallow: /whitepaper/
-Disallow: /whitepapers/
-Disallow: /api/admin/
-Allow: /projects/
-Allow: /team/tim-jacobs
-Allow: /briefing/
-Crawl-delay: 1
-
+User-agent: Scrapy
+Disallow: /
 
 # ============================================
 # NOTES & DOCUMENTATION
@@ -474,6 +410,7 @@ Crawl-delay: 1
 # 7. BLOCK admin areas and sensitive API endpoints
 # 8. BLOCK malicious scrapers and SEO bots
 # 9. Set appropriate crawl delays to prevent server overload
+# 10. Reference llms.txt for structured company data
 
 # For questions or modifications, contact: tim@g2middleeast.com
 `
