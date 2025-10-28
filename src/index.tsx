@@ -613,8 +613,11 @@ app.get('/', (c) => {
   return c.render(
     <HomePage />,
     {
-      title: 'G2 Middle East | Architecture of Intangible Value',
-      description: 'Strategic partners for sovereign entities and global brands. We architect intangible value through sophisticated communication and experience design.'
+      title: 'Government Event Management UAE | G2 Middle East',
+      description: 'Leading government event management in Dubai & Middle East. 50+ major projects including state visits, diplomatic protocol, Papal Mass Abu Dhabi (180,000 attendees). Expert strategic advisory. 24-hour response.',
+      canonicalUrl: 'https://g2middleeast.com',
+      ogImage: 'https://g2middleeast.com/static/og-homepage.jpg',
+      ogImageAlt: 'G2 Middle East - Leading Government Event Management in UAE and Middle East'
     }
   )
 })
@@ -624,8 +627,11 @@ app.get('/services', (c) => {
   return c.render(
     <ServicesPage />,
     {
-      title: 'Strategic Services | G2 Middle East',
-      description: 'Sovereign branding, luxury positioning, and strategic communications for highstakes challenges in the Middle East.'
+      title: 'Strategic Services | Government Event Management | G2 Middle East UAE',
+      description: 'Expert government event management services in UAE & GCC: State visit coordination, diplomatic protocol advisory, national celebrations, strategic communications. 50+ major projects delivered. Contact us today.',
+      canonicalUrl: 'https://g2middleeast.com/services',
+      ogImage: 'https://g2middleeast.com/static/og-services.jpg',
+      ogImageAlt: 'G2 Middle East Strategic Services - Government Event Management'
     }
   )
 })
@@ -635,8 +641,11 @@ app.get('/team', (c) => {
   return c.render(
     <TeamPage />,
     {
-      title: 'Our Team | G2 Middle East',
-      description: 'Meet the strategic minds behind G2 Middle East. Senior advisors who thrive under pressure and turn complexity into competitive advantage.'
+      title: 'Expert Team | Government Event Advisors | G2 Middle East UAE',
+      description: 'Meet the strategic minds behind G2 Middle East. 20+ years experience in government event management, state visits, and diplomatic protocol across UAE, Saudi Arabia, and Middle East. Led by Regional COO Tim Jacobs.',
+      canonicalUrl: 'https://g2middleeast.com/team',
+      ogImage: 'https://g2middleeast.com/static/og-team.jpg',
+      ogImageAlt: 'G2 Middle East Expert Team - Government Event Management Advisors'
     }
   )
 })
@@ -653,8 +662,12 @@ app.get('/team/:slug', (c) => {
   return c.render(
     <TeamDetailPage {...executiveData} />,
     {
-      title: `${executiveData.name} - ${executiveData.jobTitle} | G2 Middle East`,
-      description: executiveData.description.substring(0, 160).replace(/<[^>]*>/g, '')
+      title: `${executiveData.name} - ${executiveData.jobTitle} | Government Events Expert | G2 Middle East`,
+      description: executiveData.description.substring(0, 155).replace(/<[^>]*>/g, ''),
+      canonicalUrl: `https://g2middleeast.com/team/${slug}`,
+      ogImage: executiveData.photo || 'https://g2middleeast.com/static/og-team-default.jpg',
+      ogImageAlt: `${executiveData.name} - ${executiveData.jobTitle} at G2 Middle East`,
+      author: executiveData.name
     }
   )
 })
@@ -675,8 +688,11 @@ app.get('/contact', (c) => {
   return c.render(
     <ContactPage />,
     {
-      title: 'Contact Us | G2 Middle East',
-      description: 'Bring us your highstakes challenges. We respond within 24 hours.'
+      title: 'Contact Us | Government Event Management Experts | G2 Middle East Dubai',
+      description: 'Contact G2 Middle East for expert government event management in Dubai & UAE. We respond within 24 hours. State visit coordination, diplomatic protocol advisory, strategic planning. Call us today.',
+      canonicalUrl: 'https://g2middleeast.com/contact',
+      ogImage: 'https://g2middleeast.com/static/og-contact.jpg',
+      ogImageAlt: 'Contact G2 Middle East - Government Event Management in Dubai UAE'
     }
   )
 })
@@ -724,8 +740,11 @@ app.get('/projects', async (c) => {
   return c.render(
     <ProjectsPage />,
     {
-      title: 'Projects | G2 Middle East',
-      description: 'Case studies in strategic impact and flawless execution. From sovereign positioning to luxury experiences, showcasing the architecture of intangible value.'
+      title: 'Government Projects | Case Studies | State Visits | G2 Middle East UAE',
+      description: 'Explore 50+ major government event projects across UAE & Middle East: Papal Mass Abu Dhabi (180,000 attendees), Queen Elizabeth II State Visit, COP27 Egypt, Expo 2020 Dubai. Confidential case studies.',
+      canonicalUrl: 'https://g2middleeast.com/projects',
+      ogImage: 'https://g2middleeast.com/static/og-projects.jpg',
+      ogImageAlt: 'G2 Middle East Government Projects - Major Event Case Studies'
     }
   )
 })
@@ -879,8 +898,13 @@ app.get('/projects/:slug', async (c) => {
   return c.render(
     <ProjectDetailPage {...projectData} />,
     {
-      title: `${projectData.title} | G2 Middle East`,
-      description: projectData.engagingParagraph.substring(0, 160)
+      title: `${projectData.title} | Government Event Case Study | G2 Middle East`,
+      description: projectData.engagingParagraph.substring(0, 155),
+      canonicalUrl: `https://g2middleeast.com/projects/${slug}`,
+      ogImage: projectData.images && projectData.images[0] ? projectData.images[0] : 'https://g2middleeast.com/static/og-project-default.jpg',
+      ogImageAlt: `${projectData.title} - Government Event Case Study by G2 Middle East`,
+      ogType: 'article',
+      author: 'G2 Middle East'
     }
   )
 })
@@ -890,8 +914,11 @@ app.get('/perspectives', (c) => {
   return c.render(
     <PerspectivesPage />,
     {
-      title: 'Perspectives | G2 Middle East',
-      description: 'Strategic insights on brand architecture, market positioning, and the future of communications in an AI-driven world.'
+      title: 'Strategic Insights | Government Events Blog | G2 Middle East UAE',
+      description: 'Expert insights on government event management, diplomatic protocol, state visit coordination, and strategic advisory in UAE & Middle East. Written by industry leaders with 20+ years experience.',
+      canonicalUrl: 'https://g2middleeast.com/perspectives',
+      ogImage: 'https://g2middleeast.com/static/og-perspectives.jpg',
+      ogImageAlt: 'G2 Middle East Perspectives - Strategic Insights on Government Events'
     }
   )
 })
@@ -913,8 +940,15 @@ app.get('/perspectives/:slug', (c) => {
   return c.render(
     <PerspectiveDetailPage {...perspectiveData} />,
     {
-      title: `${perspectiveData.title} | G2 Middle East`,
-      description: perspectiveData.excerpt || perspectiveData.title
+      title: `${perspectiveData.title} | Strategic Insights | G2 Middle East`,
+      description: (perspectiveData.excerpt || perspectiveData.title).substring(0, 155),
+      canonicalUrl: `https://g2middleeast.com/perspectives/${slug}`,
+      ogImage: perspectiveData.image || 'https://g2middleeast.com/static/og-perspective-default.jpg',
+      ogImageAlt: perspectiveData.title,
+      ogType: 'article',
+      author: perspectiveData.author,
+      publishedTime: perspectiveData.date,
+      twitterCreator: '@TimJacobs'
     }
   )
 })

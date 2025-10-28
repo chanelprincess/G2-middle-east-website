@@ -11,8 +11,69 @@ export interface PerspectiveData {
 }
 
 export function PerspectiveDetailPage(props: PerspectiveData) {
+  // Generate Article schema for this perspective
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `https://g2middleeast.com/perspectives/${props.slug}#article`,
+        "headline": props.title,
+        "description": props.excerpt,
+        "image": props.heroImage ? {
+          "@type": "ImageObject",
+          "url": props.heroImage,
+          "width": 1200,
+          "height": 630,
+          "caption": props.title
+        } : undefined,
+        "author": {
+          "@type": "Person",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+          "name": props.author,
+          "jobTitle": props.authorTitle,
+          "url": "https://g2middleeast.com/team/tim-jacobs"
+        },
+        "publisher": {"@id": "https://g2middleeast.com/#organization"},
+        "datePublished": props.date,
+        "dateModified": props.date,
+        "inLanguage": "en",
+        "articleSection": "Strategic Insights",
+        "about": [
+          {"@type": "Thing", "name": "Strategic Advisory"},
+          {"@type": "Thing", "name": "Brand Architecture"},
+          {"@type": "Thing", "name": "Strategic Communications"},
+          {"@type": "Thing", "name": "Middle East Business"}
+        ],
+        "keywords": `${props.title}, G2 Middle East, Tim Jacobs, strategic advisory, brand strategy, Middle East, GCC, strategic communications`,
+        "isPartOf": {
+          "@type": "Blog",
+          "@id": "https://g2middleeast.com/perspectives#blog",
+          "name": "G2 Middle East Perspectives"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://g2middleeast.com/perspectives/${props.slug}`
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://g2middleeast.com"},
+          {"@type": "ListItem", "position": 2, "name": "Perspectives", "item": "https://g2middleeast.com/perspectives"},
+          {"@type": "ListItem", "position": 3, "name": props.title, "item": `https://g2middleeast.com/perspectives/${props.slug}`}
+        ]
+      }
+    ]
+  };
+
   return (
     <div class="min-h-screen bg-black text-white">
+      {/* Schema.org Structured Data - Article */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(articleSchema)
+      }} />
+
       {/* Hero Section with Background Image */}
       <section class="relative py-16 md:py-24 border-b border-white/5 overflow-hidden">
         {/* Hero Image Background with 70% opacity */}

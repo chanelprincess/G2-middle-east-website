@@ -28,8 +28,112 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
   engagingParagraph,
   supportingImages
 }) => {
-  // Schema.org Article markup for project case study
-  const projectSchema = {
+  // Enhanced Schema for high-profile government events
+  const highProfileEvents: Record<string, any> = {
+    'papal-mass-abu-dhabi': {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Event",
+          "@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event",
+          "name": "Papal Mass Abu Dhabi 2019 - Pope Francis Historic Visit",
+          "alternateName": "Papal Mass Abu Dhabi, Pope Francis UAE Visit",
+          "description": "The historic Papal Mass in Abu Dhabi on February 5, 2019, marked the first-ever Papal Mass held on the Arabian Peninsula. Pope Francis celebrated Mass before 180,000 attendees at Zayed Sports City Stadium. G2 Middle East, led by Project Director Tim Jacobs, coordinated all aspects including diplomatic protocol with the Vatican, security for 180,000 attendees, international media strategy, VIP guest management, and ceremonial planning.",
+          "startDate": "2019-02-05T10:30:00+04:00",
+          "endDate": "2019-02-05T14:00:00+04:00",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Zayed Sports City Stadium",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Abu Dhabi",
+              "addressCountry": "AE"
+            }
+          },
+          "organizer": {"@id": "https://g2middleeast.com/#organization"},
+          "performer": [
+            {
+              "@type": "Person",
+              "name": "Pope Francis",
+              "jobTitle": "Pope",
+              "sameAs": "https://en.wikipedia.org/wiki/Pope_Francis"
+            }
+          ],
+          "director": {
+            "@type": "Person",
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+            "name": "Tim Jacobs",
+            "jobTitle": "Project Director"
+          },
+          "attendees": {
+            "@type": "QuantitativeValue",
+            "value": 180000,
+            "unitText": "attendees"
+          },
+          "inLanguage": ["en", "ar", "it"],
+          "about": [
+            {"@type": "Thing", "name": "Interfaith Dialogue"},
+            {"@type": "Thing", "name": "Cultural Diplomacy"},
+            {"@type": "Thing", "name": "Government Event Management"}
+          ],
+          "keywords": "Papal Mass, Pope Francis, Abu Dhabi, UAE, interfaith dialogue, government event management, Tim Jacobs, G2 Middle East, state visit, diplomatic protocol, 180000 attendees"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://g2middleeast.com"},
+            {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://g2middleeast.com/projects"},
+            {"@type": "ListItem", "position": 3, "name": "Papal Mass Abu Dhabi 2019", "item": "https://g2middleeast.com/projects/papal-mass-abu-dhabi"}
+          ]
+        }
+      ]
+    },
+    'queen-elizabeth-ii-state-visit': {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Event",
+          "@id": "https://g2middleeast.com/projects/queen-elizabeth-ii-state-visit#event",
+          "name": "State Visit of H.M. Queen Elizabeth II to United Arab Emirates",
+          "alternateName": "Queen Elizabeth II UAE State Visit, Royal Visit UAE 2010",
+          "description": "The State Visit of Her Majesty Queen Elizabeth II to the UAE in November 2010 represented a landmark moment in UK-UAE diplomatic relations. G2 Middle East coordinated all aspects including bilateral meetings, royal receptions, cultural exchanges, and media strategy.",
+          "startDate": "2010-11-24T08:00:00+04:00",
+          "endDate": "2010-11-26T20:00:00+04:00",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": [
+            {"@type": "Place", "name": "Abu Dhabi", "address": {"@type": "PostalAddress", "addressLocality": "Abu Dhabi", "addressCountry": "AE"}},
+            {"@type": "Place", "name": "Dubai", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}}
+          ],
+          "organizer": {"@id": "https://g2middleeast.com/#organization"},
+          "performer": [
+            {"@type": "Person", "name": "Queen Elizabeth II", "jobTitle": "Queen of the United Kingdom"},
+            {"@type": "Person", "name": "Prince Philip, Duke of Edinburgh"}
+          ],
+          "director": {"@type": "Person", "@id": "https://g2middleeast.com/team/tim-jacobs#person", "name": "Tim Jacobs"},
+          "about": [
+            {"@type": "Thing", "name": "State Visit"},
+            {"@type": "Thing", "name": "Diplomatic Protocol"},
+            {"@type": "Thing", "name": "UK-UAE Relations"}
+          ],
+          "keywords": "Queen Elizabeth II, State Visit, UAE, diplomatic protocol, royal visit, Tim Jacobs, G2 Middle East, UK-UAE relations"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://g2middleeast.com"},
+            {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://g2middleeast.com/projects"},
+            {"@type": "ListItem", "position": 3, "name": "Queen Elizabeth II State Visit", "item": "https://g2middleeast.com/projects/queen-elizabeth-ii-state-visit"}
+          ]
+        }
+      ]
+    }
+  };
+
+  // Use enhanced Event schema for high-profile projects, otherwise use standard Article schema
+  const projectSchema = highProfileEvents[slug] || {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": title,
