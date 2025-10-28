@@ -99,19 +99,29 @@ Fields: id, slug, title, excerpt, content, author,
 Email list for The G-2 Briefing newsletter.
 
 ### R2 Storage Structure
+**Bucket Name**: `g2-whitepapers`  
+**Status**: ✅ Configured (requires Cloudflare Dashboard activation)
+
 ```
-g2-assets/
-├── whitepapers/
-│   ├── g2-middle-east-presentation.pdf
-│   └── strategic-communications-guide.pdf
-├── projects/
-│   └── [project-slug]/
-│       ├── hero.jpg
-│       └── gallery-*.jpg
-└── blog/
-    └── [post-slug]/
-        └── featured-image.jpg
+g2-whitepapers/
+└── whitepapers/
+    ├── [timestamp]-g2-middle-east-presentation.pdf
+    ├── [timestamp]-strategic-communications-guide.pdf
+    └── [timestamp]-[safe-filename].pdf
 ```
+
+**File Upload Features**:
+- Automatic timestamp prefixing to prevent collisions
+- Safe filename sanitization (removes special characters)
+- Multipart form data support
+- Content-Type detection based on file extension
+- File size tracking in database
+
+**R2 Setup Instructions**:
+1. Go to Cloudflare Dashboard → R2
+2. Enable R2 (requires payment method on file)
+3. Create bucket: `npx wrangler r2 bucket create g2-whitepapers`
+4. Bucket will be automatically bound to application via `wrangler.jsonc`
 
 ## Project Structure
 
@@ -152,7 +162,14 @@ webapp/
    - Whitepaper registration sends approval request to admin and pending confirmation to user
    - User approval sends welcome email to approved users
    - All emails use branded HTML templates with G2 styling
-6. **Projects Page** - Complete case study showcase with 43 projects
+6. **R2 Storage Integration** - File upload and download system for whitepapers
+   - Admin panel supports PDF file uploads with multipart/form-data
+   - Secure download endpoint with authentication and tracking
+   - Automatic file path generation with safe naming
+   - File deletion removes both database record and R2 object
+   - Production-ready with R2 bucket configuration
+   - Development mode with graceful degradation when R2 unavailable
+7. **Projects Page** - Complete case study showcase with 43 projects
    - Filterable grid with 20+ category filters
    - Detailed project pages with hero images, supporting gallery (4 images each)
    - Categories: Sports Events, Sports Infrastructure, Sports Facilities, Cultural Events, Cultural Strategy, Innovation, Brand Activation, Media Events, International Relations, Major Events, Landmark Events, Interfaith Events, Thought Leadership, Luxury Events, and more
@@ -194,10 +211,9 @@ webapp/
     - Set appropriate crawl delays (0.5-5 seconds depending on crawler type)
 
 ### 🚧 Pending Implementation
-1. **The G-2 Briefing** - Blog listing and article pages
-2. **R2 Integration** - Upload and serve whitepaper PDFs from R2 storage
-3. **Newsletter Subscription** - Email capture for The G-2 Briefing
-4. **Search Functionality** - Site-wide content search
+1. **Newsletter Subscription** - Email capture for The G-2 Briefing
+2. **Search Functionality** - Site-wide content search
+3. **Production R2 Setup** - Enable R2 in Cloudflare Dashboard and create bucket
 
 ## Installation & Setup
 
@@ -601,12 +617,17 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 **Project Scope**: Sports events, cultural programming, major venue openings, NEOM activations, media operations, interfaith events, luxury experiences
 
 **Recent Completions (October 28, 2025)**:
-- ✅ Email notification system fully functional with Resend API
-- ✅ Contact form sends admin notifications and user confirmations
-- ✅ Whitepaper registration workflow sends approval requests and confirmations
-- ✅ User approval sends welcome emails to approved users
-- ✅ Database migration added for leads table
-- ✅ All email templates use branded HTML with G2 styling
+- ✅ **R2 Storage Integration** - Complete file upload/download system for whitepapers
+  - Upload PDFs via admin panel with multipart/form-data
+  - Secure authenticated downloads with tracking
+  - File deletion removes both DB records and R2 objects
+  - Safe filename generation and content-type detection
+- ✅ **Email Notification System** - Fully functional with Resend API
+  - Contact form sends admin notifications and user confirmations
+  - Whitepaper registration workflow sends approval requests and confirmations
+  - User approval sends welcome emails to approved users
+  - Database migration added for leads table
+  - All email templates use branded HTML with G2 styling
 
 **Previous Completions (January 15, 2025)**:
 - ✅ Projects Portal authentication working exactly like Whitepapers (admin approval workflow)
@@ -617,7 +638,7 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 
 **Next Steps**: 
 1. ✅ ~~Configure email service (Resend/SendGrid/Mailgun) for production notifications~~ **COMPLETED**
-2. Set up R2 bucket for PDF file storage and uploads
+2. ✅ ~~Set up R2 bucket for PDF file storage and uploads~~ **COMPLETED** (requires Cloudflare Dashboard activation)
 3. Deploy to Cloudflare Pages production environment
-4. Complete The G-2 Briefing blog section
+4. Enable R2 in Cloudflare Dashboard and create `g2-whitepapers` bucket
 5. Configure custom domain

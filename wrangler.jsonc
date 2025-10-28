@@ -18,6 +18,15 @@
       "database_id": "956fedce-94ef-4edf-a17c-15f7987a42cd"
     }
   ],
+  // R2 Storage for whitepapers
+  // Note: R2 bucket must be created via Cloudflare Dashboard first
+  // Then run: npx wrangler r2 bucket create g2-whitepapers
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "g2-whitepapers"
+    }
+  ],
   // "kv_namespaces": [
   //   {
   //     "binding": "SESSIONS_KV",

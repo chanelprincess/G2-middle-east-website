@@ -29,6 +29,7 @@ import { TermsOfServicePage } from './pages/TermsOfService'
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
 import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail, getContactFormNotificationEmail, getContactFormConfirmationEmail } from './utils/email'
+import { uploadFile, downloadFile, deleteFile, generateFilePath } from './utils/r2'
 import * as ProjectsAuth from './lib/projects-auth'
 import { requireProjectsAuth, logActivity, setProjectsAuthCookie, getProjectsAuthSession, clearProjectsAuthCookie } from './lib/projects-auth'
 import { generateSitemap, generateSitemapIndex, formatDate } from './utils/sitemap'
@@ -2038,18 +2039,43 @@ app.get('/api/whitepapers/download/:id', async (c) => {
       'UPDATE whitepapers SET download_count = download_count + 1 WHERE id = ?'
     ).bind(whitepaperId).run()
     
-    // For now, return a placeholder response
-    // TODO: Implement actual file serving from R2 bucket
-    return c.html(`
-      <html>
-        <body>
-          <h1>Download: ${whitepaper.title}</h1>
-          <p>File path: ${whitepaper.file_path}</p>
-          <p>In production, this would serve the actual PDF file from R2 storage.</p>
-          <a href="/whitepapers">Back to White Papers</a>
-        </body>
-      </html>
-    `)
+    // Download file from R2
+    const result = await downloadFile(c.env.R2, whitepaper.file_path as string)
+    
+    if (!result.success || !result.data) {
+      console.error('File download failed:', result.error)
+      return c.html(`
+        <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+              .error { background: #fee; border-left: 4px solid #c33; padding: 20px; margin: 20px 0; }
+              .info { background: #fef9e7; border-left: 4px solid #f39c12; padding: 20px; margin: 20px 0; }
+            </style>
+          </head>
+          <body>
+            <h1>Download: ${whitepaper.title}</h1>
+            <div class="error">
+              <strong>Error:</strong> ${result.error || 'File not available'}
+            </div>
+            <div class="info">
+              <strong>Note:</strong> R2 storage must be enabled in Cloudflare Dashboard.<br>
+              File path: ${whitepaper.file_path}
+            </div>
+            <p><a href="/whitepapers">← Back to White Papers</a></p>
+          </body>
+        </html>
+      `, 503)
+    }
+    
+    // Serve the file
+    return new Response(result.data, {
+      headers: {
+        'Content-Type': result.contentType || 'application/pdf',
+        'Content-Disposition': `attachment; filename="${whitepaper.title}.pdf"`,
+        'Cache-Control': 'private, max-age=3600',
+      },
+    })
   } catch (error) {
     console.error('Download error:', error)
     return c.text('Download failed', 500)
@@ -2063,15 +2089,61 @@ app.post('/api/admin/whitepapers/add', async (c) => {
   
   try {
     const formData = await c.req.parseBody()
-    const { title, description } = formData
+    const title = formData.title as string
+    const description = formData.description as string
+    const file = formData.file as File
     
-    // TODO: Handle file upload to R2 bucket
-    // For now, just store metadata
-    const filePath = `whitepapers/${Date.now()}-${title}.pdf`
+    if (!title || !description) {
+      return c.html(`
+        <html>
+          <body>
+            <h1>Error</h1>
+            <p>Title and description are required</p>
+            <a href="/admin/whitepapers">Go back</a>
+          </body>
+        </html>
+      `, 400)
+    }
     
+    let filePath = ''
+    let fileSize = 0
+    
+    // Handle file upload if provided
+    if (file && file.size > 0) {
+      // Generate safe file path
+      const originalFilename = file.name || 'whitepaper.pdf'
+      filePath = generateFilePath(originalFilename, 'whitepapers')
+      fileSize = file.size
+      
+      // Upload to R2
+      const uploadResult = await uploadFile(c.env.R2, file, filePath)
+      
+      if (!uploadResult.success) {
+        console.error('File upload failed:', uploadResult.error)
+        return c.html(`
+          <html>
+            <body>
+              <h1>Upload Error</h1>
+              <p>${uploadResult.error}</p>
+              <p>Note: R2 storage must be enabled in Cloudflare Dashboard</p>
+              <a href="/admin/whitepapers">Go back</a>
+            </body>
+          </html>
+        `, 500)
+      }
+      
+      filePath = uploadResult.filePath || filePath
+      fileSize = uploadResult.fileSize || fileSize
+    } else {
+      // No file provided, create placeholder
+      filePath = `whitepapers/placeholder-${Date.now()}.pdf`
+      console.warn('⚠️  No file uploaded. Created placeholder whitepaper entry.')
+    }
+    
+    // Store whitepaper metadata in database
     await c.env.DB.prepare(
-      'INSERT INTO whitepapers (title, description, file_path, is_active) VALUES (?, ?, ?, 1)'
-    ).bind(title, description, filePath).run()
+      'INSERT INTO whitepapers (title, description, file_path, file_size, is_active) VALUES (?, ?, ?, ?, 1)'
+    ).bind(title, description, filePath, fileSize).run()
     
     return c.redirect('/admin/whitepapers')
   } catch (error) {
@@ -2107,7 +2179,19 @@ app.post('/api/admin/whitepapers/delete/:id', async (c) => {
   const whitepaperId = c.req.param('id')
   
   try {
+    // Get file path before deleting
+    const whitepaper = await c.env.DB.prepare(
+      'SELECT file_path FROM whitepapers WHERE id = ?'
+    ).bind(whitepaperId).first()
+    
+    if (whitepaper && whitepaper.file_path) {
+      // Delete file from R2
+      await deleteFile(c.env.R2, whitepaper.file_path as string)
+    }
+    
+    // Delete from database
     await c.env.DB.prepare('DELETE FROM whitepapers WHERE id = ?').bind(whitepaperId).run()
+    
     return c.redirect('/admin/whitepapers')
   } catch (error) {
     console.error('Delete error:', error)
