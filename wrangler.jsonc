@@ -18,13 +18,13 @@
       "database_id": "956fedce-94ef-4edf-a17c-15f7987a42cd"
     }
   ],
-  "kv_namespaces": [
-    {
-      "binding": "SESSIONS_KV",
-      "id": "placeholder",
-      "preview_id": "placeholder"
-    }
-  ],
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "SESSIONS_KV",
+  //     "id": "placeholder",
+  //     "preview_id": "placeholder"
+  //   }
+  // ],
   "vars": {
     "JWT_SECRET": "replace-with-real-secret-in-production",
     "SITE_URL": "https://g2middleeast.com"
