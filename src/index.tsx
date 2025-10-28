@@ -28,7 +28,7 @@ import { ProjectsResetPasswordPage } from './pages/ProjectsResetPassword'
 import { TermsOfServicePage } from './pages/TermsOfService'
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
-import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail } from './utils/email'
+import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail, getContactFormNotificationEmail, getContactFormConfirmationEmail } from './utils/email'
 import * as ProjectsAuth from './lib/projects-auth'
 import { requireProjectsAuth, logActivity, setProjectsAuthCookie, getProjectsAuthSession, clearProjectsAuthCookie } from './lib/projects-auth'
 import { generateSitemap, generateSitemapIndex, formatDate } from './utils/sitemap'
@@ -1110,6 +1110,30 @@ app.post('/api/contact', async (c) => {
       ipAddress,
       userAgent
     ).run()
+
+    // Send email notification to admin
+    const timestamp = new Date().toISOString()
+    await sendEmail({
+      to: 'tim@ktsglobal.live',
+      subject: `New Contact Form Submission - ${name}`,
+      html: getContactFormNotificationEmail({
+        name,
+        email,
+        company,
+        phone,
+        subject,
+        message,
+        ipAddress,
+        timestamp
+      })
+    }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+
+    // Send confirmation email to user
+    await sendEmail({
+      to: email,
+      subject: 'Thank you for contacting G2 Middle East',
+      html: getContactFormConfirmationEmail(name)
+    }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
 
     return c.json({ 
       status: 'success',

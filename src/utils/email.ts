@@ -247,3 +247,99 @@ export function getRegistrationPendingEmail(userName: string): string {
     </html>
   `
 }
+
+export interface ContactFormData {
+  name: string
+  email: string
+  company?: string
+  phone?: string
+  subject?: string
+  message: string
+  ipAddress?: string
+  timestamp?: string
+}
+
+export function getContactFormNotificationEmail(data: ContactFormData): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #1a1a1a; color: #d4af37; padding: 20px; text-align: center; }
+        .content { background: #f4f4f4; padding: 20px; }
+        .details { background: white; padding: 15px; margin: 15px 0; border-left: 4px solid #d4af37; }
+        .message-box { background: white; padding: 15px; margin: 15px 0; border: 1px solid #ddd; }
+        .meta { font-size: 11px; color: #999; margin-top: 20px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h2>New Contact Form Submission</h2>
+        </div>
+        <div class="content">
+          <p><strong>A new inquiry has been received from the G2 Middle East website.</strong></p>
+          
+          <div class="details">
+            <p><strong>Name:</strong> ${data.name}</p>
+            <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+            ${data.company ? `<p><strong>Company:</strong> ${data.company}</p>` : ''}
+            ${data.phone ? `<p><strong>Phone:</strong> ${data.phone}</p>` : ''}
+            <p><strong>Subject:</strong> ${data.subject || 'General Inquiry'}</p>
+          </div>
+          
+          <div class="message-box">
+            <p><strong>Message:</strong></p>
+            <p>${data.message.replace(/\n/g, '<br>')}</p>
+          </div>
+          
+          <div class="meta">
+            <p><strong>Metadata:</strong></p>
+            ${data.ipAddress ? `<p>IP Address: ${data.ipAddress}</p>` : ''}
+            ${data.timestamp ? `<p>Received: ${data.timestamp}</p>` : ''}
+          </div>
+          
+          <p style="margin-top: 30px; font-size: 11px; color: #999;">
+            This is an automated notification from the G2 Middle East Contact Form.
+          </p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `
+}
+
+export function getContactFormConfirmationEmail(userName: string): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #1a1a1a; color: #d4af37; padding: 20px; text-align: center; }
+        .content { background: #f4f4f4; padding: 20px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h2>Thank You for Contacting Us</h2>
+        </div>
+        <div class="content">
+          <p>Dear ${userName},</p>
+          <p>Thank you for reaching out to G2 Middle East. We have received your inquiry and will respond within 24 hours.</p>
+          <p>If your matter is urgent, please feel free to call us directly at:</p>
+          <p><strong>+971 4 XXX XXXX</strong></p>
+          <p style="margin-top: 30px;">
+            Best regards,<br>
+            <strong>G2 Middle East Team</strong>
+          </p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `
+}
