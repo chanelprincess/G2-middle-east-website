@@ -31,6 +31,8 @@ import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthC
 import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail } from './utils/email'
 import * as ProjectsAuth from './lib/projects-auth'
 import { requireProjectsAuth, logActivity, setProjectsAuthCookie, getProjectsAuthSession, clearProjectsAuthCookie } from './lib/projects-auth'
+import { generateSitemap, generateSitemapIndex, formatDate } from './utils/sitemap'
+import { CORE_PAGES, SERVICE_PAGES, TEAM_PAGES, PERSPECTIVE_PAGES, PROJECT_PAGES, getAllUrls, BASE_URL } from './data/sitemap-urls'
 
 type Bindings = {
   DB: D1Database
@@ -90,8 +92,7 @@ Allow: /contact/
 Allow: /services/
 
 # Sitemap locations
-Sitemap: https://g2middleeast.com/sitemap.xml
-Sitemap: https://g2middleeast.com/sitemap-projects.xml
+Sitemap: https://g2middleeast.com/sitemap_index.xml
 
 # LLMs/AI: See https://g2middleeast.com/llms.txt for structured company data
 
@@ -504,6 +505,100 @@ Independent event advisory: G2 is independently operated within Casta Diva Group
     'Content-Type': 'text/plain; charset=utf-8'
   })
 })
+
+// ============================================
+// XML SITEMAP ROUTES
+// ============================================
+
+// Sitemap Index - Main entry point
+app.get('/sitemap_index.xml', (c) => {
+  const today = formatDate(new Date());
+  
+  const sitemaps = [
+    {
+      loc: `${BASE_URL}/sitemap-main.xml`,
+      lastmod: today
+    },
+    {
+      loc: `${BASE_URL}/sitemap-services.xml`,
+      lastmod: today
+    },
+    {
+      loc: `${BASE_URL}/sitemap-team.xml`,
+      lastmod: today
+    },
+    {
+      loc: `${BASE_URL}/sitemap-perspectives.xml`,
+      lastmod: today
+    },
+    {
+      loc: `${BASE_URL}/sitemap-projects.xml`,
+      lastmod: today
+    }
+  ];
+  
+  const xml = generateSitemapIndex(sitemaps);
+  
+  return c.text(xml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8',
+    'X-Robots-Tag': 'noindex'
+  });
+});
+
+// Sitemap: Core static pages
+app.get('/sitemap-main.xml', (c) => {
+  const xml = generateSitemap(CORE_PAGES, false);
+  
+  return c.text(xml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8',
+    'X-Robots-Tag': 'noindex'
+  });
+});
+
+// Sitemap: Service pages
+app.get('/sitemap-services.xml', (c) => {
+  const xml = generateSitemap(SERVICE_PAGES, false);
+  
+  return c.text(xml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8',
+    'X-Robots-Tag': 'noindex'
+  });
+});
+
+// Sitemap: Team profiles
+app.get('/sitemap-team.xml', (c) => {
+  const xml = generateSitemap(TEAM_PAGES, false);
+  
+  return c.text(xml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8',
+    'X-Robots-Tag': 'noindex'
+  });
+});
+
+// Sitemap: Perspectives/blog
+app.get('/sitemap-perspectives.xml', (c) => {
+  const xml = generateSitemap(PERSPECTIVE_PAGES, false);
+  
+  return c.text(xml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8',
+    'X-Robots-Tag': 'noindex'
+  });
+});
+
+// Sitemap: Project case studies
+app.get('/sitemap-projects.xml', (c) => {
+  const xml = generateSitemap(PROJECT_PAGES, false);
+  
+  return c.text(xml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8',
+    'X-Robots-Tag': 'noindex'
+  });
+});
+
+// Legacy sitemap.xml - redirect to index for SEO continuity
+app.get('/sitemap.xml', (c) => {
+  return c.redirect('/sitemap_index.xml', 301);
+});
 
 // Use renderer for all pages
 app.use('*', renderer)
