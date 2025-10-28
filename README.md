@@ -16,20 +16,16 @@
 
 ## Live URLs
 
-### Sandbox Development
-- **Homepage**: https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai
-- **Services**: https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai/services
-- **Team**: https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai/team
-- **Contact**: https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai/contact
-- **API Health**: https://3000-ikey7mq9ps5lphhd0j5b5-b237eb32.sandbox.novita.ai/api/health
-
-### Production (✅ LIVE with R2 Storage & Complete Schema.org)
-- **Primary URL**: https://g2-middle-east-zuj.pages.dev
-- **Latest Deployment**: https://c6615968.g2-middle-east-zuj.pages.dev (Oct 28, 2025 14:41 UTC)
+### Production (✅ LIVE on Custom Domain)
+- **Primary URL**: https://g2middleeast.com ⭐ **LIVE**
+- **WWW Subdomain**: https://www.g2middleeast.com ⭐ **LIVE**
+- **Cloudflare Pages**: https://g2-middle-east-zuj.pages.dev (fallback)
+- **Latest Deployment**: https://c1751602.g2-middle-east-zuj.pages.dev (Oct 28, 2025 - with backlinks)
 - **Project Name**: g2-middle-east
 - **R2 Bucket**: g2-whitepapers (✅ Active)
 - **Schema.org Status**: ✅ Complete AI/LLM Optimization (2025 Standards)
-- **Custom Domain**: g2middleeast.com (configured)
+- **DNS Status**: ✅ Active and propagated globally
+- **SSL/TLS**: ✅ Full (strict) - Auto-provisioned by Cloudflare
 
 ## Technology Stack
 
@@ -777,13 +773,21 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 ---
 
 **Last Updated**: October 28, 2025
-**Status**: 🚀 **FULLY OPERATIONAL** - Complete Platform with R2 Storage Active
-**Production URL**: https://g2-middle-east-zuj.pages.dev
+**Status**: 🚀 **FULLY OPERATIONAL** - Complete Platform with Custom Domain & R2 Storage
+**Production URL**: https://g2middleeast.com ⭐ **LIVE ON CUSTOM DOMAIN**
+**Cloudflare Pages URL**: https://g2-middle-east-zuj.pages.dev (fallback)
 **Features**: Authentication, Legal Pages, SEO, Email Notifications, ✅ **R2 File Storage (Active)**, 43 Project Case Studies
 **R2 Bucket**: g2-whitepapers (✅ Operational)
 **Project Scope**: Sports events, cultural programming, major venue openings, NEOM activations, media operations, interfaith events, luxury experiences
 
 **Recent Completions (October 28, 2025)**:
+- ✅ **Custom Domain LIVE** - g2middleeast.com now active
+  - DNS configured with CNAME records to Cloudflare Pages
+  - Both root (g2middleeast.com) and www (www.g2middleeast.com) working
+  - SSL/TLS certificate auto-provisioned (Full strict mode)
+  - All URLs in code already using g2middleeast.com
+  - Sitemaps, robots.txt, and schema.org all pointing to custom domain
+  - DNS propagated globally and fully operational
 - ✅ **R2 Storage FULLY ENABLED** - Complete file system operational
   - R2 bucket `g2-whitepapers` created and active in production
   - File uploads working via admin panel
@@ -814,6 +818,8 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 2. ✅ ~~Set up R2 bucket for PDF file storage and uploads~~ **COMPLETED & ACTIVE**
 3. ✅ ~~Deploy to Cloudflare Pages production environment~~ **COMPLETED** (live at g2-middle-east-zuj.pages.dev)
 4. ✅ ~~Enable R2 in Cloudflare Dashboard~~ **COMPLETED** (g2-whitepapers bucket active)
-5. Configure custom domain (g2middleeast.com)
+5. ✅ ~~Configure custom domain (g2middleeast.com)~~ **COMPLETED & LIVE**
 6. Add whitepaper PDF files to R2 bucket via admin panel
 7. Test complete whitepaper download workflow with real users
+8. Create Open Graph images (10 images at 1200x630px) for social sharing optimization
+9. Submit custom domain to Google Search Console for indexing
