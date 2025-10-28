@@ -155,7 +155,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
     heroImagePrompt: 'A wide-angle shot of a futuristic, architecturally stunning event stage, bathed in sophisticated blue and white light. In the foreground, the silhouetted audience of global executives watches an orchestral performance. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'To position NEOM as the epicentre of the future media landscape, we engineered a two-day showcase that was more than an event—it was a statement of intent. We convened the world\'s top studio heads, financiers, and producers, creating a frictionless environment where high-level conversations and strategic partnerships could flourish, culminating in a powerful demonstration of NEOM\'s vision and capability.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> To position NEOM as the epicentre of the future media landscape, our team engineered a two-day showcase that was more than an event—it was a statement of intent. We convened the world\'s top studio heads, financiers, and producers, creating a frictionless environment where high-level conversations and strategic partnerships could flourish, culminating in a powerful demonstration of NEOM\'s vision and capability.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
@@ -193,7 +193,7 @@ export const projectsData = {
     year: '2024',
     heroImage: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1600&q=80',
     heroImagePrompt: 'A shot from behind a panel of world leaders on a stage at Davos, looking out at the audience. The NEOM logo is subtly visible on the lectern. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'At the nexus of global power in Davos, our mission was to maximize NEOM\'s influence and advance its investment agenda. We architected a seamless presence, choreographing a complex schedule of public panels, private bilaterals, and media moments. By managing every logistical and strategic detail, we empowered NEOM\'s leadership to focus on what mattered: shaping the global conversation.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> At the nexus of global power in Davos, our mission was to maximize NEOM\'s influence and advance its investment agenda. We architected a seamless presence, choreographing a complex schedule of public panels, private bilaterals, and media moments. By managing every logistical and strategic detail, we empowered NEOM\'s leadership to focus on what mattered: shaping the global conversation.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
@@ -231,7 +231,7 @@ export const projectsData = {
     year: '2022',
     heroImage: 'https://images.unsplash.com/photo-1549213783-8284d0336c4f?w=1600&q=80',
     heroImagePrompt: 'A landmark Abu Dhabi building (e.g., Emirates Palace) illuminated at night with the colours of the Chinese and UAE flags, projected with architectural precision. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'When superpowers meet, every detail is a message. We were entrusted to deliver the cultural programming and city branding for the historic state visit, translating complex diplomatic objectives into a unified public narrative. Our work transformed the city into a stage for partnership, showcasing deep respect for heritage while projecting a powerful vision of a shared future.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> When superpowers meet, every detail is a message. Our team was entrusted to deliver the cultural programming and city branding for the historic state visit, translating complex diplomatic objectives into a unified public narrative. Our work transformed the city into a stage for partnership, showcasing deep respect for heritage while projecting a powerful vision of a shared future.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80',
@@ -269,7 +269,8 @@ export const projectsData = {
     year: '2010',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/3fc5acf626f27cf4b2f1e5e8ed4a9341',
     heroImagePrompt: 'Her Majesty Queen Elizabeth II walking on red carpet with UAE dignitaries in traditional dress, waterfront ceremony with Dubai skyline background, official state visit moment, diplomatic greeting, formal protocol, bright daylight photography.',
-    engagingParagraph: `<p class="mb-4"><strong>Project Director:</strong> Tim Jacobs</p>
+    engagingParagraph: `<p class="mb-4"><strong>Delivered by G2 Middle East Staff</strong></p>
+    <p class="mb-4"><strong>Project Director:</strong> Tim Jacobs, now Regional Chief Operating Officer, G2 Middle East & Africa</p>
     
     <p class="mb-4">A state visit by a reigning monarch is not an event; it is a complex, multi-faceted diplomatic instrument. Every detail, from the precise angle of a handshake to the timing of a motorcade, carries immense symbolic weight. When the visiting head of state is Her Majesty Queen Elizabeth II, one of the most recognised and respected figures in modern history, the stakes are amplified to a global scale. The margin for error is zero. As the project director responsible for the operational delivery and management of this historic visit to the UAE, my mandate was simple in its objective but monumental in its complexity: to execute with a level of precision that was not just flawless, but invisible.</p>
     
@@ -281,7 +282,9 @@ export const projectsData = {
     
     <p class="mb-4">The narrative and media management component was equally critical. Every photograph and video clip broadcast from the visit would shape global perception. We worked to ensure the media had the access required to tell the story, while managing the environment to ensure the narrative broadcast was one of partnership, mutual respect, and shared vision. The intangible value generated from this positive global coverage is a direct return on the investment in strategic, precision led delivery.</p>
     
-    <p>The successful delivery of the State Visit of Queen Elizabeth II stands as a benchmark in the world of high level event production. It demonstrates a fundamental principle that now drives the G2 philosophy: the most complex challenges present the greatest opportunities to demonstrate mastery. The project's legacy is not just in the diplomatic ties it strengthened, but in its execution. It is a testament to the power of strategic foresight, meticulous planning, and an unwavering commitment to flawless delivery in the most demanding circumstances imaginable. This is the standard we bring to every engagement: architecting moments that not only succeed, but also build enduring value.</p>`,
+    <p class="mb-4">The successful delivery of the State Visit of Queen Elizabeth II stands as a benchmark in the world of high level event production. It demonstrates a fundamental principle that now drives the G2 philosophy: the most complex challenges present the greatest opportunities to demonstrate mastery. The project's legacy is not just in the diplomatic ties it strengthened, but in its execution. It is a testament to the power of strategic foresight, meticulous planning, and an unwavering commitment to flawless delivery in the most demanding circumstances imaginable.</p>
+    
+    <p><strong class="text-g2-gold">This project was delivered by the professional team that now forms G2 Middle East & Africa.</strong> Under the strategic direction and operational leadership of Tim Jacobs, now our Regional Chief Operating Officer, our team provided end-to-end project management, stakeholder coordination, and execution excellence. This is the standard we bring to every engagement: architecting moments that not only succeed, but also build enduring value.</p>`,
     supportingImages: [
       {
         url: 'https://page.gensparksite.com/v1/base64_upload/9592d4428b4b807a84d16d0a958be78b',
@@ -314,12 +317,15 @@ export const projectsData = {
   'papal-mass-abu-dhabi': {
     slug: 'papal-mass-abu-dhabi',
     title: 'Crafting History: The First Papal Visit to the Arabian Peninsula',
-    subtitle: 'Project Director: Tim Jacobs',
+    subtitle: 'Delivered by G2 Middle East Staff',
     category: 'Sovereign Event Architecture',
     year: '2019',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/59e3cf3797a31275a47d384aa5c53c5c',
     heroImagePrompt: 'Pope Francis in white vestments reaching out to touch child in crowd, surrounded by diverse faithful waving Vatican flags, powerful moment of human connection during historic papal visit.',
-    engagingParagraph: `<p class="mb-4">There are moments in history that serve as inflection points, where global perception can be reshaped by a single, focused event. The first-ever Papal Visit to the Arabian Peninsula was conceived as one such moment. When His Holiness Pope Francis accepted the invitation to visit Abu Dhabi, the mandate handed down was monumental. This was to be a definitive expression of the UAE's deep commitment to tolerance and interfaith dialogue. As Project Director, and the direct interface with the UAE's Ministry of Presidential Affairs, my role was to translate this profound sovereign vision into a flawless operational reality, navigating a set of logistical challenges of unprecedented scale and complexity.</p>
+    engagingParagraph: `<p class="mb-4"><strong>Delivered by G2 Middle East Staff</strong></p>
+    <p class="mb-4"><strong>Project Director:</strong> Tim Jacobs, now Regional Chief Operating Officer, G2 Middle East & Africa</p>
+    
+    <p class="mb-4">There are moments in history that serve as inflection points, where global perception can be reshaped by a single, focused event. The first-ever Papal Visit to the Arabian Peninsula was conceived as one such moment. When His Holiness Pope Francis accepted the invitation to visit Abu Dhabi, the mandate handed down was monumental. This was to be a definitive expression of the UAE's deep commitment to tolerance and interfaith dialogue. Our team at G2 Middle East, under Tim Jacobs' direction as Project Director and direct interface with the UAE's Ministry of Presidential Affairs, was entrusted to translate this profound sovereign vision into a flawless operational reality, navigating a set of logistical challenges of unprecedented scale and complexity.</p>
 
     <p class="mb-4">The strategic objective was absolute: to build the global platform for the signing of the historic "Document on Human Fraternity." However, the parameters for this delivery were extraordinarily demanding. The entire project lifecycle, from initial mobilisation to final departure, was a mere 28 days. Within that window, the physical build-out of all required infrastructure had to be completed in just 14 days. This timeline alone represented a Herculean task, requiring a level of planning and execution that left no margin for error.</p>
 
@@ -331,7 +337,9 @@ export const projectsData = {
 
     <p class="mb-4">The operational and public culmination of the visit was the Papal Mass at Zayed Sports City, an event that drew 180,000 worshippers from across the region. Delivering a secure, respectful, and deeply meaningful experience for a gathering of this scale was a project in itself. The successful management of the transport, accreditation, and crowd dynamics for this historic mass was a testament to the team's precision. Its flawless execution created an environment of calm and reverence, allowing the power of the moment to resonate, unimpeded by logistical distractions.</p>
 
-    <p>The successful delivery of the first Papal Visit to the Arabian Peninsula, within a 14-day build and a 28-day total project window, and during the operational peak of the AFC Asian Cup, stands as a benchmark in high-stakes project management. It required an unwavering partnership with the Ministry of Presidential Affairs and a relentless focus on the core strategic objective. We did not simply manage a visit; we architected a historic, global moment under the most intense pressure, helping to craft a legacy of tolerance and understanding for the UAE on the world stage.</p>`,
+    <p class="mb-4">The successful delivery of the first Papal Visit to the Arabian Peninsula, within a 14-day build and a 28-day total project window, and during the operational peak of the AFC Asian Cup, stands as a benchmark in high-stakes project management. It required an unwavering partnership with the Ministry of Presidential Affairs and a relentless focus on the core strategic objective.</p>
+    
+    <p><strong class="text-g2-gold">This project was delivered by G2 Middle East staff.</strong> Led by Tim Jacobs, now our Regional Chief Operating Officer, our team provided strategic direction, operational delivery, and stakeholder management at the highest level. We did not simply manage a visit; we architected a historic, global moment under the most intense pressure, helping to craft a legacy of tolerance and understanding for the UAE on the world stage. This benchmark-setting delivery exemplifies the capabilities G2 Middle East brings to every sovereign-level engagement.</p>`,
     supportingImages: [
       {
         url: 'https://page.gensparksite.com/v1/base64_upload/7bb6b425a781831018ba9f8ea2417df1',
@@ -364,12 +372,16 @@ export const projectsData = {
   'special-olympics-world-games': {
     slug: 'special-olympics-world-games',
     title: '2019 Special Olympics World Games',
-    subtitle: 'Strategic Advisory: Inclusion at Global Scale',
+    subtitle: 'Delivered by G2 Middle East Staff: Strategic Advisory at Global Scale',
     category: 'Major Event Advisory',
     year: '2019',
     heroImage: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1600&q=80',
     heroImagePrompt: 'Olympic-scale stadium filled with athletes from different nations, opening ceremony with dramatic lighting, large screens showing athlete faces, celebration atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'As strategic advisors to the 2019 Special Olympics World Games in Abu Dhabi, we provided counsel on operational delivery, stakeholder engagement, and global positioning. Our expertise helped shape an event that welcomed 7,500 athletes from 195 nations, transforming perceptions of inclusion while demonstrating the UAE\'s capability to deliver world-class sporting events with profound social impact.',
+    engagingParagraph: `<p class="mb-4"><strong>Delivered by G2 Middle East Staff</strong></p>
+    
+    <p class="mb-4">As strategic advisors to the 2019 Special Olympics World Games in Abu Dhabi, G2 Middle East staff provided comprehensive counsel on operational delivery, stakeholder engagement, and global positioning. Our team's expertise helped shape an event that welcomed 7,500 athletes from 195 nations, transforming perceptions of inclusion while demonstrating the UAE's capability to deliver world-class sporting events with profound social impact.</p>
+    
+    <p class="mb-4">Led by Tim Jacobs, now Regional Chief Operating Officer of G2 Middle East & Africa, our team provided strategic direction and operational advisory across all critical workstreams. This engagement showcased our capacity to operate at the intersection of elite sport, social impact, and national positioning—delivering not just an event, but a legacy of inclusion that continues to resonate globally.</p>`,
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80',
@@ -466,7 +478,7 @@ export const projectsData = {
     year: '2024',
     heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
     heroImagePrompt: 'Sophisticated conference hall with global investors in business attire, Mubadala branding, modern stage with speakers, professional lighting. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'For Mubadala, one of the world\'s largest sovereign wealth funds, we delivered an annual investment forum that served as both showcase and strategic engagement platform. We curated an environment where institutional investors, family offices, and strategic partners could engage with Mubadala\'s leadership and portfolio companies, resulting in meaningful dialogue that drives capital flows and partnership formation.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> For Mubadala, one of the world\'s largest sovereign wealth funds, our team delivered an annual investment forum that served as both showcase and strategic engagement platform. We curated an environment where institutional investors, family offices, and strategic partners could engage with Mubadala\'s leadership and portfolio companies, resulting in meaningful dialogue that drives capital flows and partnership formation.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80',
@@ -504,7 +516,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=1600&q=80',
     heroImagePrompt: 'A stunning, wide-angle shot of a glamorous red carpet event at night, with the unique architecture of the Red Sea Film Festival venue in the background, lit beautifully. The focus is on the atmosphere of prestige and exclusivity. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We were entrusted to orchestrate the complete guest experience for the world\'s most influential film talent at one of the region\'s most important new cultural landmarks. Our role was to ensure that every moment—from arrival to the closing credits—was as flawless and memorable as the cinema being celebrated, reinforcing the Kingdom\'s position as a global hub for culture and creativity.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team was entrusted to orchestrate the complete guest experience for the world\'s most influential film talent at one of the region\'s most important new cultural landmarks. Our role was to ensure that every moment—from arrival to the closing credits—was as flawless and memorable as the cinema being celebrated, reinforcing the Kingdom\'s position as a global hub for culture and creativity.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80',
@@ -547,7 +559,7 @@ export const projectsData = {
     year: '2024',
     heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
     heroImagePrompt: 'A breathtaking, futuristic architectural rendering of a key NEOM landmark like \'The Line\' or \'Oxagon\', shown at dusk with dramatic, integrated lighting. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'For a project that is redefining the future, the guest experience for its most important delegations must be nothing short of visionary. We were tasked with designing and executing high-level protocol and hospitality programs that mirrored NEOM\'s ambition, demonstrating the scale and promise of this giga-project to the world\'s leaders and investors.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> For a project that is redefining the future, the guest experience for its most important delegations must be nothing short of visionary. Our team was tasked with designing and executing high-level protocol and hospitality programs that mirrored NEOM\'s ambition, demonstrating the scale and promise of this giga-project to the world\'s leaders and investors.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1560264418-c4445382edbc?w=800&q=80',
@@ -590,7 +602,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1600&q=80',
     heroImagePrompt: 'A dynamic, wide shot from the back of a packed conference auditorium, showing a panel of speakers on a stylishly lit stage, with the iconic XP branding visible. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'At the heart of the region\'s music revolution, we were the operational engine for its most important strategic gathering. We managed the end-to-end delivery of the inaugural XP Music Conference, creating a seamless environment for artists, executives, and innovators to connect and define the future of the industry.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> At the heart of the region\'s music revolution, our team was the operational engine for its most important strategic gathering. We managed the end-to-end delivery of the inaugural XP Music Conference, creating a seamless environment for artists, executives, and innovators to connect and define the future of the industry.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
@@ -633,7 +645,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1600&q=80',
     heroImagePrompt: 'F1 race at Yas Marina Circuit from VIP suite perspective, cars racing at high speed, sunset lighting, luxury hospitality visible. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We designed and delivered the VIP hospitality experience for the Abu Dhabi Grand Prix, transforming race weekend into a strategic platform for corporate relationship building. Managing 10,000 corporate guests across exclusive suites and experiences, we created an environment where F1\'s adrenaline met high-value business dialogue, resulting in a seamless fusion of entertainment and strategic engagement.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team designed and delivered the VIP hospitality experience for the Abu Dhabi Grand Prix, transforming race weekend into a strategic platform for corporate relationship building. Managing 10,000 corporate guests across exclusive suites and experiences, we created an environment where F1\'s adrenaline met high-value business dialogue, resulting in a seamless fusion of entertainment and strategic engagement.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
@@ -671,7 +683,7 @@ export const projectsData = {
     year: '2019',
     heroImage: 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=1600&q=80',
     heroImagePrompt: 'Majestic Emirates Palace exterior at night with dramatic lighting, presidential motorcade visible, UAE and Russian flags displayed prominently. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'When President Vladimir Putin visited Abu Dhabi in 2019, the stakes were nothing short of historic. We were entrusted with managing the cultural programming at Emirates Palace, delivering orchestral arrangements, precision choreography, and architectural lighting that showcased Abu Dhabi\'s sovereign hospitality. Every element was designed to elevate the UAE–Russia relationship on the global stage, demonstrating the power of cultural diplomacy in strengthening bilateral ties.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> When President Vladimir Putin visited Abu Dhabi in 2019, the stakes were nothing short of historic. Our team was entrusted with managing the cultural programming at Emirates Palace, delivering orchestral arrangements, precision choreography, and architectural lighting that showcased Abu Dhabi\'s sovereign hospitality. Every element was designed to elevate the UAE–Russia relationship on the global stage, demonstrating the power of cultural diplomacy in strengthening bilateral ties.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
@@ -704,7 +716,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1600&q=80',
     heroImagePrompt: 'Modern media center with Kingdom of Saudi Arabia branding, journalists working at stations, G20 summit backdrop, professional broadcast setup. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'With less than three weeks to deliver, we executed the KSA Media Oasis for G20 India—a complete media operations hub that amplified the Kingdom\'s narrative at one of the world\'s most watched summits. From venue sourcing to stakeholder management, we delivered end-to-end media operations with precision, pace, and measurable impact, demonstrating our capacity to operate under extreme time constraints while maintaining strategic excellence.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> With less than three weeks to deliver, our team executed the KSA Media Oasis for G20 India—a complete media operations hub that amplified the Kingdom\'s narrative at one of the world\'s most watched summits. From venue sourcing to stakeholder management, we delivered end-to-end media operations with precision, pace, and measurable impact, demonstrating our capacity to operate under extreme time constraints while maintaining strategic excellence.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
@@ -737,7 +749,7 @@ export const projectsData = {
     year: '2012–2013',
     heroImage: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80',
     heroImagePrompt: 'Qasr Al Hosn historic white fort illuminated at dusk, traditional Emirati cultural performances in courtyard, families attending festival. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'Embedded within the Executive Committee, G2 managed and delivered the Qasr Al Hosn Festival, bringing Abu Dhabi\'s oldest and most significant cultural landmark to life. We curated performances, artisan showcases, and learning spaces that bridged heritage and contemporary experience, creating public programming that celebrated Emirati culture while demonstrating world-class event coordination and stakeholder management.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Embedded within the Executive Committee, our team managed and delivered the Qasr Al Hosn Festival, bringing Abu Dhabi\'s oldest and most significant cultural landmark to life. We curated performances, artisan showcases, and learning spaces that bridged heritage and contemporary experience, creating public programming that celebrated Emirati culture while demonstrating world-class event coordination and stakeholder management.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80',
@@ -770,7 +782,7 @@ export const projectsData = {
     year: '2024',
     heroImage: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600&q=80',
     heroImagePrompt: 'Massive esports arena with dramatic LED screens, thousands of fans, stage with gaming stations, futuristic lighting design. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'In just two weeks, we developed a comprehensive 325-page master planning pitch for the Esports World Cup—the world\'s largest gaming championship. Our submission included narrative architecture, venue concepts, fan journey mapping, and broadcast-first stage designs, demonstrating our capacity for rapid, multidisciplinary event strategy that operates at the intersection of sports, entertainment, and digital culture.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> In just two weeks, our team developed a comprehensive 325-page master planning pitch for the Esports World Cup—the world\'s largest gaming championship. Our submission included narrative architecture, venue concepts, fan journey mapping, and broadcast-first stage designs, demonstrating our capacity for rapid, multidisciplinary event strategy that operates at the intersection of sports, entertainment, and digital culture.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80',
@@ -803,7 +815,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
     heroImagePrompt: 'Elegant gala event at luxurious Abu Dhabi venue, VIP guests in evening wear, Global Citizen branding, F1 circuit visible through windows. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'During Abu Dhabi Grand Prix week, we curated and delivered the Global Citizen F1 VIP Gala—a high-touch event that blended elite networking with purpose-driven programming on education, climate, and health. Managing guest strategy, diplomatic protocol, partner alignment, and luxury hospitality, we created an evening that demonstrated how strategic events can drive both relationship building and meaningful impact.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> During Abu Dhabi Grand Prix week, our team curated and delivered the Global Citizen F1 VIP Gala—a high-touch event that blended elite networking with purpose-driven programming on education, climate, and health. Managing guest strategy, diplomatic protocol, partner alignment, and luxury hospitality, we created an evening that demonstrated how strategic events can drive both relationship building and meaningful impact.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
@@ -836,7 +848,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80',
     heroImagePrompt: 'Modern presentation showing NEOM masterplan on massive screens, VIP stakeholders viewing futuristic development renderings, sophisticated event space. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'Over 11 days across multiple Saudi cities, we delivered the Discover NEOM series—an immersive event program designed to showcase NEOM\'s transformative vision to key stakeholders and decision-makers. Managing elite guest experiences, strategic messaging, and production execution, we built excitement and engagement around one of the world\'s most ambitious development projects, demonstrating our capacity for sustained, multi-location event delivery at the highest level.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Over 11 days across multiple Saudi cities, our team delivered the Discover NEOM series—an immersive event program designed to showcase NEOM\'s transformative vision to key stakeholders and decision-makers. Managing elite guest experiences, strategic messaging, and production execution, we built excitement and engagement around one of the world\'s most ambitious development projects, demonstrating our capacity for sustained, multi-location event delivery at the highest level.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
@@ -864,12 +876,13 @@ export const projectsData = {
   'qatar-olympic-house': {
     slug: 'qatar-olympic-house',
     title: 'Qatar Olympic House – London 2012',
-    subtitle: 'Delivering Qatar\'s First Olympic House in 12 Weeks',
+    subtitle: 'Delivered by G2 Middle East Staff: Qatar\'s First Olympic House in 12 Weeks',
     category: 'Sports Events',
     year: '2012',
     heroImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&q=80',
     heroImagePrompt: 'Olympic rings and flags at prestigious venue during London 2012 Games, VIP guests arriving at elegant hospitality house, Qatar branding prominently displayed. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: `<p class="mb-4"><strong>Project Lead:</strong> Tim Jacobs (Appointed by Doha 2020 Bid Committee)</p>
+    engagingParagraph: `<p class="mb-4"><strong>Delivered by G2 Middle East Staff</strong></p>
+    <p class="mb-4"><strong>Project Lead:</strong> Tim Jacobs, now Regional Chief Operating Officer, G2 Middle East & Africa</p>
     
     <h3 class="text-2xl font-bold text-white mb-4 mt-8">Overview</h3>
     <p class="mb-4">In the lead-up to the London 2012 Olympic Games, the Doha 2020 Bid Committee appointed Tim Jacobs as Project Lead to deliver a landmark initiative: Qatar's first-ever Olympic House. Tasked with realising the client's vision within an exceptionally tight 12-week lead time, Jacobs was responsible for the complete operational planning, delivery, and management of this high-profile hospitality and diplomatic hub.</p>
@@ -936,7 +949,7 @@ export const projectsData = {
     year: '2018',
     heroImage: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1600&q=80',
     heroImagePrompt: 'Modern football stadium exterior at night with dramatic lighting, FIFA-compliant facilities, Al Ain UAE location. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We delivered the comprehensive upgrade of Hazza Bin Zayed Stadium in Al Ain to FIFA and AFC international standards, managing project planning, compliance verification, and operational readiness for world-class football. This project ensured the venue met all technical requirements for hosting international fixtures while maintaining operational continuity—a critical milestone in Abu Dhabi\'s sporting infrastructure development.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team delivered the comprehensive upgrade of Hazza Bin Zayed Stadium in Al Ain to FIFA and AFC international standards, managing project planning, compliance verification, and operational readiness for world-class football. This project ensured the venue met all technical requirements for hosting international fixtures while maintaining operational continuity—a critical milestone in Abu Dhabi\'s sporting infrastructure development.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80',
@@ -969,7 +982,7 @@ export const projectsData = {
     year: '2019',
     heroImage: 'https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?w=1600&q=80',
     heroImagePrompt: 'Olympic athletics track during Diamond League event, Samsung branding prominently displayed, elite athletes competing. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced and managed Samsung\'s activation at the Diamond League—the premier international athletics series. Delivering seamless event operations, experiential brand zones, and high-impact fan engagement, we amplified Samsung\'s presence among athletics enthusiasts while supporting the technical delivery of world-class sport. This project demonstrated our ability to integrate brand objectives with elite sporting experiences.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced and managed Samsung\'s activation at the Diamond League—the premier international athletics series. Delivering seamless event operations, experiential brand zones, and high-impact fan engagement, we amplified Samsung\'s presence among athletics enthusiasts while supporting the technical delivery of world-class sport. This project demonstrated our ability to integrate brand objectives with elite sporting experiences.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=800&q=80',
@@ -1002,7 +1015,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80',
     heroImagePrompt: 'Modern beachfront accommodation complex for athletes, NEOM Beach Games branding, luxury facilities with Saudi coastline backdrop. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We developed and managed the accommodation hub for the NEOM Beach Games, delivering world-class facilities and guest experience for international athletes and officials. Coordinating hospitality operations, athlete services, transportation, and venue logistics, we ensured participants experienced NEOM\'s vision of future living firsthand. This project showcased our capability to deliver mega-event infrastructure with precision and hospitality excellence.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team developed and managed the accommodation hub for the NEOM Beach Games, delivering world-class facilities and guest experience for international athletes and officials. Coordinating hospitality operations, athlete services, transportation, and venue logistics, we ensured participants experienced NEOM\'s vision of future living firsthand. This project showcased our capability to deliver mega-event infrastructure with precision and hospitality excellence.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80',
@@ -1035,7 +1048,7 @@ export const projectsData = {
     year: '2022',
     heroImage: 'https://images.unsplash.com/photo-1569074187119-c87815b476da?w=1600&q=80',
     heroImagePrompt: 'Modern Saudi cultural venue with traditional and contemporary art installations, immersive lighting, visitors experiencing interactive exhibits. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We curated and delivered immersive cultural programming at Tuwaiq Oasis, celebrating Saudi heritage and innovation through art, music, and interactive installations. Blending traditional craftsmanship with cutting-edge experiential design, we created an environment that honored the Kingdom\'s past while showcasing its Vision 2030 ambitions. This project demonstrated our ability to translate cultural narratives into powerful public experiences.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team curated and delivered immersive cultural programming at Tuwaiq Oasis, celebrating Saudi heritage and innovation through art, music, and interactive installations. Blending traditional craftsmanship with cutting-edge experiential design, we created an environment that honored the Kingdom\'s past while showcasing its Vision 2030 ambitions. This project demonstrated our ability to translate cultural narratives into powerful public experiences.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&q=80',
@@ -1068,7 +1081,7 @@ export const projectsData = {
     year: '2021',
     heroImage: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1600&q=80',
     heroImagePrompt: 'Urban 3x3 basketball court in Abu Dhabi, FIBA branding, international players competing, energetic crowd. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We delivered operational management and fan engagement for the FIBA 3x3 basketball tournament in Abu Dhabi, elevating the city\'s profile as a global sports destination. Managing venue operations, spectator experience, media coordination, and community activation, we created an electric atmosphere that showcased basketball\'s urban energy while reinforcing Abu Dhabi\'s sporting credentials. This project highlighted our expertise in fast-paced, fan-centric sporting events.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team delivered operational management and fan engagement for the FIBA 3x3 basketball tournament in Abu Dhabi, elevating the city\'s profile as a global sports destination. Managing venue operations, spectator experience, media coordination, and community activation, we created an electric atmosphere that showcased basketball\'s urban energy while reinforcing Abu Dhabi\'s sporting credentials. This project highlighted our expertise in fast-paced, fan-centric sporting events.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?w=800&q=80',
@@ -1101,7 +1114,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80',
     heroImagePrompt: 'Futuristic interactive exhibition showcasing The Line urban development, immersive digital displays, visitors experiencing NEOM\'s revolutionary city concept. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We designed and produced "The Line Experience"—an interactive showcase for NEOM\'s revolutionary linear city concept. Blending immersive storytelling, digital engagement, and architectural visualization, we brought this unprecedented urban vision to life for global stakeholders, investors, and media. The experience translated complex sustainable development concepts into compelling narrative, demonstrating our ability to communicate transformative ideas at scale.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team designed and produced "The Line Experience"—an interactive showcase for NEOM\'s revolutionary linear city concept. Blending immersive storytelling, digital engagement, and architectural visualization, we brought this unprecedented urban vision to life for global stakeholders, investors, and media. The experience translated complex sustainable development concepts into compelling narrative, demonstrating our ability to communicate transformative ideas at scale.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
@@ -1134,7 +1147,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80',
     heroImagePrompt: 'High-level conference setting at Milken Institute with NEOM branding, VIP networking, global thought leaders. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We managed NEOM\'s presence at the Milken Institute Global Conference in Los Angeles, delivering strategic messaging, stakeholder engagement, and high-profile networking with global capital allocators and policymakers. Coordinating panel participation, bilateral meetings, and brand positioning, we ensured NEOM\'s narrative resonated with the world\'s most influential investors and thought leaders at this premier forum.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team managed NEOM\'s presence at the Milken Institute Global Conference in Los Angeles, delivering strategic messaging, stakeholder engagement, and high-profile networking with global capital allocators and policymakers. Coordinating panel participation, bilateral meetings, and brand positioning, we ensured NEOM\'s narrative resonated with the world\'s most influential investors and thought leaders at this premier forum.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80',
@@ -1167,7 +1180,7 @@ export const projectsData = {
     year: '2022',
     heroImage: 'https://images.unsplash.com/photo-1569074187119-c87815b476da?w=1600&q=80',
     heroImagePrompt: 'United Nations venue with NEOM sustainable development showcase, diplomats viewing exhibition, international flags. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced NEOM\'s showcase at the United Nations, highlighting sustainable development and innovation to a global diplomatic audience. Managing exhibition design, stakeholder engagement, and narrative positioning, we demonstrated how NEOM\'s vision aligns with UN Sustainable Development Goals while advancing Saudi Arabia\'s global leadership on climate and innovation. This project showcased our ability to navigate complex international forums.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced NEOM\'s showcase at the United Nations, highlighting sustainable development and innovation to a global diplomatic audience. Managing exhibition design, stakeholder engagement, and narrative positioning, we demonstrated how NEOM\'s vision aligns with UN Sustainable Development Goals while advancing Saudi Arabia\'s global leadership on climate and innovation. This project showcased our ability to navigate complex international forums.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1568584711271-f9261a21ae6f?w=800&q=80',
@@ -1200,7 +1213,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80',
     heroImagePrompt: 'Modern media center in Paris with Saudi Expo 2030 branding, journalists working at broadcast stations, live feed operations. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We orchestrated the Media Oasis in Paris for Saudi Arabia\'s Expo 2030 bid, managing live broadcasts, stakeholder engagement, and operational support for the Kingdom\'s winning campaign. Coordinating international media, providing broadcast infrastructure, and amplifying Saudi Arabia\'s narrative, we created a strategic media hub that contributed directly to securing Expo 2030 for Riyadh—a historic achievement for the Kingdom.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team orchestrated the Media Oasis in Paris for Saudi Arabia\'s Expo 2030 bid, managing live broadcasts, stakeholder engagement, and operational support for the Kingdom\'s winning campaign. Coordinating international media, providing broadcast infrastructure, and amplifying Saudi Arabia\'s narrative, we created a strategic media hub that contributed directly to securing Expo 2030 for Riyadh—a historic achievement for the Kingdom.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1598662779094-52f48cc13781?w=800&q=80',
@@ -1233,7 +1246,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1600&q=80',
     heroImagePrompt: 'Modern media operations center at G20 summit, Saudi Arabia branding, international journalists, live broadcast equipment. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We delivered the KSA Media Oasis at G20 India, providing end-to-end venue management, media operations, and narrative amplification for the Kingdom\'s delegation. Managing broadcast infrastructure, press coordination, and stakeholder communications, we ensured Saudi Arabia\'s priorities and achievements were effectively communicated throughout the summit—demonstrating our expertise in high-stakes international media operations.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team delivered the KSA Media Oasis at G20 India, providing end-to-end venue management, media operations, and narrative amplification for the Kingdom\'s delegation. Managing broadcast infrastructure, press coordination, and stakeholder communications, we ensured Saudi Arabia\'s priorities and achievements were effectively communicated throughout the summit—demonstrating our expertise in high-stakes international media operations.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1598662779094-52f48cc13781?w=800&q=80',
@@ -1266,7 +1279,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=80',
     heroImagePrompt: 'McLaren supercar displayed at futuristic NEOM The Line venue, luxury automotive brand activation, high-impact showcase. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced McLaren\'s experiential activation at The Line, fusing luxury automotive excellence with NEOM\'s futuristic vision in a high-impact showcase. Designing immersive brand experiences, managing VIP guest engagement, and coordinating technical production, we created a seamless integration of McLaren\'s performance heritage with The Line\'s revolutionary urban concept—demonstrating our ability to blend brand objectives with transformative narratives.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced McLaren\'s experiential activation at The Line, fusing luxury automotive excellence with NEOM\'s futuristic vision in a high-impact showcase. Designing immersive brand experiences, managing VIP guest engagement, and coordinating technical production, we created a seamless integration of McLaren\'s performance heritage with The Line\'s revolutionary urban concept—demonstrating our ability to blend brand objectives with transformative narratives.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80',
@@ -1299,7 +1312,7 @@ export const projectsData = {
     year: '2021',
     heroImage: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1600&q=80',
     heroImagePrompt: 'Community cultural event in Saudi Arabia with families engaged in traditional activities, local artists performing, vibrant atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We curated and managed the Bashayer event series, celebrating local culture, creativity, and community spirit through diverse programming. Blending traditional performances, contemporary art, family activities, and youth engagement, we created inclusive experiences that honored Saudi heritage while fostering community connection. This project demonstrated our ability to deliver culturally-resonant programming that strengthens social fabric.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team curated and managed the Bashayer event series, celebrating local culture, creativity, and community spirit through diverse programming. Blending traditional performances, contemporary art, family activities, and youth engagement, we created inclusive experiences that honored Saudi heritage while fostering community connection. This project demonstrated our ability to deliver culturally-resonant programming that strengthens social fabric.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=800&q=80',
@@ -1332,7 +1345,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&q=80',
     heroImagePrompt: 'Major concert stage at Red Sea Film Festival in Jeddah, international artists performing, cinematic lighting, VIP audience. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We led operational delivery and major concert production for the Red Sea International Film Festival, including galas, awards ceremonies, and headline performances in Jeddah. Managing artist coordination, technical production, VIP hospitality, and venue operations, we created unforgettable moments that elevated Saudi Arabia\'s position as a cultural destination and demonstrated our expertise in large-scale entertainment production.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team led operational delivery and major concert production for the Red Sea International Film Festival, including galas, awards ceremonies, and headline performances in Jeddah. Managing artist coordination, technical production, VIP hospitality, and venue operations, we created unforgettable moments that elevated Saudi Arabia\'s position as a cultural destination and demonstrated our expertise in large-scale entertainment production.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
@@ -1365,7 +1378,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600&q=80',
     heroImagePrompt: 'Elegant GQ Gala venue in Jeddah with fashion industry VIPs, red carpet, luxury brand activations. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced the GQ Gala in Jeddah, delivering a high-profile evening of fashion, culture, and celebrity engagement. Managing venue design, VIP hospitality, media coordination, and brand partnerships, we created a glamorous showcase that positioned Jeddah within the global fashion conversation while celebrating regional style and creativity—demonstrating our expertise in luxury lifestyle event production.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced the GQ Gala in Jeddah, delivering a high-profile evening of fashion, culture, and celebrity engagement. Managing venue design, VIP hospitality, media coordination, and brand partnerships, we created a glamorous showcase that positioned Jeddah within the global fashion conversation while celebrating regional style and creativity—demonstrating our expertise in luxury lifestyle event production.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80',
@@ -1398,7 +1411,7 @@ export const projectsData = {
     year: '2022',
     heroImage: 'https://images.unsplash.com/photo-1519167758481-83f29da8c8b0?w=1600&q=80',
     heroImagePrompt: 'Elegant corporate gala dinner with premium table settings, HIA Magazine branding, VIP guests networking. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We managed the HIA Magazine Gala Dinner, providing seamless event production and VIP hospitality for a leading regional publication. Coordinating venue design, catering excellence, entertainment, and guest experience, we created an elegant evening that reinforced HIA\'s brand prestige while facilitating meaningful connections among regional business and cultural leaders—showcasing our corporate hospitality expertise.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team managed the HIA Magazine Gala Dinner, providing seamless event production and VIP hospitality for a leading regional publication. Coordinating venue design, catering excellence, entertainment, and guest experience, we created an elegant evening that reinforced HIA\'s brand prestige while facilitating meaningful connections among regional business and cultural leaders—showcasing our corporate hospitality expertise.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80',
@@ -1431,7 +1444,7 @@ export const projectsData = {
     year: '2022',
     heroImage: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=1600&q=80',
     heroImagePrompt: 'Modern museum venue with strategy launch event, curated content displays, cultural leaders and media engaged. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced the launch event for the Museum Commission\'s new strategy, engaging stakeholders and media with curated content and presentations. Managing venue design, stakeholder communications, media coordination, and experiential storytelling, we translated complex cultural policy into compelling narrative while building support for the Commission\'s vision—demonstrating our ability to communicate strategic initiatives effectively.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced the launch event for the Museum Commission\'s new strategy, engaging stakeholders and media with curated content and presentations. Managing venue design, stakeholder communications, media coordination, and experiential storytelling, we translated complex cultural policy into compelling narrative while building support for the Commission\'s vision—demonstrating our ability to communicate strategic initiatives effectively.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1569074187119-c87815b476da?w=1600&q=80',
@@ -1464,7 +1477,7 @@ export const projectsData = {
     year: '2021',
     heroImage: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1600&q=80',
     heroImagePrompt: 'Contemporary art exhibition at Misk Art Week, young Saudi artists showcasing work, interactive installations. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We delivered programming and production for Misk Art Week, supporting emerging artists and creative dialogue across Saudi Arabia. Curating exhibitions, managing artist facilities, coordinating workshops, and facilitating public engagement, we created a platform that nurtured the Kingdom\'s next generation of creative talent while fostering cultural conversation—demonstrating our commitment to arts development and youth empowerment.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team delivered programming and production for Misk Art Week, supporting emerging artists and creative dialogue across Saudi Arabia. Curating exhibitions, managing artist facilities, coordinating workshops, and facilitating public engagement, we created a platform that nurtured the Kingdom\'s next generation of creative talent while fostering cultural conversation—demonstrating our commitment to arts development and youth empowerment.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=800&q=80',
@@ -1497,7 +1510,7 @@ export const projectsData = {
     year: '2023',
     heroImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80',
     heroImagePrompt: 'SeaWorld Yas Island grand opening with custom stage, VVIP guests, marine-themed spectacular production. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We designed and executed the grand opening of SeaWorld Yas Island, including custom stage design, VVIP experiences, and extensive project management. Coordinating ceremonial programming, VIP hospitality, media engagement, and operational delivery, we created a launch event befitting the region\'s newest world-class attraction while managing complex stakeholder expectations—demonstrating our capacity for major venue openings.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team designed and executed the grand opening of SeaWorld Yas Island, including custom stage design, VVIP experiences, and extensive project management. Coordinating ceremonial programming, VIP hospitality, media engagement, and operational delivery, we created a launch event befitting the region\'s newest world-class attraction while managing complex stakeholder expectations—demonstrating our capacity for major venue openings.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&q=80',
@@ -1530,7 +1543,7 @@ export const projectsData = {
     year: '2019',
     heroImage: 'https://images.unsplash.com/photo-1586613241595-ab66ff648030?w=1600&q=80',
     heroImagePrompt: 'Majestic Qasr Al Watan palace illuminated at night for grand opening, ceremonial guests, UAE flag displayed prominently. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced the grand opening of Qasr Al Watan, Abu Dhabi\'s presidential palace, with immersive ceremonies and cultural programming. Managing protocol, guest experience, cultural performances, and venue transformation, we created a historic moment that showcased Emirati heritage and governance to the world while opening this architectural masterpiece to the public—a project requiring the highest level of ceremonial expertise.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced the grand opening of Qasr Al Watan, Abu Dhabi\'s presidential palace, with immersive ceremonies and cultural programming. Managing protocol, guest experience, cultural performances, and venue transformation, we created a historic moment that showcased Emirati heritage and governance to the world while opening this architectural masterpiece to the public—a project requiring the highest level of ceremonial expertise.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=1600&q=80',
@@ -1563,7 +1576,7 @@ export const projectsData = {
     year: '2020',
     heroImage: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80',
     heroImagePrompt: 'Interfaith gathering at Human Fraternity anniversary, diverse religious leaders, unity programming, UAE venue. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We managed the anniversary celebration of the Document on Human Fraternity, delivering a program of unity, dialogue, and cultural exchange. Coordinating interfaith programming, managing diverse stakeholder sensitivities, and creating inclusive experiences, we honored the historic agreement between Pope Francis and Grand Imam Ahmed Al-Tayeb while advancing Abu Dhabi\'s role as a global center for tolerance—demonstrating our expertise in sensitive, values-driven events.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team managed the anniversary celebration of the Document on Human Fraternity, delivering a program of unity, dialogue, and cultural exchange. Coordinating interfaith programming, managing diverse stakeholder sensitivities, and creating inclusive experiences, we honored the historic agreement between Pope Francis and Grand Imam Ahmed Al-Tayeb while advancing Abu Dhabi\'s role as a global center for tolerance—demonstrating our expertise in sensitive, values-driven events.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
@@ -1596,7 +1609,7 @@ export const projectsData = {
     year: '2018',
     heroImage: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1600&q=80',
     heroImagePrompt: 'Special Olympics MENA opening ceremony with athletes marching, inclusive celebration, powerful moment of unity. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced the opening ceremony for the Special Olympics MENA, championing inclusion and athletic achievement across the region. Managing ceremonial programming, athlete experiences, cultural performances, and stadium operations, we created a powerful celebration of human potential that inspired audiences while positioning the UAE as a leader in inclusive sport—demonstrating our ability to deliver emotionally-resonant sporting events.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced the opening ceremony for the Special Olympics MENA, championing inclusion and athletic achievement across the region. Managing ceremonial programming, athlete experiences, cultural performances, and stadium operations, we created a powerful celebration of human potential that inspired audiences while positioning the UAE as a leader in inclusive sport—demonstrating our ability to deliver emotionally-resonant sporting events.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1600&q=80',
@@ -1629,7 +1642,7 @@ export const projectsData = {
     year: '2021',
     heroImage: 'https://images.unsplash.com/photo-1580641961851-476e96b5d648?w=1600&q=80',
     heroImagePrompt: 'Islamic arts festival with calligraphy exhibitions, traditional performances, cultural celebrations in elegant venue. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We curated and delivered the Al Burda Festival, celebrating Islamic arts and culture through exhibitions, performances, and workshops. Managing artistic programming, venue design, community engagement, and educational initiatives, we created an immersive cultural experience that honored Islamic artistic heritage while inspiring contemporary creative practice—demonstrating our expertise in culturally-significant programming with deep respect for tradition.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team curated and delivered the Al Burda Festival, celebrating Islamic arts and culture through exhibitions, performances, and workshops. Managing artistic programming, venue design, community engagement, and educational initiatives, we created an immersive cultural experience that honored Islamic artistic heritage while inspiring contemporary creative practice—demonstrating our expertise in culturally-significant programming with deep respect for tradition.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1580130732478-2e2d3c2f7dcb?w=800&q=80',
@@ -1662,7 +1675,7 @@ export const projectsData = {
     year: '2020',
     heroImage: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1600&q=80',
     heroImagePrompt: 'Interactive unconference session with parents engaged in dialogue, workshop setting, collaborative atmosphere. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: 'We produced "Parenthood: The Unconference," a pioneering event focused on family, parenting, and community dialogue through interactive sessions. Breaking from traditional conference formats, we created participant-driven programming that fostered authentic conversations about parenting challenges, family values, and community support—demonstrating our ability to innovate event formats while addressing meaningful social topics with sensitivity and impact.',
+    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team produced "Parenthood: The Unconference," a pioneering event focused on family, parenting, and community dialogue through interactive sessions. Breaking from traditional conference formats, we created participant-driven programming that fostered authentic conversations about parenting challenges, family values, and community support—demonstrating our ability to innovate event formats while addressing meaningful social topics with sensitivity and impact.',
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&q=80',
