@@ -280,6 +280,132 @@ export function PerspectivesPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema.org Structured Data - Perspectives Blog */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Blog",
+            "@id": "https://g2middleeast.com/perspectives#blog",
+            "url": "https://g2middleeast.com/perspectives",
+            "name": "G2 Middle East Perspectives",
+            "alternateName": "G2 Middle East Briefing",
+            "description": "Strategic insights on government event management, sovereign communications, nation branding, diplomatic protocol, and the future of strategic advisory in the Middle East and Africa",
+            "publisher": {"@id": "https://g2middleeast.com/#organization"},
+            "inLanguage": "en",
+            "about": [
+              {"@type": "Thing", "name": "Strategic Advisory"},
+              {"@type": "Thing", "name": "Government Event Management"},
+              {"@type": "Thing", "name": "Sovereign Communications"},
+              {"@type": "Thing", "name": "Nation Branding"},
+              {"@type": "Thing", "name": "Diplomatic Protocol"}
+            ]
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://g2middleeast.com/perspectives#webpage",
+            "url": "https://g2middleeast.com/perspectives",
+            "name": "Perspectives - Strategic Insights | G2 Middle East",
+            "description": "Strategic insights on brand architecture, market positioning, sovereign communications, and the future of strategic advisory in an AI-driven world",
+            "isPartOf": {"@id": "https://g2middleeast.com/#website"},
+            "about": {"@id": "https://g2middleeast.com/#organization"},
+            "mainEntity": {"@id": "https://g2middleeast.com/perspectives#blog"}
+          },
+          {
+            "@type": "ItemList",
+            "name": "G2 Middle East Perspectives Articles",
+            "description": "Collection of strategic insights and thought leadership articles on government relations, event management, and strategic communications in the Middle East",
+            "numberOfItems": 7,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Article",
+                  "headline": "Competing in the AI Arena: The New Frontier of Brand Strategy",
+                  "url": "https://g2middleeast.com/perspectives/competing-ai-arena",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Article",
+                  "headline": "The New Rules of Digital Authority: Mastering Brand Positioning in the AI Era",
+                  "url": "https://g2middleeast.com/perspectives/digital-authority-ai-era",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Article",
+                  "headline": "The Perilous Path of Brand Destruction When Unguided Narratives Erode Positioning",
+                  "url": "https://g2middleeast.com/perspectives/perilous-path-brand-destruction",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Article",
+                  "headline": "Converging Virile and Viral Approaches: Targeting Emotional Responses for Predictable Outcomes",
+                  "url": "https://g2middleeast.com/perspectives/converging-virile-viral-approaches",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "Article",
+                  "headline": "The Cost of Losing 10%",
+                  "url": "https://g2middleeast.com/perspectives/cost-losing-10-percent",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "Article",
+                  "headline": "The Artistry Isn't in the Tell, It's in the Discovery",
+                  "url": "https://g2middleeast.com/perspectives/artistry-discovery",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "Article",
+                  "headline": "Cultural Intelligence Outperforms Capital Alone: The Real Alpha",
+                  "url": "https://g2middleeast.com/perspectives/cultural-intelligence",
+                  "author": {"@id": "https://g2middleeast.com/team/tim-jacobs#person"},
+                  "publisher": {"@id": "https://g2middleeast.com/#organization"}
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://g2middleeast.com"},
+              {"@type": "ListItem", "position": 2, "name": "Perspectives", "item": "https://g2middleeast.com/perspectives"}
+            ]
+          }
+        ]
+      })}}></script>
       </div>
     </PageLayout>
   )
