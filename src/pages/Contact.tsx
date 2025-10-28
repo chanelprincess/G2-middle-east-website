@@ -2,8 +2,108 @@ import { FC } from 'hono/jsx'
 import { PageLayout } from '../components/Layout'
 
 export const ContactPage: FC = () => {
+  // LocalBusiness Schema for Dubai office
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://g2middleeast.com#localbusiness",
+    "name": "G2 Middle East & Africa",
+    "alternateName": "G2 Middle East",
+    "legalName": "G2 Middle East & Africa",
+    "description": "Strategic advisory and event architecture for sovereign entities, government agencies, and global brands across Middle East and Africa. Specialists in government event management, state visit coordination, and diplomatic protocol.",
+    "url": "https://g2middleeast.com",
+    "telephone": "+971-50-123-4567",
+    "email": "contact@g2middleeast.com",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mazyad 3, MBZ City",
+      "addressLocality": "Abu Dhabi",
+      "addressRegion": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 24.4539,
+      "longitude": 54.3773
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      {
+        "@type": "Country",
+        "name": "Qatar"
+      },
+      {
+        "@type": "Country",
+        "name": "Egypt"
+      },
+      {
+        "@type": "Country",
+        "name": "Bahrain"
+      },
+      {
+        "@type": "Country",
+        "name": "Kuwait"
+      },
+      {
+        "@type": "Country",
+        "name": "Oman"
+      }
+    ],
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Casta Diva Group",
+      "url": "https://www.castadiva.it/"
+    },
+    "knowsAbout": [
+      "Government Event Management",
+      "State Visit Coordination",
+      "Diplomatic Protocol Advisory",
+      "Strategic Communications",
+      "Crisis Management",
+      "Nation Branding",
+      "VIP Protocol Management",
+      "Major Event Architecture",
+      "Sovereign Communications",
+      "GCC Government Relations"
+    ],
+    "slogan": "Architecture of Intangible Value",
+    "foundingDate": "2010",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "20+"
+    },
+    "award": [
+      "50+ major government projects delivered",
+      "Papal Mass Abu Dhabi 2019 - 180,000 attendees",
+      "Queen Elizabeth II State Visit UAE 2010",
+      "Special Olympics World Games Abu Dhabi 2019"
+    ]
+  };
+
   return (
     <PageLayout>
+      {/* LocalBusiness Schema - Embedded JSON-LD */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      
       {/* Hero Section */}
       <section class="relative py-32 bg-g2-darker">
         <div class="container mx-auto px-6">
