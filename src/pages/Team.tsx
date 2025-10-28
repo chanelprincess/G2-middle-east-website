@@ -66,7 +66,8 @@ export const TeamPage: FC = () => {
       "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
       "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
       "https://usawire.com/cultural-intelligence-outperforms-capital-alone/",
-      "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl"
+      "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl",
+      "https://beforeitsnews.com/business/2025/10/the-new-rules-of-digital-authority-mastering-brand-positioning-in-the-ai-era-3771257.html"
     ],
     
     "knowsAbout": [

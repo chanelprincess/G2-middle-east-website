@@ -32,7 +32,11 @@ export function PerspectiveDetailPage(props: PerspectiveData) {
           "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "name": props.author,
           "jobTitle": props.authorTitle,
-          "url": "https://g2middleeast.com/team/tim-jacobs"
+          "url": "https://g2middleeast.com/team/tim-jacobs",
+          "sameAs": [
+            "https://www.linkedin.com/in/tim-jacobs-6673091a",
+            "https://beforeitsnews.com/business/2025/10/the-new-rules-of-digital-authority-mastering-brand-positioning-in-the-ai-era-3771257.html"
+          ]
         },
         "publisher": {"@id": "https://g2middleeast.com/#organization"},
         "datePublished": props.date,
