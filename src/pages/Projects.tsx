@@ -26,34 +26,6 @@ export const ProjectsPage: FC = () => {
         </div>
       </section>
 
-      {/* Legal Disclaimer */}
-      <section class="py-12 bg-g2-dark border-b border-white/10">
-        <div class="container mx-auto px-6">
-          <div class="max-w-4xl mx-auto">
-            <div class="bg-g2-darker border border-g2-gold/20 rounded-lg p-8">
-              <h3 class="text-xl font-bold text-g2-gold mb-4 flex items-center">
-                <i class="fas fa-info-circle mr-3"></i>
-                Portfolio Attribution
-              </h3>
-              <div class="text-gray-300 leading-relaxed space-y-3">
-                <p>
-                  The projects featured in this portfolio were delivered by the professional team that now operates as <strong class="text-white">G2 Middle East & Africa</strong>, a division of Casta Diva Group.
-                </p>
-                <p>
-                  These case studies represent work executed by our senior leadership and operational staff during their tenure at predecessor organizations, including roles at HQWS and KTS Global. The strategic expertise, operational methodologies, and client relationships developed through these engagements form the foundation of G2 Middle East's current capabilities.
-                </p>
-                <p>
-                  <strong class="text-white">Tim Jacobs</strong>, now Regional Chief Operating Officer of G2 Middle East & Africa, served as Project Director or Lead Consultant on the majority of featured projects. The institutional knowledge, proven delivery frameworks, and stakeholder networks established through this body of work directly inform our client service today.
-                </p>
-                <p class="text-sm text-gray-400 pt-3 border-t border-white/10">
-                  All projects are presented in accordance with professional standards and with respect for client confidentiality. This portfolio demonstrates our team's track record and does not imply current institutional affiliations with predecessor entities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Filter Section */}
       <section class="py-12 bg-g2-dark border-b border-white/10">
         <div class="container mx-auto px-6">
@@ -145,23 +117,29 @@ export const ProjectsPage: FC = () => {
         </div>
       </section>
 
-      {/* Footer Attribution Note */}
-      <section class="py-12 bg-g2-darker border-t border-white/10">
+      {/* Portfolio Attribution - Footer */}
+      <section class="py-12 bg-g2-dark border-t border-white/10">
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto">
-            <div class="text-gray-400 text-sm leading-relaxed space-y-3">
-              <p>
-                <strong class="text-gray-300">Portfolio Delivery Attribution:</strong> The projects featured in this portfolio were delivered by the professional team that now operates as <strong class="text-white">G2 Middle East & Africa</strong>, a division of Casta Diva Group.
-              </p>
-              <p>
-                These case studies represent work executed by our senior leadership and operational staff during their tenure at predecessor organizations, including roles at HQWS and KTS Global. The strategic expertise, operational methodologies, and client relationships developed through these engagements form the foundation of G2 Middle East's current capabilities.
-              </p>
-              <p>
-                <strong class="text-white">Tim Jacobs</strong>, now Regional Chief Operating Officer of G2 Middle East & Africa, served as Project Director or Lead Consultant on the majority of featured projects. The institutional knowledge, proven delivery frameworks, and stakeholder networks established through this body of work directly inform our client service today.
-              </p>
-              <p class="pt-3 border-t border-white/10">
-                All projects are presented in accordance with professional standards and with respect for client confidentiality. This portfolio demonstrates our team's track record and does not imply current institutional affiliations with predecessor entities.
-              </p>
+            <div class="bg-g2-darker border border-g2-gold/20 rounded-lg p-8">
+              <h3 class="text-xl font-bold text-g2-gold mb-4 flex items-center">
+                <i class="fas fa-info-circle mr-3"></i>
+                Portfolio Attribution
+              </h3>
+              <div class="text-gray-300 leading-relaxed space-y-3">
+                <p>
+                  The projects featured in this portfolio were delivered by the professional team that now operates as <strong class="text-white">G2 Middle East & Africa</strong>, a division of Casta Diva Group.
+                </p>
+                <p>
+                  These case studies represent work executed by our senior leadership and operational staff during their tenure at predecessor organizations, including roles at HQWS and KTS Global. The strategic expertise, operational methodologies, and client relationships developed through these engagements form the foundation of G2 Middle East's current capabilities.
+                </p>
+                <p>
+                  <strong class="text-white">Tim Jacobs</strong>, now Regional Chief Operating Officer of G2 Middle East & Africa, served as Project Director or Lead Consultant on the majority of featured projects. The institutional knowledge, proven delivery frameworks, and stakeholder networks established through this body of work directly inform our client service today.
+                </p>
+                <p class="text-sm text-gray-400 pt-3 border-t border-white/10">
+                  All projects are presented in accordance with professional standards and with respect for client confidentiality. This portfolio demonstrates our team's track record and does not imply current institutional affiliations with predecessor entities.
+                </p>
+              </div>
             </div>
           </div>
         </div>
