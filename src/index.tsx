@@ -28,7 +28,7 @@ import { ProjectsResetPasswordPage } from './pages/ProjectsResetPassword'
 import { TermsOfServicePage } from './pages/TermsOfService'
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
-import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail, getContactFormNotificationEmail, getContactFormConfirmationEmail } from './utils/email'
+import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail, getContactFormNotificationEmail, getContactFormConfirmationEmail, getProjectsAdminNotificationEmail, getProjectsRegistrationPendingEmail, getProjectsApprovalEmail } from './utils/email'
 import { uploadFile, downloadFile, deleteFile, generateFilePath } from './utils/r2'
 import * as ProjectsAuth from './lib/projects-auth'
 import { requireProjectsAuth, logActivity, setProjectsAuthCookie, getProjectsAuthSession, clearProjectsAuthCookie } from './lib/projects-auth'
@@ -1612,8 +1612,34 @@ app.post('/api/projects/auth/register', async (c) => {
       VALUES (?, ?, ?)
     `).bind(userId, verificationToken, tokenExpiry.toISOString()).run()
     
-    // TODO: Send verification email
-    // For now, redirect to login with success message
+    // Send email notifications
+    try {
+      const approvalLink = `https://g2middleeast.com/projects/dashboard`
+      
+      // Send admin notification email
+      await sendEmail({
+        to: 'tim@ktsglobal.live',
+        subject: `New Projects Portal Registration - ${sanitizedName}`,
+        html: getProjectsAdminNotificationEmail({
+          full_name: sanitizedName,
+          email: email as string,
+          company_name: sanitizedCompany,
+          phone_number: phone_number as string || '',
+          country: country as string,
+          industry_sector: industry_sector as string
+        }, approvalLink)
+      }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+      
+      // Send user confirmation email
+      await sendEmail({
+        to: email as string,
+        subject: 'Registration Received - G2 Middle East Projects Portal',
+        html: getProjectsRegistrationPendingEmail(sanitizedName)
+      }, c.env.EMAIL_API_KEY, c.env.EMAIL_SERVICE || 'resend')
+    } catch (emailError) {
+      console.error('Failed to send registration emails:', emailError)
+      // Continue with registration even if emails fail
+    }
     
     return c.html(`
       <html>

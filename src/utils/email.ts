@@ -346,3 +346,146 @@ export function getContactFormConfirmationEmail(userName: string): string {
     </html>
   `
 }
+
+// ============================================
+// PROJECTS PORTAL EMAIL TEMPLATES
+// ============================================
+
+export interface ProjectsRegistrationData {
+  full_name: string
+  email: string
+  company_name: string
+  phone_number?: string
+  country: string
+  industry_sector: string
+}
+
+export function getProjectsAdminNotificationEmail(user: ProjectsRegistrationData, approvalLink: string): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #1a1a1a; color: #d4af37; padding: 20px; text-align: center; }
+        .content { background: #f4f4f4; padding: 20px; }
+        .button { display: inline-block; background: #d4af37; color: #1a1a1a; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 20px 0; }
+        .details { background: white; padding: 15px; margin: 15px 0; border-left: 4px solid #d4af37; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h2>New Projects Portal Access Request</h2>
+        </div>
+        <div class="content">
+          <p>A new user has requested access to the Projects Portal:</p>
+          
+          <div class="details">
+            <p><strong>Name:</strong> ${user.full_name}</p>
+            <p><strong>Company:</strong> ${user.company_name}</p>
+            <p><strong>Email:</strong> ${user.email}</p>
+            ${user.phone_number ? `<p><strong>Phone:</strong> ${user.phone_number}</p>` : ''}
+            <p><strong>Country:</strong> ${user.country}</p>
+            <p><strong>Industry:</strong> ${user.industry_sector}</p>
+          </div>
+          
+          <p>Click the button below to review and approve this user in the admin dashboard:</p>
+          <a href="${approvalLink}" class="button">Review Application</a>
+          
+          <p style="margin-top: 20px; font-size: 12px; color: #666;">
+            Or copy this link: ${approvalLink}
+          </p>
+          
+          <p style="margin-top: 30px; font-size: 11px; color: #999;">
+            This is a transactional email from G2 Middle East Projects Portal Management System.
+          </p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `
+}
+
+export function getProjectsRegistrationPendingEmail(userName: string): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #1a1a1a; color: #d4af37; padding: 20px; text-align: center; }
+        .content { background: #f4f4f4; padding: 20px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h2>Registration Received</h2>
+        </div>
+        <div class="content">
+          <p>Dear ${userName},</p>
+          <p>Thank you for registering for access to the G2 Middle East Projects Portal.</p>
+          <p>Your request is currently pending approval. You will receive an email notification once your account has been activated.</p>
+          <p>This typically takes 24-48 hours.</p>
+          <p>Once approved, you'll have access to:</p>
+          <ul>
+            <li>42+ confidential project case studies</li>
+            <li>Detailed insights on major government events</li>
+            <li>Strategic advisory documentation</li>
+            <li>Exclusive behind-the-scenes content</li>
+          </ul>
+          <p style="margin-top: 30px;">
+            Best regards,<br>
+            <strong>G2 Middle East Team</strong>
+          </p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `
+}
+
+export function getProjectsApprovalEmail(userName: string): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: #1a1a1a; color: #d4af37; padding: 20px; text-align: center; }
+        .content { background: #f4f4f4; padding: 20px; }
+        .button { display: inline-block; background: #d4af37; color: #1a1a1a; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 20px 0; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h2>Access Approved!</h2>
+        </div>
+        <div class="content">
+          <p>Dear ${userName},</p>
+          <p>Your request for access to the G2 Middle East Projects Portal has been approved.</p>
+          <p>You can now log in to view our exclusive project case studies and strategic insights:</p>
+          <a href="https://g2middleeast.com/projects/login" class="button">Log In Now</a>
+          <p>You'll have access to:</p>
+          <ul>
+            <li><strong>42+ Project Case Studies</strong> - Papal Mass Abu Dhabi, Queen Elizabeth II State Visit, and more</li>
+            <li><strong>Strategic Insights</strong> - Behind-the-scenes content and decision-making processes</li>
+            <li><strong>Best Practices</strong> - Lessons learned from major government events</li>
+            <li><strong>Exclusive Content</strong> - Not available anywhere else</li>
+          </ul>
+          <p>Thank you for your interest in our work.</p>
+          <p style="margin-top: 30px;">
+            Best regards,<br>
+            <strong>G2 Middle East Team</strong>
+          </p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `
+}
