@@ -2,7 +2,7 @@ import { FC } from 'hono/jsx'
 import { PageLayout } from '../components/Layout'
 
 export const TeamPage: FC = () => {
-  // Schema.org Person markup for Tim Jacobs - PERFECT 10/10 OPTIMIZED VERSION
+  // Schema.org Person markup for Tim Jacobs - VALIDATED & CORRECTED VERSION
   const timJacobsSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -11,26 +11,31 @@ export const TeamPage: FC = () => {
     "alternateName": "Timothy Jacobs",
     "url": "https://g2middleeast.com/team/tim-jacobs",
     "image": "https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b",
-    "inLanguage": "en-GB",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://g2middleeast.com/team/tim-jacobs"
     },
-    "description": "Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. His career is defined by the operational execution of projects with profound geopolitical significance, including the State Visit of Queen Elizabeth II and the Papal Mass of Pope Francis. As Regional COO for G2 Middle East & Africa, he provides strategic counsel to governments on national resilience, public diplomacy, and building a sovereign digital legacy—the core disciplines required to navigate the complexities of the modern global stage.",
+    "description": "Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. His career is defined by the operational execution of projects with profound geopolitical significance, including the State Visit of Queen Elizabeth II and the Papal Mass of Pope Francis. As Regional COO for G2 Middle East & Africa, he provides strategic counsel to governments on cognitive security, counter-disinformation strategy, and building sovereign reputation architecture—the core disciplines required to navigate the complexities of the modern global stage. His expertise spans national resilience, public diplomacy, and the strategic orchestration of major events that shape international standing and long-term digital positioning. With operational direction over 30+ globally significant government and sovereign-level projects, Tim has advised heads of state, royal families, and government ministries across the Middle East and Africa on strategic narrative development, geopolitical risk assessment, and the delivery of mega-events including state visits, royal visits, presidential visits, international summits, Olympic events, World Economic Forum gatherings, UN Climate Conferences (COP), G20 and G7 summits, film festival productions, and museum launches. His work in cultural diplomacy event production, national day celebrations, ceremonial events, and sovereign positioning strategy has established him as a leading authority on foreign direct investment (FDI) advisory and strategic roadmapping for national initiatives across the UAE, Saudi Arabia, Qatar, and broader Middle East regional government relations.",
     "jobTitle": "Regional Chief Operating Officer (COO), Middle East & Africa",
     
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Events Director & Delivery Specialist",
       "description": "Leading operational planner and delivery specialist for mega-events, state visits, and high-stakes cultural projects in the Middle East and globally",
-      "occupationLocation": {
-        "@type": "Place",
-        "name": "Middle East & Africa"
-      },
+      "occupationLocation": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Middle East"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Africa"
+        }
+      ],
       "skills": "Major Event Delivery, State Visit Planning, Operational Excellence, Mega-Event Architecture, Cultural Diplomacy, Sovereign Positioning, National Resilience Strategy, Public Diplomacy, Geopolitical Risk Assessment"
     },
     
-    "gender": "Male",
+    "gender": "http://schema.org/Male",
     "nationality": {
       "@type": "Country",
       "name": "Australia"
@@ -47,18 +52,6 @@ export const TeamPage: FC = () => {
     },
     "email": "tim@g2middleeast.com",
     "telephone": "+971-50-XXX-XXXX",
-    
-    "potentialAction": {
-      "@type": "ContactAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "mailto:tim@g2middleeast.com",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      }
-    },
     
     "sameAs": [
       "https://www.linkedin.com/in/tim-jacobs-6673091a",
@@ -123,8 +116,7 @@ export const TeamPage: FC = () => {
           "https://www.linkedin.com/company/casta-diva-group/",
           "https://www.instagram.com/castadiva_group/"
         ]
-      },
-      "jobTitle": "Regional Chief Operating Officer (COO)"
+      }
     },
     
     "memberOf": [
@@ -197,20 +189,21 @@ export const TeamPage: FC = () => {
       "description": "Seeking sovereign-level advisory opportunities for national resilience, public diplomacy, and major event delivery across Middle East, Africa, and global markets"
     },
     
-    "achievement": [
-      "Advised governments on national resilience, public diplomacy, and sovereign digital legacy strategies",
+    "award": [
       "Operational director for 30+ globally significant government and sovereign-level projects",
       "Strategic counsel to heads of state, royal families, and government ministries across Middle East and Africa"
     ],
     
-    "author": [
+    "subjectOf": [
       {
         "@type": "Article",
         "headline": "Cultural Intelligence Outperforms Capital Alone",
         "url": "https://usawire.com/cultural-intelligence-outperforms-capital-alone/",
         "datePublished": "2024-11-28",
         "dateModified": "2024-11-28",
-        "inLanguage": "en-GB",
+        "author": {
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "USA Wire"
@@ -223,7 +216,9 @@ export const TeamPage: FC = () => {
         "url": "https://www.linkedin.com/posts/tim-jacobs-6673091a_cultural-intelligence-is-the-new-commercial-activity-7282667063598923776-N-Zl",
         "datePublished": "2024-11-28",
         "dateModified": "2024-11-28",
-        "inLanguage": "en-GB",
+        "author": {
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "LinkedIn"
@@ -236,23 +231,21 @@ export const TeamPage: FC = () => {
         "url": "https://campaignme.com/how-the-gcc-is-harnessing-the-power-of-unified-narratives-in-event-marketing/",
         "datePublished": "2024-10-15",
         "dateModified": "2024-10-15",
-        "inLanguage": "en-GB",
+        "author": {
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Campaign Middle East"
         },
         "description": "Strategic approaches to unified narrative development for major events and nation branding in the Gulf region."
-      }
-    ],
-    
-    "subjectOf": [
+      },
       {
         "@type": "Article",
         "headline": "Who is Tim Jacobs? A Leader in Global Strategy, From State Visits to Digital Empires",
         "url": "https://timebusinessnews.com/who-is-tim-jacobs-a-leader-in-global-strategy-from-state-visits-to-digital-empires/",
         "datePublished": "2024-09-20",
         "dateModified": "2024-09-20",
-        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "Time Business News"
@@ -265,7 +258,6 @@ export const TeamPage: FC = () => {
         "url": "https://www.tpimeamagazine.com/tim-jacobs-chief-operating-officer-hqws/",
         "datePublished": "2024-08-10",
         "dateModified": "2024-08-10",
-        "inLanguage": "en-GB",
         "publisher": {
           "@type": "Organization",
           "name": "TPI Magazine"
@@ -283,7 +275,6 @@ export const TeamPage: FC = () => {
         "endDate": "2010-11-26",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "United Arab Emirates",
@@ -303,8 +294,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -318,7 +308,6 @@ export const TeamPage: FC = () => {
         "startDate": "2019-02-05",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -339,8 +328,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -355,7 +343,6 @@ export const TeamPage: FC = () => {
         "endDate": "2019-03-21",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -376,8 +363,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Special Advisor Ceremonies"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -391,7 +377,6 @@ export const TeamPage: FC = () => {
         "startDate": "2013",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -408,8 +393,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Managing Consultant / Director of Broadcast & Media Production"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -424,7 +408,6 @@ export const TeamPage: FC = () => {
         "endDate": "2012-08-12",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "London, United Kingdom",
@@ -445,8 +428,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -460,7 +442,6 @@ export const TeamPage: FC = () => {
         "startDate": "2017",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Al Ain, UAE",
@@ -473,8 +454,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -488,7 +468,6 @@ export const TeamPage: FC = () => {
         "startDate": "2015",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Saudi Arabia",
@@ -500,8 +479,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -515,7 +493,6 @@ export const TeamPage: FC = () => {
         "startDate": "2014",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Al Ain, UAE",
@@ -528,8 +505,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Managing Project Consultant"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -543,7 +519,6 @@ export const TeamPage: FC = () => {
         "startDate": "2012-12-02",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -564,8 +539,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -580,7 +554,6 @@ export const TeamPage: FC = () => {
         "endDate": "2012-08-12",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "London, United Kingdom",
@@ -601,8 +574,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -616,7 +588,6 @@ export const TeamPage: FC = () => {
         "startDate": "2013",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -629,8 +600,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Managing Consultant"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -644,7 +614,6 @@ export const TeamPage: FC = () => {
         "startDate": "2013",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -661,8 +630,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Managing Consultant"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -676,7 +644,6 @@ export const TeamPage: FC = () => {
         "startDate": "2012",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "inLanguage": "en-GB",
         "location": {
           "@type": "Place",
           "name": "Abu Dhabi, UAE",
@@ -693,8 +660,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Consultant"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1317,13 +1283,6 @@ export const TeamPage: FC = () => {
         "name": "Geopolitical Risk & Strategic Partnership Vetting",
         "description": "Advisory on geopolitical risk assessment, strategic partnership vetting, and cross-border government relations for sovereign entities"
       }
-    ],
-    
-    "award": [
-      "Chairperson, Live Events & Video Awards - Stevie Awards",
-      "Judge, Australian Event Awards",
-      "Jury Panelist, Eventex Awards",
-      "Jury Member, WOW Awards Middle East"
     ],
     
     "alumniOf": {
