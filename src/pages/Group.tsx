@@ -29,7 +29,7 @@ export const GroupPage: FC = () => {
         {"@type": "Brand", "name": "agenZy", "url": "https://www.agenzy.it/"},
         {"@type": "Brand", "name": "CastaDiva Pictures", "url": "https://www.castadivapictures.com/"},
         {"@type": "Brand", "name": "Akita Film", "url": "https://www.akitafilm.com/"},
-        {"@type": "Brand", "name": "E-Motion", "url": "https://www.e-motion.it/"}
+        {"@type": "Brand", "name": "E-Motion", "url": "https://www.e-motion.tv/"}
       ]
     },
     {
@@ -431,7 +431,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 9: E-MOTION */}
-              <a href="https://www.e-motion.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="E-MOTION">
+              <a href="https://www.e-motion.tv/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="E-MOTION">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80" 
