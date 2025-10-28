@@ -744,9 +744,12 @@ app.get('/projects/account', requireProjectsAuth, async (c) => {
 })
 
 // Project Detail Pages - Dynamic routing for all 12 projects (MUST be after specific routes)
+// TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
 // Protected Project Detail Pages - requires authentication
-app.get('/projects/:slug', requireProjectsAuth, async (c) => {
-  const user = c.get('projectsUser') as ProjectsAuth.UserSession
+// PRODUCTION VERSION: app.get('/projects/:slug', requireProjectsAuth, async (c) => {
+app.get('/projects/:slug', async (c) => {
+  // TODO: REMOVE BEFORE PRODUCTION - Restore this line:
+  // const user = c.get('projectsUser') as ProjectsAuth.UserSession
   const slug = c.req.param('slug')
   const projectData = projectsData[slug as keyof typeof projectsData]
   
