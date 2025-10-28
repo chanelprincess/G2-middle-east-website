@@ -145,6 +145,28 @@ export const ProjectsPage: FC = () => {
         </div>
       </section>
 
+      {/* Footer Attribution Note */}
+      <section class="py-12 bg-g2-darker border-t border-white/10">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-gray-400 text-sm leading-relaxed space-y-3">
+              <p>
+                <strong class="text-gray-300">Portfolio Delivery Attribution:</strong> The projects featured in this portfolio were delivered by the professional team that now operates as <strong class="text-white">G2 Middle East & Africa</strong>, a division of Casta Diva Group.
+              </p>
+              <p>
+                These case studies represent work executed by our senior leadership and operational staff during their tenure at predecessor organizations, including roles at HQWS and BWS Group. The strategic expertise, operational methodologies, and client relationships developed through these engagements form the foundation of G2 Middle East's current capabilities.
+              </p>
+              <p>
+                <strong class="text-white">Tim Jacobs</strong>, now Regional Chief Operating Officer of G2 Middle East & Africa, served as Project Director or Lead Consultant on the majority of featured projects. The institutional knowledge, proven delivery frameworks, and stakeholder networks established through this body of work directly inform our client service today.
+              </p>
+              <p class="pt-3 border-t border-white/10">
+                All projects are presented in accordance with professional standards and with respect for client confidentiality. This portfolio demonstrates our team's track record and does not imply current institutional affiliations with predecessor entities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* JavaScript for filtering */}
       <script dangerouslySetInnerHTML={{
         __html: `
