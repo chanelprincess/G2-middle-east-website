@@ -25,7 +25,7 @@ export const GroupPage: FC = () => {
         {"@type": "Brand", "name": "Genius Progetti", "url": "https://www.geniusprogetti.com/"},
         {"@type": "Brand", "name": "Blue Note Milano", "url": "https://www.bluenotemilano.com/"},
         {"@type": "Brand", "name": "CastaDiva Art & Show", "url": "https://www.castadivaartandshow.com/en/"},
-        {"@type": "Brand", "name": "FirstClass", "url": "https://www.firstclass.it/"},
+        {"@type": "Brand", "name": "FirstClass", "url": "https://www.fclassevents.com/en/home_eng/"},
         {"@type": "Brand", "name": "agenZy", "url": "https://www.agenzy.it/"},
         {"@type": "Brand", "name": "CastaDiva Pictures", "url": "https://www.castadivapictures.com/"},
         {"@type": "Brand", "name": "Akita Film", "url": "https://www.akitafilm.com/"},
@@ -311,7 +311,7 @@ export const GroupPage: FC = () => {
               </a>
 
               {/* Company 5: FIRSTCLASS */}
-              <a href="https://www.firstclass.it/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="FIRSTCLASS">
+              <a href="https://www.fclassevents.com/en/home_eng/" target="_blank" rel="noopener noreferrer" class="service-card block group border border-white/10 rounded-2xl overflow-hidden bg-g2-darker/30 hover:border-g2-gold/30 transition-all duration-300" data-entity="group-company" data-company="FIRSTCLASS">
                 <div class="relative h-48 w-full overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" 
