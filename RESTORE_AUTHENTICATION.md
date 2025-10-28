@@ -6,7 +6,8 @@
 
 Authentication has been temporarily disabled for:
 1. **Projects Page** (`/projects`)
-2. **Whitepapers Page** (`/whitepapers`)
+2. **Project Detail Pages** (`/projects/:slug`) - Individual project case studies
+3. **Whitepapers Page** (`/whitepapers`)
 
 This allows easy editing and testing without login requirements.
 
@@ -17,7 +18,7 @@ This allows easy editing and testing without login requirements.
 1. **Open file:** `/home/user/webapp/src/index.tsx`
 
 2. **Search for:** `TODO: REMOVE BEFORE PRODUCTION`
-   - You'll find 2 sections that need to be restored
+   - You'll find 3 sections that need to be restored
 
 3. **Projects Page (around line 599):**
 
@@ -38,7 +39,26 @@ This allows easy editing and testing without login requirements.
      const user = c.get('projectsUser') as ProjectsAuth.UserSession
    ```
 
-4. **Whitepapers Page (around line 837):**
+4. **Project Detail Pages (around line 748):**
+
+   **REPLACE THIS:**
+   ```typescript
+   // TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
+   // Protected Project Detail Pages - requires authentication
+   // PRODUCTION VERSION: app.get('/projects/:slug', requireProjectsAuth, async (c) => {
+   app.get('/projects/:slug', async (c) => {
+     // TODO: REMOVE BEFORE PRODUCTION - Restore this line:
+     // const user = c.get('projectsUser') as ProjectsAuth.UserSession
+   ```
+
+   **WITH THIS:**
+   ```typescript
+   // Protected Project Detail Pages - requires authentication
+   app.get('/projects/:slug', requireProjectsAuth, async (c) => {
+     const user = c.get('projectsUser') as ProjectsAuth.UserSession
+   ```
+
+5. **Whitepapers Page (around line 837):**
 
    **REPLACE THIS:**
    ```typescript
