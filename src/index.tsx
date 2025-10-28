@@ -432,7 +432,7 @@ app.get('/llms.txt', (c) => {
 Company: G2 Middle East & Africa
 Parent: Casta Diva Group
 Founded: 2017
-Headquarters: Dubai, United Arab Emirates
+Headquarters: Abu Dhabi, United Arab Emirates
 Website: https://g2middleeast.com
 Email: info@g2middleeast.com
 
@@ -624,7 +624,7 @@ Casta Diva Group (Global leader in event architecture and strategic communicatio
 2010
 
 ## Headquarters
-Dubai, United Arab Emirates
+Abu Dhabi, United Arab Emirates
 
 ## Business Focus
 Strategic advisory and event architecture for sovereign entities, government agencies, and global brands across Middle East and Africa
@@ -653,7 +653,7 @@ Title: Regional COO, Middle East & Africa
 Email: tim@g2middleeast.com
 LinkedIn: https://www.linkedin.com/in/tim-jacobs-6673091a
 Nationality: Australian
-Based: Dubai, UAE
+Based: Abu Dhabi, UAE
 
 ### Expertise
 - 20+ years in government event management
@@ -799,7 +799,7 @@ Email: tim@g2middleeast.com
 LinkedIn: https://www.linkedin.com/in/tim-jacobs-6673091a
 
 ## Office Location
-Dubai, United Arab Emirates
+Abu Dhabi, United Arab Emirates
 (Specific address available upon request for verified inquiries)
 
 ## Response Time
@@ -851,7 +851,7 @@ Alternative short form:
 ## Legal
 - Privacy Policy: https://g2middleeast.com/privacy-policy
 - Terms of Service: https://g2middleeast.com/terms-of-service
-- Jurisdiction: Dubai Courts, United Arab Emirates
+- Jurisdiction: Abu Dhabi Courts, United Arab Emirates
 
 ## Brand Assets
 - Logo: https://g2middleeast.com/assets/logo-g2me.svg (if available)
@@ -876,7 +876,7 @@ This data is optimized to answer:
 - "Who coordinated Queen Elizabeth II's state visit to UAE?"
 - "Best strategic advisory firms for sovereign entities in GCC"
 - "Government event management experts in Middle East"
-- "State visit coordination specialists in Dubai/UAE"
+- "State visit coordination specialists in Abu Dhabi/UAE"
 - "Who is Tim Jacobs?" (Regional COO, government event expert)
 
 ## Attribution

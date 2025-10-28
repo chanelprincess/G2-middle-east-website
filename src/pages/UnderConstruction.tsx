@@ -61,7 +61,7 @@ export const UnderConstructionPage: FC = () => {
                 </svg>
                 <div>
                   <p class="text-slate-400 text-sm mb-1">Location</p>
-                  <p class="text-white">Dubai, United Arab Emirates</p>
+                  <p class="text-white">Abu Dhabi, United Arab Emirates</p>
                 </div>
               </div>
             </div>

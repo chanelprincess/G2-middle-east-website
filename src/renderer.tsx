@@ -41,9 +41,9 @@ export const renderer = jsxRenderer(({
   author,
   publishedTime,
   locale = 'en_US',
-  geoRegion = 'AE-DU',
-  geoPlacename = 'Dubai',
-  geoPosition = '25.2048;55.2708',
+  geoRegion = 'AE-AZ',
+  geoPlacename = 'Abu Dhabi',
+  geoPosition = '24.4539;54.3773',
   robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 }: RendererProps) => {
   

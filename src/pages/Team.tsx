@@ -46,8 +46,8 @@ export const TeamPage: FC = () => {
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Dubai",
-      "addressRegion": "Dubai",
+      "addressLocality": "Abu Dhabi",
+      "addressRegion": "Abu Dhabi",
       "addressCountry": {
         "@type": "Country",
         "name": "AE"
