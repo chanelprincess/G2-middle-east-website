@@ -1051,13 +1051,9 @@ app.get('/privacy', (c) => {
   return c.redirect('/privacy-policy', 301)
 })
 
-// Projects Page
-// TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
-// Protected Projects Page - requires authentication
-// PRODUCTION VERSION: app.get('/projects', requireProjectsAuth, async (c) => {
-app.get('/projects', async (c) => {
-  // TODO: REMOVE BEFORE PRODUCTION - Restore this line:
-  // const user = c.get('projectsUser') as ProjectsAuth.UserSession
+// Projects Page - Protected (Requires Authentication)
+app.get('/projects', requireProjectsAuth, async (c) => {
+  const user = c.get('projectsUser') as ProjectsAuth.UserSession
   
   return c.render(
     <ProjectsPage />,
@@ -1203,13 +1199,9 @@ app.get('/projects/account', requireProjectsAuth, async (c) => {
   )
 })
 
-// Project Detail Pages - Dynamic routing for all 12 projects (MUST be after specific routes)
-// TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
-// Protected Project Detail Pages - requires authentication
-// PRODUCTION VERSION: app.get('/projects/:slug', requireProjectsAuth, async (c) => {
-app.get('/projects/:slug', async (c) => {
-  // TODO: REMOVE BEFORE PRODUCTION - Restore this line:
-  // const user = c.get('projectsUser') as ProjectsAuth.UserSession
+// Project Detail Pages - Dynamic routing (Protected - Requires Authentication)
+app.get('/projects/:slug', requireProjectsAuth, async (c) => {
+  const user = c.get('projectsUser') as ProjectsAuth.UserSession
   const slug = c.req.param('slug')
   const projectData = projectsData[slug as keyof typeof projectsData]
   
@@ -1312,16 +1304,10 @@ app.get('/whitepapers/pending', (c) => {
   )
 })
 
-// Protected Whitepapers Page
-// TODO: REMOVE BEFORE PRODUCTION - Authentication temporarily disabled for editing
-// PRODUCTION VERSION: app.get('/whitepapers', async (c) => {
+// Protected Whitepapers Page (Requires Authentication)
 app.get('/whitepapers', async (c) => {
-  // TODO: REMOVE BEFORE PRODUCTION - Restore these lines:
-  // const user = await requireAuth(c)
-  // if (user instanceof Response) return user
-  
-  // Temporary mock user for development
-  const user = { email: 'dev@g2middleeast.com', name: 'Development User' }
+  const user = await requireAuth(c)
+  if (user instanceof Response) return user
   
   // Fetch active whitepapers
   const whitepapers = await c.env.DB.prepare(
