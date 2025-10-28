@@ -66,8 +66,9 @@ export const ContactPage: FC = () => {
                     <div>
                       <h3 class="text-white font-semibold mb-1">Location</h3>
                       <p class="text-gray-300">
-                        Dubai, UAE<br />
-                        Serving clients across the GCC
+                        Mazyad 3, MBZ City<br />
+                        Abu Dhabi, UAE<br />
+                        <span class="text-sm">Serving clients across the GCC</span>
                       </p>
                     </div>
                   </div>

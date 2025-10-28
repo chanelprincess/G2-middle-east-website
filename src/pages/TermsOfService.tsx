@@ -343,13 +343,13 @@ export function TermsOfServicePage() {
               </p>
               <ol class="list-decimal list-inside space-y-2 ml-4">
                 <li><strong>Negotiation:</strong> Good faith negotiations between the parties for 30 days</li>
-                <li><strong>Mediation:</strong> If negotiation fails, mediation in Dubai, UAE</li>
-                <li><strong>Arbitration:</strong> If mediation fails, binding arbitration under the rules of the Dubai International Arbitration Centre (DIAC), conducted in English in Dubai, UAE</li>
+                <li><strong>Mediation:</strong> If negotiation fails, mediation in Abu Dhabi, UAE</li>
+                <li><strong>Arbitration:</strong> If mediation fails, binding arbitration under the rules of the Abu Dhabi Commercial Conciliation and Arbitration Centre (ADCCAC), conducted in English in Abu Dhabi, UAE</li>
               </ol>
 
               <h3 class="text-xl font-semibold text-white mt-6 mb-3">11.3 Jurisdiction</h3>
               <p>
-                For matters not subject to arbitration, you consent to the exclusive jurisdiction of the courts located in Dubai, United Arab Emirates.
+                For matters not subject to arbitration, you consent to the exclusive jurisdiction of the courts located in Abu Dhabi, United Arab Emirates.
               </p>
             </div>
           </section>
