@@ -1,0 +1,837 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.g2middleeast.com/projects#webpage",
+      "url": "https://www.g2middleeast.com/projects",
+      "name": "Projects Portfolio - G2 Middle East & Africa",
+      "description": "Comprehensive portfolio of 50+ government events, state visits, international summits, and mega-events delivered across the Middle East and Africa. Our expertise includes papal masses, royal state visits, COP climate summits, World Expos, FIFA World Cup operations, and G20 coordination. Proven track record managing events from 100 to 180,000 attendees with flawless protocol execution and global media coverage.",
+      "inLanguage": ["en", "ar"],
+      "isPartOf": {
+        "@id": "https://www.g2middleeast.com/#website"
+      },
+      "about": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.g2middleeast.com/projects#breadcrumb"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "G2 Middle East Government Events and Projects",
+        "description": "Collection of major government events, state visits, and international summits",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {"@id": "https://www.g2middleeast.com/projects/papal-mass-abu-dhabi#event"},
+          {"@id": "https://www.g2middleeast.com/projects/queen-elizabeth-state-visit#event"},
+          {"@id": "https://www.g2middleeast.com/projects/cop27-egypt#event"},
+          {"@id": "https://www.g2middleeast.com/projects/expo-2020-dubai#event"},
+          {"@id": "https://www.g2middleeast.com/projects/fifa-world-cup-qatar-2022#event"},
+          {"@id": "https://www.g2middleeast.com/projects/special-olympics-abu-dhabi#event"},
+          {"@id": "https://www.g2middleeast.com/projects/cop28-uae#event"},
+          {"@id": "https://www.g2middleeast.com/projects/abu-dhabi-grand-prix#event"},
+          {"@id": "https://www.g2middleeast.com/projects/dubai-world-cup#event"},
+          {"@id": "https://www.g2middleeast.com/projects/uae-national-day#event"}
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.g2middleeast.com/projects#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.g2middleeast.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "https://www.g2middleeast.com/projects"
+        }
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/papal-mass-abu-dhabi#event",
+      "name": "Papal Mass Abu Dhabi 2019",
+      "alternateName": [
+        "Pope Francis Abu Dhabi Mass",
+        "Historic Papal Visit to Arabian Peninsula",
+        "Abu Dhabi Papal Mass 2019",
+        "Pope Francis UAE Visit"
+      ],
+      "description": "The historic Papal Mass in Abu Dhabi on February 5, 2019, marked an unprecedented milestone in interfaith relations and religious tolerance. As the first-ever papal visit to the Arabian Peninsula in the 2,000-year history of the Catholic Church, this monumental event brought together 180,000 worshippers at Zayed Sports City Stadium for an open-air celebration of faith and unity. G2 Middle East served as strategic advisor and operational coordinator for this high-stakes government event, managing every aspect from diplomatic protocol and security coordination to crowd management and media operations. The visit culminated in the signing of the historic Document on Human Fraternity for World Peace and Living Together by Pope Francis and the Grand Imam of Al-Azhar, Dr. Ahmed el-Tayeb, establishing a new paradigm for interfaith dialogue globally. This groundbreaking event required meticulous coordination across multiple government ministries, international security agencies, Vatican protocol officials, and local authorities. Our team orchestrated seamless integration of Catholic ceremonial traditions with UAE cultural protocols, ensuring dignified and respectful execution that honored both religious and sovereign sensibilities. The successful delivery of this 180,000-attendee mega-event under intense global media scrutiny demonstrated G2's unparalleled expertise in papal visit management, interfaith event coordination, and high-stakes government event delivery, setting new standards for religious tolerance and diplomatic excellence in the Middle East.",
+      "startDate": "2019-02-05T10:30:00+04:00",
+      "endDate": "2019-02-05T13:00:00+04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Zayed Sports City Stadium",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Zayed Sports City",
+          "addressLocality": "Abu Dhabi",
+          "addressRegion": "Abu Dhabi",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.4237,
+          "longitude": 54.4402
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "performer": {
+        "@type": "Person",
+        "name": "Pope Francis",
+        "jobTitle": "Pope of the Catholic Church",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Pope_Francis",
+          "https://www.vatican.va/content/francesco/en.html"
+        ]
+      },
+      "attendeeCount": 180000,
+      "maximumAttendeeCapacity": 180000,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Catholics, Interfaith Community, General Public",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "United Arab Emirates, Middle East, Global"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/papal-mass-abu-dhabi.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "Papal Mass Abu Dhabi 2019 - 180,000 attendees at Zayed Sports City Stadium"
+      },
+      "keywords": [
+        "papal mass",
+        "Pope Francis",
+        "Abu Dhabi",
+        "interfaith dialogue",
+        "Catholic Church",
+        "UAE",
+        "historic visit",
+        "Arabian Peninsula",
+        "religious tolerance",
+        "Document on Human Fraternity",
+        "government event management",
+        "papal visit coordination",
+        "high-stakes event",
+        "mega-event delivery"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Interfaith Dialogue"},
+        {"@type": "Thing", "name": "Religious Tolerance"},
+        {"@type": "Thing", "name": "Catholic Church"},
+        {"@type": "Thing", "name": "Papal Visit"},
+        {"@type": "Thing", "name": "Government Event Management"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/papal-mass-abu-dhabi",
+      "workFeatured": {
+        "@type": "CreativeWork",
+        "name": "Document on Human Fraternity for World Peace and Living Together",
+        "description": "Historic declaration signed by Pope Francis and Grand Imam of Al-Azhar",
+        "datePublished": "2019-02-04"
+      }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/queen-elizabeth-state-visit#event",
+      "name": "State Visit H.M. Queen Elizabeth II to UAE",
+      "alternateName": [
+        "Queen Elizabeth II UAE Visit",
+        "Royal State Visit UAE 2010",
+        "British Royal Visit Abu Dhabi",
+        "HM Queen Elizabeth State Visit"
+      ],
+      "description": "The State Visit of Her Majesty Queen Elizabeth II to the United Arab Emirates from November 24-26, 2010, represented a watershed moment in UK-UAE bilateral relations and royal diplomatic protocol. This meticulously orchestrated three-day state visit showcased G2 Middle East's unparalleled expertise in managing royal protocol, diplomatic ceremonial, and high-stakes government events with sovereign-level precision. As strategic advisors to the UAE government, our team coordinated every aspect of this historic visit, from advance planning and security coordination to ceremonial design and media management. The visit included formal state receptions, bilateral meetings between government leaders, cultural exchanges, and public appearances that required seamless integration of British Royal Protocol with UAE diplomatic traditions. Our comprehensive approach ensured flawless execution of complex ceremonial requirements including arrival ceremonies, state dinners, official gift exchanges, and departure protocols, all while maintaining the dignity and gravitas expected of a sovereign monarch's visit. The successful delivery of this state visit demonstrated G2's deep understanding of royal protocol management, diplomatic ceremonial design, and the cultural sensitivities essential for strengthening international relations at the highest level. This landmark event reinforced the UAE's position as a key strategic partner for the United Kingdom and established new benchmarks for state visit coordination in the Middle East region, showcasing our capability to manage the intricate requirements of royal family visits with absolute precision and diplomatic excellence.",
+      "startDate": "2010-11-24",
+      "endDate": "2010-11-26",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Abu Dhabi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abu Dhabi",
+          "addressRegion": "Abu Dhabi",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.4539,
+          "longitude": 54.3773
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "performer": {
+        "@type": "Person",
+        "name": "Queen Elizabeth II",
+        "jobTitle": "Queen of the United Kingdom",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Elizabeth_II"
+        ]
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Government Officials, Diplomatic Corps, Royal Households",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "United Arab Emirates, United Kingdom"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/queen-elizabeth-uae-visit.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "State Visit of H.M. Queen Elizabeth II to UAE, November 2010"
+      },
+      "keywords": [
+        "Queen Elizabeth II",
+        "royal visit",
+        "state visit",
+        "UAE",
+        "diplomatic protocol",
+        "British Royal Family",
+        "Abu Dhabi",
+        "UK-UAE relations",
+        "bilateral relations",
+        "royal protocol management",
+        "state ceremonial",
+        "government event management",
+        "diplomatic coordination"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Royal Protocol"},
+        {"@type": "Thing", "name": "Diplomatic Relations"},
+        {"@type": "Thing", "name": "State Visit"},
+        {"@type": "Thing", "name": "UK-UAE Relations"},
+        {"@type": "Thing", "name": "Ceremonial Management"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/queen-elizabeth-state-visit"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/cop27-egypt#event",
+      "name": "COP27 Egypt - UN Climate Change Conference",
+      "alternateName": [
+        "COP27 Sharm El-Sheikh",
+        "27th UN Climate Change Conference",
+        "Egypt Climate Summit 2022",
+        "UNFCCC COP27"
+      ],
+      "description": "The 27th Conference of the Parties (COP27) to the United Nations Framework Convention on Climate Change, held in Sharm El-Sheikh, Egypt, from November 6-18, 2022, brought together over 45,000 participants including heads of state, ministers, negotiators, climate activists, and international media for crucial climate action deliberations. G2 Middle East provided strategic advisory and operational coordination services for this landmark international summit, leveraging our extensive experience in managing mega-events and complex multilateral conferences. Our comprehensive approach encompassed venue logistics, delegate coordination, security planning, protocol management, and media operations for one of the world's most significant climate gatherings. This COP27 conference achieved historic breakthroughs including the establishment of a loss and damage fund for vulnerable nations, demonstrating the critical importance of professional summit management in facilitating meaningful climate action outcomes. Our team's expertise in international summit coordination ensured seamless execution of plenary sessions, bilateral meetings, pavilion activations, and ceremonial events throughout the two-week conference. The successful delivery of COP27 showcased G2's capability to manage complex multilateral forums involving hundreds of government delegations, thousands of NGO representatives, and intense global media scrutiny. This climate summit experience reinforced our position as the Middle East's leading strategic advisor for international conferences, demonstrating mastery of the intricate diplomatic, logistical, and ceremonial requirements essential for UN-level gatherings. Our work on COP27 exemplifies how professional event management excellence contributes directly to advancing global climate action and facilitating crucial international cooperation on existential challenges.",
+      "startDate": "2022-11-06",
+      "endDate": "2022-11-18",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Sharm El-Sheikh International Convention Centre",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sharm El-Sheikh",
+          "addressRegion": "South Sinai",
+          "addressCountry": "EG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.9158,
+          "longitude": 34.3300
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "attendeeCount": 45000,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Heads of State, Government Ministers, Climate Negotiators, NGOs, International Media",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/cop27-egypt.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "COP27 Egypt - UN Climate Change Conference, Sharm El-Sheikh 2022"
+      },
+      "keywords": [
+        "COP27",
+        "climate change",
+        "UN summit",
+        "Egypt",
+        "Sharm El-Sheikh",
+        "climate action",
+        "sustainability",
+        "international summit",
+        "UNFCCC",
+        "government event management",
+        "international conference",
+        "multilateral coordination",
+        "climate summit delivery"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Climate Change"},
+        {"@type": "Thing", "name": "International Summit"},
+        {"@type": "Thing", "name": "UN Conference"},
+        {"@type": "Thing", "name": "Climate Action"},
+        {"@type": "Thing", "name": "Multilateral Diplomacy"}
+      ],
+      "inLanguage": ["en", "ar", "fr"],
+      "url": "https://www.g2middleeast.com/projects/cop27-egypt",
+      "superEvent": {
+        "@type": "EventSeries",
+        "name": "UN Climate Change Conference (COP)",
+        "description": "Annual Conference of the Parties to the UNFCCC"
+      }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/expo-2020-dubai#event",
+      "name": "Expo 2020 Dubai",
+      "alternateName": [
+        "World Expo 2020 Dubai",
+        "Dubai World Expo",
+        "Expo 2020 UAE",
+        "Dubai International Exposition 2020"
+      ],
+      "description": "Expo 2020 Dubai, held from October 1, 2021, to March 31, 2022, represented the first World Expo ever hosted in the Middle East, Africa, and South Asia region, welcoming an unprecedented 24 million visitors from 192 countries over six transformative months. This mega-event of unparalleled scale and global significance showcased humanity's greatest innovations, cultural achievements, and collaborative spirit under the theme 'Connecting Minds, Creating the Future.' G2 Middle East served as strategic advisor for multiple pavilions and national day celebrations throughout the Expo, providing expertise in government event management, protocol coordination, ceremonial design, and high-stakes event delivery. Our comprehensive involvement spanned operational planning, stakeholder coordination, VIP management, and media relations for numerous government activations and bilateral events that took place within the Expo site. The successful execution of Expo 2020 Dubai required orchestration of thousands of daily events, coordination across 192 country pavilions, and management of continuous programming for diverse international audiences. This landmark mega-event demonstrated the UAE's capability to host world-class gatherings while advancing global dialogue on sustainability, mobility, and opportunity. G2's role in supporting Expo 2020 operations showcased our expertise in mega-event architecture, international coordination, and the complex logistics essential for executing events of planetary scale. The legacy of Expo 2020 continues through Expo City Dubai, serving as a permanent testament to the power of international cooperation and human ingenuity, with G2 proud to have contributed to this historic milestone in the UAE's development as a global events destination.",
+      "startDate": "2021-10-01",
+      "endDate": "2022-03-31",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Expo 2020 Dubai Site",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
+          "addressRegion": "Dubai",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.0657,
+          "longitude": 55.1713
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "attendeeCount": 24000000,
+      "maximumAttendeeCapacity": 24000000,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "International Visitors, Government Delegations, Global Citizens",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global - 192 Countries"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/expo-2020-dubai.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "Expo 2020 Dubai - First World Expo in MEASA region, 24 million visitors"
+      },
+      "keywords": [
+        "Expo 2020",
+        "World Expo",
+        "Dubai",
+        "UAE",
+        "international exhibition",
+        "innovation",
+        "sustainability",
+        "global collaboration",
+        "mega-event delivery",
+        "government event management",
+        "national day celebrations",
+        "international coordination",
+        "World Expo management"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "World Expo"},
+        {"@type": "Thing", "name": "Innovation"},
+        {"@type": "Thing", "name": "Sustainability"},
+        {"@type": "Thing", "name": "International Cooperation"},
+        {"@type": "Thing", "name": "Mega-Event Management"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/expo-2020-dubai"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/fifa-world-cup-qatar-2022#event",
+      "name": "FIFA World Cup Qatar 2022",
+      "alternateName": [
+        "Qatar World Cup 2022",
+        "FIFA 2022",
+        "World Cup Qatar",
+        "Qatar 2022 Football Championship"
+      ],
+      "description": "The FIFA World Cup Qatar 2022, held from November 20 to December 18, 2022, marked a historic milestone as the first World Cup ever hosted in the Middle East region, welcoming 3.4 million spectators to witness 64 matches across eight state-of-the-art stadiums in and around Doha. This unprecedented sporting mega-event required coordination at a scale never before attempted in the Gulf region, integrating advanced infrastructure, sophisticated security protocols, international media operations, and diplomatic ceremonial requirements across multiple venues simultaneously. G2 Middle East provided strategic advisory services for government-related aspects of World Cup operations, leveraging our expertise in mega-event coordination, protocol management, and high-stakes event delivery. Our involvement encompassed coordination with FIFA officials, government ministries, security agencies, and international delegations to ensure seamless execution of opening and closing ceremonies, VIP hospitality, bilateral meetings, and diplomatic receptions throughout the tournament. The successful delivery of Qatar 2022 demonstrated the region's capability to host the world's most-watched sporting event while maintaining cultural authenticity and Arab hospitality traditions. This month-long tournament required 24/7 operational excellence, crisis management readiness, and the ability to adapt rapidly to evolving circumstances while maintaining the highest standards of safety, security, and guest experience. G2's role in supporting World Cup operations showcased our expertise in international sports event management, FIFA coordination, and the complex interplay between sporting requirements and diplomatic protocol essential for events of this magnitude and global significance.",
+      "startDate": "2022-11-20",
+      "endDate": "2022-12-18",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Multiple Stadiums, Doha",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Doha",
+          "addressRegion": "Doha",
+          "addressCountry": "QA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.2854,
+          "longitude": 51.5310
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "attendeeCount": 3400000,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Football Fans, International Tourists, Sports Enthusiasts, Government Delegations",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/fifa-world-cup-qatar-2022.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "FIFA World Cup Qatar 2022 - First World Cup in Middle East, 3.4M attendees"
+      },
+      "keywords": [
+        "FIFA World Cup",
+        "Qatar 2022",
+        "football",
+        "soccer",
+        "international sports",
+        "mega event",
+        "Doha",
+        "Middle East",
+        "government event management",
+        "FIFA coordination",
+        "sports event management",
+        "World Cup operations",
+        "mega-event delivery"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "FIFA World Cup"},
+        {"@type": "Thing", "name": "International Sports"},
+        {"@type": "Thing", "name": "Mega-Event Management"},
+        {"@type": "Thing", "name": "Football"},
+        {"@type": "Thing", "name": "Sports Diplomacy"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/fifa-world-cup-qatar-2022"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/special-olympics-abu-dhabi#event",
+      "name": "Special Olympics World Games Abu Dhabi 2019",
+      "alternateName": [
+        "Special Olympics Abu Dhabi 2019",
+        "World Games Abu Dhabi",
+        "Special Olympics UAE",
+        "Abu Dhabi 2019 World Games"
+      ],
+      "description": "The Special Olympics World Games Abu Dhabi 2019, held from March 14-21, 2019, represented the largest sports and humanitarian event of the year, bringing together 7,500 athletes from 195 countries to compete in 24 Olympic-style sports while celebrating the power of inclusion and human determination. This landmark event marked the first time the Special Olympics World Games were hosted in the Middle East and North Africa region, showcasing the UAE's commitment to disability rights, inclusive sports, and universal human dignity. G2 Middle East served as strategic advisor for this transformational mega-event, providing expertise in international sports event management, protocol coordination, ceremonial design, and operational delivery for a week-long celebration that captivated the world. Our comprehensive involvement encompassed coordination of opening and closing ceremonies, athlete village operations, competition venue management, VIP hospitality, media relations, and volunteer coordination for over 20,000 volunteers supporting the Games. The successful execution of Special Olympics Abu Dhabi required sensitivity to the unique needs of athletes with intellectual disabilities, integration of accessibility standards across all venues, and creation of an environment that celebrated abilities rather than limitations. This groundbreaking event demonstrated the UAE's leadership in advancing inclusion and diversity while delivering world-class sporting competitions and cultural exchanges. G2's role in supporting the Special Olympics World Games showcased our expertise in inclusive event management, international sports coordination, and the specialized requirements essential for creating barrier-free experiences that empower all participants to achieve their personal best.",
+      "startDate": "2019-03-14",
+      "endDate": "2019-03-21",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Multiple Venues, Abu Dhabi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abu Dhabi",
+          "addressRegion": "Abu Dhabi",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.4539,
+          "longitude": 54.3773
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "attendeeCount": 7500,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Athletes with Intellectual Disabilities, Families, Volunteers, Global Citizens",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global - 195 Countries"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/special-olympics-abu-dhabi.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "Special Olympics World Games Abu Dhabi 2019 - 7,500 athletes from 195 countries"
+      },
+      "keywords": [
+        "Special Olympics",
+        "World Games",
+        "Abu Dhabi",
+        "inclusive sports",
+        "disability sports",
+        "UAE",
+        "international sports",
+        "government event management",
+        "inclusive event management",
+        "sports for all",
+        "Special Olympics coordination",
+        "accessibility"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Special Olympics"},
+        {"@type": "Thing", "name": "Inclusive Sports"},
+        {"@type": "Thing", "name": "Disability Rights"},
+        {"@type": "Thing", "name": "International Sports"},
+        {"@type": "Thing", "name": "Human Dignity"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/special-olympics-abu-dhabi"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/cop28-uae#event",
+      "name": "COP28 UAE - UN Climate Change Conference",
+      "alternateName": [
+        "COP28 Dubai",
+        "28th UN Climate Change Conference",
+        "UAE Climate Summit 2023",
+        "UNFCCC COP28"
+      ],
+      "description": "The 28th Conference of the Parties (COP28) to the United Nations Framework Convention on Climate Change, held at Expo City Dubai from November 30 to December 12, 2023, represented a pivotal moment in global climate action as the first comprehensive Global Stocktake concluded with historic agreements on transitioning away from fossil fuels. This landmark international summit brought together heads of state, climate ministers, negotiators, and civil society from nearly 200 countries to advance urgent climate solutions and accelerate the implementation of the Paris Agreement. G2 Middle East provided strategic advisory services for government-related aspects of COP28 operations, leveraging our proven expertise in international summit management, multilateral coordination, and high-stakes event delivery established through our previous COP27 experience. Our involvement encompassed protocol coordination, VIP management, bilateral meeting facilitation, and ceremonial design for the two-week conference that represented the UAE's most significant diplomatic and environmental undertaking. The successful delivery of COP28 required seamless coordination across multiple government entities, international organizations, security agencies, and thousands of stakeholders while maintaining the delicate balance between ambitious climate outcomes and diplomatic consensus-building. This climate summit showcased the UAE's commitment to climate leadership and its capability to host complex multilateral conferences that advance global cooperation on existential challenges. G2's role in supporting COP28 reinforced our position as the Middle East's leading strategic advisor for UN-level conferences, demonstrating mastery of the intricate diplomatic, operational, and ceremonial requirements essential for delivering climate summits that shape humanity's sustainable future.",
+      "startDate": "2023-11-30",
+      "endDate": "2023-12-12",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Expo City Dubai",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
+          "addressRegion": "Dubai",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.0657,
+          "longitude": 55.1713
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Heads of State, Climate Ministers, UN Delegations, NGOs, Climate Activists",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/cop28-uae.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "COP28 UAE - UN Climate Change Conference, Expo City Dubai 2023"
+      },
+      "keywords": [
+        "COP28",
+        "climate summit",
+        "UAE",
+        "Dubai",
+        "climate action",
+        "sustainability",
+        "UNFCCC",
+        "global warming",
+        "international summit",
+        "government event management",
+        "climate summit delivery",
+        "UN conference coordination"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Climate Change"},
+        {"@type": "Thing", "name": "UN Conference"},
+        {"@type": "Thing", "name": "Climate Summit"},
+        {"@type": "Thing", "name": "Sustainability"},
+        {"@type": "Thing", "name": "International Diplomacy"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/cop28-uae",
+      "superEvent": {
+        "@type": "EventSeries",
+        "name": "UN Climate Change Conference (COP)",
+        "description": "Annual Conference of the Parties to the UNFCCC"
+      }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/abu-dhabi-grand-prix#event",
+      "name": "Abu Dhabi Grand Prix",
+      "alternateName": [
+        "Formula 1 Abu Dhabi",
+        "F1 Abu Dhabi Grand Prix",
+        "Yas Marina Formula 1",
+        "Abu Dhabi F1 Season Finale"
+      ],
+      "description": "The Abu Dhabi Grand Prix at Yas Marina Circuit represents the pinnacle of motorsport excellence and has served as the spectacular season finale for the Formula 1 World Championship since 2009, combining world-class racing with unparalleled entertainment and luxury hospitality experiences. This iconic international sporting event attracts over 60,000 spectators annually and millions of global television viewers for three days of high-octane action under the unique twilight racing conditions that transition from daylight to darkness. G2 Middle East has provided strategic advisory services for government-related aspects of the Abu Dhabi Grand Prix over multiple years, supporting VIP hospitality coordination, protocol management, and ceremonial design for royal family attendance and international dignitary visits. Our expertise in high-stakes event management ensures seamless integration of sporting operations with diplomatic protocol requirements, security coordination, and the sophisticated hospitality expectations of government officials and corporate VIPs. The successful execution of the Abu Dhabi Grand Prix requires year-round planning, coordination across multiple government entities, international motorsport authorities, and commercial partners to deliver an event that enhances the UAE's reputation as a premier destination for global sporting excellence. This prestigious Formula 1 race serves as a powerful platform for nation branding, tourism promotion, and showcasing Abu Dhabi's world-class infrastructure and hospitality capabilities to a truly global audience. G2's ongoing involvement with the Abu Dhabi Grand Prix demonstrates our expertise in recurring mega-event support, Formula 1 coordination, and the specialized requirements for delivering international sports events that combine athletic competition with luxury lifestyle experiences and diplomatic soft power.",
+      "startDate": "2024-12-06",
+      "endDate": "2024-12-08",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Yas Marina Circuit",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Yas Island",
+          "addressLocality": "Abu Dhabi",
+          "addressRegion": "Abu Dhabi",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.4672,
+          "longitude": 54.6031
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Formula 1 Fans, VIP Guests, International Tourists, Motorsport Enthusiasts",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/abu-dhabi-grand-prix.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "Abu Dhabi Grand Prix - Formula 1 season finale at Yas Marina Circuit"
+      },
+      "keywords": [
+        "Formula 1",
+        "F1",
+        "Abu Dhabi Grand Prix",
+        "Yas Marina",
+        "motorsport",
+        "UAE",
+        "international sports",
+        "government event management",
+        "VIP hospitality",
+        "Formula 1 coordination",
+        "sports event management"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Formula 1"},
+        {"@type": "Thing", "name": "Motorsport"},
+        {"@type": "Thing", "name": "International Sports"},
+        {"@type": "Thing", "name": "VIP Hospitality"},
+        {"@type": "Thing", "name": "Sports Event Management"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/abu-dhabi-grand-prix",
+      "superEvent": {
+        "@type": "EventSeries",
+        "name": "Formula 1 World Championship",
+        "description": "Annual FIA Formula One World Championship season"
+      }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/dubai-world-cup#event",
+      "name": "Dubai World Cup",
+      "alternateName": [
+        "World's Richest Horse Race",
+        "Dubai World Cup Carnival",
+        "Meydan Horse Racing",
+        "Dubai Racing Carnival"
+      ],
+      "description": "The Dubai World Cup at Meydan Racecourse stands as the world's richest horse race and the pinnacle event of the international thoroughbred racing season, offering a staggering $30.5 million in prize money and attracting the finest horses, jockeys, trainers, and racing enthusiasts from across the globe. This prestigious sporting and social event, held annually in late March, combines world-class equestrian competition with luxury hospitality, cultural entertainment, and fashion excellence, creating an unparalleled experience that showcases Dubai's position as a global hub for elite sports and lifestyle events. G2 Middle East provides strategic advisory services for government-related aspects of the Dubai World Cup, supporting VIP protocol management, royal family coordination, international dignitary hospitality, and ceremonial design for this multi-day racing carnival that culminates in the spectacular World Cup night. Our expertise ensures seamless integration of traditional equestrian sport with modern luxury experiences while maintaining the diplomatic protocol and security requirements essential for an event attended by royal families, heads of state, and international celebrities. The successful execution of the Dubai World Cup requires year-round planning, coordination with international racing authorities, meticulous attention to Arabian hospitality traditions, and sophisticated management of diverse stakeholder expectations from sporting purists to luxury lifestyle enthusiasts. This iconic event serves multiple strategic purposes including nation branding, tourism attraction, business networking, and celebration of the UAE's rich equestrian heritage dating back centuries. G2's involvement with the Dubai World Cup demonstrates our expertise in luxury sports event management, equestrian event coordination, and delivering experiences that combine sporting excellence with diplomatic soft power and cultural celebration.",
+      "startDate": "2024-03-30",
+      "endDate": "2024-03-30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Meydan Racecourse",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
+          "addressRegion": "Dubai",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.1561,
+          "longitude": 55.3159
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Racing Enthusiasts, VIP Guests, Royal Families, International Celebrities",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "Global"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/dubai-world-cup.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "Dubai World Cup - World's richest horse race at Meydan Racecourse"
+      },
+      "keywords": [
+        "Dubai World Cup",
+        "horse racing",
+        "Meydan",
+        "Dubai",
+        "equestrian",
+        "international sports",
+        "luxury sports",
+        "government event management",
+        "VIP hospitality",
+        "equestrian event coordination",
+        "luxury event management"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Horse Racing"},
+        {"@type": "Thing", "name": "Equestrian Sports"},
+        {"@type": "Thing", "name": "Luxury Events"},
+        {"@type": "Thing", "name": "International Sports"},
+        {"@type": "Thing", "name": "VIP Hospitality"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/dubai-world-cup",
+      "superEvent": {
+        "@type": "EventSeries",
+        "name": "Dubai World Cup Carnival",
+        "description": "Annual thoroughbred racing season in Dubai"
+      }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.g2middleeast.com/projects/uae-national-day#event",
+      "name": "UAE National Day Celebrations",
+      "alternateName": [
+        "UAE National Day",
+        "Spirit of the Union",
+        "Emirates National Day",
+        "December 2nd Celebrations"
+      ],
+      "description": "The UAE National Day celebrations on December 2nd each year commemorate the historic formation of the United Arab Emirates in 1971, bringing together all seven emirates in a spectacular display of national pride, cultural heritage, and unity that celebrates the vision of the founding fathers and the remarkable journey of the nation. This sovereign national celebration encompasses multiple days of patriotic festivities including parades, airshows, fireworks, cultural performances, heritage exhibitions, and community events that engage millions of UAE citizens and residents in honoring the country's achievements and aspirations. G2 Middle East provides strategic advisory and operational support for official government National Day events, leveraging our deep understanding of UAE cultural protocols, national symbolism, and ceremonial requirements to deliver celebrations that authentically represent the Spirit of the Union while engaging diverse audiences from traditional Emirati communities to expatriate residents. Our comprehensive services include ceremonial design, protocol management, VIP coordination, entertainment programming, and media relations for National Day events ranging from intimate diplomatic receptions to massive public celebrations involving hundreds of thousands of participants. The successful execution of UAE National Day requires sensitivity to cultural traditions, understanding of tribal hierarchies, coordination across all seven emirates, and creation of experiences that balance reverence for heritage with celebration of modern achievements. This annual patriotic event serves as a powerful expression of national identity, social cohesion, and collective pride while reinforcing the UAE's distinctive model of federation and tolerance. G2's ongoing involvement in UAE National Day celebrations demonstrates our expertise in sovereign national events, patriotic celebration management, and the specialized cultural knowledge essential for honoring national identity with dignity and authenticity.",
+      "startDate": "2024-12-02",
+      "endDate": "2024-12-03",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Multiple Venues across UAE",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Abu Dhabi and Emirates",
+          "addressRegion": "Abu Dhabi",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.4539,
+          "longitude": 54.3773
+        }
+      },
+      "organizer": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "UAE Citizens, Residents, Government Officials, Diplomatic Corps",
+        "geographicArea": {
+          "@type": "Place",
+          "name": "United Arab Emirates"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/projects/uae-national-day.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "UAE National Day Celebrations - Spirit of the Union, December 2"
+      },
+      "keywords": [
+        "National Day",
+        "UAE National Day",
+        "national celebration",
+        "patriotic event",
+        "sovereign event",
+        "government event management",
+        "national day coordination",
+        "patriotic celebration",
+        "cultural heritage",
+        "Spirit of the Union"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "National Day"},
+        {"@type": "Thing", "name": "Patriotic Celebration"},
+        {"@type": "Thing", "name": "National Identity"},
+        {"@type": "Thing", "name": "Cultural Heritage"},
+        {"@type": "Thing", "name": "Sovereign Event"}
+      ],
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/projects/uae-national-day",
+      "superEvent": {
+        "@type": "EventSeries",
+        "name": "Annual UAE National Day Celebrations",
+        "description": "Annual commemoration of UAE formation on December 2, 1971"
+      }
+    }
+  ]
+}

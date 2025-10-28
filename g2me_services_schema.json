@@ -1,0 +1,935 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.g2middleeast.com/services#webpage",
+      "url": "https://www.g2middleeast.com/services",
+      "name": "Strategic Services - G2 Middle East & Africa",
+      "description": "Comprehensive strategic services for governments and sovereign entities including state visit coordination, diplomatic protocol management, sovereign branding strategy, crisis communications, international summit coordination, mega-event delivery, and luxury brand experiences across the Middle East and Africa region.",
+      "inLanguage": ["en", "ar"],
+      "isPartOf": {
+        "@id": "https://www.g2middleeast.com/#website"
+      },
+      "about": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.g2middleeast.com/services#breadcrumb"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "G2 Middle East Strategic Services",
+        "description": "Professional services for government event management and strategic advisory",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {"@id": "https://www.g2middleeast.com/services/government-event-management#service"},
+          {"@id": "https://www.g2middleeast.com/services/state-visit-coordination#service"},
+          {"@id": "https://www.g2middleeast.com/services/sovereign-branding#service"},
+          {"@id": "https://www.g2middleeast.com/services/strategic-communications#service"},
+          {"@id": "https://www.g2middleeast.com/services/international-summit-management#service"},
+          {"@id": "https://www.g2middleeast.com/services/mega-event-architecture#service"},
+          {"@id": "https://www.g2middleeast.com/services/luxury-brand-experiences#service"}
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.g2middleeast.com/services#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.g2middleeast.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.g2middleeast.com/services"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/government-event-management#service",
+      "name": "Government Event Management",
+      "alternateName": [
+        "State Event Coordination",
+        "High-Stakes Government Events",
+        "Sovereign Event Management",
+        "Official Government Functions"
+      ],
+      "description": "G2 Middle East delivers end-to-end government event management services encompassing strategic planning, operational coordination, and flawless execution of state visits, international summits, national celebrations, and high-stakes government functions across the Middle East and Africa. Our specialized expertise includes papal visit coordination, royal protocol management, presidential state visits, climate summit delivery (COP27, COP28), World Expo operations (Expo 2020 Dubai), FIFA World Cup coordination (Qatar 2022), and G20 summit management. With proven experience managing events ranging from intimate diplomatic receptions of 100 guests to massive public gatherings of 180,000 attendees (Papal Mass Abu Dhabi), our team ensures impeccable protocol adherence, security coordination, and diplomatic excellence for every engagement. We provide comprehensive services including advance planning, stakeholder coordination, venue selection and design, ceremonial choreography, VIP management, media relations, crisis management readiness, and post-event analysis. Our deep understanding of regional cultural protocols, tribal hierarchies, religious sensitivities, and geopolitical dynamics enables us to navigate the complex requirements of government events with sophistication and cultural fluency. As independent strategic advisors not tied to production or AV vendors, we provide objective counsel focused exclusively on achieving client objectives and protecting sovereign interests. Our government event management methodology integrates traditional diplomatic protocol with modern event technology, data-driven decision making, and scenario planning to ensure operational excellence and risk mitigation. Whether coordinating a bilateral state dinner for heads of government or managing a multi-day international conference with thousands of delegates, G2 delivers the strategic insight, operational precision, and cultural sensitivity essential for government events that shape regional stability and international relations.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "Government Event Management and Strategic Advisory",
+      "category": [
+        "Event Management",
+        "Government Services",
+        "Protocol Management",
+        "State Visits",
+        "International Summits",
+        "Mega-Events",
+        "Diplomatic Services"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Oman"},
+        {"@type": "Place", "name": "Middle East"},
+        {"@type": "Place", "name": "Africa"},
+        {"@type": "Place", "name": "GCC Countries"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Governments, Royal Families, Presidential Offices, Diplomatic Missions, International Organizations (UN, FIFA, IOC), Foreign Ministries, Protocol Departments"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Government Event Management Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "State Visit Coordination and Protocol Management",
+              "description": "Comprehensive management of bilateral and multilateral state visits including arrival ceremonies, official meetings, state dinners, and departure protocols"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "International Summit Planning and Delivery",
+              "description": "End-to-end coordination of COP climate summits, G20 meetings, UN conferences, and multilateral forums"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "National Day Celebrations and Patriotic Events",
+              "description": "Design and execution of sovereign national celebrations, independence day events, and national unity ceremonies"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mega-Event Architecture and Operations",
+              "description": "Strategic planning and operational delivery for World Expos, FIFA World Cup, Olympic Games, and events of global significance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Royal and Presidential Visit Management",
+              "description": "Protocol coordination, security planning, and ceremonial design for royal family and presidential visits"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Papal and Religious Leader Visit Coordination",
+              "description": "Specialized management of papal masses, interfaith gatherings, and religious leader visits requiring cultural sensitivity"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diplomatic Reception and Ceremonial Design",
+              "description": "Creation and execution of official diplomatic receptions, ceremonial events, and protocol-driven functions"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Flawlessly executed government events that strengthen diplomatic relations, enhance national prestige, demonstrate operational excellence, and achieve strategic communication objectives while protecting sovereign interests",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/government-event-management.jpg",
+        "caption": "Government Event Management - State visits, summits, and high-stakes sovereign events"
+      },
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/services/government-event-management",
+      "keywords": [
+        "government event management",
+        "state visit planning",
+        "international summit coordination",
+        "national celebration delivery",
+        "mega-event operations",
+        "royal protocol services",
+        "presidential visit management",
+        "papal visit coordination",
+        "diplomatic reception",
+        "ceremonial design",
+        "protocol management",
+        "high-stakes events",
+        "sovereign event coordination",
+        "government protocol advisory"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/state-visit-coordination#service",
+      "name": "State Visit Coordination & Diplomatic Protocol",
+      "alternateName": [
+        "Diplomatic Protocol Management",
+        "Royal Visit Coordination",
+        "Presidential Visit Planning",
+        "State Ceremonial Services"
+      ],
+      "description": "G2 Middle East provides world-class state visit coordination and diplomatic protocol management services for governments, foreign ministries, royal courts, and diplomatic missions seeking flawless execution of bilateral and multilateral high-level engagements. Our specialized expertise encompasses royal protocol management for visits by monarchs and royal families, presidential visit planning for heads of state and government, bilateral diplomatic coordination, and ceremonial design that honors both visiting dignitary traditions and host nation protocols. With proven experience managing state visits including H.M. Queen Elizabeth II to the UAE, Pope Francis to Abu Dhabi, and numerous presidential and royal engagements, our team possesses deep knowledge of international diplomatic protocol, cultural sensitivities, and the intricate choreography required for sovereign-level encounters. We provide comprehensive services including advance planning missions, security coordination with multiple agencies, protocol training for host nation personnel, arrival and departure ceremony design, state dinner planning and execution, bilateral meeting facilitation, gift exchange coordination, media management, and ceremonial documentation. Our methodology integrates the Vienna Convention on Diplomatic Relations, host nation protocol requirements, visiting dignitary preferences, and cultural authenticity to create seamless experiences that strengthen bilateral relations and demonstrate diplomatic sophistication. As cultural fluency experts with bilingual English-Arabic teams and French capabilities, we navigate the complex intersection of Western diplomatic traditions and Middle Eastern protocol expectations with finesse and authenticity. Our state visit services extend beyond operational logistics to include strategic communications planning, public diplomacy coordination, and crisis management readiness for managing unexpected protocol challenges or security concerns. Whether coordinating a three-day royal state visit or a brief presidential stopover, G2 delivers the diplomatic expertise, operational precision, and cultural sensitivity essential for protecting sovereign dignity and advancing bilateral cooperation.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "Diplomatic Protocol and State Visit Management",
+      "category": [
+        "Diplomatic Protocol",
+        "State Visits",
+        "Royal Protocol",
+        "Ceremonial Management",
+        "Bilateral Relations",
+        "Protocol Advisory",
+        "Diplomatic Services"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Oman"},
+        {"@type": "Place", "name": "GCC Region"},
+        {"@type": "Place", "name": "MENA Region"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Foreign Ministries, Royal Courts, Presidential Offices, Diplomatic Missions, Protocol Departments, Embassies, High Commissions"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "State Visit and Protocol Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Royal Protocol Management and Ceremonial Design",
+              "description": "Expert coordination of royal family visits including ceremonial requirements, precedence protocols, and cultural traditions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Presidential Visit Planning and Coordination",
+              "description": "Comprehensive management of presidential state visits including security, protocol, ceremonial, and logistical requirements"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bilateral and Multilateral Diplomatic Coordination",
+              "description": "Facilitation of bilateral meetings, multilateral conferences, and diplomatic engagements at sovereign level"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Protocol Training and Advisory Services",
+              "description": "Training programs and advisory services for protocol officers, government officials, and diplomatic personnel"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ceremonial Event Design and Execution",
+              "description": "Creation and delivery of state ceremonies, official functions, and protocol-driven diplomatic events"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diplomatic Reception Planning and Management",
+              "description": "Organization of official receptions, state dinners, and diplomatic social functions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "State Dinner and Official Function Management",
+              "description": "End-to-end coordination of state dinners including protocol, seating, menu design, entertainment, and ceremonial elements"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Flawlessly executed state visits and diplomatic engagements that strengthen bilateral relations, protect sovereign dignity, demonstrate protocol excellence, and advance national interests through sophisticated diplomatic choreography",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/state-visit-coordination.jpg",
+        "caption": "State Visit Coordination - Royal and presidential protocol management"
+      },
+      "inLanguage": ["en", "ar", "fr"],
+      "url": "https://www.g2middleeast.com/services/state-visit-coordination",
+      "keywords": [
+        "diplomatic protocol",
+        "state visit coordination",
+        "royal protocol management",
+        "presidential visit planning",
+        "ceremonial design",
+        "bilateral coordination",
+        "protocol advisory",
+        "state ceremony",
+        "diplomatic reception",
+        "official function",
+        "protocol training",
+        "cultural diplomacy",
+        "sovereign protocol services",
+        "diplomatic choreography"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/sovereign-branding#service",
+      "name": "Sovereign Branding & Strategic Positioning",
+      "alternateName": [
+        "Nation Branding Strategy",
+        "Country Positioning Advisory",
+        "Sovereign Communications",
+        "National Identity Strategy"
+      ],
+      "description": "G2 Middle East delivers comprehensive sovereign branding and strategic positioning services for governments, royal families, and national institutions seeking to enhance their international reputation, strengthen national identity, and advance strategic interests through sophisticated narrative development and perception management. Our specialized expertise encompasses nation branding strategy, sovereign digital legacy creation, geopolitical reputation management, national identity frameworks, country positioning advisory, and cultural diplomacy programs that build enduring soft power advantages. As independent strategic advisors with deep regional expertise and global perspective, we help sovereign entities define their unique value propositions, articulate compelling national narratives, and project strategic messages across diplomatic, media, cultural, and digital channels. Our sovereign branding methodology integrates traditional public diplomacy approaches with modern digital communications, data-driven audience insights, and cultural authenticity to create positioning strategies that resonate with international stakeholders while maintaining fidelity to national values and aspirations. We provide strategic counsel on managing complex geopolitical perceptions, navigating international media scrutiny, responding to reputational challenges, and building resilient national brands that withstand crisis and criticism. Our services include comprehensive reputation audits, stakeholder perception research, competitive positioning analysis, narrative architecture development, visual identity systems, messaging frameworks, digital strategy design, cultural diplomacy programming, and ongoing strategic communications counsel. With proven experience supporting GCC governments, royal courts, and sovereign entities through periods of transformation, crisis, and opportunity, we understand the unique requirements of sovereign-level communications where every message carries diplomatic weight and reputational consequences. Our team combines bilingual communications expertise (English-Arabic-French), cultural fluency across Middle Eastern and Western contexts, geopolitical intelligence, and strategic thinking capabilities to deliver nation branding solutions that enhance international standing, attract investment, strengthen regional leadership, and advance national development objectives. Whether building a sovereign digital legacy for emerging leaders, managing perception during geopolitical transition, or crafting long-term national positioning strategies, G2 provides the strategic depth, operational excellence, and cultural sensitivity essential for protecting and enhancing sovereign reputation in an interconnected world.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "Strategic Communications and Nation Branding",
+      "category": [
+        "Strategic Communications",
+        "Nation Branding",
+        "Reputation Management",
+        "Public Diplomacy",
+        "Sovereign Advisory",
+        "National Identity",
+        "Country Positioning"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Oman"},
+        {"@type": "Place", "name": "GCC Countries"},
+        {"@type": "Place", "name": "MENA Region"},
+        {"@type": "Place", "name": "Africa"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Governments, Sovereign Entities, Royal Families, National Institutions, Tourism Boards, Cultural Ministries, Investment Promotion Agencies"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Sovereign Branding Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nation Branding Strategy and Implementation",
+              "description": "Comprehensive nation branding frameworks including positioning, narrative development, visual identity, and implementation roadmaps"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sovereign Digital Legacy Development",
+              "description": "Strategic digital presence building for sovereign leaders including content strategy, platform management, and reputation protection"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Geopolitical Reputation Management",
+              "description": "Proactive and reactive reputation management addressing geopolitical challenges, media scrutiny, and international perception"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "National Identity Strategy and Framework",
+              "description": "Development of national identity frameworks that unify diverse stakeholders around shared values and aspirations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Country Positioning and Perception Management",
+              "description": "Strategic positioning frameworks that differentiate nations and manage international perception across key audiences"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strategic Narrative Development and Messaging",
+              "description": "Creation of compelling national narratives, messaging architectures, and strategic storytelling frameworks"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cultural Diplomacy Programs and Initiatives",
+              "description": "Design and implementation of cultural diplomacy programs that build soft power and international goodwill"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Enhanced international reputation, strengthened national identity, improved geopolitical perception, increased soft power influence, and strategic positioning advantages that advance sovereign interests and national development objectives",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/sovereign-branding.jpg",
+        "caption": "Sovereign Branding - Nation branding and strategic positioning for governments"
+      },
+      "inLanguage": ["en", "ar", "fr"],
+      "url": "https://www.g2middleeast.com/services/sovereign-branding",
+      "keywords": [
+        "sovereign branding",
+        "nation branding",
+        "strategic positioning",
+        "reputation management",
+        "national identity",
+        "country positioning",
+        "sovereign communications",
+        "geopolitical perception",
+        "digital legacy",
+        "cultural diplomacy",
+        "public diplomacy",
+        "strategic narrative",
+        "nation brand strategy",
+        "country reputation advisory"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/strategic-communications#service",
+      "name": "Strategic Communications & Crisis Management",
+      "alternateName": [
+        "Crisis Communications Advisory",
+        "High-Stakes Communications",
+        "Reputation Protection Services",
+        "Strategic Counsel"
+      ],
+      "description": "G2 Middle East provides 24/7 strategic communications and crisis management services for governments, sovereign entities, and institutions facing high-stakes reputational challenges, geopolitical complexities, or critical moments requiring immediate expert counsel and operational response. Our specialized crisis management capabilities encompass rapid crisis assessment, strategic response development, stakeholder communications, media relations management, narrative control, issues monitoring, and post-crisis reputation recovery. With deep experience navigating complex situations including diplomatic incidents, natural disasters, security challenges, economic transitions, leadership changes, and international media scrutiny, our team delivers the strategic thinking, operational excellence, and cultural sensitivity essential for protecting sovereign interests during critical periods. We provide comprehensive crisis preparedness services including vulnerability assessments, scenario planning, response protocol development, spokesperson training, command center design, and crisis simulation exercises that prepare governments for rapid decision-making under pressure. Our 24/7 crisis response capabilities ensure immediate strategic counsel and operational support when reputational challenges emerge, providing war room coordination, real-time media monitoring, rapid response messaging, stakeholder briefings, and coordinated communications across multiple channels and languages. Beyond reactive crisis management, we deliver proactive strategic communications services including issues management, reputation monitoring, stakeholder engagement planning, public affairs strategy, legislative communications, and ongoing counsel for managing complex narratives in evolving geopolitical contexts. Our team combines bilingual communications expertise (English-Arabic-French), regional media knowledge, international best practices, geopolitical intelligence, and decades of experience managing high-stakes situations where failure carries significant consequences for national reputation and sovereign interests. As independent advisors focused exclusively on client success, we provide objective strategic counsel unconstrained by production relationships or commercial conflicts, ensuring recommendations prioritize reputation protection and strategic advantage. Whether managing an unfolding crisis requiring immediate intervention, developing long-term strategic communications frameworks, or providing ongoing counsel for navigating complex stakeholder environments, G2 delivers the strategic depth, operational agility, and crisis expertise essential for protecting reputation and advancing interests in an increasingly complex communications landscape where information moves instantly and narratives form rapidly across traditional and digital channels.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "Strategic Communications and Crisis Advisory",
+      "category": [
+        "Strategic Communications",
+        "Crisis Management",
+        "Reputation Management",
+        "Media Relations",
+        "Issues Management",
+        "Risk Communications",
+        "Public Affairs"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Oman"},
+        {"@type": "Place", "name": "GCC Region"},
+        {"@type": "Place", "name": "MENA Region"},
+        {"@type": "Place", "name": "Africa"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Governments, Sovereign Entities, Global Institutions, Royal Families, National Security Agencies, Public Sector Organizations"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Strategic Communications and Crisis Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Crisis Communications and Rapid Response",
+              "description": "24/7 crisis communications support including rapid assessment, response strategy, media management, and stakeholder coordination"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reputation Management and Protection",
+              "description": "Proactive reputation monitoring, threat identification, vulnerability mitigation, and reputation recovery following crises"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strategic Narrative Development and Control",
+              "description": "Development and maintenance of strategic narratives that advance interests and counter misinformation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Media Relations and Management",
+              "description": "Comprehensive media strategy, spokesperson preparation, interview coordination, and media monitoring"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stakeholder Communications and Engagement",
+              "description": "Strategic stakeholder mapping, engagement planning, and coordinated communications across key audiences"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Issues Management and Monitoring",
+              "description": "Continuous monitoring of emerging issues, early warning systems, and proactive mitigation strategies"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Geopolitical Risk Communications",
+              "description": "Communications strategy for navigating geopolitical transitions, regional tensions, and international scrutiny"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Protected reputation, controlled narratives, managed stakeholder perceptions, mitigated crises, and strategic communications frameworks that enable governments to navigate complex challenges while maintaining credibility and advancing interests",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/strategic-communications.jpg",
+        "caption": "Strategic Communications - Crisis management and reputation protection"
+      },
+      "inLanguage": ["en", "ar", "fr"],
+      "url": "https://www.g2middleeast.com/services/strategic-communications",
+      "keywords": [
+        "crisis management",
+        "strategic communications",
+        "reputation protection",
+        "crisis response",
+        "media management",
+        "narrative control",
+        "issues management",
+        "geopolitical risk",
+        "stakeholder communications",
+        "reputation management",
+        "high-stakes communications",
+        "crisis advisory",
+        "24/7 crisis support"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/international-summit-management#service",
+      "name": "International Summit Management",
+      "alternateName": [
+        "COP Climate Summit Coordination",
+        "G20 Summit Management",
+        "UN Conference Planning",
+        "Multilateral Conference Delivery"
+      ],
+      "description": "G2 Middle East delivers comprehensive planning and operational management services for international summits, multilateral conferences, and global gatherings including COP climate summits, G20 meetings, World Economic Forum events, UN conferences, and other high-profile diplomatic forums that bring together world leaders, government ministers, international organizations, and global stakeholders. With proven experience supporting COP27 Egypt and COP28 UAE climate summits, our team possesses specialized expertise in managing the complex logistical, diplomatic, ceremonial, and security requirements essential for successful multilateral events involving thousands of delegates, hundreds of government delegations, intense media scrutiny, and critical outcomes affecting global cooperation. Our international summit services encompass strategic planning from bid development through legacy evaluation, including venue selection and design, delegate registration and coordination, accommodation and transportation logistics, security planning and coordination with multiple agencies, protocol management for heads of state and government ministers, plenary session planning and technical support, bilateral meeting facilitation and scheduling, media operations and press center management, pavilion and exhibition coordination, ceremonial event design, VIP hospitality, stakeholder engagement, crisis management readiness, and comprehensive post-event analysis and reporting. We understand the unique dynamics of multilateral diplomacy where success requires balancing competing national interests, facilitating consensus-building, managing diverse cultural expectations, and creating environments conducive to productive dialogue and breakthrough agreements. Our team provides strategic counsel on summit architecture, agenda design, negotiation facilitation, and communications strategies that enhance the host nation's diplomatic leadership while advancing substantive outcomes. As specialists in managing mega-scale events under intense global attention, we deliver the operational precision, diplomatic sophistication, and crisis management capabilities essential for executing international summits that strengthen multilateral cooperation, advance global challenges including climate action and sustainable development, and enhance the host nation's reputation as a responsible global citizen capable of facilitating international progress on critical issues affecting humanity's shared future.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "International Summit and Conference Management",
+      "category": [
+        "International Summits",
+        "Multilateral Conferences",
+        "Climate Summits",
+        "G20 Events",
+        "UN Conferences",
+        "Global Gatherings",
+        "Diplomatic Forums"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Place", "name": "Middle East"},
+        {"@type": "Place", "name": "Africa"},
+        {"@type": "Place", "name": "Global"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "International Organizations, National Governments, UN Agencies, Global Forums, Multilateral Bodies, Climate Organizations"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "International Summit Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "COP Climate Summit Planning and Delivery",
+              "description": "Comprehensive management of UN climate conferences including venue operations, delegate coordination, negotiation support, and ceremonial events"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "G20 Summit Coordination and Operations",
+              "description": "Strategic planning and operational delivery for G20 summits including leader meetings, ministerial sessions, and ancillary events"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "World Economic Forum Event Management",
+              "description": "Support for regional WEF gatherings including delegate management, session coordination, and networking facilitation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "UN Conference Planning and Support",
+              "description": "Comprehensive planning and operational support for UN-led conferences, conventions, and multilateral gatherings"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Multilateral Conference Coordination",
+              "description": "End-to-end management of regional and international conferences involving multiple government delegations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Summit Logistics and Operations Management",
+              "description": "Comprehensive logistics including venue management, transportation, accommodation, security, and technical support"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Delegate Management and Protocol Services",
+              "description": "Registration, credential management, protocol coordination, and VIP services for thousands of international delegates"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Successfully delivered international summits that facilitate productive multilateral dialogue, achieve substantive outcomes, enhance host nation reputation, demonstrate operational excellence, and advance global cooperation on critical challenges",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/international-summit-management.jpg",
+        "caption": "International Summit Management - COP climate summits and multilateral conferences"
+      },
+      "inLanguage": ["en", "ar", "fr"],
+      "url": "https://www.g2middleeast.com/services/international-summit-management",
+      "keywords": [
+        "international summit",
+        "COP climate summit",
+        "G20 coordination",
+        "World Economic Forum",
+        "UN conference",
+        "multilateral conference",
+        "summit management",
+        "global gathering",
+        "climate action summit",
+        "international diplomacy",
+        "summit operations",
+        "conference coordination"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/mega-event-architecture#service",
+      "name": "Mega-Event Architecture & Delivery",
+      "alternateName": [
+        "World Expo Management",
+        "FIFA World Cup Operations",
+        "Olympic Games Planning",
+        "Mega-Event Coordination"
+      ],
+      "description": "G2 Middle East provides strategic planning and operational delivery services for mega-events including World Expos, FIFA World Cup, Olympic Games, Paralympic Games, Asian Games, and other events of global significance that welcome millions of attendees, generate billions in economic impact, and create lasting legacies for host nations. With proven experience supporting Expo 2020 Dubai (24 million visitors) and FIFA World Cup Qatar 2022 (3.4 million attendees), our team possesses specialized expertise in managing the extraordinary complexity, unprecedented scale, and intense scrutiny characteristic of mega-events that represent once-in-a-generation opportunities for national transformation and global positioning. Our mega-event services encompass strategic advisory from bid development through legacy realization, including master planning and strategic frameworks, operational architecture design, stakeholder governance structures, venue planning and coordination, security strategy and implementation, transportation and logistics systems, accommodation and hospitality management, volunteer program development and coordination, protocol and ceremonial design for opening and closing ceremonies, media operations and international broadcast support, commercial program integration, sustainability frameworks, legacy planning and implementation, and comprehensive knowledge transfer and documentation. We understand that mega-event success requires integration across dozens of government entities, international federations, commercial partners, security agencies, and community stakeholders, all while maintaining operational excellence across thousands of daily activities spanning months or years. Our team provides strategic counsel on mega-event governance, risk management, scenario planning, crisis preparedness, and stakeholder alignment essential for navigating the inevitable challenges that emerge when delivering events of planetary scale. As specialists in government-related aspects of mega-event operations, we focus on protocol requirements, diplomatic coordination, VIP services, bilateral engagements, and strategic communications that protect host nation interests while delivering experiences that captivate global audiences. Whether supporting bid development for future mega-events, providing strategic advisory during planning phases, or delivering operational excellence during event-time, G2 brings the strategic thinking, operational expertise, and cultural fluency essential for achieving mega-event success that transforms nations, inspires humanity, and creates enduring legacies celebrating human achievement and international cooperation.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "Mega-Event Planning and Operations",
+      "category": [
+        "Mega-Events",
+        "World Expo",
+        "FIFA World Cup",
+        "Olympic Games",
+        "International Sports",
+        "Global Events",
+        "Legacy Planning"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Place", "name": "Middle East"},
+        {"@type": "Place", "name": "GCC Countries"},
+        {"@type": "Place", "name": "Global"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "National Governments, Sports Federations, International Organizations, Mega-Event Organizers, Olympic Committees, FIFA, IOC"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mega-Event Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "World Expo Planning and Delivery",
+              "description": "Strategic advisory and operational support for World Expo bids, planning, execution, and legacy realization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "FIFA World Cup Operations and Coordination",
+              "description": "Government-related coordination for World Cup operations including protocol, security, VIP services, and diplomatic engagements"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Olympic Games Planning and Support",
+              "description": "Strategic planning and coordination support for Olympic and Paralympic Games including ceremonial, protocol, and stakeholder management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mega-Event Master Planning and Architecture",
+              "description": "Development of comprehensive master plans, operational architectures, and governance frameworks for mega-events"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Legacy Planning and Implementation",
+              "description": "Strategic frameworks for ensuring mega-events deliver lasting economic, social, cultural, and infrastructure benefits"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Operational Delivery and Management",
+              "description": "Event-time operational coordination, command center operations, and real-time problem-solving for mega-event delivery"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stakeholder Coordination and Governance",
+              "description": "Coordination across government entities, international federations, commercial partners, and community stakeholders"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Successfully delivered mega-events that welcome millions of visitors, generate billions in economic impact, enhance national reputation globally, create lasting infrastructure and social legacies, and demonstrate host nation capability to manage events of planetary significance",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/mega-event-architecture.jpg",
+        "caption": "Mega-Event Architecture - World Expos, FIFA World Cup, and Olympic Games"
+      },
+      "inLanguage": ["en", "ar"],
+      "url": "https://www.g2middleeast.com/services/mega-event-architecture",
+      "keywords": [
+        "mega-event",
+        "World Expo",
+        "FIFA World Cup",
+        "Olympic Games",
+        "international sports",
+        "global event",
+        "mega-event delivery",
+        "event architecture",
+        "legacy planning",
+        "operational delivery",
+        "Expo 2020",
+        "Qatar 2022",
+        "mega-event coordination"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.g2middleeast.com/services/luxury-brand-experiences#service",
+      "name": "Global Brand & Luxury Experiences",
+      "alternateName": [
+        "Luxury Brand Positioning",
+        "VIP Event Management",
+        "Premium Brand Activation",
+        "Luxury Market Entry Advisory"
+      ],
+      "description": "G2 Middle East delivers strategic positioning and experience design services for luxury brands and global enterprises seeking to establish or strengthen their presence in the Middle East and Africa markets, where high-net-worth audiences, discerning tastes, and unique cultural values demand sophisticated brand experiences that transcend traditional marketing approaches. Our luxury brand services encompass strategic market entry advisory, brand positioning frameworks tailored to regional sensibilities, VIP event management and hospitality, premium brand activations, luxury product launches, high-net-worth audience engagement, bespoke experience design, and ongoing strategic counsel for navigating the complex intersection of luxury consumer expectations and Middle Eastern cultural traditions. With deep understanding of GCC luxury consumer behaviors, royal family preferences, ultra-high-net-worth individual expectations, and the unique dynamics of luxury markets across the region, we create brand experiences that resonate authentically while maintaining the exclusivity, craftsmanship, and heritage values essential to luxury positioning. Our comprehensive approach integrates strategic brand planning with flawless operational execution, ensuring luxury activations and VIP events deliver the impeccable quality, attention to detail, and personalized experiences that high-value audiences demand and remember. We provide strategic counsel on luxury retail strategy, VIP relationship management, influencer and celebrity engagement aligned with regional cultural values, media relations tailored to luxury lifestyle publications, and digital strategies that maintain brand exclusivity while reaching affluent audiences. Our team understands that luxury brand success in the Middle East requires more than replicating Western approaches—it demands cultural adaptation, relationship building with key opinion leaders and royal families, understanding of majlis culture and Arabian hospitality traditions, and creation of experiences that honor regional customs while delivering world-class luxury standards. Whether launching a global luxury brand in the GCC market, activating premium brand experiences during major events like Formula 1 Abu Dhabi or Dubai World Cup, creating bespoke VIP hospitality for royal families and ultra-high-net-worth individuals, or providing strategic counsel for navigating complex luxury distribution channels, G2 delivers the cultural fluency, operational excellence, and luxury expertise essential for building enduring brand equity with the world's most discerning and affluent consumers.",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "serviceType": "Luxury Brand Experiences and Strategic Positioning",
+      "category": [
+        "Luxury Brand Management",
+        "Brand Experience",
+        "Event Marketing",
+        "Premium Events",
+        "VIP Services",
+        "Luxury Hospitality",
+        "Market Entry"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Place", "name": "GCC Region"},
+        {"@type": "Place", "name": "Middle East"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Luxury Brands, Global Corporations, Premium Brands, High-Net-Worth Individuals, Luxury Retailers, Fashion Houses, Automotive Luxury Brands"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Luxury Brand Experience Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Luxury Brand Positioning and Strategy",
+              "description": "Strategic frameworks for positioning luxury brands in Middle East markets with cultural authenticity and exclusivity"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "VIP Event Management and Hospitality",
+              "description": "Flawless execution of exclusive VIP events and hospitality experiences for high-net-worth audiences and royal families"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Premium Brand Activation and Experiences",
+              "description": "Immersive brand activations and experiential marketing for luxury products and services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Luxury Product Launches and Unveilings",
+              "description": "Exclusive product launch events that create anticipation, prestige, and desire among affluent consumers"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-Net-Worth Audience Engagement",
+              "description": "Relationship building and engagement strategies for connecting with ultra-high-net-worth individuals and families"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bespoke Experience Design and Curation",
+              "description": "Custom-designed luxury experiences tailored to individual preferences and cultural expectations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Market Entry Advisory for Luxury Brands",
+              "description": "Strategic counsel for luxury brands entering Middle East markets including distribution, positioning, and partnership strategies"
+            }
+          }
+        ]
+      },
+      "serviceOutput": "Successful luxury brand establishment, strengthened brand equity with high-net-worth audiences, revenue growth from affluent consumers, enhanced brand prestige, and strategic positioning advantages in the world's most lucrative luxury markets",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.g2middleeast.com/assets/services/luxury-brand-experiences.jpg",
+        "caption": "Luxury Brand Experiences - VIP events and premium brand positioning"
+      },
+      "inLanguage": ["en", "ar", "fr"],
+      "url": "https://www.g2middleeast.com/services/luxury-brand-experiences",
+      "keywords": [
+        "luxury brand experiences",
+        "VIP event management",
+        "premium brand activation",
+        "luxury hospitality",
+        "high-net-worth events",
+        "bespoke experiences",
+        "luxury product launch",
+        "brand positioning",
+        "market entry",
+        "MENA luxury market",
+        "luxury brand strategy",
+        "VIP hospitality services"
+      ]
+    }
+  ]
+}

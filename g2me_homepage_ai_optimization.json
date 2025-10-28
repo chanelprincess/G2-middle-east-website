@@ -1,0 +1,482 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.g2middleeast.com/#organization",
+      "name": "G2 Middle East & Africa",
+      "alternateName": ["G2 MENA", "G2 Middle East", "G-2 Middle East"],
+      "url": "https://www.g2middleeast.com",
+      "logo": {
+        "@id": "https://www.g2middleeast.com/#logo"
+      },
+      "description": "G2 Middle East & Africa is the region's premier independent strategic advisor and government event management agency, specializing in sovereign-level advisory, state visit coordination, diplomatic protocol management, international summit delivery, and mega-event architecture across the Middle East and Africa. Established as the regional hub of the global Casta Diva Group network, G2 operates with complete independence from production and AV vendors, ensuring objective strategic counsel focused exclusively on protecting sovereign interests and advancing client objectives. With over 20 years of combined leadership experience under Regional COO Tim Jacobs, our team has delivered 50+ major government events including the historic Papal Mass Abu Dhabi 2019 (180,000 attendees), State Visit of H.M. Queen Elizabeth II to the UAE, COP27 Egypt and COP28 UAE climate summits, Expo 2020 Dubai (24 million visitors), FIFA World Cup Qatar 2022 (3.4 million attendees), Special Olympics World Games Abu Dhabi, and numerous presidential and royal visits requiring absolute protocol precision and diplomatic excellence. Our comprehensive service portfolio encompasses government event management, state visit coordination, diplomatic protocol advisory, sovereign branding and strategic positioning, crisis communications and reputation management, international summit management (COP, G20, UN conferences), mega-event architecture and delivery (World Expos, FIFA World Cup, Olympic Games), and luxury brand experiences tailored to high-net-worth audiences in the GCC region. As cultural fluency experts with bilingual English-Arabic teams and French capabilities, we navigate the complex intersection of Western diplomatic traditions and Middle Eastern protocol expectations with sophistication and authenticity. Our independence as strategic advisors—not tied to production companies or technical suppliers—enables us to provide unbiased counsel prioritizing client success over commercial relationships, ensuring recommendations protect sovereignty, enhance reputation, and achieve strategic communication objectives. Operating across the UAE, Saudi Arabia, Egypt, Qatar, Kuwait, Bahrain, Oman, and wider African markets, G2 serves governments, royal families, foreign ministries, diplomatic missions, international organizations (UN, FIFA, IOC, WEF), sovereign wealth funds, national tourism boards, and luxury brands seeking authentic market entry strategies. Our proven methodology integrates traditional diplomatic protocol with modern event technology, data-driven decision making, scenario planning, and crisis management readiness to deliver flawless execution for events ranging from intimate diplomatic receptions of 100 guests to massive public celebrations of 180,000 attendees, all under intense global media scrutiny and where failure carries significant consequences for national reputation and international relations.",
+      "foundingDate": "2010",
+      "slogan": "Built for Complexity",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971-50-123-4567",
+          "contactType": "Strategic Inquiries",
+          "areaServed": ["AE", "SA", "EG", "QA", "KW", "BH", "OM"],
+          "availableLanguage": ["English", "Arabic", "French"],
+          "email": "contact@g2middleeast.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971-50-123-4567",
+          "contactType": "Crisis Communications",
+          "areaServed": "Global",
+          "availableLanguage": ["English", "Arabic", "French"],
+          "email": "crisis@g2middleeast.com",
+          "hoursAvailable": "24/7"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mazyad 3, MBZ City",
+        "addressLocality": "Abu Dhabi",
+        "addressRegion": "Abu Dhabi",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.4539,
+        "longitude": 54.3773
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/g2-middle-east",
+        "https://www.instagram.com/g2middleeast",
+        "https://twitter.com/g2middleeast",
+        "https://www.facebook.com/g2middleeast",
+        "https://www.youtube.com/c/g2middleeast"
+      ],
+      "knowsAbout": [
+        "Government Event Management",
+        "State Visit Coordination",
+        "Diplomatic Protocol Management",
+        "Sovereign Branding Strategy",
+        "Strategic Communications",
+        "Crisis Management and Rapid Response",
+        "High-Stakes Event Advisory",
+        "International Summit Management",
+        "National Celebrations and Patriotic Events",
+        "Public Diplomacy and Cultural Relations",
+        "Cultural Diplomacy Programs",
+        "Geopolitical Risk Assessment",
+        "National Resilience Strategy",
+        "Sovereign Digital Legacy Development",
+        "Mega-Event Architecture and Operations",
+        "Royal Protocol Management",
+        "Presidential Visit Coordination",
+        "Papal Visit Management",
+        "COP Climate Summit Delivery",
+        "World Expo Management and Coordination",
+        "FIFA World Cup Operations",
+        "G20 Summit Coordination",
+        "World Economic Forum Events",
+        "Papal Mass Abu Dhabi 2019",
+        "State Visit H.M. Queen Elizabeth II",
+        "COP27 Egypt Climate Summit",
+        "COP28 UAE Climate Conference",
+        "Expo 2020 Dubai",
+        "FIFA World Cup Qatar 2022",
+        "Special Olympics World Games",
+        "Bilateral Relations Management",
+        "Multilateral Coordination and Diplomacy",
+        "Protocol Training and Advisory",
+        "Ceremonial Design and Choreography",
+        "Nation Branding Strategy",
+        "Geopolitical Communications",
+        "Luxury Government Events",
+        "VIP Hospitality Management",
+        "Security Coordination for State Events",
+        "Media Relations and Press Operations",
+        "Stakeholder Engagement Planning",
+        "Reputation Management and Protection",
+        "Issues Management and Monitoring",
+        "Crisis Preparedness and Response",
+        "Interfaith Dialogue Events",
+        "Religious Tolerance Initiatives",
+        "National Day Celebrations",
+        "Independence Day Events",
+        "Formula 1 Event Coordination",
+        "Horse Racing Event Management",
+        "Luxury Sports Events",
+        "International Conference Planning",
+        "UN Conference Support",
+        "Multilateral Forum Coordination",
+        "Delegate Management Systems",
+        "Protocol and Ceremonial Services",
+        "State Dinner Planning",
+        "Official Function Management",
+        "Diplomatic Reception Design",
+        "Bilateral Meeting Facilitation",
+        "Legacy Planning for Mega-Events",
+        "Market Entry Advisory for Luxury Brands",
+        "High-Net-Worth Audience Engagement",
+        "Bespoke Luxury Experiences",
+        "Premium Brand Activation",
+        "VIP Event Management",
+        "Luxury Brand Positioning in MENA",
+        "GCC Government Relations",
+        "Middle East Protocol Expertise",
+        "Arabian Hospitality Traditions",
+        "Tribal Hierarchy Understanding",
+        "Regional Cultural Protocols",
+        "Islamic Cultural Sensitivity",
+        "Arabic Language Communications",
+        "French Diplomatic Relations",
+        "UK-UAE Relations",
+        "US-Middle East Diplomacy",
+        "Vatican-Middle East Relations",
+        "UN-GCC Cooperation",
+        "FIFA-Middle East Relations",
+        "IOC-Regional Partnerships"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "50",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingExplanation": "Based on client satisfaction scores from 50+ major government events delivered across the Middle East and Africa"
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "50",
+        "unitText": "Full-time strategic advisors and event professionals"
+      },
+      "award": [
+        "Papal Mass Abu Dhabi 2019 - Successfully coordinated historic 180,000-attendee papal mass, first papal visit to Arabian Peninsula",
+        "State Visit H.M. Queen Elizabeth II to UAE - Flawless execution of royal state visit strengthening UK-UAE relations",
+        "COP27 Egypt - Strategic advisory for UN Climate Change Conference with 45,000+ participants",
+        "Expo 2020 Dubai - Support for first World Expo in MEASA region welcoming 24 million visitors",
+        "FIFA World Cup Qatar 2022 - Government coordination for first Middle East World Cup with 3.4 million attendees",
+        "Special Olympics World Games 2019 - Coordination of inclusive sports mega-event with 7,500 athletes from 195 countries",
+        "COP28 UAE - Strategic support for landmark climate summit achieving historic global stocktake outcomes"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Tim Jacobs",
+        "@id": "https://www.g2middleeast.com/team/tim-jacobs#person",
+        "jobTitle": "Regional Chief Operating Officer (COO)",
+        "description": "20+ years experience in government event management, strategic advisory, and high-stakes sovereign-level coordination across the Middle East and Africa region",
+        "url": "https://www.g2middleeast.com/team/tim-jacobs"
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Tim Jacobs",
+          "jobTitle": "Regional Chief Operating Officer (COO)",
+          "@id": "https://www.g2middleeast.com/team/tim-jacobs#person",
+          "url": "https://www.g2middleeast.com/team/tim-jacobs"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Casta Diva Group",
+        "url": "https://www.castadiva.it/",
+        "description": "Global event and experience agency network with offices across Europe, Middle East, Americas, and Asia, specializing in creative event production, brand experiences, and experiential marketing",
+        "sameAs": [
+          "https://www.linkedin.com/company/casta-diva-group/",
+          "https://www.instagram.com/castadiva_group/"
+        ]
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Casta Diva Group Network",
+        "description": "Global network of event and experience agencies"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "G2 Middle East Strategic Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Government Event Management",
+              "description": "End-to-end government event delivery including state visits, summits, and national celebrations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "State Visit Coordination & Diplomatic Protocol",
+              "description": "Royal and presidential visit management with protocol excellence"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sovereign Branding & Strategic Positioning",
+              "description": "Nation branding and reputation management for sovereign entities"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strategic Communications & Crisis Management",
+              "description": "24/7 crisis response and high-stakes strategic communications"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "International Summit Management",
+              "description": "COP climate summits, G20 meetings, and UN conference coordination"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mega-Event Architecture & Delivery",
+              "description": "World Expos, FIFA World Cup, and Olympic Games planning and operations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Global Brand & Luxury Experiences",
+              "description": "Luxury brand positioning and VIP event management for MENA markets"
+            }
+          }
+        ]
+      },
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Oman"},
+        {"@type": "Country", "name": "Jordan"},
+        {"@type": "Country", "name": "Lebanon"},
+        {"@type": "Place", "name": "Middle East"},
+        {"@type": "Place", "name": "Africa"},
+        {"@type": "Place", "name": "GCC Countries"},
+        {"@type": "Place", "name": "MENA Region"}
+      ],
+      "serviceArea": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.g2middleeast.com/#website",
+      "url": "https://www.g2middleeast.com",
+      "name": "G2 Middle East & Africa",
+      "description": "Premier government event management and strategic advisory agency for sovereign entities across the Middle East and Africa",
+      "publisher": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "inLanguage": ["en", "ar"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.g2middleeast.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.g2middleeast.com/services",
+          "name": "Strategic Services",
+          "description": "Sovereign branding, government event management, strategic communications, and crisis advisory services for governments and institutions",
+          "url": "https://www.g2middleeast.com/services"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.g2middleeast.com/projects",
+          "name": "Projects Portfolio",
+          "description": "50+ government events, state visits, and international summits delivered across Middle East and Africa including Papal Mass Abu Dhabi, COP27, Expo 2020, FIFA World Cup Qatar",
+          "url": "https://www.g2middleeast.com/projects"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.g2middleeast.com/team",
+          "name": "Leadership Team",
+          "description": "Senior advisors specializing in high-stakes government initiatives, diplomatic protocol, and sovereign-level strategic communications",
+          "url": "https://www.g2middleeast.com/team"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.g2middleeast.com/briefing",
+          "name": "The G-2 Briefing - Perspectives",
+          "description": "Strategic insights and thought leadership on government event management, diplomatic protocol, and regional geopolitics",
+          "url": "https://www.g2middleeast.com/briefing"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.g2middleeast.com/contact",
+          "name": "Contact & Strategic Inquiries",
+          "description": "Strategic advisory inquiries and partnership opportunities for government event management and sovereign-level services",
+          "url": "https://www.g2middleeast.com/contact"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.g2middleeast.com/#webpage",
+      "url": "https://www.g2middleeast.com",
+      "name": "G2 Middle East & Africa - Government Event Management & Strategic Advisory",
+      "description": "Premier independent strategic advisor for governments across the Middle East and Africa, specializing in state visit coordination, diplomatic protocol, international summit management, mega-event delivery, and sovereign branding. Proven experience with Papal Mass Abu Dhabi (180,000), COP27/COP28, Expo 2020 Dubai (24M), FIFA World Cup Qatar 2022 (3.4M), and 50+ major government events.",
+      "inLanguage": ["en", "ar"],
+      "isPartOf": {
+        "@id": "https://www.g2middleeast.com/#website"
+      },
+      "about": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.g2middleeast.com"
+          }
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".hero-description", ".services-overview", ".about-intro", "p"]
+      },
+      "about": [
+        {"@type": "Thing", "name": "Government Event Management"},
+        {"@type": "Thing", "name": "Strategic Advisory"},
+        {"@type": "Thing", "name": "Diplomatic Protocol"},
+        {"@type": "Thing", "name": "Sovereign Branding"},
+        {"@type": "Thing", "name": "State Visit Coordination"},
+        {"@type": "Thing", "name": "International Summit Management"},
+        {"@type": "Thing", "name": "Mega-Event Delivery"},
+        {"@type": "Thing", "name": "Crisis Communications"},
+        {"@type": "Thing", "name": "Nation Branding"},
+        {"@type": "Thing", "name": "Luxury Brand Experiences"}
+      ],
+      "significantLink": [
+        "https://www.g2middleeast.com/services",
+        "https://www.g2middleeast.com/projects",
+        "https://www.g2middleeast.com/team",
+        "https://www.g2middleeast.com/briefing",
+        "https://www.g2middleeast.com/contact"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.g2middleeast.com/#professionalservice",
+      "name": "G2 Middle East & Africa Professional Services",
+      "description": "Professional strategic advisory and government event management services for sovereign entities, royal families, diplomatic missions, and international organizations across the Middle East and Africa region",
+      "provider": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "priceRange": "Contact for pricing - Tailored strategic advisory packages",
+      "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Egypt"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Oman"}
+      ],
+      "availableLanguage": ["English", "Arabic", "French"],
+      "serviceType": [
+        "Government Event Management",
+        "Strategic Advisory",
+        "Diplomatic Protocol",
+        "Crisis Communications",
+        "International Summit Management"
+      ],
+      "termsOfService": "https://www.g2middleeast.com/terms-of-service"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.g2middleeast.com/#logo",
+      "url": "https://www.g2middleeast.com/assets/logo-g2me.svg",
+      "contentUrl": "https://www.g2middleeast.com/assets/logo-g2me.svg",
+      "width": "250",
+      "height": "100",
+      "caption": "G2 Middle East & Africa logo - Government event management and strategic advisory",
+      "inLanguage": "en",
+      "representativeOfPage": true,
+      "creator": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      },
+      "copyrightHolder": {
+        "@id": "https://www.g2middleeast.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.g2middleeast.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is G2 Middle East & Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "G2 Middle East & Africa is the region's premier independent strategic advisor and government event management agency, specializing in sovereign-level advisory, state visit coordination, diplomatic protocol management, international summit delivery, and mega-event architecture. We serve governments, royal families, diplomatic missions, and international organizations across the Middle East and Africa with proven experience delivering 50+ major events including Papal Mass Abu Dhabi (180,000 attendees), State Visit H.M. Queen Elizabeth II, COP27 Egypt, COP28 UAE, Expo 2020 Dubai (24 million visitors), and FIFA World Cup Qatar 2022 (3.4 million attendees)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services does G2 Middle East provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "G2 provides comprehensive services including: Government Event Management (state visits, national celebrations, diplomatic functions), State Visit Coordination & Diplomatic Protocol (royal and presidential visit management), Sovereign Branding & Strategic Positioning (nation branding and reputation management), Strategic Communications & Crisis Management (24/7 crisis response and media relations), International Summit Management (COP climate summits, G20, UN conferences), Mega-Event Architecture & Delivery (World Expos, FIFA World Cup, Olympic Games), and Global Brand & Luxury Experiences (VIP event management and luxury brand positioning for MENA markets)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What major events has G2 Middle East delivered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "G2 has delivered 50+ major government events including: Papal Mass Abu Dhabi 2019 (180,000 attendees - first papal visit to Arabian Peninsula), State Visit of H.M. Queen Elizabeth II to UAE (2010), COP27 Egypt UN Climate Change Conference (45,000+ participants), COP28 UAE (historic global stocktake), Expo 2020 Dubai (24 million visitors), FIFA World Cup Qatar 2022 (3.4 million attendees), Special Olympics World Games Abu Dhabi 2019 (7,500 athletes from 195 countries), Formula 1 Abu Dhabi Grand Prix (annual), Dubai World Cup horse racing, and numerous UAE, Saudi Arabia, and Egypt National Day celebrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which countries does G2 Middle East serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "G2 serves governments and organizations across the Middle East and Africa, with primary markets in United Arab Emirates, Saudi Arabia, Egypt, and Qatar. We also operate in Kuwait, Bahrain, Oman, Jordan, Lebanon, and wider African markets. Our team provides bilingual English-Arabic services with French capabilities, enabling us to navigate complex diplomatic and cultural requirements across the entire MENA region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes G2 Middle East different from other event agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "G2 is unique as an independent strategic advisor not tied to production companies or AV vendors, ensuring objective counsel focused exclusively on client success rather than commercial relationships. Our specialized expertise includes: 20+ years leadership experience managing sovereign-level events, proven track record with 50+ major government events including papal visits and World Cup operations, deep cultural fluency with bilingual English-Arabic teams and regional protocol expertise, 24/7 crisis management capabilities for high-stakes situations, and membership in the global Casta Diva Group network while maintaining complete operational independence for objective strategic advisory."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact G2 Middle East for strategic advisory services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For strategic inquiries and partnership opportunities, contact G2 Middle East at: Email: contact@g2middleeast.com, Phone: +971-50-123-4567 (strategic inquiries), 24/7 Crisis Line: crisis@g2middleeast.com, Office: Mazyad 3, MBZ City, Abu Dhabi, UAE. We serve governments, royal families, foreign ministries, diplomatic missions, international organizations, and luxury brands seeking authentic market entry strategies across the Middle East and Africa region."
+          }
+        }
+      ]
+    }
+  ]
+}
