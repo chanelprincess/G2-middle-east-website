@@ -1053,10 +1053,8 @@ app.get('/privacy', (c) => {
   return c.redirect('/privacy-policy', 301)
 })
 
-// Projects Page - Protected (Requires Authentication)
-app.get('/projects', requireProjectsAuth, async (c) => {
-  const user = c.get('projectsUser') as ProjectsAuth.UserSession
-  
+// Projects Page - Open Access (Authentication Removed)
+app.get('/projects', async (c) => {
   return c.render(
     <ProjectsPage />,
     {
@@ -1201,9 +1199,8 @@ app.get('/projects/account', requireProjectsAuth, async (c) => {
   )
 })
 
-// Project Detail Pages - Dynamic routing (Protected - Requires Authentication)
-app.get('/projects/:slug', requireProjectsAuth, async (c) => {
-  const user = c.get('projectsUser') as ProjectsAuth.UserSession
+// Project Detail Pages - Dynamic routing (Open Access)
+app.get('/projects/:slug', async (c) => {
   const slug = c.req.param('slug')
   const projectData = projectsData[slug as keyof typeof projectsData]
   
@@ -1308,8 +1305,7 @@ app.get('/whitepapers/pending', (c) => {
 
 // Protected Whitepapers Page (Requires Authentication)
 app.get('/whitepapers', async (c) => {
-  const user = await requireAuth(c)
-  if (user instanceof Response) return user
+  // Open access - no authentication required
   
   // Fetch active whitepapers
   const whitepapers = await c.env.DB.prepare(
@@ -1317,7 +1313,7 @@ app.get('/whitepapers', async (c) => {
   ).all()
   
   return c.render(
-    <WhitepapersPage user={user} whitepapers={whitepapers.results || []} />,
+    <WhitepapersPage user={null} whitepapers={whitepapers.results || []} />,
     {
       title: 'White Papers | G2 Middle East',
       description: 'Exclusive strategic insights and research'
