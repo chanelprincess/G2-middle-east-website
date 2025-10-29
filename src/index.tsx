@@ -2601,8 +2601,3 @@ app.post('/api/admin/whitepapers/delete/:id', async (c) => {
 })
 
 export default app
-return c.text('Delete failed', 500)
-  }
-})
-
-export default app
