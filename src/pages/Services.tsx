@@ -2,127 +2,177 @@ import { FC } from 'hono/jsx'
 import { PageLayout } from '../components/Layout'
 
 export const ServicesPage: FC = () => {
-  // Schema.org markup for Service
+  // Enhanced Schema with @graph structure - Individual Service schemas + Organization
   const servicesSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "G2 Middle East",
-    "description": "Strategic communications and brand architecture for sovereign entities and global brands",
-    "url": "https://g2-middleeast.com",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Strategic Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Sovereign & Governmental Services",
-            "description": "Strategic positioning and narrative architecture for nations, governments, and sovereign entities",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
+    "@graph": [
+      // Organization Schema
+      {
+        "@type": "Organization",
+        "@id": "https://g2middleeast.com/#organization",
+        "name": "G2 Middle East & Africa",
+        "description": "Strategic communications and brand architecture for sovereign entities and global brands",
+        "url": "https://g2middleeast.com",
+        "logo": "https://g2middleeast.com/assets/logo-g2me.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mazyad Offices 3 - Office 36",
+          "addressLocality": "Mohammed Bin Zayed City",
+          "addressRegion": "Abu Dhabi",
+          "addressCountry": "AE"
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Global Brand & Luxury Targeted Experiences",
-            "description": "Strategic positioning and experience design for luxury brands and global enterprises",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Strategic Communications & Narrative Control",
-            "description": "High-stakes communication strategy and narrative development",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Major Event Architecture & Delivery",
-            "description": "End-to-end conceptualization and execution of events of national and international importance",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Personal Brand & Reputation Positioning",
-            "description": "Proactive executive brand positioning and digital legacy management",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Corporate & Shareholder Engagement",
-            "description": "High-impact corporate events and stakeholder alignment strategies",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cultural Diplomacy & Placemaking",
-            "description": "Building cultural capital through strategic cultural events and legacy placemaking",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Experience Design & Immersive Targeting",
-            "description": "Engineering deep audience engagement through immersive experiences and sensory design",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Approach Modelling & ROI",
-            "description": "Measuring intangible value and providing C-suite financial justification for strategic projects",
-            "provider": {
-              "@type": "Organization",
-              "name": "G2 Middle East"
-            }
-          }
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+971-02-654-4049",
+          "email": "tim@g2middleeast.com",
+          "contactType": "New Business & Strategic Enquiries"
         }
-      ]
-    }
+      },
+      // Individual Service 1: Sovereign & Governmental Services
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#sovereign",
+        "name": "Sovereign & Governmental Services",
+        "description": "Strategic positioning and narrative architecture for nations, governments, and sovereign entities. National strategy, global stakeholder engagement, and sovereign experience design.",
+        "serviceType": "Government Event Management",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#sovereign"
+      },
+      // Individual Service 2: Global Brand & Luxury
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#luxury",
+        "name": "Global Brand & Luxury Targeted Experiences",
+        "description": "Strategic positioning and experience design for luxury brands and global enterprises. Prestige brand architecture, luxury experiences, and market entry strategies.",
+        "serviceType": "Luxury Brand Positioning",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#luxury"
+      },
+      // Individual Service 3: Strategic Communications
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#strategic",
+        "name": "Strategic Communications & Narrative Control",
+        "description": "High-stakes communication strategy and narrative development. Crisis communications, thought leadership programs, and stakeholder alignment.",
+        "serviceType": "Strategic Communications",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#strategic"
+      },
+      // Individual Service 4: Major Event Architecture
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#events",
+        "name": "Major Event Architecture & Delivery",
+        "description": "End-to-end conceptualization and execution of events of national and international importance. Mega-project blueprinting, financial modelling, and flawless operational delivery.",
+        "serviceType": "Event Management",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#events"
+      },
+      // Individual Service 5: Personal Brand & Reputation
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#crisis",
+        "name": "Personal Brand & Reputation Positioning",
+        "description": "Proactive executive brand positioning and digital legacy management. Strategic brand foundation, authority amplification, and digital legacy management.",
+        "serviceType": "Reputation Management",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#crisis"
+      },
+      // Individual Service 6: Corporate & Shareholder Engagement
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#corporate",
+        "name": "Corporate & Shareholder Engagement",
+        "description": "High-impact corporate events and stakeholder alignment strategies. High-impact AGMs, IPO & M&A communications, and C-suite message delivery.",
+        "serviceType": "Corporate Communications",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#corporate"
+      },
+      // Individual Service 7: Cultural Diplomacy & Placemaking
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#cultural",
+        "name": "Cultural Diplomacy & Placemaking",
+        "description": "Building cultural capital through strategic cultural events and legacy placemaking. National identity showcases, international soft power initiatives, and legacy placemaking.",
+        "serviceType": "Cultural Events",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#cultural"
+      },
+      // Individual Service 8: Experience Design & Immersive Targeting
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#experience",
+        "name": "Experience Design & Immersive Targeting",
+        "description": "Engineering deep audience engagement through immersive experiences and sensory design. Audience journey mapping, immersive technology integration, and sensory design.",
+        "serviceType": "Experience Design",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#experience"
+      },
+      // Individual Service 9: Approach Modelling & ROI
+      {
+        "@type": "Service",
+        "@id": "https://g2middleeast.com/services#roi",
+        "name": "Approach Modelling & ROI",
+        "description": "Measuring intangible value and providing C-suite financial justification for strategic projects. Intangible value metrics, C-suite financial justification, and ROI forecasting.",
+        "serviceType": "Strategic Analysis",
+        "provider": {
+          "@id": "https://g2middleeast.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Middle East and Africa"
+        },
+        "url": "https://g2middleeast.com/services#roi"
+      }
+    ]
   }
 
   // BreadcrumbList Schema for Services Page

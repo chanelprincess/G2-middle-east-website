@@ -180,25 +180,50 @@ export const ProjectsPage: FC = () => {
         `
       }} />
 
-      {/* Schema.org Structured Data - Projects Portfolio */}
+      {/* Schema.org Structured Data - Enhanced Projects Portfolio */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
         "@context": "https://schema.org",
         "@graph": [
+          // Organization providing the services
+          {
+            "@type": "Organization",
+            "@id": "https://g2middleeast.com/#organization",
+            "name": "G2 Middle East & Africa",
+            "url": "https://g2middleeast.com",
+            "logo": "https://g2middleeast.com/assets/logo-g2me.svg",
+            "description": "Strategic counsel and event management for governments, sovereign entities, and global brands",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mazyad Offices 3 - Office 36",
+              "addressLocality": "Mohammed Bin Zayed City",
+              "addressRegion": "Abu Dhabi",
+              "addressCountry": "AE"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971-02-654-4049",
+              "email": "tim@g2middleeast.com",
+              "contactType": "New Business & Strategic Enquiries"
+            }
+          },
+          // CollectionPage
           {
             "@type": "CollectionPage",
             "@id": "https://g2middleeast.com/projects#webpage",
             "url": "https://g2middleeast.com/projects",
             "name": "Projects Portfolio - G2 Middle East",
-            "description": "Case studies in strategic impact and flawless execution showcasing government events, state visits, international summits, and luxury brand experiences delivered by G2 Middle East across the GCC and MENA region",
+            "description": "Case studies in strategic impact and flawless execution: 50+ government events, state visits, international summits, and luxury brand experiences delivered by G2 Middle East across the GCC and MENA region",
             "isPartOf": {"@id": "https://g2middleeast.com/#website"},
             "about": {"@id": "https://g2middleeast.com/#organization"},
-            "inLanguage": "en"
+            "inLanguage": "en",
+            "keywords": "government events, state visits, diplomatic protocol, event management, UAE, Middle East, Abu Dhabi, strategic advisory"
           },
+          // ItemList with comprehensive event details
           {
             "@type": "ItemList",
             "@id": "https://g2middleeast.com/projects#itemlist",
             "name": "G2 Middle East Project Portfolio",
-            "description": "Complete portfolio of 42 government events, state visits, international summits, and strategic advisory projects delivered across Middle East and Africa",
+            "description": "Complete portfolio of 42+ government events, state visits, international summits, and strategic advisory projects delivered across Middle East and Africa",
             "numberOfItems": 42,
             "itemListElement": [
               {
@@ -206,12 +231,25 @@ export const ProjectsPage: FC = () => {
                 "position": 1,
                 "item": {
                   "@type": "Event",
+                  "@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi",
                   "name": "Papal Mass Abu Dhabi 2019",
-                  "url": "https://g2middleeast.com/projects/papal-mass-2019",
-                  "description": "Historic Papal Mass with 180,000 attendees - first papal visit to Arabian Peninsula",
+                  "url": "https://g2middleeast.com/projects/papal-mass-abu-dhabi",
+                  "description": "Historic Papal Mass with 180,000 attendees - first papal visit to Arabian Peninsula. Largest Catholic gathering in Middle East history.",
                   "startDate": "2019-02-05",
-                  "location": {"@type": "Place", "name": "Abu Dhabi, UAE"},
-                  "organizer": {"@id": "https://g2middleeast.com/#organization"}
+                  "endDate": "2019-02-05",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Zayed Sports City",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Abu Dhabi",
+                      "addressCountry": "AE"
+                    }
+                  },
+                  "organizer": {"@id": "https://g2middleeast.com/#organization"},
+                  "attendanceMode": "OfflineEventAttendanceMode",
+                  "eventStatus": "EventScheduled",
+                  "maximumAttendeeCapacity": 180000
                 }
               },
               {
@@ -219,12 +257,23 @@ export const ProjectsPage: FC = () => {
                 "position": 2,
                 "item": {
                   "@type": "Event",
+                  "@id": "https://g2middleeast.com/projects/queen-elizabeth-ii-state-visit",
                   "name": "State Visit of H.M. Queen Elizabeth II to UAE",
                   "url": "https://g2middleeast.com/projects/queen-elizabeth-ii-state-visit",
-                  "description": "Royal state visit coordination with diplomatic protocol and ceremonial planning",
+                  "description": "Royal state visit coordination with diplomatic protocol and ceremonial planning. Historic strengthening of UK-UAE diplomatic relations.",
                   "startDate": "2010-11-24",
-                  "location": {"@type": "Place", "name": "Abu Dhabi and Dubai, UAE"},
-                  "organizer": {"@id": "https://g2middleeast.com/#organization"}
+                  "endDate": "2010-11-27",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Abu Dhabi and Dubai",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressCountry": "AE"
+                    }
+                  },
+                  "organizer": {"@id": "https://g2middleeast.com/#organization"},
+                  "attendanceMode": "OfflineEventAttendanceMode",
+                  "eventStatus": "EventScheduled"
                 }
               },
               {
@@ -232,12 +281,24 @@ export const ProjectsPage: FC = () => {
                 "position": 3,
                 "item": {
                   "@type": "Event",
+                  "@id": "https://g2middleeast.com/projects/cop27-egypt",
                   "name": "COP27 Egypt Strategic Communications",
                   "url": "https://g2middleeast.com/projects/cop27-egypt",
-                  "description": "Strategic communications and government advisory for UN Climate Change Conference",
+                  "description": "Strategic communications and government advisory for UN Climate Change Conference with 40,000+ participants",
                   "startDate": "2022-11-06",
-                  "location": {"@type": "Place", "name": "Sharm El-Sheikh, Egypt"},
-                  "organizer": {"@id": "https://g2middleeast.com/#organization"}
+                  "endDate": "2022-11-18",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Sharm El-Sheikh",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Sharm El-Sheikh",
+                      "addressCountry": "EG"
+                    }
+                  },
+                  "organizer": {"@id": "https://g2middleeast.com/#organization"},
+                  "attendanceMode": "OfflineEventAttendanceMode",
+                  "eventStatus": "EventScheduled"
                 }
               },
               {
@@ -245,12 +306,24 @@ export const ProjectsPage: FC = () => {
                 "position": 4,
                 "item": {
                   "@type": "Event",
+                  "@id": "https://g2middleeast.com/projects/dubai-expo-2020",
                   "name": "Expo 2020 Dubai VIP Coordination",
                   "url": "https://g2middleeast.com/projects/dubai-expo-2020",
-                  "description": "VIP program coordination and government relations for world expo",
+                  "description": "VIP program coordination and government relations for world expo with 24+ million visitors",
                   "startDate": "2021-10-01",
-                  "location": {"@type": "Place", "name": "Dubai, UAE"},
-                  "organizer": {"@id": "https://g2middleeast.com/#organization"}
+                  "endDate": "2022-03-31",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Dubai",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Dubai",
+                      "addressCountry": "AE"
+                    }
+                  },
+                  "organizer": {"@id": "https://g2middleeast.com/#organization"},
+                  "attendanceMode": "OfflineEventAttendanceMode",
+                  "eventStatus": "EventScheduled"
                 }
               },
               {
@@ -258,16 +331,28 @@ export const ProjectsPage: FC = () => {
                 "position": 5,
                 "item": {
                   "@type": "Event",
+                  "@id": "https://g2middleeast.com/projects/fifa-world-cup-qatar",
                   "name": "FIFA World Cup Qatar 2022 Government Relations",
                   "url": "https://g2middleeast.com/projects/fifa-world-cup-qatar",
-                  "description": "Government relations advisory for FIFA World Cup hosting",
+                  "description": "Government relations advisory for FIFA World Cup hosting - first World Cup in Middle East",
                   "startDate": "2022-11-20",
-                  "location": {"@type": "Place", "name": "Qatar"},
-                  "organizer": {"@id": "https://g2middleeast.com/#organization"}
+                  "endDate": "2022-12-18",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Qatar",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressCountry": "QA"
+                    }
+                  },
+                  "organizer": {"@id": "https://g2middleeast.com/#organization"},
+                  "attendanceMode": "OfflineEventAttendanceMode",
+                  "eventStatus": "EventScheduled"
                 }
               }
             ]
           },
+          // BreadcrumbList
           {
             "@type": "BreadcrumbList",
             "itemListElement": [

@@ -7,6 +7,7 @@ import { ServicesPage } from './pages/Services'
 import { TeamPage } from './pages/Team'
 import { ContactPage } from './pages/Contact'
 import { GroupPage } from './pages/Group'
+import { AboutPage } from './pages/About'
 import { ServiceDetailPage, servicesData } from './pages/ServiceDetail'
 import { TeamDetailPage, teamData } from './pages/TeamDetail'
 import { ProjectsPage } from './pages/Projects'
@@ -1003,6 +1004,20 @@ app.get('/group', (c) => {
     {
       title: 'The Group | G2 Middle East',
       description: 'G2 Middle East is part of Casta Diva Group, a global communications powerhouse with presence in 15 cities across four continents.'
+    }
+  )
+})
+
+// About Page
+app.get('/about', (c) => {
+  return c.render(
+    <AboutPage />,
+    {
+      title: 'About Us | Strategic Counsel & Government Events | G2 Middle East UAE',
+      description: 'G2 Middle East: Strategic counsel and event management for governments across Middle East & Africa. 50+ major projects, 20+ years experience. Part of Casta Diva Group.',
+      canonicalUrl: 'https://g2middleeast.com/about',
+      ogImage: 'https://g2middleeast.com/static/og-about.jpg',
+      ogImageAlt: 'About G2 Middle East - Strategic Counsel and Government Event Management'
     }
   )
 })
