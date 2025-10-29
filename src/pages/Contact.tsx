@@ -12,12 +12,12 @@ export const ContactPage: FC = () => {
     "legalName": "G2 Middle East & Africa",
     "description": "Strategic advisory and event architecture for sovereign entities, government agencies, and global brands across Middle East and Africa. Specialists in government event management, state visit coordination, and diplomatic protocol.",
     "url": "https://g2middleeast.com",
-    "telephone": "+971-50-123-4567",
+    "telephone": "+971-02-654-4049",
     "email": "contact@g2middleeast.com",
     "priceRange": "$$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mazyad 3, MBZ City",
+      "streetAddress": "Mazyad Offices 3 - office 36 - Sultan Bin Mohammed Al, 75, Qubaisi St - Mohammed Bin Zayed City",
       "addressLocality": "Abu Dhabi",
       "addressRegion": "Abu Dhabi",
       "addressCountry": "AE"
@@ -153,8 +153,8 @@ export const ContactPage: FC = () => {
                     </div>
                     <div>
                       <h3 class="text-white font-semibold mb-1">Phone</h3>
-                      <a href="tel:+971501234567" class="text-gray-300 hover:text-g2-gold transition-colors">
-                        +971 50 123 4567
+                      <a href="tel:+97126544049" class="text-gray-300 hover:text-g2-gold transition-colors">
+                        (+971) 02 654 4049
                       </a>
                     </div>
                   </div>
@@ -166,7 +166,9 @@ export const ContactPage: FC = () => {
                     <div>
                       <h3 class="text-white font-semibold mb-1">Location</h3>
                       <p class="text-gray-300">
-                        Mazyad 3, MBZ City<br />
+                        Mazyad Offices 3 - office 36<br />
+                        Sultan Bin Mohammed Al, 75, Qubaisi St<br />
+                        Mohammed Bin Zayed City<br />
                         Abu Dhabi, UAE<br />
                         <span class="text-sm">Serving clients across the GCC</span>
                       </p>
