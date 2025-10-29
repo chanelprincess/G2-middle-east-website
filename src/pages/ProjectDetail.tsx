@@ -46,88 +46,73 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "FAQPage",
-          "@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#faqpage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What made the 2019 Papal Mass in Abu Dhabi an unprecedented operational challenge?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The primary challenge was the 71-hour deadline to completely transform a national stadium immediately following a major international football final. This required a leader, Tim Jacobs, to devise and implement a unique, time-compressed build methodology while navigating complex protocols for The Vatican and the UAE government."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How did the team execute the stadium transformation in just 71 hours?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The team implemented three critical pillars: (1) Agile PMO structure enabling rapid decision-making, (2) Pre-fabrication and modular design to minimize on-site work, (3) 24/7 operations with overlapping shifts. Led by Tim Jacobs' agile PMO methodology, this approach turned what seemed impossible into a benchmark case study in crisis management and delivery under pressure."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What role did Tim Jacobs play in the Papal Mass Abu Dhabi delivery?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Tim Jacobs served as Executive Producer and Regional COO of G2 Middle East & Africa for the 2019 Papal Mass. He personally architected the operational strategy, led the 71-hour execution, and served as the primary liaison between the UAE Ministry of Presidential Affairs and The Vatican. His agile PMO framework and crisis leadership were instrumental in transforming the impossible timeline into a historic success."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What was the scale and impact of the Papal Mass in Abu Dhabi?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Papal Mass drew 180,000 worshippers to Zayed Sports City Stadium, making it the largest public gathering in UAE history. It served as the platform for the signing of the historic 'Document on Human Fraternity' between Pope Francis and Grand Imam Ahmed Al-Tayeb. Over 2,000 international journalists covered the event, beaming the message of tolerance and interfaith dialogue to billions worldwide."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the 'G2 Surgical Approach to Stagecraft and Delivery'?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It is a methodology based on the principles demonstrated at the Papal Mass Abu Dhabi: agile project management, resilience under pressure, and the ability to deliver flawless results on impossible timelines. This approach, driven by Tim Jacobs, ensures G2 clients receive world-class execution for their most critical projects. Learn more about the G2 Surgical Approach to Stagecraft and Delivery at g2middleeast.com/services."
-              }
-            }
-          ],
-          "about": [
-            {"@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event"},
-            {"@id": "https://g2middleeast.com/experts/tim-jacobs#person"}
-          ]
-        },
-        {
           "@type": "Event",
           "@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event",
-          "name": "The 2019 Papal Mass",
-          "alternateName": "Papal Mass Abu Dhabi, 71-Hour Miracle, Pope Francis UAE",
-          "description": "The historic Papal Mass in Abu Dhabi on February 5, 2019, marked the first-ever Papal Mass held on the Arabian Peninsula. Delivered in just 71 hours following a major football final, Executive Producer Tim Jacobs led G2 Middle East through an unprecedented operational challenge, coordinating 180,000 attendees, diplomatic protocol with The Vatican, and international media strategy to create a platform for the Document on Human Fraternity.",
+          "name": "The Holy Mass for the Visit of Pope Francis",
+          "alternateName": "Papal Mass Abu Dhabi 2019",
+          "description": "The first Papal Mass on the Arabian Peninsula, delivered for 180,000 attendees within a 71-hour stadium transformation. A landmark event broadcast to a global audience of over one billion.",
           "startDate": "2019-02-05",
+          "endDate": "2019-02-05",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "maximumAttendeeCapacity": 180000,
           "location": {
             "@type": "Place",
-            "name": "Zayed Sports City Stadium, Abu Dhabi, United Arab Emirates"
+            "name": "Zayed Sports City Stadium",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Abu Dhabi",
+              "addressCountry": "United Arab Emirates"
+            }
           },
           "performer": {
-            "@type": "Person",
-            "name": "Pope Francis",
-            "jobTitle": "Pope"
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
           },
-          "director": {"@id": "https://g2middleeast.com/experts/tim-jacobs#person"},
-          "keywords": "Papal Mass Abu Dhabi, 71-hour deadline, agile PMO, Tim Jacobs, Pope Francis, G2 Middle East, executive producer, Document on Human Fraternity, interfaith dialogue, crisis management, event delivery"
+          "director": {
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+          },
+          "organizer": {
+            "@id": "https://g2middleeast.com/#organization"
+          }
         },
         {
           "@type": "Person",
-          "@id": "https://g2middleeast.com/experts/tim-jacobs#person",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
           "name": "Tim Jacobs",
-          "jobTitle": "Regional Chief Operating Officer",
-          "worksFor": {"@id": "https://g2middleeast.com/#organization"},
-          "alumniOf": {"@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event"},
-          "description": "Tim Jacobs serves as Regional COO of G2 Middle East & Africa. As Executive Producer of the 2019 Papal Mass, he personally architected the operational strategy and led the team through the successful 71-hour execution of the first Papal Mass on the Arabian Peninsula. His agile PMO methodology and crisis leadership under impossible timelines have become benchmarks in high-stakes event delivery."
+          "jobTitle": "Regional COO",
+          "description": "The Executive Producer who architected the '71-hour miracle,' leading the strategic and operational delivery of the historic 2019 Papal Mass.",
+          "url": "https://g2middleeast.com/team/tim-jacobs",
+          "worksFor": {
+            "@id": "https://g2middleeast.com/#organization"
+          },
+          "knowsAbout": [
+            "Government Event Management",
+            "Major Event Architecture",
+            "Crisis Management",
+            "Large-Scale Event Production"
+          ],
+          "award": "Executive Producer - Papal Mass Abu Dhabi 2019 (180,000 attendees)"
         },
         {
           "@type": "Organization",
           "@id": "https://g2middleeast.com/#organization",
           "name": "G2 Middle East & Africa",
-          "url": "https://g2middleeast.com"
+          "url": "https://g2middleeast.com",
+          "logo": "https://g2middleeast.com/assets/logo-g2me.svg",
+          "description": "Strategic counsel and world-class event management for governments, sovereign entities, and global brands",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mazyad Offices 3 - Office 36 - Sultan Bin Mohammed Al, 75, Qubaisi St",
+            "addressLocality": "Mohammed Bin Zayed City",
+            "addressRegion": "Abu Dhabi",
+            "addressCountry": "AE"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971-02-654-4049",
+            "email": "tim@g2middleeast.com",
+            "contactType": "New Business & Strategic Enquiries"
+          }
         },
         {
           "@type": "BreadcrumbList",
@@ -145,29 +130,65 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
         {
           "@type": "Event",
           "@id": "https://g2middleeast.com/projects/queen-elizabeth-ii-state-visit#event",
-          "name": "State Visit of H.M. Queen Elizabeth II to United Arab Emirates",
-          "alternateName": "Queen Elizabeth II UAE State Visit, Royal Visit UAE 2010",
-          "description": "Discover how Tim Jacobs, now Regional COO of G2 Middle East & Africa, personally project-directed the historic 2010 state visit of Queen Elizabeth II to Abu Dhabi, setting a new benchmark in sovereign event strategy and diplomatic protocol.",
-          "startDate": "2010-11-24T08:00:00+04:00",
-          "endDate": "2010-11-26T20:00:00+04:00",
+          "name": "State Visit of Queen Elizabeth II to Abu Dhabi",
+          "description": "A historic state visit involving 8 high-profile events over a 20-hour period, requiring meticulous diplomatic protocol and security management.",
+          "startDate": "2010-11-24",
+          "endDate": "2010-11-25",
           "eventStatus": "https://schema.org/EventScheduled",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "location": [
-            {"@type": "Place", "name": "Abu Dhabi", "address": {"@type": "PostalAddress", "addressLocality": "Abu Dhabi", "addressCountry": "AE"}},
-            {"@type": "Place", "name": "Dubai", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}}
-          ],
-          "organizer": {"@id": "https://g2middleeast.com/#organization"},
-          "performer": [
-            {"@type": "Person", "name": "Queen Elizabeth II", "jobTitle": "Queen of the United Kingdom"},
-            {"@type": "Person", "name": "Prince Philip, Duke of Edinburgh"}
-          ],
-          "director": {"@type": "Person", "@id": "https://g2middleeast.com/team/tim-jacobs#person", "name": "Tim Jacobs"},
-          "about": [
-            {"@type": "Thing", "name": "State Visit"},
-            {"@type": "Thing", "name": "Diplomatic Protocol"},
-            {"@type": "Thing", "name": "UK-UAE Relations"}
-          ],
-          "keywords": "Queen Elizabeth II, State Visit, UAE, diplomatic protocol, royal visit, Tim Jacobs, G2 Middle East, UK-UAE relations"
+          "location": {
+            "@type": "Place",
+            "name": "Abu Dhabi",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Abu Dhabi",
+              "addressCountry": "United Arab Emirates"
+            }
+          },
+          "organizer": {
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+          },
+          "director": {
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+          "name": "Tim Jacobs",
+          "jobTitle": "Regional COO",
+          "description": "The Project Director responsible for the complete design, planning, and execution of the 2010 Royal State Visit.",
+          "url": "https://g2middleeast.com/team/tim-jacobs",
+          "worksFor": {
+            "@id": "https://g2middleeast.com/#organization"
+          },
+          "knowsAbout": [
+            "Government Event Management",
+            "State Visit Coordination",
+            "Diplomatic Protocol",
+            "Strategic Event Planning"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://g2middleeast.com/#organization",
+          "name": "G2 Middle East & Africa",
+          "url": "https://g2middleeast.com",
+          "logo": "https://g2middleeast.com/assets/logo-g2me.svg",
+          "description": "Strategic counsel and world-class event management for governments, sovereign entities, and global brands",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mazyad Offices 3 - Office 36 - Sultan Bin Mohammed Al, 75, Qubaisi St",
+            "addressLocality": "Mohammed Bin Zayed City",
+            "addressRegion": "Abu Dhabi",
+            "addressCountry": "AE"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971-02-654-4049",
+            "email": "tim@g2middleeast.com",
+            "contactType": "New Business & Strategic Enquiries"
+          }
         },
         {
           "@type": "BreadcrumbList",
