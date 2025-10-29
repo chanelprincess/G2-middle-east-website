@@ -21,17 +21,17 @@ export const HomePage: FC = () => {
         <div class="absolute inset-0 flex items-center justify-center z-10">
           <div class="text-center px-6 max-w-5xl">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow fade-in text-white">
-              Strategy. Positioning. Legacy.
+              Built for Complexity
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 fade-in-delay-1 font-light">
-              The Strategic Counsel Behind the World's Most Significant Events
+              Bring us your high stakes challenges
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-delay-2">
-              <a href="/contact" class="btn-primary">
-                Engage Our Counsel
+              <a href="/services" class="btn-primary">
+                Explore Our Services
               </a>
-              <a href="/services" class="btn-secondary">
-                Explore Our Capabilities
+              <a href="/contact" class="btn-secondary">
+                Start a Conversation
               </a>
             </div>
           </div>
@@ -348,14 +348,14 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-8">
-              From Strategic Counsel to Flawless Execution
+              The Architecture of Intangible Value
             </h2>
             <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
-                We begin with <span class="text-g2-gold font-semibold">Strategy</span>—defining the narrative and positioning that will shape perception. This allows us to craft powerful <span class="text-g2-gold font-semibold">Positioning</span> for our sovereign and corporate partners. The result is an enduring <span class="text-g2-gold font-semibold">Legacy</span>, often delivered through flawless, world-class events and experiences that become historic milestones.
+                We're built for your biggest problems. The harder the brief, the more focused we become.
               </p>
               <p class="text-xl text-white font-medium pt-4">
-                Our strategic advisory is proven through our exceptional execution. Events are not the goal—they are the powerful, tangible proof of elite counsel.
+                Expect direct answers, measurable outcomes, and a team that thrives under pressure.
               </p>
             </div>
           </div>
