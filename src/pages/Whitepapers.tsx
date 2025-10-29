@@ -12,7 +12,7 @@ interface WhitepapersPageProps {
   user: {
     full_name: string
     username: string
-  }
+  } | null
   whitepapers: Whitepaper[]
 }
 
@@ -33,15 +33,17 @@ export function WhitepapersPage(props: WhitepapersPageProps) {
                     Exclusive strategic insights and research for G2 Middle East community
                   </p>
                 </div>
-                <div class="hidden md:block">
-                  <div class="text-right">
-                    <p class="text-sm text-gray-500">Logged in as</p>
-                    <p class="text-lg font-semibold text-g2-gold">{props.user.full_name}</p>
-                    <a href="/api/auth/logout" class="text-sm text-gray-400 hover:text-white transition-colors">
-                      Logout
-                    </a>
+                {props.user && (
+                  <div class="hidden md:block">
+                    <div class="text-right">
+                      <p class="text-sm text-gray-500">Logged in as</p>
+                      <p class="text-lg font-semibold text-g2-gold">{props.user.full_name}</p>
+                      <a href="/api/auth/logout" class="text-sm text-gray-400 hover:text-white transition-colors">
+                        Logout
+                      </a>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
