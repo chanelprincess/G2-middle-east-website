@@ -33,7 +33,7 @@ export const renderer = jsxRenderer(({
   description,
   canonicalUrl,
   ogImage = 'https://g2middleeast.com/static/og-default.jpg',
-  ogImageAlt = 'G2 Middle East - Government Event Management & Strategic Advisory in UAE and Middle East',
+  ogImageAlt = 'G2 Middle East - Strategic Counsel and World-Class Event Management in UAE and Middle East',
   ogType = 'website',
   twitterCard = 'summary_large_image',
   twitterSite = '@G2MiddleEast',
@@ -48,8 +48,8 @@ export const renderer = jsxRenderer(({
 }: RendererProps) => {
   
   // Optimized defaults for 2025 SEO
-  const pageTitle = title || 'Government Event Management UAE | G2 Middle East | Strategic Advisory'
-  const pageDescription = description || 'Leading government event management in Dubai & Middle East. 50+ major projects including state visits, diplomatic protocol, Papal Mass Abu Dhabi (180,000 attendees). Expert strategic advisory for sovereign entities. 24-hour response.'
+  const pageTitle = title || 'Strategic Counsel & Event Management | G2 Middle East & Africa'
+  const pageDescription = description || 'G2 Middle East & Africa provides elite strategic counsel and world-class event management, shaping national narratives to build enduring legacies. Strategy. Positioning. Legacy. 50+ major projects including Papal Mass Abu Dhabi (180,000 attendees).'
   
   // Canonical URL - critical for SEO
   const currentUrl = canonicalUrl || 'https://g2middleeast.com'

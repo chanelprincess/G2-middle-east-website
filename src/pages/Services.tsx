@@ -6,8 +6,8 @@ export const ServicesPage: FC = () => {
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "G2 Middle East",
-    "description": "Strategic communications and brand architecture for sovereign entities and global brands",
+    "name": "G2 Middle East & Africa",
+    "description": "Elite strategic counsel and world-class event management for sovereign entities and global brands. We deliver Strategy, Positioning, and Legacy through flawless execution.",
     "url": "https://g2-middleeast.com",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -18,7 +18,7 @@ export const ServicesPage: FC = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Sovereign & Governmental Services",
-            "description": "Strategic positioning and narrative architecture for nations, governments, and sovereign entities",
+            "description": "Strategic positioning and narrative architecture for nations, governments, and sovereign entities—realized through diplomatic event management, state visits, and national celebrations.",
             "provider": {
               "@type": "Organization",
               "name": "G2 Middle East"
@@ -54,7 +54,7 @@ export const ServicesPage: FC = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Major Event Architecture & Delivery",
-            "description": "End-to-end conceptualization and execution of events of national and international importance",
+            "description": "World-class event management underpinned by strategic counsel. End-to-end conceptualization and flawless execution of events of national and international importance.",
             "provider": {
               "@type": "Organization",
               "name": "G2 Middle East"
@@ -137,11 +137,10 @@ export const ServicesPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in">
-              Strategic Solutions
+              From Strategic Counsel to Flawless Execution
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
-              We architect intangible value through sophisticated communication and experience design. 
-              Our services transform complexity into competitive advantage.
+              Our strategic advisory services are proven through world-class event delivery. We provide the elite counsel that defines <span class="text-g2-gold">Strategy</span>, creates powerful <span class="text-g2-gold">Positioning</span>, and delivers enduring <span class="text-g2-gold">Legacy</span>—often through flawless execution of high-stakes events that become historic milestones.
             </p>
           </div>
         </div>

@@ -937,11 +937,11 @@ app.get('/', (c) => {
   return c.render(
     <HomePage />,
     {
-      title: 'Government Event Management UAE | G2 Middle East',
-      description: 'Leading government event management in Dubai & Middle East. 50+ major projects including state visits, diplomatic protocol, Papal Mass Abu Dhabi (180,000 attendees). Expert strategic advisory. 24-hour response.',
+      title: 'Strategic Counsel & Event Management | G2 Middle East & Africa',
+      description: 'G2 Middle East & Africa provides elite strategic counsel and world-class event management, shaping national narratives to build enduring legacies. Strategy. Positioning. Legacy. 50+ major projects including Papal Mass Abu Dhabi (180,000 attendees).',
       canonicalUrl: 'https://g2middleeast.com',
       ogImage: 'https://g2middleeast.com/static/og-homepage.jpg',
-      ogImageAlt: 'G2 Middle East - Leading Government Event Management in UAE and Middle East'
+      ogImageAlt: 'G2 Middle East - Strategic Counsel and World-Class Event Management in UAE and Middle East'
     }
   )
 })
@@ -951,8 +951,8 @@ app.get('/services', (c) => {
   return c.render(
     <ServicesPage />,
     {
-      title: 'Strategic Services | Government Event Management | G2 Middle East UAE',
-      description: 'Expert government event management services in UAE & GCC: State visit coordination, diplomatic protocol advisory, national celebrations, strategic communications. 50+ major projects delivered. Contact us today.',
+      title: 'Sovereign Advisory & Government Event Management | G2 Middle East & Africa',
+      description: 'From strategic counsel to flawless execution: sovereign advisory, diplomatic event management, state visit coordination, national celebrations. Our strategic advisory is proven through world-class event delivery across UAE & GCC.',
       canonicalUrl: 'https://g2middleeast.com/services',
       ogImage: 'https://g2middleeast.com/static/og-services.jpg',
       ogImageAlt: 'G2 Middle East Strategic Services - Government Event Management'

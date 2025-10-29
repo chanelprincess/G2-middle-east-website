@@ -20,8 +20,8 @@ export const TeamPage: FC = () => {
     
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Events Director & Delivery Specialist",
-      "description": "Leading operational planner and delivery specialist for mega-events, state visits, and high-stakes cultural projects in the Middle East and globally",
+      "name": "Strategic Advisor & Events Director",
+      "description": "Elite strategic counsel and operational delivery specialist for sovereign entities. Provides high-level advisory on positioning, narrative architecture, and national resilience—proven through flawless execution of mega-events, state visits, and diplomatic projects across Middle East and globally",
       "occupationLocation": [
         {
           "@type": "AdministrativeArea",
@@ -1468,10 +1468,10 @@ export const TeamPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in">
-              The Architects
+              The Architects of Strategy & Spectacle
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
-              Senior advisors who thrive under pressure. Strategic minds who turn complexity into competitive advantage.
+              Unique figures who possess both high-level strategic foresight and the operational mastery to execute flawlessly on the ground. Elite counsel proven through world-class delivery.
             </p>
           </div>
         </div>

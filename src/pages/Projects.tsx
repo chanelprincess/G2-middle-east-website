@@ -16,11 +16,12 @@ export const ProjectsPage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6 fade-in">
-              Projects
+              Proof of Legacy: Landmark Events & Achievements
             </h1>
             <p class="text-xl text-gray-300 leading-relaxed fade-in-delay-1">
-              Case studies in strategic impact and flawless execution. From sovereign positioning to luxury experiences, 
-              every project showcases our commitment to architecting intangible value.
+              Each project begins with <span class="text-g2-gold">Strategy</span>—defining the narrative that shapes global perception. 
+              This creates powerful <span class="text-g2-gold">Positioning</span> for our partners. The result is enduring <span class="text-g2-gold">Legacy</span>, 
+              delivered through flawless event management and world-class execution that becomes historic milestones.
             </p>
           </div>
         </div>

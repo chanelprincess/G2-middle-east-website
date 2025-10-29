@@ -21,17 +21,17 @@ export const HomePage: FC = () => {
         <div class="absolute inset-0 flex items-center justify-center z-10">
           <div class="text-center px-6 max-w-5xl">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow fade-in text-white">
-              Built for Complexity
+              Strategy. Positioning. Legacy.
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 fade-in-delay-1 font-light">
-              Bring us your high stakes challenges
+              The Strategic Counsel Behind the World's Most Significant Events
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-delay-2">
-              <a href="/services" class="btn-primary">
-                Explore Our Services
+              <a href="/contact" class="btn-primary">
+                Engage Our Counsel
               </a>
-              <a href="/contact" class="btn-secondary">
-                Start a Conversation
+              <a href="/services" class="btn-secondary">
+                Explore Our Capabilities
               </a>
             </div>
           </div>
@@ -348,14 +348,14 @@ export const HomePage: FC = () => {
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-8">
-              The Architecture of Intangible Value
+              From Strategic Counsel to Flawless Execution
             </h2>
             <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
-                We're built for your biggest problems. The harder the brief, the more focused we become.
+                We begin with <span class="text-g2-gold font-semibold">Strategy</span>—defining the narrative and positioning that will shape perception. This allows us to craft powerful <span class="text-g2-gold font-semibold">Positioning</span> for our sovereign and corporate partners. The result is an enduring <span class="text-g2-gold font-semibold">Legacy</span>, often delivered through flawless, world-class events and experiences that become historic milestones.
               </p>
               <p class="text-xl text-white font-medium pt-4">
-                Expect direct answers, measurable outcomes, and a team that thrives under pressure.
+                Our strategic advisory is proven through our exceptional execution. Events are not the goal—they are the powerful, tangible proof of elite counsel.
               </p>
             </div>
           </div>
@@ -422,6 +422,141 @@ export const HomePage: FC = () => {
             <a href="/services" class="btn-primary">
               View All Services
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - Strategic Counsel & Event Delivery Bridge */}
+      <section class="py-24 bg-g2-darker">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Understanding Our Approach
+              </h2>
+              <p class="text-xl text-gray-400">
+                How strategic counsel transforms into world-class execution
+              </p>
+            </div>
+
+            {/* FAQ Schema - JSON-LD */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How does strategic counsel improve event outcomes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Strategic counsel is the foundation that transforms events from logistics exercises into legacy-defining moments. We begin by defining the narrative and positioning that should shape global perception of your initiative. This strategic framework then guides every element of event design and execution, ensuring that operational excellence serves a clear strategic purpose. The result is that our events don't just happen flawlessly—they achieve measurable impact on positioning, reputation, and long-term strategic objectives."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What makes G2's event management different from other agencies?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "The strategic foundation. Most event agencies focus purely on logistics and execution. G2 begins with elite strategic counsel—defining the 'why' before the 'how.' Our event management capabilities are underpinned by deep expertise in sovereign positioning, narrative architecture, and geopolitical awareness. This means our events don't just run smoothly—they deliver on strategic objectives, shape international perception, and create enduring legacies. We've proven this approach through 50+ major projects including the Papal Mass Abu Dhabi (180,000 attendees) and state visits across the Middle East."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you provide strategic advisory without event delivery?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. While many of our strategic engagements result in world-class event delivery, we also provide standalone strategic counsel on sovereign positioning, narrative architecture, national resilience, and reputation management. Our advisory services span cognitive security, counter-disinformation strategy, foreign direct investment positioning, and strategic roadmapping for national initiatives. Events are often the powerful, tangible proof of our strategic counsel—but they are not always required."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the Strategy. Positioning. Legacy. framework?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "This is our core methodology. Strategy defines the narrative and objectives that will shape perception. Positioning creates the frameworks and platforms that establish your standing on the global stage. Legacy is the enduring impact—often delivered through flawless execution of historic events and experiences that become defining milestones. This integrated approach ensures that tactical excellence always serves strategic purpose, and that every initiative contributes to long-term reputation architecture."
+                    }
+                  }
+                ]
+              })
+            }} />
+
+            {/* FAQ Accordion */}
+            <div class="space-y-4">
+              {/* FAQ 1 */}
+              <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
+                  <h3 class="text-xl font-semibold text-white pr-8">
+                    How does strategic counsel improve event outcomes?
+                  </h3>
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </summary>
+                <div class="px-8 pb-6 pt-2">
+                  <p class="text-gray-300 leading-relaxed">
+                    Strategic counsel is the foundation that transforms events from logistics exercises into legacy-defining moments. We begin by defining the narrative and positioning that should shape global perception of your initiative. This strategic framework then guides every element of event design and execution, ensuring that operational excellence serves a clear strategic purpose. The result is that our events don't just happen flawlessly—they achieve measurable impact on positioning, reputation, and long-term strategic objectives.
+                  </p>
+                </div>
+              </details>
+
+              {/* FAQ 2 */}
+              <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
+                  <h3 class="text-xl font-semibold text-white pr-8">
+                    What makes G2's event management different from other agencies?
+                  </h3>
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </summary>
+                <div class="px-8 pb-6 pt-2">
+                  <p class="text-gray-300 leading-relaxed">
+                    The strategic foundation. Most event agencies focus purely on logistics and execution. G2 begins with elite strategic counsel—defining the 'why' before the 'how.' Our event management capabilities are underpinned by deep expertise in sovereign positioning, narrative architecture, and geopolitical awareness. This means our events don't just run smoothly—they deliver on strategic objectives, shape international perception, and create enduring legacies. We've proven this approach through 50+ major projects including the Papal Mass Abu Dhabi (180,000 attendees) and state visits across the Middle East.
+                  </p>
+                </div>
+              </details>
+
+              {/* FAQ 3 */}
+              <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
+                  <h3 class="text-xl font-semibold text-white pr-8">
+                    Do you provide strategic advisory without event delivery?
+                  </h3>
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </summary>
+                <div class="px-8 pb-6 pt-2">
+                  <p class="text-gray-300 leading-relaxed">
+                    Yes. While many of our strategic engagements result in world-class event delivery, we also provide standalone strategic counsel on sovereign positioning, narrative architecture, national resilience, and reputation management. Our advisory services span cognitive security, counter-disinformation strategy, foreign direct investment positioning, and strategic roadmapping for national initiatives. Events are often the powerful, tangible proof of our strategic counsel—but they are not always required.
+                  </p>
+                </div>
+              </details>
+
+              {/* FAQ 4 */}
+              <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
+                  <h3 class="text-xl font-semibold text-white pr-8">
+                    What is the Strategy. Positioning. Legacy. framework?
+                  </h3>
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                </summary>
+                <div class="px-8 pb-6 pt-2">
+                  <p class="text-gray-300 leading-relaxed">
+                    This is our core methodology. <span class="text-g2-gold font-semibold">Strategy</span> defines the narrative and objectives that will shape perception. <span class="text-g2-gold font-semibold">Positioning</span> creates the frameworks and platforms that establish your standing on the global stage. <span class="text-g2-gold font-semibold">Legacy</span> is the enduring impact—often delivered through flawless execution of historic events and experiences that become defining milestones. This integrated approach ensures that tactical excellence always serves strategic purpose, and that every initiative contributes to long-term reputation architecture.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            <div class="text-center mt-12">
+              <a href="/contact" class="btn-primary">
+                Engage Our Counsel
+              </a>
+            </div>
           </div>
         </div>
       </section>
