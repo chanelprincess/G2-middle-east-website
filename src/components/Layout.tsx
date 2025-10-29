@@ -119,9 +119,11 @@ export const Footer: FC = () => {
 
 interface PageLayoutProps {
   children: any
+  title?: string
+  description?: string
 }
 
-export const PageLayout: FC<PageLayoutProps> = ({ children }) => {
+export const PageLayout: FC<PageLayoutProps> = ({ children, title, description }) => {
   return (
     <>
       <Navigation />

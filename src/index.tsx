@@ -1208,17 +1208,33 @@ app.get('/projects/:slug', async (c) => {
     return c.notFound()
   }
   
+  // Custom meta tags for special projects
+  let metaTags = {
+    title: `${projectData.title} | Government Event Case Study | G2 Middle East`,
+    description: projectData.engagingParagraph.substring(0, 155).replace(/<[^>]*>/g, ''),
+    canonicalUrl: `https://g2middleeast.com/projects/${slug}`,
+    ogImage: projectData.heroImage || 'https://g2middleeast.com/static/og-project-default.jpg',
+    ogImageAlt: `${projectData.title} - Government Event Case Study by G2 Middle East`,
+    ogType: 'article' as const,
+    author: 'G2 Middle East'
+  }
+  
+  // Override meta tags for Papal Mass project with optimized SEO
+  if (slug === 'papal-mass-abu-dhabi') {
+    metaTags = {
+      title: 'Case Study: The 71-Hour Papal Mass Miracle | G2 Middle East',
+      description: 'The definitive inside look at the impossible 71-hour delivery of the first Papal Mass in Arabia, led by Executive Producer Tim Jacobs of G2.',
+      canonicalUrl: 'https://g2middleeast.com/projects/papal-mass-abu-dhabi',
+      ogImage: projectData.heroImage || 'https://g2middleeast.com/static/og-papal-mass.jpg',
+      ogImageAlt: 'The 71-Hour Miracle: Papal Mass Abu Dhabi delivered by Tim Jacobs and G2 Middle East',
+      ogType: 'article' as const,
+      author: 'Tim Jacobs'
+    }
+  }
+  
   return c.render(
     <ProjectDetailPage {...projectData} />,
-    {
-      title: `${projectData.title} | Government Event Case Study | G2 Middle East`,
-      description: projectData.engagingParagraph.substring(0, 155),
-      canonicalUrl: `https://g2middleeast.com/projects/${slug}`,
-      ogImage: projectData.images && projectData.images[0] ? projectData.images[0] : 'https://g2middleeast.com/static/og-project-default.jpg',
-      ogImageAlt: `${projectData.title} - Government Event Case Study by G2 Middle East`,
-      ogType: 'article',
-      author: 'G2 Middle East'
-    }
+    metaTags
   )
 })
 

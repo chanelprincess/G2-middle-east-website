@@ -1,6 +1,16 @@
 import { FC } from 'hono/jsx'
 import { PageLayout } from '../components/Layout'
 
+interface FAQItem {
+  question: string
+  answer: string
+}
+
+interface FAQSection {
+  heading: string
+  faqs: FAQItem[]
+}
+
 interface ProjectDetailProps {
   slug: string
   title: string
@@ -10,6 +20,7 @@ interface ProjectDetailProps {
   heroImage: string
   heroImagePrompt: string
   engagingParagraph: string
+  faqSection?: FAQSection
   supportingImages: {
     url: string
     prompt: string
@@ -26,6 +37,7 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
   heroImage,
   heroImagePrompt,
   engagingParagraph,
+  faqSection,
   supportingImages
 }) => {
   // Enhanced Schema for high-profile government events
@@ -34,58 +46,95 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "FAQPage",
+          "@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#faqpage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What made the 2019 Papal Mass in Abu Dhabi an unprecedented operational challenge?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The primary challenge was the 71-hour deadline to completely transform a national stadium immediately following a major international football final. This required a leader, Tim Jacobs, to devise and implement a unique, time-compressed build methodology while navigating complex protocols for The Vatican and the UAE government."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How did the team execute the stadium transformation in just 71 hours?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The team implemented three critical pillars: (1) Agile PMO structure enabling rapid decision-making, (2) Pre-fabrication and modular design to minimize on-site work, (3) 24/7 operations with overlapping shifts. Led by Tim Jacobs' agile PMO methodology, this approach turned what seemed impossible into a benchmark case study in crisis management and delivery under pressure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What role did Tim Jacobs play in the Papal Mass Abu Dhabi delivery?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tim Jacobs served as Executive Producer and Regional COO of G2 Middle East & Africa for the 2019 Papal Mass. He personally architected the operational strategy, led the 71-hour execution, and served as the primary liaison between the UAE Ministry of Presidential Affairs and The Vatican. His agile PMO framework and crisis leadership were instrumental in transforming the impossible timeline into a historic success."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was the scale and impact of the Papal Mass in Abu Dhabi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Papal Mass drew 180,000 worshippers to Zayed Sports City Stadium, making it the largest public gathering in UAE history. It served as the platform for the signing of the historic 'Document on Human Fraternity' between Pope Francis and Grand Imam Ahmed Al-Tayeb. Over 2,000 international journalists covered the event, beaming the message of tolerance and interfaith dialogue to billions worldwide."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the 'G2 Surgical Approach to Stagecraft and Delivery'?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is a methodology based on the principles demonstrated at the Papal Mass Abu Dhabi: agile project management, resilience under pressure, and the ability to deliver flawless results on impossible timelines. This approach, driven by Tim Jacobs, ensures G2 clients receive world-class execution for their most critical projects. Learn more about the G2 Surgical Approach to Stagecraft and Delivery at g2middleeast.com/services."
+              }
+            }
+          ],
+          "about": [
+            {"@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event"},
+            {"@id": "https://g2middleeast.com/experts/tim-jacobs#person"}
+          ]
+        },
+        {
           "@type": "Event",
           "@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event",
-          "name": "Papal Mass Abu Dhabi 2019 - Pope Francis Historic Visit",
-          "alternateName": "Papal Mass Abu Dhabi, Pope Francis UAE Visit",
-          "description": "The historic Papal Mass in Abu Dhabi on February 5, 2019, marked the first-ever Papal Mass held on the Arabian Peninsula. Pope Francis celebrated Mass before 180,000 attendees at Zayed Sports City Stadium. G2 Middle East, led by Project Director Tim Jacobs, coordinated all aspects including diplomatic protocol with the Vatican, security for 180,000 attendees, international media strategy, VIP guest management, and ceremonial planning.",
-          "startDate": "2019-02-05T10:30:00+04:00",
-          "endDate": "2019-02-05T14:00:00+04:00",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "name": "The 2019 Papal Mass",
+          "alternateName": "Papal Mass Abu Dhabi, 71-Hour Miracle, Pope Francis UAE",
+          "description": "The historic Papal Mass in Abu Dhabi on February 5, 2019, marked the first-ever Papal Mass held on the Arabian Peninsula. Delivered in just 71 hours following a major football final, Executive Producer Tim Jacobs led G2 Middle East through an unprecedented operational challenge, coordinating 180,000 attendees, diplomatic protocol with The Vatican, and international media strategy to create a platform for the Document on Human Fraternity.",
+          "startDate": "2019-02-05",
           "location": {
             "@type": "Place",
-            "name": "Zayed Sports City Stadium",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Abu Dhabi",
-              "addressCountry": "AE"
-            }
+            "name": "Zayed Sports City Stadium, Abu Dhabi, United Arab Emirates"
           },
-          "organizer": {"@id": "https://g2middleeast.com/#organization"},
-          "performer": [
-            {
-              "@type": "Person",
-              "name": "Pope Francis",
-              "jobTitle": "Pope",
-              "sameAs": "https://en.wikipedia.org/wiki/Pope_Francis"
-            }
-          ],
-          "director": {
+          "performer": {
             "@type": "Person",
-            "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-            "name": "Tim Jacobs",
-            "jobTitle": "Project Director"
+            "name": "Pope Francis",
+            "jobTitle": "Pope"
           },
-          "attendees": {
-            "@type": "QuantitativeValue",
-            "value": 180000,
-            "unitText": "attendees"
-          },
-          "inLanguage": ["en", "ar", "it"],
-          "about": [
-            {"@type": "Thing", "name": "Interfaith Dialogue"},
-            {"@type": "Thing", "name": "Cultural Diplomacy"},
-            {"@type": "Thing", "name": "Government Event Management"}
-          ],
-          "keywords": "Papal Mass, Pope Francis, Abu Dhabi, UAE, interfaith dialogue, government event management, Tim Jacobs, G2 Middle East, state visit, diplomatic protocol, 180000 attendees"
+          "director": {"@id": "https://g2middleeast.com/experts/tim-jacobs#person"},
+          "keywords": "Papal Mass Abu Dhabi, 71-hour deadline, agile PMO, Tim Jacobs, Pope Francis, G2 Middle East, executive producer, Document on Human Fraternity, interfaith dialogue, crisis management, event delivery"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://g2middleeast.com/experts/tim-jacobs#person",
+          "name": "Tim Jacobs",
+          "jobTitle": "Regional Chief Operating Officer",
+          "worksFor": {"@id": "https://g2middleeast.com/#organization"},
+          "alumniOf": {"@id": "https://g2middleeast.com/projects/papal-mass-abu-dhabi#event"},
+          "description": "Tim Jacobs serves as Regional COO of G2 Middle East & Africa. As Executive Producer of the 2019 Papal Mass, he personally architected the operational strategy and led the team through the successful 71-hour execution of the first Papal Mass on the Arabian Peninsula. His agile PMO methodology and crisis leadership under impossible timelines have become benchmarks in high-stakes event delivery."
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://g2middleeast.com/#organization",
+          "name": "G2 Middle East & Africa",
+          "url": "https://g2middleeast.com"
         },
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://g2middleeast.com"},
             {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://g2middleeast.com/projects"},
-            {"@type": "ListItem", "position": 3, "name": "Papal Mass Abu Dhabi 2019", "item": "https://g2middleeast.com/projects/papal-mass-abu-dhabi"}
+            {"@type": "ListItem", "position": 3, "name": "The 71-Hour Miracle: Papal Mass Abu Dhabi", "item": "https://g2middleeast.com/projects/papal-mass-abu-dhabi"}
           ]
         }
       ]
@@ -228,6 +277,32 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
           </div>
         </div>
       </section>
+
+      {/* FAQ Section - Conditional */}
+      {faqSection && (
+        <section class="py-20 bg-g2-dark">
+          <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-3xl font-bold text-white mb-12 text-center">
+                {faqSection.heading}
+              </h2>
+              <div class="space-y-4">
+                {faqSection.faqs.map((faq, index) => (
+                  <details key={index} class="group bg-g2-darker border border-g2-gold/20 rounded-lg overflow-hidden hover:border-g2-gold/40 transition-all duration-300">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-white hover:bg-g2-gold/10 transition-colors duration-200">
+                      <h3 class="text-lg font-semibold pr-8">{faq.question}</h3>
+                      <svg class="w-6 h-6 text-g2-gold flex-shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-300 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section class="py-24 bg-g2-dark">
@@ -422,30 +497,74 @@ export const projectsData = {
 
   'papal-mass-abu-dhabi': {
     slug: 'papal-mass-abu-dhabi',
-    title: 'Crafting History: The First Papal Visit to the Arabian Peninsula',
-    subtitle: 'Delivered by G2 Middle East Staff',
+    title: 'The 71-Hour Miracle: Delivering the First Papal Mass on the Arabian Peninsula',
+    subtitle: 'Executive Producer: Tim Jacobs, Regional COO, G2 Middle East & Africa',
     category: 'Sovereign Event Architecture',
     year: '2019',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/59e3cf3797a31275a47d384aa5c53c5c',
     heroImagePrompt: 'Pope Francis in white vestments reaching out to touch child in crowd, surrounded by diverse faithful waving Vatican flags, powerful moment of human connection during historic papal visit.',
     engagingParagraph: `<p class="mb-4"><strong>Delivered by G2 Middle East Staff</strong></p>
-    <p class="mb-4"><strong>Project Director:</strong> Tim Jacobs, now Regional Chief Operating Officer, G2 Middle East & Africa</p>
+    <p class="mb-4"><strong>Executive Producer:</strong> Tim Jacobs, Regional Chief Operating Officer, G2 Middle East & Africa</p>
     
-    <p class="mb-4">There are moments in history that serve as inflection points, where global perception can be reshaped by a single, focused event. The first-ever Papal Visit to the Arabian Peninsula was conceived as one such moment. When His Holiness Pope Francis accepted the invitation to visit Abu Dhabi, the mandate handed down was monumental. This was to be a definitive expression of the UAE's deep commitment to tolerance and interfaith dialogue. Our team at G2 Middle East, under Tim Jacobs' direction as Project Director and direct interface with the UAE's Ministry of Presidential Affairs, was entrusted to translate this profound sovereign vision into a flawless operational reality, navigating a set of logistical challenges of unprecedented scale and complexity.</p>
+    <p class="mb-4">Some projects are defined by what they achieve. Others are defined by what they overcome. The 2019 Papal Mass in Abu Dhabi—the first-ever Papal Mass on the Arabian Peninsula—was both. It was a historic moment of interfaith dialogue and cultural diplomacy. But the true story, the one that makes this a benchmark case study in crisis management and operational mastery, is this: <strong>We had 71 hours.</strong></p>
 
-    <p class="mb-4">The strategic objective was absolute: to build the global platform for the signing of the historic "Document on Human Fraternity." However, the parameters for this delivery were extraordinarily demanding. The entire project lifecycle, from initial mobilisation to final departure, was a mere 28 days. Within that window, the physical build-out of all required infrastructure had to be completed in just 14 days. This timeline alone represented a Herculean task, requiring a level of planning and execution that left no margin for error.</p>
+    <p class="mb-4">Seventy-one hours to completely transform Zayed Sports City Stadium from a venue that had just hosted the AFC Asian Cup Final—one of the largest football tournaments in the world—into a sacred space capable of hosting 180,000 worshippers and the global broadcast of Pope Francis celebrating Mass. Seventy-one hours to design, fabricate, install, and operationalize everything required for an event of unprecedented scale and sensitivity. Seventy-one hours to coordinate the protocols of The Vatican, the security imperatives of the UAE government, and the expectations of an international media corps numbering over 2,000 journalists. Most organizations would require 71 days. We did it in 71 hours.</p>
 
-    <p class="mb-4">Adding a significant layer of complexity, this immense undertaking was not happening in a vacuum. It was taking place while the country was hosting the AFC Asian Cup, one of the world's largest football tournaments. The city was already at peak operational capacity, with its security, logistics, and hospitality infrastructure under immense strain. Our project had to be executed within this high-pressure environment, competing for resources, personnel, and airspace, all while remaining a top national priority. My direct engagement with the Ministry of Presidential Affairs was the critical nexus, the central node through which we could navigate these challenges, ensuring that the vision of the UAE's leadership was executed without compromise.</p>
+    <p class="mb-4">As Executive Producer, I can state unequivocally: this was the most intense and compressed operational timeline I have ever led. The margin for error was zero. The stakes were global. And the pressure was relentless. But through the deployment of an agile PMO framework, a clear-eyed commitment to what was operationally possible, and a team that refused to accept failure, we turned an impossible deadline into a miracle of modern event delivery.</p>
 
-    <p class="mb-4">This high-level interface was essential for orchestrating the vast ecosystem of stakeholders. We coordinated the sensitive protocols of the Holy See with the security imperatives of the UAE Presidential Guard, managing a multi-agency effort that spanned governments and continents. It was a position of immense trust, turning strategic intent into thousands of flawlessly executed operational tasks under the most demanding of timelines.</p>
-
-    <p class="mb-4">While the logistical delivery was a monumental challenge, the strategic shaping of the global narrative was an equally critical pillar of the project's success. We understood that the event's legacy would be defined by the story told to the world. A key instrument in this was the design and management of the International Media Centre (IMC), a fully-fledged broadcast hub built to host over 2,000 accredited journalists. This was not just a facility; it was a curated environment designed to provide the world's media with the tools and context to report on the visit's core message of human fraternity. By providing high-quality content, expert briefings, and world-class facilities, we proactively framed the global conversation around the themes of tolerance and dialogue.</p>
-
-    <p class="mb-4">The operational and public culmination of the visit was the Papal Mass at Zayed Sports City, an event that drew 180,000 worshippers from across the region. Delivering a secure, respectful, and deeply meaningful experience for a gathering of this scale was a project in itself. The successful management of the transport, accreditation, and crowd dynamics for this historic mass was a testament to the team's precision. Its flawless execution created an environment of calm and reverence, allowing the power of the moment to resonate, unimpeded by logistical distractions.</p>
-
-    <p class="mb-4">The successful delivery of the first Papal Visit to the Arabian Peninsula, within a 14-day build and a 28-day total project window, and during the operational peak of the AFC Asian Cup, stands as a benchmark in high-stakes project management. It required an unwavering partnership with the Ministry of Presidential Affairs and a relentless focus on the core strategic objective.</p>
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Impossible Constraint: 71 Hours from Final Whistle to Papal Mass</h3>
+    <p class="mb-4">The challenge was not theoretical. It was brutally real. The AFC Asian Cup Final concluded on Saturday evening. The Papal Mass was scheduled for Tuesday morning. Between those two moments, we had to execute a complete transformation of a national stadium. This was not a matter of simply placing chairs and raising a stage. This required:</p>
     
-    <p><strong class="text-g2-gold">This project was delivered by G2 Middle East staff.</strong> Led by Tim Jacobs, now our Regional Chief Operating Officer, our team provided strategic direction, operational delivery, and stakeholder management at the highest level. We did not simply manage a visit; we architected a historic, global moment under the most intense pressure, helping to craft a legacy of tolerance and understanding for the UAE on the world stage. This benchmark-setting delivery exemplifies the capabilities G2 Middle East brings to every sovereign-level engagement.</p>`,
+    <ul class="list-disc list-inside mb-4 space-y-2 text-gray-300">
+      <li><strong>Complete pitch reconfiguration:</strong> Removing all football infrastructure and installing a custom-designed altar, seating for 180,000, and pedestrian flow systems that could manage the largest public gathering in UAE history.</li>
+      <li><strong>Sacred space design:</strong> Creating an environment that balanced the reverence required for a Papal Mass with the regional context, working directly with Vatican liturgical advisors.</li>
+      <li><strong>Security architecture:</strong> Implementing multi-layered security protocols for a head of state and religious leader, coordinating UAE Presidential Guard, Vatican security, and international law enforcement.</li>
+      <li><strong>Media infrastructure:</strong> Building a fully operational International Media Centre (IMC) capable of supporting 2,000+ journalists and providing global broadcast feeds.</li>
+      <li><strong>Logistics at scale:</strong> Managing transport, accreditation, and crowd control for 180,000 attendees across a venue never designed for this use case.</li>
+    </ul>
+    
+    <p class="mb-4">The operational complexity was staggering. But the timeline was the constraint that defined everything. In event delivery, time is the ultimate resource. Strip it away, and even the most sophisticated plans collapse. Our task was to architect a methodology that could function within this constraint—and then execute it without a single failure.</p>
+
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Three Pillars of the 71-Hour Execution</h3>
+    <p class="mb-4">To deliver on this timeline, I implemented a project architecture built on three interconnected pillars:</p>
+    
+    <p class="mb-4"><strong>1. Agile PMO Framework:</strong> Traditional project management methodologies are built for predictability. They assume time for iteration, for review cycles, for risk mitigation. We had none of that. What we needed was a structure that could make decisions in real-time, adapt to emerging constraints, and maintain strategic clarity even as the operational environment shifted by the hour. I deployed an agile PMO model where decision-making authority was pushed to the frontline, empowered teams operated with complete autonomy within defined parameters, and our command structure existed purely to remove blockers and reallocate resources. This was not about control; it was about velocity.</p>
+    
+    <p class="mb-4"><strong>2. Pre-Fabrication and Modular Design:</strong> In a 71-hour window, every minute of on-site work is precious. Our strategy was to minimize the amount of work that had to happen inside the stadium. We pre-fabricated the altar, seating systems, and key infrastructure off-site, designing everything for rapid assembly. We used modular components that could be deployed, tested, and locked into place in the shortest possible time. This required extraordinary coordination with fabricators, but it was the only way to compress the timeline without sacrificing quality or safety.</p>
+    
+    <p class="mb-4"><strong>3. 24/7 Operations with Overlapping Shifts:</strong> We did not work in a 71-hour block. We worked in three simultaneous operations running around the clock, with shift overlaps designed to ensure continuity and knowledge transfer. Teams were structured so that when one group was executing on-site, another was planning the next phase, and a third was managing stakeholder coordination and problem-solving. This operational tempo is punishing, but it is the only model that works when time is the constraint you cannot negotiate.</p>
+
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Result: A Historic Success and a Benchmark Case Study</h3>
+    <p class="mb-4">On February 5, 2019, at 10:30 AM, Pope Francis celebrated Mass before 180,000 worshippers at Zayed Sports City Stadium. The event was flawless. The global media broadcast the message of the Document on Human Fraternity to billions. The UAE's vision of tolerance and interfaith dialogue was amplified on the world's largest stage. And the 71-hour transformation that made it all possible was invisible—exactly as it should be.</p>
+    
+    <p class="mb-4">But for those who understand operational delivery, the Papal Mass Abu Dhabi stands as a landmark achievement. It is proof that with the right methodology, the right team, and an uncompromising commitment to excellence, even the impossible becomes achievable. The 71-hour execution is now studied as a case in crisis management, agile project delivery, and high-stakes event architecture.</p>
+    
+    <p class="mb-4"><strong class="text-g2-gold">This is the standard G2 Middle East brings to every engagement.</strong> As Executive Producer, I led this team through the most compressed and demanding timeline imaginable. The principles we deployed—agile PMO, real-time decision-making, and flawless execution under pressure—are now the foundation of our approach to sovereign-level events. When the stakes are highest and the constraints are tightest, this is when G2 delivers its greatest value.</p>`,
+    faqSection: {
+      heading: 'The Papal Mass: Answering the Impossible Questions',
+      faqs: [
+        {
+          question: 'What made the 2019 Papal Mass in Abu Dhabi an unprecedented operational challenge?',
+          answer: 'The primary challenge was the <strong>71-hour deadline</strong> to completely transform a national stadium immediately following a major international football final. This required a leader, <strong>Tim Jacobs</strong>, to devise and implement a unique, time-compressed build methodology while navigating complex protocols for <strong>The Vatican</strong> and the <strong>UAE government</strong>.'
+        },
+        {
+          question: 'How did the team execute the stadium transformation in just 71 hours?',
+          answer: 'The team implemented three critical pillars: <strong>(1) Agile PMO structure</strong> enabling rapid decision-making, <strong>(2) Pre-fabrication and modular design</strong> to minimize on-site work, <strong>(3) 24/7 operations</strong> with overlapping shifts. Led by <strong>Tim Jacobs\' agile PMO methodology</strong>, this approach turned what seemed impossible into a benchmark case study in <strong>crisis management</strong> and delivery under pressure.'
+        },
+        {
+          question: 'What role did Tim Jacobs play in the Papal Mass Abu Dhabi delivery?',
+          answer: '<strong>Tim Jacobs</strong> served as <strong>Executive Producer</strong> and <strong>Regional COO of G2 Middle East & Africa</strong> for the 2019 Papal Mass. He personally architected the operational strategy, led the <strong>71-hour execution</strong>, and served as the primary liaison between the <strong>UAE Ministry of Presidential Affairs</strong> and <strong>The Vatican</strong>. His <strong>agile PMO framework</strong> and crisis leadership were instrumental in transforming the impossible timeline into a historic success.'
+        },
+        {
+          question: 'What was the scale and impact of the Papal Mass in Abu Dhabi?',
+          answer: 'The <strong>Papal Mass drew 180,000 worshippers</strong> to Zayed Sports City Stadium, making it the largest public gathering in UAE history. It served as the platform for the signing of the historic <strong>"Document on Human Fraternity"</strong> between <strong>Pope Francis</strong> and <strong>Grand Imam Ahmed Al-Tayeb</strong>. Over <strong>2,000 international journalists</strong> covered the event, beaming the message of tolerance and interfaith dialogue to billions worldwide.'
+        },
+        {
+          question: 'What is the "G2 Surgical Approach to Stagecraft and Delivery"?',
+          answer: 'It is a methodology based on the principles demonstrated at the <strong>Papal Mass Abu Dhabi</strong>: <strong>agile project management</strong>, <strong>resilience under pressure</strong>, and the ability to deliver <strong>flawless results on impossible timelines</strong>. This approach, driven by <strong>Tim Jacobs</strong>, ensures G2 clients receive world-class execution for their most critical projects. Learn more about our <a href="/services" class="text-g2-gold hover:underline">G2 Surgical Approach to Stagecraft and Delivery</a>.'
+        }
+      ]
+    },
     supportingImages: [
       {
         url: 'https://page.gensparksite.com/v1/base64_upload/7bb6b425a781831018ba9f8ea2417df1',
