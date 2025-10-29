@@ -27,9 +27,9 @@ import { ProjectsForgotPasswordPage } from './pages/ProjectsForgotPassword'
 import { ProjectsResetPasswordPage } from './pages/ProjectsResetPassword'
 import { TermsOfServicePage } from './pages/TermsOfService'
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy'
-import { UnderConstructionPage } from './pages/UnderConstruction'
+// import { UnderConstructionPage } from './pages/UnderConstruction'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
-import { requireSiteAccessHybrid, hasSiteAccessHybrid } from './middleware/site-access-hybrid'
+// import { requireSiteAccessHybrid, hasSiteAccessHybrid } from './middleware/site-access-hybrid'
 import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail, getContactFormNotificationEmail, getContactFormConfirmationEmail, getProjectsAdminNotificationEmail, getProjectsRegistrationPendingEmail, getProjectsApprovalEmail } from './utils/email'
 import { uploadFile, downloadFile, deleteFile, generateFilePath } from './utils/r2'
 import * as ProjectsAuth from './lib/projects-auth'
@@ -932,25 +932,8 @@ app.use('*', renderer)
 // PAGE ROUTES
 // ============================================
 
-// Homepage - Shows under construction for humans, full site for AI crawlers & token holders
+// Homepage - Full site access restored
 app.get('/', (c) => {
-  // Check if user/crawler has site access
-  if (!hasSiteAccessHybrid(c)) {
-    // Show under construction to regular human visitors
-    return c.render(
-      <UnderConstructionPage />,
-      {
-        title: 'Under Construction | G2 Middle East & Africa',
-        description: 'G2 Middle East & Africa website is currently under development. Strategic advisory and event architecture for governments across Middle East and Africa. Contact: info@g2middleeast.com',
-        canonicalUrl: 'https://g2middleeast.com',
-        ogImage: 'https://g2middleeast.com/static/og-homepage.jpg',
-        ogImageAlt: 'G2 Middle East - Under Construction',
-        noindex: true // Prevent indexing of under construction page
-      }
-    )
-  }
-  
-  // Show regular homepage for AI crawlers and authorized users
   return c.render(
     <HomePage />,
     {
