@@ -368,7 +368,7 @@ export const projectsData = {
   'queen-elizabeth-ii-state-visit': {
     slug: 'queen-elizabeth-ii-state-visit',
     title: 'The Strategic Architect Behind Queen Elizabeth II\'s Landmark 2010 UAE State Visit',
-    subtitle: 'Tim Jacobs\' Personal Blueprint for Diplomatic Success',
+    subtitle: 'A Blueprint for Diplomatic Success',
     category: 'State-Level Events',
     year: '2010',
     heroImage: 'https://page.gensparksite.com/v1/base64_upload/3fc5acf626f27cf4b2f1e5e8ed4a9341',
