@@ -2,11 +2,11 @@ import { FC } from 'hono/jsx'
 
 export const Navigation: FC = () => {
   return (
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-g2-darker/95 backdrop-blur-sm border-b border-white/10">
+    <nav aria-label="Main navigation" class="fixed top-0 left-0 right-0 z-50 bg-g2-darker/95 backdrop-blur-sm border-b border-white/10">
       <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" class="text-2xl font-bold tracking-tight">
+          <a href="/" aria-label="G2 Middle East homepage" class="text-2xl font-bold tracking-tight">
             <span class="text-white">G2 MIDDLE EAST</span>
           </a>
           
@@ -24,13 +24,13 @@ export const Navigation: FC = () => {
           </div>
           
           {/* Mobile Menu Button */}
-          <button id="mobile-menu-btn" class="md:hidden text-white">
+          <button id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white">
             <i class="fas fa-bars text-2xl"></i>
           </button>
         </div>
         
         {/* Mobile Menu */}
-        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3" role="region" aria-label="Mobile navigation menu">
           <a href="/services" class="block text-gray-300 hover:text-white transition-colors py-2">Services</a>
           <a href="/projects" class="block text-gray-300 hover:text-white transition-colors py-2">Projects</a>
           <a href="/team" class="block text-gray-300 hover:text-white transition-colors py-2">Team</a>
@@ -141,7 +141,8 @@ export const PageLayout: FC<PageLayoutProps> = ({ children, title, description }
             
             if (menuBtn && mobileMenu) {
               menuBtn.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
+                const isExpanded = mobileMenu.classList.toggle('hidden');
+                menuBtn.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
               });
             }
           });

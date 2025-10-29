@@ -125,11 +125,36 @@ export const ServicesPage: FC = () => {
     }
   }
 
+  // BreadcrumbList Schema for Services Page
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://g2middleeast.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://g2middleeast.com/services"
+      }
+    ]
+  }
+
   return (
     <PageLayout>
-      {/* Schema.org JSON-LD */}
+      {/* Schema.org JSON-LD - Organization & Services */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(servicesSchema)
+      }} />
+
+      {/* BreadcrumbList Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify(breadcrumbSchema)
       }} />
 
       {/* Hero Section */}

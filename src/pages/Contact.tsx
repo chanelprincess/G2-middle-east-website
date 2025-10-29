@@ -96,12 +96,38 @@ export const ContactPage: FC = () => {
     ]
   };
 
+  // BreadcrumbList Schema for Contact Page
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://g2middleeast.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://g2middleeast.com/contact"
+      }
+    ]
+  };
+
   return (
     <PageLayout>
       {/* LocalBusiness Schema - Embedded JSON-LD */}
       <script 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+
+      {/* BreadcrumbList Schema */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       {/* Hero Section */}

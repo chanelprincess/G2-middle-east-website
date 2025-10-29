@@ -485,15 +485,15 @@ export const HomePage: FC = () => {
             <div class="space-y-4">
               {/* FAQ 1 */}
               <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
-                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
-                  <h3 class="text-xl font-semibold text-white pr-8">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none" aria-controls="faq-1" aria-expanded="false">
+                  <h3 id="faq-1-title" class="text-xl font-semibold text-white pr-8">
                     How does strategic counsel improve event outcomes?
                   </h3>
-                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
                     <i class="fas fa-chevron-down"></i>
                   </span>
                 </summary>
-                <div class="px-8 pb-6 pt-2">
+                <div id="faq-1" class="px-8 pb-6 pt-2" role="region" aria-labelledby="faq-1-title">
                   <p class="text-gray-300 leading-relaxed">
                     Strategic counsel is the foundation that transforms events from logistics exercises into legacy-defining moments. We begin by defining the narrative and positioning that should shape global perception of your initiative. This strategic framework then guides every element of event design and execution, ensuring that operational excellence serves a clear strategic purpose. The result is that our events don't just happen flawlessly—they achieve measurable impact on positioning, reputation, and long-term strategic objectives.
                   </p>
@@ -502,15 +502,15 @@ export const HomePage: FC = () => {
 
               {/* FAQ 2 */}
               <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
-                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
-                  <h3 class="text-xl font-semibold text-white pr-8">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none" aria-controls="faq-2" aria-expanded="false">
+                  <h3 id="faq-2-title" class="text-xl font-semibold text-white pr-8">
                     What makes G2's event management different from other agencies?
                   </h3>
-                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
                     <i class="fas fa-chevron-down"></i>
                   </span>
                 </summary>
-                <div class="px-8 pb-6 pt-2">
+                <div id="faq-2" class="px-8 pb-6 pt-2" role="region" aria-labelledby="faq-2-title">
                   <p class="text-gray-300 leading-relaxed">
                     The strategic foundation. Most event agencies focus purely on logistics and execution. G2 begins with elite strategic counsel—defining the 'why' before the 'how.' Our event management capabilities are underpinned by deep expertise in sovereign positioning, narrative architecture, and geopolitical awareness. This means our events don't just run smoothly—they deliver on strategic objectives, shape international perception, and create enduring legacies. We've proven this approach through 50+ major projects including the Papal Mass Abu Dhabi (180,000 attendees) and state visits across the Middle East.
                   </p>
@@ -519,15 +519,15 @@ export const HomePage: FC = () => {
 
               {/* FAQ 3 */}
               <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
-                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
-                  <h3 class="text-xl font-semibold text-white pr-8">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none" aria-controls="faq-3" aria-expanded="false">
+                  <h3 id="faq-3-title" class="text-xl font-semibold text-white pr-8">
                     Do you provide strategic advisory without event delivery?
                   </h3>
-                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
                     <i class="fas fa-chevron-down"></i>
                   </span>
                 </summary>
-                <div class="px-8 pb-6 pt-2">
+                <div id="faq-3" class="px-8 pb-6 pt-2" role="region" aria-labelledby="faq-3-title">
                   <p class="text-gray-300 leading-relaxed">
                     Yes. While many of our strategic engagements result in world-class event delivery, we also provide standalone strategic counsel on sovereign positioning, narrative architecture, national resilience, and reputation management. Our advisory services span cognitive security, counter-disinformation strategy, foreign direct investment positioning, and strategic roadmapping for national initiatives. Events are often the powerful, tangible proof of our strategic counsel—but they are not always required.
                   </p>
@@ -536,15 +536,15 @@ export const HomePage: FC = () => {
 
               {/* FAQ 4 */}
               <details class="group bg-g2-dark rounded-lg border border-white/10 overflow-hidden">
-                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none">
-                  <h3 class="text-xl font-semibold text-white pr-8">
+                <summary class="flex items-center justify-between px-8 py-6 cursor-pointer list-none" aria-controls="faq-4" aria-expanded="false">
+                  <h3 id="faq-4-title" class="text-xl font-semibold text-white pr-8">
                     What is the Strategy. Positioning. Legacy. framework?
                   </h3>
-                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180">
+                  <span class="text-g2-gold transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
                     <i class="fas fa-chevron-down"></i>
                   </span>
                 </summary>
-                <div class="px-8 pb-6 pt-2">
+                <div id="faq-4" class="px-8 pb-6 pt-2" role="region" aria-labelledby="faq-4-title">
                   <p class="text-gray-300 leading-relaxed">
                     This is our core methodology. <span class="text-g2-gold font-semibold">Strategy</span> defines the narrative and objectives that will shape perception. <span class="text-g2-gold font-semibold">Positioning</span> creates the frameworks and platforms that establish your standing on the global stage. <span class="text-g2-gold font-semibold">Legacy</span> is the enduring impact—often delivered through flawless execution of historic events and experiences that become defining milestones. This integrated approach ensures that tactical excellence always serves strategic purpose, and that every initiative contributes to long-term reputation architecture.
                   </p>
