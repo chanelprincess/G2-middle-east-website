@@ -49,7 +49,7 @@ export const renderer = jsxRenderer(({
   
   // Optimized defaults for 2025 SEO
   const pageTitle = title || 'Strategic Counsel & Event Management | G2 Middle East & Africa'
-  const pageDescription = description || 'G2 Middle East & Africa provides elite strategic counsel and world-class event management, shaping national narratives to build enduring legacies. Strategy. Positioning. Legacy. 50+ major projects including Papal Mass Abu Dhabi (180,000 attendees).'
+  const pageDescription = description || 'Elite strategic counsel & event management in Middle East & Africa. 50+ govt projects. Papal Mass Abu Dhabi. State visits. 24hr response.'
   
   // Canonical URL - critical for SEO
   const currentUrl = canonicalUrl || 'https://g2middleeast.com'

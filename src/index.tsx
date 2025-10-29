@@ -938,7 +938,7 @@ app.get('/', (c) => {
     <HomePage />,
     {
       title: 'Strategic Counsel & Event Management | G2 Middle East & Africa',
-      description: 'G2 Middle East & Africa provides elite strategic counsel and world-class event management, shaping national narratives to build enduring legacies. Strategy. Positioning. Legacy. 50+ major projects including Papal Mass Abu Dhabi (180,000 attendees).',
+      description: 'Elite strategic counsel & event management in Middle East & Africa. 50+ govt projects. Papal Mass Abu Dhabi. State visits. 24hr response.',
       canonicalUrl: 'https://g2middleeast.com',
       ogImage: 'https://g2middleeast.com/static/og-homepage.jpg',
       ogImageAlt: 'G2 Middle East - Strategic Counsel and World-Class Event Management in UAE and Middle East'
