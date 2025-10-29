@@ -17,7 +17,7 @@ export const ContactPage: FC = () => {
     "priceRange": "$$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mazyad Offices 3 - office 36 - Sultan Bin Mohammed Al, 75, Qubaisi St - Mohammed Bin Zayed City",
+      "streetAddress": "Mazyad Offices 3 - Office 36 - Sultan Bin Mohammed Al, 75, Qubaisi St - Mohammed Bin Zayed City",
       "addressLocality": "Abu Dhabi",
       "addressRegion": "Abu Dhabi",
       "addressCountry": "AE"
@@ -166,7 +166,7 @@ export const ContactPage: FC = () => {
                     <div>
                       <h3 class="text-white font-semibold mb-1">Location</h3>
                       <p class="text-gray-300">
-                        Mazyad Offices 3 - office 36<br />
+                        Mazyad Offices 3 - Office 36<br />
                         Sultan Bin Mohammed Al, 75, Qubaisi St<br />
                         Mohammed Bin Zayed City<br />
                         Abu Dhabi, UAE<br />
