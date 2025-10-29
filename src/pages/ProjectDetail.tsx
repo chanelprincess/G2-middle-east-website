@@ -403,19 +403,19 @@ export const projectsData = {
         caption: 'Cultural bridge: Her Majesty greeted by UAE leadership and young citizens with British flags'
       },
       {
-        url: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=800&q=80',
-        prompt: 'A formal state banquet table setting with royal insignia, shot from above showing symmetrical perfection.',
-        caption: 'Diplomatic elegance: State banquet reflecting mutual respect and tradition'
+        url: 'https://page.gensparksite.com/v1/base64_upload/dfb8e7c4a07b74e61f48eae3007c0d14',
+        prompt: 'Modern architectural structure with flowing organic design, white framework with red carpet, outdoor event pavilion.',
+        caption: 'Architectural excellence: Bespoke event structures designed for the state visit'
       },
       {
-        url: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80',
-        prompt: 'Traditional Emirati cultural welcome ceremony with dancers in traditional dress, professionally choreographed.',
-        caption: 'Cultural exchange: Traditional welcome honoring royal guest'
+        url: 'https://page.gensparksite.com/v1/base64_upload/23967fd56b20e888648c00d293ef8007',
+        prompt: 'Queen Elizabeth II with UAE leadership in traditional dress, outdoor ceremony with architectural backdrop.',
+        caption: 'Historic moment: Her Majesty Queen Elizabeth II with UAE leadership during the 2010 state visit'
       },
       {
-        url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-        prompt: 'Behind-the-scenes operations room with staff coordinating live schedules and protocol requirements.',
-        caption: 'Operational command: Real-time coordination ensuring flawless execution'
+        url: 'https://page.gensparksite.com/v1/base64_upload/b366ca48b0dd8a965b3faab0a954b58d',
+        prompt: 'Queen Elizabeth II viewing architectural model with UAE dignitaries in traditional dress, official state visit presentation.',
+        caption: 'Strategic dialogue: Her Majesty reviewing architectural plans with UAE leadership'
       }
     ]
   },
