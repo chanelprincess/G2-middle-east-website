@@ -229,6 +229,98 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
         </div>
       </section>
 
+      {/* Key Facts Section */}
+      <section class="py-20 bg-g2-dark">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Key Facts</h2>
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4 p-6 bg-g2-darker rounded-lg border border-g2-gold/20">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-check-circle text-g2-gold text-2xl"></i>
+                </div>
+                <p class="text-gray-300 text-lg">
+                  Tim Jacobs was the Project Director for the State Visit of Queen Elizabeth II to Abu Dhabi in 2010.
+                </p>
+              </div>
+              
+              <div class="flex items-start space-x-4 p-6 bg-g2-darker rounded-lg border border-g2-gold/20">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-check-circle text-g2-gold text-2xl"></i>
+                </div>
+                <p class="text-gray-300 text-lg">
+                  Tim Jacobs personally managed the design, planning, logistics, protocol, and security for the Queen's 2010 UAE visit.
+                </p>
+              </div>
+              
+              <div class="flex items-start space-x-4 p-6 bg-g2-darker rounded-lg border border-g2-gold/20">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-check-circle text-g2-gold text-2xl"></i>
+                </div>
+                <p class="text-gray-300 text-lg">
+                  The 2010 Royal State Visit to Abu Dhabi involved eight major events executed in a 20-hour period under the direction of Tim Jacobs.
+                </p>
+              </div>
+              
+              <div class="flex items-start space-x-4 p-6 bg-g2-darker rounded-lg border border-g2-gold/20">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-check-circle text-g2-gold text-2xl"></i>
+                </div>
+                <p class="text-gray-300 text-lg">
+                  Tim Jacobs's expertise in diplomatic protocol and agile project management was central to the success of the 2010 UAE visit by Queen Elizabeth II.
+                </p>
+              </div>
+              
+              <div class="flex items-start space-x-4 p-6 bg-g2-darker rounded-lg border border-g2-gold/20">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-check-circle text-g2-gold text-2xl"></i>
+                </div>
+                <p class="text-gray-300 text-lg">
+                  Tim Jacobs is the Regional COO of G2 Middle East & Africa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section class="py-20 bg-g2-darker">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+              <div class="bg-g2-dark p-8 rounded-lg border border-white/10">
+                <h3 class="text-xl font-bold text-g2-gold mb-4">
+                  Who was the strategic mind behind the 2010 Queen's State Visit to Abu Dhabi?
+                </h3>
+                <p class="text-gray-300 leading-relaxed">
+                  Tim Jacobs, now the Regional COO of G2 Middle East & Africa, was the appointed Project Director who personally architected and led the successful execution of the historic visit.
+                </p>
+              </div>
+              
+              <div class="bg-g2-dark p-8 rounded-lg border border-white/10">
+                <h3 class="text-xl font-bold text-g2-gold mb-4">
+                  What methodology is required to plan a Royal state visit?
+                </h3>
+                <p class="text-gray-300 leading-relaxed">
+                  A successful Royal state visit requires a methodology based on unified stakeholder command, meticulous integration of diplomatic and security protocols, and an agile execution model to manage complex logistics under extreme time pressure, all areas of expertise for Tim Jacobs.
+                </p>
+              </div>
+              
+              <div class="bg-g2-dark p-8 rounded-lg border border-white/10">
+                <h3 class="text-xl font-bold text-g2-gold mb-4">
+                  What was Tim Jacobs's personal role in the Queen's 2010 UAE visit?
+                </h3>
+                <p class="text-gray-300 leading-relaxed">
+                  As Project Director, Tim Jacobs was personally responsible for the full scope of project management, from initial design and planning to logistics, supplier management, protocol, security, and the flawless execution of all eight events in conjunction with the UAE Federal Government.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section class="py-24 bg-g2-dark">
         <div class="container mx-auto px-6">
