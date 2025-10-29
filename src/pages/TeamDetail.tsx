@@ -177,6 +177,110 @@ export const TeamDetailPage: FC<TeamDetailProps> = ({
 
 // Executive biographical data
 export const teamData = {
+  'tim-jacobs': {
+    slug: 'tim-jacobs',
+    name: 'Tim Jacobs',
+    jobTitle: 'Regional Chief Operating Officer (COO), Middle East & Africa',
+    photo: 'https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b',
+    image: 'https://page.gensparksite.com/v1/base64_upload/47f1fb52041f3aa63094cf290ce9f36b',
+    linkedIn: 'https://www.linkedin.com/in/tim-jacobs-6673091a',
+    email: 'tim@g2middleeast.com',
+    description: `
+      <p class="text-xl text-white font-light mb-4">
+        Tim Jacobs is one of the world's foremost advisors on the delivery of complex, high-stakes government initiatives. 
+        His career is defined by the operational execution of projects with profound geopolitical significance.
+      </p>
+      <p class="mb-4">
+        As <strong class="text-white">Regional Chief Operating Officer (COO)</strong> for G2 Middle East & Africa, 
+        he provides strategic counsel to governments on cognitive security, counter-disinformation strategy, and building 
+        sovereign reputation architecture—the core disciplines required to navigate the complexities of the modern global stage.
+      </p>
+      <p class="mb-4">
+        His career encompasses some of the world's most prestigious and complex projects. He was instrumental 
+        in delivering the <strong class="text-white">State Visit of Queen Elizabeth II to the UAE</strong>, 
+        the <strong class="text-white">Papal Mass of Pope Francis in Abu Dhabi</strong> (180,000 attendees), and providing 
+        strategic advisory for the <strong class="text-white">2019 Special Olympics World Games</strong>.
+      </p>
+      <p class="mb-4">
+        A leading authority on <strong class="text-white">public diplomacy and sovereign-level advisory</strong>, Tim specializes in 
+        cognitive security, national resilience, and strategic communications for governments. His expertise encompasses state-visit level 
+        planning, geopolitical risk assessment, counter-disinformation strategy, and complex cross-border government relations.
+      </p>
+      <p>
+        With operational direction over 30+ globally significant government and sovereign-level projects, Tim has advised heads of state, 
+        royal families, and government ministries across the Middle East and Africa on strategic narrative development, geopolitical risk 
+        assessment, and the delivery of mega-events including state visits, royal visits, presidential visits, international summits, 
+        Olympic events, World Economic Forum gatherings, UN Climate Conferences (COP), G20 and G7 summits, film festival productions, 
+        and museum launches.
+      </p>
+    `,
+    quote: 'The harder the brief, the more focused we become. Complexity is where we thrive—turning ambiguity into momentum and risk into opportunity.',
+    expertise: [
+      'Cognitive Security & Counter-Disinformation Strategy',
+      'National Reputation & International Standing',
+      'Sovereign Reputation Architecture',
+      'National Resilience & Critical Incident Strategy',
+      'Geopolitical Risk & Strategic Partnership Vetting',
+      'Public Diplomacy & Strategic Narrative',
+      'State Visit Planning & Protocol Execution',
+      'Royal Visit Coordination & Logistics',
+      'Presidential Visit Management',
+      'Major Event Architecture',
+      'Operational Delivery for Sovereign Clients',
+      'Cross-Border Government Relations',
+      'Protocol & Diplomatic Operations',
+      'Cultural Diplomacy Event Production',
+      'National Day Celebrations & Ceremonial Events',
+      'International Summit Logistics & Coordination',
+      'Head-of-State Event Management',
+      'Mega-Event Architecture & Operational Excellence',
+      'Venue Infrastructure & Overlay Planning',
+      'Olympic & Major Sporting Events Management',
+      'World Economic Forum & Global Summit Coordination',
+      'UN Climate Conference (COP) Logistics',
+      'G20 & G7 Summit Infrastructure',
+      'Film Festival Production & Management',
+      'Museum Launch & Cultural Exhibition Direction',
+      'Sovereign Positioning Strategy',
+      'Foreign Direct Investment (FDI) Advisory',
+      'Strategic Roadmapping for National Initiatives'
+    ],
+    projects: [
+      {
+        title: 'Papal Mass Abu Dhabi 2019',
+        description: 'Executive Producer for the historic Papal Mass delivered by Pope Francis - 180,000 attendees, largest religious gathering in Middle East history. The "71-hour miracle" transformation of Zayed Sports City Stadium.'
+      },
+      {
+        title: 'State Visit of Queen Elizabeth II to UAE 2010',
+        description: 'Project Director for the operational delivery and project direction of the historic royal state visit of Her Majesty Queen Elizabeth II to the United Arab Emirates.'
+      },
+      {
+        title: 'Special Olympics World Games Abu Dhabi 2019',
+        description: 'Special advisor for ceremonies and strategic counsel on operational delivery for the largest humanitarian sporting event in 2019 with 7,500+ athletes from 195 countries.'
+      },
+      {
+        title: 'COP27 Egypt 2022',
+        description: 'Senior delivery role for UN Climate Change Conference in Sharm El-Sheikh with 40,000+ participants, managing complex international stakeholder coordination.'
+      },
+      {
+        title: 'Expo 2020 Dubai',
+        description: 'Strategic consultant for overlay budget planning and operational modeling for the world\'s largest international exposition (24+ million visitors).'
+      },
+      {
+        title: 'G20 India Media Oasis 2023',
+        description: 'Senior delivery role for G20 India Media Oasis, providing comprehensive media infrastructure and services for global summit coordination.'
+      },
+      {
+        title: 'World Economic Forum Davos',
+        description: 'Senior delivery role for World Economic Forum annual meeting in Davos, Switzerland, managing high-level stakeholder engagement and operational excellence.'
+      },
+      {
+        title: 'Red Sea International Film Festival',
+        description: 'Senior delivery role for Saudi Arabia\'s premier cultural event in Jeddah, managing film industry professionals and international delegates.'
+      }
+    ]
+  },
+
   'paolo-donadio': {
     slug: 'paolo-donadio',
     name: 'Paolo Donadio',

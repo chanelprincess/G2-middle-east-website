@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { serveStatic } from 'hono/cloudflare-workers'
 import { renderer } from './renderer'
+import { securityHeaders } from './middleware/security-headers'
 import { HomePage } from './pages/Home'
 import { ServicesPage } from './pages/Services'
 import { TeamPage } from './pages/Team'
@@ -50,6 +51,9 @@ type Bindings = {
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
+
+// Apply security headers to all routes
+app.use('*', securityHeaders())
 
 // Enable CORS for API routes
 app.use('/api/*', cors())
@@ -953,7 +957,7 @@ app.get('/services', (c) => {
     <ServicesPage />,
     {
       title: 'Sovereign Advisory & Government Event Management | G2 Middle East & Africa',
-      description: 'From strategic counsel to flawless execution: sovereign advisory, diplomatic event management, state visit coordination, national celebrations. Our strategic advisory is proven through world-class event delivery across UAE & GCC.',
+      description: 'Sovereign advisory, diplomatic events, state visits, national celebrations. Strategic counsel proven through world-class delivery across UAE & GCC.',
       canonicalUrl: 'https://g2middleeast.com/services',
       ogImage: 'https://g2middleeast.com/static/og-services.jpg',
       ogImageAlt: 'G2 Middle East Strategic Services - Government Event Management'
@@ -1014,7 +1018,7 @@ app.get('/about', (c) => {
     <AboutPage />,
     {
       title: 'About Us | Strategic Counsel & Government Events | G2 Middle East UAE',
-      description: 'G2 Middle East: Strategic counsel and event management for governments across Middle East & Africa. 50+ major projects, 20+ years experience. Part of Casta Diva Group.',
+      description: 'G2 Middle East: Strategic counsel & event management for governments across Middle East & Africa. 50+ projects, 20+ years. Part of Casta Diva Group.',
       canonicalUrl: 'https://g2middleeast.com/about',
       ogImage: 'https://g2middleeast.com/static/og-about.jpg',
       ogImageAlt: 'About G2 Middle East - Strategic Counsel and Government Event Management'
@@ -2593,6 +2597,11 @@ app.post('/api/admin/whitepapers/delete/:id', async (c) => {
   } catch (error) {
     console.error('Delete error:', error)
     return c.text('Delete failed', 500)
+  }
+})
+
+export default app
+return c.text('Delete failed', 500)
   }
 })
 
