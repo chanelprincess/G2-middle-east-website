@@ -26,8 +26,11 @@ interface ProjectDetailProps {
   faqSection?: FAQSection
   supportingImages: {
     url: string
+    alt?: string
+    title?: string
     prompt: string
     caption: string
+    description?: string
   }[]
 }
 
@@ -269,12 +272,96 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
             "Diplomatic Engagement",
             "Cultural Diplomacy"
           ],
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://page.gensparksite.com/v1/base64_upload/578b7cc60a498b8e501f67ae6988aeba",
-            "description": "Street-level view of Bayt Qatar at the Institute of Engineering and Technology in London during the 2012 Olympic Games, featuring Qatar Olympic Committee branding, national flags, and the historic Grade II listed building facade",
-            "caption": "Bayt Qatar, Qatar's flagship Olympic House for London 2012, delivered by embedded specialist Tim Jacobs in 12 weeks"
-          },
+          "image": [
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/578b7cc60a498b8e501f67ae6988aeba",
+              "name": "Bayt Qatar Qatar Olympic House London 2012 Exterior",
+              "description": "Street-level view of Bayt Qatar at the Institute of Engineering and Technology in London during the 2012 Olympic Games, featuring Qatar Olympic Committee branding, national flags, and the historic Grade II listed building facade",
+              "caption": "Bayt Qatar, Qatar's flagship Olympic House for London 2012, delivered by embedded specialist Tim Jacobs in 12 weeks",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/d70180194730c2d08f95a426956e2056",
+              "name": "Bayt Qatar Rooftop Terrace | Sovereign Event Space",
+              "caption": "The fusion of Qatari hospitality and London's iconic skyline on the Bayt Qatar rooftop terrace",
+              "description": "The exclusive rooftop terrace at Bayt Qatar, designed for high-level diplomatic hosting during the 2012 Olympics, blending traditional Arabic elements with modern London environment",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/f167384524ac433059f8e9dda7128582",
+              "name": "Bayt Qatar Modern Majlis Interior",
+              "caption": "A blend of tradition and future: the modern majlis in London featured a digital window looking out onto the Doha skyline",
+              "description": "The majlis served as a primary hosting area, where a digital window provided a visual link to Qatar's ambitious future, a key message for the Doha 2020 Olympic bid",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/360260a9735a20334a1ac15c5b0eb334",
+              "name": "Immersive Qatari Cultural Experience at Bayt Qatar",
+              "caption": "Authentic design and traditional artifacts transformed the London interior into an immersive Qatari cultural journey",
+              "description": "Every detail of Bayt Qatar was curated to transport visitors. This hallway demonstrates the project's commitment to authenticity, a key strategic decision to create a powerful brand experience",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/a0969491c4048b286938e03deac54340",
+              "name": "Qatar Olympic Spirit at Bayt Qatar",
+              "caption": "A proud moment for Qatar as one of its athletes holds the Olympic torch at Bayt Qatar",
+              "description": "This image captures a pivotal moment linking the sovereign house directly to the Olympic Games and Qatar's identity as a rising force in global sports",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/0403f85c68d20d7304bc6ba6e6c929b8",
+              "name": "High-Level Dignitary Visit to Bayt Qatar",
+              "caption": "Bayt Qatar served as a crucial hub for diplomacy and national representation, hosting high-level Qatari dignitaries",
+              "description": "The presence of senior dignitaries underscores the national significance of Bayt Qatar. The venue's flawless operation and immersive design were essential for representing the State of Qatar on a global stage",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/b406b461df7437509f101af648998bee",
+              "name": "Cultural Exchange and Hospitality at Bayt Qatar",
+              "caption": "Celebrating Qatari culture and heritage with international guests at a Bayt Qatar evening event",
+              "description": "Bayt Qatar was more than a hospitality venue; it was a vibrant cultural hub. This image highlights its role in fostering diplomacy and cultural understanding",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://page.gensparksite.com/v1/base64_upload/03678e7980a074ff09688fb8dae04c3e",
+              "name": "Versatile Event Space: Fashion Show at Bayt Qatar",
+              "caption": "The adaptable design of Bayt Qatar allowed for diverse programming, including contemporary Qatari fashion shows",
+              "description": "The successful transformation included creating multi-functional spaces capable of hosting diverse events. This versatility was a testament to the complex design and rapid execution within the 12-week timeline",
+              "creator": {
+                "@type": "Organization",
+                "name": "G2 Middle East & Africa"
+              }
+            }
+          ],
           "keywords": "Bayt Qatar, Qatar Olympic House, London 2012, sovereign representation, nation branding, Olympic hospitality, embedded specialist, Qatar Olympic Committee, Tim Jacobs, G2 Middle East"
         },
         {
@@ -469,7 +556,8 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
                 <div key={index} class="relative group overflow-hidden rounded-lg">
                   <img 
                     src={image.url}
-                    alt={image.caption}
+                    alt={image.alt || image.caption}
+                    title={image.title || image.caption}
                     class="w-full h-96 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                   <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-g2-darker to-transparent p-6">
@@ -1350,34 +1438,60 @@ export const projectsData = {
     },
     supportingImages: [
       {
-        url: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&q=80',
-        prompt: 'Elegant Olympic House interior with Qatar branding, VIP guests networking during Games.',
-        caption: 'Diplomatic hub: Qatar\'s first Olympic House hosting VIPs, athletes, and dignitaries'
+        url: 'https://page.gensparksite.com/v1/base64_upload/d70180194730c2d08f95a426956e2056',
+        alt: 'The rooftop terrace of Bayt Qatar, featuring Arabic lanterns and views of the London skyline, a space designed for diplomatic and cultural hosting during the 2012 Olympics',
+        title: 'Bayt Qatar Rooftop Terrace | Sovereign Event Space',
+        prompt: 'Rooftop terrace at Bayt Qatar featuring traditional Arabic lanterns, London skyline views, diplomatic hosting space during 2012 Olympics.',
+        caption: 'The fusion of Qatari hospitality and London\'s iconic skyline on the Bayt Qatar rooftop terrace',
+        description: 'The exclusive rooftop terrace at Bayt Qatar, designed for high-level diplomatic hosting during the 2012 Olympics, blending traditional Arabic elements with modern London environment'
       },
       {
-        url: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80',
-        prompt: 'Olympic athletes and dignitaries at Qatar hospitality venue, premium catering service.',
-        caption: 'World-class hospitality: Qatari culture showcased through premium catering and service'
+        url: 'https://page.gensparksite.com/v1/base64_upload/f167384524ac433059f8e9dda7128582',
+        alt: 'Interior of a modern majlis at Bayt Qatar, with traditional seating and an illuminated wall panel, featuring a digital window displaying the Doha, Qatar skyline',
+        title: 'Bayt Qatar Modern Majlis Interior',
+        prompt: 'Modern majlis interior with traditional seating, illuminated mashrabiya screen, digital window showing Doha skyline.',
+        caption: 'A blend of tradition and future: the modern majlis in London featured a digital window looking out onto the Doha skyline',
+        description: 'The majlis served as a primary hosting area, where a digital window provided a visual link to Qatar\'s ambitious future, a key message for the Doha 2020 Olympic bid'
       },
       {
-        url: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80',
-        prompt: 'London 2012 Olympic venues visible from Qatar House, strategic positioning.',
-        caption: 'Strategic positioning: Prime location at the heart of London 2012 Olympic Games'
+        url: 'https://page.gensparksite.com/v1/base64_upload/360260a9735a20334a1ac15c5b0eb334',
+        alt: 'A warmly lit hallway inside Bayt Qatar, decorated with authentic Qatari artifacts, lanterns, and textiles to create an immersive cultural atmosphere for guests',
+        title: 'Immersive Qatari Cultural Experience at Bayt Qatar',
+        prompt: 'Traditional Qatari interior hallway with warm lighting, authentic artifacts, lanterns, and textiles.',
+        caption: 'Authentic design and traditional artifacts transformed the London interior into an immersive Qatari cultural journey',
+        description: 'Every detail of Bayt Qatar was curated to transport visitors. This hallway demonstrates the project\'s commitment to authenticity, a key strategic decision to create a powerful brand experience'
       },
       {
-        url: 'https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=800&q=80',
-        prompt: 'Project management documentation, budget oversight, supplier coordination materials.',
-        caption: '12-week delivery: Comprehensive project management under extreme time pressure'
+        url: 'https://page.gensparksite.com/v1/base64_upload/a0969491c4048b286938e03deac54340',
+        alt: 'A Qatari official with a national athlete proudly holding the official London 2012 Olympic torch inside Bayt Qatar, symbolizing Qatar\'s commitment to the Olympic spirit',
+        title: 'Qatar Olympic Spirit at Bayt Qatar',
+        prompt: 'Qatari official and athlete holding London 2012 Olympic torch at Bayt Qatar.',
+        caption: 'A proud moment for Qatar as one of its athletes holds the Olympic torch at Bayt Qatar',
+        description: 'This image captures a pivotal moment linking the sovereign house directly to the Olympic Games and Qatar\'s identity as a rising force in global sports'
       },
       {
-        url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1600&q=80',
-        prompt: 'High-level bilateral meetings at Qatar Olympic House, diplomatic protocol.',
-        caption: 'Stakeholder excellence: Facilitating high-level meetings strengthening international relations'
+        url: 'https://page.gensparksite.com/v1/base64_upload/0403f85c68d20d7304bc6ba6e6c929b8',
+        alt: 'Qatari dignitaries and officials touring the traditionally decorated corridors of Bayt Qatar during the London 2012 Olympics',
+        title: 'High-Level Dignitary Visit to Bayt Qatar',
+        prompt: 'Qatari dignitaries and officials touring traditional corridors at Bayt Qatar.',
+        caption: 'Bayt Qatar served as a crucial hub for diplomacy and national representation, hosting high-level Qatari dignitaries',
+        description: 'The presence of senior dignitaries underscores the national significance of Bayt Qatar. The venue\'s flawless operation and immersive design were essential for representing the State of Qatar on a global stage'
       },
       {
-        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-        prompt: 'Cultural programming and events at Qatar House during Olympics.',
-        caption: 'Cultural showcase: Dynamic programming celebrating Qatari heritage throughout the Games'
+        url: 'https://page.gensparksite.com/v1/base64_upload/b406b461df7437509f101af648998bee',
+        alt: 'Guests at a cultural event inside Bayt Qatar, showcasing elegant traditional Qatari attire and demonstrating the venue\'s role as a center for cultural exchange',
+        title: 'Cultural Exchange and Hospitality at Bayt Qatar',
+        prompt: 'Cultural event at Bayt Qatar with guests in traditional Qatari attire.',
+        caption: 'Celebrating Qatari culture and heritage with international guests at a Bayt Qatar evening event',
+        description: 'Bayt Qatar was more than a hospitality venue; it was a vibrant cultural hub. This image highlights its role in fostering diplomacy and cultural understanding'
+      },
+      {
+        url: 'https://page.gensparksite.com/v1/base64_upload/03678e7980a074ff09688fb8dae04c3e',
+        alt: 'A model on the runway during a fashion show at Bayt Qatar, demonstrating the venue\'s versatility for hosting high-profile cultural and branding events',
+        title: 'Versatile Event Space: Fashion Show at Bayt Qatar',
+        prompt: 'Fashion show runway at Bayt Qatar showcasing contemporary Qatari design.',
+        caption: 'The adaptable design of Bayt Qatar allowed for diverse programming, including contemporary Qatari fashion shows',
+        description: 'The successful transformation included creating multi-functional spaces capable of hosting diverse events. This versatility was a testament to the complex design and rapid execution within the 12-week timeline'
       }
     ]
   },
