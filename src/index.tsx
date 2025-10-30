@@ -1301,6 +1301,19 @@ app.get('/projects/:slug', async (c) => {
     }
   }
   
+  // Override meta tags for Bayt Qatar project with optimized SEO
+  if (slug === 'qatar-olympic-house') {
+    metaTags = {
+      title: 'Bayt Qatar: A Case Study in Sovereign Representation | G2 MEA',
+      description: 'Discover the 12-week execution of Qatar\'s Olympic House in London, a masterclass in sovereign strategy & delivery led by G2\'s COO, Tim Jacobs.',
+      canonicalUrl: 'https://g2middleeast.com/projects/qatar-olympic-house',
+      ogImage: projectData.heroImage || 'https://g2middleeast.com/static/og-qatar-olympic.jpg',
+      ogImageAlt: 'Bayt Qatar - Qatar Olympic House London 2012 delivered by Tim Jacobs and G2 Middle East',
+      ogType: 'article' as const,
+      author: 'Tim Jacobs'
+    }
+  }
+  
   return c.render(
     <ProjectDetailPage {...projectData} />,
     metaTags

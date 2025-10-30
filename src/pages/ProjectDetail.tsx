@@ -199,6 +199,139 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
           ]
         }
       ]
+    },
+    'qatar-olympic-house': {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://g2middleeast.com/projects/qatar-olympic-house",
+          "name": "Bayt Qatar: A Case Study in Sovereign Representation",
+          "description": "A comprehensive case study of Qatar's flagship Olympic House at London 2012, delivered in 12 weeks by embedded specialist Tim Jacobs",
+          "url": "https://g2middleeast.com/projects/qatar-olympic-house",
+          "mainEntity": {
+            "@id": "https://g2middleeast.com/projects/qatar-olympic-house#event"
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "G2 Middle East & Africa",
+            "url": "https://g2middleeast.com"
+          }
+        },
+        {
+          "@type": "Event",
+          "@id": "https://g2middleeast.com/projects/qatar-olympic-house#event",
+          "name": "Bayt Qatar - Qatar Olympic House at the London 2012 Olympics",
+          "alternateName": ["Qatar Olympic House London 2012", "Bayt Qatar"],
+          "description": "A flagship sovereign hospitality and nation-branding venue for the Qatar Olympic Committee during the London 2012 Games, showcasing the nation's vision, culture, and sporting ambition. Delivered within a compressed 12-week timeline, transforming a 6-story Grade II listed building into a global beacon of Qatari ambition.",
+          "startDate": "2012-07-27",
+          "endDate": "2012-08-12",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "1 The Strand, London",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1 The Strand",
+              "addressLocality": "London",
+              "addressCountry": "United Kingdom"
+            },
+            "description": "6-story Grade II listed historical building in the heart of London"
+          },
+          "organizer": {
+            "@type": "Organization",
+            "name": "Qatar Olympic Committee",
+            "alternateName": "QOC",
+            "description": "The national Olympic committee of Qatar, responsible for Qatar's Olympic representation and aspirations",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Doha",
+              "addressCountry": "Qatar"
+            }
+          },
+          "director": {
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+          },
+          "projectManager": {
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+          },
+          "about": [
+            "Sovereign Representation",
+            "Nation Branding",
+            "Olympic Hospitality",
+            "Diplomatic Engagement",
+            "Cultural Diplomacy"
+          ],
+          "keywords": "Bayt Qatar, Qatar Olympic House, London 2012, sovereign representation, nation branding, Olympic hospitality, embedded specialist, Qatar Olympic Committee, Tim Jacobs, G2 Middle East"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+          "name": "Tim Jacobs",
+          "jobTitle": "Regional Chief Operating Officer (COO), Middle East & Africa",
+          "description": "Embedded specialist and strategic leader who personally architected and delivered Qatar's flagship Olympic House within a 12-week timeline. Operated from within the Qatar Olympic Committee to bridge client-side objectives and agency-side delivery, creating the 'embedded specialist' methodology that ensures flawless execution under immense pressure.",
+          "url": "https://g2middleeast.com/team/tim-jacobs",
+          "sameAs": [
+            "https://www.linkedin.com/in/tim-jacobs-6673091a"
+          ],
+          "worksFor": {
+            "@id": "https://g2middleeast.com/#organization"
+          },
+          "knowsAbout": [
+            "Sovereign Representation",
+            "Embedded Specialist Methodology",
+            "Nation Branding",
+            "Olympic Event Management",
+            "Multi-stakeholder Management",
+            "Diplomatic Protocol",
+            "Cultural Nuances",
+            "Strategic Positioning",
+            "High-stakes Event Delivery"
+          ],
+          "award": [
+            "Project Lead - Bayt Qatar Olympic House London 2012",
+            "Generated 11% cost savings through meticulous project reconciliation"
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Qatar Olympic Committee",
+            "description": "Embedded as strategic specialist within QOC during London 2012"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://g2middleeast.com/#organization",
+          "name": "G2 Middle East & Africa",
+          "url": "https://g2middleeast.com",
+          "logo": "https://g2middleeast.com/assets/logo-g2me.svg",
+          "description": "Strategic counsel and world-class event management for governments, sovereign entities, and global brands. Pioneered the 'embedded specialist' methodology for sovereign-level project delivery.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mazyad Offices 3 - Office 36 - Sultan Bin Mohammed Al, 75, Qubaisi St",
+            "addressLocality": "Mohammed Bin Zayed City",
+            "addressRegion": "Abu Dhabi",
+            "addressCountry": "AE"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971-02-654-4049",
+            "email": "tim@g2middleeast.com",
+            "contactType": "New Business & Strategic Enquiries"
+          },
+          "founder": {
+            "@id": "https://g2middleeast.com/team/tim-jacobs#person"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://g2middleeast.com"},
+            {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://g2middleeast.com/projects"},
+            {"@type": "ListItem", "position": 3, "name": "Bayt Qatar: Qatar Olympic House London 2012", "item": "https://g2middleeast.com/projects/qatar-olympic-house"}
+          ]
+        }
+      ]
     }
   };
 
@@ -1121,38 +1254,26 @@ export const projectsData = {
 
   'qatar-olympic-house': {
     slug: 'qatar-olympic-house',
-    title: 'Qatar Olympic House – London 2012',
-    subtitle: 'Delivered by G2 Middle East Staff: Qatar\'s First Olympic House in 12 Weeks',
+    title: 'Bayt Qatar: A Case Study in Sovereign Representation',
+    subtitle: 'Building a Nation\'s Vision in London - Bayt Qatar',
     category: 'Sports Events',
     year: '2012',
     heroImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&q=80',
     heroImagePrompt: 'Olympic rings and flags at prestigious venue during London 2012 Games, VIP guests arriving at elegant hospitality house, Qatar branding prominently displayed. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: `<p class="mb-4"><strong>Delivered by G2 Middle East Staff</strong></p>
-    <p class="mb-4"><strong>Project Lead:</strong> Tim Jacobs, now Regional Chief Operating Officer, G2 Middle East & Africa</p>
+    engagingParagraph: `<h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Building a Nation's Vision in London - Bayt Qatar</h1>
     
-    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Overview</h3>
-    <p class="mb-4">In the lead-up to the London 2012 Olympic Games, the Doha 2020 Bid Committee appointed Tim Jacobs as Project Lead to deliver a landmark initiative: Qatar's first-ever Olympic House. Tasked with realising the client's vision within an exceptionally tight 12-week lead time, Jacobs was responsible for the complete operational planning, delivery, and management of this high-profile hospitality and diplomatic hub.</p>
+    <p class="mb-4">For a nation on the world stage, the Olympic Games is more than a sporting event; it is a geopolitical landmark. The challenge for the Qatar Olympic Committee (QOC) at London 2012 was monumental: to translate the nation's ambitious vision, rich culture, and Olympic aspirations into a physical, immersive experience. The brief was to deliver this flagship sovereign presence, Bayt Qatar, in the heart of one of the world's busiest cities, transforming a 6-story, Grade II listed historical building into a global beacon of Qatari ambition—all within a compressed 12-week delivery and execution timeline.</p>
     
-    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Challenge</h3>
-    <p class="mb-4">With only three months from appointment to opening, the project required rapid mobilisation, cross-continental coordination, and meticulous attention to detail. The Olympic House needed to serve as a showcase for Qatar's culture, hospitality, and Olympic ambitions, while providing a secure, welcoming environment for VIPs, athletes, dignitaries, and international media.</p>
+    <h2 class="text-3xl font-bold text-white mb-4 mt-8">The Embedded Specialist: Delivering Sovereign Representation</h2>
+    <p class="mb-4">This was not a challenge for a distant consultant. It demanded a leader on the inside, one capable of navigating the immense logistical, technical, and diplomatic complexities from within the client's own structure. Tim Jacobs was personally embedded within the Qatar Olympic Committee, serving as the strategic lynchpin between the committee's vision and the complex reality of execution.</p>
     
-    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Tim Jacobs' Role & Responsibilities</h3>
-    <p class="mb-4">As Project Lead, Tim Jacobs was entrusted with end-to-end responsibility for the Qatar Olympic House, including:</p>
+    <p class="mb-4">His personal blueprint was one of radical integration. By operating from within the QOC, he bridged the critical gap between client-side objectives and agency-side delivery. He personally architected a multi-stakeholder management matrix that unified the goals of the QOC, numerous Qatari government bodies, royal stakeholders, and the incumbent delivery agency. This "embedded specialist" methodology ensured that protocol, cultural nuances, and strategic messaging were woven into every logistical and operational decision, allowing the agency to execute with unparalleled accuracy and efficiency.</p>
     
-    <ul class="list-disc list-inside mb-4 space-y-2 text-gray-300">
-      <li><strong>Permitting & Compliance:</strong> Navigating UK regulatory frameworks to secure all necessary permits and approvals in record time.</li>
-      <li><strong>Security Planning:</strong> Designing and implementing robust security protocols to protect guests and assets, in coordination with local authorities and private security providers.</li>
-      <li><strong>Catering & Hospitality:</strong> Curating a world-class catering program that reflected Qatari culture and met the diverse needs of international guests.</li>
-      <li><strong>Programming:</strong> Developing and managing a dynamic schedule of events, cultural showcases, and networking opportunities throughout the Games.</li>
-      <li><strong>Budget Management:</strong> Overseeing all financial aspects, ensuring cost control and value delivery across suppliers and services.</li>
-      <li><strong>Stakeholder Management:</strong> Acting as the primary liaison between the Doha 2020 Bid Committee, Qatari officials, UK partners, suppliers, and VIP guests.</li>
-    </ul>
+    <h2 class="text-3xl font-bold text-white mb-4 mt-8">The Landmark Result</h2>
+    <p class="mb-4">The outcome was a resounding success that set a new benchmark for sovereign hospitality and nation-branding. For the entire month-long duration of the London 2012 Games, Bayt Qatar operated flawlessly, becoming a vital hub for international media, diplomatic stakeholders, and the public. Tim Jacobs' hands-on leadership and integrated methodology not only ensured the project was a triumph in its own right but also built a powerful foundation for Qatar's future Olympic bids and solidified its global reputation for excellence. Post-event, his meticulous reconciliation of the project generated a saving of over 11% for the client.</p>
     
-    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Execution & Impact</h3>
-    <p class="mb-4">Under Jacobs' leadership, the Qatar Olympic House was delivered on time and to the highest standards, despite the compressed schedule and complex stakeholder environment. The project became a focal point for Qatari engagement during the Games, hosting high-level meetings, cultural events, and media activations that elevated Qatar's international profile and Olympic credentials.</p>
-    
-    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Legacy & Value to G2 Middle East</h3>
-    <p class="mb-4">This project exemplifies Tim Jacobs' ability to deliver under pressure, manage multifaceted international operations, and exceed client expectations. The experience and expertise gained from leading Qatar Olympic House now inform G2 Middle East's approach to high-stakes event delivery, stakeholder engagement, and cross-border project management—reinforcing the consultancy's reputation for operational excellence and strategic vision.</p>`,
+    <h2 class="text-3xl font-bold text-white mb-4 mt-8">G2: Leadership Forged in High-Stakes Environments</h2>
+    <p class="mb-4">The "embedded specialist" methodology—integrating deeply with a client's team to ensure flawless execution under immense pressure—is not just a chapter in a portfolio; it is a core component of the leadership DNA at G2 Middle East & Africa. This approach, personally driven by Tim Jacobs, ensures that our clients gain more than a service provider; they gain a proven partner who understands how to translate sovereign vision into operational reality. This is the strategic advantage G2 delivers for its most critical projects.</p>`,
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&q=80',
