@@ -129,11 +129,23 @@ export const requireSiteAccessHybrid = async (c: Context, next: Next) => {
 
 /**
  * Helper function to check if user/crawler has site access
+ * Also sets cookie if valid token is present
  */
 export const hasSiteAccessHybrid = (c: Context): boolean => {
   const userAgent = c.req.header('user-agent') || ''
   const tokenFromQuery = c.req.query('access')
   const accessCookie = getCookie(c, ACCESS_COOKIE_NAME)
+  
+  // Set cookie if valid token is present in query
+  if (tokenFromQuery === SITE_ACCESS_TOKEN) {
+    setCookie(c, ACCESS_COOKIE_NAME, SITE_ACCESS_TOKEN, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'Lax',
+      maxAge: COOKIE_MAX_AGE,
+      path: '/'
+    })
+  }
   
   return (
     isAICrawler(userAgent) ||
