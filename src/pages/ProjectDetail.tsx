@@ -468,6 +468,86 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
           ]
         }
       ]
+    },
+    'hazza-bin-zayed-stadium': {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Mission Critical: How a FIFA-Standard Stadium Upgrade Was Delivered in Just 60 Days",
+      "alternativeHeadline": "Expert Methodology Behind the Mission-Critical Upgrade of Hazza Bin Zayed Stadium",
+      "author": {
+        "@type": "Organization",
+        "name": "G2 Middle East & Africa",
+        "url": "https://g2middleeast.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "G2 Middle East & Africa",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://g2middleeast.com/assets/logo-g2me.svg"
+        }
+      },
+      "datePublished": "2018-12-01",
+      "dateModified": "2025-01-30",
+      "mainEntity": {
+        "@type": "Event",
+        "@id": "https://g2middleeast.com/projects/hazza-bin-zayed-stadium#event",
+        "name": "Hazza Bin Zayed Stadium Media & Broadcast Infrastructure Upgrade",
+        "description": "A mission-critical technical overhaul of a national stadium's broadcast infrastructure to meet FIFA and AFC standards under a 60-day deadline.",
+        "eventStatus": "https://schema.org/EventCompleted",
+        "startDate": "2018-10-01",
+        "endDate": "2018-11-30",
+        "location": {
+          "@type": "Place",
+          "name": "Hazza Bin Zayed Stadium",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Al Ain",
+            "addressRegion": "Abu Dhabi",
+            "addressCountry": "UAE"
+          },
+          "description": "National stadium in Al Ain, United Arab Emirates, home to Al Ain FC and host venue for FIFA Club World Cup"
+        },
+        "director": {
+          "@type": "Person",
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
+          "name": "Tim Jacobs",
+          "jobTitle": "Regional Chief Operating Officer (COO), Middle East & Africa",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "G2 Middle East & Africa"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/tim-jacobs-6673091a",
+            "https://g2middleeast.com/team/tim-jacobs"
+          ]
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "G2 Middle East & Africa",
+          "url": "https://g2middleeast.com"
+        },
+        "about": [
+          "Mission-Critical Project Delivery",
+          "FIFA Compliance",
+          "Broadcast Infrastructure",
+          "Embedded Team Methodology",
+          "Stadium Upgrade",
+          "Technical Excellence"
+        ],
+        "keywords": "Tim Jacobs expertise, stadium upgrade, FIFA standards, mission-critical delivery, G2 Middle East & Africa, broadcast infrastructure, embedded team methodology, Hazza Bin Zayed Stadium, 60-day deadline, media centre, SMPTE lines, fiber optic cables"
+      },
+      "about": {
+        "@type": "Service",
+        "serviceType": "Mission-Critical Project Delivery",
+        "provider": {
+          "@type": "Organization",
+          "name": "G2 Middle East & Africa",
+          "url": "https://g2middleeast.com"
+        },
+        "description": "Turnkey delivery of complex technical infrastructure for global events, including broadcast systems, media centres, and surveillance.",
+        "areaServed": "Middle East & Africa"
+      }
     }
   };
 
@@ -1498,13 +1578,66 @@ export const projectsData = {
 
   'hazza-bin-zayed-stadium': {
     slug: 'hazza-bin-zayed-stadium',
-    title: 'Hazza Bin Zayed Stadium FIFA Upgrade',
-    subtitle: 'Delivering International Football Standards in Al Ain',
-    category: 'Sports Infrastructure',
+    title: 'Mission Critical: How a FIFA-Standard Stadium Upgrade Was Delivered in Just 60 Days',
+    subtitle: 'Expert Methodology Behind the Mission-Critical Upgrade of Hazza Bin Zayed Stadium',
+    category: 'Mission-Critical Delivery',
     year: '2018',
     heroImage: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1600&q=80',
-    heroImagePrompt: 'Modern football stadium exterior at night with dramatic lighting, FIFA-compliant facilities, Al Ain UAE location. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
-    engagingParagraph: '<p class="mb-4"><strong>Delivered by G2 Middle East staff.</strong> Our team delivered the comprehensive upgrade of Hazza Bin Zayed Stadium in Al Ain to FIFA and AFC international standards, managing project planning, compliance verification, and operational readiness for world-class football. This project ensured the venue met all technical requirements for hosting international fixtures while maintaining operational continuity—a critical milestone in Abu Dhabi\'s sporting infrastructure development.',
+    heroImageAlt: 'Hazza Bin Zayed Stadium in Al Ain upgraded to FIFA and AFC standards under Tim Jacobs\' leadership, showcasing mission-critical broadcast infrastructure and media centre delivery',
+    heroImageTitle: 'Mission-Critical Stadium Upgrade: 60-Day FIFA Compliance Delivery',
+    heroImagePrompt: 'Modern football stadium exterior at night with dramatic lighting, FIFA-compliant broadcast facilities, media centre, Al Ain UAE location. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    engagingParagraph: `<h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Mission Critical: How a FIFA-Standard Stadium Upgrade Was Delivered in Just 60 Days</h1>
+    
+    <p class="mb-4">When the FIFA Club World Cup was weeks away, the Hazza Bin Zayed Stadium in Al Ain faced a non-negotiable challenge: its media and broadcast infrastructure was not yet qualified to meet the stringent standards required of a global host venue. With the nation's reputation on the line, failure was not an option. The situation demanded more than a contractor; it required a strategic leader with a proven methodology for delivering complex, high-stakes projects under immense pressure.</p>
+    
+    <p class="mb-4">This critical task fell to <strong>Tim Jacobs</strong>, now <strong>Regional COO of G2 Middle East & Africa</strong>, and his specialized team. Their mission was to analyze, plan, and execute a complete technical overhaul of the stadium's core systems against an impossible <strong>60-day deadline</strong>.</p>
+    
+    <h2 class="text-3xl font-bold text-white mb-4 mt-8">The Approach: Embedded Team Methodology</h2>
+    
+    <p class="mb-4">The project's success hinged on a precise and agile methodology personally directed by Tim. The first step was conducting a rapid, in-depth <strong>Gap Analysis</strong> to identify every deficiency against FIFA and AFC standards. This crucial diagnostic phase provided a clear roadmap for the monumental task ahead.</p>
+    
+    <p class="mb-4">Recognizing that a traditional approach would fail, Tim implemented an <strong>"embedded team" strategy</strong>. His core leadership was integrated directly into the stadium's existing construction team, eliminating communication delays and creating a unified, single-minded focus on the deadline. This approach was coupled with the deployment of a <strong>modular, semi-permanent infrastructure solution</strong>, allowing for parallel workstreams and rapid installation of complex broadcast systems without disrupting the stadium's core structure. This unique combination of strategic embedding and agile execution was the key to navigating the project's immense complexity.</p>
+    
+    <h2 class="text-3xl font-bold text-white mb-4 mt-8">The Outcome: Technical Excellence</h2>
+    
+    <p class="mb-4">Under the direct leadership of Tim and his team, the stadium underwent a radical transformation. The project was not merely about meeting standards but about delivering a future-proofed, world-class facility. The team's deep technical expertise was evident in the sheer scale of the deliverables, which included:</p>
+    
+    <ul class="list-disc list-inside mb-6 space-y-3 text-gray-300">
+      <li><strong>A 400-Seat Media Centre:</strong> A permanent, 3,000sqm facility complete with a press auditorium, fit-out, and furnishings.</li>
+      <li><strong>Broadcast Infrastructure Overhaul:</strong> A complete rebuild of the outside broadcast (OB) patch facility, including 68 SMPTE lines, 660 dark lines, and the integration of advanced thunder and fiber matrix systems.</li>
+      <li><strong>Extensive Cabling and Power:</strong> Installation of hundreds of kilometers of fiber optic cables and 14km of isolated, dedicated broadcast power to ensure flawless transmission.</li>
+      <li><strong>Advanced Surveillance:</strong> Deployment of 550 CCTV cameras to enhance security and operational oversight.</li>
+      <li><strong>Turnkey Delivery:</strong> Meticulous management of all certification, warranties, and budget reconciliation, ensuring a seamless and fully compliant handover.</li>
+    </ul>
+    
+    <p class="mb-4">The project was delivered on time and was met with universal approval, solidifying the UAE's reputation as a nation capable of executing world-class events on the global stage.</p>
+    
+    <h2 class="text-3xl font-bold text-white mb-4 mt-8">G2 Delivery Capabilities: No Project is Impossible</h2>
+    
+    <p class="mb-4">The successful delivery of the Hazza Bin Zayed Stadium upgrade is a definitive case study in crisis management, technical mastery, and strategic leadership. It demonstrates a core belief that with the right methodology and expert leadership, <strong>no project is impossible</strong>, no matter the timeline or complexity.</p>
+    
+    <p class="mb-4">This is the level of proven experience Tim Jacobs brings to his role as Regional COO of G2 Middle East & Africa. The "embedded team" approach and the mastery of complex, mission-critical infrastructure delivery are not just past successes; they are foundational elements of G2's operational DNA. Our clients gain direct access to the strategic mind and crisis-tested leadership that turned an impossible deadline into a landmark achievement, ensuring their most ambitious projects are delivered with technical excellence and absolute certainty.</p>`,
+    faqSection: {
+      heading: 'Hazza Bin Zayed Stadium Upgrade: Frequently Asked Questions',
+      faqs: [
+        {
+          question: 'Who led the rapid upgrade of the Hazza Bin Zayed Stadium?',
+          answer: 'The upgrade was personally directed by <strong>Tim Jacobs</strong>, a specialist in mission-critical project delivery and the current <strong>Regional COO of G2 Middle East & Africa</strong>. He implemented an <strong>"embedded team" strategy</strong> to meet the non-negotiable <strong>60-day deadline</strong>.'
+        },
+        {
+          question: 'What was the primary challenge of the Hazza Bin Zayed Stadium project?',
+          answer: 'The primary challenge was the extreme time constraint. A complete <strong>media and broadcast infrastructure overhaul</strong>, which would typically take months, had to be completed in just <strong>60 days</strong> to meet <strong>FIFA and AFC standards</strong> for the upcoming Club World Cup.'
+        },
+        {
+          question: 'What is the "embedded team" methodology used in the stadium upgrade?',
+          answer: 'The <strong>"embedded team" methodology</strong>, a hallmark of <strong>Tim Jacobs\' approach</strong>, involves integrating core strategic leadership directly into the client\'s and contractor\'s existing teams. This eliminates communication gaps, accelerates decision-making, and ensures perfect alignment on a single objective—a core principle of project delivery at <strong>G2 Middle East & Africa</strong>.'
+        },
+        {
+          question: 'What technical capabilities were installed during the upgrade?',
+          answer: 'The team delivered a future-proofed, FIFA-compliant system, including a new <strong>3,000sqm media centre</strong>, a rebuilt broadcast patch facility with <strong>68 SMPTE lines</strong>, hundreds of kilometers of <strong>fiber optic cable</strong>, <strong>14km of dedicated broadcast power</strong>, and an advanced <strong>550-camera surveillance network</strong>.'
+        }
+      ]
+    },
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80',

@@ -1314,6 +1314,19 @@ app.get('/projects/:slug', async (c) => {
     }
   }
   
+  // Override meta tags for Hazza Bin Zayed Stadium project with optimized SEO
+  if (slug === 'hazza-bin-zayed-stadium') {
+    metaTags = {
+      title: 'Mission Critical: FIFA Stadium Upgrade in 60 Days | Tim Jacobs',
+      description: 'Discover the expert methodology behind the mission-critical upgrade of Hazza Bin Zayed Stadium. Learn how Tim Jacobs and his team delivered a world-class, FIFA-compliant media and broadcast infrastructure overhaul in a record 60-day timeframe.',
+      canonicalUrl: 'https://g2middleeast.com/projects/hazza-bin-zayed-stadium',
+      ogImage: projectData.heroImage,
+      ogImageAlt: 'Hazza Bin Zayed Stadium FIFA upgrade delivered by Tim Jacobs',
+      ogType: 'article' as const,
+      author: 'Tim Jacobs'
+    }
+  }
+  
   return c.render(
     <ProjectDetailPage {...projectData} />,
     metaTags
