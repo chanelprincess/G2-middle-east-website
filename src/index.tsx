@@ -31,7 +31,7 @@ import { TermsOfServicePage } from './pages/TermsOfService'
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy'
 import { UnderConstructionPage } from './pages/UnderConstruction'
 import { hashPassword, verifyPassword, setAuthCookie, getAuthSession, clearAuthCookie, requireAuth, requireAdmin } from './utils/auth'
-// import { requireSiteAccessHybrid, hasSiteAccessHybrid } from './middleware/site-access-hybrid'
+import { requireSiteAccessHybrid, hasSiteAccessHybrid } from './middleware/site-access-hybrid'
 import { sendEmail, getAdminApprovalEmail, getUserApprovedEmail, getRegistrationPendingEmail, getContactFormNotificationEmail, getContactFormConfirmationEmail, getProjectsAdminNotificationEmail, getProjectsRegistrationPendingEmail, getProjectsApprovalEmail } from './utils/email'
 import { uploadFile, downloadFile, deleteFile, generateFilePath } from './utils/r2'
 import * as ProjectsAuth from './lib/projects-auth'
@@ -937,39 +937,148 @@ app.use('*', renderer)
 // PAGE ROUTES
 // ============================================
 
-// Homepage - Under Construction (Site Offline)
+// Homepage - Shows under construction for humans, full site for AI crawlers & token holders
 app.get('/', (c) => {
-  return c.html(<UnderConstructionPage />)
+  // Check if user/crawler has site access
+  if (!hasSiteAccessHybrid(c)) {
+    // Show under construction to regular human visitors
+    return c.render(
+      <UnderConstructionPage />,
+      {
+        title: 'Under Construction | G2 Middle East & Africa',
+        description: 'G2 Middle East & Africa website is currently under development. Strategic advisory and event architecture for governments across Middle East and Africa. Contact: info@g2middleeast.com',
+        canonicalUrl: 'https://g2middleeast.com',
+        ogImage: 'https://g2middleeast.com/static/og-homepage.jpg',
+        ogImageAlt: 'G2 Middle East - Under Construction',
+        noindex: true // Prevent indexing of under construction page
+      }
+    )
+  }
+  
+  // Show regular homepage for AI crawlers and authorized users
+  return c.render(
+    <HomePage />,
+    {
+      title: 'Strategic Counsel & Event Management | G2 Middle East & Africa',
+      description: 'Elite strategic counsel & event management in Middle East & Africa. 50+ govt projects. Papal Mass Abu Dhabi. State visits. 24hr response.',
+      canonicalUrl: 'https://g2middleeast.com',
+      ogImage: 'https://g2middleeast.com/static/og-homepage.jpg',
+      ogImageAlt: 'G2 Middle East - Strategic Counsel and World-Class Event Management in UAE and Middle East'
+    }
+  )
 })
 
-// Services Page - Under Construction
+// Services Page - Hybrid access control
 app.get('/services', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <ServicesPage />,
+    {
+      title: 'Sovereign Advisory & Government Event Management | G2 Middle East & Africa',
+      description: 'Sovereign advisory, diplomatic events, state visits, national celebrations. Strategic counsel proven through world-class delivery across UAE & GCC.',
+      canonicalUrl: 'https://g2middleeast.com/services',
+      ogImage: 'https://g2middleeast.com/static/og-services.jpg',
+      ogImageAlt: 'G2 Middle East Strategic Services - Government Event Management'
+    }
+  )
 })
 
-// Team Page - Under Construction
+// Team Page - Hybrid access control
 app.get('/team', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <TeamPage />,
+    {
+      title: 'Expert Team | Government Event Advisors | G2 Middle East UAE',
+      description: 'Meet the strategic minds behind G2 Middle East. 20+ years experience in government event management, state visits, and diplomatic protocol across UAE, Saudi Arabia, and Middle East. Led by Regional COO Tim Jacobs.',
+      canonicalUrl: 'https://g2middleeast.com/team',
+      ogImage: 'https://g2middleeast.com/static/og-team.jpg',
+      ogImageAlt: 'G2 Middle East Expert Team - Government Event Management Advisors'
+    }
+  )
 })
 
-// Team Detail Pages - Under Construction
+// Team Detail Pages - Hybrid access control
 app.get('/team/:slug', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  const slug = c.req.param('slug')
+  const executiveData = teamData[slug as keyof typeof teamData]
+  
+  if (!executiveData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <TeamDetailPage {...executiveData} />,
+    {
+      title: `${executiveData.name} - ${executiveData.jobTitle} | Government Events Expert | G2 Middle East`,
+      description: executiveData.description.substring(0, 155).replace(/<[^>]*>/g, ''),
+      canonicalUrl: `https://g2middleeast.com/team/${slug}`,
+      ogImage: executiveData.photo || 'https://g2middleeast.com/static/og-team-default.jpg',
+      ogImageAlt: `${executiveData.name} - ${executiveData.jobTitle} at G2 Middle East`,
+      author: executiveData.name
+    }
+  )
 })
 
-// The Group Page - Under Construction
+// The Group Page - Hybrid access control
 app.get('/group', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <GroupPage />,
+    {
+      title: 'The Group | G2 Middle East',
+      description: 'G2 Middle East is part of Casta Diva Group, a global communications powerhouse with presence in 15 cities across four continents.'
+    }
+  )
 })
 
-// About Page - Under Construction
+// About Page - Hybrid access control
 app.get('/about', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <AboutPage />,
+    {
+      title: 'About Us | Strategic Counsel & Government Events | G2 Middle East UAE',
+      description: 'G2 Middle East: Strategic counsel & event management for governments across Middle East & Africa. 50+ projects, 20+ years. Part of Casta Diva Group.',
+      canonicalUrl: 'https://g2middleeast.com/about',
+      ogImage: 'https://g2middleeast.com/static/og-about.jpg',
+      ogImageAlt: 'About G2 Middle East - Strategic Counsel and Government Event Management'
+    }
+  )
 })
 
-// Contact Page - Under Construction
+// Contact Page - Hybrid access control
 app.get('/contact', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <ContactPage />,
+    {
+      title: 'Contact Us | Government Event Management Experts | G2 Middle East Dubai',
+      description: 'Contact G2 Middle East for expert government event management in Dubai & UAE. We respond within 24 hours. State visit coordination, diplomatic protocol advisory, strategic planning. Call us today.',
+      canonicalUrl: 'https://g2middleeast.com/contact',
+      ogImage: 'https://g2middleeast.com/static/og-contact.jpg',
+      ogImageAlt: 'Contact G2 Middle East - Government Event Management in Dubai UAE'
+    }
+  )
 })
 
 // Terms of Service Page
@@ -1004,9 +1113,22 @@ app.get('/privacy', (c) => {
   return c.redirect('/privacy-policy', 301)
 })
 
-// Projects Page - Under Construction
+// Projects Page - Hybrid access control
 app.get('/projects', async (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <ProjectsPage />,
+    {
+      title: 'Government Projects | Case Studies | State Visits | G2 Middle East UAE',
+      description: 'Explore 50+ major government event projects across UAE & Middle East: Papal Mass Abu Dhabi (180,000 attendees), Queen Elizabeth II State Visit, COP27 Egypt, Expo 2020 Dubai. Confidential case studies.',
+      canonicalUrl: 'https://g2middleeast.com/projects',
+      ogImage: 'https://g2middleeast.com/static/og-projects.jpg',
+      ogImageAlt: 'G2 Middle East Government Projects - Major Event Case Studies'
+    }
+  )
 })
 
 // ============================================
@@ -1142,14 +1264,65 @@ app.get('/projects/account', requireProjectsAuth, async (c) => {
 })
 
 // Project Detail Pages - Dynamic routing (Open Access)
-// Project Detail Pages - Under Construction
+// Project Detail Pages - Hybrid access control
 app.get('/projects/:slug', async (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  const slug = c.req.param('slug')
+  const projectData = projectsData[slug as keyof typeof projectsData]
+  
+  if (!projectData) {
+    return c.notFound()
+  }
+  
+  // Custom meta tags for special projects
+  let metaTags = {
+    title: `${projectData.title} | Government Event Case Study | G2 Middle East`,
+    description: projectData.engagingParagraph.substring(0, 155).replace(/<[^>]*>/g, ''),
+    canonicalUrl: `https://g2middleeast.com/projects/${slug}`,
+    ogImage: projectData.heroImage || 'https://g2middleeast.com/static/og-project-default.jpg',
+    ogImageAlt: `${projectData.title} - Government Event Case Study by G2 Middle East`,
+    ogType: 'article' as const,
+    author: 'G2 Middle East'
+  }
+  
+  // Override meta tags for Papal Mass project with optimized SEO
+  if (slug === 'papal-mass-abu-dhabi') {
+    metaTags = {
+      title: 'Case Study: The 71-Hour Papal Mass Miracle | G2 Middle East',
+      description: 'The definitive inside look at the impossible 71-hour delivery of the first Papal Mass in Arabia, led by Executive Producer Tim Jacobs of G2.',
+      canonicalUrl: 'https://g2middleeast.com/projects/papal-mass-abu-dhabi',
+      ogImage: projectData.heroImage || 'https://g2middleeast.com/static/og-papal-mass.jpg',
+      ogImageAlt: 'The 71-Hour Miracle: Papal Mass Abu Dhabi delivered by Tim Jacobs and G2 Middle East',
+      ogType: 'article' as const,
+      author: 'Tim Jacobs'
+    }
+  }
+  
+  return c.render(
+    <ProjectDetailPage {...projectData} />,
+    metaTags
+  )
 })
 
-// Perspectives (Blog) Page - Under Construction
+// Perspectives (Blog) Page - Hybrid access control
 app.get('/perspectives', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  return c.render(
+    <PerspectivesPage />,
+    {
+      title: 'Strategic Insights | Government Events Blog | G2 Middle East UAE',
+      description: 'Expert insights on government event management, diplomatic protocol, state visit coordination, and strategic advisory in UAE & Middle East. Written by industry leaders with 20+ years experience.',
+      canonicalUrl: 'https://g2middleeast.com/perspectives',
+      ogImage: 'https://g2middleeast.com/static/og-perspectives.jpg',
+      ogImageAlt: 'G2 Middle East Perspectives - Strategic Insights on Government Events'
+    }
+  )
 })
 
 // Legacy route redirect
@@ -1157,9 +1330,33 @@ app.get('/briefing', (c) => {
   return c.redirect('/perspectives', 301)
 })
 
-// Perspective Detail Pages - Under Construction
+// Perspective Detail Pages - Hybrid access control
 app.get('/perspectives/:slug', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  const slug = c.req.param('slug')
+  const perspectiveData = perspectivesData[slug as keyof typeof perspectivesData]
+  
+  if (!perspectiveData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <PerspectiveDetailPage {...perspectiveData} />,
+    {
+      title: `${perspectiveData.title} | Strategic Insights | G2 Middle East`,
+      description: (perspectiveData.excerpt || perspectiveData.title).substring(0, 155),
+      canonicalUrl: `https://g2middleeast.com/perspectives/${slug}`,
+      ogImage: perspectiveData.image || 'https://g2middleeast.com/static/og-perspective-default.jpg',
+      ogImageAlt: perspectiveData.title,
+      ogType: 'article',
+      author: perspectiveData.author,
+      publishedTime: perspectiveData.date,
+      twitterCreator: '@TimJacobs'
+    }
+  )
 })
 
 // ============================================
@@ -1265,9 +1462,26 @@ app.get('/admin/whitepapers', async (c) => {
 })
 
 // Service Detail Pages - Dynamic routing for all 9 services
-// Service Detail Pages - Under Construction
+// Service Detail Pages - Hybrid access control
 app.get('/services/:slug', (c) => {
-  return c.html(<UnderConstructionPage />)
+  if (!hasSiteAccessHybrid(c)) {
+    return c.html(<UnderConstructionPage />)
+  }
+  
+  const slug = c.req.param('slug')
+  const serviceData = servicesData[slug as keyof typeof servicesData]
+  
+  if (!serviceData) {
+    return c.notFound()
+  }
+  
+  return c.render(
+    <ServiceDetailPage {...serviceData} />,
+    {
+      title: `${serviceData.title} | G2 Middle East`,
+      description: serviceData.description.substring(0, 160)
+    }
+  )
 })
 
 // ============================================
