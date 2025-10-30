@@ -19,6 +19,9 @@ interface ProjectDetailProps {
   year: string
   heroImage: string
   heroImagePrompt: string
+  heroImageAlt?: string
+  heroImageTitle?: string
+  heroImageCaption?: string
   engagingParagraph: string
   faqSection?: FAQSection
   supportingImages: {
@@ -36,6 +39,9 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
   year,
   heroImage,
   heroImagePrompt,
+  heroImageAlt,
+  heroImageTitle,
+  heroImageCaption,
   engagingParagraph,
   faqSection,
   supportingImages
@@ -263,6 +269,12 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
             "Diplomatic Engagement",
             "Cultural Diplomacy"
           ],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://page.gensparksite.com/v1/base64_upload/578b7cc60a498b8e501f67ae6988aebaHero",
+            "description": "Street-level view of Bayt Qatar at the Institute of Engineering and Technology in London during the 2012 Olympic Games, featuring Qatar Olympic Committee branding, national flags, and the historic Grade II listed building facade",
+            "caption": "Bayt Qatar, Qatar's flagship Olympic House for London 2012, delivered by embedded specialist Tim Jacobs in 12 weeks"
+          },
           "keywords": "Bayt Qatar, Qatar Olympic House, London 2012, sovereign representation, nation branding, Olympic hospitality, embedded specialist, Qatar Olympic Committee, Tim Jacobs, G2 Middle East"
         },
         {
@@ -408,7 +420,8 @@ export const ProjectDetailPage: FC<ProjectDetailProps> = ({
         <div class="absolute inset-0">
           <img 
             src={heroImage}
-            alt={title}
+            alt={heroImageAlt || title}
+            title={heroImageTitle || title}
             class="w-full h-full object-cover grayscale"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-g2-darker via-g2-darker/60 to-transparent"></div>
@@ -1295,8 +1308,11 @@ export const projectsData = {
     subtitle: 'Building a Nation\'s Vision in London - Bayt Qatar',
     category: 'Sports Events',
     year: '2012',
-    heroImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&q=80',
-    heroImagePrompt: 'Olympic rings and flags at prestigious venue during London 2012 Games, VIP guests arriving at elegant hospitality house, Qatar branding prominently displayed. Cinematic, professional photography, monotone colour scheme with dark greys and whites, dramatic lighting, high-resolution, minimalist feel.',
+    heroImage: 'https://page.gensparksite.com/v1/base64_upload/578b7cc60a498b8e501f67ae6988aebaHero',
+    heroImageAlt: 'The exterior of Bayt Qatar, the Qatar Olympic House for the London 2012 Games, showcasing the successful transformation of a historic six-story London building into a sovereign hospitality venue under the leadership of embedded specialist Tim Jacobs',
+    heroImageTitle: 'Bayt Qatar: A Benchmark in Sovereign Nation Branding at the London 2012 Olympics',
+    heroImageCaption: 'Bayt Qatar, the Qatar Olympic Committee\'s official residence for the London 2012 Games. This complex transformation of a historic building was delivered in a landmark 12-week timeframe, a testament to the embedded specialist methodology now central to G2 Middle East & Africa\'s leadership.',
+    heroImagePrompt: 'Street-level view of Bayt Qatar at the Institute of Engineering and Technology in London during the 2012 Olympic Games. The historic building facade features prominent Qatar Olympic Committee branding, Qatar national flags, and Olympic rings. Visible architectural details include the Grade II listed building\'s red brick exterior, white columns, and ornate Victorian features. Pedestrians and street activity visible in foreground, demonstrating the venue\'s accessibility and prominence in central London.',
     engagingParagraph: `<h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Building a Nation's Vision in London - Bayt Qatar</h1>
     
     <p class="mb-4">For a nation on the world stage, the Olympic Games is more than a sporting event; it is a geopolitical landmark. The challenge for the Qatar Olympic Committee (QOC) at London 2012 was monumental: to translate the nation's ambitious vision, rich culture, and Olympic aspirations into a physical, immersive experience. The brief was to deliver this flagship sovereign presence, Bayt Qatar, in the heart of one of the world's busiest cities, transforming a 6-story, Grade II listed historical building into a global beacon of Qatari ambition—all within a compressed 12-week delivery and execution timeline.</p>
