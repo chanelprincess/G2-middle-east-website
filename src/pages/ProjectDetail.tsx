@@ -1326,21 +1326,28 @@ export const projectsData = {
     <p class="mb-4">The outcome was a resounding success that set a new benchmark for sovereign hospitality and nation-branding. For the entire month-long duration of the London 2012 Games, Bayt Qatar operated flawlessly, becoming a vital hub for international media, diplomatic stakeholders, and the public. Tim Jacobs' hands-on leadership and integrated methodology not only ensured the project was a triumph in its own right but also built a powerful foundation for Qatar's future Olympic bids and solidified its global reputation for excellence. Post-event, his meticulous reconciliation of the project generated a saving of over 11% for the client.</p>
     
     <h2 class="text-3xl font-bold text-white mb-4 mt-8">G2: Leadership Forged in High-Stakes Environments</h2>
-    <p class="mb-4">The "embedded specialist" methodology—integrating deeply with a client's team to ensure flawless execution under immense pressure—is not just a chapter in a portfolio; it is a core component of the leadership DNA at G2 Middle East & Africa. This approach, personally driven by Tim Jacobs, ensures that our clients gain more than a service provider; they gain a proven partner who understands how to translate sovereign vision into operational reality. This is the strategic advantage G2 delivers for its most critical projects.</p>
-    
-    <h2 class="text-3xl font-bold text-white mb-4 mt-8">Bayt Qatar: Frequently Asked Questions</h2>
-    
-    <h3 class="text-2xl font-bold text-white mb-3 mt-6">What was Bayt Qatar at the London 2012 Olympics?</h3>
-    <p class="mb-4">Bayt Qatar was a flagship hospitality and promotional venue for the Qatar Olympic Committee, designed to showcase Qatar's culture and its bid for the Doha 2020 Olympics. It was housed in a historic six-story building in central London, transforming a Grade II listed structure into a fully operational sovereign venue that served as Qatar's primary presence during the month-long Games.</p>
-    
-    <h3 class="text-2xl font-bold text-white mb-3 mt-6">Who was the strategic leader behind the Bayt Qatar project?</h3>
-    <p class="mb-4">Tim Jacobs, now Regional COO of G2 Middle East & Africa, was the embedded specialist responsible for leading the project's delivery. He acted as the bridge between the Qatar Olympic Committee and the project's executing agencies, operating from within the QOC's structure to ensure seamless alignment between sovereign vision and operational execution.</p>
-    
-    <h3 class="text-2xl font-bold text-white mb-3 mt-6">What was the biggest challenge in delivering Bayt Qatar?</h3>
-    <p class="mb-4">The primary challenge was the extremely tight 12-week deadline to transform a Grade II listed historical building into a fully operational, high-profile sovereign venue. This involved immense logistical, technical, and diplomatic complexity, requiring rapid mobilization, cross-continental coordination, and meticulous attention to cultural nuances, protocol requirements, and strategic messaging—all while managing multiple stakeholder groups including Qatari government bodies, royal stakeholders, and international agencies.</p>
-    
-    <h3 class="text-2xl font-bold text-white mb-3 mt-6">What is the "embedded specialist" methodology?</h3>
-    <p class="mb-4">The "embedded specialist" methodology involves integrating a senior strategic leader directly into the client's operational structure. This ensures seamless communication, rapid decision-making, and perfect alignment between the client's vision and the project's execution. Rather than operating as an external consultant, the embedded specialist becomes part of the client's team, bridging the gap between sovereign objectives and agency delivery. This is a core approach at G2 Middle East & Africa, personally pioneered by Tim Jacobs during his work on Bayt Qatar and now applied to all of G2's most critical sovereign-level projects.</p>`,
+    <p class="mb-4">The "embedded specialist" methodology—integrating deeply with a client's team to ensure flawless execution under immense pressure—is not just a chapter in a portfolio; it is a core component of the leadership DNA at G2 Middle East & Africa. This approach, personally driven by Tim Jacobs, ensures that our clients gain more than a service provider; they gain a proven partner who understands how to translate sovereign vision into operational reality. This is the strategic advantage G2 delivers for its most critical projects.</p>`,
+    faqSection: {
+      heading: 'Bayt Qatar: Frequently Asked Questions',
+      faqs: [
+        {
+          question: 'What was Bayt Qatar at the London 2012 Olympics?',
+          answer: 'Bayt Qatar was a <strong>flagship hospitality and promotional venue</strong> for the <strong>Qatar Olympic Committee</strong>, designed to showcase Qatar\'s culture and its bid for the Doha 2020 Olympics. It was housed in a historic <strong>six-story building in central London</strong>, transforming a <strong>Grade II listed structure</strong> into a fully operational sovereign venue that served as Qatar\'s primary presence during the month-long Games.'
+        },
+        {
+          question: 'Who was the strategic leader behind the Bayt Qatar project?',
+          answer: '<strong>Tim Jacobs</strong>, now <strong>Regional COO of G2 Middle East & Africa</strong>, was the <strong>embedded specialist</strong> responsible for leading the project\'s delivery. He acted as the bridge between the <strong>Qatar Olympic Committee</strong> and the project\'s executing agencies, operating from within the QOC\'s structure to ensure seamless alignment between sovereign vision and operational execution.'
+        },
+        {
+          question: 'What was the biggest challenge in delivering Bayt Qatar?',
+          answer: 'The primary challenge was the extremely tight <strong>12-week deadline</strong> to transform a <strong>Grade II listed historical building</strong> into a fully operational, high-profile sovereign venue. This involved immense <strong>logistical, technical, and diplomatic complexity</strong>, requiring rapid mobilization, cross-continental coordination, and meticulous attention to cultural nuances, protocol requirements, and strategic messaging—all while managing multiple stakeholder groups including Qatari government bodies, royal stakeholders, and international agencies.'
+        },
+        {
+          question: 'What is the "embedded specialist" methodology?',
+          answer: 'The <strong>"embedded specialist" methodology</strong> involves integrating a senior strategic leader directly into the client\'s operational structure. This ensures <strong>seamless communication</strong>, <strong>rapid decision-making</strong>, and perfect alignment between the client\'s vision and the project\'s execution. Rather than operating as an external consultant, the embedded specialist becomes part of the client\'s team, bridging the gap between sovereign objectives and agency delivery. This is a core approach at <strong>G2 Middle East & Africa</strong>, personally pioneered by <strong>Tim Jacobs</strong> during his work on Bayt Qatar and now applied to all of G2\'s most critical sovereign-level projects.'
+        }
+      ]
+    },
     supportingImages: [
       {
         url: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&q=80',
