@@ -777,8 +777,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Strategic Advisor"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -812,8 +811,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -852,8 +850,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Consultant - Overlay Budget Planning"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -883,8 +880,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Consultant"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -914,8 +910,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Consultant"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -949,8 +944,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Senior Delivery Role"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -985,8 +979,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Senior Delivery Role"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1021,8 +1014,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Senior Delivery Role"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1056,8 +1048,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Senior Delivery Role"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1093,8 +1084,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Senior Delivery Role"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1123,8 +1113,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1154,8 +1143,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1189,8 +1177,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1224,8 +1211,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Project Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1255,8 +1241,7 @@ export const TeamPage: FC = () => {
         "performer": {
           "@type": "Person",
           "name": "Tim Jacobs",
-          "@id": "https://g2middleeast.com/team/tim-jacobs#person",
-          "roleName": "Technical Director"
+          "@id": "https://g2middleeast.com/team/tim-jacobs#person"
         },
         "audience": {
           "@type": "Audience",
@@ -1315,7 +1300,6 @@ export const TeamPage: FC = () => {
     "url": "https://g2middleeast.com",
     "description": "Strategic advisory and event architecture division of Casta Diva Group, specialising in high-stakes projects for governments, global brands, and cultural institutions across the Middle East and Africa",
     "foundingDate": "2015",
-    "inLanguage": "en-GB",
     "founder": {
       "@type": "Person",
       "name": "Tim Jacobs",
