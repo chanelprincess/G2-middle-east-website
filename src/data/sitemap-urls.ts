@@ -4,15 +4,15 @@
  * Complete list of all indexable public URLs for G2 Middle East website.
  * This file serves as the source of truth for sitemap generation.
  * 
- * Last Updated: 2025-10-28
- * Total URLs: 70 (English-only - canonical URLs only, no aliases)
+ * Last Updated: 2025-10-31
+ * Total URLs: 72 (English-only - canonical URLs only, no aliases)
  * 
  * Categories:
  * - Core Static Pages: 9 (excludes aliases: /briefing, /terms, /privacy)
  * - Service Pages: 9
  * - Team Profiles: 3
  * - Perspectives/Blog: 7
- * - Project Case Studies: 42
+ * - Project Case Studies: 44
  * 
  * Note: Authentication pages, admin pages, and API endpoints are excluded.
  */
@@ -27,7 +27,7 @@ export const BASE_URL = 'https://g2middleeast.com';
 /**
  * Default lastmod date (site last major update)
  */
-export const DEFAULT_LASTMOD = '2025-10-28';
+export const DEFAULT_LASTMOD = '2025-10-31';
 
 /**
  * Core static pages (12)
@@ -169,14 +169,22 @@ export const PERSPECTIVE_PAGES: SitemapUrl[] = [
 ];
 
 /**
- * Project case study pages (42)
+ * Project case study pages (44)
  * 
  * All projects attributed to G2 Middle East staff as per recent content updates.
  * These represent the core portfolio showcasing strategic advisory, event architecture,
  * and governmental affairs expertise across the Middle East and Africa.
  */
 export const PROJECT_PAGES: SitemapUrl[] = [
-  // Tier 1: State-Level Events
+  // Tier 1: State-Level Events & Mission-Critical Infrastructure
+  {
+    loc: `${BASE_URL}/projects/qatar-olympic-house`,
+    lastmod: '2025-10-31' // Recently optimized with comprehensive SEO
+  },
+  {
+    loc: `${BASE_URL}/projects/hazza-bin-zayed-stadium`,
+    lastmod: '2025-10-31' // Recently added with Schema.org markup
+  },
   {
     loc: `${BASE_URL}/projects/queen-elizabeth-ii-state-visit`,
     lastmod: DEFAULT_LASTMOD
