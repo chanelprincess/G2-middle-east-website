@@ -113,7 +113,7 @@ Comprehensive Schema.org structured data markup optimized for 2025 AI/LLM standa
 - Organization entity (foundation for all references)
 - WebSite entity with SearchAction
 - BreadcrumbList
-- FAQPage (5 questions for voice search)
+- FAQPage (9 consolidated questions for voice search and featured snippets)
 - OfferCatalog (9 services)
 
 #### Projects Portfolio (/projects) ✅
@@ -782,7 +782,17 @@ Proprietary - © 2025 G-2 Middle East. All rights reserved.
 **R2 Bucket**: g2-whitepapers (✅ Operational)
 **Project Scope**: Sports events, cultural programming, major venue openings, NEOM activations, media operations, interfaith events, luxury experiences
 
-**Recent Completions (October 28, 2025)**:
+**Recent Completions (November 1, 2025)**:
+- ✅ **Homepage FAQPage Schema Fix** - Fixed critical Google Search Console error
+  - Consolidated 2 duplicate FAQPage schemas into single unified schema
+  - Now contains 9 questions total (4 strategic + 5 Middle East-specific)
+  - Complies with Schema.org requirement of 1 FAQPage per page
+  - Fixes "Duplicate field 'FAQPage'" error affecting rich results eligibility
+  - Both FAQ accordion sections maintained in UI (user experience unchanged)
+  - Production deployed and verified on g2middleeast.com
+  - Expected to restore homepage eligibility for Google Search featured snippets
+
+**Previous Completions (October 28, 2025)**:
 - ✅ **Projects Portal Email Integration** - Complete email notifications for Projects registration
   - Admin notification email to tim@ktsglobal.live with user details and approval link
   - User confirmation email with pending approval status and timeline (24-48 hours)
