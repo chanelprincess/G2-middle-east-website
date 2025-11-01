@@ -439,47 +439,7 @@ export const HomePage: FC = () => {
               </p>
             </div>
 
-            {/* FAQ Schema - JSON-LD */}
-            <script type="application/ld+json" dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "How does strategic counsel improve event outcomes?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Strategic counsel is the foundation that transforms events from logistics exercises into legacy-defining moments. We begin by defining the narrative and positioning that should shape global perception of your initiative. This strategic framework then guides every element of event design and execution, ensuring that operational excellence serves a clear strategic purpose. The result is that our events don't just happen flawlessly—they achieve measurable impact on positioning, reputation, and long-term strategic objectives."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What makes G2's event management different from other agencies?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "The strategic foundation. Most event agencies focus purely on logistics and execution. G2 begins with elite strategic counsel—defining the 'why' before the 'how.' Our event management capabilities are underpinned by deep expertise in sovereign positioning, narrative architecture, and geopolitical awareness. This means our events don't just run smoothly—they deliver on strategic objectives, shape international perception, and create enduring legacies. We've proven this approach through 50+ major projects including the Papal Mass Abu Dhabi (180,000 attendees) and state visits across the Middle East."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Do you provide strategic advisory without event delivery?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Yes. While many of our strategic engagements result in world-class event delivery, we also provide standalone strategic counsel on sovereign positioning, narrative architecture, national resilience, and reputation management. Our advisory services span cognitive security, counter-disinformation strategy, foreign direct investment positioning, and strategic roadmapping for national initiatives. Events are often the powerful, tangible proof of our strategic counsel—but they are not always required."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What is the Strategy. Positioning. Legacy. framework?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "This is our core methodology. Strategy defines the narrative and objectives that will shape perception. Positioning creates the frameworks and platforms that establish your standing on the global stage. Legacy is the enduring impact—often delivered through flawless execution of historic events and experiences that become defining milestones. This integrated approach ensures that tactical excellence always serves strategic purpose, and that every initiative contributes to long-term reputation architecture."
-                    }
-                  }
-                ]
-              })
-            }} />
+            {/* FAQ Schema removed from here - consolidated into single FAQPage at bottom of page */}
 
             {/* FAQ Accordion */}
             <div class="space-y-4">
@@ -1112,6 +1072,38 @@ export const HomePage: FC = () => {
           {
             "@type": "FAQPage",
             "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does strategic counsel improve event outcomes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Strategic counsel is the foundation that transforms events from logistics exercises into legacy-defining moments. We begin by defining the narrative and positioning that should shape global perception of your initiative. This strategic framework then guides every element of event design and execution, ensuring that operational excellence serves a clear strategic purpose. The result is that our events don't just happen flawlessly—they achieve measurable impact on positioning, reputation, and long-term strategic objectives."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes G2's event management different from other agencies?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The strategic foundation. Most event agencies focus purely on logistics and execution. G2 begins with elite strategic counsel—defining the 'why' before the 'how.' Our event management capabilities are underpinned by deep expertise in sovereign positioning, narrative architecture, and geopolitical awareness. This means our events don't just run smoothly—they deliver on strategic objectives, shape international perception, and create enduring legacies. We've proven this approach through 50+ major projects including the Papal Mass Abu Dhabi (180,000 attendees) and state visits across the Middle East."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide strategic advisory without event delivery?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. While many of our strategic engagements result in world-class event delivery, we also provide standalone strategic counsel on sovereign positioning, narrative architecture, national resilience, and reputation management. Our advisory services span cognitive security, counter-disinformation strategy, foreign direct investment positioning, and strategic roadmapping for national initiatives. Events are often the powerful, tangible proof of our strategic counsel—but they are not always required."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Strategy. Positioning. Legacy. framework?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This is our core methodology. Strategy defines the narrative and objectives that will shape perception. Positioning creates the frameworks and platforms that establish your standing on the global stage. Legacy is the enduring impact—often delivered through flawless execution of historic events and experiences that become defining milestones. This integrated approach ensures that tactical excellence always serves strategic purpose, and that every initiative contributes to long-term reputation architecture."
+                }
+              },
               {
                 "@type": "Question",
                 "name": "What is the best event management agency for government events in the Middle East?",
